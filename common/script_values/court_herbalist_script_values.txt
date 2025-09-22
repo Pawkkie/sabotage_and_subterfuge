@@ -1,0 +1,4 @@
+﻿court_herbalist_basic_aptitude_value = {
+	value = 0
+	# do your modificaitons here
+}

@@ -1,0 +1,20 @@
+﻿l_english:
+ court_herbalist_court_position:0 "Court Herbalist"
+ court_herbalist_court_position_desc:0 "Skilled in herbs and folk remedies, the Court Herbalist treats ailments and brews tonics for the court. Their craft may heal, protect, or—whispered rumors say—harm."
+ court_position_mystic_trait:0 "[GetTrait('lifestyle_mystic').GetName( ROOT.Char )]"
+ court_position_hashishiyah_trait:0 "[GetTrait('hashishiyah').GetName( ROOT.Char )]"
+ court_herbalist_basic_aptitude_value_desc: "Various modifiers"
+
+ herbalist_task_remedies:0 "Brew Remedies"
+ herbalist_task_remedies_desc:0 "Prepare herbal cures to ease ailments, reducing the impact of diseases and injuries among the court."
+
+ herbalist_task_poison_experiments:0 "$food_taster_court_position_task_brew_poisons$"
+ herbalist_task_poison_experiments_desc:0 "$food_taster_court_position_task_brew_poisons_desc$"
+
+ herbalist_task_flatter_dignitaries: "$cupbearer_court_position_task_flatter_dignitaries$"
+ herbalist_task_flatter_dignitaries_desc: "$cupbearer_court_position_task_flatter_dignitaries_desc$"
+
+ herbalist_task_flatter_dignitaries_witchy: "$cupbearer_court_position_task_flatter_dignitaries$"
+ herbalist_task_flatter_dignitaries_witchy_desc: "$cupbearer_court_position_task_flatter_dignitaries_desc$"
+
+ convert_to_witchcraft_scheme_phase_duration_add: "[GetScheme('convert_to_witchcraft').GetTypeName] [scheme_speed_single|E]"

@@ -1,0 +1,20 @@
+﻿on_game_start = {
+    on_actions = {
+        on_game_start_court_herbalist
+    }
+}
+
+on_game_start_court_herbalist = {
+	effect = {
+    set_global_variable = {
+      name = COURT_HERBALIST_is_loaded
+      value = yes
+    }
+    #to get rid of the error
+    if = {
+      limit = {
+        exists = global_var:COURT_HERBALIST_is_loaded
+      }
+    }
+  }
+}
