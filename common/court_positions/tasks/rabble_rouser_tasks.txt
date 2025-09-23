@@ -1,0 +1,145 @@
+﻿rabble_rouser_task_rouse_rabble = {
+	court_position_types = { 
+		rabble_rouser_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				multiply = 2
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+
+	scaling_employer_modifiers = {
+		terrible = { negate_health_penalty_add = 0.01 }
+		poor = { negate_health_penalty_add = 0.03 }
+		average = { negate_health_penalty_add = 0.05 }
+		good = { negate_health_penalty_add = 0.07 }
+		excellent = { negate_health_penalty_add = 0.1 }
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					health <= 2.0  # Poor health
+					has_trait = ill
+					has_trait = infirm
+				}
+			}
+			add = 100
+		}
+	}
+}
+
+rabble_rouser_task_provoke_vassals = {
+	court_position_types = { 
+		rabble_rouser_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+	
+	scaling_employer_modifiers = {
+		terrible = { hostile_scheme_phase_duration_add = -2 }
+		poor = { hostile_scheme_phase_duration_add = -4 }
+		average = { hostile_scheme_phase_duration_add = -6 }
+		good = { hostile_scheme_phase_duration_add = -8 }
+		excellent = { hostile_scheme_phase_duration_add = -10 }
+	}
+
+	ai_will_do = {
+		value = {
+			add = ai_honor
+			multiply = -1
+		}
+		if = {
+			limit = {
+				any_scheme = {
+					is_hostile = yes
+				}
+			}
+			add = 50
+		}
+	}
+}
+
+rabble_rouser_task_pacify_the_masses = {
+	court_position_types = { 
+		rabble_rouser_court_position 
+	}
+
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+	
+	scaling_employer_modifiers = {
+		terrible = {
+			county_opinion_add = 1
+
+		}
+		poor = {
+			county_opinion_add = 3
+		}
+		average = {
+			county_opinion_add = 5
+		}
+		good = {
+			county_opinion_add = 7
+		}
+		excellent = {
+			county_opinion_add = 10
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+			character_capital_county_monthly_development_growth_add = 0.01
+		}
+		poor = {
+			character_capital_county_monthly_development_growth_add = 0.02
+		}
+		average = {
+			character_capital_county_monthly_development_growth_add = 0.05
+		}
+		good = {
+			character_capital_county_monthly_development_growth_add = 0.07
+		}
+		excellent = {
+			character_capital_county_monthly_development_growth_add = 0.1
+		}
+	}
+	
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_sociability
+		}
+	}
+}
