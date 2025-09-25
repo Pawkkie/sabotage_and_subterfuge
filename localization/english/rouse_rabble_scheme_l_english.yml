@@ -1,0 +1,167 @@
+﻿l_english: 
+## Scheme Critical Moments
+# Scheme Execute Event
+ cki_scheme_critical_moments.0002.t: "Execute Scheme"
+ cki_scheme_critical_moments.0002.t.scheme: "Execute Scheme"
+ cki_scheme_critical_moments.0002.desc: "Spend your accumulated [scheme_opportunity_opportunities|E] to attempt completion of your [scheme.GetName] [scheme|E]. Spend more for powerful final bonuses."
+ cki_scheme_critical_moments.0002.a: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')]#!: Seize the Moment"
+ cki_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities: "You need at least [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')] [scheme_opportunity_opportunities|E]"
+ cki_scheme_critical_moments.0002.a.tt.clarify_buff: "[scheme|E] gains [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] to its final [success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ Total [success_chance|E] can never exceed a maximum of [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!"
+ cki_scheme_critical_moments.0002.a.tt.progress: "You finalize your [scheme.GetName] against [scheme.GetTargetCharacter.GetShortUIName]\n$BULLET_WITH_TAB$#WEAK ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E], including this option's modifiers)#!"
+ cki_scheme_critical_moments.0002.b: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')]#!: $scheme_end_buff_t2_modifier$"
+ cki_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities: "You need at least [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')] [scheme_opportunity_opportunities|E]"
+ cki_scheme_critical_moments.0002.b.tt.clarify_buff: "[scheme|E] gains [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] to its final [success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ Total [success_chance|E] can never exceed a maximum of [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!"
+ cki_scheme_critical_moments.0002.b.tt.progress: "You finalize your [scheme.GetName] against [scheme.GetTargetCharacter.GetShortUIName]\n$BULLET_WITH_TAB$#WEAK ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E], including this option's modifiers)#!"
+ cki_scheme_critical_moments.0002.c: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')]#!: $scheme_end_buff_t3_modifier$"
+ cki_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities: "You need at least [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')] [scheme_opportunity_opportunities|E]"
+ cki_scheme_critical_moments.0002.c.tt.clarify_buff: "[scheme|E] gains [EmptyScope.ScriptValue('multi_ending_scheme_buff_t3_value')|=P/0%] to its final [success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ Total [success_chance|E] can never exceed a maximum of [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!"
+ cki_scheme_critical_moments.0002.c.tt.progress: "You finalize your [scheme.GetName] against [scheme.GetTargetCharacter.GetShortUIName]\n$BULLET_WITH_TAB$#WEAK ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t3_total_success_value')|P/0%] [success_chance|E], including this option's modifiers)#!"
+ cki_scheme_critical_moments.0002.d: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')]#!: $scheme_end_buff_t4_modifier$"
+ cki_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities: "You need at least [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')] [scheme_opportunity_opportunities|E]"
+ cki_scheme_critical_moments.0002.d.tt.clarify_buff: "[scheme|E] gains [EmptyScope.ScriptValue('multi_ending_scheme_buff_t4_value')|=P/0%] to its final [success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ Total [success_chance|E] can never exceed a maximum of [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!"
+ cki_scheme_critical_moments.0002.d.tt.progress: "You finalize your [scheme.GetName] against [scheme.GetTargetCharacter.GetShortUIName]\n$BULLET_WITH_TAB$#WEAK ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t4_total_success_value')|P/0%] [success_chance|E], including this option's modifiers)#!"
+ cki_scheme_critical_moments.0002.e: "$scheme_critical_moments.0001.h$"
+ cki_scheme_critical_moments.0002.e.tt.some_opportunities: "$scheme_critical_moments.0001.h.tt.some_opportunities$"
+ cki_scheme_critical_moments.0002.e.tt.zero_opportunities: "$scheme_critical_moments.0001.h.tt.zero_opportunities$"
+  
+ #Critical Instigate Revolt
+ cki_scheme_critical_moments.1021.t: "Total Success"
+ cki_scheme_critical_moments.1021.desc: "Your scheme was successful and you were undiscovered"
+ cki_scheme_critical_moments.1021.a: "Perfect"
+ cki_scheme_critical_moments.1022.t: "Partial Success"
+ cki_scheme_critical_moments.1022.desc: "Your scheme was successful but you were discovered"
+ cki_scheme_critical_moments.1022.a: "I guess I'll have to live with it"
+ cki_scheme_critical_moments.1023: "Partial Failure"
+ cki_scheme_critical_moments.1023.t: "Partial Failure"
+ cki_scheme_critical_moments.1023.desc: "Your were unable to successfully complete your scheme but remained undiscovered"
+ cki_scheme_critical_moments.1023.a: "Damnation"
+ cki_scheme_critical_moments.1024.t: "Total Failure"
+ cki_scheme_critical_moments.1024.desc: "Your scheme failed and you were discovered"
+ cki_scheme_critical_moments.1024.a: "Damnation"
+
+## Scheme Victim Notifications
+# Instigate Revolt Scheme
+ cki_scheme_critical_moments.1025.t: "Manipulated into a Revolt"
+ cki_scheme_critical_moments.1025.desc: "Manipulated into a Revolt"
+ cki_scheme_critical_moments.1025.a: "Who could have done this ?"
+ cki_scheme_critical_moments.1026.t: "Manipulated into a Revolt"
+ cki_scheme_critical_moments.1026.desc: "Manipulated into a Revolt"
+ cki_scheme_critical_moments.1026.a: "Revenge is best served cold"
+ cki_scheme_critical_moments.1027.t: "Attempt to Manipulate me into a Revolt"
+ cki_scheme_critical_moments.1027.desc: "Attempt to Manipulate me into a Revolt"
+ cki_scheme_critical_moments.1027.a: "Revenge is best served cold"
+
+## Schemes
+ # Rouse Rabble Sceheme
+ SCHEME_IS_RABBLE_ROUSER: "I'm paid to work as your rabble rouser: $VALUE|=+0$"
+ SCHEME_AGENT_IS_RABBLE_ROUSER: "[target.GetShortUINamePossessiveNoTooltip] $rabble_rouser_court_position$"
+ ROUSE_RABBLE_BRAVE: "[GetTrait('brave').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_DILIGENT: "[GetTrait('diligent').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_GENEROUS: "[GetTrait('generous').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_GREGARIOUS: "[GetTrait('gregarious').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_DIPLOMAT: "[GetTrait('diplomat').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_WAYFARER: "[GetTrait('lifestyle_wayfarer').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_PEASANT_LEADER: "[GetTrait('peasant_leader').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_POPULIST_LEADER: "[GetTrait('populist_leader').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_LOYAL: "[GetTrait('loyal').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_CRAVEN: "[GetTrait('craven').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_LAZY: "[GetTrait('lazy').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_SHY: "[GetTrait('shy').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_FICKLE: "[GetTrait('fickle').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_INFIRM: "[GetTrait('infirm').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_DISLOYAL: "[GetTrait('disloyal').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_REVELER: "[GetTrait('lifestyle_reveler').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_TRAVELER: "[GetTrait('lifestyle_traveler').GetName( GetPlayer )]: $VALUE|=+0$"
+
+ scheme_agent_aptitude.trait.reclusive: "[GetTrait('reclusive').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.infirm: "[GetTrait('infirm').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.lifestyle_wayfarer: "[GetTrait('lifestyle_wayfarer').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.peasant_leader: "[GetTrait('peasant_leader').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.populist_leader: "[GetTrait('populist_leader').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.lifestyle_reveler: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.lifestyle_traveler: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_diplomacy_1: "[GetTrait('education_diplomacy_1').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_diplomacy_2: "[GetTrait('education_diplomacy_2').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_diplomacy_3: "[GetTrait('education_diplomacy_3').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_diplomacy_4: "[GetTrait('education_diplomacy_4').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_diplomacy_5: "[GetTrait('education_diplomacy_5').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_intrigue_1: "[GetTrait('education_intrigue_1').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_intrigue_2: "[GetTrait('education_intrigue_2').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_intrigue_3: "[GetTrait('education_intrigue_3').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_intrigue_4: "[GetTrait('education_intrigue_4').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.trait.education_intrigue_5: "[GetTrait('education_intrigue_5').GetName( GetNullCharacter )]"
+ scheme_agent_aptitude.rabble_rouser_court_position: "Works as a Rabble Rouser"
+
+ rouse_rabble: "Rouse Rabble"
+ rouse_rabble_desc: "Turn the peasants of a realm against its rulers"
+ rouse_rabble_desc_general: "$rouse_rabble$ is a [hostile_scheme|E] that attempts to embolden the peasants in the target's realm to revolt against their liege. It requires the employ of a [rabble_rouser_court_position|E] [court_position|E] to be undertaken, and you and your target must both be in charge of realms of at least [duchy|E] tier.\n\nIf at any point the [rabble_rouser_court_position|E] is unemployed or otherwise unavailable, such as by traveling, being imprisoned, or leading an army, the scheme will be cancelled."
+ rouse_rabble_action: "Rouse the Rabble of"
+ ROUSE_RABBLE_SUCCESS_DESC: "The rabble having been roused, inciting a peasant revolt"
+ ROUSE_RABBLE_DISCOVERY_DESC: "You can continue rousing the rabble in [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] realm."
+
+
+ ## Allow
+ HAVE_RABBLE_ROUSER_COURT_POSITION: "You employ a [rabble_rouser_court_position|E]"
+ NO_RABBLE_ROUSER_COURT_POSITION: "You do not employ a [rabble_rouser_court_position|E]"
+ RABBLE_ROUSER_AVAILABLE: "[CHARACTER.GetShortUIName|U] is available"
+ RABBLE_ROUSER_IN_ARMY: "[CHARACTER.GetShortUIName|U] is in an army"
+ RABBLE_ROUSER_TRAVELING: "[CHARACTER.GetShortUIName|U] is traveling"
+ RABBLE_ROUSER_IN_PRISON: "[CHARACTER.GetShortUIName|U] is in prison"
+ RABBLE_ROUSER_UNAVAILABLE: "[CHARACTER.GetShortUIName|U] is unavailable"
+ RABBLE_ROUSER_NOT_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] is not performing the Rouse Rabble task"
+ rouse_rabble_invalidated_title: "Rouse Rabble Scheme Ends"
+ rouse_rabble_invalidated_dead: "[target.GetShortUIName] has passed away. You can no longer rouse the rabble against [target.GetHerHis] reign."
+ rouse_rabble_invalidated_target_lost_title: "[target.GetShortUIName] has fallen far enough from grace that they no longer control enough rabble to rouse."
+ rouse_rabble_invalidated_no_rabble_rouser: "You are no longer employing a [rabble_rouser_court_position|E]."
+ rouse_rabble_invalidated_not_rousing_rabble: "[CHARACTER.GetShortUIName|U] is no longer performing the Rouse Rabble task."
+ rouse_rabble_invalidated_in_army: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is leading an army."
+ rouse_rabble_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is in prison."
+ rouse_rabble_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is travelling."
+
+ ## Agents
+ agent_rabble_rouser: "Rouser"
+ agent_rabble_rouser_i: "[success_chance_max_i]"
+ agent_rabble_rouser_desc: "$agent_rabble_rouser_desc.flavour$ \n$agent_rabble_rouser_desc.requirements$"
+ agent_rabble_rouser_desc.flavour: "#WEAK I'm loud, I'm proud, and I'm ready to rally the realm to our cause! Let's get out there and make something happen.#!"
+ agent_rabble_rouser_desc.requirements: "$EFFECT_LIST_BULLET$ Provides [success_chance_max_i] [scheme potential|E]\n$EFFECT_LIST_BULLET$ Requires [diplomacy_i] [diplomacy|E] & [intrigue_i] [intrigue|E]\n$EFFECT_LIST_BULLET$ #P Benefits#! from [traits|E] like [GetTrait('gregarious').GetName( GetNullCharacter )] and [GetTrait('peasant_leader').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ #N Suffers#! from [traits|E] like [GetTrait('shy').GetName( GetNullCharacter )] and [GetTrait('reclusive').GetName( GetNullCharacter )]"
+
+ ## Interaction
+ rouse_rabble_interaction: "Rouse Rabble #weak (Scheme)#!"
+ rouse_rabble_interaction_desc: "Attempt to rouse the rabble of [recipient.GetShortUINameNoTooltip]'s realm to start a peasant revolt"
+ rouse_rabble_interaction_notification: "Rousing the Rabble"
+
+ # Opinion Modifiers
+ revolt_scheme_opinion: "Manipulated me into a revolt"
+ revolt_scheme_opinion_liege: "Instigated a revolt against me"
+
+ #Scheme Modifier
+ SCHEME_SUCCESS_LEARNING: "Target's Learning: $VALUE|+0=$"
+
+## Secrets
+# Secret Types
+ cki_revolt_secret:1 "Instigated a Revolt"
+ cki_revolt_secret_desc:1 "Manipulated [TARGET_CHARACTER.GetShortUIName] into a revolt"
+
+# Secret Events
+# Revolt
+ cki_scheme_critical_moments.2001: "Instigate Revolt Secret Exposed"
+ cki_scheme_critical_moments.2001.t: "Instigate Revolt Secret Exposed"
+ cki_scheme_critical_moments.2001.desc: "Your Instigate Revolt Secret was Exposed"
+ cki_scheme_critical_moments.2001.a: "Damnation"
+
+## Rules
+ rule_cki_rule_revolt: "#Y Schemes Expanded:#!  Instigate Revolt Scheme"
+ setting_cki_rule_revolt_active: "Active"
+ setting_cki_rule_revolt_active_desc: "Active"
+ setting_cki_rule_revolt_inactive: "Inactive"
+ setting_cki_rule_revolt_inactive_desc: "Inactive"
+ setting_cki_rule_revolt_earned: "Unlock"
+ setting_cki_rule_revolt_earned_desc: "Unlock"
+
+## Character Interaction Scheme Agent Packages
+ rouse_rabble_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]"
+ rouse_rabble_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]"
+ rouse_rabble_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]"
+ rouse_rabble_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_amanuensis' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]"

@@ -19,7 +19,7 @@
 		add = court_position_aptitude_boon_voyager_trait
 		add = {
 			value = intrigue
-			multiply = 2
+			multiply = 1.5
 			max = 50
 			desc = court_position_skill_intrigue
 		}
@@ -72,10 +72,6 @@
 			add = { value = 20 desc = court_position_ambitious_trait }
 		}
 		if = {
-			limit = { has_trait = content }
-			add = { value = 15 desc = court_position_content_trait }
-		}
-		if = {
 			limit = { has_trait = generous }
 			add = { value = 15 desc = court_position_generous_trait }
 		}
@@ -111,18 +107,23 @@
 		if = {
 			limit = { has_trait = lifestyle_reveler }
 			add = {
-				value = 15
 				if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value >= 50 }
+						has_trait_xp = { trait = lifestyle_reveler value <= 49 }
 					}
-					add = 25
+					value = 10
 				}
-				if = {
+				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value >= 100 }
+						has_trait_xp = { trait = lifestyle_reveler value <= 99 }
 					}
-					add = 35
+					value = 20
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_reveler value > 99 }
+					}
+					value = 35
 				}
 				desc = court_position_reveler_trait
 			}
@@ -131,18 +132,23 @@
 		if = {
 			limit = { has_trait = lifestyle_traveler }
 			add = {
-				value = 5
 				if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_traveler value >= 50 }
+						has_trait_xp = { trait = lifestyle_traveler value <= 49 }
 					}
-					add = 10
+					value = 10
 				}
-				if = {
+				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_traveler value >= 100 }
+						has_trait_xp = { trait = lifestyle_traveler value <= 99 }
 					}
-					add = 15
+					value = 20
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_traveler value > 99 }
+					}
+					value = 35
 				}
 				desc = court_position_traveler_trait
 			}
@@ -162,22 +168,26 @@
 				value = 5
 				if = {
 					limit = { has_trait = education_diplomacy_2 }
-					add = 7
+					add = 5
 				}
 				else_if = {
-					limit = {has_trait = education_diplomacy_3 }
+					limit = { has_trait = education_diplomacy_3 }
 					add = 10
 				}
 				else_if = {
 					limit = { has_trait = education_diplomacy_4 }
-					add = 13
+					add = 15
 				}
 				else_if = {
-					limit = { has_trait = education_stewardship_5 }
-					add = 15
+					limit = { has_trait = education_diplomacy_5 }
+					add = 20
 				}
 				desc = trait_education_diplomacy
 			}
+		}
+		if = {
+			limit = { has_trait = education_diplomacy_1 }
+			add = { value = 15 desc = court_position_education }
 		}
 		if = {
 			limit = {
@@ -193,19 +203,19 @@
 				value = 5
 				if = {
 					limit = { has_trait = education_intrigue_2 }
-					add = 7
+					add = 5
 				}
 				else_if = {
-					limit = {has_trait = education_intrigue_3 }
+					limit = { has_trait = education_intrigue_3 }
 					add = 10
 				}
 				else_if = {
 					limit = { has_trait = education_intrigue_4 }
-					add = 13
+					add = 15
 				}
 				else_if = {
 					limit = { has_trait = education_intrigue_5 }
-					add = 15
+					add = 20
 				}
 				desc = trait_education_intrigue
 			}
@@ -414,6 +424,8 @@
 		}
 	}
 
+	is_powerful_agent = yes
+
 	scaling_employer_modifiers = {
 		terrible = {
 			character_capital_county_monthly_control_add = -0.2
@@ -450,16 +462,31 @@
 
 	on_court_position_received = {
 		basic_gained_court_position_effect = yes
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_rousing_rabble
+				value = no
+			}
+		}
 	}
 	on_court_position_revoked = {
 		basic_revoked_court_position_effect = yes
+		scope:liege = { 
+			remove_variable = rabble_rouser_is_rousing_rabble
+		}
 	}
 	on_court_position_invalidated = {
 		basic_invalidated_court_position_effect = yes
+		scope:liege = { 
+			remove_variable = rabble_rouser_is_rousing_rabble
+		}
 	}
 	on_court_position_vacated = {
 		court_position_vacated_event_effect = {
 			COURT_POSITION_TYPE = rabble_rouser_court_position
+		}
+		scope:liege = { 
+			remove_variable = rabble_rouser_is_rousing_rabble
 		}
 	}
 

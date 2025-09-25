@@ -7,7 +7,6 @@
 		gold = {
 			add = {
 				value = monthly_court_position_task_cost
-				multiply = 2
 				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
 				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
 			}
@@ -18,22 +17,46 @@
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
-	scaling_employer_modifiers = {
-		terrible = { negate_health_penalty_add = 0.01 }
-		poor = { negate_health_penalty_add = 0.03 }
-		average = { negate_health_penalty_add = 0.05 }
-		good = { negate_health_penalty_add = 0.07 }
-		excellent = { negate_health_penalty_add = 0.1 }
+	# Set Rousing Rabble variable on start
+	on_start = { 
+		add_character_flag = blocked_from_leaving # Stop character from traveling
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_rousing_rabble
+				value = yes
+			}
+		}
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_rousing_rabble = no }
+			set_variable = {
+				name = rabble_rouser_is_rousing_rabble
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_rousing_rabble
+				value = no
+			}
+		}
 	}
 
 	ai_will_do = {
 		value = 0
 		if = {
 			limit = {
-				OR = {
-					health <= 2.0  # Poor health
-					has_trait = ill
-					has_trait = infirm
+				scope:liege = {
+					OR = {
+						is_at_war = yes
+					}
 				}
 			}
 			add = 100
@@ -50,6 +73,7 @@ rabble_rouser_task_provoke_vassals = {
 		gold = {
 			add = {
 				value = monthly_court_position_task_cost
+				multiply = 2
 				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
 				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
 			}

@@ -1,0 +1,29 @@
+﻿have_rabble_rouser_court_position = {
+	first = HAVE_RABBLE_ROUSER_COURT_POSITION
+	first_not = NO_RABBLE_ROUSER_COURT_POSITION
+}
+
+rabble_rouser_in_army = {
+	first = RABBLE_ROUSER_AVAILABLE
+	first_not = RABBLE_ROUSER_IN_ARMY
+}
+
+rabble_rouser_travelling = {
+	first = RABBLE_ROUSER_AVAILABLE
+	first_not = RABBLE_ROUSER_TRAVELING
+}
+
+rabble_rouser_in_prison = {
+	first = RABBLE_ROUSER_AVAILABLE
+	first_not = RABBLE_ROUSER_IN_PRISON
+}
+
+rabble_rouser_unavailable = {
+	first = RABBLE_ROUSER_AVAILABLE
+	first_not = RABBLE_ROUSER_UNAVAILABLE
+}
+
+rabble_rouser_rousing_rabble = {
+	first = RABBLE_ROUSER_AVAILABLE
+	first_not = RABBLE_ROUSER_NOT_ROUSING_RABBLE
+}

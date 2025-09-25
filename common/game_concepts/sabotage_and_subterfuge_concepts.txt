@@ -1,0 +1,7 @@
+﻿rouse_rabble_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}
+
+rabble_rouser_court_position = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}

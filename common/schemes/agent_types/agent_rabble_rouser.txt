@@ -1,0 +1,282 @@
+﻿agent_rabble_rouser = {
+	contribution_type = success_chance_max
+
+	valid_agent_for_slot = {
+		has_court_position = rabble_rouser_court_position
+	}
+
+	contribution = {
+		# Base value
+		value = scheme_agent_rabble_rouser_bonuses_contribution_score_value
+		# Skills
+		## Diplomacy
+		add = {
+			value = diplomacy
+			multiply = agent_1to1_1_skill_mult_value
+			ceiling = yes
+			max = agent_max_skill_value
+			desc = scheme_agent_aptitude.skill.diplomacy
+		}
+		## Intrigue
+		add = {
+			value = intrigue
+			multiply = agent_1to1_1_skill_mult_value
+			ceiling = yes
+			max = agent_max_skill_value
+			desc = scheme_agent_aptitude.skill.intrigue
+		}
+		# Negative
+		if = {
+			limit = { has_trait = craven }
+			add = {
+				value = agent_trait_malus_t1_value 
+				desc = scheme_agent_aptitude.trait.craven
+			}
+		}
+		if = {
+			limit = { has_trait = lazy }
+			add = {
+				value = agent_trait_malus_t1_value 
+				desc = scheme_agent_aptitude.trait.lazy 
+			}
+		}
+		if = {
+			limit = { has_trait = shy }
+			add = { 
+				value = agent_trait_malus_t3_value
+				desc = scheme_agent_aptitude.trait.shy 
+			}
+		}		
+		if = {
+			limit = { has_trait = fickle }
+			add = { 
+				value = agent_trait_malus_t1_value
+				desc = scheme_agent_aptitude.trait.fickle 
+			}
+		}
+		if = {
+			limit = { has_trait = reclusive }
+			add = { 
+				value = agent_trait_malus_t2_value 
+				desc = scheme_agent_aptitude.trait.reclusive 
+			}
+		}
+		if = {
+			limit = { has_trait = disloyal }
+			add = { 
+				value = agent_trait_malus_t1_value
+				desc = scheme_agent_aptitude.trait.disloyal 
+			}
+		}
+		if = {
+			limit = { has_court_position = rabble_rouser_court_position }
+			add = {
+				value = agent_trait_bonus_t3_value
+				desc = scheme_agent_aptitude.rabble_rouser_court_position
+			}
+		}
+		# Positive
+		if = {
+			limit = { has_trait = brave }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.brave 
+			}
+		}
+		if = {
+			limit = { has_trait = diligent }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.diligent 
+			}
+		}
+		if = {
+			limit = { has_trait = ambitious }
+			add = { 
+				value = agent_trait_bonus_t2_value 
+				desc = scheme_agent_aptitude.trait.ambitious 
+			}
+		}
+		if = {
+			limit = { has_trait = generous }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.generous 
+			}
+		}
+		if = {
+			limit = { has_trait = gregarious }
+			add = { 
+				value = agent_trait_bonus_t3_value 
+				desc = scheme_agent_aptitude.trait.gregarious 
+			}
+		}
+		if = {
+			limit = { has_trait = diplomat }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.diplomat 
+			}
+		}
+		if = {
+			limit = { has_trait = schemer }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.schemer 
+			}
+		}
+		if = {
+			limit = { has_trait = lifestyle_wayfarer }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.lifestyle_wayfarer 
+			}
+		}
+		if = {
+			limit = { has_trait = peasant_leader }
+			add = { 
+				value = agent_trait_bonus_t3_value 
+				desc = scheme_agent_aptitude.trait.peasant_leader 
+			}
+		}
+		if = {
+			limit = { has_trait = populist_leader }
+			add = { 
+				value = agent_trait_bonus_t3_value 
+				desc = scheme_agent_aptitude.trait.populist_leader 
+			}
+		}
+		if = {
+			limit = { has_trait = loyal }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.loyal 
+			}
+		}
+		# Eager Reveler
+		if = {
+			limit = { has_trait = lifestyle_reveler }
+			add = {
+				if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_reveler value <= 49 }
+					}
+					value = agent_trait_bonus_t1_value
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_reveler value <= 99 }
+					}
+					value = agent_trait_bonus_t2_value
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_reveler value > 99 }
+					}
+					value = agent_trait_bonus_t3_value
+				}
+				desc = scheme_agent_aptitude.trait.lifestyle_reveler
+			}
+		}
+		# Traveler
+		if = {
+			limit = { has_trait = lifestyle_traveler }
+			add = {
+				if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_traveler value <= 49 }
+					}
+					value = agent_trait_bonus_t1_value
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_traveler value <= 99 }
+					}
+					value = agent_trait_bonus_t2_value
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_traveler value > 99 }
+					}
+					value = agent_trait_bonus_t3_value
+				}
+				desc = scheme_agent_aptitude.trait.lifestyle_traveler
+			}
+		}
+		# Education
+		if = {
+			limit = { has_trait = education_diplomacy_1 }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.education_diplomacy_1 
+			}
+		}
+		if = {
+			limit = { has_trait = education_diplomacy_2 }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.education_diplomacy_2 
+			}
+		}
+		if = {
+			limit = { has_trait = education_diplomacy_3 }
+			add = { 
+				value = agent_trait_bonus_t2_value 
+				desc = scheme_agent_aptitude.trait.education_diplomacy_3 
+			}
+		}
+		if = {
+			limit = { has_trait = education_diplomacy_4 }
+			add = { 
+				value = agent_trait_bonus_t2_value 
+				desc = scheme_agent_aptitude.trait.education_diplomacy_4 
+			}
+		}
+		if = {
+			limit = { has_trait = education_diplomacy_5 }
+			add = { 
+				value = agent_trait_bonus_t3_value 
+				desc = scheme_agent_aptitude.trait.education_diplomacy_5 
+			}
+		}
+		if = {
+			limit = { has_trait = education_intrigue_1 }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.education_intrigue_1 
+			}
+		}
+		if = {
+			limit = { has_trait = education_intrigue_2 }
+			add = { 
+				value = agent_trait_bonus_t1_value 
+				desc = scheme_agent_aptitude.trait.education_intrigue_2 
+			}
+		}
+		if = {
+			limit = { has_trait = education_intrigue_3 }
+			add = { 
+				value = agent_trait_bonus_t2_value 
+				desc = scheme_agent_aptitude.trait.education_intrigue_3 
+			}
+		}
+		if = {
+			limit = { has_trait = education_intrigue_4 }
+			add = { 
+				value = agent_trait_bonus_t2_value 
+				desc = scheme_agent_aptitude.trait.education_intrigue_4 
+			}
+		}
+		if = {
+			limit = { has_trait = education_intrigue_5 }
+			add = { 
+				value = agent_trait_bonus_t3_value 
+				desc = scheme_agent_aptitude.trait.education_intrigue_5 
+			}
+		}
+
+		# Cap this off.
+		max = agent_scheme_contributor_max
+		min = agent_scheme_contributor_min
+	}
+}

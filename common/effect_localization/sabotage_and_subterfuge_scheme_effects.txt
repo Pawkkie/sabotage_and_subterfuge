@@ -1,0 +1,29 @@
+rouse_rabble_invalidated_no_rabble_rouser = {
+	global_past = rouse_rabble_invalidated_no_rabble_rouser
+	first_past = rouse_rabble_invalidated_no_rabble_rouser
+	third_past = rouse_rabble_invalidated_no_rabble_rouser
+}
+
+rouse_rabble_invalidated_not_rousing_rabble = {
+	global_past = rouse_rabble_invalidated_not_rousing_rabble
+	first_past = rouse_rabble_invalidated_not_rousing_rabble
+	third_past = rouse_rabble_invalidated_not_rousing_rabble
+}
+
+rouse_rabble_invalidated_in_army = {
+	global_past = rouse_rabble_invalidated_in_army
+	first_past = rouse_rabble_invalidated_in_army
+	third_past = rouse_rabble_invalidated_in_army
+}
+
+rouse_rabble_invalidated_in_prison = {
+	global_past = rouse_rabble_invalidated_in_prison
+	first_past = rouse_rabble_invalidated_in_prison
+	third_past = rouse_rabble_invalidated_in_prison
+}
+
+rouse_rabble_invalidated_is_travelling = {
+	global_past = rouse_rabble_invalidated_is_travelling
+	first_past = rouse_rabble_invalidated_is_travelling
+	third_past = rouse_rabble_invalidated_is_travelling
+}

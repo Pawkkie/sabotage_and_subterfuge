@@ -1,0 +1,455 @@
+﻿rouse_rabble = {
+	# Basic Setup
+	skill = diplomacy
+	desc = rouse_rabble_desc_general
+	success_desc = "ROUSE_RABBLE_SUCCESS_DESC"
+	discovery_desc = "ROUSE_RABBLE_DISCOVERY_DESC"
+	icon = icon_scheme_rouse_rabble
+	illustration = "gfx/interface/illustrations/event_scenes/tavern.dds"
+	category = hostile
+	target_type = character
+	is_secret = yes
+	maximum_breaches = 5
+	cooldown = { years = 5 }
+	
+	# Parameters
+	speed_per_skill_point = t2_spsp_owner_value
+	speed_per_target_skill_point = t2_spsp_target_value
+	base_progress_goal = t2_base_phase_length_value
+	maximum_secrecy = 95
+	base_maximum_success = t2_base_max_success_value
+	phases_per_agent_charge = 1
+	success_chance_growth_per_skill_point = t2_scgpsp_value
+
+	# Core Triggers
+	allow = {
+		is_adult = yes
+		is_imprisoned = no
+		scope:target = {
+			highest_held_title_tier >= tier_duchy
+		}
+		# Should hide decision if can't employ a rabble rouser
+	}
+	valid = {
+		scope:target = {
+			OR = {
+				exists = location
+				in_diplomatic_range = scope:owner
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		# Rabble Rouser employed
+		custom_description = {
+			text = have_rabble_rouser_court_position
+			exists = scope:owner.court_position:rabble_rouser_court_position
+		}
+		# Rabble Rouser Rousing Rabble
+		trigger_if = {
+			limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
+			custom_description = {
+				text = rabble_rouser_rousing_rabble
+				subject = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.var:rabble_rouser_is_rousing_rabble = yes
+			}
+		}
+
+		# Rabble Rouser availability
+		trigger_if = {
+			limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
+			custom_description = {
+				text = rabble_rouser_in_army
+				subject = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_in_army = no
+				}
+			}
+			custom_description = {
+				text = rabble_rouser_imprisoned
+				subject = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_imprisoned = no
+				}
+			}
+			custom_description = {
+				text = rabble_rouser_travelling
+				subject = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_travelling = no
+				}
+			}
+		}
+	}
+
+	# Agents
+	agent_leave_threshold = -25
+	agent_join_chance = {
+		base = 0
+		
+		ai_agent_join_chance_basic_suite_modifier = yes
+		ai_agent_join_chance_hostile_general_suite_modifier = yes
+		ai_agent_join_chance_rabble_rouser = yes
+	}
+	valid_agent = { is_valid_agent_standard_trigger = yes }
+	agent_groups_owner_perspective = { courtiers guests scripted_relations }
+	agent_groups_target_character_perspective = { courtiers vassals neighboring_rulers_including_tributary_borders realm_characters war_enemies nearby_domicile_owners  }
+
+	odds_prediction = {
+		add = hostile_scheme_base_odds_prediction_target_is_char_value
+		add = odds_skill_contribution_intrigue_value
+		add = agent_groups_owner_perspective_value
+		add = agent_groups_target_character_perspective_value
+		add = odds_rouse_rabble_scheme_misc_value
+		min = 0
+	}
+
+	# Base Chances
+	base_success_chance = {
+		base = 0
+		scheme_type_skill_success_chance_modifier = { SKILL = DIPLOMACY }
+
+		hostile_scheme_base_chance_modifier = yes
+
+		# Countermeasures.
+		apply_indirect_scheme_success_chance_adjustments_modifier = yes
+		
+		# Positive modifiers
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = brave }
+			desc = ROUSE_RABBLE_BRAVE
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = diligent }
+			desc = ROUSE_RABBLE_DILIGENT
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = generous }
+			desc = ROUSE_RABBLE_GENEROUS
+		}
+		modifier = {
+			add = 20
+			scope:owner = { has_trait = gregarious }
+			desc = ROUSE_RABBLE_GREGARIOUS
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = diplomat }
+			desc = ROUSE_RABBLE_DIPLOMAT
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = lifestyle_wayfarer }
+			desc = ROUSE_RABBLE_WAYFARER
+		}
+		modifier = {
+			add = 30
+			scope:owner = { has_trait = peasant_leader }
+			desc = ROUSE_RABBLE_PEASANT_LEADER
+		}
+		modifier = {
+			add = 30
+			scope:owner = { has_trait = populist_leader }
+			desc = ROUSE_RABBLE_POPULIST_LEADER
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = loyal }
+			desc = ROUSE_RABBLE_LOYAL
+		}
+		modifier = {
+			add = {
+				value = 10
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
+						}
+						add = 10
+					}
+				}
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
+						}
+						add = 10
+					}
+				}
+			}
+			desc = ROUSE_RABBLE_REVELER
+		}
+		modifier = {
+			add = {
+				value = 5
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 50 }
+						}
+						add = 5
+					}
+				}
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 100 }
+						}
+						add = 10
+					}
+				}
+			}
+			desc = ROUSE_RABBLE_TRAVELER
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -20
+			scope:owner = { has_trait = craven }
+			desc = ROUSE_RABBLE_CRAVEN
+		}
+		modifier = {
+			add = -10
+			scope:owner = { has_trait = lazy }
+			desc = ROUSE_RABBLE_LAZY
+		}
+		modifier = {
+			add = -20
+			scope:owner = { has_trait = shy }
+			desc = ROUSE_RABBLE_SHY
+		}
+		modifier = {
+			add = -10
+			scope:owner = { has_trait = fickle }
+			desc = ROUSE_RABBLE_FICKLE
+		}
+		modifier = {
+			add = -20
+			scope:owner = { has_trait = reclusive }
+			desc = ROUSE_RABBLE_RECLUSIVE
+		}
+		modifier = {
+			add = -30
+			scope:owner = { has_trait = infirm }
+			desc = ROUSE_RABBLE_INFIRM
+		}
+		modifier = {
+			add = -10
+			scope:owner = { has_trait = disloyal }
+			desc = ROUSE_RABBLE_DISLOYAL
+		}
+	}
+	base_secrecy = {
+		add = secrecy_base_value
+		add = countermeasure_apply_secrecy_maluses_value
+	}
+
+	# On Actions
+	on_start = {
+		set_variable = {
+			name = apply_countermeasures
+			value = flag:indirect
+		}
+		add_scheme_starting_opportunities_intrigue_effect = yes
+		# Fallback agents — a balanced config if you start the scheme from script.
+		if = {
+			limit = {
+				scheme_owner = {
+					NOT = { has_variable = agents_added }
+				}
+			}
+			add_agent_slot = agent_rabble_rouser
+			add_agent_slot = agent_diplomat
+			add_agent_slot = agent_gabbler
+			add_agent_slot = agent_herald
+			add_agent_slot = agent_justiciar
+		}
+		# Send Rabble Rouser to other court
+		scope:owner.court_position:rabble_rouser_court_position ?= {
+		 	set_location = scope:target.capital_province
+		 }
+	}
+	on_phase_completed = {
+		suppress_scheme_follow_up_event_till_input_given_effect = yes
+		rouse_rabble_scheme_prep_effect = yes
+		cap_schemes_and_fire_reminders_effect = yes
+	}
+	on_hud_click  = { rouse_rabble_scheme_prep_effect = yes }
+	on_monthly = {
+		hostile_scheme_monthly_discovery_chance_effect = yes
+		if = {
+			limit = {
+				NOT = { exists = scope:discovery_event_happening }
+			}
+			scheme_owner = {
+				trigger_event = {
+					on_action = rouse_rabble_ongoing
+					days = { 1 30 }
+				}
+			}
+		}
+	}
+	on_semiyearly = {
+		if = {
+			limit = {
+				scheme_owner = { is_ai = yes }
+			}
+			rouse_rabble_scheme_prep_effect = yes
+		}
+	}
+	}
+	on_invalidated = {
+		scheme_target_character = {
+			save_scope_as = target
+		}
+		scheme_owner = {
+			save_scope_as = owner
+		}
+		# Return Rabble Rouser to own court
+		scope:owner.court_position:rabble_rouser_court_position ?= {
+		 	set_location_to_default = yes
+		}
+		# Target death
+		if = {
+			limit = {
+				scope:target = { is_alive = no }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					custom_tooltip = rouse_rabble_invalidated_dead
+					left_icon = scope:target
+				}
+			}
+		}
+		# Target out of range
+		if = {
+			limit = {
+				scope:target = { 
+					NOT = { in_diplomatic_range = scope:owner } 
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:target
+					custom_description_no_bullet = {
+						object = scope:target
+						text = scheme_target_not_in_diplomatic_range
+					}
+				}
+			}
+		}
+		# Target no longer controls at least Duchy
+		if = {
+			limit = {
+				scope:target = {
+					NOT = { highest_held_title_tier >= tier_duchy }
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					custom_tooltip = rouse_rabble_invalidated_target_lost_title
+					left_icon = scope:target
+				}
+			}
+		}
+		# Rabble Rouser unemployed
+		if = {
+			limit = {
+				NOT = { exists = scope:owner.court_position:rabble_rouser_court_position }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:owner
+					custom_description_no_bullet = {
+						text = rouse_rabble_invalidated_no_rabble_rouser
+					}
+				}
+			}
+		}
+		# Rabble Rouser no longer Rousing Rabble
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.var:rabble_rouser_is_rousing_rabble = no
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:owner.court_position:rabble_rouser_court_position
+					custom_description_no_bullet = {
+						subject = scope:owner.court_position:rabble_rouser_court_position
+						text = rouse_rabble_invalidated_not_rousing_rabble
+					}
+				}
+			}
+		}
+
+		# Rabble Rouser in army
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_in_army = yes
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:owner.court_position:rabble_rouser_court_position
+					custom_description_no_bullet = {
+						subject = scope:owner.court_position:rabble_rouser_court_position
+						text = rouse_rabble_invalidated_in_army
+					}
+				}
+			}
+		}
+		# Rabble Rouser imprisoned
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_imprisoned = yes
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:owner.court_position:rabble_rouser_court_position
+					custom_description_no_bullet = {
+						subject = scope:owner.court_position:rabble_rouser_court_position
+						text = rouse_rabble_invalidated_in_prison
+					}
+				}
+			}
+		}
+		# Rabble Rouser travelling
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:rabble_rouser_court_position
+				scope:owner.court_position:rabble_rouser_court_position = {
+					is_travelling = yes
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = rouse_rabble_invalidated_title
+					left_icon = scope:owner.court_position:rabble_rouser_court_position
+					custom_description_no_bullet = {
+						subject = scope:owner.court_position:rabble_rouser_court_position
+						text = rouse_rabble_invalidated_is_travelling
+					}
+				}
+			}
+		}
+	}
+}

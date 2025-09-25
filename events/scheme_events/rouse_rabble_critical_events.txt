@@ -1,0 +1,11 @@
+
+namespace = sas_scheme_critical_moments
+
+##################################################
+# Rouse Rabble Results
+# (shifted here) by Ewan Cowhig Croft
+# 1000 - 10XX
+##################################################
+sas_scheme_critical_moments.1000 = {
+	hidden = yes
+}

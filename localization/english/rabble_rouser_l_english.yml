@@ -1,18 +1,22 @@
 ﻿l_english:
+ # Court Position
  rabble_rouser_court_position:0 "Rabble Rouser"
  rabble_rouser_court_position_desc:0 "Keen to stir the pot, the Rabble Rouser has a knack for getting in with the right crowd and firing them up. They can travel to other realms and incite peasant revolts or vassal uprisings, or stay at home and spread the good word of your excellence."
 
+ # Traits
  court_position_wayfarer_trait:0 "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]"
  court_position_peasant_leader_trait:0 "[GetTrait('peasant_leader').GetName( ROOT.Char )]:"
- court_position_populist_leader_trait0 "[GetTrait('populist_leader').GetName( ROOT.Char )]:"
- court_position_disloyal_trait0 "[GetTrait('disloyal').GetName( ROOT.Char )]:"
- court_position_loyal_trait0 "[GetTrait('loyal').GetName( ROOT.Char )]:"
+ court_position_populist_leader_trait:0 "[GetTrait('populist_leader').GetName( ROOT.Char )]:"
+ court_position_disloyal_trait:0 "[GetTrait('disloyal').GetName( ROOT.Char )]:"
 
+ # Rouse Rabble task
  rabble_rouser_task_rouse_rabble:0 "Rouse Rabble"
- rabble_rouser_task_rouse_rabble_desc:0 "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
+ rabble_rouser_task_rouse_rabble_desc:0 "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt.\n\n@warning_icon!This task must be active to both start and continue the [rouse_rabble_scheme|E].\n\nIf at any point the [rabble_rouser_court_position|E] is unemployed or otherwise unavailable, such as by traveling, being imprisoned, or leading an army, the scheme will be cancelled."
 
+ # Provoke Vassals task
  rabble_rouser_task_provoke_vassals:0 "Provoke Vassals"
  rabble_rouser_task_provoke_vassals_desc:0 "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
 
+ # Pacify the Masses task
  rabble_rouser_task_pacify_the_masses: "Pacify the Masses"
  rabble_rouser_task_pacify_the_masses_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."

@@ -1,0 +1,170 @@
+﻿odds_rouse_rabble_scheme_misc_value = {
+	add = {
+		value = 0
+		desc = scheme_odds.misc_modifiers
+		scope:owner.court_position:rabble_rouser_court_position = {
+			# Positive
+			if = {
+				limit = { has_trait = brave }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = diligent }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = generous }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = gregarious }
+				add = 16
+			}
+			if = {
+				limit = { has_trait = diplomat }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = schemer }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = lifestyle_wayfarer }
+				add = 8
+			}
+			if = {
+				limit = { has_trait = peasant_leader }
+				add = 20
+			}
+			if = {
+				limit = { has_trait = populist_leader }
+				add = 20
+			}
+			if = {
+				limit = { has_trait = loyal }
+				add = 8
+			}
+			# Eager Reveler
+			if = {
+				limit = { has_trait = lifestyle_reveler }
+				add = {
+					value = 8
+					if = {
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
+						}
+						add = 16
+					}
+					if = {
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
+						}
+						add = 20
+					}
+					desc = court_position_reveler_trait
+				}
+			}
+			# Traveler
+			if = {
+				limit = { has_trait = lifestyle_traveler }
+				add = {
+					value = 8
+					if = {
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 50 }
+						}
+						add = 10
+					}
+					if = {
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 100 }
+						}
+						add = 16
+					}
+					desc = court_position_traveler_trait
+				}
+			}
+			# Negative
+			if = {
+				limit = { has_trait = craven }
+				add = -8
+			}
+			if = {
+				limit = { has_trait = lazy }
+				add = -8
+			}
+			if = {
+				limit = { has_trait = shy }
+				add = -20
+			}		
+			if = {
+				limit = { has_trait = fickle }
+				add = -8
+			}
+			if = {
+				limit = { has_trait = reclusive }
+				add = -8
+			}
+			if = {
+				limit = { has_trait = infirm }
+				add = -40
+			}
+			if = {
+				limit = { has_trait = disloyal }
+				add = -8
+			}
+		}
+	}
+}
+
+scheme_agent_rabble_rouser_bonuses_contribution_score_value = {
+	# First off, are we dealing with a hostile scheme against a character or a title?
+	if = {
+		limit = {
+			exists = scope:target
+			trigger_if = {
+				limit = {
+					scope:scheme ?= {
+						is_scheme_target_type = character
+						is_scheme_category = hostile
+					}
+				}
+				scope:scheme ?= {
+					scheme_target_character = { save_temporary_scope_as = target_character }
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					scope:scheme ?= {
+						is_scheme_target_type = title
+						is_scheme_category = hostile
+					}
+				}
+				scope:scheme ?= {
+					scheme_target_title.holder ?= { save_temporary_scope_as = target_character }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		# Do we have a scope:target_character to play with now?
+		if = {
+			limit = { exists = scope:target_character }
+			# Rabble Rouser
+			if = {
+				limit = {
+					has_court_position = rabble_rouser_court_position
+					is_court_position_employer = {
+						court_position = rabble_rouser_court_position
+						who = scope:target_character
+					}
+				}
+				add = {
+					add = scheme_agent_general_bonuses_contribution_score_bonus_major_value
+					desc = "SCHEME_AGENT_IS_RABBLE_ROUSER"
+				}
+			}
+		}
+	}
+	# Otherwise nada.
+	else = { value = 0 }
+}

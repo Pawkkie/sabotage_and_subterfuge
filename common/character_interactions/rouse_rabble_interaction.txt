@@ -1,0 +1,314 @@
+﻿rouse_rabble_interaction = {
+	icon = faction
+	category = interaction_category_hostile
+	scheme = rouse_rabble
+	common_interaction = yes
+	interface_priority = 60
+	ignores_pending_interaction_block = yes
+	send_name = START_SCHEME
+
+	desc = rouse_rabble_interaction_desc
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:actor = {
+			is_adult = yes
+		}
+		scope:recipient = {
+			highest_held_title_tier >= tier_county
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			can_start_scheme = {
+				type = rouse_rabble
+				target_character = scope:recipient
+			}
+		}
+		scope:recipient = { 
+			highest_held_title_tier >= tier_county
+		}
+		trigger_if = {
+			limit = {
+				scope:actor = {
+					is_landless_adventurer = yes
+				}
+			}
+			#Has to be used instead of diplo range checks in laamp to landed interactions
+			ep3_laamp_diplo_range_trigger = {
+				TARGET = scope:recipient
+				LAAMP = scope:actor
+			}
+		}
+	}
+
+	# Scheme Starter Packages
+	options_heading = schemes.t.agent_packages
+	send_options_exclusive = yes
+	## Balanced agents.
+	send_option = {
+		flag = agent_focus_balance
+		current_description = rouse_rabble_interaction.tt.agent_focus_balance
+	}
+	## Focused on Success Chance.
+	send_option = {
+		flag = agent_focus_success
+		current_description = rouse_rabble_interaction.tt.agent_focus_success
+	}
+	## Focused on Speed.
+	send_option = {
+		flag = agent_focus_speed
+		current_description = rouse_rabble_interaction.tt.agent_focus_speed
+	}
+    ## Focused on Secrecy.
+	send_option = {
+		flag = agent_focus_secrecy
+		current_description = rouse_rabble_interaction.tt.agent_focus_secrecy
+	}
+	on_accept = {
+		scope:actor = {
+			stress_impact = {
+				shy = medium_stress_impact_gain
+				craven = medium_stress_impact_gain
+				fickle = minor_stress_impact_gain
+			}
+		}
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = rouse_rabble_interaction_notification
+				left_icon = scope:actor					
+				right_icon = scope:recipient
+
+				# Success.
+				if = {
+					limit = { scope:agent_focus_success ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = rouse_rabble
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						AGENT_2 = agent_rabble_rouser
+						AGENT_3 = agent_diplomat
+						# Speed.
+						AGENT_4 = agent_gabbler
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+				# Speed.
+				else_if = {
+					limit = { scope:agent_focus_speed ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = rouse_rabble
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						# Speed.
+						AGENT_2 = agent_gabbler
+						AGENT_3 = agent_gabbler
+						AGENT_4 = agent_herald
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+				# Secrecy.
+				else_if = {
+					limit = { scope:agent_focus_secrecy ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = rouse_rabble
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						# Speed.
+						AGENT_2 = agent_gabbler
+						# Secrecy.
+						AGENT_3 = agent_justiciar
+						AGENT_4 = agent_justiciar
+						AGENT_5 = agent_amanuensis
+					}
+				}
+				# Balanced.
+				else = {
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = rouse_rabble
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						AGENT_2 = agent_diplomat
+						# Speed.
+						AGENT_3 = agent_gabbler
+						AGENT_4 = agent_herald
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+				show_as_tooltip = {
+					stress_impact = {
+						shy = medium_stress_impact_gain
+						craven = medium_stress_impact_gain
+						fickle = minor_stress_impact_gain
+					}
+				}
+			}
+		}
+	}
+	
+	auto_accept = yes
+	ai_targets = { 
+		ai_recipients = neighboring_rulers 
+		ai_recipients = peer_vassals
+	}
+	ai_frequency = 60
+
+	ai_potential = {
+		is_ruler = yes
+		ai_boldness >= low_positive_ai_value
+		OR = {
+			AND = {
+				diplomacy >= decent_skill_rating
+				intrigue >= decent_skill_rating
+			}
+			intrigue >= high_skill_rating
+			diplomacy >= high_skill_rating
+		}
+	}
+
+	ai_will_do = {
+		# They shouldn't always do this.
+		base = -100
+
+		# Opinion
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = -1
+		}
+		# At war with target
+		modifier = {
+			add = 100
+			scope:owner = { is_at_war_with = scope:target } 
+		}
+
+		ai_value_modifier = { ai_honor = -1 }
+		ai_value_modifier = { ai_boldness = 1 }
+
+		# Traits
+		# Positive modifiers
+		modifier = {
+			add = 25
+			scope:owner = { has_trait = brave }
+			desc = ROUSE_RABBLE_BRAVE
+		}
+		modifier = {
+			add = 75
+			scope:owner = { has_trait = gregarious }
+			desc = ROUSE_RABBLE_GREGARIOUS
+		}
+		modifier = {
+			add = 25
+			scope:owner = { has_trait = diplomat }
+			desc = ROUSE_RABBLE_DIPLOMAT
+		}
+		modifier = {
+			add = 50
+			scope:owner = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = 25
+			scope:owner = { has_trait = lifestyle_wayfarer }
+			desc = ROUSE_RABBLE_WAYFARER
+		}
+		modifier = {
+			add = 100
+			scope:owner = { has_trait = peasant_leader }
+			desc = ROUSE_RABBLE_PEASANT_LEADER
+		}
+		modifier = {
+			add = 100
+			scope:owner = { has_trait = populist_leader }
+			desc = ROUSE_RABBLE_POPULIST_LEADER
+		}
+		modifier = {
+			add = {
+				value = 25
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
+						}
+						add = 25
+					}
+				}
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
+						}
+						add = 25
+					}
+				}
+			}
+			desc = ROUSE_RABBLE_REVELER
+		}
+		modifier = {
+			add = {
+				value = 15
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 50 }
+						}
+						add = 35
+					}
+				}
+				scope:owner = {
+					if = { 
+						limit = {
+							has_trait_xp = { trait = lifestyle_traveler value >= 100 }
+						}
+						add = 50
+					}
+				}
+			}
+			desc = ROUSE_RABBLE_TRAVELER
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -75
+			scope:owner = { has_trait = craven }
+			desc = ROUSE_RABBLE_CRAVEN
+		}
+		modifier = {
+			add = -25
+			scope:owner = { has_trait = lazy }
+			desc = ROUSE_RABBLE_LAZY
+		}
+		modifier = {
+			add = -75
+			scope:owner = { has_trait = shy }
+			desc = ROUSE_RABBLE_SHY
+		}
+		modifier = {
+			add = -25
+			scope:owner = { has_trait = fickle }
+			desc = ROUSE_RABBLE_FICKLE
+		}
+		modifier = {
+			add = -75
+			scope:owner = { has_trait = reclusive }
+			desc = ROUSE_RABBLE_RECLUSIVE
+		}
+		modifier = {
+			add = -100
+			scope:owner = { has_trait = infirm }
+			desc = ROUSE_RABBLE_INFIRM
+		}
+	}
+}
