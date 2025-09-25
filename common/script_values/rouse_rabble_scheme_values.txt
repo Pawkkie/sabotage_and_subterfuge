@@ -71,13 +71,19 @@
 					value = 8
 					if = {
 						limit = {
-							has_trait_xp = { trait = lifestyle_traveler value >= 50 }
+							OR = {
+								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 50 }
+								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 50 }
+							}
 						}
 						add = 10
 					}
 					if = {
 						limit = {
-							has_trait_xp = { trait = lifestyle_traveler value >= 100 }
+							OR = {
+								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 100 }
+								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 100 }
+							}
 						}
 						add = 16
 					}

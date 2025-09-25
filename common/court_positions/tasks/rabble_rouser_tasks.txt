@@ -17,6 +17,10 @@
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
+	base_employer_modifier = {
+		max_rouse_rabble_schemes_add = 1
+	}
+
 	# Set Rousing Rabble variable on start
 	on_start = { 
 		add_character_flag = blocked_from_leaving # Stop character from traveling

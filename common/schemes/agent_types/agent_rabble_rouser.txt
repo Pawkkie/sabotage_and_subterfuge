@@ -184,19 +184,28 @@
 			add = {
 				if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_traveler value <= 49 }
+						OR = {
+							has_trait_xp = { trait = lifestyle_traveler track = travel value <= 49 }
+							has_trait_xp = { trait = lifestyle_traveler track = danger value <= 49 }
+						}
 					}
 					value = agent_trait_bonus_t1_value
 				}
 				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_traveler value <= 99 }
+						OR = {
+							has_trait_xp = { trait = lifestyle_traveler track = travel value <= 99 }
+							has_trait_xp = { trait = lifestyle_traveler track = danger value <= 99 }
+						}
 					}
 					value = agent_trait_bonus_t2_value
 				}
 				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_traveler value > 99 }
+						OR = {
+							has_trait_xp = { trait = lifestyle_traveler track = travel value > 99 }
+							has_trait_xp = { trait = lifestyle_traveler track = danger value > 99 }
+						}
 					}
 					value = agent_trait_bonus_t3_value
 				}

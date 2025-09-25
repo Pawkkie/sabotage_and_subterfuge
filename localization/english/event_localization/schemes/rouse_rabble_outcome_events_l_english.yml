@@ -1,0 +1,19 @@
+﻿l_english:
+ rouse_rabble_hear: "Rouse Rabble:"
+
+ rouse_rabble_outcome.0001.t: "$rouse_rabble_header$ OMG A TITLE 1"
+ rouse_rabble_outcome.0001.desc: "Oh my god we made a description 1"
+ rouse_rabble_outcome.0001.a: "Oh my god we made an option too! 1"
+
+ rouse_rabble_outcome.0002.t: "$rouse_rabble_header$ OMG A TITLE 2"
+ rouse_rabble_outcome.0002.desc: "Oh my god we made a description 2"
+ rouse_rabble_outcome.0002.a: "Oh my god we made an option too! 2"
+
+ rouse_rabble_outcome.0003.t: "$rouse_rabble_header$ OMG A TITLE 3"
+ rouse_rabble_outcome.0003.desc: "Oh my god we made a description 3"
+ rouse_rabble_outcome.0003.a: "Oh my god we made an option too! 3"
+
+ rouse_rabble_outcome.0004.t: "$rouse_rabble_header$ OMG A TITLE 3"
+ rouse_rabble_outcome.0004.desc: "Oh my god we made a description 3"
+ rouse_rabble_outcome.0004.a: "Oh my god we made an option too! 3"
+

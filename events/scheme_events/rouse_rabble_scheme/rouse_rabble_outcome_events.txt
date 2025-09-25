@@ -1,0 +1,45 @@
+﻿namespace = rouse_rabble_outcome
+
+# Successful and secret
+rouse_rabble_outcome.0001 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = rouse_rabble_outcome.0001.t
+	desc = rouse_rabble_outcome.0001.desc
+	option = {
+		name = rouse_rabble_outcome.0001.a
+	}
+}
+
+# Successful and discovered
+rouse_rabble_outcome.0002 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = rouse_rabble_outcome.0002.t
+	desc = rouse_rabble_outcome.0002.desc
+	option = {
+		name = rouse_rabble_outcome.0002.a
+	}
+}
+
+# Unsuccessful and secret
+rouse_rabble_outcome.0003 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = rouse_rabble_outcome.0003.t
+	desc = rouse_rabble_outcome.0003.desc
+	option = {
+		name = rouse_rabble_outcome.0003.a
+	}
+}
+
+# Unsuccessful and discovered
+rouse_rabble_outcome.0004 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = rouse_rabble_outcome.0004.t
+	desc = rouse_rabble_outcome.0004.desc
+	option = {
+		name = rouse_rabble_outcome.0004.a
+	}
+}

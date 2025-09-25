@@ -1,4 +1,4 @@
-rouse_rabble_invalidated_no_rabble_rouser = {
+﻿rouse_rabble_invalidated_no_rabble_rouser = {
 	global_past = rouse_rabble_invalidated_no_rabble_rouser
 	first_past = rouse_rabble_invalidated_no_rabble_rouser
 	third_past = rouse_rabble_invalidated_no_rabble_rouser

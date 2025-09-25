@@ -1,0 +1,18 @@
+﻿rouse_rabble_scheme = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_rabble_rouser.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_purple.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_intrigue"
+	}
+	background = { # Landless Adventurer
+		trigger = { government_has_flag = government_is_landless_adventurer }
+		reference = bp1_bonfire
+	}
+	background = {
+		reference = tavern
+	}
+}

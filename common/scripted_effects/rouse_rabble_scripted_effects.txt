@@ -2,12 +2,13 @@
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
-		value = event_id:scheme_critical_moments.1071
+		value = event_id:sas_scheme_critical_moments.1001
 	}
 	if = {
 		limit = {
 			NOT = { exists = scope:suppress_next_event }
 		}
-		scheme_owner = { trigger_event = sas_scheme_critical_moments.1000 }
+		scheme_owner = { trigger_event = sas_scheme_critical_moments.0002 }
 	}
 }
+## Check the vanilla file for equivalents to this, I'm kinda suspicious I need to make more changes beyond just adding it there

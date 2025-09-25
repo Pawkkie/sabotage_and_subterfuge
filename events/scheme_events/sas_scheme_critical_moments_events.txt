@@ -1,0 +1,1060 @@
+﻿
+namespace = sas_scheme_critical_moments
+
+##################################################
+# GENERAL SCRIPTED TRIGGERS & EFFECTS
+
+# Simple effect for rolling if a scheme with no secrecy succeeded or failed. No thrills, no frills.
+scripted_effect sas_roll_scheme_success_or_failure_effect = {
+	random = {
+		chance = scope:scheme.scheme_success_chance
+		save_scope_value_as = {
+			name = scheme_successful
+			value = yes
+		}
+	}
+	scope:owner = {
+		if = {
+			limit = { exists = scope:scheme_successful }
+			trigger_event = $SUCCESS_EVENT$
+		}
+		else = { trigger_event = $FAILURE_EVENT$ }
+	}
+}
+
+##################################################
+# BASE SYSTEM
+
+##################################################
+# Standard Critical Moment
+# by Ewan Cowhig Croft
+# 0001 - 0010
+##################################################
+
+scripted_trigger sas_scheme_critical_moments_0001_can_add_agents_trigger = {
+	scope:scheme = {
+		custom_tooltip = {
+			text = sas_scheme_critical_moments.0001.option.need_opportunities
+			scheme_agent_charges >= 1
+		}
+		custom_tooltip = {
+			text = sas_scheme_critical_moments.0001.option.max_slots
+			any_scheme_agent_slot = { count < character_max_scheme_agents_value }
+		}
+	}
+}
+
+scripted_effect sas_scheme_critical_moments_0001_configure_portraits_effect = {
+	# Let's configure some portraits!
+	## But only for the player, the AI doesn't care.
+	if = {
+		limit = { is_ai = no }
+		# If there's no target character, root goes in the centre.
+		if = {
+			limit = {
+				NOT = { exists = scope:scheme.scheme_target_character}
+			}
+			save_scope_as = centre_portrait
+		}
+		# Else, root goes on the left & scope:target on the right.
+		else = {
+			save_scope_as = left_portrait
+			if = {
+				limit = {
+					scope:target = {
+						NOT = {
+							this = root
+						}
+					}
+				}
+				scope:target = { save_scope_as = right_portrait }
+			}
+		}
+	}
+	# Do we need to show murder interception tooltips?
+	## Save this as a scope so that we don't have to faff with multiple scopes getting read into a script value.
+	if = {
+		limit = {
+			# No need to process the stuff below for robots.
+			is_ai = no
+			# Are we actually a murder?
+			scope:scheme = { is_savable_murder_scheme_trigger = yes }
+		}
+		scope:scheme = {
+			set_variable = {
+				name = target_intercept_repeatable_chance
+				value = scope:target.scheme_intercept_repeatable_chance_total_value
+			}
+		}
+	}
+}
+
+scripted_effect sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = {
+	# If this is a murder scheme, warn about intercepts.
+	if = {
+		limit = {
+			scope:scheme = { has_variable = target_intercept_repeatable_chance }
+		}
+		# Show the repeatable intercepter if relevant.
+		if = {
+			limit = { scope:scheme.var:target_intercept_repeatable_chance >= 1 }
+			# Aaaaand throw out our warning.
+			custom_tooltip = sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable
+			custom_tooltip = sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable_and_unique
+		}
+		# Otherwise just show the unique intercepter.
+		else = { custom_tooltip = sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.unique }
+	}
+	scope:scheme = {
+		change_opportunities = {
+			value = $COST$
+			multiply = -1
+		}
+	}
+	trigger_event = { saved_event_id = scope:follow_up_event }
+}
+
+#	Scheme Type A: choose between finalising your scheme, picking new agents, or starting the round again from the top.
+sas_scheme_critical_moments.0001 = {
+	type = character_event
+	window = scheme_preparations_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = { is_scheme_category = contract }
+				}
+				desc = sas_scheme_critical_moments.0001.t.task_contract
+			}
+			desc = sas_scheme_critical_moments.0001.t.scheme
+		}
+	}
+	desc = sas_scheme_critical_moments.0001.desc
+	theme = intrigue
+	left_portrait = {
+		character = scope:left_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	center_portrait = {
+		character = scope:centre_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	right_portrait = {
+		character = scope:right_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	# Background overrides.
+	## Tabbed one degree further for easy folding.
+		## Romantic schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { should_use_amorous_scheme_animation_trigger = yes }
+			}
+			reference = bedchamber
+		}
+		## Diplo schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = diplomacy }
+			}
+			reference = council_chamber
+		}
+		## Martial or prowess schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = {
+					scheme_skill = martial
+					scheme_skill = prowess
+				}
+			}
+			reference = armory
+		}
+		## Stewardship schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = stewardship }
+			}
+			reference = study
+		}
+		## Intrigue schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = intrigue }
+			}
+			reference = corridor_night
+		}
+		## Learning schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = learning }
+			}
+			reference = physicians_study
+		}
+	# Icon overrides.
+	## Tabbed one degree further for easy folding.
+		## Diplo schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = diplomacy }
+			}
+			reference = "gfx/interface/icons/event_types/type_diplomacy.dds"
+		}
+		## Martial or prowess schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = {
+					scheme_skill = martial
+					scheme_skill = prowess
+				}
+			}
+			reference = "gfx/interface/icons/event_types/type_martial.dds"
+		}
+		## Stewardship schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = stewardship }
+			}
+			reference = "gfx/interface/icons/event_types/type_stewardship.dds"
+		}
+		## Intrigue schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = intrigue }
+			}
+			reference = "gfx/interface/icons/event_types/type_intrigue.dds"
+		}
+		## Learning schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = learning }
+			}
+			reference = "gfx/interface/icons/event_types/type_learning.dds"
+		}
+
+	# Scheme Preparations status bar
+	widget = {
+		gui = "event_window_widget_scheme_preparations"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		NOT = { has_character_flag = currently_in_scheme_preparations }
+	}
+	
+	immediate = {
+		# Flag that we're in the event, so no doubles pls.
+		add_character_flag = currently_in_scheme_preparations
+		# Sort some aesthetic stuff for the player.
+		sas_scheme_critical_moments_0001_configure_portraits_effect = yes
+	}
+	
+	# Attempt to complete the scheme.
+	option = {
+		name = sas_scheme_critical_moments.0001.a
+		show_as_unavailable = { always = yes }
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= scheme_charge_to_advance_threshold_value }
+			}
+			#TODO_CD_EP3; disabled till we get a code fix — looks like this doesn't like evaluating before being run any more. Ironically since we turned off the error for evaluating before scheme finalisation.
+			#custom_tooltip = {
+			#	text = scheme_critical_moments.0001.a.tt.stymied.insufficient_success_chance
+			#	scope:scheme.scheme_success_chance >= 1
+			#}
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = { is_ai = yes }
+				scope:scheme = {
+					OR = {
+						# Either you've got a good shot.
+						scheme_success_chance >= 50
+						# Or you've run out of potential.
+						AND = {
+							scheme_number_of_filled_agent_slots >= character_max_scheme_agents_value
+							scope:scheme.scheme_success_chance >= scope:scheme.max_scheme_success_chance
+						}
+					}
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0001.a.tt.progress
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = scheme_charge_to_advance_threshold_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+	
+	# Choose first agent type.
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = { exists = scope:scheme.var:choice_a }
+						desc = sas_scheme_critical_moments.0001.b
+					}
+					desc = sas_scheme_critical_moments.0001.b.fallback
+				}
+			}
+		}
+		show_as_unavailable = { always = yes }
+		trigger = { sas_scheme_critical_moments_0001_can_add_agents_trigger = yes }
+
+		# Check for the variable so that, if we've run out of slots and not generated one, we don't error spam.
+		if = {
+			limit = { exists = scope:scheme.var:choice_a }
+			select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_a }
+		}
+		scope:scheme = { change_opportunities = -2 }
+
+		ai_chance = {
+			modifier = {
+				add = 25
+				scope:scheme = {
+					any_scheme_agent_slot = { count >= character_max_scheme_agents_value }
+				}
+			}
+		}
+	}
+	
+	# Choose second agent type.
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = { exists = scope:scheme.var:choice_b }
+						desc = sas_scheme_critical_moments.0001.c
+					}
+					desc = sas_scheme_critical_moments.0001.c.fallback
+				}
+			}
+		}
+		show_as_unavailable = { always = yes }
+		trigger = { sas_scheme_critical_moments_0001_can_add_agents_trigger = yes }
+
+		# Check for the variable so that, if we've run out of slots and not generated one, we don't error spam.
+		if = {
+			limit = { exists = scope:scheme.var:choice_b }
+			select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_b }
+		}
+		scope:scheme = { change_opportunities = -2 }
+
+		ai_chance = {
+			modifier = {
+				add = 25
+				scope:scheme = {
+					any_scheme_agent_slot = { count >= character_max_scheme_agents_value }
+				}
+			}
+		}
+	}
+	
+	# Void both and take another go around.
+	option = {
+		name = scheme_critical_moments.0001.d
+		show_as_unavailable = { always = yes }
+		trigger = { sas_scheme_critical_moments_0001_can_add_agents_trigger = yes }
+
+		scope:scheme = {
+			# Deduct the cost.
+			change_opportunities = -2
+			# Plus remember to clear our choices.
+			remove_variable = choice_a
+			remove_variable = choice_b
+			# Let's go again.
+			#TODO_CD_EP3; make this neutral
+			## Hack fix for murder.
+			#if = {
+			#	limit = { scheme_type = seduce }
+			#	remove_character_flag = currently_in_scheme_preparations
+			#	roll_critical_moment_options_06_agent_types_effect = {
+			#		# Success results event.
+			#		OUTPUT_EVENT = scheme_critical_moments.1001
+			#		# Assassin
+			#		AGENT_TYPE_01 = agent_assassin
+			#		AGENT_TYPE_01_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Lookout
+			#		AGENT_TYPE_02 = agent_lookout
+			#		AGENT_TYPE_02_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Infiltrator
+			#		AGENT_TYPE_03 = agent_infiltrator
+			#		AGENT_TYPE_03_WEIGHT = critical_moment_agent_weight_medium_value
+			#		# Footpad
+			#		AGENT_TYPE_04 = agent_footpad
+			#		AGENT_TYPE_04_WEIGHT = critical_moment_agent_weight_medium_value
+			#		# Alibi
+			#		AGENT_TYPE_05 = agent_alibi
+			#		AGENT_TYPE_05_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Poisoner
+			#		AGENT_TYPE_06 = agent_poisoner
+			#		AGENT_TYPE_06_WEIGHT = critical_moment_agent_weight_high_value
+			#	}
+			#}
+			## Hack fix for seduction.
+			#if = {
+			#	limit = { scheme_type = seduce }
+			#	remove_character_flag = currently_in_scheme_preparations
+			#	roll_critical_moment_options_07_agent_types_effect = {
+			#		# Success results event.
+			#		OUTPUT_EVENT = scheme_critical_moments.1011
+			#		# Lookout
+			#		AGENT_TYPE_01 = agent_lookout
+			#		AGENT_TYPE_01_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Infiltrator
+			#		AGENT_TYPE_02 = agent_infiltrator
+			#		AGENT_TYPE_02_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Comrade_in_arms
+			#		AGENT_TYPE_03 = agent_comrade_in_arms
+			#		AGENT_TYPE_03_WEIGHT = critical_moment_agent_weight_high_value
+			#		# Socialite
+			#		AGENT_TYPE_04 = agent_socialite
+			#		AGENT_TYPE_04_WEIGHT = critical_moment_agent_weight_medium_value
+			#		# Musician
+			#		AGENT_TYPE_05 = agent_musician
+			#		AGENT_TYPE_05_WEIGHT = critical_moment_agent_weight_low_value
+			#		# Tumbler
+			#		AGENT_TYPE_06 = agent_tumbler
+			#		AGENT_TYPE_06_WEIGHT = critical_moment_agent_weight_low_value
+			#		# Poet
+			#		AGENT_TYPE_07 = agent_poet
+			#		AGENT_TYPE_07_WEIGHT = critical_moment_agent_weight_low_value
+			#	}
+			#}
+		}
+		custom_tooltip = sas_scheme_critical_moments.0001.d.tt
+
+		# The AI selects its agent slots randomly, so it should never re-roll them.
+		ai_chance = { base = -1000 }
+	}
+
+	# Come back later.
+	option = {
+		name = sas_scheme_critical_moments.0001.h
+		
+		if = {
+			limit = {
+				scope:scheme = { scheme_agent_charges >= 1 }
+			}
+			custom_tooltip = sas_scheme_critical_moments.0001.h.tt.some_opportunities
+		}
+		else = { custom_tooltip = sas_scheme_critical_moments.0001.h.tt.zero_opportunities }
+
+		ai_chance = {
+			first_valid = {
+				modifier = {
+					add = -100
+					scope:scheme.scheme_success_chance >= scope:scheme.max_scheme_success_chance
+				}
+				modifier = {
+					add = 50
+					always = yes
+				}
+			}
+		}
+	}
+
+	after = {
+		remove_character_flag = currently_in_scheme_preparations
+		scope:scheme = { remove_variable = target_intercept_repeatable_chance }
+	}
+}
+
+# Scheme Type B: choose how many opportunities to spend on different ending types.
+sas_scheme_critical_moments.0002 = {
+	type = character_event
+	window = scheme_preparations_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = { is_scheme_category = contract }
+				}
+				desc = sas_scheme_critical_moments.0001.t.task_contract
+			}
+			desc = sas_scheme_critical_moments.0001.t.scheme
+		}
+	}
+	desc = sas_scheme_critical_moments.0002.desc
+	theme = intrigue
+	left_portrait = {
+		character = scope:left_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	center_portrait = {
+		character = scope:centre_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	right_portrait = {
+		character = scope:right_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	# Background overrides.
+	## Tabbed one degree further for easy folding.
+		## Raid Estate Scheme.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_type = rouse_rabble }
+			}
+			reference = tavern
+		}
+		## Romantic schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { should_use_amorous_scheme_animation_trigger = yes }
+			}
+			reference = bedchamber
+		}
+		## Diplo schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = diplomacy }
+			}
+			reference = council_chamber
+		}
+		## Martial or prowess schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = {
+					scheme_skill = martial
+					scheme_skill = prowess
+				}
+			}
+			reference = armory
+		}
+		## Stewardship schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = stewardship }
+			}
+			reference = study
+		}
+		## Intrigue schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = intrigue }
+			}
+			reference = corridor_night
+		}
+		## Learning schemes.
+		override_background = {
+			trigger = {
+				scope:scheme = { scheme_skill = learning }
+			}
+			reference = physicians_study
+		}
+	# Icon overrides.
+	## Tabbed one degree further for easy folding.
+		## Diplo schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = diplomacy }
+			}
+			reference = "gfx/interface/icons/event_types/type_diplomacy.dds"
+		}
+		## Martial or prowess schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = {
+					scheme_skill = martial
+					scheme_skill = prowess
+				}
+			}
+			reference = "gfx/interface/icons/event_types/type_martial.dds"
+		}
+		## Stewardship schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = stewardship }
+			}
+			reference = "gfx/interface/icons/event_types/type_stewardship.dds"
+		}
+		## Intrigue schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = intrigue }
+			}
+			reference = "gfx/interface/icons/event_types/type_intrigue.dds"
+		}
+		## Learning schemes.
+		override_icon = {
+			trigger = {
+				scope:scheme = { scheme_skill = learning }
+			}
+			reference = "gfx/interface/icons/event_types/type_learning.dds"
+		}
+
+	# Scheme Preparations status bar
+	widget = {
+		gui = "event_window_widget_scheme_preparations"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		NOR = {
+			has_character_flag = currently_in_scheme_preparations
+			has_character_flag = currently_in_scheme_reminder
+		}
+	}
+
+	immediate = {
+		# Flag that we're in the event, so no doubles pls.
+		add_character_flag = currently_in_scheme_preparations
+		# Sort some aesthetic stuff for the player.
+		sas_scheme_critical_moments_0001_configure_portraits_effect = yes
+	}
+
+	# Standard completion: no buffs.
+	option = {
+		name = sas_scheme_critical_moments.0002.a
+		show_as_unavailable = { always = yes }
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t1_value }
+			}
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = {
+					is_ai = yes
+					# Make sure the AI can get out of long schemes eventually.
+					scope:scheme.scheme_duration_days < 3650
+				}
+				scope:scheme = {
+					# Must have a good shot.
+					scheme_success_chance >= 50
+					# Only consider the best possible option.
+					scheme_agent_charges < multi_ending_scheme_charge_to_advance_threshold_t2_value
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0001.a.tt.progress
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t1_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+
+	# Pricier completion: minor success chance gains.
+	option = {
+		name = sas_scheme_critical_moments.0002.b
+		show_as_unavailable = { always = yes }
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t2_value }
+			}
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = {
+					is_ai = yes
+					# Make sure the AI can get out of long schemes eventually.
+					scope:scheme.scheme_duration_days < 3650
+				}
+				scope:scheme = {
+					# Must have a good shot.
+					scheme_success_chance >= 50
+					# Only consider the best possible option.
+					scheme_agent_charges < multi_ending_scheme_charge_to_advance_threshold_t3_value
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0002.b.tt.progress
+		scope:scheme = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.b.tt.clarify_buff
+				add_scheme_modifier = { type = scheme_end_buff_t2_modifier }
+			}
+		}
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t2_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+
+	# Very pricey completion: moderate success chance gains.
+	option = {
+		name = sas_scheme_critical_moments.0002.c
+		show_as_unavailable = { always = yes }
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t3_value }
+			}
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = {
+					is_ai = yes
+					# Make sure the AI can get out of long schemes eventually.
+					scope:scheme.scheme_duration_days < 3650
+				}
+				scope:scheme = {
+					# Must have a good shot.
+					scheme_success_chance >= 50
+					# Only consider the best possible option.
+					scheme_agent_charges < multi_ending_scheme_charge_to_advance_threshold_t4_value
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0002.c.tt.progress
+		scope:scheme = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.c.tt.clarify_buff
+				add_scheme_modifier = { type = scheme_end_buff_t3_modifier }
+			}
+		}
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t3_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+
+	# Max pricey completion: excellent success chance gains.
+	option = {
+		name = sas_scheme_critical_moments.0002.d
+		show_as_unavailable = { always = yes }
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t4_value }
+			}
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = {
+					is_ai = yes
+					# Make sure the AI can get out of long schemes eventually.
+					scope:scheme.scheme_duration_days < 3650
+				}
+				scope:scheme = {
+					OR = {
+						scheme_success_chance >= 50
+						AND = {
+							scheme_success_chance >= max_scheme_success_chance
+							scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t4_value
+						}
+					}
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0002.d.tt.progress
+		scope:scheme = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.d.tt.clarify_buff
+				add_scheme_modifier = { type = scheme_end_buff_t4_modifier }
+			}
+		}
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t4_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+
+	# Come back later.
+	option = {
+		name = sas_scheme_critical_moments.0002.e
+
+		if = {
+			limit = {
+				scope:scheme = { scheme_agent_charges >= 1 }
+			}
+			custom_tooltip = sas_scheme_critical_moments.0002.e.tt.some_opportunities
+		}
+		else = { custom_tooltip = sas_scheme_critical_moments.0002.e.tt.zero_opportunities }
+
+		ai_chance = {
+			first_valid = {
+				modifier = {
+					add = -100
+					scope:scheme.scheme_success_chance >= scope:scheme.max_scheme_success_chance
+				}
+				modifier = {
+					add = 50
+					always = yes
+				}
+			}
+			# If this scheme has been going on for a long time, execute it regardless.
+			first_valid = {
+				modifier = {
+					factor = 0
+					scope:scheme = {
+						is_scheme_category = contract
+						scheme_duration_days >= 1825
+					}
+				}
+				modifier = {
+					factor = 0
+					has_trait = impatient
+					scope:scheme.scheme_duration_days >= 1825
+				}
+				modifier = {
+					factor = 0
+					has_trait = patient
+					scope:scheme.scheme_duration_days >= 5475
+				}
+				modifier = {
+					factor = 0
+					scope:scheme.scheme_duration_days >= 3650
+				}
+			}
+		}
+	}
+
+	after = {
+		remove_character_flag = currently_in_scheme_preparations
+		scope:scheme = { remove_variable = target_intercept_repeatable_chance }
+	}
+}
+
+#	Error suppression.
+sas_scheme_critical_moments.0010 = {
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+		trigger_event = sas_scheme_critical_moments.0001
+		trigger_event = sas_scheme_critical_moments.0002
+		# trigger_event = sas_scheme_critical_moments.1001 # This was murder
+		# trigger_event = sas_scheme_critical_moments.1011 # This was seduce
+		save_scope_as = scheme_starter_personal_secrecy
+	}
+}
+
+##################################################
+# Reminders
+# by Ewan Cowhig Croft
+# 0011 - 0020
+##################################################
+
+#	Reminder event that you've hit the opportunities cap.
+sas_scheme_critical_moments.0011 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = { is_scheme_category = contract }
+				}
+				desc = sas_scheme_critical_moments.0011.t.task_contract
+			}
+			desc = sas_scheme_critical_moments.0011.t.scheme
+		}
+	}
+	desc = {
+		desc = sas_scheme_critical_moments.0011.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:scheme.scheme_target_character }
+				desc = sas_scheme_critical_moments.0011.desc.middle.character
+			}
+			triggered_desc = {
+				trigger = { exists = scope:scheme.scheme_target_title }
+				desc = sas_scheme_critical_moments.0011.desc.middle.title
+			}
+			# If we meet neither of these, we don't use a fallback and just leave the thing empty.
+		}
+		desc = sas_scheme_critical_moments.0011.desc.outro
+	}
+	theme = intrigue
+	left_portrait = {
+		character = root
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	right_portrait = {
+		character = scope:right_portrait
+		scripted_animation = scheme_prep_pick_best_stance
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	cooldown = { years = 1 }
+
+	immediate = {
+		# Portraits first.
+		scope:scheme = {
+			if = {
+				limit = { is_scheme_target_type = character }
+				scheme_target_character = {
+					if = {
+						limit = {
+							NOT = { this = root }
+						}
+						save_scope_as = right_portrait
+					}
+				}
+			}
+			else_if = {
+				limit = { is_scheme_target_type = title }
+				scheme_target_title.holder ?= {
+					if = {
+						limit = {
+							NOT = { this = root }
+						}
+						save_scope_as = right_portrait
+					}
+				}
+			}
+			else_if = {
+				limit = { is_scheme_target_type = faith }
+				scheme_target_faith.religious_head ?= {
+					if = {
+						limit = {
+							NOT = { this = root }
+						}
+						save_scope_as = right_portrait
+					}
+				}
+			}
+			else_if = {
+				limit = { is_scheme_target_type = culture }
+				scheme_target_culture.culture_head ?= {
+					if = {
+						limit = {
+							NOT = { this = root }
+						}
+						save_scope_as = right_portrait
+					}
+				}
+			}
+		}
+		# Plus clarify exactly what's happening.
+		custom_tooltip = sas_scheme_critical_moments.0011.immediate.tt
+	}
+
+	# Max pricey completion: excellent success chance gains.
+	option = {
+		name = sas_scheme_critical_moments.0011.c
+		trigger = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities
+				scope:scheme = { scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t4_value }
+			}
+			# Only fire this if we've actually got a follow-up event configured.
+			exists = scope:follow_up_event
+			# Tell the AI not to bother unless their chance are at least 50:50.
+			trigger_if = {
+				limit = { is_ai = yes }
+				scope:scheme = {
+					OR = {
+						scheme_success_chance >= 50
+						AND = {
+							scheme_success_chance >= max_scheme_success_chance
+							scheme_agent_charges >= multi_ending_scheme_charge_to_advance_threshold_t4_value
+						}
+					}
+				}
+			}
+		}
+
+		# Scheme gon' try to conclude.
+		custom_tooltip = sas_scheme_critical_moments.0002.d.tt.progress
+		scope:scheme = {
+			custom_tooltip = {
+				text = sas_scheme_critical_moments.0002.d.tt.clarify_buff
+				add_scheme_modifier = { type = scheme_end_buff_t4_modifier }
+			}
+		}
+		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t4_value }
+
+		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+	}
+
+	# Noted, and don't remind me again.
+	option = {
+		name = sas_scheme_critical_moments.0011.a
+		
+		custom_tooltip = sas_scheme_critical_moments.0011.a.tt
+		set_variable = {
+			name = opportunities_reminder
+			value = yes
+		}
+	}
+	
+	# Noted.
+	option = {
+		name = sas_scheme_critical_moments.0011.b
+		
+		custom_tooltip = sas_scheme_critical_moments.0011.b.tt
+	}
+
+	after = {
+		remove_character_flag = currently_in_scheme_reminder
+		scope:scheme = { remove_variable = target_intercept_repeatable_chance }
+	}
+}
+
+##################################################
+# Rouse Rabble Results
+# 1000 - 100X
+##################################################
+# Check result
+sas_scheme_critical_moments.1001 = {
+	hidden = yes
+	theme = rouse_rabble_scheme
+	immediate = {
+		scope:scheme = {
+			# Do the success Roll
+			random = {
+				chance = scheme_success_chance
+				save_scope_value_as = {
+					name = scheme_succeeded
+					value = yes
+				}
+			}
+			# Do the Secrecy Roll
+			save_scope_value_as = {
+				name = discovery_chance
+				value = {
+					value = 100
+					subtract = scheme_secrecy
+				}
+			}
+			random = {
+				chance = scope:discovery_chance
+				save_scope_value_as = {
+					name = scheme_discovered
+					value = yes
+				}
+			}
+
+			# On Success:
+			if = {
+				limit = { exists = scope:scheme_succeeded }
+				# Discovered
+				if = {
+					limit = { exists = scope:scheme_discovered }
+					scheme_owner = {
+						trigger_event = rouse_rabble_outcome.0001
+					}
+				}
+				# Secret
+				else = {
+					scheme_owner = {
+						trigger_event = rouse_rabble_outcome.0002
+					}
+				}
+			}
+			# On Failure:
+			else = {
+				if = {
+					limit = { exists = scope:scheme_discoverd }
+					scheme_owner = {
+						trigger_event = rouse_rabble_outcome.0003
+					}
+				}
+				else = {
+					scheme_owner = {
+						trigger_event = rouse_rabble_outcome.0004
+					}
+				}
+			}
+		}
+	}
+}
