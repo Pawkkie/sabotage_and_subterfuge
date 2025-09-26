@@ -16,3 +16,18 @@
 		reference = tavern
 	}
 }
+
+rouse_rabble_reveler = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_rabble_rouser.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_blue.dds"
+	}
+	sound = {
+		reference = "event:/DLC/EP2/SFX/Events/Grand_Activities/Feasts/ep2_event_grand_feast"
+	}
+	background = {
+		reference = tavern
+	}
+}

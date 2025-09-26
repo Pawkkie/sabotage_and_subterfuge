@@ -3,20 +3,207 @@
 # Successful and secret
 rouse_rabble_outcome.0001 = {
 	type = character_event
+	window = scheme_successful_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0001.t
 	desc = rouse_rabble_outcome.0001.desc
+	left_portrait = {
+		character = scope:owner
+		animation = toast_goblet
+	}
+	center_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = drink_goblet
+	}
+	right_portrait = {
+		character = scope:target
+		animation = anger
+	}
 	option = {
 		name = rouse_rabble_outcome.0001.a
+		hidden_effect = { rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes }
+		custom_tooltip = {
+			text = progress_towards_reveler_tt
+			reveler_points_gain_effect = {
+				CHANGE = 1
+				RANDOM_CHANGE = 1
+			}
+		}
+		# Create peasant faction
+		# hidden_effect_new_object = {
+		# 	create_character = {
+		# 		location = scope:target.capital_province
+		# 		template = peasant_faction_leader_template
+		# 		gender_female_chance = rouse_rabble_target_faith_dominant_gender_female_chance
+		# 		faith = scope:target.capital_county.faith
+		# 		culture = scope:target.capital_county.culture
+		# 		save_scope_as = leader
+		# 	}
+		# 	scope:leader = {
+		# 		create_faction = {
+		# 			type = peasant_faction
+		# 			target = scope:target
+		# 		}
+		# 	}
+		# }
+		provoke_vassals_success_effect = yes
+		scope:owner.court_position:rabble_rouser_court_position = { 
+			hidden_effect = { 
+				rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes
+					reveler_points_gain_effect = {
+						CHANGE = 1
+						RANDOM_CHANGE = 1
+					}
+			}
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = 20
+				}
+				scope:owner.court_position:rabble_rouser_court_position = { 
+					if = {
+						limit = { 
+							NOT = { 
+								has_trait = populist_leader
+							} 
+						}
+						add_trait = populist_leader
+						if = { 
+							limit = { has_trait = peasant_leader }
+							remove_trait = peasant_leader
+						}
+					}
+				}
+				if = {
+					limit = { 
+						NOT = { 
+							has_trait = populist_leader
+						} 
+					}
+					random = {
+						chance = 15
+						add_trait = populist_leader
+					}
+					if = { 
+						limit = { has_trait = peasant_leader }
+						remove_trait = peasant_leader
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = -20
+				}
+				scope:owner.court_position:rabble_rouser_court_position = { 
+					if = {
+						limit = { 
+							NOT = { 
+								has_trait = peasant_leader 
+								has_trait = populist_leader
+							} 
+						}
+						add_trait = peasant_leader
+					}
+				}
+				if = {
+					limit = { 
+						NOT = { 
+							has_trait = peasant_leader 
+							has_trait = populist_leader
+						} 
+					}
+					random = {
+						chance = 15
+						add_trait = peasant_leader
+					}
+				}
+			}
+		}
 	}
 }
 
 # Successful and discovered
 rouse_rabble_outcome.0002 = {
 	type = character_event
+	window = scheme_successful_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0002.t
 	desc = rouse_rabble_outcome.0002.desc
+	left_portrait = {
+		character = scope:owner
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:target
+		animation = happiness
+	}
 	option = {
 		name = rouse_rabble_outcome.0002.a
 	}
@@ -25,9 +212,22 @@ rouse_rabble_outcome.0002 = {
 # Unsuccessful and secret
 rouse_rabble_outcome.0003 = {
 	type = character_event
+	window = scheme_failed_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0003.t
 	desc = rouse_rabble_outcome.0003.desc
+	left_portrait = {
+		character = scope:owner
+		animation = happiness
+	}
+	center_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:target
+		animation = happiness
+	}
 	option = {
 		name = rouse_rabble_outcome.0003.a
 	}
@@ -36,10 +236,110 @@ rouse_rabble_outcome.0003 = {
 # Unsuccessful and discovered
 rouse_rabble_outcome.0004 = {
 	type = character_event
+	window = scheme_failed_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0004.t
 	desc = rouse_rabble_outcome.0004.desc
+	left_portrait = {
+		character = scope:owner
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:target
+		animation = happiness
+	}
 	option = {
 		name = rouse_rabble_outcome.0004.a
+	}
+}
+
+# Gained Reveler trait
+rouse_rabble_outcome.0005 = {
+	type = character_event
+	title = rouse_rabble_outcome.0005.t
+	desc = rouse_rabble_outcome.0005.desc
+	theme = rouse_rabble_reveler
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = toast_goblet
+	}
+	cooldown = { years = 15 }
+
+	option = { # Yes
+		name = rouse_rabble_outcome.0005.a
+		add_trait = lifestyle_reveler
+		if = {
+			limit = {
+				culture = { has_cultural_parameter = reveler_traits_more_valued }
+			}
+			add_prestige = miniscule_prestige_gain
+		}
+		stress_impact = {
+			shy = minor_stress_impact_gain
+			reclusive = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				culture = { has_cultural_parameter = reveler_traits_more_valued }
+				factor = 2
+			}
+			modifier = {
+				has_trait = education_diplomacy
+				factor = 2
+			}
+			modifier = {
+				trigger_if = {
+					limit = {
+						is_ai = yes
+						is_vassal_of = scope:host
+					}
+					has_vassal_stance = courtly
+				}
+				factor = 2
+			}
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_boldness = 0.5
+				ai_sociability = 0.5
+				ai_zeal = -1
+			}
+		}
+	}
+
+	option = { # No
+		name = rouse_rabble_outcome.0005.b
+		stress_impact = {
+			gregarious = minor_stress_impact_gain
+			drunkard = medium_stress_impact_gain
+			hashishiyah = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				is_clergy = yes
+				factor = 2
+			}
+			modifier = {
+				trigger_if = {
+					limit = {
+						is_ai = yes
+						is_vassal_of = scope:host
+					}
+					has_vassal_stance = courtly
+				}
+				factor = 2
+			}
+			ai_value_modifier = {
+				ai_energy = -0.5
+				ai_boldness = -0.5
+				ai_sociability = -0.5
+				ai_zeal = 1
+			}
+		}
 	}
 }

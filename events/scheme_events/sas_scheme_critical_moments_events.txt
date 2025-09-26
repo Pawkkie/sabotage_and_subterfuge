@@ -1037,7 +1037,7 @@ sas_scheme_critical_moments.1001 = {
 				# Secret
 				else = {
 					scheme_owner = {
-						trigger_event = rouse_rabble_outcome.0002
+						trigger_event = rouse_rabble_outcome.0001
 					}
 				}
 			}
@@ -1046,12 +1046,12 @@ sas_scheme_critical_moments.1001 = {
 				if = {
 					limit = { exists = scope:scheme_discoverd }
 					scheme_owner = {
-						trigger_event = rouse_rabble_outcome.0003
+						trigger_event = rouse_rabble_outcome.0001
 					}
 				}
 				else = {
 					scheme_owner = {
-						trigger_event = rouse_rabble_outcome.0004
+						trigger_event = rouse_rabble_outcome.0001
 					}
 				}
 			}

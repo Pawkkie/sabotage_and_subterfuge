@@ -174,3 +174,17 @@ scheme_agent_rabble_rouser_bonuses_contribution_score_value = {
 	# Otherwise nada.
 	else = { value = 0 }
 }
+
+rouse_rabble_target_faith_dominant_gender_female_chance = {
+	if = {
+		limit = { scope:target.capital_county.faith = { has_doctrine = doctrine_gender_male_dominated } }
+		add = 0
+	}
+	else_if = {
+		limit = { scope:target.capital_county.faith = { has_doctrine = doctrine_gender_female_dominated } }
+		add = 100
+	}
+	else = {
+		add = 50
+	}
+}

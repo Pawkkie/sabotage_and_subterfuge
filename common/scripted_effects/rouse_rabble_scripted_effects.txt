@@ -1,4 +1,6 @@
-﻿rouse_rabble_scheme_prep_effect = {
+﻿## Check the vanilla file for equivalents to this, I'm kinda suspicious I need to make more changes beyond just adding it there
+
+rouse_rabble_scheme_prep_effect = {
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
@@ -11,4 +13,117 @@
 		scheme_owner = { trigger_event = sas_scheme_critical_moments.0002 }
 	}
 }
-## Check the vanilla file for equivalents to this, I'm kinda suspicious I need to make more changes beyond just adding it there
+
+rouse_rabble_reveler_lifestyle_rank_up_check_effect = {
+	if = {
+		limit = {
+			NOT = { has_trait = lifestyle_reveler }
+		}
+		random = {
+			chance = 15
+			modifier = {
+				add = -10
+				faith = { trait_is_sin = lifestyle_reveler }
+			}
+			modifier = {
+				add = -10
+				has_trait = temperate
+			}
+			modifier = {
+				add = -10
+				has_trait = inappetetic
+			}
+			modifier = {
+				add = 10
+				culture = { has_cultural_parameter = reveler_traits_more_valued }
+			}
+			modifier = {
+				add = 5
+				has_trait = gluttonous
+			}
+			modifier = {
+				add = 5
+				has_trait = drunkard
+			}
+			modifier = {
+				add = 5
+				has_trait = comfort_eater
+			}
+			modifier = {
+				add = 15
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_3_threshold
+			}
+			modifier = {
+				add = 15
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_2_threshold
+			}
+			modifier = {
+				add = 15
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_1_threshold
+			}
+			trigger_event = rouse_rabble_outcome.0005
+			show_as_tooltip = {
+				add_trait = lifestyle_reveler
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = { has_trait = lifestyle_reveler }
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_3_threshold
+			}
+			add_trait_xp = {
+				trait = lifestyle_reveler
+				value = 10
+			}
+		}
+		else_if = {
+			limit = {
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_2_threshold
+			}
+			add_trait_xp = {
+				trait = lifestyle_reveler
+				value = 5
+			}
+		}
+		else_if = {
+			limit = {
+				exists = var:reveler_lifestyle_progress
+				var:reveler_lifestyle_progress >= reveler_rank_up_1_threshold
+			}
+			add_trait_xp = {
+				trait = lifestyle_reveler
+				value = 3
+			}
+		}
+		else = {
+			add_trait_xp = {
+				trait = lifestyle_reveler
+				value = 1
+			}
+		}
+		set_variable = {
+			name = reveler_lifestyle_progress
+			value = 0
+		}
+	}
+}
+
+rouse_rabble_peasant_faction = {
+
+}
+
+provoke_vassals_success_effect = {
+	scope:target = {
+		create_faction = {
+			type = independence_faction
+			target = scope:target.liege
+		}
+	}
+}
