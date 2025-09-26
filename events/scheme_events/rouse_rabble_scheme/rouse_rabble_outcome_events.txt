@@ -46,6 +46,7 @@ rouse_rabble_outcome.0001 = {
 		# 		}
 		# 	}
 		# }
+		
 		provoke_vassals_success_effect = yes
 		scope:owner.court_position:rabble_rouser_court_position = { 
 			hidden_effect = { 

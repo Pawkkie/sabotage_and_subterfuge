@@ -493,7 +493,7 @@ sas_scheme_critical_moments.0002 = {
 	}
 	# Background overrides.
 	## Tabbed one degree further for easy folding.
-		## Raid Estate Scheme.
+		## Rouse Rabble
 		override_background = {
 			trigger = {
 				scope:scheme = { scheme_type = rouse_rabble }

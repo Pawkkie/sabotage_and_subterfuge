@@ -1,5 +1,4 @@
-﻿## Check the vanilla file for equivalents to this, I'm kinda suspicious I need to make more changes beyond just adding it there
-
+﻿
 rouse_rabble_scheme_prep_effect = {
 	save_scope_as = scheme
 	save_scope_value_as = {

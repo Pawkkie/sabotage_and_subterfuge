@@ -1,6 +1,6 @@
 ﻿rouse_rabble_scheme = {
 	icon = {
-		reference = "gfx/interface/icons/event_types/type_rabble_rouser.dds"
+		reference = "gfx/interface/icons/event_types/type_rouse_rabble.dds"
 	}
 	header_background = {
 		reference = "gfx/interface/window_event/event_header_purple.dds"
@@ -19,7 +19,7 @@
 
 rouse_rabble_reveler = {
 	icon = {
-		reference = "gfx/interface/icons/event_types/type_rabble_rouser.dds"
+		reference = "gfx/interface/icons/event_types/type_rouse_rabble.dds"
 	}
 	header_background = {
 		reference = "gfx/interface/window_event/event_header_blue.dds"
