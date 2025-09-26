@@ -14,7 +14,7 @@
  rabble_rouser_task_rouse_rabble:0 "Rouse Rabble"
  rabble_rouser_task_rouse_rabble_desc:0 "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
  # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
- allow_rouse_rabble_scheme_tt: "Can use the [rouse_rabble_scheme|E] [hostile_scheme|E]. This task must be active to both start and continue the scheme."
+ allow_rouse_rabble_scheme_tt: "Can use the [rouse_rabble_scheme|E]. This task must be active to both start and continue the scheme."
 
  # Provoke Vassals task
  rabble_rouser_task_provoke_vassals:0 "Provoke Vassals"
