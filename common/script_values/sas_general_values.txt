@@ -1,0 +1,3 @@
+﻿# Rabble Rouser bonuses
+pacify_the_masses_helps_bonus = 25
+rouse_rabble_helps_bonus = 25

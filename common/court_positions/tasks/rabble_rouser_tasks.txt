@@ -23,7 +23,7 @@
 
 	# Set Rousing Rabble variable on start
 	on_start = { 
-		add_character_flag = blocked_from_leaving # Stop character from traveling
+		# add_character_flag = blocked_from_leaving # Stop character from traveling
 		scope:liege = {
 			set_variable = {
 				name = rabble_rouser_is_rousing_rabble
@@ -44,7 +44,7 @@
 	}
 
 	on_end = { 
-		remove_character_flag = blocked_from_leaving # Removing travel block
+		# remove_character_flag = blocked_from_leaving # Removing travel block
 		scope:liege = {
 			set_variable = {
 				name = rabble_rouser_is_rousing_rabble
@@ -126,7 +126,44 @@ rabble_rouser_task_pacify_the_masses = {
 			}
 		}
 	}
-	
+
+	on_start = {
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+	}
+
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_pacifying_the_masses = no }
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = no
+			}
+		}
+	}
+
+	employer_modifier = {
+		effect = {
+			custom_description_no_bullet = {
+				text = increased_rouse_rabble_defense
+			}
+		}
+	}
+
 	scaling_employer_modifiers = {
 		terrible = {
 			county_opinion_add = 1
@@ -163,7 +200,7 @@ rabble_rouser_task_pacify_the_masses = {
 			character_capital_county_monthly_development_growth_add = 0.1
 		}
 	}
-	
+
 	ai_will_do = {
 		value = {
 			add = 25

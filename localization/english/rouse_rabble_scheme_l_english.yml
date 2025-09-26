@@ -49,6 +49,9 @@
  ROUSE_RABBLE_DISLOYAL: "[GetTrait('disloyal').GetName( GetPlayer )]: $VALUE|=+0$"
  ROUSE_RABBLE_REVELER: "[GetTrait('lifestyle_reveler').GetName( GetPlayer )]: $VALUE|=+0$"
  ROUSE_RABBLE_TRAVELER: "[GetTrait('lifestyle_traveler').GetName( GetPlayer )]: $VALUE|=+0$"
+ ROUSE_RABBLE_HELPS_BONUS: "[rabble_rouser_court_position|E]'s aid: $VALUE|+0=-+$"
+ PACIFY_THE_MASSES_HELPS_BONUS: "Enemy [rabble_rouser_court_position|E]'s aid: $VALUE|+0=-+$"
+ INCREASED_ROUSE_RABBLE_DEFENSE_25: "Initial Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]: #P -[EmptyScope.ScriptValue('pacify_the_masses_helps_bonus')|0]%#!"
 
  # Scheme info
  rouse_rabble: "Rouse Rabble"

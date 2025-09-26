@@ -109,6 +109,19 @@
 
 		hostile_scheme_base_chance_modifier = yes
 
+		modifier = { # Rabble Rouser helps
+			desc = ROUSE_RABBLE_HELPS_BONUS
+			always = yes
+			add = rouse_rabble_helps_bonus
+		}
+
+		modifier = { # Rabble Rouser protects
+			add = -pacify_the_masses_helps_bonus
+			desc = PACIFY_THE_MASSES_HELPS_BONUS
+			scope:target.var:rabble_rouser_is_pacifying_the_masses = yes
+		}
+
+
 		# Countermeasures.
 		apply_indirect_scheme_success_chance_adjustments_modifier = yes
 		
