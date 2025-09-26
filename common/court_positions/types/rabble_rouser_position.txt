@@ -249,7 +249,7 @@
 		trigger_if = {
 			limit = {
 				is_ai = yes
-				highest_held_title_tier <= tier_county
+				highest_held_title_tier < tier_county
 			}
 			always = no
 		}
@@ -257,7 +257,7 @@
 
 	valid_position = {
 		is_landed_or_landless_administrative = yes
-		highest_held_title_tier >= tier_duchy
+		highest_held_title_tier >= tier_county
 	}
 
 	is_shown_character = {
@@ -459,7 +459,7 @@
 		}
 	}
 
-	# custom_employer_modifier_description = rabble_rouser_custom_effect_description
+	custom_employer_modifier_description = rabble_rouser_custom_effect_description
 
 	modifier = {
 		intrigue = 1

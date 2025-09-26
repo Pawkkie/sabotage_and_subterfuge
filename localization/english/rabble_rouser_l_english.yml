@@ -2,6 +2,7 @@
  # Court Position
  rabble_rouser_court_position:0 "Rabble Rouser"
  rabble_rouser_court_position_desc:0 "Keen to stir the pot, the Rabble Rouser has a knack for getting in with the right crowd and firing them up. They can travel to other realms and incite peasant revolts or vassal uprisings, or stay at home and spread the good word of your excellence."
+ rabble_rouser_custom_effect_description:"$BULLET$Can allow access to the [rouse_rabble_scheme|E] [hostile_scheme|E]" 
 
  # Traits
  court_position_wayfarer_trait:0 "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]"
