@@ -188,6 +188,14 @@ rouse_rabble_outcome.0001 = {
 			}
 		}
 	}
+	after = {
+	if = {
+		limit = { exists = scope:scheme }
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+}
 }
 
 # Successful and discovered
@@ -207,6 +215,14 @@ rouse_rabble_outcome.0002 = {
 	}
 	option = {
 		name = rouse_rabble_outcome.0002.a
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
 	}
 }
 
@@ -232,6 +248,14 @@ rouse_rabble_outcome.0003 = {
 	option = {
 		name = rouse_rabble_outcome.0003.a
 	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
 }
 
 # Unsuccessful and discovered
@@ -251,6 +275,14 @@ rouse_rabble_outcome.0004 = {
 	}
 	option = {
 		name = rouse_rabble_outcome.0004.a
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
 	}
 }
 
