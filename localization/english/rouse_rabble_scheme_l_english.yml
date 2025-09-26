@@ -50,8 +50,7 @@
  ROUSE_RABBLE_REVELER: "[GetTrait('lifestyle_reveler').GetName( GetPlayer )]: $VALUE|=+0$"
  ROUSE_RABBLE_TRAVELER: "[GetTrait('lifestyle_traveler').GetName( GetPlayer )]: $VALUE|=+0$"
  ROUSE_RABBLE_HELPS_BONUS: "[rabble_rouser_court_position|E]'s aid: $VALUE|+0=-+$"
- PACIFY_THE_MASSES_HELPS_BONUS: "Enemy [rabble_rouser_court_position|E]'s aid: $VALUE|+0=-+$"
- INCREASED_ROUSE_RABBLE_DEFENSE_25: "Initial Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]: #P -[EmptyScope.ScriptValue('pacify_the_masses_helps_bonus')|0]%#!"
+ PACIFY_THE_MASSES_HURTS_BONUS: "Enemy [rabble_rouser_court_position|E]'s aid: $VALUE|+0=-+$"
 
  # Scheme info
  rouse_rabble: "Rouse Rabble"
@@ -63,7 +62,7 @@
  ROUSE_RABBLE_SUCCESS_DESC: "The rabble having been roused, inciting a peasant revolt"
  ROUSE_RABBLE_DISCOVERY_DESC: "You can continue rousing the rabble in [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] realm."
 
- max_rouse_rabble_schemes_add: "Max [GetScheme('rouse_rabble').GetTypeName] [schemes|E]"
+ max_rouse_rabble_schemes_add: "#T ·#! Max [GetScheme('rouse_rabble').GetTypeName] [schemes|E]"
 
 ## Character Interaction Scheme Agent Packages
  rouse_rabble_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]"

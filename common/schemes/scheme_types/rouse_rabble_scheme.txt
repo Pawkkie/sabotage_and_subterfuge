@@ -116,8 +116,8 @@
 		}
 
 		modifier = { # Rabble Rouser protects
-			add = -pacify_the_masses_helps_bonus
-			desc = PACIFY_THE_MASSES_HELPS_BONUS
+			add = pacify_the_masses_hurts_bonus
+			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			scope:target.var:rabble_rouser_is_pacifying_the_masses = yes
 		}
 

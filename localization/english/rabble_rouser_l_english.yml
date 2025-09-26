@@ -11,8 +11,9 @@
 
  # Rouse Rabble task
  rabble_rouser_task_rouse_rabble:0 "Rouse Rabble"
- rabble_rouser_task_rouse_rabble_desc:0 "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt.\n\n@warning_icon!This task must be active to both start and continue the [rouse_rabble_scheme|E].\n\nIf at any point the [rabble_rouser_court_position|E] is unemployed or switches tasks, the scheme will be cancelled."
+ rabble_rouser_task_rouse_rabble_desc:0 "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
  # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "Can use the [rouse_rabble_scheme|E] [hostile_scheme|E]. This task must be active to both start and continue the scheme."
 
  # Provoke Vassals task
  rabble_rouser_task_provoke_vassals:0 "Provoke Vassals"
@@ -21,3 +22,4 @@
  # Pacify the Masses task
  rabble_rouser_task_pacify_the_masses: "Pacify the Masses"
  rabble_rouser_task_pacify_the_masses_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."
+ increased_rouse_rabble_defense_25_tt: "Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]: #P [EmptyScope.ScriptValue('pacify_the_masses_hurts_bonus')|0]%#!"

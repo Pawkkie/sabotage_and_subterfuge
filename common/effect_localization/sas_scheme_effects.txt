@@ -27,7 +27,3 @@ rouse_rabble_invalidated_is_travelling = {
 	first_past = rouse_rabble_invalidated_is_travelling
 	third_past = rouse_rabble_invalidated_is_travelling
 }
-
-increased_rouse_rabble_defense = {
-	global = INCREASED_ROUSE_RABBLE_DEFENSE_25
-}
