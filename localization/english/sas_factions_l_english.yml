@@ -1,0 +1,18 @@
+﻿l_english:
+ # Roused Rabble
+ roused_rabble_faction: "Roused Rabble Faction"
+ roused_rabble_faction_desc: "The Roused Rabble [faction|E], formed of peasants emboldened by the words of a fiery revolutionary, have decided it's high time to bring their complaints to their liege directly on the field of battle."
+ roused_rabble_faction_short_effect_desc: "Wants to disrupt their liege's operations"
+ roused_rabble_faction_every_county: "Every [faction|E] [county|E]"
+ roused_rabble_faction_spawn_county_levies: "Raises a [new_title.GetAdjective] [army|E] proportional to its [levies|E]"
+ FACTION_DEMAND_ROUSED_RABBLE: "To the [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]"
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "We have been burdened with your oppressive laws for far too long. No more! We are done paying you taxes.\n\nOnce your coffers dry up and your larders are empty, you will wish you had treated us more fairly."
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "I guess I could grant a tax lien..."
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "Never! A peasant's lot is to serve their lord!"
+ FACTION_ROUSED_RABBLE_NAME: "Roused Rabble"
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "Roused Rabble Revolt"
+ FACTION_REASON_RABBLE_ROUSED: "Target of a [rouse_rabble_scheme|E]: $VALUE|0+=$"
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"
+ roused_rabble_faction_event_troops:0 "Roused Rabble Uprising"

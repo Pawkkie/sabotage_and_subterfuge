@@ -161,7 +161,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -5
 			scope:target = { 
-				court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position ?= {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 1
@@ -176,7 +176,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -10
 			scope:target = { 
-				court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position ?= {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 2
@@ -191,7 +191,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -15
 			scope:target = { 
-				court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position ?= {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 3
@@ -206,7 +206,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -20
 			scope:target = { 
-				court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position ?= {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 4

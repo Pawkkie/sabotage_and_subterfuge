@@ -29,25 +29,50 @@ rouse_rabble_outcome.0001 = {
 				RANDOM_CHANGE = 1
 			}
 		}
-		# Create peasant faction
-		# hidden_effect_new_object = {
-		# 	create_character = {
-		# 		location = scope:target.capital_province
-		# 		template = peasant_faction_leader_template
-		# 		gender_female_chance = rouse_rabble_target_faith_dominant_gender_female_chance
-		# 		faith = scope:target.capital_county.faith
-		# 		culture = scope:target.capital_county.culture
-		# 		save_scope_as = leader
-		# 	}
-		# 	scope:leader = {
-		# 		create_faction = {
-		# 			type = peasant_faction
-		# 			target = scope:target
-		# 		}
-		# 	}
-		# }
-		
-		provoke_vassals_success_effect = yes
+
+		hidden_effect = {
+			scope:target = {
+				random_sub_realm_county = {
+					limit = { 
+						NOT = { has_county_modifier = county_rabble_roused_modifier }
+					}
+					weight = {
+						base = 1
+						# More likely to finance county of your own Faith or Culture
+						modifier = {
+							add = 2
+							OR = {
+								faith = scope:owner.faith
+								culture = scope:owner.culture
+							}
+						}
+						# More likely to finance county prone to trigger populist factions
+						modifier = {
+							add = 5
+							NAND = {
+								faith = scope:target.faith
+								culture = scope:target.culture
+							}
+						}
+						# More likely to finance county bordering your Realm
+						modifier = {
+							add = 3
+							any_neighboring_county = {
+								holder = scope:owner
+							}
+						}
+					}
+					save_scope_as = chosen_county
+				}
+			}
+		}
+
+		hidden_effect = {
+			scope:chosen_county = {
+				add_county_modifier = county_rabble_roused_modifier
+			}
+		}
+
 		scope:owner.court_position:rabble_rouser_court_position = { 
 			hidden_effect = { 
 				rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes

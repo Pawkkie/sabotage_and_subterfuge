@@ -1,0 +1,3 @@
+﻿county_rabble_roused_modifier = {
+	icon = county_modifier_opinion_negative
+}
