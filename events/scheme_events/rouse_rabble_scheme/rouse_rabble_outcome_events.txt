@@ -71,6 +71,12 @@ rouse_rabble_outcome.0001 = {
 			scope:chosen_county = {
 				add_county_modifier = county_rabble_roused_modifier
 			}
+			scope:target = {
+				set_variable = {
+					name = roused_rabble_schemer
+					value = scope:owner
+				}
+			}
 		}
 
 		scope:owner.court_position:rabble_rouser_court_position = { 
@@ -350,16 +356,6 @@ rouse_rabble_outcome.0005 = {
 				has_trait = education_diplomacy
 				factor = 2
 			}
-			modifier = {
-				trigger_if = {
-					limit = {
-						is_ai = yes
-						is_vassal_of = scope:host
-					}
-					has_vassal_stance = courtly
-				}
-				factor = 2
-			}
 			ai_value_modifier = {
 				ai_energy = 0.5
 				ai_boldness = 0.5
@@ -380,16 +376,6 @@ rouse_rabble_outcome.0005 = {
 			base = 25
 			modifier = {
 				is_clergy = yes
-				factor = 2
-			}
-			modifier = {
-				trigger_if = {
-					limit = {
-						is_ai = yes
-						is_vassal_of = scope:host
-					}
-					has_vassal_stance = courtly
-				}
 				factor = 2
 			}
 			ai_value_modifier = {

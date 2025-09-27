@@ -120,3 +120,21 @@ sas_faction_demand.1002 = {
 		}
 	}
 }
+
+sas_faction_demand.1003 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = rouse_rabble_outcome.0001.t
+	desc = rouse_rabble_outcome.0001.desc
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	right_portrait = {
+		character = scope:peasant_leader
+		animation = anger
+	}
+	option = {
+		name = rouse_rabble_outcome.0001.a
+	}
+}
