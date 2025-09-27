@@ -148,12 +148,10 @@
 		modifier = {
 			desc = ROUSE_RABBLE_HELPS_BONUS
 			add = 20
-			scope:owner = { 
-				scope:court_position:rabble_rouser_court_position = {
-					aptitude = {
-						court_position = rabble_rouser_court_position
-						value >= 4
-					}
+			scope:owner.court_position:rabble_rouser_court_position = {
+				aptitude = {
+					court_position = rabble_rouser_court_position
+					value >= 4
 				}
 			}
 		}
@@ -163,7 +161,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -5
 			scope:target = { 
-				scope:court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position = {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 1
@@ -178,7 +176,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -10
 			scope:target = { 
-				scope:court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position = {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 2
@@ -193,7 +191,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -15
 			scope:target = { 
-				scope:court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position = {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 3
@@ -208,7 +206,7 @@
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
 			add = -20
 			scope:target = { 
-				scope:court_position:rabble_rouser_court_position = {
+				court_position:rabble_rouser_court_position = {
 					aptitude = {
 						court_position = rabble_rouser_court_position
 						value == 4
