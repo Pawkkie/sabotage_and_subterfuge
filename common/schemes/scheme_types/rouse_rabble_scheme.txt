@@ -49,10 +49,12 @@
 			custom_description = {
 				text = rabble_rouser_rousing_rabble
 				subject = scope:owner.court_position:rabble_rouser_court_position
-				scope:owner.var:rabble_rouser_is_rousing_rabble = yes
+				scope:owner = {
+					exists = var:rabble_rouser_is_rousing_rabble
+					var:rabble_rouser_is_rousing_rabble = yes
+				}
 			}
 		}
-
 		# Rabble Rouser availability
 		# trigger_if = {
 		# 	limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
@@ -109,18 +111,113 @@
 
 		hostile_scheme_base_chance_modifier = yes
 
-		modifier = { # Rabble Rouser helps
+		# Rabble Rouser helps
+		modifier = {
 			desc = ROUSE_RABBLE_HELPS_BONUS
-			always = yes
-			add = rouse_rabble_helps_bonus
+			add = 5
+			scope:owner.court_position:rabble_rouser_court_position = { 
+				aptitude = {
+					court_position = rabble_rouser_court_position
+					value == 1
+				}
+			}
+		}
+		modifier = {
+			desc = ROUSE_RABBLE_HELPS_BONUS
+			add = 10
+			scope:owner.court_position:rabble_rouser_court_position = { 
+				
+				aptitude = {
+					court_position = rabble_rouser_court_position
+					value == 2
+				}
+			}
 		}
 
-		modifier = { # Rabble Rouser protects
-			add = pacify_the_masses_hurts_bonus
+		modifier = {
+			desc = ROUSE_RABBLE_HELPS_BONUS
+			add = 15
+			scope:owner.court_position:rabble_rouser_court_position = { 
+				aptitude = {
+					court_position = rabble_rouser_court_position
+					value == 3
+				}
+			}
+		}
+
+		modifier = {
+			desc = ROUSE_RABBLE_HELPS_BONUS
+			add = 20
+			scope:owner = { 
+				scope:court_position:rabble_rouser_court_position = {
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value >= 4
+					}
+				}
+			}
+		}
+
+		# Rabble Rouser Protects
+		modifier = {
 			desc = PACIFY_THE_MASSES_HURTS_BONUS
-			scope:target.var:rabble_rouser_is_pacifying_the_masses = yes
+			add = -5
+			scope:target = { 
+				scope:court_position:rabble_rouser_court_position = {
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value == 1
+					}
+				}
+				exists = var:rabble_rouser_is_pacifying_the_masses
+				var:rabble_rouser_is_pacifying_the_masses = yes
+			}
 		}
 
+		modifier = {
+			desc = PACIFY_THE_MASSES_HURTS_BONUS
+			add = -10
+			scope:target = { 
+				scope:court_position:rabble_rouser_court_position = {
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value == 2
+					}
+				}
+				exists = var:rabble_rouser_is_pacifying_the_masses
+				var:rabble_rouser_is_pacifying_the_masses = yes
+			}
+		}
+
+		modifier = {
+			desc = PACIFY_THE_MASSES_HURTS_BONUS
+			add = -15
+			scope:target = { 
+				scope:court_position:rabble_rouser_court_position = {
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value == 3
+					}
+				}
+				exists = var:rabble_rouser_is_pacifying_the_masses
+				var:rabble_rouser_is_pacifying_the_masses = yes
+			}
+		}
+
+		modifier = {
+			desc = PACIFY_THE_MASSES_HURTS_BONUS
+			add = -20
+			scope:target = { 
+				scope:court_position:rabble_rouser_court_position = {
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value == 4
+					}
+				}
+				exists = var:rabble_rouser_is_pacifying_the_masses
+				var:rabble_rouser_is_pacifying_the_masses = yes
+			}
+		}
 
 		# Countermeasures.
 		apply_indirect_scheme_success_chance_adjustments_modifier = yes
@@ -177,54 +274,9 @@
 			desc = ROUSE_RABBLE_LOYAL
 		}
 		modifier = {
-			add = {
-				value = 10
-				scope:owner = {
-					if = { 
-						limit = {
-							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
-						}
-						add = 10
-					}
-				}
-				scope:owner = {
-					if = { 
-						limit = {
-							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
-						}
-						add = 10
-					}
-				}
-			}
+			add = 15
+			scope:owner = { has_trait = lifestyle_reveler }
 			desc = ROUSE_RABBLE_REVELER
-		}
-		modifier = {
-			add = {
-				value = 5
-				scope:owner = {
-					if = { 
-						limit = {
-							OR = {
-								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 50 }
-								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 50 }
-							}
-						}
-						add = 5
-					}
-				}
-				scope:owner = {
-					if = { 
-						limit = {
-							OR = {
-								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 100 }
-								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 100 }
-							}
-						}
-						add = 10
-					}
-				}
-			}
-			desc = ROUSE_RABBLE_TRAVELER
 		}
 
 		# Negative modifiers
@@ -262,6 +314,11 @@
 			add = -10
 			scope:owner = { has_trait = disloyal }
 			desc = ROUSE_RABBLE_DISLOYAL
+		}
+		modifier = {
+			add = -15
+			scope:owner = { has_trait = lifestyle_reveler }
+			desc = ROUSE_RABBLE_REVELER
 		}
 	}
 	base_secrecy = {
