@@ -38,6 +38,7 @@
 				highest_held_title_tier >= tier_duchy
 			}
 		}
+
 		# Rabble Rouser employed
 		custom_description = {
 			text = have_rabble_rouser_court_position

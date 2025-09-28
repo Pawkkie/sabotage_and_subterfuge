@@ -117,12 +117,6 @@
 		hidden_effect = {
 			scope:attacker = {
 				joined_faction = {
-					every_faction_county_member = {
-						if = {
-							limit = { has_county_modifier = county_rabble_roused_modifier }
-							remove_county_modifier = county_rabble_roused_modifier
-						}
-					}
 					destroy_faction = yes
 				}
 			}

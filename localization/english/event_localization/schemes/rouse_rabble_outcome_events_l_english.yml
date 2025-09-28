@@ -1,30 +1,31 @@
 ﻿l_english:
  rouse_rabble_header: "Rouse Rabble:"
+ roused_rabble_faction_started_tt: "The rabble will establish a peasant [faction|E] and revolt in the next year or so. You'll receive word before the uprising begins."
 
  ## Success and secret
- rouse_rabble_outcome.0001.t: "$rouse_rabble_header$ OMG A TITLE 1"
- rouse_rabble_outcome.0001.desc: "Oh my god we made a description 1"
- rouse_rabble_outcome.0001.a: "Oh my god we made an option too! 1"
+ rouse_rabble_outcome.0001.t: "Whispers from Abroad"
+ rouse_rabble_outcome.0001.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers in hushed tones about the burning flames of rebellion they'd seen in the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\nIt appears no one can figure out what has emboldened them so suddenly, but an uprising seems unavoidable, and [target.GetShortUIName] is barely aware. Our efforts worked perfectly!"
+ rouse_rabble_outcome.0001.a: "Let their fires burn bright!"
  rouse_rabble_outcome.0001.prog: "You and your [rabble_rouser|E] progress towards the [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]"
 
  ## Success and discovered
- rouse_rabble_outcome.0002.t: "$rouse_rabble_header$ OMG A TITLE 2"
- rouse_rabble_outcome.0002.desc: "Oh my god we made a description 2"
- rouse_rabble_outcome.0002.a: "Oh my god we made an option too! 2"
+ rouse_rabble_outcome.0002.t: "Suspicions from Abroad"
+ rouse_rabble_outcome.0002.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers in hushed tones about the burning flames of rebellion they'd seen in the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\nThey kept stealing glances in my direction, a gaze of biting distaste. It is no mystery what has emboldened them so suddenly, but an uprising seems unavoidable, and [target.GetShortUIName] is furious."
+ rouse_rabble_outcome.0002.a: "Let their fires burn bright!"
 
  ## Unsuccessful and secret
- rouse_rabble_outcome.0003.t: "$rouse_rabble_header$ OMG A TITLE 3"
- rouse_rabble_outcome.0003.desc: "Oh my god we made a description 3"
- rouse_rabble_outcome.0003.a: "Oh my god we made an option too! 3"
+ rouse_rabble_outcome.0003.t: "Unkindled Hearts"
+ rouse_rabble_outcome.0003.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers about the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier], and their redoubled patriotism in the face of adversity.\n\nIn spite of our best efforts, the peasants are content with their lot in life."
+ rouse_rabble_outcome.0003.a: "At least, for now..."
 
  ## Unsuccessful and discovered
- rouse_rabble_outcome.0004.t: "$rouse_rabble_header$ OMG A TITLE 3"
- rouse_rabble_outcome.0004.desc: "Oh my god we made a description 3"
- rouse_rabble_outcome.0004.a: "Oh my god we made an option too! 3"
+ rouse_rabble_outcome.0004.t: "Hardened Minds"
+ rouse_rabble_outcome.0004.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers about the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier], and their redoubled patriotism in the face of adversity.\n\nThey kept stealing glances in my direction, a gaze of biting distaste. It is no mystery that I attempted to drive them to rebellion, and [target.GetShortUIName] is furious."
+ rouse_rabble_outcome.0004.a: "We'll get them eventually!"
 
  ## Gained Reveler trait
  rouse_rabble_outcome.0005.t: "Rousing the Soul"
- rouse_rabble_outcome.0005.desc: "Who'd have thought that cheering and motivating the public could be so invigorating? There's food, there's drink, there's cheer... the common man looking out for one another, rallying against a sense of oppression.\n\nI may have started this plan with other motivations, but the plight of the people has become my own!"
+ rouse_rabble_outcome.0005.desc: "Who'd have thought that cheering on and motivating the public could be so invigorating? There's food, there's drink, there's cheer... the common man looking out for one another, rallying against a sense of oppression.\n\nI may have started this plan with other motivations, but the plight of the people has become my own!"
  rouse_rabble_outcome.0005.a: "I look forward to toasting them when next we meet!"
  rouse_rabble_outcome.0005.b: "I should really keep myself at a distance..."
 

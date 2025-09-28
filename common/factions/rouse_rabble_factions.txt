@@ -52,6 +52,12 @@ roused_rabble_faction = {
 		scope:faction.faction_target = {
 			trigger_event = sas_faction_demand.1001
 		}
+		every_faction_county_member = {
+			if = {
+				limit = { has_county_modifier = county_rabble_roused_modifier }
+				remove_county_modifier = county_rabble_roused_modifier
+			}
+		}
 	}
 
 	ai_demand_chance = {
@@ -168,75 +174,71 @@ roused_rabble_faction = {
 	}
 
 	on_war_start = {
-		# Give the peasant leader a small purse so they don't immediately go bankrupt with army maintenance.
+		# Duchy initialization so we can concentrate the rebels in just a few important counties instead of spreading them over the entire realm.
 		every_faction_county_member = {
-			root.faction_leader = {
-				add_gold = 10
+			duchy = {
+				add_to_list = areas_of_rebellion
 			}
-		}
-		if = {
-			limit = { has_variable = ep3_governor_yearly_8150_ignored }
-			root.faction_leader = {
-				spawn_army = {
-					name = ep3_governor_yearly_8150_troop_name
-					men_at_arms = {
-						type = light_footmen
-						stacks = 2
-					}
-					war = root.faction_war
-					location = root.faction_leader.location
-					origin = root.faction_leader.location
-					inheritable = no
-				}
-			}
-			remove_variable = ep3_governor_yearly_8150_ignored
 		}
 
-		# If the target is Restoring Rome, the faction gets a military boon
-		if = {
-			limit = {
-				root.faction_target = { ep3_restored_rome_hard_mode_trigger = yes }
-			}
-			save_scope_value_as = {
-				name = spawn_army_size_levies
-				value = {
-					value = 1
-					root = {
-						every_faction_county_member = {
-							add = building_levies
-						}
+		# Check where in the duchy the rebellion troops should spawn, then spawn them.
+		every_in_list = {
+			list = areas_of_rebellion
+			save_temporary_scope_as = this_duchy
+
+			# Determine where in the duchy those troops should spawn.
+			ordered_in_de_jure_hierarchy = {
+				# Troops can only spawn in counties that belong to our faction!
+				limit = {
+					tier = tier_county
+					any_title_joined_faction = {
+						this = root
 					}
 				}
+
+				# Sort counties by how many levies they provide; rebels will spawn in the strongest county.
+				order_by = total_county_levies
+
+				title_province = {
+					save_temporary_scope_as = local_center_of_rebellion
+				}
 			}
+
+			# Spawn the faction troops in the designated location.
 			root.faction_leader = {
-				spawn_army = {
-					name = ep3_restoring_rome_citizen_army_name
-					levies = scope:spawn_army_size_levies
-					men_at_arms = {
-						type = pikemen_unit
-						stacks = 16
+				spawn_popular_revolt_troops = yes
+			}
+			
+			# Give the populist leader a commander for each stack of troops.
+			create_character = {
+				template = new_commander_character
+				location = scope:local_center_of_rebellion
+				faith = root.faction_leader.faith
+				culture = root.faction_leader.culture
+				save_scope_as = new_populist_commander
+				gender_female_chance = {
+					if = {
+						limit = { root.faction_leader.culture = { has_cultural_parameter = martial_custom_male_only_combatant } }
+						add = 0
 					}
-					men_at_arms = {
-						type = mangonel
-						stacks = 6
+					else_if = {
+						limit = { root.faction_leader.culture = { has_cultural_parameter = martial_custom_female_only_combatant } }
+						add = 100
 					}
-					men_at_arms = {
-						type = armored_footmen
-						stacks = 10
+					else = {
+						add = 50
 					}
-					men_at_arms = {
-						type = light_footmen
-						stacks = 10
-					}
-					men_at_arms = {
-						type = bowmen
-						stacks = 10
-					}
-					war = root.faction_war
-					location = root.faction_leader.location
-					origin = root.faction_leader.location
-					inheritable = no
 				}
+			}
+			scope:new_populist_commander = {
+				set_employer = root.faction_leader
+			}
+		}
+
+		# Give the populist leader a small purse so they don't immediately go bankrupt with army maintenance.
+		every_faction_county_member = {
+			root.faction_leader = {
+				add_gold = 25
 			}
 		}
 	}

@@ -17,7 +17,7 @@ rouse_rabble_outcome.0001 = {
 	}
 	right_portrait = {
 		character = scope:target
-		animation = anger
+		animation = dismissal
 	}
 	option = {
 		name = rouse_rabble_outcome.0001.a
@@ -28,6 +28,9 @@ rouse_rabble_outcome.0001 = {
 				CHANGE = 1
 				RANDOM_CHANGE = 1
 			}
+		}
+		custom_tooltip = {
+			text = roused_rabble_faction_started_tt
 		}
 
 		hidden_effect = {
@@ -220,13 +223,13 @@ rouse_rabble_outcome.0001 = {
 		}
 	}
 	after = {
-	if = {
-		limit = { exists = scope:scheme }
-		scope:scheme = {
-			end_scheme = yes
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
 		}
 	}
-}
 }
 
 # Successful and discovered
@@ -238,14 +241,218 @@ rouse_rabble_outcome.0002 = {
 	desc = rouse_rabble_outcome.0002.desc
 	left_portrait = {
 		character = scope:owner
-		animation = happiness
+		animation = toast_goblet
+	}
+	center_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = drink_goblet
 	}
 	right_portrait = {
 		character = scope:target
-		animation = happiness
+		animation = rage
 	}
 	option = {
 		name = rouse_rabble_outcome.0002.a
+		hidden_effect = { rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes }
+		custom_tooltip = {
+			text = progress_towards_reveler_tt
+			reveler_points_gain_effect = {
+				CHANGE = 1
+				RANDOM_CHANGE = 1
+			}
+		}
+		custom_tooltip = {
+			text = roused_rabble_faction_started_tt
+		}
+
+		hidden_effect = {
+			scope:target = {
+				random_sub_realm_county = {
+					limit = { 
+						NOT = { has_county_modifier = county_rabble_roused_modifier }
+					}
+					weight = {
+						base = 1
+						# More likely to finance county of your own Faith or Culture
+						modifier = {
+							add = 2
+							OR = {
+								faith = scope:owner.faith
+								culture = scope:owner.culture
+							}
+						}
+						# More likely to finance county prone to trigger populist factions
+						modifier = {
+							add = 5
+							NAND = {
+								faith = scope:target.faith
+								culture = scope:target.culture
+							}
+						}
+						# More likely to finance county bordering your Realm
+						modifier = {
+							add = 3
+							any_neighboring_county = {
+								holder = scope:owner
+							}
+						}
+					}
+					save_scope_as = chosen_county
+				}
+			}
+		}
+
+		hidden_effect = {
+			scope:chosen_county = {
+				add_county_modifier = county_rabble_roused_modifier
+			}
+			scope:target = {
+				set_variable = {
+					name = roused_rabble_schemer
+					value = scope:owner
+				}
+			}
+		}
+
+		scope:owner.court_position:rabble_rouser_court_position = { 
+			hidden_effect = { 
+				rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes
+					reveler_points_gain_effect = {
+						CHANGE = 1
+						RANDOM_CHANGE = 1
+					}
+			}
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = 20
+				}
+				scope:owner.court_position:rabble_rouser_court_position = { 
+					if = {
+						limit = { 
+							NOT = { 
+								has_trait = populist_leader
+							} 
+						}
+						add_trait = populist_leader
+						if = { 
+							limit = { has_trait = peasant_leader }
+							remove_trait = peasant_leader
+						}
+					}
+				}
+				if = {
+					limit = { 
+						NOT = { 
+							has_trait = populist_leader
+						} 
+					}
+					random = {
+						chance = 15
+						add_trait = populist_leader
+					}
+					if = { 
+						limit = { has_trait = peasant_leader }
+						remove_trait = peasant_leader
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = -20
+				}
+				scope:owner.court_position:rabble_rouser_court_position = { 
+					if = {
+						limit = { 
+							NOT = { 
+								has_trait = peasant_leader 
+								has_trait = populist_leader
+							} 
+						}
+						add_trait = peasant_leader
+					}
+				}
+				if = {
+					limit = { 
+						NOT = { 
+							has_trait = peasant_leader 
+							has_trait = populist_leader
+						} 
+					}
+					random = {
+						chance = 15
+						add_trait = peasant_leader
+					}
+				}
+			}
+		}
 	}
 	after = {
 		if = {
@@ -260,21 +467,17 @@ rouse_rabble_outcome.0002 = {
 # Unsuccessful and secret
 rouse_rabble_outcome.0003 = {
 	type = character_event
-	window = scheme_failed_event
+	window = scheme_successful_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0003.t
 	desc = rouse_rabble_outcome.0003.desc
 	left_portrait = {
 		character = scope:owner
-		animation = happiness
-	}
-	center_portrait = {
-		character = scope:owner.court_position:rabble_rouser_court_position
-		animation = happiness
+		animation = disappointed
 	}
 	right_portrait = {
-		character = scope:target
-		animation = happiness
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = shame
 	}
 	option = {
 		name = rouse_rabble_outcome.0003.a
@@ -292,17 +495,21 @@ rouse_rabble_outcome.0003 = {
 # Unsuccessful and discovered
 rouse_rabble_outcome.0004 = {
 	type = character_event
-	window = scheme_failed_event
+	window = scheme_successful_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0004.t
 	desc = rouse_rabble_outcome.0004.desc
 	left_portrait = {
 		character = scope:owner
-		animation = happiness
+		animation = disappointed
+	}
+	center_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = shame
 	}
 	right_portrait = {
 		character = scope:target
-		animation = happiness
+		animation = rage
 	}
 	option = {
 		name = rouse_rabble_outcome.0004.a
