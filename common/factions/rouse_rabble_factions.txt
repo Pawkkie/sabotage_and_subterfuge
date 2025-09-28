@@ -52,12 +52,6 @@ roused_rabble_faction = {
 		scope:faction.faction_target = {
 			trigger_event = sas_faction_demand.1001
 		}
-		every_faction_county_member = {
-			if = {
-				limit = { has_county_modifier = county_rabble_roused_modifier }
-				remove_county_modifier = county_rabble_roused_modifier
-			}
-		}
 	}
 
 	ai_demand_chance = {
@@ -126,13 +120,14 @@ roused_rabble_faction = {
 	}
 
 	county_join_score =  {	
+		base = 0
+
 		modifier = {
 			desc = "FACTION_REASON_RABBLE_ROUSED"
 			add = 100
 			has_county_modifier = county_rabble_roused_modifier
 		}
 		
-		base = 0
 		compare_modifier = {
 			desc = "FACTION_REASON_COUNTY_OPINION"
 			value = county_opinion
@@ -162,10 +157,11 @@ roused_rabble_faction = {
 	}
 
 	can_county_join = {
-		
+
 	}
 
 	can_county_create = {
+		title_is_a_faction_member = no
 		has_county_modifier = county_rabble_roused_modifier
 	}
 

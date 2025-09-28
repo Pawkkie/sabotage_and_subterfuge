@@ -35,49 +35,30 @@ rouse_rabble_outcome.0001 = {
 
 		hidden_effect = {
 			scope:target = {
-				random_sub_realm_county = {
-					limit = { 
-						NOT = { has_county_modifier = county_rabble_roused_modifier }
-					}
-					weight = {
-						base = 1
-						# More likely to finance county of your own Faith or Culture
-						modifier = {
-							add = 2
-							OR = {
-								faith = scope:owner.faith
-								culture = scope:owner.culture
-							}
-						}
-						# More likely to finance county prone to trigger populist factions
-						modifier = {
-							add = 5
-							NAND = {
-								faith = scope:target.faith
-								culture = scope:target.culture
-							}
-						}
-						# More likely to finance county bordering your Realm
-						modifier = {
-							add = 3
-							any_neighboring_county = {
-								holder = scope:owner
-							}
-						}
-					}
-					save_scope_as = chosen_county
-				}
-			}
-		}
-
-		hidden_effect = {
-			scope:chosen_county = {
-				add_county_modifier = county_rabble_roused_modifier
-			}
-			scope:target = {
 				set_variable = {
 					name = roused_rabble_schemer
 					value = scope:owner
+				}
+				ordered_sub_realm_county = {
+					limit = { 
+						NOT = { has_county_modifier = county_rabble_roused_modifier }
+					}
+					order_by = total_county_levies
+					max = {
+						if = {
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=1 }
+							value = 1
+						}
+						else_if = {
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=3 }
+							value = 2
+						}
+						else = {
+							value = 3
+						}
+					}
+					check_range_bounds = no
+					add_county_modifier = county_rabble_roused_modifier
 				}
 			}
 		}
@@ -267,49 +248,30 @@ rouse_rabble_outcome.0002 = {
 
 		hidden_effect = {
 			scope:target = {
-				random_sub_realm_county = {
-					limit = { 
-						NOT = { has_county_modifier = county_rabble_roused_modifier }
-					}
-					weight = {
-						base = 1
-						# More likely to finance county of your own Faith or Culture
-						modifier = {
-							add = 2
-							OR = {
-								faith = scope:owner.faith
-								culture = scope:owner.culture
-							}
-						}
-						# More likely to finance county prone to trigger populist factions
-						modifier = {
-							add = 5
-							NAND = {
-								faith = scope:target.faith
-								culture = scope:target.culture
-							}
-						}
-						# More likely to finance county bordering your Realm
-						modifier = {
-							add = 3
-							any_neighboring_county = {
-								holder = scope:owner
-							}
-						}
-					}
-					save_scope_as = chosen_county
-				}
-			}
-		}
-
-		hidden_effect = {
-			scope:chosen_county = {
-				add_county_modifier = county_rabble_roused_modifier
-			}
-			scope:target = {
 				set_variable = {
 					name = roused_rabble_schemer
 					value = scope:owner
+				}
+				ordered_sub_realm_county = {
+					limit = { 
+						NOT = { has_county_modifier = county_rabble_roused_modifier }
+					}
+					order_by = total_county_levies
+					max = {
+						if = {
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=1 }
+							value = 1
+						}
+						else_if = {
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=3 }
+							value = 2
+						}
+						else = {
+							value = 3
+						}
+					}
+					check_range_bounds = no
+					add_county_modifier = county_rabble_roused_modifier
 				}
 			}
 		}

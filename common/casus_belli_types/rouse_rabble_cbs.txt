@@ -74,6 +74,19 @@
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
+
+		hidden_effect = {
+			scope:attacker = {
+				joined_faction = {
+					every_faction_county_member = {
+						if = {
+							limit = { has_county_modifier = county_rabble_roused_modifier }
+							remove_county_modifier = county_rabble_roused_modifier
+						}
+					}
+				}
+			}
+		}
 	}
 
 	on_white_peace_desc = {
@@ -100,6 +113,19 @@
 			}
 		}
 
+		hidden_effect = {
+			scope:attacker = {
+				joined_faction = {
+					every_faction_county_member = {
+						if = {
+							limit = { has_county_modifier = county_rabble_roused_modifier }
+							remove_county_modifier = county_rabble_roused_modifier
+						}
+					}
+				}
+			}
+		}
+
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
 	}
@@ -114,6 +140,20 @@
 			add_character_flag = peasant_revolt_do_not_kill
 			remove_variable = rebel_leader_peasants
 		}
+
+		hidden_effect = {
+			scope:attacker = {
+				joined_faction = {
+					every_faction_county_member = {
+						if = {
+							limit = { has_county_modifier = county_rabble_roused_modifier }
+							remove_county_modifier = county_rabble_roused_modifier
+						}
+					}
+				}
+			}
+		}
+
 		hidden_effect = {
 			scope:attacker = {
 				joined_faction = {

@@ -19,6 +19,11 @@
  sas_faction_demand.1003.a: "Discreetly fund the rabble"
  sas_faction_demand.1003.b: "They'll be fine on their own"
 
+ # Roused Rabble Demands Accepted
+#  sas_faction_demand.1004.t: "Rabble Rocked and Rolled"
+#  sas_faction_demand.1004.desc: "It seems the liege has caved to the rabble's demands!"
+#  sas_faction_demand.1004.a: "Serves them right!"
+
  # Roused Rabble War
  ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"
  roused_rabble_faction_event_troops:0 "Roused Rabble Uprising"
