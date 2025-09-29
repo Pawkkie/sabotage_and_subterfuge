@@ -74,14 +74,61 @@ sas_faction_demand.1003 = {
 	title = sas_faction_demand.1003.t
 	desc = sas_faction_demand.1003.desc
 	right_portrait = {
+		character = root
+		animation = thinking
+	}
+	option = {
+		name = sas_faction_demand.1003.a
+		remove_short_term_gold  = funded_rabble_big
+		scope:new_faction = {
+			every_faction_county_member = {
+				set_variable = {
+					name = schemer_funded_rabble
+					value = funded_rabble_big
+				}
+			}
+		}
+	}
+	option = {
+		name = sas_faction_demand.1003.b
+		remove_short_term_gold  = funded_rabble_medium
+		scope:new_faction = {
+			every_faction_county_member = {
+				set_variable = {
+					name = schemer_funded_rabble
+					value = funded_rabble_medium
+				}
+			}
+		}
+	}
+	option = {
+		name = sas_faction_demand.1003.c
+		remove_short_term_gold  = funded_rabble_small
+		scope:new_faction = {
+			every_faction_county_member = {
+				set_variable = {
+					name = schemer_funded_rabble
+					value = funded_rabble_small
+				}
+			}
+		}
+	}
+	option = {
+		name = sas_faction_demand.1003.d
+	}
+}
+
+# Rabble is declaring war
+sas_faction_demand.1004 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = sas_faction_demand.1004.t
+	desc = sas_faction_demand.1004.desc
+	right_portrait = {
 		character = scope:peasant_leader
 		animation = celebrate_sword
 	}
 	option = {
-		name = sas_faction_demand.1003.a
-	}
-	option = {
-		name = sas_faction_demand.1003.b
+		name = sas_faction_demand.1004.a
 	}
 }
-

@@ -35,10 +35,13 @@ rouse_rabble_outcome.0001 = {
 
 		hidden_effect = {
 			scope:target = {
-				set_variable = {
-					name = roused_rabble_schemer
-					value = scope:owner
+					primary_title = {
+						set_variable = {
+						name = roused_rabble_schemer
+						value = scope:owner
+					}
 				}
+				
 				ordered_sub_realm_county = {
 					limit = { 
 						NOT = { has_county_modifier = county_rabble_roused_modifier }
@@ -46,15 +49,19 @@ rouse_rabble_outcome.0001 = {
 					order_by = total_county_levies
 					max = {
 						if = {
-							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=1 }
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <= 1 }
 							value = 1
 						}
 						else_if = {
-							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position <=3 }
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position == 2 }
 							value = 2
 						}
-						else = {
+						else_if = {
+							limit = { scope:owner.court_position:rabble_rouser_court_position.aptitude:rabble_rouser_court_position == 3 }
 							value = 3
+						}
+						else = {
+							value = 4
 						}
 					}
 					check_range_bounds = no

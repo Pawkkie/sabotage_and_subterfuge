@@ -114,8 +114,198 @@ rouse_rabble_reveler_lifestyle_rank_up_check_effect = {
 	}
 }
 
-rouse_rabble_peasant_faction = {
+spawn_roused_rabble_troops = {
+	# Spawn Levies
+	spawn_army = {
+		levies = {
+			value = 0
+			joined_faction = {
+				every_faction_county_member = {
+					limit = {
+						duchy = scope:local_center_of_rebellion.duchy
+					}
+					add = roused_county_levies_to_raise
+				}
+			}
+		}
+		location = scope:local_center_of_rebellion
+		war = root.faction_war
+		name = populist_faction_event_troops
+	}
+	
+	# Spawn MAAs - An appropriate amount of troops dependent on the terrain type they spawn in
+	if = {
+		limit = {
+			scope:local_center_of_rebellion = {
+				OR = {
+					terrain = forest
+					terrain = taiga
+					terrain = jungle
+					terrain = plains
+					terrain = drylands
+					terrain = oasis
+					terrain = desert
+					terrain = wetlands
+					terrain = steppe
+				}
+			}
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = light_footmen
+				stacks = {
+					value = 0
+					joined_faction = {
+						every_faction_county_member = {
+							limit = {
+								duchy = scope:local_center_of_rebellion.duchy
+							}
+							add = roused_county_maa_to_raise
+						}
+					}
+				}
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
+	else_if = {
+		limit = {
+			scope:local_center_of_rebellion = {
+				OR = {
+					terrain = mountains
+					terrain = desert_mountains
+				}
+			}
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = pikemen_unit
+				stacks = {
+					value = 0
+					joined_faction = {
+						every_faction_county_member = {
+							limit = {
+								duchy = scope:local_center_of_rebellion.duchy
+							}
+							add = roused_county_maa_to_raise
+						}
+					}
+				}
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
+	else_if = {
+		limit = {
+			scope:local_center_of_rebellion = {
+				OR = {
+					terrain = hills
+					terrain = farmlands
+					terrain = floodplains
+				}
+			}
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = bowmen
+				stacks = {
+					value = 0
+					joined_faction = {
+						every_faction_county_member = {
+							limit = {
+								duchy = scope:local_center_of_rebellion.duchy
+							}
+							add = roused_county_maa_to_raise
+						}
+					}
+				}
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
+	
+	# Spawn Siege Weapons depending on discovered innovations
+	if = {
+		limit = {
+			culture = { has_innovation = innovation_bombard }
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = bombard
+				stacks = 1
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
+	else_if = {
+		limit = {
+			culture = { has_innovation = innovation_trebuchet }
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = trebuchet
+				stacks = 1
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+		
+	}
+	else_if = {
+		limit = {
+			culture = { has_innovation = innovation_mangonel }
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = mangonel
+				stacks = 1
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
+	else_if = {
+		limit = {
+			culture = { has_innovation = innovation_catapult }
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = onager
+				stacks = 1
+			}
+			location = scope:local_center_of_rebellion
+			war = root.faction_war
+			name = populist_faction_event_troops
+		}
+	}
 
+	if = {
+		limit = { has_variable = ep3_governor_yearly_8150_ignored }
+		root.faction_leader = {
+			spawn_army = {
+				name = ep3_governor_yearly_8150_troop_name
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				war = root.faction_war
+				location = scope:local_center_of_rebellion
+				origin = scope:local_center_of_rebellion
+				inheritable = no
+			}
+		}
+		remove_variable = ep3_governor_yearly_8150_ignored
+	}
 }
 
 provoke_vassals_success_effect = {

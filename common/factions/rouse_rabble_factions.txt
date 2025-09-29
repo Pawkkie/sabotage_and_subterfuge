@@ -45,9 +45,13 @@ roused_rabble_faction = {
 				opinion = -50
 			}
 		}
-		# Talk to the schemer first, potentially get funding
-		scope:faction.faction_target.var:roused_rabble_schemer = {
-			trigger_event = sas_faction_demand.1003
+		# Tell to the schemer war will start
+		scope:faction.faction_target = {
+			primary_title = {
+				var:roused_rabble_schemer = {
+					trigger_event = sas_faction_demand.1004
+				}
+			}
 		}
 		scope:faction.faction_target = {
 			trigger_event = sas_faction_demand.1001
@@ -64,6 +68,7 @@ roused_rabble_faction = {
 	}
 
 	on_creation = {
+		save_scope_as = new_faction
 		random_faction_county_member = {
 			save_scope_as = founding_county
 		}
@@ -75,6 +80,15 @@ roused_rabble_faction = {
 		set_variable = {
 			name = faction_faith
 			value = scope:founding_county.faith
+		}
+
+		# Talk to the schemer first, potentially get funding
+		scope:new_faction.faction_target = {
+			primary_title = {
+				var:roused_rabble_schemer = {
+					trigger_event = sas_faction_demand.1003
+				}
+			}
 		}
 	}
 
@@ -199,10 +213,9 @@ roused_rabble_faction = {
 					save_temporary_scope_as = local_center_of_rebellion
 				}
 			}
-
 			# Spawn the faction troops in the designated location.
 			root.faction_leader = {
-				spawn_popular_revolt_troops = yes
+				spawn_roused_rabble_troops = yes
 			}
 			
 			# Give the populist leader a commander for each stack of troops.
@@ -253,7 +266,7 @@ roused_rabble_faction = {
 	}
 
 	county_power = {
-		value = county_levies_to_raise
+		value = roused_county_levies_to_raise
 		if = {
 			limit = {
 				scope:faction.faction_target = { ep3_restored_rome_hard_mode_trigger = yes }

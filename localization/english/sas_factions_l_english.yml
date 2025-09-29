@@ -13,16 +13,18 @@
  FACTION_ROUSED_RABBLE_TITLE_NAME: "Roused Rabble Revolt"
  FACTION_REASON_RABBLE_ROUSED: "Target of a [rouse_rabble_scheme|E]: $VALUE|0+=$"
 
- # Roused Rabble Pre-War Check In
- sas_faction_demand.1003.t: "Roused Rabble Ready to Rock"
- sas_faction_demand.1003.desc: "Word has reached me that the rabble we roused some time ago have finished their preparations and are ready to take their fight to the capital.\n\nI have faith in [peasant_leader.GetShortUIName] to get some damage done and potentially incite some real change, but I'm sure there's time to tip the scales in their favour..."
- sas_faction_demand.1003.a: "Discreetly fund the rabble"
- sas_faction_demand.1003.b: "They'll be fine on their own"
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "Roused Rabble Ready to Rock..."
+ sas_faction_demand.1003.desc: "Word has reached me that the rabble we roused some time ago have nearly their preparations and will be ready to take their fight to the capital in four months' time.\n\nI have faith in them to get some damage done and potentially incite some real change, but I'm sure there's time to tip the scales in their favour..."
+ sas_faction_demand.1003.a: "They have my unwavering support!"
+ sas_faction_demand.1003.b: "We could use some addition leverage."
+ sas_faction_demand.1003.c: "I suppose we can spare a few gold..."
+ sas_faction_demand.1003.d: "They'll be fine on their own."
 
- # Roused Rabble Demands Accepted
-#  sas_faction_demand.1004.t: "Rabble Rocked and Rolled"
-#  sas_faction_demand.1004.desc: "It seems the liege has caved to the rabble's demands!"
-#  sas_faction_demand.1004.a: "Serves them right!"
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "And Now It's Time to Roll!"
+ sas_faction_demand.1004.desc: "Finally, I've been brought word that the faction of rabble we emboldened to rebellion are prepared to charge into battle.\n\nI've heard good things about [peasant_leader.GetShortUIName] through the grapevine, hopefully [peasant_leader.GetSheHe] can lead them to victory!"
+ sas_faction_demand.1004.a: "And perhaps we can take advantage of the situation..."
 
  # Roused Rabble War
  ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"

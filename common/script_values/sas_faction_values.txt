@@ -1,0 +1,60 @@
+﻿funded_rabble_big = 200
+funded_rabble_medium = 100
+funded_rabble_small = 50
+
+roused_county_maa_to_raise = {
+	value = total_county_levies
+	if = {
+		limit = { exists = var:schemer_funded_rabble }
+		if = { 
+			limit = { var:schemer_funded_rabble = funded_rabble_big }
+			# Big Army
+			multiply = {
+				value = county_opinion
+				multiply = -0.00004
+			}
+		}
+		else_if = {
+			limit = { var:schemer_funded_rabble = funded_rabble_medium }
+			# Medium Army, equivalent to populist
+			multiply = {
+				value = county_opinion
+				multiply = -0.00003
+			}
+		}
+		else_if = {
+			limit = { var:schemer_funded_rabble = funded_rabble_small }
+			# Small Army
+			multiply = {
+				value = county_opinion
+				multiply = -0.00002
+			}
+		}
+	}
+
+	else = {
+		# Default Army
+		multiply = {
+			value = county_opinion
+			multiply = -0.00001
+		}
+	}
+	
+	round = yes
+	min = 1
+}
+
+roused_county_levies_to_raise = {
+	value = total_county_levies
+
+	# Will summon between 75% and 175% of total county levy strength, depending on how much they hate you (most commonly will be 95-110% though, scores between -20 and -35 are the most common)
+	multiply = {
+		value = county_opinion
+		multiply = -0.02
+		add = 0.5
+	}
+	min = {
+		value = building_max_garrison
+		multiply = 1.2
+	}
+}
