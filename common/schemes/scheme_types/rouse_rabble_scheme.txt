@@ -10,7 +10,7 @@
 	target_type = character
 	is_secret = yes
 	maximum_breaches = 5
-	cooldown = { years = 5 }
+	cooldown = { years = 20 }
 	
 	# Parameters
 	speed_per_skill_point = t2_spsp_owner_value
@@ -56,31 +56,6 @@
 				}
 			}
 		}
-		# Rabble Rouser availability
-		# trigger_if = {
-		# 	limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
-		# 	custom_description = {
-		# 		text = rabble_rouser_in_army
-		# 		subject = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_in_army = no
-		# 		}
-		# 	}
-		# 	custom_description = {
-		# 		text = rabble_rouser_imprisoned
-		# 		subject = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_imprisoned = no
-		# 		}
-		# 	}
-		# 	custom_description = {
-		# 		text = rabble_rouser_travelling
-		# 		subject = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_travelling = no
-		# 		}
-		# 	}
-		# }
 	}
 
 	# Agents
@@ -467,63 +442,5 @@
 				}
 			}
 		}
-
-		# Rabble Rouser in army
-		# if = {
-		# 	limit = { 
-		# 		exists = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_in_army = yes
-		# 		}
-		# 	}
-		# 	scope:owner = {
-		# 		send_interface_toast = {
-		# 			title = rouse_rabble_invalidated_title
-		# 			left_icon = scope:owner.court_position:rabble_rouser_court_position
-		# 			custom_description_no_bullet = {
-		# 				subject = scope:owner.court_position:rabble_rouser_court_position
-		# 				text = rouse_rabble_invalidated_in_army
-		# 			}
-		# 		}
-		# 	}
-		# }
-		# # Rabble Rouser imprisoned
-		# if = {
-		# 	limit = { 
-		# 		exists = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_imprisoned = yes
-		# 		}
-		# 	}
-		# 	scope:owner = {
-		# 		send_interface_toast = {
-		# 			title = rouse_rabble_invalidated_title
-		# 			left_icon = scope:owner.court_position:rabble_rouser_court_position
-		# 			custom_description_no_bullet = {
-		# 				subject = scope:owner.court_position:rabble_rouser_court_position
-		# 				text = rouse_rabble_invalidated_in_prison
-		# 			}
-		# 		}
-		# 	}
-		# }
-		# # Rabble Rouser travelling
-		# if = {
-		# 	limit = { 
-		# 		exists = scope:owner.court_position:rabble_rouser_court_position
-		# 		scope:owner.court_position:rabble_rouser_court_position = {
-		# 			is_travelling = yes
-		# 		}
-		# 	}
-		# 	scope:owner = {
-		# 		send_interface_toast = {
-		# 			title = rouse_rabble_invalidated_title
-		# 			left_icon = scope:owner.court_position:rabble_rouser_court_position
-		# 			custom_description_no_bullet = {
-		# 				subject = scope:owner.court_position:rabble_rouser_court_position
-		# 				text = rouse_rabble_invalidated_is_travelling
-		# 			}
-		# 		}
-		# 	}
-		# }
 	}
 }

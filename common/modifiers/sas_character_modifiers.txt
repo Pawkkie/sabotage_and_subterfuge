@@ -1,0 +1,5 @@
+﻿rabble_roused_against_me = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 10
+	monthly_prestige_gain_mult = 0.05
+}

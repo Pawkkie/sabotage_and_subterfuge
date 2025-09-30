@@ -314,7 +314,7 @@ roused_rabble_demands_enforced = {
 			custom = roused_rabble_faction_every_county
 			change_county_control = peasant_war_victory_county_control_loss
 			add_county_modifier = {
-				modifier = peasant_war_lost_county_modifier
+				modifier = roused_rabble_war_lost_county_modifier
 				years = 10
 			}
 		}

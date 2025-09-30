@@ -90,6 +90,13 @@
 			}
 		}
 
+		scope:defender = {
+			add_character_modifier = {
+				modifier = rabble_roused_against_me
+				years = 10
+			}
+		}
+
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
 	}
@@ -139,6 +146,12 @@
 			}
 		}
 
+		scope:defender = {
+			add_character_modifier = {
+				modifier = rabble_roused_against_me
+				years = 10
+			}
+		}
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
@@ -155,6 +168,18 @@
 			remove_variable = rebel_leader_peasants
 		}
 
+		scope:attacker = {
+			joined_faction = {
+				every_faction_county_member = {
+					custom = roused_rabble_faction_every_county
+					add_county_modifier = {
+						modifier = county_increased_opinion_modifier
+						years = 25
+					}
+				}
+			}
+		}
+
 		hidden_effect = {
 			scope:attacker = {
 				joined_faction = {
@@ -163,6 +188,13 @@
 					}
 					destroy_faction = yes
 				}
+			}
+		}
+
+		scope:defender = {
+			add_character_modifier = {
+				modifier = rabble_roused_against_me
+				years = 10
 			}
 		}
 

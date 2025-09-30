@@ -1,3 +1,4 @@
 ﻿l_english: 
- county_rabble_roused_modifier:0 "Rabble Roused"
+ county_rabble_roused_modifier: "Rabble Roused"
  county_rabble_roused_modifier_desc: "The peasant rabble has been roused against their liege"
+ rabble_roused_against_me: "Recently Dealt with Roused Rabble"

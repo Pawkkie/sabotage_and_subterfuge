@@ -2,3 +2,11 @@
 	icon = county_modifier_opinion_negative
 	county_opinion_add = -30
 }
+
+roused_rabble_war_lost_county_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = 50
+	monthly_county_control_growth_factor = -0.1
+	development_growth_factor = small_development_growth_loss
+	levy_size = -0.5
+}
