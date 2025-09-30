@@ -72,6 +72,24 @@
 			}
 		}
 
+		# Tell the schemer war ended in victory
+		scope:defender = {
+			primary_title = {
+				var:roused_rabble_schemer = {
+					trigger_event = sas_faction_demand.1005
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:roused_rabble_schemer}
+					remove_variable = roused_rabble_schemer
+				}
+			}
+		}
+
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
 	}
@@ -90,10 +108,10 @@
 		}
 		scope:attacker = {
 			joined_faction = {
-				destroy_faction = yes
 				hidden_effect = {
 					clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
 				}
+				destroy_faction = yes
 			}
 		}
 
@@ -102,6 +120,25 @@
 				arrogant = medium_stress_impact_gain
 			}
 		}
+
+		# Tell the schemer war ended in white peace
+		scope:defender = {
+			primary_title = {
+				var:roused_rabble_schemer = {
+					trigger_event = sas_faction_demand.1006
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:roused_rabble_schemer}
+					remove_variable = roused_rabble_schemer
+				}
+			}
+		}
+
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
@@ -121,8 +158,10 @@
 		hidden_effect = {
 			scope:attacker = {
 				joined_faction = {
+					hidden_effect = {
+						clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
+					}
 					destroy_faction = yes
-					clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
 				}
 			}
 		}
@@ -149,6 +188,24 @@
 				imprison = {
 					target = scope:attacker
 					type = dungeon
+				}
+			}
+		}
+
+		# Tell the schemer war ended in defeat
+		scope:defender = {
+			primary_title = {
+				var:roused_rabble_schemer = {
+					trigger_event = sas_faction_demand.1007
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:roused_rabble_schemer}
+					remove_variable = roused_rabble_schemer
 				}
 			}
 		}

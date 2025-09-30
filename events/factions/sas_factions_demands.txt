@@ -132,3 +132,48 @@ sas_faction_demand.1004 = {
 		name = sas_faction_demand.1004.a
 	}
 }
+
+# War ended in victory
+sas_faction_demand.1005 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = sas_faction_demand.1005.t
+	desc = sas_faction_demand.1005.desc
+	right_portrait = {
+		character = scope:defender
+		animation = disbelief
+	}
+	option = {
+		name = sas_faction_demand.1005.a
+	}
+}
+
+# War ended in white peace
+sas_faction_demand.1006 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = sas_faction_demand.1006.t
+	desc = sas_faction_demand.1006.desc
+	right_portrait = {
+		character = scope:defender
+		animation = aggressive_sword
+	}
+	option = {
+		name = sas_faction_demand.1006.a
+	}
+}
+
+# War ended in defeat
+sas_faction_demand.1007 = {
+	type = character_event
+	theme = rouse_rabble_scheme
+	title = sas_faction_demand.1007.t
+	desc = sas_faction_demand.1007.desc
+	right_portrait = {
+		character = scope:defender
+		animation = celebrate_sword
+	}
+	option = {
+		name = sas_faction_demand.1007.a
+	}
+}

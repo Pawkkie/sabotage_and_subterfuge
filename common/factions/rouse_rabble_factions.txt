@@ -177,6 +177,7 @@ roused_rabble_faction = {
 	can_county_create = {
 		title_is_a_faction_member = no
 		has_county_modifier = county_rabble_roused_modifier
+		NOT = { exists = faction_war }
 	}
 
 	can_character_become_leader = {
@@ -247,7 +248,7 @@ roused_rabble_faction = {
 		# Give the populist leader a small purse so they don't immediately go bankrupt with army maintenance.
 		every_faction_county_member = {
 			root.faction_leader = {
-				add_gold = 25
+				add_gold = 50
 			}
 		}
 	}

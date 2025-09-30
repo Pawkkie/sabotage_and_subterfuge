@@ -191,7 +191,7 @@
 		# At war with target
 		modifier = {
 			add = 100
-			scope:owner = { is_at_war_with = scope:target } 
+			scope:actor = { is_at_war_with = scope:recipient } 
 		}
 
 		ai_value_modifier = { ai_honor = -1 }
@@ -201,43 +201,43 @@
 		# Positive modifiers
 		modifier = {
 			add = 25
-			scope:owner = { has_trait = brave }
+			scope:actor = { has_trait = brave }
 			desc = ROUSE_RABBLE_BRAVE
 		}
 		modifier = {
-			add = 75
-			scope:owner = { has_trait = gregarious }
+			add = 50
+			scope:actor = { has_trait = gregarious }
 			desc = ROUSE_RABBLE_GREGARIOUS
 		}
 		modifier = {
 			add = 25
-			scope:owner = { has_trait = diplomat }
+			scope:actor = { has_trait = diplomat }
 			desc = ROUSE_RABBLE_DIPLOMAT
 		}
 		modifier = {
 			add = 50
-			scope:owner = { has_trait = schemer }
+			scope:actor = { has_trait = schemer }
 			desc = ROUSE_RABBLE_SCHEMER
 		}
 		modifier = {
 			add = 25
-			scope:owner = { has_trait = lifestyle_wayfarer }
+			scope:actor = { has_trait = lifestyle_wayfarer }
 			desc = ROUSE_RABBLE_WAYFARER
 		}
 		modifier = {
-			add = 100
-			scope:owner = { has_trait = peasant_leader }
+			add = 75
+			scope:actor = { has_trait = peasant_leader }
 			desc = ROUSE_RABBLE_PEASANT_LEADER
 		}
 		modifier = {
-			add = 100
-			scope:owner = { has_trait = populist_leader }
+			add = 75
+			scope:actor = { has_trait = populist_leader }
 			desc = ROUSE_RABBLE_POPULIST_LEADER
 		}
 		modifier = {
 			add = {
 				value = 25
-				scope:owner = {
+				scope:actor = {
 					if = { 
 						limit = {
 							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
@@ -245,7 +245,7 @@
 						add = 25
 					}
 				}
-				scope:owner = {
+				scope:actor = {
 					if = { 
 						limit = {
 							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
@@ -259,7 +259,7 @@
 		modifier = {
 			add = {
 				value = 15
-				scope:owner = {
+				scope:actor = {
 					if = { 
 						limit = {
 							OR = {
@@ -270,7 +270,7 @@
 						add = 35
 					}
 				}
-				scope:owner = {
+				scope:actor = {
 					if = { 
 						limit = {
 							OR = {
@@ -288,32 +288,32 @@
 		# Negative modifiers
 		modifier = {
 			add = -75
-			scope:owner = { has_trait = craven }
+			scope:actor = { has_trait = craven }
 			desc = ROUSE_RABBLE_CRAVEN
 		}
 		modifier = {
 			add = -25
-			scope:owner = { has_trait = lazy }
+			scope:actor = { has_trait = lazy }
 			desc = ROUSE_RABBLE_LAZY
 		}
 		modifier = {
 			add = -75
-			scope:owner = { has_trait = shy }
+			scope:actor = { has_trait = shy }
 			desc = ROUSE_RABBLE_SHY
 		}
 		modifier = {
 			add = -25
-			scope:owner = { has_trait = fickle }
+			scope:actor = { has_trait = fickle }
 			desc = ROUSE_RABBLE_FICKLE
 		}
 		modifier = {
 			add = -75
-			scope:owner = { has_trait = reclusive }
+			scope:actor = { has_trait = reclusive }
 			desc = ROUSE_RABBLE_RECLUSIVE
 		}
 		modifier = {
 			add = -100
-			scope:owner = { has_trait = infirm }
+			scope:actor = { has_trait = infirm }
 			desc = ROUSE_RABBLE_INFIRM
 		}
 	}

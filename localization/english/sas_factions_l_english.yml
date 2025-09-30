@@ -26,6 +26,21 @@
  sas_faction_demand.1004.desc: "Finally, I've been brought word that the faction of rabble we emboldened to rebellion are prepared to charge into battle.\n\nI've heard good things about [peasant_leader.GetShortUIName] through the grapevine, hopefully [peasant_leader.GetSheHe] can lead them to victory!"
  sas_faction_demand.1004.a: "And perhaps we can take advantage of the situation..."
 
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "The Rabble Is Victorious"
+ sas_faction_demand.1005.desc: "The rabble we supported have won in their revolution to improve their standard of life! This should significantly hamper their liege's further development of the realm, and cut them all some well deserved slack."
+ sas_faction_demand.1005.a: "I could have scare hoped for a better outcome"
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "The Rabble Is Breaks Even"
+ sas_faction_demand.1006.desc: "The rabble we supported have drawn a white peace in their revolution to improve their standard of life! Perhaps this has destabilized the region to some degree, relationships may take some time to recover."
+ sas_faction_demand.1006.a: "Not too quickly, I hope"
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "The Rabble Is Defeated"
+ sas_faction_demand.1007.desc: "The rabble we supported have lost in their revolution to improve their standard of life. This outcome is unfortunate, but not entirely unexpected. Hopefully we've gotten all that we needed to out of this ordeal."
+ sas_faction_demand.1007.a: "Time to move on to other matters"
+
  # Roused Rabble War
  ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"
  roused_rabble_faction_event_troops:0 "Roused Rabble Uprising"
