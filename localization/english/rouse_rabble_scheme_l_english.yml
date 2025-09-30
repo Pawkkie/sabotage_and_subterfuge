@@ -7,7 +7,7 @@
  agent_rabble_rouser_i: "[success_chance_max_i]"
  agent_rabble_rouser_desc: "$agent_rabble_rouser_desc.flavour$ \n$agent_rabble_rouser_desc.requirements$"
  agent_rabble_rouser_desc.flavour: "#WEAK I'm loud, I'm proud, and I'm ready to rally the realm to our cause! Let's get out there and make something happen.#!"
- agent_rabble_rouser_desc.requirements: "$EFFECT_LIST_BULLET$ Provides [success_chance_max_i] [scheme potential|E]\n$EFFECT_LIST_BULLET$ Requires [diplomacy_i] [diplomacy|E] & [intrigue_i] [intrigue|E]\n$EFFECT_LIST_BULLET$ #P Benefits#! from [traits|E] like [GetTrait('gregarious').GetName( GetNullCharacter )] and [GetTrait('peasant_leader').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ #N Suffers#! from [traits|E] like [GetTrait('shy').GetName( GetNullCharacter )] and [GetTrait('reclusive').GetName( GetNullCharacter )]"
+ agent_rabble_rouser_desc.requirements: "$EFFECT_LIST_BULLET$ Provides [success_chance_max_i] [scheme_potential|E]\n$EFFECT_LIST_BULLET$ Requires [diplomacy_i] [diplomacy|E] & [intrigue_i] [intrigue|E]\n$EFFECT_LIST_BULLET$ #P Benefits#! from [traits|E] like [GetTrait('gregarious').GetName( GetNullCharacter )] and [GetTrait('peasant_leader').GetName( GetNullCharacter )]\n$EFFECT_LIST_BULLET$ #N Suffers#! from [traits|E] like [GetTrait('shy').GetName( GetNullCharacter )] and [GetTrait('reclusive').GetName( GetNullCharacter )]"
 
  # Agent Rabble Rouser modifiers
  scheme_agent_aptitude.trait.reclusive: "[GetTrait('reclusive').GetName( GetNullCharacter )]"
