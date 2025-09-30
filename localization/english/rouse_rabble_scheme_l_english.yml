@@ -73,6 +73,8 @@
  ## Allow
  HAVE_RABBLE_ROUSER_COURT_POSITION: "You employ a [rabble_rouser_court_position|E]"
  NO_RABBLE_ROUSER_COURT_POSITION: "You do not employ a [rabble_rouser_court_position|E]"
+ ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] is already dealing with a Roused Rabble faction"
+ NOT_ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] is not already dealing with a Roused Rabble faction"
  RABBLE_ROUSER_AVAILABLE: "[CHARACTER.GetShortUIName|U] is available"
  RABBLE_ROUSER_IN_ARMY: "[CHARACTER.GetShortUIName|U] is in an army"
  RABBLE_ROUSER_TRAVELING: "[CHARACTER.GetShortUIName|U] is traveling"
@@ -87,6 +89,7 @@
  rouse_rabble_invalidated_in_army: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is leading an army."
  rouse_rabble_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is in prison."
  rouse_rabble_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is travelling."
+ rouse_rabble_invalidated_has_faction: "[CHARACTER.GetShortUIName|U]'s rabble has been roused, and has already formed a faction against him."
 
  ## Interaction
  rouse_rabble_interaction: "Rouse Rabble #weak (Scheme)#!"

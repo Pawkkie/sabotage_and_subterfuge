@@ -27,3 +27,8 @@ rabble_rouser_rousing_rabble = {
 	first = RABBLE_ROUSER_AVAILABLE
 	first_not = RABBLE_ROUSER_NOT_ROUSING_RABBLE
 }
+
+already_fighting_roused_rabble = {
+	first = ALREADY_FIGHTING_ROUSED_RABBLE
+	first_not = NOT_ALREADY_FIGHTING_ROUSED_RABBLE
+}

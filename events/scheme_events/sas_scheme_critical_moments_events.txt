@@ -305,7 +305,7 @@ sas_scheme_critical_moments.0001 = {
 		# Check for the variable so that, if we've run out of slots and not generated one, we don't error spam.
 		if = {
 			limit = { exists = scope:scheme.var:choice_a }
-			select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_a }
+			sas_select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_a }
 		}
 		scope:scheme = { change_opportunities = -2 }
 
@@ -338,7 +338,7 @@ sas_scheme_critical_moments.0001 = {
 		# Check for the variable so that, if we've run out of slots and not generated one, we don't error spam.
 		if = {
 			limit = { exists = scope:scheme.var:choice_b }
-			select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_b }
+			sas_select_critical_moment_agents_effect = { CHOICE = scope:scheme.var:choice_b }
 		}
 		scope:scheme = { change_opportunities = -2 }
 

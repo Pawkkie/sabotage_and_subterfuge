@@ -161,6 +161,14 @@ roused_rabble_faction = {
 
 	county_create_score = {
 		base = 100
+		modifier = {
+			add = -1000
+			scope:target = {
+				any_targeting_faction = {
+					faction_is_type = roused_rabble_faction
+				}
+			}
+		}
 	}
 
 	ai_join_score = {
