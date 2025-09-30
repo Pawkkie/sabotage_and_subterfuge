@@ -1,0 +1,7 @@
+﻿l_english:
+ # Invited to a feast
+ rouse_rabble_ongoing.0001.t: "Invited to a Feast"
+ rouse_rabble_ongoing.0001.desc: "An elder heading a large peasant family on the rural outskirts of [target_title.GetNameNoTier] has invited [rouser_name.GetShortUIName] to a feast celebrating a local holiday. When [rouser_name.GetShortUIName] made it clear they were gracious for the offer and would write to their employer to inform them of a late return, the invitation was further extended, unknowlingly, to me.\n\nThese peasants have no idea I am at all involved in this and my presence might serve as a shock to them... but also a strong showing of support for their cause, especially if we sit down over a meal as equals."
+ rouse_rabble_ongoing.0001.a: "I'll join the festivities"
+ rouse_rabble_ongoing.0001.b: "I'll send a gift"
+ rouse_rabble_ongoing.0001.c: "I shouldn't get involved"

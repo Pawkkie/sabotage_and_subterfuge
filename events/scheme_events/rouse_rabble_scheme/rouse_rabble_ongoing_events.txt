@@ -1,1 +1,79 @@
-﻿
+﻿namespace = rouse_rabble_ongoing
+
+# Invited to a feast
+rouse_rabble_ongoing.0001 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0001.t
+	desc = rouse_rabble_ongoing.0001.desc
+	theme = rouse_rabble_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0001 }
+			scheme_agent_charges < opportunity_cap_value
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0004
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Attend
+		name = rouse_rabble_ongoing.0001.a
+		stress_impact = {
+			shy = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_attended_local_feast
+			}
+			change_opportunities = 1
+		}
+	}
+
+	option = { # Gift
+		name = rouse_rabble_ongoing.0001.b
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		remove_short_term_gold = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_sent_gift_to_local_feast
+			}
+		}
+	}
+
+	option = { # Neither
+		name = rouse_rabble_ongoing.0001.c
+		stress_impact = {
+			gregarious = medium_stress_impact_gain
+		}
+		add_prestige = -50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_ignored_local_feast
+			}
+		}
+	}
+}

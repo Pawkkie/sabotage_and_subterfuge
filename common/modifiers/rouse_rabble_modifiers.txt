@@ -1,0 +1,16 @@
+﻿rouse_rabble_attended_local_feast = {
+	icon = diplomacy_positive
+	scheme_success_chance = 20
+	scheme_phase_duration = medium_scheme_phase_duration_bonus_value
+	scheme_secrecy = -10
+}
+
+rouse_rabble_sent_gift_to_local_feast = {
+	icon = diplomacy_positive
+	scheme_success_chance = 20
+}
+
+rouse_rabble_ignored_local_feast = {
+	icon = diplomacy_positive
+	scheme_secrecy = 20
+}
