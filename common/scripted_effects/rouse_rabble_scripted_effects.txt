@@ -308,6 +308,36 @@ spawn_roused_rabble_troops = {
 	}
 }
 
+roused_rabble_demands_enforced = {
+	$FACTION$ = {
+		every_faction_county_member = {
+			custom = roused_rabble_faction_every_county
+			change_county_control = peasant_war_victory_county_control_loss
+			add_county_modifier = {
+				modifier = peasant_war_lost_county_modifier
+				years = 10
+			}
+		}
+		hidden_effect = {
+			clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
+			destroy_faction = yes
+		}
+	}
+}
+
+clean_roused_rabble_county_modifiers_from_faction_members_effect = {
+	every_faction_county_member = {
+		if = {
+			limit = { has_county_modifier = county_rabble_roused_modifier }
+			remove_county_modifier = county_rabble_roused_modifier
+		}
+		if = {
+			limit = { exists = var:schemer_funded_rabble }
+			remove_variable = schemer_funded_rabble
+		}
+	}
+}
+
 provoke_vassals_success_effect = {
 	scope:target = {
 		create_faction = {

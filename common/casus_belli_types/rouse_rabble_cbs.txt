@@ -61,36 +61,23 @@
 	}
 
 	on_victory_desc = {
-		desc = peasant_war_victory_desc
+		desc = roused_rabble_war_victory_desc
 	}
 
 	on_victory = {
 		scope:attacker = { show_pow_release_message_effect = yes }
 		scope:attacker = {
 			joined_faction = {
-				peasant_faction_demands_enforced = {FACTION = this}
+				roused_rabble_demands_enforced = {FACTION = this}
 			}
 		}
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
-
-		hidden_effect = {
-			scope:attacker = {
-				joined_faction = {
-					every_faction_county_member = {
-						if = {
-							limit = { has_county_modifier = county_rabble_roused_modifier }
-							remove_county_modifier = county_rabble_roused_modifier
-						}
-					}
-				}
-			}
-		}
 	}
 
 	on_white_peace_desc = {
-		desc = peasant_war_white_peace_desc
+		desc = roused_rabble_war_white_peace_desc
 	}
 
 	on_white_peace = {
@@ -104,6 +91,9 @@
 		scope:attacker = {
 			joined_faction = {
 				destroy_faction = yes
+				hidden_effect = {
+					clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
+				}
 			}
 		}
 
@@ -113,25 +103,12 @@
 			}
 		}
 
-		hidden_effect = {
-			scope:attacker = {
-				joined_faction = {
-					every_faction_county_member = {
-						if = {
-							limit = { has_county_modifier = county_rabble_roused_modifier }
-							remove_county_modifier = county_rabble_roused_modifier
-						}
-					}
-				}
-			}
-		}
-
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
 	}
 
 	on_defeat_desc = {
-		desc = peasant_war_defeat_desc
+		desc = roused_rabble_war_defeat_desc
 	}
 
 	on_defeat = {
@@ -144,20 +121,8 @@
 		hidden_effect = {
 			scope:attacker = {
 				joined_faction = {
-					every_faction_county_member = {
-						if = {
-							limit = { has_county_modifier = county_rabble_roused_modifier }
-							remove_county_modifier = county_rabble_roused_modifier
-						}
-					}
-				}
-			}
-		}
-
-		hidden_effect = {
-			scope:attacker = {
-				joined_faction = {
 					destroy_faction = yes
+					clean_roused_rabble_county_modifiers_from_faction_members_effect = yes
 				}
 			}
 		}

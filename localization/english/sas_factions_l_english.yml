@@ -29,3 +29,6 @@
  # Roused Rabble War
  ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"
  roused_rabble_faction_event_troops:0 "Roused Rabble Uprising"
+ roused_rabble_war_victory_desc:0 "All rebellious [counties|E] lose [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E]."
+ roused_rabble_war_white_peace_desc:0 "The roused rabble is disbanded."
+ roused_rabble_war_defeat_desc:0 "The roused rabble is disbanded and [attacker.GetShortUIName] is imprisoned. All rebelling [counties|E] have their [county_opinion|E] forcibly increased."
