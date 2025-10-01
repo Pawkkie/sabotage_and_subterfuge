@@ -53,3 +53,24 @@ rouse_rabble_undercover_protest = {
 	icon = intrigue_positive
 	scheme_phase_duration = medium_scheme_phase_duration_bonus_value
 }
+
+rouse_rabble_fought_soldier = {
+	icon = martial_positive
+	scheme_phase_duration = major_scheme_phase_duration_bonus_value
+	scheme_success_chance = 10
+	scheme_secrecy = -10
+}
+rouse_rabble_slandered_soldier = {
+	icon = intrigue_positive
+	scheme_phase_duration = medium_scheme_phase_duration_bonus_value
+}
+rouse_rabble_helped_soldier_home = {
+	icon = diplomacy_positive
+	scheme_secrecy = 30
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}
+
+rouse_rabble_observed_soldier = {
+	icon = diplomacy_positive
+	scheme_success_chance = 10
+}

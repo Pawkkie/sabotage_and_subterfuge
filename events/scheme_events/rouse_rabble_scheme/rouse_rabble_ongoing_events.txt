@@ -304,3 +304,112 @@ rouse_rabble_ongoing.0004 = {
 		add_piety = 50
 	}
 }
+
+# A rowdy tavern
+rouse_rabble_ongoing.0005 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0005.t
+	desc = rouse_rabble_ongoing.0005.desc
+	theme = rouse_rabble_scheme
+	left_portrait = {
+		character = root
+		animation = drink
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = drink
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0005 }
+			scheme_agent_charges >= 1
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0005
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Fight him
+		name = rouse_rabble_ongoing.0005.a
+		stress_impact = {
+			craven = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_fought_soldier
+			}
+			change_opportunities = -1
+		}
+		random = {
+			chance = 50
+			if = { 
+				limit = { has_trait = brave } 
+				remove_trait = craven
+			}
+			add_trait = brave
+		}
+	}
+
+	option = { # Add to discontent
+		name = rouse_rabble_ongoing.0005.b
+		stress_impact = {
+			honest = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_slandered_soldier
+			}
+		}
+	}
+
+	option = { # Help him home
+		name = rouse_rabble_ongoing.0005.c
+		stress_impact = {
+			vengeful = medium_stress_impact_gain
+		}
+		add_piety = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_helped_soldier_home
+			}
+		}
+	}
+
+	option = { # Observe
+		name = rouse_rabble_ongoing.0005.d
+		stress_impact = {
+			brave = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_observed_soldier
+			}
+		}
+		random = {
+			chance = 25
+			if = { 
+				limit = { has_trait = brave } 
+				remove_trait = brave
+			}
+			add_trait = craven
+		}
+	}
+}

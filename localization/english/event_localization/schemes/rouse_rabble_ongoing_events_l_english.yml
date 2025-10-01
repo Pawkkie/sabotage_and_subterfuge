@@ -25,3 +25,11 @@
  rouse_rabble_ongoing.0004.desc: "I read a novel recently in which the characters, wealthy nobles, disguised themselves in dress and demeanor to blend in with the peasantry.\n\nIt occured to me that we could do this in [target_title.GetNameNoTier], and send in some members of our court to stage a peaceful protest, potentially turning it violent as it builds."
  rouse_rabble_ongoing.0004.a: "Let's rock the boat"
  rouse_rabble_ongoing.0004.b: "Maybe this is better left to fiction"
+
+ # A rowdy tavern
+ rouse_rabble_ongoing.0005.t: "A Rowdy Tavern"
+ rouse_rabble_ongoing.0005.desc: "I travelled in secret to a tavern in the area of [target_title.GetNameNoTier] where [rouser_name.GetShortUIName] is working to get an update from [rouser_name.GetHerHim]. The tavern was packed and raucous, bubbling over like a witch's cauldron\n\nA voice shouts out over the cacophony, a soldier of the realm too deep in his cups, talking down to the peasantry. Rumblings of discontent ripple through the group, though none are willing to approach him."
+ rouse_rabble_ongoing.0005.a: "Get up and knock his lights out"
+ rouse_rabble_ongoing.0005.b: "Add fuel to the murmers of discontent"
+ rouse_rabble_ongoing.0005.c: "Help the solider home"
+ rouse_rabble_ongoing.0005.d: "Sip your drink and observe"
