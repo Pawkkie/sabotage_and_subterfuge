@@ -61,3 +61,9 @@
  rouse_rabble_ongoing.0009.a: "Lie about purpose"
  rouse_rabble_ongoing.0009.b: "Make casual conversation"
  rouse_rabble_ongoing.0009.c: "Offer a bribe"
+
+ # Burning too bright
+ rouse_rabble_ongoing.0010.t: "The Flames Burn Too Bright"
+ rouse_rabble_ongoing.0010.desc: "Working up the peasantry in [target_title.GetNameNoTier] seems to be going well... perhaps a little too well.\n\nIt's apparent that their fervor is at risk of spilling over into other regions, not the least of which includes our own.\n\nWe can use our people on the inside to try to cool the situation down a bit, but it'll have consequences."
+ rouse_rabble_ongoing.0010.a: "Encourage the intensity"
+ rouse_rabble_ongoing.0010.b: "Ease off"

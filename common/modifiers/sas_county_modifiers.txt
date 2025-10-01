@@ -28,3 +28,8 @@ rouse_rabble_suggestion_reduce_development_county_modifier = {
 	county_opinion_add = 15
 	development_growth_factor = small_development_growth_loss
 }
+
+rouse_rabble_increase_tension_county_modifier = {
+	icon = county_modifier_control_negative
+	monthly_county_control_decline_add = -1
+}

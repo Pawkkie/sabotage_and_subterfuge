@@ -85,7 +85,7 @@ rouse_rabble_ongoing.0002 = {
 	desc = rouse_rabble_ongoing.0002.desc
 	theme = rouse_rabble_scheme
 	override_background = {
-		reference = farmland
+		reference = burning_building
 	}
 	override_sound = {
 		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_intrigue"
@@ -901,9 +901,6 @@ rouse_rabble_ongoing.0009 = {
 
 	option = { # Lie
 		name = rouse_rabble_ongoing.0009.a
-		stress_impact = {
-			honest = medium_stress_impact_gain
-		}
 		random_list = {
 			20 = {
 				modifier = { 
@@ -972,9 +969,6 @@ rouse_rabble_ongoing.0009 = {
 
 	option = { # Chat
 		name = rouse_rabble_ongoing.0009.b
-		stress_impact = {
-			deceitful = medium_stress_impact_gain
-		}
 		random_list = {
 			20 = {
 				modifier = { 
@@ -1043,10 +1037,6 @@ rouse_rabble_ongoing.0009 = {
 
 	option = { # Bribe
 		name = rouse_rabble_ongoing.0009.c
-		stress_impact = {
-			greedy = medium_stress_impact_gain
-		}
-
 		remove_short_term_gold = {
 			value = 90
 			if = { 
@@ -1074,6 +1064,86 @@ rouse_rabble_ongoing.0009 = {
 		scope:scheme = {
 			add_scheme_modifier = {
 				type = rouse_rabble_soldiers_unsuspecting
+			}
+		}
+	}
+}
+
+# Flames burning too bright
+rouse_rabble_ongoing.0010 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0010.t
+	desc = rouse_rabble_ongoing.0010.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = farmland	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_martial"
+	}
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = thinking
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0010 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0010
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Encourage
+		name = rouse_rabble_ongoing.0010.a
+		stress_impact = {
+			forgiving = medium_stress_impact_gain
+		}
+		scope:owner = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = rouse_rabble_increase_tension_county_modifier } }
+				add_county_modifier = {
+					modifier = rouse_rabble_increase_tension_county_modifier
+					years = 10
+				}
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_increase_tension
+			}
+		}
+	}
+
+	option = { # Cool off
+		name = rouse_rabble_ongoing.0010.b
+		stress_impact = {
+			vengeful = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_cool_off_tension
 			}
 		}
 	}

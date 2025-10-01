@@ -5,18 +5,18 @@
 	}
 
 	random_events = {
-		chance_to_happen = 95
+		chance_to_happen = 10
 		100 = 0
-		# 100 = rouse_rabble_ongoing.0001 # Invited to a feast
-		# 100 = rouse_rabble_ongoing.0002 # Responding to relief
-		# 100 = rouse_rabble_ongoing.0003 # Connecting with the youth
-		# 100 = rouse_rabble_ongoing.0004 # Staging a protest
-		# 100 = rouse_rabble_ongoing.0005 # A rowdy tavern
-		# 100 = rouse_rabble_ongoing.0006 # An interesting missive
-		# 100 = rouse_rabble_ongoing.0007 # A costly suggestion
-		# 100 = rouse_rabble_ongoing.0008 # Who is the rouser 
+		100 = rouse_rabble_ongoing.0001 # Invited to a feast
+		100 = rouse_rabble_ongoing.0002 # Responding to relief
+		100 = rouse_rabble_ongoing.0003 # Connecting with the youth
+		100 = rouse_rabble_ongoing.0004 # Staging a protest
+		100 = rouse_rabble_ongoing.0005 # A rowdy tavern
+		100 = rouse_rabble_ongoing.0006 # An interesting missive
+		100 = rouse_rabble_ongoing.0007 # A costly suggestion
+		100 = rouse_rabble_ongoing.0008 # Who is the rouser 
 		100 = rouse_rabble_ongoing.0009 # Caught crossing border
-		# 100 = rouse_rabble_ongoing.0010 
+		100 = rouse_rabble_ongoing.0010 # Rebellion picking up too fast
 
 		#############
 		# Generic Agent events

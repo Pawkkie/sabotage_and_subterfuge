@@ -128,3 +128,15 @@ rouse_rabble_soldiers_unsuspecting = {
 	icon = intrigue_positive
 	scheme_secrecy = 25
 }
+
+rouse_rabble_increase_tension = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_secrecy = 15
+}
+
+rouse_rabble_cool_off_tension = {
+	icon = intrigue_positive
+	scheme_success_chance = -10
+	scheme_secrecy = 20
+}
