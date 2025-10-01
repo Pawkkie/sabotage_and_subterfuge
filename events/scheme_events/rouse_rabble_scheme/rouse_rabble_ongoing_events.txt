@@ -128,6 +128,7 @@ rouse_rabble_ongoing.0002 = {
 		}
 		add_piety = -50
 		add_prestige = -50
+		add_dread = medium_dread_gain
 		scope:scheme = {
 			add_scheme_modifier = {
 				type = rouse_rabble_intercept_aid
@@ -410,6 +411,81 @@ rouse_rabble_ongoing.0005 = {
 				remove_trait = brave
 			}
 			add_trait = craven
+		}
+	}
+}
+
+# Receiving a missive
+rouse_rabble_ongoing.0006 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0006.t
+	desc = rouse_rabble_ongoing.0006.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = sitting_room	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_learning"
+	}
+	left_portrait = {
+		character = root
+		animation = reading
+	}
+	right_portrait = {
+		character = scope:target
+		animation = writing
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0006 }
+			NOT = { exists = scope:scheme_discovered }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0006
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Crush them
+		name = rouse_rabble_ongoing.0006.a
+		stress_impact = {
+			forgiving = medium_stress_impact_gain
+		}
+		add_dread = medium_dread_gain
+		add_prestige = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_missive_crush_them
+			}
+		}
+	}
+
+	option = { # Help them
+		name = rouse_rabble_ongoing.0006.b
+		stress_impact = {
+			vengeful = medium_stress_impact_gain
+		}
+		add_piety = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_missive_help_them
+			}
 		}
 	}
 }

@@ -74,3 +74,14 @@ rouse_rabble_observed_soldier = {
 	icon = diplomacy_positive
 	scheme_success_chance = 10
 }
+
+rouse_rabble_missive_crush_them = {
+	icon = martial_positive
+	scheme_success_chance = 40
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}
+rouse_rabble_missive_help_them = {
+	icon = diplomacy_positive
+	scheme_success_chance = -10
+	scheme_secrecy = 40
+}

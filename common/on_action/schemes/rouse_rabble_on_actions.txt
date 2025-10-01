@@ -11,9 +11,9 @@
 		# 100 = rouse_rabble_ongoing.0002 # Responding to relief
 		# 100 = rouse_rabble_ongoing.0003 # Connecting with the youth
 		# 100 = rouse_rabble_ongoing.0004 # Staging a protest
-		 100 = rouse_rabble_ongoing.0005 # A rowdy tavern
-		# 100 = rouse_rabble_ongoing.0006 
-		# 100 = rouse_rabble_ongoing.0007 
+		# 100 = rouse_rabble_ongoing.0005 # A rowdy tavern
+		100 = rouse_rabble_ongoing.0006 # An interesting missive
+		# 100 = rouse_rabble_ongoing.0007
 		# 100 = rouse_rabble_ongoing.0008 
 		# 100 = rouse_rabble_ongoing.0009 
 		# 100 = rouse_rabble_ongoing.0010 

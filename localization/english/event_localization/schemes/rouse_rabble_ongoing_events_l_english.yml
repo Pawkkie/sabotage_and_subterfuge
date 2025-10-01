@@ -33,3 +33,9 @@
  rouse_rabble_ongoing.0005.b: "Add fuel to the murmers of discontent"
  rouse_rabble_ongoing.0005.c: "Help the solider home"
  rouse_rabble_ongoing.0005.d: "Sip your drink and observe"
+
+ # An interesting missive
+ rouse_rabble_ongoing.0006.t: "An Interesting Missive"
+ rouse_rabble_ongoing.0006.desc: "I've received a letter from, unbelievably, [target.GetShortUIName]. The tone is flattering and cordial, a ruler checking in with [target.GetHerHis] contemporaries.\n\nThe interesting part is the ending. It seems [target.GetSheHe] is dealing with some unrest from the peasantry, and is asking my opinion as to the best way forward. It's clear I'm not under suspicion, but this may yet present an opportunity."
+ rouse_rabble_ongoing.0006.a: "Crush them"
+ rouse_rabble_ongoing.0006.b: "Cut them some slack"
