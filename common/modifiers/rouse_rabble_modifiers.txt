@@ -104,3 +104,17 @@ rouse_rabble_suggestion_development = {
 	scheme_success_chance = 25
 	scheme_secrecy = 25
 }
+
+rouse_rabble_argument_correct = {
+	icon = diplomacy_positive
+	scheme_success_chance = 10
+	scheme_secrecy = 10
+	scheme_phase_duration = minor_scheme_phase_duration_bonus_value
+}
+
+rouse_rabble_argument_incorrect = {
+	icon = diplomacy_negative
+	scheme_success_chance = -10
+	scheme_secrecy = -10
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}

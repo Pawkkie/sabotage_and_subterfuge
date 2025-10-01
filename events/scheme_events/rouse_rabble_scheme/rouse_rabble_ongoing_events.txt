@@ -601,3 +601,258 @@ rouse_rabble_ongoing.0007 = {
 		}
 	}
 }
+
+# Who's the rouser
+rouse_rabble_ongoing.0008 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0008.t
+	desc = rouse_rabble_ongoing.0008.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = corridor_day	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_diplomacy"
+	}
+	right_portrait = {
+		character = root
+		animation = anger
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0008 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0008
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # They know what they're doing
+		name = rouse_rabble_ongoing.0008.a
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_trusted_judgment_opinion
+			}
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = 20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_argument_correct
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = -20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_argument_incorrect
+					}
+				}
+			}
+		}
+	}	
+
+	option = { # I'm overruling this
+		name = rouse_rabble_ongoing.0008.b
+		stress_impact = {
+			humble = medium_stress_impact_gain
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_doubted_judgment_opinion
+			}
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = 20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_argument_incorrect
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 1
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 2
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 3
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						aptitude = {
+							court_position = rabble_rouser_court_position
+							value >= 4
+						}
+					}
+					add = -20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_argument_correct
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Compromise
+		name = rouse_rabble_ongoing.0008.c
+		scope:owner.court_position:rabble_rouser_court_position = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_compromised_judgment_opinion
+			}
+		}
+	}
+}

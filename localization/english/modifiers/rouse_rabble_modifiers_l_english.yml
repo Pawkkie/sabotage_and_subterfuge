@@ -29,3 +29,8 @@
  rouse_rabble_suggestion_reduce_levies_county_modifier: "Reduced Levies"
  rouse_rabble_suggestion_reduce_development_county_modifier: "Reduced Development"
 
+ rouse_rabble_argument_correct: "Decided Correctly"
+ rouse_rabble_argument_incorrect: "Decided Incorrectly"
+ rouse_rabble_trusted_judgment_opinion: "Trusted Judgment"
+ rouse_rabble_doubted_judgment_opinion: "Doubted Judgment"
+ rouse_rabble_compromised_judgment_opinion: "Compromised Decision"

@@ -47,3 +47,10 @@
  rouse_rabble_ongoing.0007.b: "Reduce their levies"
  rouse_rabble_ongoing.0007.c: "Give them some time off"
  rouse_rabble_ongoing.0007.d: "Heavens no!"
+
+ # Who's the rouser
+ rouse_rabble_ongoing.0008.t: "Who's the Rabble Rouser Here?!"
+ rouse_rabble_ongoing.0008.desc: "Blasphemous! Malarky! What an apocalypitcally stupid idea! Where on earth does this suggestion even come from, I can't understand what they're thinking at all!\n\nI guess [rouser_name.GetShortUIName] is the professional here, but really? REALLY?! Does that kind of pedigree really provide them such a unique perspective as to see the merit of ideas like this?\n\nI can't understand it, but we still need to decide on a course of action."
+ rouse_rabble_ongoing.0008.a: "They know what they're doing"
+ rouse_rabble_ongoing.0008.b: "I'm overruling this nonsense"
+ rouse_rabble_ongoing.0008.c: "I'm sure we can find a compromise"
