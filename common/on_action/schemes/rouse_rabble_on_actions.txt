@@ -14,8 +14,8 @@
 		# 100 = rouse_rabble_ongoing.0005 # A rowdy tavern
 		# 100 = rouse_rabble_ongoing.0006 # An interesting missive
 		# 100 = rouse_rabble_ongoing.0007 # A costly suggestion
-		100 = rouse_rabble_ongoing.0008 # Who is the rouser 
-		# 100 = rouse_rabble_ongoing.0009 
+		# 100 = rouse_rabble_ongoing.0008 # Who is the rouser 
+		100 = rouse_rabble_ongoing.0009 # Caught crossing border
 		# 100 = rouse_rabble_ongoing.0010 
 
 		#############

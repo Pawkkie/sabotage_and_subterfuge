@@ -856,3 +856,225 @@ rouse_rabble_ongoing.0008 = {
 		}
 	}
 }
+
+# Caught crossing the border
+rouse_rabble_ongoing.0009 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0009.t
+	desc = rouse_rabble_ongoing.0009.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = terrain	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_diplomacy"
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = acknowledging
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0009 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0009
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Lie
+		name = rouse_rabble_ongoing.0009.a
+		stress_impact = {
+			honest = medium_stress_impact_gain
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 10
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 12
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 15
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 18
+					}
+					add = 20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_soldiers_unsuspecting
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 10
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 12
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 15
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						intrigue >= 18
+					}
+					add = -20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_soldiers_suspicious
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Chat
+		name = rouse_rabble_ongoing.0009.b
+		stress_impact = {
+			deceitful = medium_stress_impact_gain
+		}
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 10
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 12
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 15
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 18
+					}
+					add = 20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_soldiers_unsuspecting
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 10
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 12
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 15
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:rabble_rouser_court_position = { 
+						diplomacy >= 18
+					}
+					add = -20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = rouse_rabble_soldiers_suspicious
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Bribe
+		name = rouse_rabble_ongoing.0009.c
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+
+		remove_short_term_gold = {
+			value = 90
+			if = { 
+				limit = { scope:owner.court_position:rabble_rouser_court_position.stewardship >= 6 }
+				add = -15
+			}
+			if = { 
+				limit = { scope:owner.court_position:rabble_rouser_court_position.stewardship >= 8 }
+				add = -15
+			}
+			if = { 
+				limit = { scope:owner.court_position:rabble_rouser_court_position.stewardship >= 10 }
+				add = -15
+			}
+			if = { 
+				limit = { scope:owner.court_position:rabble_rouser_court_position.stewardship >= 12 }
+				add = -15
+			}
+			if = { 
+				limit = { scope:owner.court_position:rabble_rouser_court_position.stewardship >= 14 }
+				add = -15
+			}			
+		}
+		
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_soldiers_unsuspecting
+			}
+		}
+	}
+}

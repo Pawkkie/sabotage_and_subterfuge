@@ -34,3 +34,6 @@
  rouse_rabble_trusted_judgment_opinion: "Trusted Judgment"
  rouse_rabble_doubted_judgment_opinion: "Doubted Judgment"
  rouse_rabble_compromised_judgment_opinion: "Compromised Decision"
+
+ rouse_rabble_soldiers_suspicious: "Suspicious Soldiers"
+ rouse_rabble_soldiers_unsuspecting: "Unsuspecting Soldiers"

@@ -118,3 +118,13 @@ rouse_rabble_argument_incorrect = {
 	scheme_secrecy = -10
 	scheme_phase_duration = minor_scheme_phase_duration_malus_value
 }
+
+rouse_rabble_soldiers_suspicious = {
+	icon = intrigue_negative
+	scheme_secrecy = -25
+}
+
+rouse_rabble_soldiers_unsuspecting = {
+	icon = intrigue_positive
+	scheme_secrecy = 25
+}

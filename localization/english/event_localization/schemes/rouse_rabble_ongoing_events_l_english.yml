@@ -54,3 +54,10 @@
  rouse_rabble_ongoing.0008.a: "They know what they're doing"
  rouse_rabble_ongoing.0008.b: "I'm overruling this nonsense"
  rouse_rabble_ongoing.0008.c: "I'm sure we can find a compromise"
+
+ # Crossing the border
+ rouse_rabble_ongoing.0009.t: "Caught Crossing the Border"
+ rouse_rabble_ongoing.0009.desc: "While crossing the border into [target_title.GetNameNoTier], [rouser_name.GetShortUIName] happened across a streak of bad luck in the form of a routine patrol of soldiers roaming the countryside.\n\nThey wave for [rouser_name.GetHerHim] to walk over, not urgently or unkindly but with an air of hesitant curiosity. This is a more remote part of the region, and passerby are very few and far between.\n\nIt isn't entirely unheard of for folks to be wandering the area, but it's uncommon enough it might leave an impression on the soldiers if the situation isn't handled tactfully."
+ rouse_rabble_ongoing.0009.a: "Lie about purpose"
+ rouse_rabble_ongoing.0009.b: "Make casual conversation"
+ rouse_rabble_ongoing.0009.c: "Offer a bribe"
