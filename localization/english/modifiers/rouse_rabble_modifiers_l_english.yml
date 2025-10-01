@@ -21,3 +21,11 @@
 
  rouse_rabble_missive_crush_them: "Advised Crushing Rebels"
  rouse_rabble_missive_help_them: "Advised Helping Rebels"
+
+ rouse_rabble_suggestion_tax: "Reduced Own Taxes"
+ rouse_rabble_suggestion_levies: "Reduced Own Levies"
+ rouse_rabble_suggestion_development: "Reduced Own Development"
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "Reduced Taxes"
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "Reduced Levies"
+ rouse_rabble_suggestion_reduce_development_county_modifier: "Reduced Development"
+

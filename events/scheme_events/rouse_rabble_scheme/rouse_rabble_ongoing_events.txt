@@ -443,7 +443,6 @@ rouse_rabble_ongoing.0006 = {
 	trigger = {
 		scope:scheme = {
 			NOT = { has_variable = had_event_ongoing_0006 }
-			NOT = { exists = scope:scheme_discovered }
 		}
 	}
 
@@ -486,6 +485,119 @@ rouse_rabble_ongoing.0006 = {
 			add_scheme_modifier = {
 				type = rouse_rabble_missive_help_them
 			}
+		}
+	}
+}
+
+# A costly suggestion
+rouse_rabble_ongoing.0007 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0007.t
+	desc = rouse_rabble_ongoing.0007.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = corridor_day	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_diplomacy"
+	}
+	right_portrait = {
+		character = root
+		animation = debating
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0007 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0007
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Reduce taxes
+		name = rouse_rabble_ongoing.0007.a
+		stress_impact = {
+			forgiving = medium_stress_impact_gain
+		}
+		scope:owner = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = rouse_rabble_suggestion_reduce_tax_county_modifier } }
+				add_county_modifier = {
+					modifier = rouse_rabble_suggestion_reduce_tax_county_modifier
+					years = 10
+				}
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_suggestion_tax
+			}
+		}
+	}
+
+	option = { # Reduce levies
+		name = rouse_rabble_ongoing.0007.b
+		stress_impact = {
+			vengeful = medium_stress_impact_gain
+		}
+		scope:owner = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = rouse_rabble_suggestion_reduce_levies_county_modifier } }
+				add_county_modifier = {
+					modifier = rouse_rabble_suggestion_reduce_levies_county_modifier
+					years = 10
+				}
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_suggestion_levies
+			}
+		}
+	}
+
+	option = { # Reduce development
+		name = rouse_rabble_ongoing.0007.c
+		stress_impact = {
+			vengeful = medium_stress_impact_gain
+		}
+		scope:owner = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = rouse_rabble_suggestion_reduce_development_county_modifier } }
+				add_county_modifier = {
+					modifier = rouse_rabble_suggestion_reduce_development_county_modifier
+					years = 10
+				}
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_suggestion_development
+			}
+		}
+	}
+
+	option = { # Nothing
+		name = rouse_rabble_ongoing.0007.d
+		stress_impact = {
+			generous = medium_stress_impact_gain
 		}
 	}
 }

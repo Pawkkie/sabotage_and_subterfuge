@@ -39,3 +39,11 @@
  rouse_rabble_ongoing.0006.desc: "I've received a letter from, unbelievably, [target.GetShortUIName]. The tone is flattering and cordial, a ruler checking in with [target.GetHerHis] contemporaries.\n\nThe interesting part is the ending. It seems [target.GetSheHe] is dealing with some unrest from the peasantry, and is asking my opinion as to the best way forward. It's clear I'm not under suspicion, but this may yet present an opportunity."
  rouse_rabble_ongoing.0006.a: "Crush them"
  rouse_rabble_ongoing.0006.b: "Cut them some slack"
+
+ # A Costly Suggestion
+ rouse_rabble_ongoing.0007.t: "A Costly Suggestion"
+ rouse_rabble_ongoing.0007.desc: "An agent recently suggested to me that it might be prudent to try to lead the peasant rebellion by example. By this they mean, use our realm as a shining beacon of what the peasants of the world should aspire to achieve for themselves. [rouser_name.GetShortUIName] can then use our good grace as concrete evidence that change is possible.\n\nThis does not come without a cost, as we must obviously change how we interact with the masses ourselves. Is it worth it just for this?"
+ rouse_rabble_ongoing.0007.a: "Reduce their taxes"
+ rouse_rabble_ongoing.0007.b: "Reduce their levies"
+ rouse_rabble_ongoing.0007.c: "Give them some time off"
+ rouse_rabble_ongoing.0007.d: "Heavens no!"

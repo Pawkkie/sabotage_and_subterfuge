@@ -10,3 +10,21 @@ roused_rabble_war_lost_county_modifier = {
 	development_growth_factor = small_development_growth_loss
 	levy_size = -0.5
 }
+
+rouse_rabble_suggestion_reduce_tax_county_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 15
+	tax_mult = -0.1
+}
+
+rouse_rabble_suggestion_reduce_levies_county_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 15
+	levy_size = -0.1
+}
+
+rouse_rabble_suggestion_reduce_development_county_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 15
+	development_growth_factor = small_development_growth_loss
+}

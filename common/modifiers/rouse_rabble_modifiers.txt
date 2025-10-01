@@ -80,8 +80,27 @@ rouse_rabble_missive_crush_them = {
 	scheme_success_chance = 40
 	scheme_phase_duration = minor_scheme_phase_duration_malus_value
 }
+
 rouse_rabble_missive_help_them = {
 	icon = diplomacy_positive
 	scheme_success_chance = -10
 	scheme_secrecy = 40
+}
+
+rouse_rabble_suggestion_tax = {
+	icon = stewardship_positive
+	scheme_success_chance = 25
+	scheme_secrecy = 25
+}
+
+rouse_rabble_suggestion_levies = {
+	icon = martial_positive
+	scheme_success_chance = 25
+	scheme_secrecy = 25
+}
+
+rouse_rabble_suggestion_development = {
+	icon = learning_positive
+	scheme_success_chance = 25
+	scheme_secrecy = 25
 }
