@@ -84,6 +84,12 @@ rouse_rabble_ongoing.0002 = {
 	title = rouse_rabble_ongoing.0002.t
 	desc = rouse_rabble_ongoing.0002.desc
 	theme = rouse_rabble_scheme
+	override_background = {
+		reference = farmland
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_intrigue"
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -97,7 +103,6 @@ rouse_rabble_ongoing.0002 = {
 	trigger = {
 		scope:scheme = {
 			NOT = { has_variable = had_event_ongoing_0002 }
-			scheme_agent_charges < opportunity_cap_value
 		}
 	}
 
@@ -127,7 +132,6 @@ rouse_rabble_ongoing.0002 = {
 			add_scheme_modifier = {
 				type = rouse_rabble_intercept_aid
 			}
-			change_opportunities = 1
 		}
 	}
 
@@ -161,5 +165,142 @@ rouse_rabble_ongoing.0002 = {
 				type = rouse_rabble_ignore_aid
 			}
 		}
+	}
+}
+
+# Connecting with the Youth
+rouse_rabble_ongoing.0003 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0003.t
+	desc = rouse_rabble_ongoing.0003.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = army_camp	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_martial"
+	}
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = happy_teacher
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0003 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0003
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Mock battle
+		name = rouse_rabble_ongoing.0003.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_mock_battle
+			}
+		}
+	}
+
+	option = { # Hunting tournament
+		name = rouse_rabble_ongoing.0003.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_hunting_tournament
+			}
+		}
+	}
+
+	option = { # Cultural exchange
+		name = rouse_rabble_ongoing.0003.c
+		add_prestige = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_cultural_exchange
+			}
+		}
+	}
+}
+
+# Staging a protest
+rouse_rabble_ongoing.0004 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0004.t
+	desc = rouse_rabble_ongoing.0004.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = bedchamber	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_learning"
+	}
+	left_portrait = {
+		character = root
+		animation = reading
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0004 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0004
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Undercover
+		name = rouse_rabble_ongoing.0004.a
+		stress_impact = {
+			honest = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_undercover_protest
+			}
+		}
+	}
+
+	option = { # Do nothing
+		name = rouse_rabble_ongoing.0004.b
+		add_piety = 50
 	}
 }

@@ -6,5 +6,10 @@
  rouse_rabble_intercept_aid: "Intercepted Local Aid"
  rouse_rabble_endorse_aid: "Endorsed Local Aid"
  rouse_rabble_ignore_aid: "Ignored Local Aid"
-
  rouse_rabble_endorsed_aid_opinion: "Endorsed Local Aid"
+
+ rouse_rabble_mock_battle: "Youth Mock Battle"
+ rouse_rabble_hunting_tournament: "Youth Hunting Tournament"
+ rouse_rabble_cultural_exchange: "Youth Cultural Exchange"
+
+ rouse_rabble_undercover_protest: "Undercover Protests"

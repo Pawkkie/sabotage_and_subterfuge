@@ -12,3 +12,16 @@
  rouse_rabble_ongoing.0002.a: "Intercept the delivery"
  rouse_rabble_ongoing.0002.b: "Endorse the delivery"
  rouse_rabble_ongoing.0002.c: "Just see what happens"
+
+ # Connecting with the youth
+ rouse_rabble_ongoing.0003.t: "Connecting with the Youth"
+ rouse_rabble_ongoing.0003.desc: "It seems that [rouser_name.GetShortUIName] has been asked to help put on a fair for the local peasant youth! There's an entire afteroon's worth of time to fill with some kind of activity.\n\nThe youth of today are the revolutionaries of tomorrow. I wonder if this is an apportunity to sow the seeds that might most benefit us?"
+ rouse_rabble_ongoing.0003.a: "Plan a mock battle"
+ rouse_rabble_ongoing.0003.b: "Hold a hunting tournament"
+ rouse_rabble_ongoing.0003.c: "Run a workshop on cultural exchange"
+
+ # Staging a protest
+ rouse_rabble_ongoing.0004.t: "Staging a Protest"
+ rouse_rabble_ongoing.0004.desc: "I read a novel recently in which the characters, wealthy nobles, disguised themselves in dress and demeanor to blend in with the peasantry.\n\nIt occured to me that we could do this in [target_title.GetNameNoTier], and send in some members of our court to stage a peaceful protest, potentially turning it violent as it builds."
+ rouse_rabble_ongoing.0004.a: "Let's rock the boat"
+ rouse_rabble_ongoing.0004.b: "Maybe this is better left to fiction"
