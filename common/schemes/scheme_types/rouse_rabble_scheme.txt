@@ -335,7 +335,7 @@
 		# Send Rabble Rouser to other court
 		scope:owner.court_position:rabble_rouser_court_position ?= {
 		 	set_location = scope:target.capital_province
-		 }
+		}
 	}
 	on_phase_completed = {
 		suppress_scheme_follow_up_event_till_input_given_effect = yes
