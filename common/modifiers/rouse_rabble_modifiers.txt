@@ -23,7 +23,7 @@ rouse_rabble_intercept_aid = {
 rouse_rabble_endorse_aid = {
 	icon = diplomacy_positive
 	scheme_secrecy = 30
-	scheme_succes_chance = -10
+	scheme_success_chance = -10
 }
 
 rouse_rabble_ignore_aid = {
