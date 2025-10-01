@@ -14,3 +14,19 @@ rouse_rabble_ignored_local_feast = {
 	icon = diplomacy_positive
 	scheme_secrecy = 20
 }
+
+rouse_rabble_intercept_aid = {
+	icon = intrigue_positive
+	scheme_phase_duration = major_scheme_phase_duration_bonus_value
+}
+
+rouse_rabble_endorse_aid = {
+	icon = diplomacy_positive
+	scheme_secrecy = 30
+	scheme_succes_chance = -10
+}
+
+rouse_rabble_ignore_aid = {
+	icon = diplomacy_positive
+	scheme_success_chance = 10
+}

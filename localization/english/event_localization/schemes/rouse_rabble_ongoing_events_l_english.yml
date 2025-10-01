@@ -5,3 +5,10 @@
  rouse_rabble_ongoing.0001.a: "I'll join the festivities"
  rouse_rabble_ongoing.0001.b: "I'll send a gift"
  rouse_rabble_ongoing.0001.c: "I shouldn't get involved"
+
+ # The liege sends relief
+ rouse_rabble_ongoing.0002.t: "The Liege Sends Relief"
+ rouse_rabble_ongoing.0002.desc: "[rouser_name.GetShortUIName] has informed me that a fire recently spread through some rural [target_title.GetNameNoTier] settlements, torching a granary and nearby buildings. This has seriously stressed the peasants' food supply.\n\n[target.GetShortUIName] has ordered relief sent to the affected area in the form of food and building supplies. Offering our support would foster good will but stabilize the masses... Perhaps we instead hire some mercenaries to intercept and destroy the delivery on route?\n\nMaybe that's a step too far..."
+ rouse_rabble_ongoing.0002.a: "Intercept the delivery"
+ rouse_rabble_ongoing.0002.b: "Endorse the delivery"
+ rouse_rabble_ongoing.0002.c: "Just see what happens"

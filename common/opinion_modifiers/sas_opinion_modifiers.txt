@@ -1,0 +1,6 @@
+﻿rouse_rabble_endorsed_aid_opinion = {
+	opinion = 20
+	years = 10
+	decaying = yes
+	stacking = yes
+}

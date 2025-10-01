@@ -26,7 +26,7 @@ rouse_rabble_ongoing.0001 = {
 	immediate = {
 		scope:scheme = {
 			set_variable = {
-				name = had_event_ongoing_0004
+				name = had_event_ongoing_0001
 				value = yes
 			}
 		}
@@ -73,6 +73,92 @@ rouse_rabble_ongoing.0001 = {
 		scope:scheme = {
 			add_scheme_modifier = {
 				type = rouse_rabble_ignored_local_feast
+			}
+		}
+	}
+}
+
+# Relief from disaster
+rouse_rabble_ongoing.0002 = {
+	type = character_event
+	title = rouse_rabble_ongoing.0002.t
+	desc = rouse_rabble_ongoing.0002.desc
+	theme = rouse_rabble_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0002 }
+			scheme_agent_charges < opportunity_cap_value
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0002
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Intercept
+		name = rouse_rabble_ongoing.0002.a
+		stress_impact = {
+			honest = medium_stress_impact_gain
+		}
+		add_piety = -50
+		add_prestige = -50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_intercept_aid
+			}
+			change_opportunities = 1
+		}
+	}
+
+	option = { # Endorse
+		name = rouse_rabble_ongoing.0002.b
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		remove_short_term_gold = 50
+		add_prestige = 50
+		scope:target = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_endorsed_aid_opinion
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_endorse_aid
+			}
+		}
+	}
+
+	option = { # Nothing
+		name = rouse_rabble_ongoing.0002.c
+		stress_impact = {
+			generous = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_ignore_aid
 			}
 		}
 	}
