@@ -1,0 +1,285 @@
+﻿namespace = sas_hostile_scheme_discovery
+
+sas_hostile_scheme_discovery.1002 = {
+		type = character_event
+	title = sas_hostile_scheme_discovery.1002.t
+	desc = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:spymaster
+						exists = cp:councillor_spymaster
+					}
+					desc = sas_hostile_scheme_discovery.1002.intro
+				}
+				desc = sas_hostile_scheme_discovery.1002.intro_no_spymaster
+			}
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = rouse_rabble
+					}
+				}
+				desc = sas_hostile_scheme_discovery.1002.rouse
+			}
+			desc = sas_hostile_scheme_discovery.1002.fallback
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { scope:target = root }
+				}
+				desc = sas_hostile_scheme_discovery.2001.target_other
+			}
+			desc = sas_hostile_scheme_discovery.2001.target_me
+		}
+	}
+	theme = generic_intrigue_scheme
+	left_portrait = scope:owner
+	right_portrait = scope:spymaster
+	lower_right_portrait = scope:targeted_courtier
+
+	immediate = {
+		play_music_cue = "mx_cue_murder"
+		if = {
+			limit = {
+				scope:scheme = {
+					scheme_target_character = { NOT = { this = root } }
+				}
+			}
+			scope:scheme = {
+				scheme_target_character = {
+					trigger_event = sas_hostile_scheme_discovery.1002
+					save_scope_as = targeted_courtier
+				}
+			}
+		}
+	}
+
+	#
+	option = {
+		name = sas_hostile_scheme_discovery.1002.a
+		show_as_tooltip = {
+			scope:owner = {
+				add_dread = minor_dread_gain
+				hostile_scheme_exposure_legitimacy_effect = yes
+			}
+			if = {
+				limit = { #Double check since it seems the scheme sometimes hangs around as a scope
+					exists = scope:scheme
+					exists = scope:scheme.scheme_target_character
+				}
+				scope:scheme = {
+					end_scheme = yes
+				}
+			}
+		}
+	}
+
+	after = {
+		if = { #Only send it from the host's event so that owner doesn't get duplication if the host and the target isn't the same person
+			limit = {
+				exists = scope:scheme.scheme_target_character
+				scope:scheme.scheme_target_character = { this = root }
+			}
+			scope:owner = { #Event for the owner that actually ends the scheme
+				trigger_event = sas_hostile_scheme_discovery.3003
+			}
+		}
+	}
+}
+
+# Discover scheme
+sas_hostile_scheme_discovery.2001 = {
+	type = character_event
+	title = sas_hostile_scheme_discovery.3001.t
+	desc = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = scope:spymaster
+						exists = cp:councillor_spymaster
+					}
+					desc = sas_hostile_scheme_discovery.2001.intro
+				}
+				desc = sas_hostile_scheme_discovery.2001.intro_no_spymaster
+			}
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = rouse_rabble
+					}
+				}
+				desc = sas_hostile_scheme_discovery.2001.rouse
+			}
+			desc = sas_hostile_scheme_discovery.2001.fallback
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { scope:target = root }
+					scope:target = scope:spymaster
+				}
+				desc = sas_hostile_scheme_discovery.2001.target_spymaster
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = { scope:target = root }
+				}
+				desc = sas_hostile_scheme_discovery.2001.target_other
+			}
+			desc = sas_hostile_scheme_discovery.2001.target_me
+		}
+	}
+	theme = generic_intrigue_scheme
+	left_portrait = {
+		character = scope:spymaster
+		animation = eavesdrop
+	}
+	right_portrait = {
+		trigger = {
+			NOT = { scope:target = scope:spymaster }
+		}
+		character = scope:target
+		animation = disbelief
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_murder"
+	}
+
+	#Schemes are bad
+	option = {
+		name = sas_hostile_scheme_discovery.2001.a
+		scope:scheme = {
+			expose_scheme = yes
+		}
+		scope:owner = {
+			trigger_event = sas_hostile_scheme_discovery.3002
+		}
+	}
+}
+
+#Scheme discovery notification for scheme owner
+sas_hostile_scheme_discovery.3002 = {
+	type = character_event
+	title = sas_hostile_scheme_discovery.3002.t
+	desc = sas_hostile_scheme_discovery.3002.desc
+	theme = generic_intrigue_scheme
+	left_portrait = {
+		character = scope:target
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:portrait
+		animation = worry
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_murder"
+		if = {
+			limit = { exists = scope:target.court_owner }
+			scope:target.court_owner = {
+				save_scope_as = court_owner
+				if = {
+					limit = {
+						NOT = { scope:target = scope:court_owner }
+					}
+					save_scope_as = portrait
+				}
+			}
+		}
+		show_as_tooltip = {
+			scope:scheme = {
+				expose_scheme = yes
+			}
+		}
+	}
+
+	option = {
+		name = sas_hostile_scheme_discovery.3002.a
+	}
+}
+
+#Scheme owner discovery notification for scheme owner
+sas_hostile_scheme_discovery.3003 = {
+	type = character_event
+	title = sas_hostile_scheme_discovery.3003.t
+	desc = {
+		desc = sas_hostile_scheme_discovery.3003.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = rouse_rabble
+					}
+				}
+				desc = sas_hostile_scheme_discovery.3003.rouse
+			}
+			desc = sas_hostile_scheme_discovery.3003.fallback
+		}
+	}
+	theme = generic_intrigue_scheme
+	left_portrait = {
+		character = scope:target
+		triggered_animation = {
+			trigger = { ai_boldness > 0 }
+			animation = anger
+		}
+		triggered_animation = {
+			trigger = { always = yes }
+			animation = fear
+		}
+	}
+	right_portrait = scope:portrait
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_murder"
+		if = {
+			limit = { exists = scope:target.court_owner }
+			scope:target.court_owner = {
+				save_scope_as = court_owner
+				if = {
+					limit = {
+						NOT = { scope:target = scope:court_owner }
+					}
+					save_scope_as = portrait
+				}
+			}
+		}
+	}
+
+	option = {
+		name = sas_hostile_scheme_discovery.3003.a
+		scope:owner = {
+			add_dread = minor_dread_gain
+			hostile_scheme_exposure_legitimacy_effect = yes
+		}
+		if = {
+			limit = {
+				scope:scheme = {
+					scheme_type = rouse_rabble
+				}
+			}
+			rouse_rabble_failure_effect = yes
+		}
+
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+}

@@ -1,0 +1,27 @@
+﻿l_english: 
+ sas_hostile_scheme_discovery.1002.t: "Schemer Discovered!"
+ sas_hostile_scheme_discovery.1002.intro: "My [spymaster.GetCouncilTitle] has come to me with grave news: it is [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]"
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "Grave news has reached me: [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]"
+ sas_hostile_scheme_discovery.1002.rouse: "that is rousing the peasant rabble belonging to the realm of"
+ sas_hostile_scheme_discovery.1002.fallback: "that is plotting against"
+ sas_hostile_scheme_discovery.1002.a: "The [owner.Custom('InsultAdjective')] fiend!"
+
+ sas_hostile_scheme_discovery.2001.t: "A Scheme at [ROOT.Char.Custom('GetCourt')|U]"
+ sas_hostile_scheme_discovery.2001.intro: "My [spymaster.GetCouncilTitle] has come to me with grave news. While we do not yet know who,"
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "Grave news has reached me. While it is not yet known who,"
+ sas_hostile_scheme_discovery.2001.fallback: "someone is plotting against"
+ sas_hostile_scheme_discovery.2001.rouse: "someone is rousing the peasant rabble belonging to the realm of"
+ sas_hostile_scheme_discovery.2001.target_other: "my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], [target.GetTitledFirstName]!"
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]!\n\nThey don't know who they're dealing with, my [ROOT.Char.GetLadyLord]. They think that they can kill #EMP me#!? I will show them. Oh yes I will."
+ sas_hostile_scheme_discovery.2001.target_me: "me!"
+ sas_hostile_scheme_discovery.2001.a: "We must stop the villain behind this!"
+
+ sas_hostile_scheme_discovery.3002.t: "Scheme Discovered"
+ sas_hostile_scheme_discovery.3002.desc: "The existence of my plot to [scheme.GetFullActionName] has been discovered!\n\nWhile my involvement is not yet known, this will make it a lot more difficult to bring my plans to fruition."
+ sas_hostile_scheme_discovery.3002.a: "Curses!"
+
+ sas_hostile_scheme_discovery.3003.t: "Involvement Discovered"
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has discovered that I am the mastermind behind the plot"
+ sas_hostile_scheme_discovery.3003.rouse: "to rouse the peasant rabble belonging to [target.GetHerHim]!"
+ sas_hostile_scheme_discovery.3003.fallback: "against [target.GetHerHim]!"
+ sas_hostile_scheme_discovery.3003.a: "There must have been a misunderstanding!"

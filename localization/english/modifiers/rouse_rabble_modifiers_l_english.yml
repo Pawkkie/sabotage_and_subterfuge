@@ -41,3 +41,6 @@
  rouse_rabble_increase_tension: "Increased Tension"
  rouse_rabble_cool_off_tension: "Cooled Off Tensions"
  rouse_rabble_increase_tension_county_modifier: "Inspired by Rebels"
+
+ attempted_to_rouse_rabble: "Attempted to Rouse Rabble"
+ successfully_roused_rabble: "Successfully Roused Rabble"

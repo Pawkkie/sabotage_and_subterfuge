@@ -344,7 +344,7 @@
 	}
 	on_hud_click  = { rouse_rabble_scheme_prep_effect = yes }
 	on_monthly = {
-		hostile_scheme_monthly_discovery_chance_effect = yes
+		sas_hostile_scheme_monthly_discovery_chance_effect = yes
 		if = {
 			limit = {
 				NOT = { exists = scope:discovery_event_happening }

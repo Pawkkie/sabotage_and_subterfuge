@@ -95,30 +95,3 @@
  rouse_rabble_interaction: "Rouse Rabble #weak (Scheme)#!"
  rouse_rabble_interaction_desc: "Attempt to rouse the rabble of [recipient.GetShortUINameNoTooltip]'s realm to start a peasant revolt"
  rouse_rabble_interaction_notification: "Rousing the Rabble"
-
- #################################### TODO
-
- # Opinion Modifiers
- revolt_scheme_opinion: "Manipulated me into a revolt"
- revolt_scheme_opinion_liege: "Instigated a revolt against me"
-
-## Secrets
-# Secret Types
- cki_revolt_secret:1 "Instigated a Revolt"
- cki_revolt_secret_desc:1 "Manipulated [TARGET_CHARACTER.GetShortUIName] into a revolt"
-
-# Secret Events
-# Revolt
- cki_scheme_critical_moments.2001: "Instigate Revolt Secret Exposed"
- cki_scheme_critical_moments.2001.t: "Instigate Revolt Secret Exposed"
- cki_scheme_critical_moments.2001.desc: "Your Instigate Revolt Secret was Exposed"
- cki_scheme_critical_moments.2001.a: "Damnation"
-
-## Rules
- rule_cki_rule_revolt: "#Y Schemes Expanded:#!  Instigate Revolt Scheme"
- setting_cki_rule_revolt_active: "Active"
- setting_cki_rule_revolt_active_desc: "Active"
- setting_cki_rule_revolt_inactive: "Inactive"
- setting_cki_rule_revolt_inactive_desc: "Inactive"
- setting_cki_rule_revolt_earned: "Unlock"
- setting_cki_rule_revolt_earned_desc: "Unlock"

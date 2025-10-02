@@ -25,3 +25,17 @@ rouse_rabble_compromised_judgment_opinion = {
 	decaying = yes
 	stacking = yes
 }
+
+attempted_to_rouse_rabble = {
+	opinion = -30
+	decaying = yes
+	years = 10
+	imprisonment_reason = yes
+}
+
+successfully_roused_rabble = {
+	opinion = -40
+	decaying = yes
+	years = 15
+	imprisonment_reason = yes
+}
