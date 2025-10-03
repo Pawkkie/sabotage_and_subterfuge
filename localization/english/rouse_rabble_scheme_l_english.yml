@@ -59,7 +59,7 @@
  # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
  rouse_rabble_action: "Rouse the Rabble of"
 
- ROUSE_RABBLE_SUCCESS_DESC: "The rabble having been roused, inciting a peasant revolt"
+ ROUSE_RABBLE_SUCCESS_DESC: "The rabble have been roused, inciting a peasant revolt"
  ROUSE_RABBLE_DISCOVERY_DESC: "You can continue rousing the rabble in [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] realm."
 
  max_rouse_rabble_schemes_add: "Max [GetScheme('rouse_rabble').GetTypeName] [schemes|E]"
@@ -80,6 +80,7 @@
  RABBLE_ROUSER_TRAVELING: "[CHARACTER.GetShortUIName|U] is traveling"
  RABBLE_ROUSER_IN_PRISON: "[CHARACTER.GetShortUIName|U] is in prison"
  RABBLE_ROUSER_UNAVAILABLE: "[CHARACTER.GetShortUIName|U] is unavailable"
+ RABBLE_ROUSER_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] is performing the Rouse Rabble task"
  RABBLE_ROUSER_NOT_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] is not performing the Rouse Rabble task"
  rouse_rabble_invalidated_title: "Rouse Rabble Scheme Ends"
  rouse_rabble_invalidated_dead: "[target.GetShortUIName] has passed away. You can no longer rouse the rabble against [target.GetHerHis] reign."
@@ -89,7 +90,7 @@
  rouse_rabble_invalidated_in_army: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is leading an army."
  rouse_rabble_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is in prison."
  rouse_rabble_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is travelling."
- rouse_rabble_invalidated_has_faction: "[CHARACTER.GetShortUIName|U]'s rabble has been roused, and has already formed a faction against him."
+ rouse_rabble_invalidated_has_faction: "[CHARACTER.GetShortUIName|U]'s rabble has been roused, and has already formed a faction against [CHARACTER.GetHerHim]."
 
  ## Interaction
  rouse_rabble_interaction: "Rouse Rabble #weak (Scheme)#!"

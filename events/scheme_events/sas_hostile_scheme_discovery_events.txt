@@ -95,7 +95,7 @@ sas_hostile_scheme_discovery.1002 = {
 # Discover scheme
 sas_hostile_scheme_discovery.2001 = {
 	type = character_event
-	title = sas_hostile_scheme_discovery.3001.t
+	title = sas_hostile_scheme_discovery.2001.t
 	desc = {
 		desc = {
 			first_valid = {

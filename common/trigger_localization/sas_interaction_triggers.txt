@@ -24,11 +24,31 @@ rabble_rouser_unavailable = {
 }
 
 rabble_rouser_rousing_rabble = {
-	first = RABBLE_ROUSER_AVAILABLE
+	first = RABBLE_ROUSER_ROUSING_RABBLE
 	first_not = RABBLE_ROUSER_NOT_ROUSING_RABBLE
+}
+
+rabble_rouser_provoking_vassals = {
+	first = RABBLE_ROUSER_PROVOKING_VASSALS
+	first_not = RABBLE_ROUSER_NOT_PROVOKING_VASSALS
 }
 
 already_fighting_roused_rabble = {
 	first = ALREADY_FIGHTING_ROUSED_RABBLE
 	first_not = NOT_ALREADY_FIGHTING_ROUSED_RABBLE
+}
+
+already_fighting_independence_faction = {
+	first = ALREADY_FIGHTING_INDEPENDENCE_FACTION
+	first_not = NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION
+}
+
+already_fighting_dissolution_faction = {
+	first = ALREADY_FIGHTING_DISSOLUTION_FACTION
+	first_not = NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION
+}
+
+vassals_can_be_provoked = {
+	first = VASSALS_CAN_BE_PROVOKED
+	first_not = VASSALS_CANNOT_BE_PROVOKED
 }

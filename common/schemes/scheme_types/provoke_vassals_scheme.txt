@@ -1,11 +1,11 @@
-﻿rouse_rabble = {
+﻿provoke_vassals = {
 	# Basic Setup
 	skill = diplomacy
-	desc = rouse_rabble_desc_general
-	success_desc = "ROUSE_RABBLE_SUCCESS_DESC"
-	discovery_desc = "ROUSE_RABBLE_DISCOVERY_DESC"
-	icon = icon_scheme_rouse_rabble
-	illustration = "gfx/interface/illustrations/event_scenes/tavern.dds"
+	desc = provoke_vassals_desc_general
+	success_desc = "PROVOKE_VASSALS_SUCCESS_DESC"
+	discovery_desc = "PROVOKE_VASSALS_DISCOVERY_DESC"
+	icon = icon_scheme_provoke_vassals
+	illustration = "gfx/interface/illustrations/event_scenes/courtyard.dds"
 	category = hostile
 	target_type = character
 	is_secret = yes
@@ -38,13 +38,41 @@
 				in_diplomatic_range = scope:owner
 				highest_held_title_tier >= tier_duchy
 			}
-			# Target not already dealing with roused rabble
+			# Target not already dealing with indepedence faction
 			custom_description = {
-				text = already_fighting_roused_rabble
+				text = already_fighting_independence_faction
 				subject = scope:target
 				NOT = {
 					any_targeting_faction = {
-						faction_is_type = roused_rabble_faction
+						faction_is_type = independence_faction
+					}
+				}
+			}
+			# Target not already dealing with dissolution faction
+			custom_description = {
+				text = already_fighting_dissolution_faction
+				subject = scope:target
+				NOT = {
+					any_targeting_faction = {
+						faction_is_type = nation_fracturing_faction
+					}
+				}
+			}
+			# Has any vassal that can create a faction
+			custom_description = {
+				text = vassals_can_be_provoked
+				subject = scope:target
+				any_vassal = {
+					is_landed = yes
+					OR = {
+						can_create_faction = {
+							type = independence_faction
+							target = scope:target
+						}
+						can_create_faction = {
+							type = nation_fracturing_faction
+							target = scope:target
+						}
 					}
 				}
 			}
@@ -55,15 +83,15 @@
 			text = have_rabble_rouser_court_position
 			exists = scope:owner.court_position:rabble_rouser_court_position
 		}
-		# Rabble Rouser Rousing Rabble
+		# Rabble Rouser Provoking Vassals
 		trigger_if = {
 			limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
 			custom_description = {
-				text = rabble_rouser_rousing_rabble
+				text = rabble_rouser_provoking_vassals
 				subject = scope:owner.court_position:rabble_rouser_court_position
 				scope:owner = {
-					exists = var:rabble_rouser_is_rousing_rabble
-					var:rabble_rouser_is_rousing_rabble = yes
+					exists = var:rabble_rouser_is_provoking_vassals
+					var:rabble_rouser_is_provoking_vassals = yes
 				}
 			}
 		}
@@ -229,6 +257,11 @@
 			desc = ROUSE_RABBLE_GREGARIOUS
 		}
 		modifier = {
+			add = 20
+			scope:owner = { has_trait = gregarious }
+			desc = PROVOKE_VASSALS_AMBITIOUS
+		}
+		modifier = {
 			add = 10
 			scope:owner = { has_trait = diplomat }
 			desc = ROUSE_RABBLE_DIPLOMAT
@@ -338,10 +371,10 @@
 	}
 	on_phase_completed = {
 		suppress_scheme_follow_up_event_till_input_given_effect = yes
-		rouse_rabble_scheme_prep_effect = yes
+		provoke_vassals_scheme_prep_effect = yes
 		sas_cap_schemes_and_fire_reminders_effect = yes
 	}
-	on_hud_click  = { rouse_rabble_scheme_prep_effect = yes }
+	on_hud_click  = { provoke_vassals_scheme_prep_effect = yes }
 	on_monthly = {
 		sas_hostile_scheme_monthly_discovery_chance_effect = yes
 		if = {
@@ -350,7 +383,7 @@
 			}
 			scheme_owner = {
 				trigger_event = {
-					on_action = rouse_rabble_ongoing
+					on_action = provoke_vassals_ongoing
 					days = { 1 30 }
 				}
 			}
@@ -361,7 +394,7 @@
 			limit = {
 				scheme_owner = { is_ai = yes }
 			}
-			rouse_rabble_scheme_prep_effect = yes
+			provoke_vassals_scheme_prep_effect = yes
 		}
 	}
 	on_invalidated = {
@@ -382,8 +415,8 @@
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
-					custom_tooltip = rouse_rabble_invalidated_dead
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_dead
 					left_icon = scope:target
 				}
 			}
@@ -397,7 +430,7 @@
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
+					title = provoke_vassals_invalidated_title
 					left_icon = scope:target
 					custom_description_no_bullet = {
 						object = scope:target
@@ -415,29 +448,78 @@
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
-					custom_tooltip = rouse_rabble_invalidated_target_lost_title
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_target_lost_title
 					left_icon = scope:target
 				}
 			}
 		}
-		# Target already dealing with roused rabble
+		# Target already dealing with independence faction
 		if = {
 			limit = {
 				scope:target = {
 					any_targeting_faction = {
-						faction_is_type = roused_rabble_faction
+						faction_is_type = independence_faction
 					}
 				}
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
-					custom_tooltip = rouse_rabble_invalidated_has_faction
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_has_independence_faction
 					left_icon = scope:target
 				}
 			}
 		}
+
+		# Target not already dealing with dissolution faction
+		if = {
+			limit = {
+				scope:target = {
+					any_targeting_faction = {
+						faction_is_type = nation_fracturing_faction
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_has_dissolution_faction
+					left_icon = scope:target
+				}
+			}
+		}
+
+		# Has any vassal that can create a faction
+		if ={
+			limit = {
+				NOT = {
+					scope:target = {
+						any_vassal = {
+							is_landed = yes
+							OR = {
+								can_create_faction = {
+									type = independence_faction
+									target = scope:target
+								}
+								can_create_faction = {
+									type = nation_fracturing_faction
+									target = scope:target
+								}
+							}
+						}
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_no_eligible_vassals
+					left_icon = scope:target
+				}
+			}
+		}
+
 		# Rabble Rouser unemployed
 		if = {
 			limit = {
@@ -445,27 +527,27 @@
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
+					title = provoke_vassals_invalidated_title
 					left_icon = scope:owner
 					custom_description_no_bullet = {
-						text = rouse_rabble_invalidated_no_rabble_rouser
+						text = provoke_vassals_invalidated_no_rabble_rouser
 					}
 				}
 			}
 		}
-		# Rabble Rouser no longer Rousing Rabble
+		# Rabble Rouser no longer Provoking Vassals
 		if = {
 			limit = { 
 				exists = scope:owner.court_position:rabble_rouser_court_position
-				scope:owner.var:rabble_rouser_is_rousing_rabble = no
+				scope:owner.var:rabble_rouser_is_provoking_vassals = no
 			}
 			scope:owner = {
 				send_interface_toast = {
-					title = rouse_rabble_invalidated_title
+					title = provoke_vassals_invalidated_title
 					left_icon = scope:owner.court_position:rabble_rouser_court_position
 					custom_description_no_bullet = {
 						subject = scope:owner.court_position:rabble_rouser_court_position
-						text = rouse_rabble_invalidated_not_rousing_rabble
+						text = provoke_vassals_invalidated_not_provoking_vassals
 					}
 				}
 			}

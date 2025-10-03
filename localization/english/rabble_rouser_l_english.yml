@@ -19,8 +19,10 @@
  # Provoke Vassals task
  rabble_rouser_task_provoke_vassals:0 "Provoke Vassals"
  rabble_rouser_task_provoke_vassals_desc:0 "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
+ allow_provoke_vassals_scheme_tt: "Can use the [provoke_vassals_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Pacify the Masses task
  rabble_rouser_task_pacify_the_masses: "Pacify the Masses"
  rabble_rouser_task_pacify_the_masses_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."
  increased_rouse_rabble_defense_tt: "Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
+ increased_provoke_vassals_defense_tt: "Enemy [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"

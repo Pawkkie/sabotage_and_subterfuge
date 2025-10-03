@@ -81,6 +81,9 @@ sas_cap_schemes_and_fire_reminders_effect = {
 				rouse_rabble = {
 					rouse_rabble_scheme_prep_effect = yes
 				}
+				provoke_vassals = {
+					provoke_vassals_scheme_prep_effect = yes
+				}
 			}
 		}
 		# If the player hasn't been reminded once, tell them that their scheme has hit max opportunities.

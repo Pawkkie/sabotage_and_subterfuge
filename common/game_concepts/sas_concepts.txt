@@ -2,6 +2,10 @@
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
 
+provoke_vassals_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds"
+}
+
 rabble_rouser_court_position = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }

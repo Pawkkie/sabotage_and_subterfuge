@@ -478,6 +478,10 @@
 				value = no
 			}
 			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = no
+			}
+			set_variable = {
 				name = rabble_rouser_is_pacifying_the_masses
 				value = no
 			}
@@ -488,6 +492,7 @@
 		scope:liege = { 
 			remove_variable = rabble_rouser_is_rousing_rabble
 			remove_variable = rabble_rouser_is_pacifying_the_masses
+			remove_variable = rabble_rouser_is_provoking_vassals
 		}
 	}
 	on_court_position_invalidated = {
@@ -495,6 +500,7 @@
 		scope:liege = { 
 			remove_variable = rabble_rouser_is_rousing_rabble
 			remove_variable = rabble_rouser_is_pacifying_the_masses
+			remove_variable = rabble_rouser_is_provoking_vassals
 		}
 	}
 	on_court_position_vacated = {
@@ -504,6 +510,7 @@
 		scope:liege = { 
 			remove_variable = rabble_rouser_is_rousing_rabble
 			remove_variable = rabble_rouser_is_pacifying_the_masses
+			remove_variable = rabble_rouser_is_provoking_vassals
 		}
 	}
 

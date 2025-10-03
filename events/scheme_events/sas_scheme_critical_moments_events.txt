@@ -819,8 +819,6 @@ sas_scheme_critical_moments.0010 = {
 	immediate = {
 		trigger_event = sas_scheme_critical_moments.0001
 		trigger_event = sas_scheme_critical_moments.0002
-		# trigger_event = sas_scheme_critical_moments.1001 # This was murder
-		# trigger_event = sas_scheme_critical_moments.1011 # This was seduce
 		save_scope_as = scheme_starter_personal_secrecy
 	}
 }

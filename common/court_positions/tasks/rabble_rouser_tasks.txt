@@ -88,27 +88,45 @@ rabble_rouser_task_provoke_vassals = {
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 	
-	scaling_employer_modifiers = {
-		terrible = { hostile_scheme_phase_duration_add = -2 }
-		poor = { hostile_scheme_phase_duration_add = -4 }
-		average = { hostile_scheme_phase_duration_add = -6 }
-		good = { hostile_scheme_phase_duration_add = -8 }
-		excellent = { hostile_scheme_phase_duration_add = -10 }
+	base_employer_modifier = {
+		max_provoke_vassals_schemes_add = 1
+	}
+
+	# Set Rousing Rabble variable on start
+	on_start = { 
+		# add_character_flag = blocked_from_leaving # Stop character from traveling
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = yes
+			}
+		}
+		custom_tooltip = allow_provoke_vassals_scheme_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_provoking_vassals = no }
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = no
+			}
+		}
 	}
 
 	ai_will_do = {
-		value = {
-			add = ai_honor
-			multiply = -1
-		}
-		if = {
-			limit = {
-				any_scheme = {
-					is_hostile = yes
-				}
-			}
-			add = 50
-		}
+
 	}
 }
 
@@ -136,6 +154,7 @@ rabble_rouser_task_pacify_the_masses = {
 			}
 		}
 		custom_tooltip = increased_rouse_rabble_defense_tt
+		custom_tooltip = increased_provoke_vassals_defense_tt
 	}
 
 	on_monthly = {

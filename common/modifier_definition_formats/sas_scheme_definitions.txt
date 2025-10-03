@@ -1,3 +1,7 @@
 ﻿max_rouse_rabble_schemes_add = {
     decimals = 0
 }
+
+max_provoke_vassals_schemes_add = {
+    decimals = 0
+}
