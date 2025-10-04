@@ -1056,3 +1056,72 @@ sas_scheme_critical_moments.1001 = {
 		}
 	}
 }
+
+##################################################
+# Provoke Vassals Results
+# 1010 - 101X
+##################################################
+# Check result
+sas_scheme_critical_moments.1011 = {
+	hidden = yes
+	theme = provoke_vassals_scheme
+	immediate = {
+		scope:scheme = {
+			# Do the success Roll
+			random = {
+				chance = scheme_success_chance
+				save_scope_value_as = {
+					name = scheme_succeeded
+					value = yes
+				}
+			}
+			# Do the Secrecy Roll
+			save_scope_value_as = {
+				name = discovery_chance
+				value = {
+					value = 100
+					subtract = scheme_secrecy
+				}
+			}
+			random = {
+				chance = scope:discovery_chance
+				save_scope_value_as = {
+					name = scheme_discovered
+					value = yes
+				}
+			}
+
+			# On Success:
+			if = {
+				limit = { exists = scope:scheme_succeeded }
+				# Discovered
+				if = {
+					limit = { exists = scope:scheme_discovered }
+					scheme_owner = {
+						trigger_event = provoke_vassals_outcome.0001
+					}
+				}
+				# Secret
+				else = {
+					scheme_owner = {
+						trigger_event = provoke_vassals_outcome.0001
+					}
+				}
+			}
+			# On Failure:
+			else = {
+				if = {
+					limit = { exists = scope:scheme_discovered }
+					scheme_owner = {
+						trigger_event = provoke_vassals_outcome.0001
+					}
+				}
+				else = {
+					scheme_owner = {
+						trigger_event = provoke_vassals_outcome.0001
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,124 @@
+﻿namespace = provoke_vassals_outcome
+
+# Successful and secret
+provoke_vassals_outcome.0001 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = provoke_vassals_scheme
+	title = provoke_vassals_outcome.0001.t
+	desc = provoke_vassals_outcome.0001.desc
+	left_portrait = {
+		character = scope:owner
+		animation = toast_goblet
+	}
+	center_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = drink_goblet
+	}
+	right_portrait = {
+		character = scope:target
+		animation = dismissal
+	}
+
+	option = {
+		name = provoke_vassals_outcome.0001.a
+		# custom_tooltip = {
+		# 	text = provoke_vassals_independence_started_tt
+		# }
+		hidden_effect = {
+			scope:target = {
+				ordered_vassal = {
+					limit = { 
+						is_ai = yes
+						can_create_faction = {
+							type = independence_faction
+							target = scope:target
+						}
+					}
+					order_by = {
+						value = "opinion(scope:target)"
+						multiply = -1
+					}
+					max = 1
+					check_range_bounds = no
+					save_scope_as = independence_vassal
+				}
+				primary_title = {
+					set_variable = {
+						name = provoke_vassals_schemer
+						value = scope:owner
+					}
+				}
+			}
+		}
+		scope:independence_vassal = {
+			create_faction = {
+				type = independence_faction
+				target = scope:target
+			}
+		}		
+	}
+
+	option = {
+		name = provoke_vassals_outcome.0001.b
+		# custom_tooltip = {
+		# 	text = provoke_vassals_dissolution_started_tt
+		# }
+		hidden_effect = {
+			scope:target = {
+				ordered_vassal = {
+					limit = { 
+						is_ai = yes
+						can_create_faction = {
+							type = nation_fracturing_faction
+							target = scope:target
+						}
+					}
+					order_by = {
+						value = "opinion(scope:target)"
+						multiply = -1
+					}
+					max = 1
+					check_range_bounds = no
+					save_scope_as = dissolution_vassal
+				}
+				primary_title = {
+					set_variable = {
+						name = provoke_vassals_schemer
+						value = scope:owner
+					}
+				}
+			}
+		}
+		scope:dissolution_vassal = {
+			create_faction = {
+				type = nation_fracturing_faction
+				target = scope:target
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
+
+# Successful and discovered
+provoke_vassals_outcome.0002 = {
+
+}
+
+# Unsuccessful and secret
+provoke_vassals_outcome.0003 = {
+
+}
+
+# Unsuccessful and discovered
+provoke_vassals_outcome.0004 = {
+	
+}

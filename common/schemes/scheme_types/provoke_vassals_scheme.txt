@@ -26,7 +26,7 @@
 		is_adult = yes
 		is_imprisoned = no
 		scope:target = {
-			highest_held_title_tier >= tier_duchy
+			highest_held_title_tier >= tier_kingdom
 		}
 		
 		# Should hide decision if can't employ a rabble rouser
@@ -36,7 +36,7 @@
 			OR = {
 				exists = location
 				in_diplomatic_range = scope:owner
-				highest_held_title_tier >= tier_duchy
+				highest_held_title_tier >= tier_kingdom
 			}
 			# Target not already dealing with indepedence faction
 			custom_description = {
@@ -64,7 +64,7 @@
 				subject = scope:target
 				any_vassal = {
 					is_landed = yes
-					OR = {
+					AND = {
 						can_create_faction = {
 							type = independence_faction
 							target = scope:target

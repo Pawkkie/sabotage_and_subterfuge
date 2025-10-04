@@ -17,7 +17,7 @@ provoke_vassals_scheme_prep_effect = {
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
-		value = event_id:sas_scheme_critical_moments.1001
+		value = event_id:sas_scheme_critical_moments.1011
 	}
 	if = {
 		limit = {
@@ -348,15 +348,6 @@ clean_roused_rabble_county_modifiers_from_faction_members_effect = {
 		if = {
 			limit = { exists = var:schemer_funded_rabble }
 			remove_variable = schemer_funded_rabble
-		}
-	}
-}
-
-provoke_vassals_success_effect = {
-	scope:target = {
-		create_faction = {
-			type = independence_faction
-			target = scope:target.liege
 		}
 	}
 }
