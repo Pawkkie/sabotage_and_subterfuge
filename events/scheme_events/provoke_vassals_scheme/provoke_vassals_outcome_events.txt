@@ -63,7 +63,7 @@ provoke_vassals_outcome.0001 = {
 	option = {
 		trigger = { 
 			AND = {
-				intrigue > 5
+				intrigue > 15
 				OR = {
 					has_trait = populist_leader
 					has_trait = peasant_leader
@@ -71,7 +71,7 @@ provoke_vassals_outcome.0001 = {
 				scope:owner.court_position:rabble_rouser_court_position = { 
 					aptitude = {
 						court_position = rabble_rouser_court_position
-						value >= 1
+						value >= 4
 					}
 				}
 				scope:target = {
