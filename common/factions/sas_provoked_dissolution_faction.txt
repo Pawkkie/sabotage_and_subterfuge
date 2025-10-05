@@ -57,6 +57,13 @@ provoked_dissolution_faction = {
 				days = 5
 			}
 		}
+
+		scope:faction = {
+			set_variable = {
+				name = faction_sent_demand
+				value = yes
+			}
+		}
 	}
 
 	ai_demand_chance = {
@@ -258,6 +265,10 @@ provoked_dissolution_faction = {
 
 	on_creation = {
 		save_scope_as = faction
+		set_variable = {
+			name = faction_sent_demand
+			value = no
+		}
 		if = {
 			limit = {
 				any_player = {
@@ -291,7 +302,7 @@ provoked_dissolution_faction = {
 	}
 
 	character_leaves = {
-		every_faction_member = {
+		scope:faction_member = {
 			if = {
 				limit = { has_character_modifier = provoked_dissolution_character_modifier }
 			}
@@ -300,12 +311,27 @@ provoked_dissolution_faction = {
 	}
 
 	on_destroy = {
+		save_scope_as = faction
 		every_faction_member = {
 			if = {
 				limit = { has_character_modifier = provoked_dissolution_character_modifier }
 			}
 			remove_character_modifier = provoked_dissolution_character_modifier
 		}
+
+		if = {
+			limit = { var:faction_sent_demand = no }
+			# Tell to the schemer the efforts failed
+			scope:faction.faction_target = {
+				save_scope_as = target
+				primary_title = {
+					var:provoke_vassals_schemer = {
+						trigger_event = sas_faction_demand.1011
+					}
+				}
+			}
+		}
+		remove_variable = faction_sent_demand
 	}
 
 	county_join_score =  {

@@ -66,4 +66,9 @@
  # Provoked Dissolution War
  provoked_dissolution_faction_war: "Dissolution Faction"
 
+ # Faction gave up
+ sas_faction_demand.1011.t: "Never Lifted Off the Ground"
+ sas_faction_demand.1011.desc: "The vassals we provoked against [target.GetShortUIName] never managed to muster enough support to push their ambitions forward, and the realm remains unfortunately stable.\n\nThe last vestiges of the faction they formed have now disbanded."
+ sas_faction_demand.1011.a: "Time to move on to other matters"
+
  

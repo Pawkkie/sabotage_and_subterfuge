@@ -2,6 +2,7 @@
 
 ##################################################
 # Roused Rabble Faction
+# 1001 - 1010
 ##################################################
 
 sas_faction_demand.1001 = {
@@ -175,5 +176,29 @@ sas_faction_demand.1007 = {
 	}
 	option = {
 		name = sas_faction_demand.1007.a
+	}
+}
+
+##################################################
+# Provoked Factions
+# 1011 - 1020
+##################################################
+
+# Efforts failed no war declared
+sas_faction_demand.1011 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1011.t
+	desc = sas_faction_demand.1011.desc
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:target
+		animation = celebrate_sword
+	}
+	option = {
+		name = sas_faction_demand.1011.a
 	}
 }
