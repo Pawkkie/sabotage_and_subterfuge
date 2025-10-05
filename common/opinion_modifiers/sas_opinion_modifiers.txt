@@ -39,3 +39,11 @@ successfully_roused_rabble = {
 	years = 15
 	imprisonment_reason = yes
 }
+
+# Make inversely proportional to Sway
+poisoned_opinion_opinion_modifier = {
+	opinion = -30
+	decaying = yes
+	years = 10
+	stacking = yes
+}

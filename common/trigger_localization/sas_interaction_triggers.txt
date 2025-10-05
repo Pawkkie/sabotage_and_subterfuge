@@ -52,3 +52,40 @@ vassals_can_be_provoked = {
 	first = VASSALS_CAN_BE_PROVOKED
 	first_not = VASSALS_CANNOT_BE_PROVOKED
 }
+
+# Need strings from here down
+provoke_recent_independence_faction = {
+	first = PROVOKE_RECENT_INDEPENDENCE_FACTION
+	first_not = NOT_PROVOKE_RECENT_INDEPENDENCE_FACTION
+}
+
+provoke_recent_dissolution_faction = {
+	first = PROVOKE_RECENT_DISSOLUTION_FACTION
+	first_not = NOT_PROVOKE_RECENT_DISSOLUTION_FACTION
+}
+
+provoke_admin_government_already_in_faction_war = {
+	first = PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR
+	first_not = NOT_PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR
+}
+
+provoke_nomadic_tribal_confederate_partition = {
+	first = PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION
+	first_not = NOT_PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION
+}
+
+provoke_too_close_to_game_start_kingdom = {
+	first = PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM
+	first_not = NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM
+}
+
+provoke_too_close_to_game_start_empire = {
+	first = PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE
+	first_not = NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE
+}
+
+provoke_target_greatest_of_khans = {
+	first = PROVOKE_TARGET_GREATEST_OF_KHANS
+	first_not = NOT_PROVOKE_TARGET_GREATEST_OF_KHANS
+}
+

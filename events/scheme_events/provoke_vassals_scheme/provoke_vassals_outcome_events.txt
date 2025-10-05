@@ -22,9 +22,6 @@ provoke_vassals_outcome.0001 = {
 
 	option = {
 		name = provoke_vassals_outcome.0001.a
-		# custom_tooltip = {
-		# 	text = provoke_vassals_independence_started_tt
-		# }
 		hidden_effect = {
 			scope:target = {
 				ordered_vassal = {
@@ -52,18 +49,34 @@ provoke_vassals_outcome.0001 = {
 			}
 		}
 		scope:independence_vassal = {
+			add_character_modifier = {
+				modifier = provoked_independence_character_modifier
+				years = 5
+			}
 			create_faction = {
-				type = independence_faction
+				type = provoked_independence_faction
 				target = scope:target
 			}
-		}		
+		}	
 	}
 
 	option = {
+		trigger = { 
+			AND = {
+				intrigue > 15
+				OR = {
+					has_trait = populist_leader
+					has_trait = peasant_leader
+				}
+				scope:owner.court_position:rabble_rouser_court_position = { 
+					aptitude = {
+						court_position = rabble_rouser_court_position
+						value >= 4
+					}
+				}
+			}
+		}
 		name = provoke_vassals_outcome.0001.b
-		# custom_tooltip = {
-		# 	text = provoke_vassals_dissolution_started_tt
-		# }
 		hidden_effect = {
 			scope:target = {
 				ordered_vassal = {
@@ -91,11 +104,15 @@ provoke_vassals_outcome.0001 = {
 			}
 		}
 		scope:dissolution_vassal = {
+			add_character_modifier = {
+				modifier = provoked_dissolution_character_modifier
+				years = 5
+			}
 			create_faction = {
 				type = nation_fracturing_faction
 				target = scope:target
 			}
-		}
+		}	
 	}
 
 	after = {

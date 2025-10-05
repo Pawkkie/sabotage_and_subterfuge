@@ -65,13 +65,110 @@
 				any_vassal = {
 					is_landed = yes
 					AND = {
-						can_create_faction = {
-							type = independence_faction
-							target = scope:target
+						is_at_war = no
+						NOT = {
+							AND = {
+								has_opinion_modifier = {
+									modifier = became_vassal
+									target = scope:target
+								}
+								has_character_modifier = ach_intent_faction_joining_prevention_modifier
+								"opinion(scope:target)" >= 80
+							}
 						}
-						can_create_faction = {
-							type = nation_fracturing_faction
-							target = scope:target
+						OR = {
+							can_create_faction = {
+								type = independence_faction
+								target = scope:target
+							}
+							can_create_faction = {
+								type = nation_fracturing_faction
+								target = scope:target
+							}
+						}
+					}
+				}
+			}
+			# Recent independence faction revolt
+			custom_description = {
+				text = provoke_recent_independence_faction
+				subject = scope:target
+				scope:target = {
+					NOT = { has_character_flag = recent_independence_faction_war }
+				}
+			}
+			# Recent dissolution faction revolt
+			custom_description = {
+				text = provoke_recent_dissolution_faction
+				subject = scope:target
+				scope:target = {
+					NOT = { has_character_flag = recent_nation_fracturing_faction_war }
+				}
+			}
+			# Admin empire should not face new factions during ongoing faction wars
+			custom_description = {
+				text = provoke_admin_government_already_in_faction_war
+				subject = scope:target
+				scope:target = {
+					NOT = {
+						AND = {
+							government_allows = administrative
+							any_targeting_faction = { faction_is_at_war = yes }
+						}
+					}
+				}
+			}
+			# Nomadic and tribal confederate partition succession
+			custom_description = {
+				text = provoke_nomadic_tribal_confederate_partition
+				subject = scope:target
+				scope:target = {
+					NOT = {
+						AND = {
+							OR = {
+								government_has_flag = government_is_nomadic
+								government_has_flag = government_is_tribal
+							}
+							primary_title = {
+								has_title_law = confederation_elective_succession_law
+							}
+						}
+					}	
+				}		
+			}
+			# Too close to game start - Kingdom
+			custom_description = {
+				text = provoke_too_close_to_game_start_kingdom
+				subject = scope:target
+				NOT = {
+					AND = {
+						years_from_game_start < 5
+						scope:target.primary_title.tier = tier_kingdom
+					}
+				}
+			}
+			# Too close to game start - Empire
+			custom_description = {
+				text = provoke_too_close_to_game_start_empire
+				subject = scope:target
+				NOT = {
+					AND = {
+						years_from_game_start < 10
+						scope:target.primary_title.tier = tier_empire
+					}
+				}
+			}
+			# Nomadic story reasons
+			custom_description = {
+				text = provoke_target_greatest_of_khans
+				subject = scope:target
+				scope:target = {
+					NOT = {
+						any_owned_story = {
+							OR = {
+								story_type = story_greatest_of_khans
+								story_type = story_mongol_invasion
+							}
 						}
 					}
 				}
@@ -439,11 +536,11 @@
 				}
 			}
 		}
-		# Target no longer controls at least Duchy
+		# Target no longer controls at least Kingdom
 		if = {
 			limit = {
 				scope:target = {
-					NOT = { highest_held_title_tier >= tier_duchy }
+					NOT = { highest_held_title_tier >= tier_kingdom }
 				}
 			}
 			scope:owner = {
@@ -497,14 +594,27 @@
 					scope:target = {
 						any_vassal = {
 							is_landed = yes
-							OR = {
-								can_create_faction = {
-									type = independence_faction
-									target = scope:target
+							AND = {
+								is_at_war = no
+								NOT = {
+									AND = {
+										has_opinion_modifier = {
+											modifier = became_vassal
+											target = scope:target
+										}
+										has_character_modifier = ach_intent_faction_joining_prevention_modifier
+										"opinion(scope:target)" >= 80
+									}
 								}
-								can_create_faction = {
-									type = nation_fracturing_faction
-									target = scope:target
+								OR = {
+									can_create_faction = {
+										type = independence_faction
+										target = scope:target
+									}
+									can_create_faction = {
+										type = nation_fracturing_faction
+										target = scope:target
+									}
 								}
 							}
 						}
@@ -516,6 +626,99 @@
 					title = provoke_vassals_invalidated_title
 					custom_tooltip = provoke_vassals_invalidated_no_eligible_vassals
 					left_icon = scope:target
+				}
+			}
+		}
+
+		# Recent independence faction revolt
+		if = {
+			limit = {
+				scope:target = {
+					has_character_flag = recent_independence_faction_war
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_recent_independence_war
+					left_icon = scope:target
+				}
+			}
+		}
+
+		# Recent dissolution faction revolt
+		if = {
+			limit = {
+				scope:target = {
+					has_character_flag = recent_independence_faction_war
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_recent_dissolution_war
+					left_icon = scope:target
+				}
+			}
+		}
+
+		# Admin empire should not face new factions during ongoing faction wars
+		if = {
+			limit = {
+				scope:target = {
+					AND = {
+						government_allows = administrative
+						any_targeting_faction = { faction_is_at_war = yes }
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_admin_faction_war
+				}
+			}
+		}
+
+		# Nomadic and tribal confederate partition succession
+		if = {
+			limit = {
+				scope:target = {
+					AND = {
+						OR = {
+							government_has_flag = government_is_nomadic
+							government_has_flag = government_is_tribal
+						}
+						primary_title = {
+							has_title_law = confederation_elective_succession_law
+						}
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_confederate_partition
+				}
+			}
+		}
+			
+		# Nomadic story reasons
+		if = {
+			limit = {
+				scope:target = {
+					any_owned_story = {
+						OR = {
+							story_type = story_greatest_of_khans
+							story_type = story_mongol_invasion
+						}
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = provoke_vassals_invalidated_title
+					custom_tooltip = provoke_vassals_invalidated_greatest_of_khans
 				}
 			}
 		}

@@ -47,3 +47,10 @@
  roused_rabble_war_victory_desc:0 "All rebellious [counties|E] lose [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E]."
  roused_rabble_war_white_peace_desc:0 "The roused rabble is disbanded."
  roused_rabble_war_defeat_desc:0 "The roused rabble is disbanded and [attacker.GetShortUIName] is imprisoned. All rebelling [counties|E] have their [county_opinion|E] forcibly increased."
+
+
+ # Provoked Independence
+ provoked_independence_faction: "Provoked Independence"
+ provoked_independence_faction_desc: "Members of the Independence [faction|E] seek independence from their [liege|E].\n\n#S Ultimatum#!\nAll Faction Members become [independent|E]\n[liege|E] loses [prestige|E]"
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Provoked into Independence Faction: $VALUE|0+=$"
+ 

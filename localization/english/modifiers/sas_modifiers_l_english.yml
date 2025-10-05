@@ -3,3 +3,5 @@
  county_rabble_roused_modifier_desc: "The peasant rabble has been roused against their liege"
  rabble_roused_against_me: "Recently Dealt with Roused Rabble"
  roused_rabble_war_lost_county_modifier: "Increased Autonomy"
+ provoked_independence_character_modifier: "Provoked into Independence Faction"
+ provoked_dissolution_character_modifier: "Provoked into Dissolution Faction"

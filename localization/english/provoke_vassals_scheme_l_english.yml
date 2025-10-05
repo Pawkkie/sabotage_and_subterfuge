@@ -25,8 +25,30 @@
  NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] is not already dealing with an [independence_faction|E]"
  ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] is already dealing with a [dissolution_faction|E]"
  NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] is not already dealing with a [dissolution_faction|E]"
- VASSALS_CAN_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] does have vassals able to start factions"
- VASSALS_CANNOT_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] does not have any vassals able to start factions"
+ VASSALS_CAN_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] does have vassals that can be convinced to start factions"
+ VASSALS_CANNOT_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] does not have any vassals that can be convinced to start factions"
+
+ PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] did not fight an [independence_faction|E] too recently"
+ NOT_PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] fought an [independence_faction|E] too recently"
+
+ PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] did not fight a [dissolution_faction|E] too recently"
+ NOT_PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] fought a [dissolution_faction|E] too recently"
+
+ PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U]'s [administrative_government|E] is not already in a faction war"
+ NOT_PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U]'s [administrative_government|E] is already in a faction war"
+
+ PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]'s government does not have confederate partition succession"
+ NOT_PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]'s government has confederate partition succession"
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Farther than 5 years from game start"
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Must be 5 years from game start"
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Farther than 10 years from game start"
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Must be 10 years from game start"
+
+ PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] is not the Greatest of Khans"
+ NOT_PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] is the Greatest of Khans"
+
  RABBLE_ROUSER_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] is performing the Provoke Vassals task"
  RABBLE_ROUSER_NOT_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] is not performing the Provoke Vassals task"
  provoke_vassals_invalidated_title: "Provoke Vassals Scheme Ends"
@@ -39,7 +61,12 @@
  provoke_vassals_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] is no longer available, as [CHARACTER.GetSheHe] is travelling."
  provoke_vassals_invalidated_has_dissolution_faction: "[CHARACTER.GetShortUIName|U] has already had a [dissolution_faction|E] formed against [CHARACTER.GetHerHim]."
  provoke_vassals_invalidated_has_independence_faction: "[CHARACTER.GetShortUIName|U] has already had an [independence_faction|E] formed against [CHARACTER.GetHerHim]."
- provoke_vassals_invalidated_no_eligible_vassals: "[CHARACTER.GetShortUIName|U] no longer has any vassals able to start factions"
+ provoke_vassals_invalidated_no_eligible_vassals: "[CHARACTER.GetShortUIName|U] no longer has any vassals that can be convinced to start factions."
+ provoke_vassals_invalidated_recent_independence_war: "[CHARACTER.GetShotUIName|U] just fought an [independence_faction|E]."
+ provoke_vassals_invalidated_recent_dissolution_war: "[CHARACTER.GetShotUIName|U] just fought a [dissolution_faction|E]."
+ provoke_vassals_invalidated_admin_faction_war: "[CHARACTER.GetShortUIName|U]'s [administrative_government|E] is now in another faction war."
+ provoke_vassals_invalidated_confederate_partition: "[CHARACTER.GetShortUIName|U]'s government has passed confederate partition succession."
+ provoke_vassals_invalidated_greatest_of_khans: "[CHARACTER.GetShortUIName|U] has become the Greatest of Khans."
 
  ## Interaction
  provoke_vassals_interaction: "Provoke Vassals #weak (Scheme)#!"
