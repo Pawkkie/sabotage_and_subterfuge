@@ -1,6 +1,6 @@
 ﻿
 provoked_independence_faction = {
-	casus_belli = independence_faction_war
+	casus_belli = provoked_independence_faction_war
 	
 	short_effect_desc = independence_faction_short_effect_desc
 

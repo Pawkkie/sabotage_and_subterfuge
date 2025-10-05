@@ -43,6 +43,7 @@
 
  # Roused Rabble War
  ROUSED_RABBLE_WAR_NAME:0 "Roused Rabble Uprising"
+ roused_rabble_war: "Roused Rabble Faction"
  roused_rabble_faction_event_troops:0 "Roused Rabble Uprising"
  roused_rabble_war_victory_desc:0 "All rebellious [counties|E] lose [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E]."
  roused_rabble_war_white_peace_desc:0 "The roused rabble is disbanded."
@@ -58,4 +59,11 @@
  provoked_dissolution_faction: "Provoked Dissolution"
  provoked_dissolution_faction_desc: "Members of the $nation_fracturing_faction$ [faction|E] seek to destroy the realm of their [liege|E].\n\n#S Ultimatum#!\nAll Faction Members become [independent|E]\n[liege|E] loses their [primary_title|E] and other [titles|E] of the same [title_tier|E]"
  FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "Provoked into Dissolution Faction: $VALUE|0+=$"
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "Independence Faction"
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "Dissolution Faction"
+
  
