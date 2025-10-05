@@ -63,7 +63,7 @@ provoke_vassals_outcome.0001 = {
 	option = {
 		trigger = { 
 			AND = {
-				intrigue > 15
+				intrigue > 5
 				OR = {
 					has_trait = populist_leader
 					has_trait = peasant_leader
@@ -71,7 +71,15 @@ provoke_vassals_outcome.0001 = {
 				scope:owner.court_position:rabble_rouser_court_position = { 
 					aptitude = {
 						court_position = rabble_rouser_court_position
-						value >= 4
+						value >= 1
+					}
+				}
+				scope:target = {
+					any_vassal = {
+						can_create_faction = {
+							type = nation_fracturing_faction
+							target = scope:target
+						}
 					}
 				}
 			}
@@ -109,7 +117,7 @@ provoke_vassals_outcome.0001 = {
 				years = 5
 			}
 			create_faction = {
-				type = nation_fracturing_faction
+				type = provoked_dissolution_faction
 				target = scope:target
 			}
 		}	

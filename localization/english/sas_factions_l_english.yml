@@ -53,4 +53,9 @@
  provoked_independence_faction: "Provoked Independence"
  provoked_independence_faction_desc: "Members of the Independence [faction|E] seek independence from their [liege|E].\n\n#S Ultimatum#!\nAll Faction Members become [independent|E]\n[liege|E] loses [prestige|E]"
  FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Provoked into Independence Faction: $VALUE|0+=$"
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "Provoked Dissolution"
+ provoked_dissolution_faction_desc: "Members of the $nation_fracturing_faction$ [faction|E] seek to destroy the realm of their [liege|E].\n\n#S Ultimatum#!\nAll Faction Members become [independent|E]\n[liege|E] loses their [primary_title|E] and other [titles|E] of the same [title_tier|E]"
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "Provoked into Dissolution Faction: $VALUE|0+=$"
  
