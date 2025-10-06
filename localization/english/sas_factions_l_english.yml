@@ -71,4 +71,18 @@
  sas_faction_demand.1011.desc: "The vassals we provoked against [target.GetShortUIName] never managed to muster enough support to push their ambitions forward, and the realm remains unfortunately stable.\n\nThe last vestiges of the faction they formed have now disbanded."
  sas_faction_demand.1011.a: "Time to move on to other matters"
 
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "The Vassals Are Victorious"
+ sas_faction_demand.1012.desc: "The vassals we provoked have won in their war against [defender.GetShortUIName]! Perhaps we can take advantage of the chaos and pick up some of the realm's pieces for ourselves."
+ sas_faction_demand.1012.a: "I could have scare hoped for a better outcome"
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "The Vassals Break Even"
+ sas_faction_demand.1013.desc: "The vassals we provoked have drawn a white peace against [defender.GetShortUIName]! Perhaps this has destabilized the region to some degree, relationships may take some time to recover."
+ sas_faction_demand.1013.a: "Not too quickly, I hope"
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "The Vassals Are Defeated"
+ sas_faction_demand.1014.desc: "The vassals we provoked have lost in against [defender.GetShortUIName]. This outcome is unfortunate, but not entirely unexpected. Hopefully we've gotten all that we needed to out of this ordeal."
+ sas_faction_demand.1014.a: "Time to move on to other matters"
  

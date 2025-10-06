@@ -152,6 +152,24 @@
 
 		# LEGITIMACY FROM LOSING FACTION WAR
 		faction_war_end_defeat_legitimacy_effect = yes
+
+		# Tell the schemer war ended in victory
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1012
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
+		}
 	}
 
 	on_white_peace_desc = {
@@ -170,7 +188,6 @@
 			}
 			desc = player_nation_fracturing_faction_war_white_peace_desc
 		}
-
 	}
 
 	on_white_peace = {
@@ -202,6 +219,24 @@
 				years = faction_nation_fracturing_war_white_peace_cooldown
 			}
 			add_prestige = minor_prestige_value
+		}
+
+		# Tell the schemer war ended in white peace
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1013
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
 		}
 
 		on_white_peace_faction_revolt_war = yes
@@ -242,6 +277,24 @@
 
 			# LEGITIMACY FROM WINNING FACTION WAR
 			faction_war_end_victory_legitimacy_effect = yes
+		}
+
+		# Tell the schemer war ended in defeat
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1014
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
 		}
 
 		on_lost_faction_revolt_war = yes

@@ -202,3 +202,48 @@ sas_faction_demand.1011 = {
 		name = sas_faction_demand.1011.a
 	}
 }
+
+# War ended in victory
+sas_faction_demand.1012 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1012.t
+	desc = sas_faction_demand.1012.desc
+	right_portrait = {
+		character = scope:defender
+		animation = disbelief
+	}
+	option = {
+		name = sas_faction_demand.1012.a
+	}
+}
+
+# War ended in white peace
+sas_faction_demand.1013 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1013.t
+	desc = sas_faction_demand.1013.desc
+	right_portrait = {
+		character = scope:defender
+		animation = aggressive_sword
+	}
+	option = {
+		name = sas_faction_demand.1013.a
+	}
+}
+
+# War ended in defeat
+sas_faction_demand.1014 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1014.t
+	desc = sas_faction_demand.1014.desc
+	right_portrait = {
+		character = scope:defender
+		animation = celebrate_sword
+	}
+	option = {
+		name = sas_faction_demand.1014.a
+	}
+}
