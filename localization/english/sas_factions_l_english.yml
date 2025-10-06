@@ -85,4 +85,14 @@
  sas_faction_demand.1014.t: "The Vassals Are Defeated"
  sas_faction_demand.1014.desc: "The vassals we provoked have lost in against [defender.GetShortUIName]. This outcome is unfortunate, but not entirely unexpected. Hopefully we've gotten all that we needed to out of this ordeal."
  sas_faction_demand.1014.a: "Time to move on to other matters"
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "The Vassals Will Send Demands"
+ sas_faction_demand.1015.desc: "The vassals we provoked against [target.GetShortUIName] have gathered their supporters and raised their troops. The time is finally upon us! Either the realm will be fractured, or there will be war. The former will be self-evident should it occur, but the latter...\n\nNow that would be exciting!"
+ sas_faction_demand.1015.a: "Drum roll please..."
+
+ # War Declared
+ sas_faction_demand.1016.t: "And So It Begins"
+ sas_faction_demand.1016.desc: "War it is! The vassal uprising is in full swing, and the realm will be ablaze with conflict. I wonder how this will go?"
+ sas_faction_demand.1016.a: "Only time will tell..."
  

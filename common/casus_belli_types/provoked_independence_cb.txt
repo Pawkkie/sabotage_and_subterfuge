@@ -46,6 +46,15 @@ provoked_independence_faction_war = {
 				}
 			}
 		}
+
+		# Tell the schemer war has begun
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1016
+				}
+			}
+		}
 	}
 
 	on_victory_desc = {
@@ -272,6 +281,24 @@ provoked_independence_faction_war = {
 		}
 		resolve_title_and_vassal_change = scope:change
 
+		# Tell the schemer war ended in victory
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1012
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
+		}
+
 		# LEGITIMACY FROM LOSING FACTION WAR
 		faction_war_end_defeat_legitimacy_effect = yes
 
@@ -341,6 +368,24 @@ provoked_independence_faction_war = {
 			add_prestige = minor_prestige_value
 		}
 
+		# Tell the schemer war ended in white peace
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1013
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
+		}
+
 		on_white_peace_faction_revolt_war = yes
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
@@ -399,6 +444,24 @@ provoked_independence_faction_war = {
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
+
+		# Tell the schemer war ended in victory
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1012
+				}
+			}
+		}
+
+		scope:defender = {
+			primary_title = {
+				if = {
+					limit = { exists = var:provoke_vassals_schemer}
+					remove_variable = provoke_vassals_schemer
+				}
+			}
+		}
 	}
 
 	on_invalidated_desc = msg_invalidate_war_title

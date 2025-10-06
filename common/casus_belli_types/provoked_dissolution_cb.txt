@@ -23,6 +23,15 @@
 		scope:attacker = {
 			hidden_effect = { fp1_remove_humsac_offended_counties_effect = yes }
 		}
+
+		# Tell the schemer war has begun
+		scope:defender = {
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1016
+				}
+			}
+		}
 	}
 
 	on_victory_desc = {

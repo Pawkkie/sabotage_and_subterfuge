@@ -51,7 +51,6 @@ provoke_vassals_outcome.0001 = {
 		scope:independence_vassal = {
 			add_character_modifier = {
 				modifier = provoked_independence_character_modifier
-				years = 5
 			}
 			create_faction = {
 				type = provoked_independence_faction
@@ -114,7 +113,6 @@ provoke_vassals_outcome.0001 = {
 		scope:dissolution_vassal = {
 			add_character_modifier = {
 				modifier = provoked_dissolution_character_modifier
-				years = 5
 			}
 			create_faction = {
 				type = provoked_dissolution_faction

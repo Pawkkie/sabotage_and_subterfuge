@@ -247,3 +247,33 @@ sas_faction_demand.1014 = {
 		name = sas_faction_demand.1014.a
 	}
 }
+
+# Demands being sent
+sas_faction_demand.1015 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1015.t
+	desc = sas_faction_demand.1015.desc
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+	option = {
+		name = sas_faction_demand.1015.a
+	}
+}
+
+# War declared
+sas_faction_demand.1016 = {
+	type = character_event
+	theme = provoke_vassals_scheme
+	title = sas_faction_demand.1016.t
+	desc = sas_faction_demand.1016.desc
+	right_portrait = {
+		character = root
+		animation = scheme
+	}
+	option = {
+		name = sas_faction_demand.1016.a
+	}
+}

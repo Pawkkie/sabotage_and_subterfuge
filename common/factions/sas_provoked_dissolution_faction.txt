@@ -58,6 +58,16 @@ provoked_dissolution_faction = {
 			}
 		}
 
+		# Tell to the schemer demand is sent
+		scope:faction.faction_target = {
+			save_scope_as = target
+			primary_title = {
+				var:provoke_vassals_schemer = {
+					trigger_event = sas_faction_demand.1015
+				}
+			}
+		}
+
 		scope:faction = {
 			set_variable = {
 				name = faction_sent_demand
@@ -105,6 +115,10 @@ provoked_dissolution_faction = {
 		modifier = {
 			has_character_modifier = provoked_dissolution_character_modifier
 			add = 1000
+		}
+		modifier = {
+			NOT = { has_character_modifier = provoked_independence_character_modifier }
+			add = -10000
 		}
 		# Keep vanilla blockers; these would also prevent the scheme in the first place if sufficiently major
 		common_create_faction_blockers = {
@@ -192,7 +206,6 @@ provoked_dissolution_faction = {
 		liege = {
 			is_independent_ruler = yes
 		}
-		has_character_modifier = provoked_dissolution_character_modifier
 	}
 
 	can_character_create = {
@@ -202,7 +215,6 @@ provoked_dissolution_faction = {
 		liege = {
 			is_independent_ruler = yes
 		}
-		has_character_modifier = provoked_dissolution_character_modifier
 	}
 
 	can_character_join = {
