@@ -4,7 +4,7 @@
 	skill = intrigue
 
 	court_position_asset = {
-		animation = flirtation
+		animation = dancing
 		background = "gfx/interface/illustrations/event_scenes/corridor_night.dds"
 	}
 
