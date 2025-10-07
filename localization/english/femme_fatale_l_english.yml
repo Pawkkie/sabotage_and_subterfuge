@@ -1,0 +1,32 @@
+﻿l_english:
+ # Court Position
+ femme_fatale_court_position: "Femme Fatale"
+ femme_fatale_court_position_desc: "Keen to stir the pot, the Rabble Rouser has a knack for getting in with the right crowd and firing them up. They can travel to other realms and incite peasant revolts or vassal uprisings, or stay at home and spread the good word of your excellence."
+ femme_fatale_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('rouse_rabble').GetTypeName] and [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E]s" 
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]"
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]"
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]"
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]"
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]"
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]"
+
+ # Eligibility
+ femme_fatale_not_lowborn: "They are #bold not#! [lowborn|E]"
+ femme_falate_not_married: "They are #bold not#! [married|E]"
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "Poison Opinion"
+ femme_fatale_task_poison_opinion_desc: "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
+ allow_poisoning_opinion_scheme_tt: "Can use the [rouse_rabble_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "Embrace the Spiders"
+ femme_fatale_task_embrace_the_spiders_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
+ max_sway_schemes_add: "Max [GetScheme('sway').GetTypeName] [schemes|E]"
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "Soothe and Surveil"
+ femme_fatale_task_soothe_and_surveil_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."
+ increased_poison_opinion_defense_tt: "Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"

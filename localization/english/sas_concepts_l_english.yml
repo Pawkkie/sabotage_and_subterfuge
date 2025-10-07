@@ -5,3 +5,5 @@
  game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$"
  game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$"
  game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$"
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$"
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$"

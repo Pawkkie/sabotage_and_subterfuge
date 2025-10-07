@@ -5,3 +5,7 @@
 max_provoke_vassals_schemes_add = {
     decimals = 0
 }
+
+max_sway_schemes_add = {
+    decimals = 0
+}

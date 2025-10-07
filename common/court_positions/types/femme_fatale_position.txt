@@ -1,11 +1,11 @@
-﻿rabble_rouser_court_position = { 
+﻿femme_fatale_court_position = { 
 	sort_order = 255
 	max_available_positions = 1
 	skill = intrigue
 
 	court_position_asset = {
-		animation = toast_goblet
-		background = "gfx/interface/illustrations/event_scenes/tavern.dds"
+		animation = flirtation
+		background = "gfx/interface/illustrations/event_scenes/corridor_night.dds"
 	}
 
 	opinion = {
@@ -19,13 +19,13 @@
 		add = court_position_aptitude_boon_voyager_trait
 		add = {
 			value = intrigue
-			multiply = 1.5
+			multiply = 2
 			max = 50
 			desc = court_position_skill_intrigue
 		}
 		add = {
 			value = diplomacy
-			multiply = 1.5
+			multiply = 1
 			max = 50
 			desc = court_position_skill_diplomacy
 		}
@@ -43,10 +43,6 @@
 			add = { value = -30 desc = court_position_shy_trait }
 		}		
 		if = {
-			limit = { has_trait = fickle }
-			add = { value = -15 desc = court_position_fickle_trait }
-		}
-		if = {
 			limit = { has_trait = reclusive }
 			add = { value = -15 desc = court_position_reclusive_trait }
 		}
@@ -60,108 +56,52 @@
 		}
 		# Positive
 		if = {
-			limit = { has_trait = brave }
-			add = { value = 15 desc = court_position_brave_trait }
-		}
-		if = {
-			limit = { has_trait = diligent }
-			add = { value = 15 desc = court_position_diligent_trait }
+			limit = { has_trait = lustful }
+			add = { value = 25 desc = court_position_lustful_trait }
 		}
 		if = {
 			limit = { has_trait = ambitious }
+			add = { value = 15 desc = court_position_ambitious_trait }
+		}
+		if = {
+			limit = { has_trait = vengeful }
 			add = { value = 20 desc = court_position_ambitious_trait }
 		}
 		if = {
-			limit = { has_trait = generous }
-			add = { value = 15 desc = court_position_generous_trait }
+			limit = { has_trait = deceitful }
+			add = { value = 25 desc = court_position_deceitful_trait }
 		}
 		if = {
-			limit = { has_trait = gregarious }
-			add = { value = 25 desc = court_position_gregarious_trait }
+			limit = { has_trait = fickle }
+			add = { value = 15 desc = court_position_fickle_trait }
+		}
+		if = {
+			limit = { has_trait = beauty_good_1 }
+			add = { value = 15 desc = court_position_beauty_good_1_trait }
+		}
+		if = {
+			limit = { has_trait = beauty_good_2 }
+			add = { value = 25 desc = court_position_beauty_good_2_trait }
+		}
+		if = {
+			limit = { has_trait = beauty_good_3 }
+			add = { value = 35 desc = court_position_beauty_good_3_trait }
 		}
 		if = {
 			limit = { has_trait = diplomat }
-			add = { value = 15 desc = court_position_diplomat_trait }
+			add = { value = 20 desc = court_position_diplomat_trait}
 		}
 		if = {
 			limit = { has_trait = schemer }
-			add = { value = 15 desc = court_position_schemer_trait }
+			add = { value = 25 desc = court_position_schemer_trait }
 		}
 		if = {
-			limit = { has_trait = lifestyle_wayfarer }
-			add = { value = 15 desc = court_position_wayfarer_trait }
+			limit = { has_trait = seducer }
+			add = { value = 35 desc = court_position_seducer_trait }
 		}
 		if = {
-			limit = { has_trait = peasant_leader }
-			add = { value = 35 desc = court_position_peasant_leader_trait}
-		}
-		if = {
-			limit = { has_trait = populist_leader }
-			add = { value = 35 desc = court_position_populist_leader_trait }
-		}
-		if = {
-			limit = { has_trait = loyal }
-			add = { value = 15 desc = court_position_loyal_trait }
-		}
-		# Eager Reveler
-		if = {
-			limit = { has_trait = lifestyle_reveler }
-			add = {
-				if = {
-					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value <= 49 }
-					}
-					value = 10
-				}
-				else_if = {
-					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value <= 99 }
-					}
-					value = 20
-				}
-				else_if = {
-					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value > 99 }
-					}
-					value = 35
-				}
-				desc = court_position_reveler_trait
-			}
-		}
-		# Traveler
-		if = {
-			limit = { has_trait = lifestyle_traveler }
-			add = {
-				if = {
-					limit = {
-						OR = {
-							has_trait_xp = { trait = lifestyle_traveler track = travel value <= 49 }
-							has_trait_xp = { trait = lifestyle_traveler track = danger value <= 49 }
-						}
-
-					}
-					value = 10
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_trait_xp = { trait = lifestyle_traveler track = travel value <= 99 }
-							has_trait_xp = { trait = lifestyle_traveler track = danger value <= 99 }
-						}
-					}
-					value = 20
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_trait_xp = { trait = lifestyle_traveler track = travel value > 99 }
-							has_trait_xp = { trait = lifestyle_traveler track = danger value > 99 }
-						}
-					}
-					value = 35
-				}
-				desc = court_position_traveler_trait
-			}
+			limit = { has_trait = adulterer }
+			add = { value = 20 desc = court_position_adulterer_trait }
 		}
 		# Education
 		if = {
@@ -268,7 +208,7 @@
 
 	valid_character = {
 		scope:employee = {
-			rabble_rouser_validity_trigger = { EMPLOYER = scope:liege }
+			femme_fatale_validity_trigger = { EMPLOYER = scope:liege }
 		}
 	}
 
@@ -279,7 +219,7 @@
 			if = {
 				limit = {
 					court_position_obligation_hook_salary_trigger = {
-						POS = rabble_rouser
+						POS = femme_fatale
 						LIEGE = root
 					}
 				}
@@ -318,7 +258,7 @@
 			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
 			# Set to 0 with Dynasty Perk Inner Circle
 			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = rabble_rouser } }
+				limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
 				multiply = {
 					value = 0
 					desc = inner_circle_salary_mod
@@ -329,7 +269,7 @@
 			else_if = {
 				limit = {
 					court_position_obligation_hook_salary_trigger = {
-						POS = rabble_rouser
+						POS = femme_fatale
 						LIEGE = scope:liege
 					}
 				}
@@ -342,7 +282,7 @@
 			# Halved salary
 			if = {
 				limit = {
-					court_position_halved_salary_trigger = { POS = rabble_rouser }
+					court_position_halved_salary_trigger = { POS = femme_fatale }
 				}
 				multiply = {
 					value = 0.5
@@ -353,7 +293,7 @@
 			# Increased salary
 			if = {
 				limit = {
-					court_position_increased_salary_trigger = { POS = rabble_rouser }
+					court_position_increased_salary_trigger = { POS = femme_fatale }
 				}
 				multiply = {
 					value = 1.5
@@ -377,7 +317,7 @@
 			value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
 			# Set to 0 with Dynasty Perk Inner Circle
 			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = rabble_rouser } }
+				limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
 				multiply = {
 					value = 0
 					desc = inner_circle_salary_mod
@@ -388,7 +328,7 @@
 			else_if = {
 				limit = {
 					court_position_obligation_hook_salary_trigger = {
-						POS = rabble_rouser
+						POS = femme_fatale
 						LIEGE = scope:liege
 					}
 				}
@@ -401,7 +341,7 @@
 			# Halved salary
 			if = {
 				limit = {
-					court_position_halved_salary_trigger = { POS = rabble_rouser }
+					court_position_halved_salary_trigger = { POS = femme_fatale }
 				}
 				multiply = {
 					value = 0.5
@@ -412,7 +352,7 @@
 			# Increased salary
 			if = {
 				limit = {
-					court_position_increased_salary_trigger = { POS = rabble_rouser }
+					court_position_increased_salary_trigger = { POS = femme_fatale }
 				}
 				multiply = {
 					value = 1.5
@@ -438,51 +378,50 @@
 
 	scaling_employer_modifiers = {
 		terrible = {
-			character_capital_county_monthly_control_add = -0.2
-			county_opinion_add = -5
+			courtier_and_guest_opinion = -5
+			vassal_opinion = -2
+			owned_scheme_secrecy_add = -5
 		}
 		poor = {
-			character_capital_county_monthly_control_add = -0.1
-			county_opinion_add = -2
+			courtier_and_guest_opinion = -2
+			vassal_opinion = -1
+			owned_scheme_secrecy_add = -2
 		}
 		average = {
-			character_capital_county_monthly_control_add = 0.1
-			county_opinion_add = 3
+			courtier_and_guest_opinion = 3
+			vassal_opinion = 1
+			owned_scheme_secrecy_add = 3
 		}
 		good = {
-			character_capital_county_monthly_control_add = 0.3
-			county_opinion_add = 7
+			courtier_and_guest_opinion = 7
+			vassal_opinion = 3
+			owned_scheme_secrecy_add = 7
 		}
 		excellent = {
-			character_capital_county_monthly_control_add = 0.5
-			county_opinion_add = 10
+			courtier_and_guest_opinion = 10
+			vassal_opinion = 5
+			owned_scheme_secrecy_add = 10
 		}
 	}
 
-	custom_employer_modifier_description = rabble_rouser_custom_effect_description
+	custom_employer_modifier_description = femme_fatale_custom_effect_description
 
 	modifier = {
-		intrigue = 1
-		diplomacy = 1
+		intrigue = 2
 		general_opinion = 10
-		lifestyle_reveler_xp_gain_mult = 0.25
-		monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
-		monthly_intrigue_lifestyle_xp_gain_mult =  0.1
+		max_personal_schemes_add = 1
+		monthly_intrigue_lifestyle_xp_gain_mult =  0.2
 	}
 
 	on_court_position_received = {
 		basic_gained_court_position_effect = yes
 		scope:liege = {
 			set_variable = {
-				name = rabble_rouser_is_rousing_rabble
+				name = femme_fatale_is_poisoning_opinion
 				value = no
 			}
 			set_variable = {
-				name = rabble_rouser_is_provoking_vassals
-				value = no
-			}
-			set_variable = {
-				name = rabble_rouser_is_pacifying_the_masses
+				name = femme_fatale_is_soothing_and_surveiling
 				value = no
 			}
 		}
@@ -490,27 +429,24 @@
 	on_court_position_revoked = {
 		basic_revoked_court_position_effect = yes
 		scope:liege = { 
-			remove_variable = rabble_rouser_is_rousing_rabble
-			remove_variable = rabble_rouser_is_pacifying_the_masses
-			remove_variable = rabble_rouser_is_provoking_vassals
+			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}
 	on_court_position_invalidated = {
 		basic_invalidated_court_position_effect = yes
 		scope:liege = { 
-			remove_variable = rabble_rouser_is_rousing_rabble
-			remove_variable = rabble_rouser_is_pacifying_the_masses
-			remove_variable = rabble_rouser_is_provoking_vassals
+			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}
 	on_court_position_vacated = {
 		court_position_vacated_event_effect = {
-			COURT_POSITION_TYPE = rabble_rouser_court_position
+			COURT_POSITION_TYPE = femme_fatale_court_position
 		}
 		scope:liege = { 
-			remove_variable = rabble_rouser_is_rousing_rabble
-			remove_variable = rabble_rouser_is_pacifying_the_masses
-			remove_variable = rabble_rouser_is_provoking_vassals
+			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}
 
@@ -527,11 +463,11 @@
 			}
 			add = 50
 		}
-		# More likely to hire with low capital control
+		# More likely to hire if intriguing
 		scope:liege.capital_county = {
 			if = {
 				limit = {
-					county_control < full_county_control
+					intrigue >= 15
 				}
 				add = 50
 			}
@@ -544,7 +480,7 @@
 		}
 		if = { # To stop petitioned positions immediately being fired by the AI
 			limit = {
-				court_position_petition_ai_weight_trigger = { ROLE = rabble_rouser }
+				court_position_petition_ai_weight_trigger = { ROLE = femme_fatale }
 			}
 			add = 1000
 		}

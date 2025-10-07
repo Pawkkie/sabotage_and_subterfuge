@@ -1,0 +1,178 @@
+﻿femme_fatale_task_poison_opinion = {
+	court_position_types = { 
+		femme_fatale_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+
+	base_employer_modifier = {
+		# max_poison_opinion_schemes_add = 1
+		max_sway_schemes_add = 1
+	}
+
+	# Set Poison Opinion variable on start
+	on_start = { 
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_poisoning_opinion
+				value = yes
+			}
+		}
+		custom_tooltip = allow_poisoning_opinion_scheme_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:femme_fatale_is_poisoning_opinion = no }
+			set_variable = {
+				name = femme_fatale_is_poisoning_opinion
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_poisoning_opinion
+				value = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						is_at_war = no
+					}
+				}
+			}
+			add = 100
+		}
+	}
+}
+
+femme_fatale_task_embrace_the_spiders = {
+	court_position_types = { 
+		femme_fatale_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+	
+	base_employer_modifier = {
+		max_provoke_vassals_schemes_add = 1
+	}
+
+	ai_will_do = {
+
+	}
+}
+
+femme_fatale_task_soothe_and_surveil = {
+	court_position_types = { 
+		femme_fatale_court_position 
+	}
+
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	on_start = {
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_soothing_and_surveiling
+				value = yes
+			}
+		}
+		custom_tooltip = increased_poison_opinion_defense_tt
+	}
+
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:femme_fatale_is_soothing_and_surveiling = no }
+			set_variable = {
+				name = femme_fatale_is_soothing_and_surveiling
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_soothing_and_surveiling
+				value = no
+			}
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+		 	scheme_discovery_chance_mult = 0.01
+			enemy_hostile_scheme_success_chance_max_add = -1
+		 	monthly_intrigue_lifestyle_xp_gain_mult = 0.01
+		}
+		poor = {
+		 	scheme_discovery_chance_mult = 0.03
+			enemy_hostile_scheme_success_chance_max_add = -2
+		 	monthly_intrigue_lifestyle_xp_gain_mult = 0.03
+		}
+		average = {
+		 	scheme_discovery_chance_mult = 0.05
+			enemy_hostile_scheme_success_chance_max_add = -5
+		 	monthly_intrigue_lifestyle_xp_gain_mult = 0.05
+		}
+		good = {
+		 	scheme_discovery_chance_mult = 0.07
+			enemy_hostile_scheme_success_chance_max_add = -7
+		 	monthly_intrigue_lifestyle_xp_gain_mult = 0.07
+		}
+		excellent = {
+		 	scheme_discovery_chance_mult = 0.1
+			enemy_hostile_scheme_success_chance_max_add = -10
+		 	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+		}
+	}
+
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_sociability
+		}
+	}
+}
