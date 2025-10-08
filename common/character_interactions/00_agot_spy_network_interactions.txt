@@ -285,13 +285,6 @@ agot_invite_to_spy_network_interaction = {
 			desc = CRAVEN_REASON
 		}
 		modifier = {
-			add = -30
-			scope:recipient = {
-				has_trait = kingsguard
-			}
-			desc = AGOT_RECRUIT_SPY_KINGSGUARD_REASON
-		}
-		modifier = {
 			add = -20
 			scope:recipient = {
 				has_trait = lazy
@@ -463,12 +456,6 @@ agot_check_for_potential_spies_interaction = {
 	category = interaction_category_hostile
 	icon = secret
 
-	is_shown = {
-		# No non-human interactions
-		scope:actor = { is_human = yes }
-		scope:recipient = { is_human = yes }
-	}
-
 	is_valid = {
 		exists = scope:actor.cp:councillor_spymaster
 		scope:recipient = {
@@ -483,7 +470,6 @@ agot_check_for_potential_spies_interaction = {
 							scope:actor = { has_perk = little_birds_perk }
 						}
 					}
-					is_human = yes
 					is_imprisoned = no
 					is_courtier = yes
 					is_pool_guest = no
