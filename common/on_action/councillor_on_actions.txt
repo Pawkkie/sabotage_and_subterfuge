@@ -443,7 +443,7 @@ task_support_schemes_side_effects = {
 		50 = spymaster_task.2003 #Scheme Fails
 		#Good side effects
 		100 = spymaster_task.2101 #Discovery of a minor secret
-		50 = spymaster_task.2104 #Discovery of a major secret
+		25 = spymaster_task.2104 #Discovery of a major secret, modified from 50 to account for spy network
 	}
 }
 

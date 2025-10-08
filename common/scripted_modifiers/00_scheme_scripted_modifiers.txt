@@ -796,49 +796,6 @@ ai_agent_join_chance_basic_suite_modifier = {
 
 # Core hostile modifiers that should be applied to most/all hostile schemes.
 ai_agent_join_chance_hostile_general_suite_modifier = {
-	#AGOT Added: opinion matters
-	opinion_modifier = {
-		trigger = {
-			NOT = { this = scope:target }
-			opinion = {
-				target = scope:target
-				value >= low_positive_opinion
-			}
-		}
-		who = this
-		opinion_target = scope:target
-		multiplier = {
-			value = -1
-			if = {
-				limit = { this.ai_honor >= 0 }
-				subtract = {
-					value = this.ai_honor
-					multiply = 0.025
-				}
-			}
-			else = {
-				subtract = {
-					value = this.ai_honor
-					multiply = 0.008
-				}
-			}
-			multiply = 1.5
-		}
-		desc = SCHEME_I_LIKE_TARGET
-	}
-	#AGOT Added: legitimate house
-	modifier = {
-		add = 10
-		scope:target = {
-			any_held_title = {
-				title_uses_legitimate_house_mechanic = yes
-				has_variable = legitimate_house
-				exists = var:legitimate_house
-				NOT = { var:legitimate_house = scope:target.house } # Not held by the legitimate house
-			}
-		}
-		desc = AGOT_SCHEME_IS_AGAINST_ILLEGITIMATE_HOUSE
-	}
 	# Difficulty
 	## Easy
 	modifier = {
@@ -1088,17 +1045,16 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		desc = RESPECTED_HOST
 	}
 	## Varangians don't want to betray the Basileus
-	#AGOT Disabled
-	#modifier = {
-	#	add = -50
-	#	has_trait = varangian
-	#	OR = {
-	#		is_courtier_of = scope:target
-	#		is_pool_guest_of = scope:target
-	#		is_foreign_court_guest_of = scope:target
-	#	}
-	#	desc = VARANGIAN_LOYALTY
-	#}
+	modifier = {
+		add = -50
+		has_trait = varangian
+		OR = {
+			is_courtier_of = scope:target
+			is_pool_guest_of = scope:target
+			is_foreign_court_guest_of = scope:target
+		}
+		desc = VARANGIAN_LOYALTY
+	}
 	# Traits
 	## Disloyal
 	modifier = {
@@ -1243,7 +1199,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		desc = spies_behind_every_corner_modifier
 	}
 
-	#AGOT Added: Spies may be agents easier
+	# SAS Change: Spies may be agents easier
 	modifier = { 
 		add = { 
 			if = {
@@ -1266,6 +1222,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 
 		desc = AGOT_SCHEME_AGENT_IS_MY_SPY
 	}
+	# SAS Change End
 }
 
 # Core personal modifiers that should be applied to most/all personal schemes.
@@ -3417,16 +3374,6 @@ hostile_scheme_agent_success_chance_modifier = {
 		    }
 			desc = "SCHEME_AGENT_IS_BODYGUARD"
 		}
-		#AGOT Added
-		modifier = {
-			add = 35
-			has_court_position = first_sword_court_position
-			is_court_position_employer = {
-		        court_position = first_sword_court_position
-				who = scope:target
-		    }
-			desc = "SCHEME_AGENT_IS_BODYGUARD"
-		}
 		modifier = {
 			add = 15
 			has_court_position = lady_in_waiting_court_position
@@ -3495,39 +3442,6 @@ hostile_scheme_agent_success_chance_modifier = {
 		modifier = {
 			add = 5 #FALLBACK
 			desc = "SCHEME_AGENT_IS_FELLOW_COURTIER"
-		}
-
-		#AGOT Added
-		modifier = {
-			add = 30
-			has_court_position = household_guard_court_position
-			is_court_position_employer = {
-				court_position = household_guard_court_position
-				who = scope:target
-			}
-			desc = "SCHEME_AGENT_IS_HOUSEHOLD_GUARD"
-		}
-
-		#AGOT Added
-		modifier = {
-			add = 30
-			has_court_position = bloodrider_court_position
-			is_court_position_employer = {
-				court_position = bloodrider_court_position
-				who = scope:target
-			}
-			desc = "SCHEME_AGENT_IS_BLOODRIDER"
-		}
-
-		#AGOT Added
-		modifier = {
-			add = 30
-			has_court_position = maester_court_position
-			is_court_position_employer = {
-				court_position = maester_court_position
-				who = scope:target
-			}
-			desc = "SCHEME_AGENT_IS_MAESTER"
 		}
 	}
 	first_valid = {	

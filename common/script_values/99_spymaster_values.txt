@@ -418,9 +418,9 @@ spymaster_espionage_success_chance_total = {
 
 spymaster_find_secrets_secret_discovery_chance = {
 	add = scope:councillor.intrigue
-	#AGOT Modified to account for spy network
-	#multiply = 5
-	multiply = 2
+	# SAS Change
+	multiply = 2 # was 5, lowered to account for spy network
+	# SAS Change End
 	max = 95
 }
 
