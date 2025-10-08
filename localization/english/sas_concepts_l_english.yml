@@ -1,0 +1,6 @@
+﻿l_english:
+ game_concept_sas_spy: "Spy"
+ game_concept_sas_spies: "Spies"
+ game_concept_sas_spy_desc: "Spy Desc, spies are in a [sas_spy_network|E]"
+ game_concept_sas_spy_network: "Spy Network"
+ game_concept_sas_spy_network_desc: "Spy Network Desc, spy networks contain [sas_spies|E]"

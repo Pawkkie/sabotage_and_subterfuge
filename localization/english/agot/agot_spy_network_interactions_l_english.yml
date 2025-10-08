@@ -74,3 +74,21 @@
 
  #GUI
  your_spies:0 "Your Spies"
+
+ ###################### New
+ # Recruit Spy
+ agot_invite_to_spy_network_interaction_desc: "Recruit [recipient.GetTitledFirstName] to your [sas_spy_network|E]"
+ invite_to_spy_network_interaction_target_added_to_network.tt: "You add [recipient.GetShortUIName] to your spy network"
+ invite_to_spy_network_interaction_target_becomes_spy.tt: "[recipient.GetShortUIName] is added to your spy network"
+ invite_to_spy_network_toast_title: "Spy Recruited"
+ invite_to_spy_network_toast_desc: "[recipient.GetTitledFirstName] has joined the ranks of your sprawling spy network."
+
+ # Dismiss Spy
+ agot_remove_from_spy_network_interaction_desc: "Dismiss [recipient.GetTitledFirstName] from your [sas_spy_network|E]"
+ dismiss_from_spy_network_interaction_target_remove_from_network.tt: "You dismiss [recipient.GetShortUIName] from your spy network"
+ dismiss_from_spy_network_interaction_target_loses_spy.tt: "[recipient.GetShortUIName] is dismissed from your spy network"
+ dismiss_from_spy_network_toast_title: "Spy Dismissed"
+ dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] has left the ranks of your sprawling spy network."
+
+ # Check for Potential Spies
+ agot_check_for_potential_spies_interaction_desc: "Check for Potential Spies Desc"

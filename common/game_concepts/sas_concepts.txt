@@ -1,0 +1,7 @@
+﻿sas_spy = {
+	texture = "gfx/interface/icons/character_interactions/secret.dds"
+	alias = { sas_spies }
+}
+sas_spy_network = {
+	texture = "gfx/interface/icons/character_interactions/secret.dds"
+}

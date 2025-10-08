@@ -3,6 +3,8 @@
 agot_invite_to_spy_network_interaction = {
 	category = interaction_category_friendly
 	icon = secret
+	desc = agot_invite_to_spy_network_interaction_desc
+	cooldown_against_recipient = { years = 5 }
 	is_shown = {
 		NOT = {
 			scope:actor = {
@@ -53,20 +55,32 @@ agot_invite_to_spy_network_interaction = {
 			}
 			is_imprisoned = no
 			NOT = { has_trait = incapable }
-			agot_is_available_for_anything = yes
 		}
 	}
 
 	on_accept = {
 		scope:actor = {
-			send_interface_message = {
-				type = msg_spymaster_task_good
-				title = agot_spy_network.0700.t
-				desc = agot_spy_network.0700.desc
-				left_icon = scope:recipient
-				right_icon = scope:recipient.liege
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = invite_to_spy_network_toast_title
+				left_icon = scope:actor
+				right_icon = scope:recipient
+				custom_tooltip = invite_to_spy_network_toast_desc
 			}
 		}
+		scope:actor = {
+			add_prestige = -10
+		}
+		scope:actor = {
+			custom_tooltip = invite_to_spy_network_interaction_target_added_to_network.tt
+		}
+		scope:recipient = {
+			add_prestige = 20
+		}
+		scope:recipient = {
+			custom_tooltip = invite_to_spy_network_interaction_target_becomes_spy.tt
+		}
+		
 		scope:actor = {
 			add_to_variable_list = {
 				name = spy_network_members
@@ -431,6 +445,7 @@ agot_invite_to_spy_network_interaction = {
 agot_remove_from_spy_network_interaction = {
 	category = interaction_category_friendly
 	icon = secret
+	desc = agot_remove_from_spy_network_interaction_desc
 	is_shown = {
 		scope:actor = {
 			is_target_in_variable_list = {
@@ -442,11 +457,30 @@ agot_remove_from_spy_network_interaction = {
 
 	auto_accept = yes
 
+	on_accept = {
+		scope:actor = {
+			add_prestige = -10
+		}
+		scope:actor = {
+			custom_tooltip = dismiss_from_spy_network_interaction_target_remove_from_network.tt
+		}
+		scope:recipient = {
+			custom_tooltip = dismiss_from_spy_network_interaction_target_loses_spy.tt
+		}
+	}
+
 	on_send = {
 		scope:actor = {
 			remove_list_variable = {
 				name = spy_network_members
 				target = scope:recipient
+			}
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = dismiss_from_spy_network_toast_title
+				left_icon = scope:actor
+				right_icon = scope:recipient
+				custom_tooltip = dismiss_from_spy_network_toast_desc
 			}
 		}
 	}
@@ -455,6 +489,8 @@ agot_remove_from_spy_network_interaction = {
 agot_check_for_potential_spies_interaction = {
 	category = interaction_category_hostile
 	icon = secret
+	desc = agot_check_for_potential_spies_interaction_desc
+	cooldown = { days = 30 }
 
 	is_valid = {
 		exists = scope:actor.cp:councillor_spymaster
@@ -527,6 +563,7 @@ agot_check_for_potential_spies_interaction = {
 				scope:actor = {
 					trigger_event = {
 						id = agot_spy_network.0800
+						days = { 7 14 }
 					}
 				}
 			}
