@@ -26,10 +26,6 @@ on_fired_from_council = {
 # scope:council_task is their (previous) council task
 # scope:councillor is the councillor in question that left (same as root)
 on_councillor_left = {
-	#AGOT Added: We suppress notifications for KG leaving as its not really them leaving
-	trigger = {
-		NOT = { scope:councillor = { has_trait = kingsguard } }
-	}
 	effect = {
 		scope:councillor = {
 			councillor_leaving_effect = yes
@@ -245,8 +241,7 @@ task_domestic_affairs_side_effects = {
 		100 = chancellor_task.3101 #Stop war between vassals
 		100 = chancellor_task.3102 #Improve vassal contract
 		100 = chancellor_task.3103 #Gain opinion with a significant vassal
-		#AGOT Disabled - Broken vanilla event
-		# 25 = chancellor_task.3104 #Force a vassal into Partition Succession 
+		25 = chancellor_task.3104 #Force a vassal into Partition Succession
 	}
 }
 
@@ -460,9 +455,7 @@ task_disrupt_schemes_side_effects = {
 	}
 
 	random_events = {
-		#AGOT Modified
-		# chance_to_happen = 1
-		# 400 = 0
+		# SAS Change
 		chance_to_happen = 2
 		#The chance for the vanilla events must stay 1% while adding the "discover spy" event
 		chance_of_no_event = {
@@ -493,23 +486,22 @@ task_disrupt_schemes_side_effects = {
 		#Good side effects
 		100 = spymaster_task.1101 #Hostile Scheme is interrupted
 		100 = spymaster_task.2101 #Discovery of a minor secret
-		#AGOT Modified
-		#50 = spymaster_task.2104 #Discovery of a major secret
-		25 = spymaster_task.2104 #Discovery of a major secret
+		50 = spymaster_task.2104 #Discovery of a major secret
+		# SAS Change End
 	}
 }
 
 task_find_secrets_outcome = {
 	random_events = {
-		#AGOT Modified
+		# SAS Change
 		# 100 = spymaster_task.0301 #Find minor secret
 		# 50 = spymaster_task.0302 #Find major secret
 		# 10 = spymaster_task.0381 # Fabricate a Hook (if you have Truth is Relative) - Fired both here and if no secrets exist
-		20 = spymaster_task.0301
-		10 = spymaster_task.0302
-		10 = spymaster_task.0381
-		#AGOT Added
+		20 = spymaster_task.0301 #Find minor secret
+		10 = spymaster_task.0302 #Find major secret
+		10 = spymaster_task.0381 # Fabricate a Hook (if you have Truth is Relative) - Fired both here and if no secrets exist
 		120 = agot_spy_network.0400
+		# SAS Change End
 	}
 }
 

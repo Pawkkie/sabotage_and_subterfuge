@@ -419,7 +419,6 @@ agot_spy_network.0300 = {
 			limit = {
 				is_landed = yes
 				in_diplomatic_range = root
-				agot_court_eligible_for_spy_network = yes
 			}
 			every_courtier = {
 				limit = {
@@ -443,7 +442,6 @@ agot_spy_network.0300 = {
 							interaction = agot_invite_to_spy_network_interaction
 						}
 					}
-					agot_court_eligible_for_spy_network = yes
 				}
 				root = {
 					add_to_variable_list = {
@@ -464,7 +462,6 @@ agot_spy_network.0300 = {
 						value < 0
 					}
 				}
-				agot_court_eligible_for_spy_network = yes
 			}
 			every_courtier = {
 				limit = {
@@ -488,7 +485,6 @@ agot_spy_network.0300 = {
 							interaction = agot_invite_to_spy_network_interaction
 						}
 					}
-					agot_court_eligible_for_spy_network = yes
 				}
 				root = {
 					add_to_variable_list = {
@@ -543,7 +539,6 @@ agot_spy_network.0300 = {
 							interaction = agot_invite_to_spy_network_interaction
 						}
 					}
-					agot_court_eligible_for_spy_network = yes
 				}
 				root = {
 					add_to_variable_list = {
@@ -564,7 +559,6 @@ agot_spy_network.0300 = {
 							value < 0
 						}
 					}
-					agot_court_eligible_for_spy_network = yes
 				}
 				every_courtier = {
 					limit = {
@@ -588,7 +582,6 @@ agot_spy_network.0300 = {
 								interaction = agot_invite_to_spy_network_interaction
 							}
 						}
-						agot_court_eligible_for_spy_network = yes
 					}
 					root = {
 						add_to_variable_list = {
@@ -694,7 +687,6 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 	trigger = {
 		exists = cp:councillor_spymaster
 		scope:councillor = cp:councillor_spymaster
-		agot_court_eligible_for_spy_network = yes
 
 		OR = {
 			NOT = { has_variable_list = spy_network_members }
@@ -708,7 +700,6 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 		scope:target_character = {
 			is_landed = yes
 			in_diplomatic_range = root
-			agot_court_eligible_for_spy_network = yes
 			any_courtier = {
 				is_ai = yes
 				OR = {
@@ -731,7 +722,6 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 						interaction = agot_invite_to_spy_network_interaction
 					}
 				}
-				agot_court_eligible_for_spy_network = yes
 			}
 		}
 	}
