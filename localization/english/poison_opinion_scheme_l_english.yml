@@ -1,0 +1,51 @@
+﻿l_english:
+ poison_opinion: "Poison Opinion"
+ poison_opinion_action: "Poison Opinion"
+ poison_opinion_desc: "I will attempt to poison [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]'s opinion of their liege, causing disorder in their courts."
+ poison_opinion_desc_general: "Poison Opinion is a [personal_scheme|E] that attempts to reduce the target's opinion of their direct [liege|E]. This scheme primarily relies on your own [intrigue|E] and the abilities of your [femme_fatale_court_position|E]. As it is not a [hostile_scheme|E], it is not [secret_scheme_single|E] and does not use [agents|E].\n\nUnlike most schemes but like the Sway [personal_scheme|E], Poison Opinion restarts upon completion. The opinion lost from it stacks, so keeping it active will make the [scheme_target|E] like their liege less and less.\n\nSuccessful targets of this scheme with negative opinions of their liege will be more likely to join factions created through the [provoke_vassals|E] [hostile_scheme|E]."
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] of their [liege|E] will decrease by #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!"
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "You cannot poison the opinion [TARGET_CHARACTER.GetShortUIName] while [TARGET_CHARACTER.GetSheHe] is irritated at me"
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]'s opinion has been poisoned"
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]'s opinion has not been poisoned"
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "You employ a [femme_fatale_court_position|E]"
+ NO_FEMME_FATALE_COURT_POSITION: "You do not employ a [femme_fatale_court_position|E]"
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] is performing the Poison Opinion task"
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] is not performing the Poison Opinion task"
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "Your [femme_fatale_court_position|E]'s' [intrigue|E]: $VALUE|+=0$"
+ POISON_OPINION_SCHEMER: "You are a skilled Schemer: $VALUE|+0=$ "
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$"
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$"
+ previously_poisoned_opinion: "Previously poisoned opinion: $VALUE|=+0$"
+ poison_opinion_my_rival: "Your Rival: $VALUE|=+0$"
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]'s aid: $VALUE|+0=-+$"
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "Enemy [femme_fatale_court_position|E]'s aid: $VALUE|+0=-+$"
+ POISON_OPINION_TARGET_DECEITFUL: "Target is [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_VENGEFUL: "Target is [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_AMBITIOUS: "Target is [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_DISLOYAL: "Target is [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_CONTENT: "Target is [GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_FORGIVING: "Target is [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$"
+ POISON_OPINION_TARGET_LOYAL: "Target is [GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$"
+
+ # Invalidated
+ poison_opinion_invalidated_title: "Poison Opinion Scheme Ends"
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] has passed away. You can no longer poison [target.GetHerHis] opinion against [target.GetHerHis] liege."
+ poison_opinion_invalidated_war: "Due to the War between you, you can no longer poison the opinion of [target.GetShortUIName]."
+ poison_opinion_invalidated_no_femme_fatale: "You are no longer employing a [femme_fatale_court_position|E]."
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] is no longer performing the Poison Opinion task."
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] has become independent, and no longer has a liege."
+
+ ## Interaction
+ poison_opinion_interaction: "Poison Opinion #weak (Scheme)#!"
+ poison_opinion_interaction_desc: "Attempt to poison [recipient.GetShortUINameNoTooltip]'s opinion of their liege, causing disorder in their courts"
+ poison_opinion_interaction_notification: "Poisoning Opinion"
+ scheme_interaction_tt_poison_opinion_desc: "I will poison [recipient.GetShortUINameNoTooltip]'s opinion of their liege, causing disorder in their courts!"
+
+ # Effects
+ poison_opinion_continue: "You continue your efforts"
+ poison_opinion_try_again: "You will make another attempt"
+ poison_opinion_complete: "You have poisoned [target.GetShortUIName]'s opinion as much as you can"

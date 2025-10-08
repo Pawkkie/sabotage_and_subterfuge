@@ -300,11 +300,6 @@
 			scope:owner = { has_trait = disloyal }
 			desc = ROUSE_RABBLE_DISLOYAL
 		}
-		modifier = {
-			add = -15
-			scope:owner = { has_trait = lifestyle_reveler }
-			desc = ROUSE_RABBLE_REVELER
-		}
 	}
 	base_secrecy = {
 		add = secrecy_base_value

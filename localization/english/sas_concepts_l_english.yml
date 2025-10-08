@@ -7,3 +7,5 @@
  game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$"
  game_concept_femme_fatale_court_position: "$femme_fatale_court_position$"
  game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$"
+ game_concept_poison_opinion_scheme: "$poison_opinion$ Scheme"
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$"

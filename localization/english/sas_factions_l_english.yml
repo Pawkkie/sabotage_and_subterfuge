@@ -54,6 +54,7 @@
  provoked_independence_faction: "Provoked Independence"
  provoked_independence_faction_desc: "Members of the Independence [faction|E] seek independence from their [liege|E].\n\n#S Ultimatum#!\nAll Faction Members become [independent|E]\n[liege|E] loses [prestige|E]"
  FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Provoked into Independence Faction: $VALUE|0+=$"
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "Poisoned Opinion: $VALUE|0+=$"
 
  # Provoked Dissolution
  provoked_dissolution_faction: "Provoked Dissolution"

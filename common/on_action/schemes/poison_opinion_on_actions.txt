@@ -1,0 +1,27 @@
+﻿poison_opinion_success = {
+	random_events = {
+		100 = poison_opinion_outcome.0001 #Standard success
+		2 = poison_opinion_outcome.1001 #Diplomacy duel for more opinion
+		2 = poison_opinion_outcome.1002 #Learning duel for more opinion
+		2 = poison_opinion_outcome.1003 #They're warming up to me, can I take it further?
+		50 = poison_opinion_outcome.1004 #Only triggered from the Persian Struggle 
+	}
+}
+
+poison_opinion_failure = {
+	random_events = {
+		100 = poison_opinion_outcome.0002 #Standard failure
+		2 = poison_opinion_outcome.2001 #Diplomatic misunderstanding
+		2 = poison_opinion_outcome.2002 #They think you're plotting against them
+	}
+}
+
+
+poison_opinion_ongoing = {
+	random_events = {
+		500 = 0
+		2 = poison_opinion_ongoing.1001 #They have different culture, talk it up a bit
+		2 = poison_opinion_ongoing.1002 #Write them a letter complimenting them
+		1 = poison_opinion_ongoing.5011 #Visit vassal/liege
+	}
+}

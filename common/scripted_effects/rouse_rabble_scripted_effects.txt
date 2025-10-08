@@ -351,3 +351,17 @@ clean_roused_rabble_county_modifiers_from_faction_members_effect = {
 		}
 	}
 }
+
+rouse_rabble_failure_effect = {
+	scope:target = {	
+		add_character_modifier = {
+			modifier = watchful_modifier
+			days = watchful_modifier_duration
+		}
+
+		add_opinion = {
+			target = scope:owner
+			modifier = attempted_to_rouse_rabble
+		}
+	}
+}

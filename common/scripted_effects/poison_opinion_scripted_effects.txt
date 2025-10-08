@@ -1,0 +1,45 @@
+﻿poison_opinion_end_effect = {
+	if = {
+		limit = {
+			scope:target = {
+				NOT = {
+					has_opinion_modifier = {
+						target = scope:owner
+						modifier = scheme_sway_opinion
+						value <= poison_opinion_min_value
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:scheme
+			}
+			scope:scheme = {
+				reset_failed_scheme_effect = yes
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:scheme_successful
+			}
+			custom_tooltip = poison_opinion_continue
+		}
+		else = {
+			custom_tooltip = poison_opinion_try_again
+		}
+		
+		
+	}
+	else = {
+		scope:owner = {
+			send_interface_toast = {
+				title = poison_opinion_complete
+				left_icon = scope:target
+				scope:scheme = {
+					end_scheme = yes
+				}
+			}
+		}
+	}
+}

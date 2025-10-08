@@ -134,6 +134,18 @@ provoked_dissolution_faction = {
 		base = -150
 
 		modifier = {
+			desc = "FACTION_REASON_POISONED_OPINION_MODIFIER"
+			AND = {
+				has_opinion_modifier = {
+					target = scope:faction.faction_target
+					modifier = scheme_poison_opinion_opinion
+				}
+				"opinion(scope:target)" < 0
+			}
+			add = 500
+		}
+
+		modifier = {
 			desc = "FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER"
 			has_character_modifier = provoked_dissolution_character_modifier
 			add = 1000
@@ -223,7 +235,7 @@ provoked_dissolution_faction = {
 				AND = {
 					has_opinion_modifier = {
 						target = scope:faction.faction_target
-						modifier = poisoned_opinion_opinion_modifier
+						modifier = scheme_poison_opinion_opinion
 					}
 					"opinion(scope:target)" < 0
 				}

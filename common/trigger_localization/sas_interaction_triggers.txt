@@ -89,3 +89,16 @@ provoke_target_greatest_of_khans = {
 	first_not = NOT_PROVOKE_TARGET_GREATEST_OF_KHANS
 }
 
+poison_opinion_blocked = {
+	first_not = I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER
+}
+
+femme_fatale_poisoning_opinion = {
+	first = FEMME_FATALE_POISONING_OPINION
+	first_not = FEMME_FATALE_NOT_POISONING_OPINION
+}
+
+have_femme_fatale_court_position = {
+	first = HAVE_FEMME_FATALE_COURT_POSITION
+	first_not = NO_FEMME_FATALE_COURT_POSITION
+}
