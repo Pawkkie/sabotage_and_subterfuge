@@ -1,7 +1,6 @@
 ﻿l_english:
  INTRIGUE_WINDOW_MY_SPIES_TITLE: "[sas_spies|E] In Your [sas_spy_network|E]" 
- INTRIGUE_WINDOW_SPIES_COUNT: "#T Number of [sas_spies|E]#!"
- INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T Max Number of [sas_spies|E]#!\nCalculated as one fifth of the combined intrigue of you and your [spymaster|E], rounded down."
+ INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T Number of [sas_spies|E]#!\nMax calculated as one fifth of the combined [intrigue|E] of you and your [spymaster|E], rounded down."
  INTRIGUE_WINDOW_DISMISS: "Dismiss"
  INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T Dismiss#!\n\nDismiss [Character.GetTitledFirstName] from your [sas_spy_network|E]"
  SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]"
