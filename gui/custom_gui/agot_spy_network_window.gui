@@ -53,7 +53,7 @@ window = {
 types SpyNetworkWindow {
 	type vbox_spy_list = vbox {
 		name = "spy_list"
-		spacing = 16
+		spacing = 2
 
 		layoutpolicy_vertical = expanding
 		layoutpolicy_horizontal = expanding
@@ -69,6 +69,79 @@ types SpyNetworkWindow {
 			}
 		}
 
+		vbox = {
+			name = "my_spies"
+			layoutpolicy_horizontal = expanding
+			spacing = 2
+
+			widget = {
+				size = { -1 24 }
+				layoutpolicy_horizontal = expanding
+
+				hbox = {
+					text_label_center = {
+						layoutpolicy_horizontal = expanding
+						align = center
+						text = "INTRIGUE_WINDOW_MY_SPIES_TITLE"
+					}
+				}
+
+				hbox = {
+					margin = { 10 0 }
+					spacing = 10
+
+					expand = {}
+
+					hbox = {
+						spacing = 8
+						tooltip = "INTRIGUE_WINDOW_SPIES_COUNT"
+
+						icon = {
+							size = { 14 14 }
+							texture = "gfx/interface/icons/portraits/hook_secret_small.dds"
+							framesize = { 28 28 }
+							frame = 1
+							
+						}
+
+						text_single = {
+							text = "[GetPlayer.MakeScope.ScriptValue('spy_network_members_count_gui')|0]"
+						}
+					}
+
+					hbox = {
+						spacing = 4
+						tooltip = "INTRIGUE_WINDOW_SPIES_MAX_COUNT"
+
+						icon = {
+							size = { 14 14 }
+							texture = "gfx/interface/icons/portraits/hook_secret_small.dds"
+							framesize = { 28 28 }
+							frame = 2
+						}
+
+						text_single = {
+							text = "[GetPlayer.MakeScope.ScriptValue('spy_network_limit')|0]"
+						}
+					}
+
+					spacer = {}
+
+					hbox = {
+
+						button_expand = {
+							name = "show"
+							visible = "[GreaterThan_int32(GetDataModelSize(IntrigueWindow.GetMyHooks), '(int32)4')]"
+							frame = "[Select_int32( GetVariableSystem.Exists( 'hooks_expand' ), '(int32)2', '(int32)1' )]"
+							onclick = "[GetVariableSystem.Toggle( 'hooks_expand' )]"
+
+							using = tooltip_ws
+							tooltip = "EXPAND_FILTER"
+						}
+					}
+				}
+			}
+		}
 
 		block "special_character" {}
 
@@ -181,99 +254,50 @@ types SpyNetworkWindow {
 				layoutpolicy_vertical = expanding
 
 				# Name and age
-				vbox = {
+				hbox = {
+					margin_left = 10
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
-					margin_left = 10
 
 					text_single = {
 						layoutpolicy_horizontal = expanding
 						using = Font_Size_Medium
 						autoresize = no
-
-						text = "SPY_NETWORK_NAME_DISPLAY"
+						text = "[Character.GetShortUINameNoTooltip], [Character.GetAge]"
 					}
-
+					icon = {
+						visible = "[Not(Character.IsDeadAndValid)]"
+						size = { 23 23 }
+						framesize = { 60 60 }
+						frame = "[Character.GetHealthIconFrame]"
+						texture = "gfx/interface/icons/character_status/icon_health.dds"
+						tooltip = "[Character.GetHealthInfo]"
+					}
 					hbox = {
 						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-
-						using = character_age_or_death_text
-						blockoverride "list_layout" {}
-
-						block "character_relation"
-						{
-							text_single = {
-								name = "character_relation"
-								layoutpolicy_horizontal = expanding
-								raw_text = "|  [Character.GetRelationToString( GetPlayer )]"
-								default_format = "#low"
-								autoresize = no
-								align = nobaseline
-								visible = "[Character.HasRelationTo( GetPlayer )]"
-							}
-
-							expand = {
-								visible = "[Not(Character.HasRelationTo( GetPlayer ))]"
-							}
+						icon = {
+							visible = "[Not(Character.IsDeadAndValid)]"
+							size = { 23 23 }
+							framesize = { 60 60 }
+							frame = "[Character.GetHealthIconFrame]"
+							texture = "gfx/interface/icons/character_status/icon_health.dds"
+							tooltip = "[Character.GetHealthInfo]"
+						}
+						icon = {
+							visible = "[Character.IsDeadAndValid]"
+							size = { 23 23 }
+							texture = "gfx/interface/icons/character_status/icon_dead.dds"
+							tooltip = "CHARACTER_DEAD_TOOLTIP"
 						}
 					}
+					expand = {}
 				}
 
-				# Dynasty and location
+				# Location
 				hbox = {
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
-					margin_left = 5
-
-					widget = {
-						size = { 45 60 }
-
-						coa_house_small = {
-							datacontext = "[Character.GetHouse]"
-							scale = 0.7
-						}
-					}
-
-					# Traits
-
-					#fixedgridbox = {
-					#	name = "traits_grid"
-					#	datamodel = "[CharacterListItem.GetTraits]"
-					#	flipdirection = yes
-					#	size = { 150 60 }
-					#	addcolumn = 30
-					#	addrow = 45
-					#	maxhorizontalslots = 8
-					#	maxverticalslots = 1
-					#
-					#	item = {
-					#		container = {
-					#			visible = "[Trait.IsValid]"
-					#
-					#			icon_trait = {
-					#				blockoverride "icon_size"
-					#				{
-					#					size = { 30 30 }
-					#				}
-					#
-					#				blockoverride "tooltip_placement"
-					#				{
-					#					using = tooltip_se
-					#				}
-					#
-					#				blockoverride "glow_radius"
-					#				{
-					#					glow_radius = 3
-					#				}
-					#			}
-					#		}
-					#	}
-					#}
-
-					block "bottom_middle_box" {
-						expand = {}
-					}
+					margin_left = 10
 
 					# Location
 					text_single = {

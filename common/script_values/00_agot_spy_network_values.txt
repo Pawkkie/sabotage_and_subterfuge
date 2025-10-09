@@ -37,7 +37,6 @@ spy_network_over_limit_recruitment_penalty = {
 	min = 0
 }
 
-
 spy_network_members_count = {
 	value = 0
 	add = 1		# to count the spy to be recruited
@@ -48,4 +47,12 @@ spy_network_members_count = {
 			add = 1
 		}
 	#}
+}
+
+spy_network_members_count_gui = {
+	value = 0
+	every_in_list = {
+		variable = spy_network_members
+		add = 1
+	}
 }
