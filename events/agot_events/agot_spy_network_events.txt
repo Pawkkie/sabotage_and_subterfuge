@@ -95,6 +95,74 @@ agot_spy_network.0100 = {
 	}
 }
 
+# Chance to discover innovation
+agot_spy_network.0105 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_variable_list = spy_network_members
+				any_in_list = {
+					variable = spy_network_members
+					count >= 1
+				}
+				root.culture.culture_head = root
+			}
+			random_in_list = {
+				variable = spy_network_members
+				save_temporary_scope_as = spy_temp
+				if = {
+					limit = {
+						is_alive = yes
+						is_courtier = yes
+						is_landed = no
+						is_pool_guest = no
+						is_imprisoned = no
+						court_owner = { is_ruler = yes }
+						NOT = { has_trait = incapable }
+						NOT = { exists = root.var:spies_discovered_free_innovation }
+					}
+					if = {
+						limit = {
+							root.culture = { can_get_innovation_from = scope:spy_temp.liege.capital_county.culture }
+						}
+						random = {
+						chance = 1
+							root = {
+								send_interface_message = {
+									type = event_raid_good
+									title = raze_intent_message
+									left_icon = root
+									right_icon = scope:spy_temp
+									root.culture = {
+										get_random_innovation_from = scope:spy_temp.liege.capital_county.culture
+									}
+								}
+								hidden_effect = {
+									set_variable = {
+										name = spies_discovered_free_innovation
+										value = yes
+										years = 30
+									}
+								}
+							}	
+						}
+					}
+				}
+				else = {
+					root = {
+						remove_list_variable = {
+							name = spy_network_members
+							target = prev
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 # Reveals one random secret/scheme from someone in the same court as the spy
 # This can be the court's owner, a courtier, or a guest, but will never reveal the spy's own secrets
 agot_spy_network.0200 = {

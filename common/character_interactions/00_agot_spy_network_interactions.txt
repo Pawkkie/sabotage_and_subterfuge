@@ -1,6 +1,4 @@
-﻿# agot spy network by Ronko
-
-agot_invite_to_spy_network_interaction = {
+﻿agot_invite_to_spy_network_interaction = {
 	category = interaction_category_friendly
 	icon = secret
 	desc = agot_invite_to_spy_network_interaction_desc

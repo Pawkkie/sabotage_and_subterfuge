@@ -1,12 +1,14 @@
 ﻿three_year_playable_pulse = {
 	on_actions = {
 		ai_employ_spy_pulse
+		learn_innovations_pulse
 	}
 }
 
 quarterly_playable_pulse = {
 	on_actions = {
 		gather_secrets_pulse
+		learn_innovations_pulse
 	}
 }
 
@@ -25,6 +27,24 @@ gather_secrets_pulse = {
 	effect = {
 		trigger_event = {
 			id = agot_spy_network.0100
+		}
+	}
+}
+
+learn_innovations_pulse = {
+	trigger = {
+		has_variable_list = spy_network_members
+		is_ruler = yes
+		is_alive = yes
+		is_landed = yes
+		any_in_list = {
+			variable = spy_network_members
+			count >= 1
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = agot_spy_network.0105
 		}
 	}
 }
