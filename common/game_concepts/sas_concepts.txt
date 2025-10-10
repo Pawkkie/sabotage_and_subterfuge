@@ -6,6 +6,10 @@ provoke_vassals_scheme = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds"
 }
 
+poison_opinion_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds"
+}
+
 rabble_rouser_court_position = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
@@ -14,3 +18,6 @@ femme_fatale_court_position = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
 
+smuggler_court_position = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}

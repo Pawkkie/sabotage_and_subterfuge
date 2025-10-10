@@ -102,3 +102,13 @@ have_femme_fatale_court_position = {
 	first = HAVE_FEMME_FATALE_COURT_POSITION
 	first_not = NO_FEMME_FATALE_COURT_POSITION
 }
+
+have_smuggler_court_position = {
+	first = HAVE_SMUGGLER_COURT_POSITION
+	first_not = NO_SMUGGLER_COURT_POSITION
+}
+
+smuggler_planning_heist = {
+	first = SMUGGLER_PLANNING_HEIST
+	first_not = SMUGGLER_NOT_PLANNING_HEIST
+}

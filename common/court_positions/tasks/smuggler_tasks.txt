@@ -1,0 +1,209 @@
+﻿smuggler_task_plan_heist = {
+	court_position_types = { 
+		smuggler_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+
+	base_employer_modifier = {
+		max_steal_back_artifact_schemes_add = 1
+	}
+
+	# Set Rousing Rabble variable on start
+	on_start = { 
+		# add_character_flag = blocked_from_leaving # Stop character from traveling
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_planning_heist
+				value = yes
+			}
+		}
+		custom_tooltip = allow_steal_artifact_scheme_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:smuggler_is_planning_heist = no }
+			set_variable = {
+				name = smuggler_is_planning_heist
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_planning_heist
+				value = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						is_at_war = yes
+					}
+				}
+			}
+			add = 100
+		}
+	}
+}
+
+rabble_rouser_task_provoke_vassals = {
+	court_position_types = { 
+		rabble_rouser_court_position
+	}
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost
+				multiply = 2
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+	
+	base_employer_modifier = {
+		max_provoke_vassals_schemes_add = 1
+	}
+
+	# Set Rousing Rabble variable on start
+	on_start = { 
+		# add_character_flag = blocked_from_leaving # Stop character from traveling
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = yes
+			}
+		}
+		custom_tooltip = allow_provoke_vassals_scheme_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_provoking_vassals = no }
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_provoking_vassals
+				value = no
+			}
+		}
+	}
+
+	ai_will_do = {
+
+	}
+}
+
+rabble_rouser_task_pacify_the_masses = {
+	court_position_types = { 
+		rabble_rouser_court_position 
+	}
+
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	on_start = {
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+		custom_tooltip = increased_rouse_rabble_defense_tt
+		custom_tooltip = increased_provoke_vassals_defense_tt
+	}
+
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_pacifying_the_masses = no }
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = no
+			}
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+			county_opinion_add = 1
+			character_capital_county_monthly_development_growth_add = 0.01
+		}
+		poor = {
+			county_opinion_add = 3
+			character_capital_county_monthly_development_growth_add = 0.02
+		}
+		average = {
+			county_opinion_add = 5
+			character_capital_county_monthly_development_growth_add = 0.05
+		}
+		good = {
+			county_opinion_add = 7
+			character_capital_county_monthly_development_growth_add = 0.07
+		}
+		excellent = {
+			county_opinion_add = 10
+			character_capital_county_monthly_development_growth_add = 0.1
+		}
+	}
+
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_sociability
+		}
+	}
+}

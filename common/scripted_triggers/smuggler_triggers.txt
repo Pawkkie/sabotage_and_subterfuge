@@ -1,0 +1,17 @@
+﻿smuggler_validity_trigger = {
+	base_court_position_validity_trigger = { EMPLOYER = $EMPLOYER$ }
+	OR = {
+		diplomacy >= 10
+		intrigue >= 10
+		has_trait = lifestyle_reveler
+		has_trait = gregarious
+	}
+	is_landed = no
+	custom_tooltip = {
+		text = none_does_not_have_a_full_time_job
+		trigger_if = {
+			limit = { NOT = { has_court_position = smuggler_court_position } }
+			sas_court_position_does_not_already_have_a_job_trigger = yes # This positions is considered a job, and cannot be held at the same time as another similar position
+		}
+	}
+}

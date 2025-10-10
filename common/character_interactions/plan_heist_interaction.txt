@@ -1,0 +1,376 @@
+﻿plan_heist = {
+	category = interaction_category_hostile
+	common_interaction = yes
+	ignores_pending_interaction_block = yes
+	icon = artisan_inspiration
+
+	target_type = artifact
+	target_filter = recipient_artifacts 
+
+	is_shown = {
+		NOR = {
+			# Can't buy from yourself
+			scope:recipient = scope:actor
+			# Can't buy from one of your prisoners
+			scope:recipient = { is_imprisoned_by = scope:actor }
+		}
+		scope:recipient = {
+			in_diplomatic_range = scope:actor
+			any_character_artifact = {
+				exists = this
+			}
+		}
+		scope:recipient = {
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = {
+					involved_activity ?= { #do not give out anything during coronation
+						has_activity_type = activity_coronation
+						activity_host = scope:recipient
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		# Can't buy an artifact claim against yourself or one of your prisoners
+		NOR = {
+			scope:recipient = scope:actor
+			scope:recipient = { is_imprisoned_by = scope:actor }
+		}
+		scope:recipient = {
+			# needs to have an artifact
+			any_character_artifact = { 
+				exists = this
+			}
+			is_busy_in_events_localised = yes
+		}
+
+		# Smuggler employed
+		custom_description = {
+			text = have_smuggler_court_position
+			exists = scope:actor.court_position:smuggler_court_position
+		}
+
+		# Smuggler is Planning Heist
+		trigger_if = {
+			limit = { exists = scope:actor.court_position:smuggler_court_position }
+			custom_description = {
+				text = smuggler_planning_heist
+				subject = scope:actor.court_position:smuggler_court_position
+				scope:actor = {
+					exists = var:smuggler_is_planning_heist
+					var:smuggler_is_planning_heist = yes
+				}
+			}
+		}
+
+		# Checks to determine piety cost for Religious Artifacts
+		trigger_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = common }
+			}
+			scope:actor = { 
+				piety >= minor_plan_heist_piety_value
+				gold >= minor_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = masterwork }
+			}
+			scope:actor = { 
+				piety >= medium_plan_heist_piety_value
+				gold >= medium_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = famed }
+			}
+			scope:actor = { 
+				piety >= major_plan_heist_piety_value
+				gold >= major_plan_heist_gold_value
+			}
+		}
+		trigger_else = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = illustrious }
+			}
+			scope:actor = { 
+				piety >= massive_plan_heist_piety_value
+				gold >= massive_plan_heist_gold_value
+			}
+		}
+
+		# Checks to determine prestige cost for regular artifacts
+		trigger_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = common }
+			}
+			scope:actor = { 
+				prestige >= minor_plan_heist_prestige_value
+				gold >= minor_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = masterwork }
+			}
+			scope:actor = { 
+				prestige >= medium_plan_heist_prestige_value
+				gold >= medium_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = famed }
+			}
+			scope:actor = { 
+				prestige >= major_plan_heist_prestige_value
+				gold >= major_plan_heist_gold_value
+			}
+		}
+		trigger_else = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = illustrious }
+			}
+			scope:actor = { 
+				prestige >= massive_plan_heist_prestige_value
+				piety >= massive_plan_heist_gold_value
+			}
+		}
+	}
+
+	desc = plan_heist_desc
+
+	auto_accept = yes
+
+	on_accept = {
+		# If it's a religous artifact...
+		if = {
+			limit = {
+				exists = scope:target.var:relic
+			}
+			# Toast to the actor
+			scope:actor = {
+				send_interface_toast = {
+					type = event_artifact_good
+					title = bought_artifact_claim.t
+					left_icon = scope:recipient
+					right_icon = scope:target
+					# Determine piety cost
+					if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = common }
+						}
+						scope:actor = { 
+							add_piety = minor_plan_heist_piety_loss
+							remove_short_term_gold = minor_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = masterwork }
+						}
+						scope:actor = { 
+							add_piety = medium_plan_heist_piety_loss
+							remove_short_term_gold = medium_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = famed }
+						}
+						scope:actor = { 
+							add_piety = major_plan_heist_piety_loss
+							remove_short_term_gold = major_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = illustrious }
+						}
+						scope:actor = { 
+							add_piety = massive_plan_heist_piety_loss
+							remove_short_term_gold = massive_plan_heist_gold_value
+						}
+					}
+					add_personal_artifact_claim = scope:target
+				}
+			}
+			# Toast to the recipient
+			scope:recipient = {
+				send_interface_message = {
+					type = event_artifact_bad_text
+					title = sold_artifact_claim.t
+					desc = sold_artifact_claim.desc
+					left_icon = scope:actor
+					right_icon = scope:target
+				}
+			}
+		}
+		# If it's not a religous artifact...
+		else = {
+			scope:actor = {
+				send_interface_toast = {
+					type = event_artifact_bad
+					title = bought_artifact_claim.t
+					left_icon = scope:recipient
+					right_icon = scope:target
+					# Determine prestige cost
+					if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = common }
+						}
+						scope:actor = { 
+							add_prestige = minor_plan_heist_prestige_loss
+							remove_short_term_gold = minor_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = masterwork }
+						}
+						scope:actor = { 
+							add_prestige = medium_plan_heist_prestige_loss
+							remove_short_term_gold = medium_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = famed }
+						}
+						scope:actor = { 
+							add_prestige = major_plan_heist_prestige_loss
+							remove_short_term_gold = major_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = illustrious }
+						}
+						scope:actor = { 
+							add_prestige = massive_plan_heist_prestige_loss
+							remove_short_term_gold = massive_plan_heist_gold_value
+						}
+					}
+					add_personal_artifact_claim = scope:target
+				}
+			}
+			
+			scope:recipient = {
+				send_interface_message = {
+					type = event_artifact_bad_text
+					title = sold_artifact_claim.t
+					desc = sold_artifact_claim.desc
+					left_icon = scope:actor
+					right_icon = scope:target
+				}
+			}
+		}
+		scope:actor = {
+			stress_impact = {
+				just = medium_stress_impact_gain
+				honest = medium_stress_impact_gain
+			}
+		}
+	}
+
+	# AI STUFF
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+
+	ai_targets = {
+		# Only want AI to target neighbors
+		ai_recipients = neighboring_rulers
+	}
+
+	ai_frequency = 30
+
+	ai_potential = {
+		# The basic requirements
+		is_imprisoned = no 
+		is_playable_character = yes 
+		is_available_ai_adult = yes
+
+		# They must be well supplied
+		prestige > major_prestige_value
+		piety > major_piety_value
+
+		# Only really greedy AI characters get to use this
+		ai_greed >= high_positive_ai_value
+	}
+
+	ai_will_do = {
+		base = 30
+
+		# Unity modifiers
+		evaluate_action_decreasing_house_unity = {
+			VALUE = 100
+		}
+
+		# Make it more likely for AI characters to buy claims if they have a royal court
+		modifier = {
+			scope:actor = {
+				has_royal_court = yes 
+				has_dlc_feature = court_artifacts
+			}
+			factor = 2
+		}
+
+		# Prevent AI from buying artifact claims for court artifacts if they don't have a royal court
+		modifier = {
+			scope:actor = {
+				has_royal_court = no
+			}
+			scope:target = {
+				OR = {
+					artifact_slot_type = throne
+					artifact_slot_type = wall_big
+					artifact_slot_type = wall_small
+					artifact_slot_type = sculpture
+					artifact_slot_type = book
+					artifact_slot_type = pedestal
+				}
+			}
+			factor = 0
+		}
+
+		# AI won't buy claims on artifacts owned by their lovers or friends
+		modifier = {
+			scope:recipient = {
+				OR = {
+					has_relation_friend = scope:actor
+					has_relation_lover = scope:actor
+#					is_close_or_extended_family_of = scope:actor
+				}
+			}
+			factor = 0
+		}
+	}
+}
