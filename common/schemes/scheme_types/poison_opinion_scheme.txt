@@ -3,7 +3,7 @@
 	skill = intrigue
 	desc = poison_opinion_desc_general
 	success_desc = "POISON_OPINION_SUCCESS_DESC"
-	icon = icon_scheme_sway
+	icon = icon_scheme_poison_opinion
 	illustration = "gfx/interface/illustrations/event_scenes/corridor.dds"
 	target_type = character
 	is_secret = no

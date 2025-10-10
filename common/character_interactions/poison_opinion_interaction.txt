@@ -1,5 +1,5 @@
 ﻿poison_opinion_interaction = {
-	icon = icon_scheme_sway
+	icon = poison_opinion
 	category = interaction_category_friendly
 	common_interaction = yes
 
