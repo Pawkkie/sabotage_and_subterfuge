@@ -17,10 +17,6 @@
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
-	base_employer_modifier = {
-		max_steal_back_artifact_schemes_add = 1
-	}
-
 	# Set Rousing Rabble variable on start
 	on_start = { 
 		# add_character_flag = blocked_from_leaving # Stop character from traveling
@@ -55,23 +51,13 @@
 	}
 
 	ai_will_do = {
-		value = 0
-		if = {
-			limit = {
-				scope:liege = {
-					OR = {
-						is_at_war = yes
-					}
-				}
-			}
-			add = 100
-		}
+
 	}
 }
 
-rabble_rouser_task_provoke_vassals = {
+smuggler_task_whatever_2 = {
 	court_position_types = { 
-		rabble_rouser_court_position
+		smuggler_court_position
 	}
 	cost = {
 		round = no
@@ -130,9 +116,9 @@ rabble_rouser_task_provoke_vassals = {
 	}
 }
 
-rabble_rouser_task_pacify_the_masses = {
+smuggler_task_monitor_supplies = {
 	court_position_types = { 
-		rabble_rouser_court_position 
+		smuggler_court_position 
 	}
 
 	cost = {
@@ -140,6 +126,7 @@ rabble_rouser_task_pacify_the_masses = {
 		prestige = {
 			add = {
 				value = monthly_court_position_task_cost
+				multiply = 2
 				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
 				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
 			}
@@ -149,19 +136,18 @@ rabble_rouser_task_pacify_the_masses = {
 	on_start = {
 		scope:liege = {
 			set_variable = {
-				name = rabble_rouser_is_pacifying_the_masses
+				name = smuggler_is_monitoring_supplies
 				value = yes
 			}
 		}
-		custom_tooltip = increased_rouse_rabble_defense_tt
-		custom_tooltip = increased_provoke_vassals_defense_tt
+		custom_tooltip = increased_smuggle_artifact_defense_tt
 	}
 
 	on_monthly = {
 		if = {
-			limit = { scope:liege.var:rabble_rouser_is_pacifying_the_masses = no }
+			limit = { scope:liege.var:smuggler_is_monitoring_supplies = no }
 			set_variable = {
-				name = rabble_rouser_is_pacifying_the_masses
+				name = smuggler_is_monitoring_supplies
 				value = yes
 			}
 		}
@@ -171,7 +157,7 @@ rabble_rouser_task_pacify_the_masses = {
 		# remove_character_flag = blocked_from_leaving # Removing travel block
 		scope:liege = {
 			set_variable = {
-				name = rabble_rouser_is_pacifying_the_masses
+				name = smuggler_is_monitoring_supplies
 				value = no
 			}
 		}
@@ -179,31 +165,28 @@ rabble_rouser_task_pacify_the_masses = {
 
 	scaling_employer_modifiers = {
 		terrible = {
-			county_opinion_add = 1
-			character_capital_county_monthly_development_growth_add = 0.01
+			supply_limit_mult = 0.04
+			build_speed = -0.05
 		}
 		poor = {
-			county_opinion_add = 3
-			character_capital_county_monthly_development_growth_add = 0.02
+			supply_limit_mult = 0.08
+			build_speed = -0.1
 		}
 		average = {
-			county_opinion_add = 5
-			character_capital_county_monthly_development_growth_add = 0.05
+			build_speed = -0.15
+			supply_limit_mult = 0.12
 		}
 		good = {
-			county_opinion_add = 7
-			character_capital_county_monthly_development_growth_add = 0.07
+			build_speed = -0.2
+			supply_limit_mult = 0.16
 		}
 		excellent = {
-			county_opinion_add = 10
-			character_capital_county_monthly_development_growth_add = 0.1
+			build_speed = -0.3
+			supply_limit_mult = 0.2
 		}
 	}
 
 	ai_will_do = {
-		value = {
-			add = 25
-			add = ai_sociability
-		}
+
 	}
 }

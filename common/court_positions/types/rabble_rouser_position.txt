@@ -196,10 +196,6 @@
 			}
 		}
 		if = {
-			limit = { has_trait = education_diplomacy_1 }
-			add = { value = 15 desc = court_position_education }
-		}
-		if = {
 			limit = {
 				OR = {
 					has_trait = education_intrigue_1

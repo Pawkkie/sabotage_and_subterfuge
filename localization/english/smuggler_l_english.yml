@@ -2,24 +2,22 @@
  # Court Position
  smuggler_court_position: "Smuggler"
  smuggler_court_position_desc: "HE DO BE SMUGGLIN"
- smuggler_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('rouse_rabble').GetTypeName] and [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E]s" 
+ smuggler_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" 
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]"
 
  # Rouse Rabble task
  smuggler_task_plan_heist: "Plan Heist"
- smuggler_task_plan_heist_desc: "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
- # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
- allow_steal_artifact_scheme_tt: "Can use the Plan Heist interaction to spend gold alongside piety or prestige to allow the use of the Steal Artifact scheme against a target. This task must be active to both start and continue the scheme.\n[GetScheme('steal_back_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ smuggler_task_plan_heist_desc: "Plan the heist of a specific artifact, letting you and your crew work towards smuggling it out of their courtroom and into yours."
+ allow_steal_artifact_scheme_tt: "Can use the [plan_heist_interaction|E] character interaction to enable the [smuggle_artifact_scheme|E] against a target. This task must be active to both start and continue the scheme.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Provoke Vassals task
- smuggler_task_provoke_vassals: "Provoke Vassals"
+ smuggler_task_loot_and_scoot: "Loot and Scoot"
  smuggler_task_provoke_vassals_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
- # allow_provoke_vassals_scheme_tt: "Can use the [provoke_vassals_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
- # Pacify the Masses task
- smuggler_task_pacify_the_masses: "Pacify the Masses"
- smuggler_task_pacify_the_masses_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."
- # increased_rouse_rabble_defense_tt: "Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
- # increased_provoke_vassals_defense_tt: "Enemy [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
+ # Monitor Supplies
+ smuggler_task_monitor_supplies: "Monitor Supplies"
+ smuggler_task_monitor_supplies_desc: "Keep a close eye on realm logistics, making sure operations remain safe and efficient."
+ increased_smuggle_artifact_defense_tt: "Enemy [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
+

@@ -1,0 +1,1120 @@
+﻿plan_heist_interaction = {
+	category = interaction_category_hostile
+	common_interaction = yes
+	ignores_pending_interaction_block = yes
+	icon = artisan_inspiration
+
+	target_type = artifact
+	target_filter = recipient_artifacts 
+
+	is_shown = {
+		NOR = {
+			scope:recipient = scope:actor
+			scope:recipient = { is_imprisoned_by = scope:actor }
+		}
+		scope:recipient = {
+			in_diplomatic_range = scope:actor
+			any_character_artifact = {
+				exists = this
+			}
+		}
+		scope:recipient = {
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = {
+					involved_activity ?= { #do not give out anything during coronation
+						has_activity_type = activity_coronation
+						activity_host = scope:recipient
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		NOR = {
+			scope:recipient = scope:actor
+			scope:recipient = { is_imprisoned_by = scope:actor }
+		}
+		scope:recipient = {
+			# needs to have an artifact
+			any_character_artifact = { 
+				exists = this
+			}
+			is_busy_in_events_localised = yes
+		}
+
+		# Smuggler employed
+		custom_description = {
+			text = have_smuggler_court_position
+			exists = scope:actor.court_position:smuggler_court_position
+		}
+
+		# Smuggler is Planning Heist
+		trigger_if = {
+			limit = { exists = scope:actor.court_position:smuggler_court_position }
+			custom_description = {
+				text = smuggler_planning_heist
+				subject = scope:actor.court_position:smuggler_court_position
+				scope:actor = {
+					exists = var:smuggler_is_planning_heist
+					var:smuggler_is_planning_heist = yes
+				}
+			}
+		}
+
+		# Checks to determine piety cost for Religious Artifacts
+		trigger_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = common }
+			}
+			scope:actor = { 
+				piety >= minor_plan_heist_piety_value
+				gold >= minor_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = masterwork }
+			}
+			scope:actor = { 
+				piety >= medium_plan_heist_piety_value
+				gold >= medium_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = famed }
+			}
+			scope:actor = { 
+				piety >= major_plan_heist_piety_value
+				gold >= major_plan_heist_gold_value
+			}
+		}
+		trigger_else = {
+			limit = {
+				exists = scope:target.var:relic
+				scope:target = { rarity = illustrious }
+			}
+			scope:actor = { 
+				piety >= massive_plan_heist_piety_value
+				gold >= massive_plan_heist_gold_value
+			}
+		}
+
+		# Checks to determine prestige cost for regular artifacts
+		trigger_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = common }
+			}
+			scope:actor = { 
+				prestige >= minor_plan_heist_prestige_value
+				gold >= minor_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = masterwork }
+			}
+			scope:actor = { 
+				prestige >= medium_plan_heist_prestige_value
+				gold >= medium_plan_heist_gold_value
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = famed }
+			}
+			scope:actor = { 
+				prestige >= major_plan_heist_prestige_value
+				gold >= major_plan_heist_gold_value
+			}
+		}
+		trigger_else = {
+			limit = {
+				exists = scope:target
+				NOT = { exists = scope:target.var:relic }
+				scope:target = { rarity = illustrious }
+			}
+			scope:actor = { 
+				prestige >= massive_plan_heist_prestige_value
+				piety >= massive_plan_heist_gold_value
+			}
+		}
+	}
+
+	desc = plan_heist_interaction_desc
+
+	auto_accept = yes
+
+	on_accept = {
+		# If it's a religous artifact...
+		if = {
+			limit = {
+				exists = scope:target.var:relic
+			}
+			# Toast to the actor
+			scope:actor = {
+				send_interface_toast = {
+					type = event_artifact_good
+					title = planned_heist.t
+					left_icon = scope:recipient
+					right_icon = scope:target
+					# Determine piety cost
+					if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = common }
+						}
+						scope:actor = { 
+							add_piety = minor_plan_heist_piety_loss
+							remove_short_term_gold = minor_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = masterwork }
+						}
+						scope:actor = { 
+							add_piety = medium_plan_heist_piety_loss
+							remove_short_term_gold = medium_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = famed }
+						}
+						scope:actor = { 
+							add_piety = major_plan_heist_piety_loss
+							remove_short_term_gold = major_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target.var:relic
+							scope:target = { rarity = illustrious }
+						}
+						scope:actor = { 
+							add_piety = massive_plan_heist_piety_loss
+							remove_short_term_gold = massive_plan_heist_gold_value
+						}
+					}
+				}
+				add_to_variable_list = {
+					name = planned_heist_artifacts
+					target = scope:target
+				}
+			}
+		}
+		# If it's not a religous artifact...
+		else = {
+			scope:actor = {
+				send_interface_toast = {
+					type = event_artifact_good
+					title = planned_heist.t
+					left_icon = scope:recipient
+					right_icon = scope:target
+					# Determine prestige cost
+					if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = common }
+						}
+						scope:actor = { 
+							add_prestige = minor_plan_heist_prestige_loss
+							remove_short_term_gold = minor_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = masterwork }
+						}
+						scope:actor = { 
+							add_prestige = medium_plan_heist_prestige_loss
+							remove_short_term_gold = medium_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = famed }
+						}
+						scope:actor = { 
+							add_prestige = major_plan_heist_prestige_loss
+							remove_short_term_gold = major_plan_heist_gold_value
+						}
+					}
+					else_if = {
+						limit = {
+							exists = scope:target
+							scope:target = { rarity = illustrious }
+						}
+						scope:actor = { 
+							add_prestige = massive_plan_heist_prestige_loss
+							remove_short_term_gold = massive_plan_heist_gold_value
+						}
+					}
+				}
+				add_to_variable_list = {
+					name = planned_heist_artifacts
+					target = scope:target
+				}
+			}
+		}
+		scope:actor = {
+			stress_impact = {
+				just = medium_stress_impact_gain
+				honest = medium_stress_impact_gain
+			}
+		}
+	}
+
+	# AI STUFF
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+
+	ai_targets = {
+		# Only want AI to target neighbors
+		ai_recipients = neighboring_rulers
+	}
+
+	ai_frequency = 30
+
+	ai_potential = {
+		# The basic requirements
+		is_imprisoned = no 
+		is_playable_character = yes 
+		is_available_ai_adult = yes
+
+		# They must be well supplied
+		prestige > major_prestige_value
+		piety > major_piety_value
+
+		# Only really greedy AI characters get to use this
+		ai_greed >= high_positive_ai_value
+	}
+
+	ai_will_do = {
+		base = 30
+
+		# Unity modifiers
+		evaluate_action_decreasing_house_unity = {
+			VALUE = 100
+		}
+
+		# Make it more likely for AI characters to buy claims if they have a royal court
+		modifier = {
+			scope:actor = {
+				has_royal_court = yes 
+				has_dlc_feature = court_artifacts
+			}
+			factor = 2
+		}
+
+		# Prevent AI from buying artifact claims for court artifacts if they don't have a royal court
+		modifier = {
+			scope:actor = {
+				has_royal_court = no
+			}
+			scope:target = {
+				OR = {
+					artifact_slot_type = throne
+					artifact_slot_type = wall_big
+					artifact_slot_type = wall_small
+					artifact_slot_type = sculpture
+					artifact_slot_type = book
+					artifact_slot_type = pedestal
+				}
+			}
+			factor = 0
+		}
+
+		# AI won't buy claims on artifacts owned by their lovers or friends
+		modifier = {
+			scope:recipient = {
+				OR = {
+					has_relation_friend = scope:actor
+					has_relation_lover = scope:actor
+					# is_close_or_extended_family_of = scope:actor
+				}
+			}
+			factor = 0
+		}
+	}
+}
+
+#Smuggle an artifact that you planned a heist on 
+smuggle_artifact_interaction = {
+	icon = icon_scheme_steal_back_artifact
+	interface_priority = 70
+	category = interaction_category_hostile
+	common_interaction = yes
+
+	desc = smuggle_artifact_interaction_desc
+
+	send_name = START_SCHEME
+
+	scheme = smuggle_artifact
+	ignores_pending_interaction_block = yes
+
+	target_type = artifact
+	target_filter = recipient_artifacts
+	
+	is_shown = {
+		NOR = {
+			scope:recipient = scope:actor
+			scope:recipient = { is_imprisoned_by = scope:actor }
+		}
+		# Need an artifact we planned a heist for
+		scope:recipient = {
+			any_character_artifact = {
+				scope:actor = {
+					is_target_in_variable_list = {
+						name = planned_heist_artifacts
+						target = prev
+					}
+				}
+			}
+		}
+	}
+	
+	is_highlighted = {
+		always = yes
+	}
+
+	is_valid_showing_failures_only = {
+		trigger_if = {
+		   limit = {
+				scope:recipient = {
+					any_character_artifact = {
+						scope:actor = {
+							is_target_in_variable_list = {
+								name = planned_heist_artifacts
+								target = prev
+							}
+						}
+					}
+				}
+			}
+		}
+
+		# Smuggler employed
+		custom_description = {
+			text = have_smuggler_court_position
+			exists = scope:actor.court_position:smuggler_court_position
+		}
+
+		# Smuggler is Planning Heist
+		trigger_if = {
+			limit = { exists = scope:actor.court_position:smuggler_court_position }
+			custom_description = {
+				text = smuggler_planning_heist
+				subject = scope:actor.court_position:smuggler_court_position
+				scope:actor = {
+					exists = var:smuggler_is_planning_heist
+					var:smuggler_is_planning_heist = yes
+				}
+			}
+		}
+
+		custom_description = {
+			object = scope:recipient
+			text = you_have_been_caught_trying_to_steal_artifact_from_target
+			scope:recipient = {
+				NOT = {
+					has_opinion_modifier = {
+						target = scope:actor
+						modifier = attempted_to_steal_artifact_from_me
+					}
+				}
+			}
+		}
+
+		custom_description = {
+			object = scope:recipient
+			text = you_have_recently_stolen_artifact_from_target
+			scope:recipient = {
+				NOT = {
+					has_opinion_modifier = {
+						target = scope:actor
+						modifier = stole_artifact_from_me
+					}
+				}
+			}
+		}
+	}
+
+	desc = {
+		triggered_desc = {
+			trigger = {
+				scope:actor = {
+					can_start_scheme = {
+						type = smuggle_artifact
+						target_character = scope:recipient
+					}
+				}
+			}
+			desc = scheme_interaction_tt_smuggle_artifact_approved
+		}
+	}
+	can_be_picked_artifact = {
+		trigger_if = {
+			scope:recipient = {
+				any_character_artifact = {
+					scope:actor = {
+						is_target_in_variable_list = {
+							name = planned_heist_artifacts
+							target = prev
+						}
+					}
+				}
+			}
+		}
+	}
+	# Scheme Starter Packages
+	options_heading = schemes.t.agent_packages
+	send_options_exclusive = yes
+	## Balanced agents.
+	send_option = {
+		flag = agent_focus_balance
+		current_description = start_stealing_back_artifact.tt.agent_focus_balance
+	}
+	## Focused on Success Chance.
+	send_option = {
+		flag = agent_focus_success
+		current_description = start_stealing_back_artifact.tt.agent_focus_success
+	}
+	## Focused on Speed.
+	send_option = {
+		flag = agent_focus_speed
+		current_description = start_stealing_back_artifact.tt.agent_focus_speed
+	}
+	## Focused on Secrecy.
+	send_option = {
+		flag = agent_focus_secrecy
+		current_description = start_stealing_back_artifact.tt.agent_focus_secrecy
+	}
+
+	on_accept = {
+		scope:actor = {
+			stress_impact = {
+				vengeful = medium_stress_impact_loss
+				honest = minor_stress_impact_gain
+				just = minor_stress_impact_loss
+			}
+		}
+		hidden_effect = {
+			scope:actor = {
+				send_interface_toast = {
+					type = event_toast_effect_neutral
+					title = start_stealing_back_artifact_notification
+
+					left_icon = scope:actor					
+					right_icon = scope:recipient
+
+					if =  {
+						limit = {
+							any_character_active_contract = {
+								has_task_contract_type = laamp_steal_artifact_contract
+								var:task_contract_target ?= scope:recipient
+							}
+						}
+						random_character_active_contract = {
+							limit = {
+								has_task_contract_type = laamp_steal_artifact_contract
+								var:task_contract_target ?= scope:recipient
+							}
+							save_scope_as = scheme_contract
+						}
+						# Success.
+						if = {
+							limit = { scope:agent_focus_success ?= yes }
+							begin_contract_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								TASK_CONTRACT = scope:scheme_contract
+								# Success.
+								AGENT_1 = agent_thief
+								AGENT_2 = agent_thief
+								AGENT_3 = agent_thug
+								# Speed.
+								AGENT_4 = agent_infiltrator
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+						# Speed.
+						else_if = {
+							limit = { scope:agent_focus_speed ?= yes }
+							begin_contract_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								TASK_CONTRACT = scope:scheme_contract
+								# Speed.
+								AGENT_1 = agent_infiltrator
+								AGENT_2 = agent_infiltrator
+								AGENT_3 = agent_footpad
+								# Success.
+								AGENT_4 = agent_thief
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+						# Secrecy.
+						else_if = {
+							limit = { scope:agent_focus_secrecy ?= yes }
+							begin_contract_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								TASK_CONTRACT = scope:scheme_contract
+								# Secrecy.
+								AGENT_1 = agent_lookout
+								AGENT_2 = agent_alibi
+								AGENT_3 = agent_decoy
+								# Success.
+								AGENT_4 = agent_thief
+								# Speed.
+								AGENT_5 = agent_infiltrator
+							}
+						}
+						# Balanced.
+						else = {
+							begin_contract_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								TASK_CONTRACT = scope:scheme_contract
+								# Success.
+								AGENT_1 = agent_thief
+								AGENT_2 = agent_thief
+								# Speed.
+								AGENT_3 = agent_infiltrator
+								AGENT_4 = agent_infiltrator
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+					}
+					else = {
+						# Success.
+						if = {
+							limit = { scope:agent_focus_success ?= yes }
+							begin_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								# Success.
+								AGENT_1 = agent_thief
+								AGENT_2 = agent_thief
+								AGENT_3 = agent_thug
+								# Speed.
+								AGENT_4 = agent_infiltrator
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+						# Speed.
+						else_if = {
+							limit = { scope:agent_focus_speed ?= yes }
+							begin_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								# Speed.
+								AGENT_1 = agent_infiltrator
+								AGENT_2 = agent_infiltrator
+								AGENT_3 = agent_footpad
+								# Success.
+								AGENT_4 = agent_thief
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+						# Secrecy.
+						else_if = {
+							limit = { scope:agent_focus_secrecy ?= yes }
+							begin_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								# Secrecy.
+								AGENT_1 = agent_lookout
+								AGENT_2 = agent_alibi
+								AGENT_3 = agent_decoy
+								# Success.
+								AGENT_4 = agent_thief
+								# Speed.
+								AGENT_5 = agent_infiltrator
+							}
+						}
+						# Balanced.
+						else = {
+							begin_scheme_with_agents_effect = {
+								SCHEME_TYPE = smuggle_artifact
+								TARGET_TYPE = target_character
+								TARGET_SCOPE = scope:recipient
+								# Success.
+								AGENT_1 = agent_thief
+								AGENT_2 = agent_thief
+								# Speed.
+								AGENT_3 = agent_infiltrator
+								AGENT_4 = agent_infiltrator
+								# Secrecy.
+								AGENT_5 = agent_lookout
+							}
+						}
+					}
+					scope:new_scheme ?= {
+						set_variable = {
+							name = target_artifact
+							value = scope:target
+						}
+					}
+					show_as_tooltip = {
+						stress_impact = {
+							vengeful = medium_stress_impact_loss
+							honest = minor_stress_impact_gain
+							just = minor_stress_impact_loss
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# AI
+	ai_potential = {
+		is_imprisoned = no
+		ai_greed >= low_negative_ai_value
+		intrigue >= low_skill_rating
+		NOT = {
+			any_scheme = {
+				OR = {
+					scheme_type = murder
+					scheme_type = abduct
+					scheme_type = claim_throne
+					scheme_type = fabricate_hook
+					scheme_type = smuggle_artifact
+				}
+			}
+		}
+	}
+	
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_targets = {
+		ai_recipients = scripted_relations
+	}
+
+	ai_targets = {
+		ai_recipients = liege
+	}
+	ai_targets = {
+		ai_recipients = neighboring_rulers
+		ai_recipients = peer_vassals
+		ai_recipients = nearby_domicile_owners
+		max = 10
+	}
+	ai_targets = {
+		ai_recipients = family
+		max = 10
+	}
+	ai_targets = {
+		ai_recipients = vassals
+		max = 10
+	}
+
+	ai_frequency = 60
+
+	ai_will_do = {
+		base = -30
+		# Factor for personality (excluding realism).
+		modifier = {
+			add = {
+				value = ai_boldness
+				multiply = -1
+			}
+		}
+		modifier = {
+			ai_vengefulness > 0
+			add = ai_vengefulness
+		}
+		modifier = {
+			add = {
+				value = ai_compassion
+				multiply = -0.25
+			}
+		}
+		modifier = {
+			scope:actor = {
+				has_relation_rival = scope:recipient
+			}
+			add = 60
+		}
+		modifier = {
+			scope:actor = {
+				has_relation_nemesis = scope:recipient
+			}
+			add = 150
+		}
+		# Recipient is flaunting their artifacts and needs to be taken down a peg - from hold_court.3080
+		modifier = {
+			scope:recipient = {
+				OR = {
+					has_character_modifier = petition_event_artifact_exhibition_for_prestige
+					has_character_modifier = petition_event_artifact_exhibition_for_gold
+				}
+			}
+			add = 35
+		}
+		modifier = {
+			scope:actor = {
+				opinion = {
+					target = scope:recipient
+					value >= medium_positive_opinion
+				}
+				ai_greed <= high_positive_ai_value
+			}
+			factor = 0
+		}
+		modifier = {
+			scope:recipient = {
+				OR = {
+					has_relation_friend = scope:actor
+					has_relation_lover = scope:actor
+				}
+			}
+			factor = 0
+		}
+		modifier = {
+			scope:actor = {
+				has_royal_court = no
+			}
+			scope:target = {
+				OR = {
+					artifact_slot_type = throne
+					artifact_slot_type = wall_big
+					artifact_slot_type = wall_small
+					artifact_slot_type = sculpture
+					artifact_slot_type = book
+					artifact_slot_type = pedestal
+				}
+			}
+			factor = 0
+		}
+		modifier = {
+			scope:recipient = {
+				OR = {
+					AND = {
+						scope:target = {
+							artifact_slot_type = primary_armament
+						}
+						OR = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = primary_armament
+								rarity = illustrious
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = primary_armament
+									rarity = famed
+								}
+								scope:target = {
+									OR = {
+										rarity = famed
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = primary_armament
+									rarity = masterwork
+								}
+								scope:target = {
+									OR = {
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = primary_armament
+									rarity = common
+								}
+								scope:target = {
+									rarity = common
+								}
+							}
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = regalia
+						}
+						OR = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = regalia
+								rarity = illustrious
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = regalia
+									rarity = famed
+								}
+								scope:target = {
+									OR = {
+										rarity = famed
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = regalia
+									rarity = masterwork
+								}
+								scope:target = {
+									OR = {
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = regalia
+									rarity = common
+								}
+								scope:target = {
+									rarity = common
+								}
+							}
+						}	
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = helmet
+						}
+						OR = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = helmet
+								rarity = illustrious
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = helmet
+									rarity = famed
+								}
+								scope:target = {
+									OR = {
+										rarity = famed
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = helmet
+									rarity = masterwork
+								}
+								scope:target = {
+									OR = {
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = helmet
+									rarity = common
+								}
+								scope:target = {
+									rarity = common
+								}
+							}
+						}	
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = armor
+						}
+						OR = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = armor
+								rarity = illustrious
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = armor
+									rarity = famed
+								}
+								scope:target = {
+									OR = {
+										rarity = famed
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = armor
+									rarity = masterwork
+								}
+								scope:target = {
+									OR = {
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = armor
+									rarity = common
+								}
+								scope:target = {
+									rarity = common
+								}
+							}
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = miscellaneous
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 4
+							artifact_slot_type = miscellaneous
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = throne
+						}
+						OR = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = throne
+								rarity = illustrious
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = throne
+									rarity = famed
+								}
+								scope:target = {
+									OR = {
+										rarity = famed
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = throne
+									rarity = masterwork
+								}
+								scope:target = {
+									OR = {
+										rarity = masterwork
+										rarity = common
+									}
+								}
+							}
+							AND = {
+								any_equipped_character_artifact = {
+									artifact_slot_type = throne
+									rarity = common
+								}
+								scope:target = {
+									rarity = common
+								}
+							}
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = wall_big
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 3
+							artifact_slot_type = wall_big
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = wall_small
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 3
+							artifact_slot_type = wall_small
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = sculpture
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 2
+							artifact_slot_type = sculpture
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = book
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 2
+							artifact_slot_type = book
+						}
+					}
+					AND = {
+						scope:target = {
+							artifact_slot_type = pedestal
+							rarity = common
+						}
+						any_equipped_character_artifact = {
+							count >= 4
+							artifact_slot_type = pedestal
+						}
+					}
+				}
+			}
+			factor = 0
+		}
+		start_hostile_scheme_ai_base_modifiers = yes # At the end so Cowed can block it completely
+	}
+
+	auto_accept = yes
+}

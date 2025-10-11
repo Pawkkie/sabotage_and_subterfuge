@@ -24,10 +24,10 @@
 			desc = court_position_skill_intrigue
 		}
 		add = {
-			value = diplomacy
+			value = stewardship
 			multiply = 1.5
 			max = 50
-			desc = court_position_skill_diplomacy
+			desc = court_position_skill_stewardship
 		}
 		# Negative
 		if = {
@@ -43,8 +43,8 @@
 			add = { value = -30 desc = court_position_shy_trait }
 		}		
 		if = {
-			limit = { has_trait = fickle }
-			add = { value = -15 desc = court_position_fickle_trait }
+			limit = { has_trait = generous }
+			add = { value = -15 desc = court_position_generous_trait }
 		}
 		if = {
 			limit = { has_trait = reclusive }
@@ -60,72 +60,64 @@
 		}
 		# Positive
 		if = {
-			limit = { has_trait = brave }
-			add = { value = 15 desc = court_position_brave_trait }
+			limit = { has_trait = deceitful }
+			add = { value = 20 desc = court_position_deceitful_trait }
 		}
 		if = {
 			limit = { has_trait = diligent }
 			add = { value = 15 desc = court_position_diligent_trait }
 		}
 		if = {
-			limit = { has_trait = ambitious }
-			add = { value = 20 desc = court_position_ambitious_trait }
+			limit = { has_trait = paranoid }
+			add = { value = 20 desc = court_position_paranoid_trait }
 		}
 		if = {
-			limit = { has_trait = generous }
-			add = { value = 15 desc = court_position_generous_trait }
+			limit = { has_trait = patient }
+			add = { value = 25 desc = court_position_patient_trait }
 		}
 		if = {
-			limit = { has_trait = gregarious }
-			add = { value = 25 desc = court_position_gregarious_trait }
+			limit = { has_trait = greedy }
+			add = { value = 25 desc = court_position_greedy_trait }
 		}
 		if = {
-			limit = { has_trait = diplomat }
-			add = { value = 15 desc = court_position_diplomat_trait }
+			limit = { has_trait = avaricious }
+			add = { value = 20 desc = court_position_avaricious_trait }
 		}
 		if = {
 			limit = { has_trait = schemer }
-			add = { value = 15 desc = court_position_schemer_trait }
+			add = { value = 20 desc = court_position_schemer_trait }
 		}
 		if = {
-			limit = { has_trait = lifestyle_wayfarer }
-			add = { value = 15 desc = court_position_wayfarer_trait }
-		}
-		if = {
-			limit = { has_trait = peasant_leader }
-			add = { value = 35 desc = court_position_peasant_leader_trait}
-		}
-		if = {
-			limit = { has_trait = populist_leader }
-			add = { value = 35 desc = court_position_populist_leader_trait }
+			limit = { has_trait = logistician }
+			add = { value = 35 desc = court_position_logistician_trait}
 		}
 		if = {
 			limit = { has_trait = loyal }
 			add = { value = 15 desc = court_position_loyal_trait }
 		}
-		# Eager Reveler
+		# Pilgrim
 		if = {
-			limit = { has_trait = lifestyle_reveler }
+			limit = { has_trait = pilgrim }
 			add = {
 				if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value <= 49 }
+						has_trait_xp = { trait = pilgrim value <= 49 }
 					}
 					value = 10
 				}
 				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value <= 99 }
+						has_trait_xp = { trait = pilgrim value <= 99 }
 					}
 					value = 20
 				}
 				else_if = {
 					limit = {
-						has_trait_xp = { trait = lifestyle_reveler value > 99 }
+						has_trait_xp = { trait = pilgrim value > 99 }
 					}
 					value = 35
 				}
-				desc = court_position_reveler_trait
+				desc = court_position_pilgrim_trait
 			}
 		}
 		# Traveler
@@ -167,37 +159,33 @@
 		if = {
 			limit = {
 				OR = {
-					has_trait = education_diplomacy_1
-					has_trait = education_diplomacy_2
-					has_trait = education_diplomacy_3
-					has_trait = education_diplomacy_4
-					has_trait = education_diplomacy_5
+					has_trait = education_stewardship_1
+					has_trait = education_stewardship_2
+					has_trait = education_stewardship_3
+					has_trait = education_stewardship_4
+					has_trait = education_stewardship_5
 				}
 			}
 			add = {
 				value = 5
 				if = {
-					limit = { has_trait = education_diplomacy_2 }
+					limit = { has_trait = education_stewardship_2 }
 					add = 5
 				}
 				else_if = {
-					limit = { has_trait = education_diplomacy_3 }
+					limit = { has_trait = education_stewardship_3 }
 					add = 10
 				}
 				else_if = {
-					limit = { has_trait = education_diplomacy_4 }
+					limit = { has_trait = education_stewardship_4 }
 					add = 15
 				}
 				else_if = {
-					limit = { has_trait = education_diplomacy_5 }
+					limit = { has_trait = education_stewardship_5 }
 					add = 20
 				}
-				desc = trait_education_diplomacy
+				desc = trait_education_stewardship
 			}
-		}
-		if = {
-			limit = { has_trait = education_diplomacy_1 }
-			add = { value = 15 desc = court_position_education }
 		}
 		if = {
 			limit = {

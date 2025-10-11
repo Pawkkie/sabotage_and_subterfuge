@@ -11,3 +11,7 @@
  game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$"
  game_concept_smuggler_court_position: "$smuggler_court_position$"
  game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$"
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ Scheme"
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$"
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$"
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$"

@@ -1,9 +1,0 @@
-﻿l_english:
- plan_heist: "Plan Heist"
- plan_heist_desc: "Spend [prestige|E] or [piety|E] and [gold|E] to plan a heist on one of [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E], allowing the use of the Steal Artifact [scheme|E]"
-
- # Allow
- HAVE_SMUGGLER_COURT_POSITION: "You employ a [smuggler_court_position|E]"
- NO_SMUGGLER_COURT_POSITION: "You do not employ a [smuggler_court_position|E]"
- SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is performing the Plan Heist task"
- SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is not performing the Plan Heist task"

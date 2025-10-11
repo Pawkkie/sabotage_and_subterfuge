@@ -112,3 +112,7 @@ smuggler_planning_heist = {
 	first = SMUGGLER_PLANNING_HEIST
 	first_not = SMUGGLER_NOT_PLANNING_HEIST
 }
+
+smuggle_artifact_can_start_scheme = {
+	third = smuggle_artifact_can_start_scheme
+}

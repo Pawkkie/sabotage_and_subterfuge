@@ -2,7 +2,7 @@
  # Court Position
  femme_fatale_court_position: "Femme Fatale"
  femme_fatale_court_position_desc: "Keen to stir the pot, the Rabble Rouser has a knack for getting in with the right crowd and firing them up. They can travel to other realms and incite peasant revolts or vassal uprisings, or stay at home and spread the good word of your excellence."
- femme_fatale_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]s" 
+ femme_fatale_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" 
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]"
@@ -19,7 +19,7 @@
  # Poison Opinion task
  femme_fatale_task_poison_opinion: "Poison Opinion"
  femme_fatale_task_poison_opinion_desc: "Poison the target's opinion of their [liege|E], leading to chaos and disorder in their court."
- allow_poisoning_opinion_scheme_tt: "Can use the [poison_opinion_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ allow_poisoning_opinion_scheme_tt: "Can use the [poison_opinion_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
  max_poison_opinion_schemes_add: "Max [GetScheme('poison_opinion').GetTypeName] [schemes|E]"
 
  # Embrace the Spiders task

@@ -1,0 +1,15 @@
+﻿l_english:
+ plan_heist_interaction: "Plan Heist"
+ plan_heist_interaction_desc: "Spend [prestige|E] or [piety|E] alongside [gold|E] to plan a heist on one of [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E], allowing the use of the [smuggle_artifact_scheme|E]"
+ smuggle_artifact_interaction: "Smuggle Artifact #weak (Scheme)#!"
+ smuggle_artifact_interaction_desc: "Attempt to steal an artifact from [recipient.GetShortUINameNoTooltip] that you've previously planned a heist for."
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "You employ a [smuggler_court_position|E]"
+ NO_SMUGGLER_COURT_POSITION: "You do not employ a [smuggler_court_position|E]"
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is performing the Plan Heist task"
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is not performing the Plan Heist task"
+ smuggle_artifact_can_start_scheme: "I cannot smuggle an artifact at this time"
+
+ # Toast
+ planned_heist.t: "You planned an artifact heist"

@@ -21,3 +21,11 @@ femme_fatale_court_position = {
 smuggler_court_position = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
+
+smuggle_artifact_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}
+
+plan_heist_interaction = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}

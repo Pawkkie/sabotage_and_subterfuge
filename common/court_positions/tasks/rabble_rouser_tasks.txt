@@ -154,7 +154,7 @@ rabble_rouser_task_pacify_the_masses = {
 			}
 		}
 		custom_tooltip = increased_rouse_rabble_defense_tt
-		custom_tooltip = increased_provoke_vassals_defense_tt
+		# custom_tooltip = increased_provoke_vassals_defense_tt
 	}
 
 	on_monthly = {

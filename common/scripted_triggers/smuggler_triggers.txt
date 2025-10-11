@@ -1,10 +1,10 @@
 ﻿smuggler_validity_trigger = {
 	base_court_position_validity_trigger = { EMPLOYER = $EMPLOYER$ }
 	OR = {
-		diplomacy >= 10
+		stewardship >= 10
 		intrigue >= 10
-		has_trait = lifestyle_reveler
-		has_trait = gregarious
+		has_trait = lifestyle_traveler
+		has_trait = greedy
 	}
 	is_landed = no
 	custom_tooltip = {
