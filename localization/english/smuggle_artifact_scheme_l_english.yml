@@ -1,4 +1,5 @@
 ﻿l_english:
+ smuggle_artifact: "Smuggle Artifact"
  smuggle_artifact_interaction: "Smuggle Artifact #weak (Scheme)#!"
  smuggle_artifact_general_desc: "A [scheme|E] where a character attempts to steal an [artifact|e] they planned a heist for"
  smuggle_artifact_action: "Smuggle an Artifact from"
