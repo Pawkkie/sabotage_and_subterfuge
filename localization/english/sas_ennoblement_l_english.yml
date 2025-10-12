@@ -1,0 +1,7 @@
+﻿l_english:
+ sas_ennoblement_interaction: "Ennoblement"
+ sas_ennoblement_interaction_desc: "Devise an excuse to ennoble [recipient.GetShortUINameNoTooltip] from lowborn status, potentially gaining a favor or loyalty [hook|E]."
+ sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] will be ennobled and found a new [dynasty|E]"
+ sas_ennoblement_opinion: "Ennobled me"
+ sas_ennoblement_title_name: "Ennoblement of [recipient.GetShortUINameNoTooltip]"
+ sas_ennoblement_memory_desc: "I was ennobled from my lowborn status"

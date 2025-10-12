@@ -1,0 +1,15 @@
+﻿ennoblement_memory = {
+	categories = { positive title }
+	icon = "title.dds"
+	description = {
+		random_valid = {
+			desc = sas_ennoblement_memory_desc
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration
+	}
+}
