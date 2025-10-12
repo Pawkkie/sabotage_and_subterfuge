@@ -10,7 +10,7 @@
  # Rouse Rabble task
  smuggler_task_plan_heist: "Plan Heist"
  smuggler_task_plan_heist_desc: "Plan the heist of a specific artifact, letting you and your crew work towards smuggling it out of their courtroom and into yours."
- allow_steal_artifact_scheme_tt: "Can use the [plan_heist_interaction|E] character interaction to enable the [smuggle_artifact_scheme|E] against a target. This task must be active to both start and continue the scheme.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ allow_steal_artifact_scheme_tt: "Can use the [plan_heist_interaction|E] character interaction to enable the [smuggle_artifact_scheme|E] against a target. This task must be active to both start and continue the scheme.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Provoke Vassals task
  smuggler_task_loot_and_scoot: "Loot and Scoot"

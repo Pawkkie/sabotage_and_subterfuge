@@ -14,12 +14,12 @@
  rabble_rouser_task_rouse_rabble: "Rouse Rabble"
  rabble_rouser_task_rouse_rabble_desc: "Rouse the rabble of another court, leading to peasant riots and potentially a full scale revolt."
  # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
- allow_rouse_rabble_scheme_tt: "Can use the [rouse_rabble_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ allow_rouse_rabble_scheme_tt: "Can use the [rouse_rabble_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Provoke Vassals task
  rabble_rouser_task_provoke_vassals: "Provoke Vassals"
  rabble_rouser_task_provoke_vassals_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
- allow_provoke_vassals_scheme_tt: "Can use the [provoke_vassals_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ allow_provoke_vassals_scheme_tt: "Can use the [provoke_vassals_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Pacify the Masses task
  rabble_rouser_task_pacify_the_masses: "Pacify the Masses"

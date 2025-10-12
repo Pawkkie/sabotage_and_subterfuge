@@ -19,7 +19,7 @@
  # Poison Opinion task
  femme_fatale_task_poison_opinion: "Poison Opinion"
  femme_fatale_task_poison_opinion_desc: "Poison the target's opinion of their [liege|E], leading to chaos and disorder in their court."
- allow_poisoning_opinion_scheme_tt: "Can use the [poison_opinion_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E]:\n\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
+ allow_poisoning_opinion_scheme_tt: "Can use the [poison_opinion_scheme|E]. This task must be active to both start and continue the scheme.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
  max_poison_opinion_schemes_add: "Max [GetScheme('poison_opinion').GetTypeName] [schemes|E]"
 
  # Embrace the Spiders task
