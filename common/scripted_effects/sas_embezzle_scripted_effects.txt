@@ -1,0 +1,118 @@
+﻿sas_embezzle_interaction_caught_embezzling_effect = {
+	scope:actor = {
+		# Variable results depending on embezzlement level.
+		## Very high.
+		if = {
+			limit = { always = scope:sas_embezzle_sum_huge }
+			# Negative opinion.
+			scope:recipient = {
+				# Greedy characters will not forgive this slight if they can help it.
+				if = {
+					limit = {
+						has_trait = greedy
+						can_set_relation_nemesis_trigger = { CHARACTER = scope:actor }
+					}
+					set_relation_nemesis = {
+						target = scope:actor
+						reason = rival_tried_to_embezzle
+					}
+				}
+				# Forgiving characters lose a little less.
+				else_if = {
+					limit = { has_trait = forgiving }
+					add_opinion = {
+						target = scope:actor
+						modifier = disappointed_opinion
+						opinion = -10
+					}
+				}
+				# Otherwise, folks do be mad.
+				else = {
+					add_opinion = {
+						target = scope:actor
+						modifier = trust_opinion
+						opinion = -45
+					}
+				}
+			}
+		}
+		## High.
+		else_if = {
+			limit = { always = scope:sas_embezzle_sum_large }
+			# Negative opinion.
+			scope:recipient = {
+				# Greedy characters will not forgive this slight if they can help it.
+				if = {
+					limit = {
+						has_trait = greedy
+						can_set_relation_rival_trigger = { CHARACTER = scope:actor }
+					}
+					set_relation_rival = {
+						target = scope:actor
+						reason = rival_tried_to_embezzle
+					}
+				}
+				# Forgiving characters lose a little less.
+				else_if = {
+					limit = { has_trait = forgiving }
+					add_opinion = {
+						target = scope:actor
+						modifier = disappointed_opinion
+						opinion = -5
+					}
+				}
+				# Otherwise, folks are still somewhat mad.
+				else = {
+					add_opinion = {
+						target = scope:actor
+						modifier = trust_opinion
+						opinion = -20
+					}
+				}
+			}
+		}
+		## Medium.
+		else_if = {
+			limit = { always = scope:sas_embezzle_sum_medium }
+			# Negative opinion.
+			## Covered by embezzlement.
+			## Greedy characters do still have a bit more room for hate.
+			scope:recipient = {
+				if = {
+					limit = {
+						scope:recipient = { has_trait = greedy }
+					}
+					progress_towards_rival_effect = {
+						REASON = rival_tried_to_embezzle
+						CHARACTER = scope:actor
+						OPINION = 0
+					}
+				}
+			}
+		}
+		## Low.
+		else_if = {
+			limit = { always = scope:sas_embezzle_sum_small }
+			# Negative opinion.
+			## Covered by embezzlement.
+			## Greedy characters do still have a bit more room for hate.
+			scope:recipient = {
+				if = {
+					limit = {
+						scope:recipient = { has_trait = greedy }
+					}
+					progress_towards_rival_effect = {
+						REASON = rival_tried_to_embezzle
+						CHARACTER = scope:actor
+						OPINION = 0
+					}
+				}
+			}
+		}
+		# Crime opinion.
+		reverse_add_opinion = {
+			target = scope:recipient
+			modifier = embezzled_opinion
+		}
+	}
+}

@@ -1,0 +1,23 @@
+﻿l_english:
+ sas_embezzle_interaction: "Embezzle Funds"
+ sas_embezzle_interaction_desc: "Devise an excuse to seize goods and smuggle funds from merchants of a neighboring realm, a liege, or a vassal."
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "It's not embezzlement if you don't take anything"
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Small Sum"
+ sas_embezzle_sum_small: "#EMP Lose#! a few valuables"
+ sas_embezzle_sum_medium_name: "[gold_i] Medium Sum"
+ sas_embezzle_sum_medium: "Levy unexpected customs charges"
+ sas_embezzle_sum_large_name: "[gold_i] Large Sum"
+ sas_embezzle_sum_large: "Tithe merchants unfairly"
+ sas_embezzle_sum_huge_name: "[gold_i] Huge Sum"
+ sas_embezzle_sum_huge: "Blatant tax theft"
+
+ # Success
+ sas_embezzle_interaction.tt.success: "You embezzle undetected"
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Your nefarious deeds are unmasked immediately"
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] been caught trying to embezzle!"

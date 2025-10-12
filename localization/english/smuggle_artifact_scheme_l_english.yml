@@ -1,6 +1,6 @@
 ﻿l_english:
- smuggle_artifact: "Smuggle Artifact"
- smuggle_artifact_general_desc: "A [scheme|E] where a character organizes a heist to steal an [artifact|e] they planned a heist for"
+ smuggle_artifact_interaction: "Smuggle Artifact #weak (Scheme)#!"
+ smuggle_artifact_general_desc: "A [scheme|E] where a character attempts to steal an [artifact|e] they planned a heist for"
  smuggle_artifact_action: "Smuggle an Artifact from"
  smuggle_artifact_desc: "I will attempt to steal an artifact I've had my eye on right from under [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]'s nose."
  smuggle_artifact_desc_general: "Attempt to steal an artifact for which you have planned a heist from the target."

@@ -438,7 +438,7 @@
 		if = {
 			limit = { 
 				exists = scope:owner.court_position:smuggler_court_position
-				scope:owner.var:smuggler_is_planning_heist =  = no
+				scope:owner.var:smuggler_is_planning_heist  = no
 			}
 			scope:owner = {
 				send_interface_toast = {
