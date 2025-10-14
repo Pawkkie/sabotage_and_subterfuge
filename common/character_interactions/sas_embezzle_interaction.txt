@@ -1,4 +1,7 @@
-﻿sas_embezzle_interaction = {
+﻿@ai_skill_diff_upper_threshold = 8
+@ai_skill_diff_lower_threshold = 2
+
+sas_embezzle_interaction = {
 	category = interaction_category_hostile
 	icon = sas_embezzle
 	interface_priority = 12

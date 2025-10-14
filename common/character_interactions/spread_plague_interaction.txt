@@ -1,0 +1,140 @@
+﻿spread_plague_interaction = {
+	icon = provoke_vassals
+	category = interaction_category_hostile
+	scheme = spread_plague
+	common_interaction = yes
+	interface_priority = 60
+	ignores_pending_interaction_block = yes
+	send_name = START_SCHEME
+
+	desc = spread_plague_interaction_desc
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			can_start_scheme = {
+				type = spread_plague
+				target_character = scope:recipient
+			}
+		}
+	}
+
+	# Scheme Starter Packages
+	options_heading = schemes.t.agent_packages
+	send_options_exclusive = yes
+	## Balanced agents.
+	send_option = {
+		flag = agent_focus_balance
+		current_description = provoke_vassals_interaction.tt.agent_focus_balance
+	}
+	## Focused on Success Chance.
+	send_option = {
+		flag = agent_focus_success
+		current_description = provoke_vassals_interaction.tt.agent_focus_success
+	}
+	## Focused on Speed.
+	send_option = {
+		flag = agent_focus_speed
+		current_description = provoke_vassals_interaction.tt.agent_focus_speed
+	}
+    ## Focused on Secrecy.
+	send_option = {
+		flag = agent_focus_secrecy
+		current_description = provoke_vassals_interaction.tt.agent_focus_secrecy
+	}
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = spread_plague_interaction_notification
+				left_icon = scope:actor					
+
+				# Success.
+				if = {
+					limit = { scope:agent_focus_success ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = spread_plague
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:target
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						AGENT_2 = agent_diplomat
+						AGENT_3 = agent_diplomat
+						# Speed.
+						AGENT_4 = agent_gabbler
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+				# Speed.
+				else_if = {
+					limit = { scope:agent_focus_speed ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = spread_plague
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:target
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						# Speed.
+						AGENT_2 = agent_gabbler
+						AGENT_3 = agent_gabbler
+						AGENT_4 = agent_herald
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+				# Secrecy.
+				else_if = {
+					limit = { scope:agent_focus_secrecy ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = spread_plague
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:target
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						# Speed.
+						AGENT_2 = agent_gabbler
+						# Secrecy.
+						AGENT_3 = agent_justiciar
+						AGENT_4 = agent_justiciar
+						AGENT_5 = agent_amanuensis
+					}
+				}
+				# Balanced.
+				else = {
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = spread_plague
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:target
+						# Success.
+						AGENT_1 = agent_rabble_rouser
+						AGENT_2 = agent_diplomat
+						# Speed.
+						AGENT_3 = agent_gabbler
+						AGENT_4 = agent_herald
+						# Secrecy.
+						AGENT_5 = agent_justiciar
+					}
+				}
+			}
+		}
+	}
+	
+	auto_accept = yes
+	ai_targets = { 
+		ai_recipients = neighboring_rulers 
+	}
+	ai_frequency = 0
+
+	ai_potential = {
+		is_ruler = yes
+	}
+
+	ai_will_do = {
+		# They shouldn't always do this.
+		base = -100
+	}
+}

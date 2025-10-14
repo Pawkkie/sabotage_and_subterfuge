@@ -131,17 +131,17 @@ provoke_vassals_outcome.0001 = {
 	}
 }
 
-# Successful and discovered
-provoke_vassals_outcome.0002 = {
+# # Successful and discovered
+# provoke_vassals_outcome.0002 = {
 
-}
+# }
 
-# Unsuccessful and secret
-provoke_vassals_outcome.0003 = {
+# # Unsuccessful and secret
+# provoke_vassals_outcome.0003 = {
 
-}
+# }
 
-# Unsuccessful and discovered
-provoke_vassals_outcome.0004 = {
+# # Unsuccessful and discovered
+# provoke_vassals_outcome.0004 = {
 	
-}
+# }

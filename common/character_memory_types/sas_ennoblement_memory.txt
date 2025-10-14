@@ -1,4 +1,4 @@
-﻿ennoblement_memory = {
+﻿sas_ennoblement_memory = {
 	categories = { positive title }
 	icon = "title.dds"
 	description = {

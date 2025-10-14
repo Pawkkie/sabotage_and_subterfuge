@@ -6038,6 +6038,14 @@ master_assassin_court_position = {
 
 	on_court_position_received = {
 		basic_gained_court_position_effect = yes
+		# SAS Change
+		scope:liege = {
+			set_variable = {
+				name = master_assassin_is_spreading_plague
+				value = no
+			}
+		}
+		# SAS Change End
 	}
 	on_court_position_revoked = {
 		basic_revoked_court_position_effect = yes
@@ -6049,14 +6057,29 @@ master_assassin_court_position = {
 				days = 1
 			}
 		}
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
 	}
 	on_court_position_invalidated = {
 		basic_invalidated_court_position_effect = yes
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
 	}
 	on_court_position_vacated = {
 		court_position_vacated_event_effect = {
 			COURT_POSITION_TYPE = master_assassin_court_position
 		}
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
 	}
 	# Scripted value to determine whether an AI will hire/fire a position or not. Hires over 0, fires under -50. Look in _court_positions.info for more extensive documentation!
 	candidate_score = {

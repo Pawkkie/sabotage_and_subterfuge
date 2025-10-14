@@ -1,0 +1,33 @@
+﻿l_english:
+
+ # Scheme info
+ spread_plague: "Spread Plague"
+ spread_plague_desc: "Sow the seeds of an [epidemic|E] in the target's capital."
+ spread_plague_desc_general: "$spread_plague$ is a [hostile_scheme|E] that attempts to start an [epidemic|E] of varying severity in the target's capital. It requires the employ of a [master_assassin_court_position|E] [court_position|E] to be undertaken, and your target must be in charge of a realm of at least [county|E] tier.\n\nIf at any point the [master_assassin_court_position|E] is unemployed or switches tasks, the scheme will be cancelled."
+ SPREAD_PLAGUE_SUCCESS_DESC: "The seeds of plague have been planted, and an [epidemic|E] will grow."
+ SPREAD_PLAGUE_DISCOVERY_DESC: "You can continue spreading plague in [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] realm."
+
+ HAVE_MASTER_ASSASSIN_COURT_POSITION: "You employ a [master_assassin_court_position|E]"
+ NO_MASTER_ASSASSIN_COURT_POSITION: "You do not employ a [master_assassin_court_position|E]"
+ MASTER_ASSASSIN_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] is performing the Spread Plague task"
+ MASTER_ASSASSIN_NOT_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] is not performing the Spread Plague task"
+
+ spread_plague_invalidated_title: "Spread Plague Scheme Ends"
+ spread_plague_invalidated_no_master_assassin: "You are no longer employing a [master_assassin_court_position|E]."
+ spread_plague_invalidated_not_spreading_plague: "[CHARACTER.GetShortUIName|U] is no longer performing the Spread Plague task."
+ spread_plague_invalidated_dead: "[target.GetShortUIName] has passed away. You can no longer spread plague to [target.GetHerHim]."
+
+ SPREAD_PLAGUE_WITCH: "[GetTrait('witch').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPRREAD_PLAGUE_HERBALIST: "[GetTrait('lifestyle_herbalist').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_TORTURER: "[GetTrait('torturer').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_PHYSICIAN: "[GetTrait('lifestyle_physician').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_SADISTIC: "[GetTrait('sadistic').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_WRATHFUL: "[GetTrait('wrathful').GetName( GetPlayer )]: $VALUE|=+0$"
+ SPREAD_PLAGUE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALUE|=+0$"
+
+ # Interaction
+ spread_plague_interaction: "Spread Plague #weak (Scheme)#!"
+ spread_plague_interaction_desc: "Attempt to spread plague in [recipient.GetShortUINameNoTooltip]'s realm to start an [epidemic|E]"
+ spread_plague_interaction_notification: "Spreading Plague" 
+ spread_plague_action: "Spreading Plague to"

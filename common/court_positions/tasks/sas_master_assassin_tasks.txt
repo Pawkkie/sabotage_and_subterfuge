@@ -17,28 +17,24 @@
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
-	base_employer_modifier = {
-		max_rouse_rabble_schemes_add = 1
-	}
-
 	# Set Rousing Rabble variable on start
 	on_start = { 
 		# add_character_flag = blocked_from_leaving # Stop character from traveling
 		scope:liege = {
 			set_variable = {
-				name = rabble_rouser_is_rousing_rabble
+				name = master_assassin_is_spreading_plague
 				value = yes
 			}
 		}
-		custom_tooltip = allow_rouse_rabble_scheme_tt
+		custom_tooltip = allow_spread_plague_scheme_tt
 	}
 
 	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
 	on_monthly = {
 		if = {
-			limit = { scope:liege.var:rabble_rouser_is_rousing_rabble = no }
+			limit = { scope:liege.var:master_assassin_is_spreading_plague = no }
 			set_variable = {
-				name = rabble_rouser_is_rousing_rabble
+				name = master_assassin_is_spreading_plague
 				value = yes
 			}
 		}
@@ -48,7 +44,7 @@
 		# remove_character_flag = blocked_from_leaving # Removing travel block
 		scope:liege = {
 			set_variable = {
-				name = rabble_rouser_is_rousing_rabble
+				name = master_assassin_is_spreading_plague
 				value = no
 			}
 		}

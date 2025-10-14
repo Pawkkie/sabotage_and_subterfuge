@@ -1,0 +1,5 @@
+﻿l_english: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "Spread Plague"
+ master_assassin_task_spread_plague_desc: "Sow [epidemic|E] in a character's court, attempting to infect them while bolstering your own resistance."
+ allow_spread_plague_scheme_tt: "Can use the [spread_plague_scheme|E]. This task must be active to both start and continue the scheme."

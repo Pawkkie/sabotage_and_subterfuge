@@ -459,28 +459,13 @@ smuggle_artifact_interaction = {
 		}
 	}
 
-	desc = {
-		triggered_desc = {
-			trigger = {
-				scope:actor = {
-					can_start_scheme = {
-						type = smuggle_artifact
-						target_character = scope:recipient
-					}
-				}
-			}
-			desc = scheme_interaction_tt_smuggle_artifact_approved
-		}
-	}
 	can_be_picked_artifact = {
-		trigger_if = {
-			scope:recipient = {
-				any_character_artifact = {
-					scope:actor = {
-						is_target_in_variable_list = {
-							name = planned_heist_artifacts
-							target = prev
-						}
+		scope:recipient = {
+			any_character_artifact = {
+				scope:actor = {
+					is_target_in_variable_list = {
+						name = planned_heist_artifacts
+						target = prev
 					}
 				}
 			}

@@ -116,3 +116,13 @@ smuggler_planning_heist = {
 smuggle_artifact_can_start_scheme = {
 	third = smuggle_artifact_can_start_scheme
 }
+
+have_master_assassin_court_position = {
+	first = HAVE_MASTER_ASSASSIN_COURT_POSITION
+	first_not = NO_MASTER_ASSASSIN_COURT_POSITION
+}
+
+master_assassin_spreading_plague = {
+	first = MASTER_ASSASSIN_SPREADING_PLAGUE
+	first_not = MASTER_ASSASSIN_NOT_SPREADING_PLAGUE
+}

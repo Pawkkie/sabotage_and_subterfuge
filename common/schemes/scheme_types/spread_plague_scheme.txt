@@ -1,0 +1,269 @@
+﻿spread_plague = {
+	# Basic Setup
+	skill = intrigue
+	desc = spread_plague_desc_general
+	success_desc = "SPREAD_PLAGUE_SUCCESS_DESC"
+	discovery_desc = "SPREAD_PLAGUE_DISCOVERY_DESC"
+	icon = icon_scheme_provoke_vassals
+	illustration = "gfx/interface/illustrations/event_scenes/courtyard.dds"
+	category = hostile
+	target_type = character
+	is_secret = yes
+	maximum_breaches = 5
+	cooldown = { years = 10 }
+	
+	# Parameters
+	speed_per_skill_point = t2_spsp_owner_value
+	speed_per_target_skill_point = t2_spsp_target_value
+	base_progress_goal = t2_base_phase_length_value
+	maximum_secrecy = 95
+	base_maximum_success = t2_base_max_success_value
+	phases_per_agent_charge = 1
+	success_chance_growth_per_skill_point = t2_scgpsp_value
+
+	# Core Triggers
+	allow = {
+		is_adult = yes
+		is_imprisoned = no
+		
+		# Should hide decision if can't employ a Master Assassin
+	}
+	valid = {
+		scope:target = {
+			OR = {
+				exists = location
+				in_diplomatic_range = scope:owner
+			}
+		}
+
+		# Master Assassin employed
+		custom_description = {
+			text = have_master_assassin_court_position
+			exists = scope:owner.court_position:master_assassin_court_position
+		}
+		# Master Assassin Spreading Plague
+		trigger_if = {
+			limit = { exists = scope:owner.court_position:master_assassin_court_position }
+			custom_description = {
+				text = master_assassin_spreading_plague
+				subject = scope:owner.court_position:master_assassin_court_position
+				scope:owner = {
+					exists = var:master_assassin_is_spreading_plague
+					var:master_assassin_is_spreading_plague = yes
+				}
+			}
+		}
+	}
+
+	# Agents
+	agent_leave_threshold = -25
+	agent_join_chance = {
+		base = 0
+		
+		ai_agent_join_chance_basic_suite_modifier = yes
+		ai_agent_join_chance_hostile_general_suite_modifier = yes
+	}
+	valid_agent = { is_valid_agent_standard_trigger = yes }
+	agent_groups_owner_perspective = { courtiers guests scripted_relations }
+	agent_groups_target_character_perspective = {  neighboring_rulers_including_tributary_borders  war_enemies nearby_domicile_owners  }
+
+	odds_prediction = {
+		add = hostile_scheme_base_odds_prediction_target_is_char_value
+		add = odds_skill_contribution_intrigue_value
+		add = agent_groups_owner_perspective_value
+		add = agent_groups_target_character_perspective_value
+		add = odds_spread_plague_scheme_misc_value
+		min = 0
+	}
+
+	# Base Chances
+	base_success_chance = {
+		base = 0
+		scheme_type_skill_success_chance_modifier = { SKILL = INTRIGUE }
+
+		hostile_scheme_base_chance_modifier = yes
+
+		# Countermeasures.
+		apply_indirect_scheme_success_chance_adjustments_modifier = yes
+		
+		# Positive modifiers
+		modifier = {
+			add = 20
+			scope:owner = { is_witch_trigger = yes }
+			desc = SPREAD_PLAGUE_WITCH
+		}
+		modifier = {
+			add = 25
+			scope:owner = { has_trait = lifestyle_herbalist }
+			desc = SPRREAD_PLAGUE_HERBALIST
+		}
+		modifier = {
+			add = 15
+			scope:owner = { has_trait = torturer }
+			desc = SPREAD_PLAGUE_TORTURER
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = schemer }
+			desc = SPREAD_PLAGUE_SCHEMER
+		}
+		modifier = {
+			add = 30
+			scope:owner = { has_trait = lifestyle_physician }
+			desc = SPREAD_PLAGUE_PHYSICIAN
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = sadistic }
+			desc = SPREAD_PLAGUE_SADISTIC
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = wrathful }
+			desc = SPREAD_PLAGUE_WRATHFUL
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -20
+			scope:target.holder ?= { has_trait = reclusive }
+			desc = SPREAD_PLAGUE_RECLUSIVE
+		}
+		modifier = {
+			add = -10
+			scope:target.holder ?= { has_trait = lifestyle_herbalist }
+			desc = SPREAD_PLAGUE_HERBALIST
+		}
+		modifier = {
+			add = -20
+			scope:target.holder ?= { has_trait = lifestyle_physician }
+			desc = SPREAD_PLAGUE_PHYSICIAN
+		}
+	}
+	base_secrecy = {
+		add = secrecy_base_value
+		add = countermeasure_apply_secrecy_maluses_value
+	}
+
+	# On Actions
+	on_start = {
+		set_variable = {
+			name = apply_countermeasures
+			value = flag:indirect
+		}
+		add_scheme_starting_opportunities_intrigue_effect = yes
+		# Fallback agents — a balanced config if you start the scheme from script.
+		if = {
+			limit = {
+				scheme_owner = {
+					NOT = { has_variable = agents_added }
+				}
+			}
+			add_agent_slot = agent_rabble_rouser
+			add_agent_slot = agent_diplomat
+			add_agent_slot = agent_gabbler
+			add_agent_slot = agent_herald
+			add_agent_slot = agent_justiciar
+		}
+	}
+	on_phase_completed = {
+		suppress_scheme_follow_up_event_till_input_given_effect = yes
+		spread_plague_scheme_prep_effect = yes
+		sas_cap_schemes_and_fire_reminders_effect = yes
+	}
+	on_hud_click  = { spread_plague_scheme_prep_effect = yes }
+	on_monthly = {
+		sas_hostile_scheme_monthly_discovery_chance_effect = yes
+		if = {
+			limit = {
+				NOT = { exists = scope:discovery_event_happening }
+			}
+			scheme_owner = {
+				trigger_event = {
+					on_action = spread_plague_ongoing
+					days = { 1 30 }
+				}
+			}
+		}
+	}
+	on_semiyearly = {
+		if = {
+			limit = {
+				scheme_owner = { is_ai = yes }
+			}
+			spread_plague_scheme_prep_effect = yes
+		}
+	}
+	on_invalidated = {
+		scheme_target_character = {
+			save_scope_as = target
+		}
+		scheme_owner = {
+			save_scope_as = owner
+		}
+		# Target death
+		if = {
+			limit = {
+				scope:target = { is_alive = no }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = spread_plague_invalidated_title
+					custom_tooltip = spread_plague_invalidated_dead
+					left_icon = scope:target
+				}
+			}
+		}
+		# Target out of range
+		if = {
+			limit = {
+				scope:target = { 
+					NOT = { in_diplomatic_range = scope:owner } 
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = spread_plague_invalidated_title
+					left_icon = scope:target
+					custom_description_no_bullet = {
+						object = scope:target
+						text = scheme_target_not_in_diplomatic_range
+					}
+				}
+			}
+		}
+		# Master Assassin unemployed
+		if = {
+			limit = {
+				NOT = { exists = scope:owner.court_position:master_assassin_court_position}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = spread_plague_invalidated_title
+					left_icon = scope:owner
+					custom_description_no_bullet = {
+						text = spread_plague_invalidated_no_master_assassin
+					}
+				}
+			}
+		}
+
+		# Master Assassin no longer Spreading Plage
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:master_assassin_court_position
+				scope:owner.var:master_assassin_is_spreading_plague = no
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = spread_plague_invalidated_title
+					left_icon = scope:owner.court_position:master_assassin_court_position
+					custom_description_no_bullet = {
+						subject = scope:owner.court_position:master_assassin_court_position
+						text = spread_plague_invalidated_not_spreading_plague
+					}
+				}
+			}
+		}
+	}
+}

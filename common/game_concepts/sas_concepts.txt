@@ -29,3 +29,11 @@ smuggle_artifact_scheme = {
 plan_heist_interaction = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
+
+master_assassin_court_position = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}
+
+spread_plague_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+}
