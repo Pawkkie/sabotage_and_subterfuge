@@ -1,4 +1,28 @@
-﻿three_year_playable_pulse = {
+﻿on_game_start = {
+	on_actions = {
+		initialize_can_use_spy_network
+	}
+}
+
+# Sets up which houses are initially allowed to use the spy network
+initialize_can_use_spy_network = {
+	effect = {
+		every_ruler	= {
+			limit = { 
+				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
+				is_house_head = yes
+				has_government = administrative_government
+			}
+			house = {
+				add_house_modifier = {
+					modifier = house_of_sabotage_and_subterfuge
+				}
+			}
+		}
+	}
+}
+
+three_year_playable_pulse = {
 	on_actions = {
 		ai_employ_spy_pulse
 		learn_innovations_pulse
@@ -10,6 +34,11 @@ quarterly_playable_pulse = {
 		gather_secrets_pulse
 		learn_innovations_pulse
 	}
+}
+
+# Sets up which houses are initiallu allowed to use the spy network
+initialize_can_use_spy_network = {
+	
 }
 
 # This pulse triggers the spy network events that make spies discover secrets and then reveal them to their employer
