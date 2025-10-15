@@ -451,10 +451,9 @@
 
 	modifier = {
 		intrigue = 1
-		diplomacy = 1
-		general_opinion = 10
-		lifestyle_reveler_xp_gain_mult = 0.25
-		monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+		stewardship = 1
+		monthly_income = 0.2
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.1
 		monthly_intrigue_lifestyle_xp_gain_mult =  0.1
 	}
 
