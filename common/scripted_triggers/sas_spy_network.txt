@@ -1,0 +1,5 @@
+﻿can_use_spy_network = {
+	OR = {
+		has_government = administrative_government
+	}
+}

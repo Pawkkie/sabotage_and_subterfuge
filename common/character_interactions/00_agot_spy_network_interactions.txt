@@ -12,6 +12,9 @@
 				}
 			}
 		}
+		scope:actor = {
+			can_use_spy_network = yes
+		}
 		scope:recipient = {
 			is_courtier = yes
 			is_pool_guest = no
@@ -450,6 +453,7 @@ agot_remove_from_spy_network_interaction = {
 				name = spy_network_members
 				target = scope:recipient
 			}
+			can_use_spy_network = yes
 		}
 	}
 
@@ -489,6 +493,10 @@ agot_check_for_potential_spies_interaction = {
 	icon = secret
 	desc = agot_check_for_potential_spies_interaction_desc
 	cooldown = { days = 30 }
+
+	is_shown = {
+		can_use_spy_network = yes
+	}
 
 	is_valid = {
 		exists = scope:actor.cp:councillor_spymaster

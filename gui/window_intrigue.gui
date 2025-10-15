@@ -116,7 +116,9 @@ window = {
 					button_tab = {
 						name = "open_spy_network_tab"
 						layoutpolicy_horizontal = expanding
-
+						# SAS Change
+						visible = "[GetScriptedGui('show_spies_window').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						# SAS Change End
 						text = "OPEN_SPY_NETWORK_TAB"
 						default_format = "#low"
 						onclick = "[IntrigueWindow.SetTab( 'schemes' )]"

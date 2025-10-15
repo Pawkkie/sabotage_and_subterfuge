@@ -432,6 +432,11 @@ task_support_schemes_side_effects = {
 	trigger = {
 		NOT = { has_variable = had_spymaster_task_side_effect }
 		exists = cp:councillor_spymaster
+		# SAS Change
+		root = {
+			can_use_spy_network = no
+		}
+		# SAS Change End
 	}
 
 	random_events = {
@@ -443,7 +448,7 @@ task_support_schemes_side_effects = {
 		50 = spymaster_task.2003 #Scheme Fails
 		#Good side effects
 		100 = spymaster_task.2101 #Discovery of a minor secret
-		25 = spymaster_task.2104 #Discovery of a major secret, modified from 50 to account for spy network
+		50 = spymaster_task.2104 #Discovery of a major secret
 	}
 }
 
@@ -452,34 +457,16 @@ task_disrupt_schemes_side_effects = {
 	trigger = {
 		NOT = { has_variable = had_spymaster_task_side_effect }
 		exists = cp:councillor_spymaster
+		# SAS Change
+		root = {
+			can_use_spy_network = no
+		}
+		# SAS Change End
 	}
 
 	random_events = {
-		# SAS Change
-		chance_to_happen = 2
-		#The chance for the vanilla events must stay 1% while adding the "discover spy" event
-		chance_of_no_event = {
-			value = 0
-			if = {
-				limit = {
-					NOT = {
-						any_courtier = {
-							NOT = { this = root.cp:councillor_spymaster }
-							any_ruler = {
-								is_target_in_variable_list = {
-									name = spy_network_members
-									target = prev
-								}
-								NOT = { this = root }
-								NOT = { this = root.cp:councillor_spymaster }
-							}
-						}
-					}
-				}
-				add = 67
-			}
-		}
-		800 = agot_spy_network.0500 #12% chance per year: 12 * 1% * 0,67 * 1,5
+		chance_to_happen = 1
+		1000 = 0
 		#Bad side effects
 		25 = spymaster_task.1001 #Spymaster reveals one of your secrets to a powerful vassal
 		100 = spymaster_task.1003 #Spymaster reveals a Courtier's secrets to a powerful vassal
@@ -487,21 +474,14 @@ task_disrupt_schemes_side_effects = {
 		100 = spymaster_task.1101 #Hostile Scheme is interrupted
 		100 = spymaster_task.2101 #Discovery of a minor secret
 		50 = spymaster_task.2104 #Discovery of a major secret
-		# SAS Change End
 	}
 }
 
 task_find_secrets_outcome = {
 	random_events = {
-		# SAS Change
-		# 100 = spymaster_task.0301 #Find minor secret
-		# 50 = spymaster_task.0302 #Find major secret
-		# 10 = spymaster_task.0381 # Fabricate a Hook (if you have Truth is Relative) - Fired both here and if no secrets exist
-		20 = spymaster_task.0301 #Find minor secret
-		10 = spymaster_task.0302 #Find major secret
+		100 = spymaster_task.0301 #Find minor secret
+		50 = spymaster_task.0302 #Find major secret
 		10 = spymaster_task.0381 # Fabricate a Hook (if you have Truth is Relative) - Fired both here and if no secrets exist
-		120 = agot_spy_network.0400
-		# SAS Change End
 	}
 }
 

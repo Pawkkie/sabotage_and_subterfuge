@@ -13,9 +13,18 @@
 	}
 
 	effect_desc = {
+
 		# SAS Change
-		desc = agot_task_disrupt_schemes_discover_spies
+		triggered_desc = {
+			trigger = {
+				scope:councillor_liege = {
+					can_use_spy_network = yes
+				}
+			}
+			desc = agot_task_disrupt_schemes_discover_spies
+		}
 		# SAS Change End
+
 		desc = task_disrupt_schemes_hostile_scheme_resistance_base
 		triggered_desc = {
 			trigger = { scope:councillor_liege = { has_perk = court_of_shadows_perk } }
@@ -296,6 +305,10 @@ task_support_schemes = {
 	}
 
 	monthly_on_action = task_support_schemes_side_effects
+	
+	# SAS Change
+	monthly_on_action = sas_spy_network_task_support_schemes_side_effects
+	# SAS Change End
 
 	ai_will_do = {
 		value = 0
@@ -330,9 +343,18 @@ task_find_secrets = {
 	}
 
 	effect_desc = {
+
 		# SAS Change
-		desc = agot_task_disrupt_schemes_recruit_spies
+		triggered_desc = {
+			trigger = {
+				scope:councillor_liege = {
+					can_use_spy_network = yes
+				}
+			}
+			desc = agot_task_disrupt_schemes_recruit_spies
+		}
 		# SAS Change End
+
 		desc = task_find_secrets_effect_desc
 		desc = {
 			desc = council_task_possible_side_effects
@@ -641,9 +663,22 @@ task_find_secrets = {
 						name = having_find_secrets_event
 						value = yes
 					}
-					trigger_event = {
-						on_action = task_find_secrets_outcome
+					if = {
+						limit = {
+							scope:councillor_liege = {
+								can_use_spy_network = yes
+							}
+						}
+						trigger_event = {
+							on_action = sas_spy_network_task_find_secrets_outcome
+						}
 					}
+					else = {
+						trigger_event = {
+							on_action = task_find_secrets_outcome
+						}
+					}
+					
 				}
 			}
 			if = {
