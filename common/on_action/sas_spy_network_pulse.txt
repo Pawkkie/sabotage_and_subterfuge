@@ -1,16 +1,38 @@
-﻿on_game_start = {
+﻿on_game_start_after_lobby = {
 	on_actions = {
 		initialize_can_use_spy_network
+	}
+}
+
+on_became_house_head = {
+	on_actions = {
+		new_house_head_can_use_spy_network
 	}
 }
 
 # Sets up which houses are initially allowed to use the spy network
 initialize_can_use_spy_network = {
 	effect = {
-		every_ruler	= {
+		every_living_character	= {
 			limit = { 
-				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
 				is_house_head = yes
+				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
+				has_government = administrative_government
+			}
+			house = {
+				add_house_modifier = {
+					modifier = house_of_sabotage_and_subterfuge
+				}
+			}
+		}
+	}
+}
+
+new_house_head_can_use_spy_network = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
 				has_government = administrative_government
 			}
 			house = {
