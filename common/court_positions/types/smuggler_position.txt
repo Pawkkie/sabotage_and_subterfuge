@@ -498,16 +498,18 @@
 				limit = {
 					has_trait = schemer
 				}
+				add = 25
 			}
-			add = 50
 		}
-		# More likely to hire with low capital control
-		scope:liege.capital_county = {
+		scope:liege = {
 			if = {
 				limit = {
-					county_control < full_county_control
+					OR = {
+						has_trait = greedy
+						has_trait = avaricious
+					}
 				}
-				add = 50
+				add = 25
 			}
 		}
 		if = {

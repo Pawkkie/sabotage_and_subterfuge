@@ -456,14 +456,26 @@
 				limit = {
 					has_trait = schemer
 				}
+				add = 25
 			}
-			add = 50
 		}
-		# More likely to hire if intriguing
-		scope:liege.capital_county = {
+		scope:liege = {
 			if = {
 				limit = {
-					intrigue >= 15
+					OR = {
+						has_trait = seducer
+						has_trait = ambitious
+					}
+				}
+				add = 25
+			}
+		}
+		# More likely to hire with low capital control
+		scope:liege = {
+			if = {
+				limit = {
+					diplomacy >= 12
+					intrigue >= 12
 				}
 				add = 50
 			}
@@ -476,7 +488,7 @@
 		}
 		if = { # To stop petitioned positions immediately being fired by the AI
 			limit = {
-				court_position_petition_ai_weight_trigger = { ROLE = femme_fatale }
+				court_position_petition_ai_weight_trigger = { ROLE = smuggler }
 			}
 			add = 1000
 		}

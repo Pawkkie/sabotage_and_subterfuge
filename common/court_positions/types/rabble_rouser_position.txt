@@ -520,8 +520,19 @@
 				limit = {
 					has_trait = schemer
 				}
+				add = 25
 			}
-			add = 50
+		}
+		scope:liege = {
+			if = {
+				limit = {
+					OR = {
+						has_trait = gregarious
+						has_trait = lifestyle_reveler
+					}
+				}
+				add = 25
+			}
 		}
 		# More likely to hire with low capital control
 		scope:liege.capital_county = {
@@ -540,7 +551,7 @@
 		}
 		if = { # To stop petitioned positions immediately being fired by the AI
 			limit = {
-				court_position_petition_ai_weight_trigger = { ROLE = rabble_rouser }
+				court_position_petition_ai_weight_trigger = { ROLE = smuggler }
 			}
 			add = 1000
 		}
