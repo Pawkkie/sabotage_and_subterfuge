@@ -16,13 +16,17 @@ initialize_can_use_spy_network = {
 		every_living_character	= {
 			limit = { 
 				is_house_head = yes
-				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
+				# NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
 				has_government = administrative_government
 			}
 			house = {
-				add_house_modifier = {
-					modifier = house_of_sabotage_and_subterfuge
+				set_variable = {
+					name = house_uses_spy_network
+					value = yes
 				}
+				# add_house_modifier = {
+				# 	modifier = house_of_sabotage_and_subterfuge
+				# }
 			}
 		}
 	}
@@ -36,9 +40,13 @@ new_house_head_can_use_spy_network = {
 				has_government = administrative_government
 			}
 			house = {
-				add_house_modifier = {
-					modifier = house_of_sabotage_and_subterfuge
+				set_variable = {
+					name = house_uses_spy_network
+					value = yes
 				}
+				# add_house_modifier = {
+				# 	modifier = house_of_sabotage_and_subterfuge
+				# }
 			}
 		}
 	}
