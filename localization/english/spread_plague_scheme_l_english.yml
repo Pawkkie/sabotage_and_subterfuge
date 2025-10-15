@@ -30,4 +30,4 @@
  spread_plague_interaction: "Spread Plague #weak (Scheme)#!"
  spread_plague_interaction_desc: "Attempt to spread plague in [recipient.GetShortUINameNoTooltip]'s realm to start an [epidemic|E]"
  spread_plague_interaction_notification: "Spreading Plague" 
- spread_plague_action: "Spreading Plague to"
+ spread_plague_action: "Spread Plague to"

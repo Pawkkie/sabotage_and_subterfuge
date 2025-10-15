@@ -2,7 +2,7 @@
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
-		value = event_id:sas_scheme_critical_moments.1011
+		value = event_id:sas_scheme_critical_moments.1021
 	}
 	if = {
 		limit = {

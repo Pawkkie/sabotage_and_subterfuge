@@ -7,6 +7,7 @@
 		gold = {
 			add = {
 				value = monthly_court_position_task_cost
+				multiply = 2
 				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
 				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
 			}
@@ -17,9 +18,8 @@
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
-	# Set Rousing Rabble variable on start
+	# Set Spreading Plague variable on start
 	on_start = { 
-		# add_character_flag = blocked_from_leaving # Stop character from traveling
 		scope:liege = {
 			set_variable = {
 				name = master_assassin_is_spreading_plague
@@ -47,6 +47,24 @@
 				name = master_assassin_is_spreading_plague
 				value = no
 			}
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+		 	epidemic_resistance = 2
+		}
+		poor = {
+		 	epidemic_resistance = 4
+		}
+		average = {
+		 	epidemic_resistance = 6
+		}
+		good = {
+		 	epidemic_resistance = 8
+		}
+		excellent = {
+		 	epidemic_resistance = 10
 		}
 	}
 

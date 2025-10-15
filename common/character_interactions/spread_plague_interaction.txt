@@ -58,7 +58,7 @@
 					begin_scheme_with_agents_effect = {
 						SCHEME_TYPE = spread_plague
 						TARGET_TYPE = target_character
-						TARGET_SCOPE = scope:target
+						TARGET_SCOPE = scope:recipient
 						# Success.
 						AGENT_1 = agent_rabble_rouser
 						AGENT_2 = agent_diplomat
@@ -75,7 +75,7 @@
 					begin_scheme_with_agents_effect = {
 						SCHEME_TYPE = spread_plague
 						TARGET_TYPE = target_character
-						TARGET_SCOPE = scope:target
+						TARGET_SCOPE = scope:recipient
 						# Success.
 						AGENT_1 = agent_rabble_rouser
 						# Speed.
@@ -92,7 +92,7 @@
 					begin_scheme_with_agents_effect = {
 						SCHEME_TYPE = spread_plague
 						TARGET_TYPE = target_character
-						TARGET_SCOPE = scope:target
+						TARGET_SCOPE = scope:recipient
 						# Success.
 						AGENT_1 = agent_rabble_rouser
 						# Speed.
@@ -108,7 +108,7 @@
 					begin_scheme_with_agents_effect = {
 						SCHEME_TYPE = spread_plague
 						TARGET_TYPE = target_character
-						TARGET_SCOPE = scope:target
+						TARGET_SCOPE = scope:recipient
 						# Success.
 						AGENT_1 = agent_rabble_rouser
 						AGENT_2 = agent_diplomat
