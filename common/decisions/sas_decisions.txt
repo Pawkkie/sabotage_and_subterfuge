@@ -51,3 +51,53 @@
 		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
 	}
 }
+
+sas_establish_criminal_underground_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/alley.dds"
+	}
+	decision_group_type = sabotage_and_subterfuge
+
+	desc = sas_establish_criminal_underground_decision_desc
+
+	is_shown = {
+		NOT = {
+			AND = {
+				exists = house.var:house_has_criminal_underground
+				house.var:house_has_criminal_underground = yes
+			}
+		}
+	}
+
+	is_valid = {
+		is_house_head = yes
+		NOT = { has_government = tribal_government }
+		NOT = { has_government = clan_government }
+		cp:councillor_spymaster.intrigue >= 15
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_imprisoned = no
+	}
+
+	effect = {
+		house = {
+			set_variable = {
+				name = house_uses_spy_network
+				value = yes
+			}
+		}
+		custom_tooltip = sas_establish_criminal_underground_spy_network.tt
+		house = {
+			set_variable = {
+				name = house_has_criminal_underground
+				value = yes
+			}
+		}
+		# custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
+		# custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
+		# custom_tooltip = sas_establish_criminal_underground_smuggler.tt
+		# custom_tooltip = sas_establish_criminal_underground_master_assassin.tt
+	}
+}
