@@ -7,6 +7,7 @@
 on_became_house_head = {
 	on_actions = {
 		new_house_head_can_use_spy_network
+		new_house_head_expanded_spy_network
 	}
 }
 
@@ -16,7 +17,6 @@ initialize_can_use_spy_network = {
 		every_living_character	= {
 			limit = { 
 				is_house_head = yes
-				# NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
 				has_government = administrative_government
 			}
 			house = {
@@ -24,9 +24,10 @@ initialize_can_use_spy_network = {
 					name = house_uses_spy_network
 					value = yes
 				}
-				# add_house_modifier = {
-				# 	modifier = house_of_sabotage_and_subterfuge
-				# }
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
+				}
 			}
 		}
 	}
@@ -36,7 +37,6 @@ new_house_head_can_use_spy_network = {
 	effect = {
 		if = {
 			limit = {
-				NOT = { house = { has_house_modifier = house_of_sabotage_and_subterfuge } } 
 				has_government = administrative_government
 			}
 			house = {
@@ -44,9 +44,24 @@ new_house_head_can_use_spy_network = {
 					name = house_uses_spy_network
 					value = yes
 				}
-				# add_house_modifier = {
-				# 	modifier = house_of_sabotage_and_subterfuge
-				# }
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+new_house_head_expanded_spy_network = {
+	effect = {
+		if = {
+			limit = {
+				exists = house.var:house_spy_network_expanded
+				house.var:house_spy_network_expanded = yes
+			}
+			add_character_modifier = {
+				modifier = sas_expand_spy_network_modifier
 			}
 		}
 	}
@@ -64,11 +79,6 @@ quarterly_playable_pulse = {
 		gather_secrets_pulse
 		learn_innovations_pulse
 	}
-}
-
-# Sets up which houses are initiallu allowed to use the spy network
-initialize_can_use_spy_network = {
-	
 }
 
 # This pulse triggers the spy network events that make spies discover secrets and then reveal them to their employer

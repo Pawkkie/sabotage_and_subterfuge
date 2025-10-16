@@ -10,7 +10,8 @@
 	}
 	if = {
 		limit = {
-			has_perk = master_of_masses_perk
+			exists = house.var:house_spy_network_expanded
+			house.var:house_spy_network_expanded = yes
 		}
 		multiply = 2
 	}

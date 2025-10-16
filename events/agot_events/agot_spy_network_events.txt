@@ -108,6 +108,8 @@ agot_spy_network.0105 = {
 					count >= 1
 				}
 				root.culture.culture_head = root
+				exists = house.var:house_spy_network_expanded
+				house.var:house_spy_network_expanded = yes
 			}
 			random_in_list = {
 				variable = spy_network_members
@@ -128,7 +130,7 @@ agot_spy_network.0105 = {
 							root.culture = { can_get_innovation_from = scope:spy_temp.liege.capital_county.culture }
 						}
 						random = {
-						chance = 1
+						chance = 100
 							root = {
 								send_interface_message = {
 									type = event_raid_good
@@ -143,7 +145,7 @@ agot_spy_network.0105 = {
 									set_variable = {
 										name = spies_discovered_free_innovation
 										value = yes
-										years = 30
+										years = 25
 									}
 								}
 							}	
@@ -433,6 +435,12 @@ agot_spy_network.0210 = { #ask for money in exchange for secret
 					reveal_to = scope:employer
 				}
 			}
+			house = {
+				change_variable = {
+					name = number_of_secrets_bought
+					add = 1
+				}
+			}
 		}
 
 		ai_chance = {
@@ -495,7 +503,10 @@ agot_spy_network.0300 = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							root = { has_perk = little_birds_perk }
+							root = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no
@@ -538,7 +549,10 @@ agot_spy_network.0300 = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							root = { has_perk = little_birds_perk }
+							root = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no
@@ -592,7 +606,10 @@ agot_spy_network.0300 = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							root = { has_perk = little_birds_perk }
+							root = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no
@@ -635,7 +652,10 @@ agot_spy_network.0300 = {
 							is_adult = yes
 							AND = {
 								age >= 8
-								root = { has_perk = little_birds_perk }
+								root = {
+									exists = house.var:house_spy_network_expanded
+									house.var:house_spy_network_expanded = yes
+								}
 							}
 						}
 						is_imprisoned = no
@@ -679,7 +699,10 @@ agot_spy_network.0300 = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							root = { has_perk = little_birds_perk }
+							root = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no
@@ -774,7 +797,10 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 					is_adult = yes
 					AND = {
 						age >= 8
-						root = { has_perk = little_birds_perk }
+						root = {
+							exists = house.var:house_spy_network_expanded
+							house.var:house_spy_network_expanded = yes
+						}
 					}
 				}
 				is_imprisoned = no
@@ -823,7 +849,10 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 						is_adult = yes
 						AND = {
 							age >= 8
-							root = { has_perk = little_birds_perk }
+							root = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no

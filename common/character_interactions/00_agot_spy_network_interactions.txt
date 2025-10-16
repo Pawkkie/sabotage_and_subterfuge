@@ -24,7 +24,10 @@
 				is_adult = yes
 				AND = {
 					age >= 8
-					scope:actor = { has_perk = little_birds_perk }
+					scope:actor = {
+						exists = house.var:house_spy_network_expanded
+						house.var:house_spy_network_expanded = yes
+					}
 				}
 			}
 			is_imprisoned = no
@@ -51,7 +54,10 @@
 				is_adult = yes
 				AND = {
 					age >= 8
-					scope:actor = { has_perk = little_birds_perk }
+					scope:actor = {
+						exists = house.var:house_spy_network_expanded
+						house.var:house_spy_network_expanded = yes
+					}
 				}
 			}
 			is_imprisoned = no
@@ -493,9 +499,12 @@ agot_check_for_potential_spies_interaction = {
 	icon = secret
 	desc = agot_check_for_potential_spies_interaction_desc
 	cooldown = { days = 30 }
+	common_interaction = yes
 
 	is_shown = {
-		can_use_spy_network = yes
+		scope:actor = {
+			can_use_spy_network = yes
+		}
 	}
 
 	is_valid = {
@@ -509,13 +518,16 @@ agot_check_for_potential_spies_interaction = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							scope:actor = { has_perk = little_birds_perk }
+							scope:actor = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no
 					is_courtier = yes
 					is_pool_guest = no
-					is_playable_character = no
+					is_landed = no
 					court_owner = { is_ruler = yes }
 					NOT = { has_trait = incapable }
 					scope:actor = {
@@ -540,7 +552,10 @@ agot_check_for_potential_spies_interaction = {
 						is_adult = yes
 						AND = {
 							age >= 8
-							scope:actor = { has_perk = little_birds_perk }
+							scope:actor = {
+								exists = house.var:house_spy_network_expanded
+								house.var:house_spy_network_expanded = yes
+							}
 						}
 					}
 					is_imprisoned = no

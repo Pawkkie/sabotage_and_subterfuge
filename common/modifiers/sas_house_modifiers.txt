@@ -1,3 +1,8 @@
 ﻿house_of_sabotage_and_subterfuge = {
 	icon = intrigue_positive
 }
+
+sas_expand_spy_network_modifier = {
+	icon = intrigue_positive
+	diplomatic_range_mult = 0.3
+}
