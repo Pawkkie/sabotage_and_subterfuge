@@ -1167,6 +1167,7 @@ agot_spy_network.0520 = { # A spy was discovered by your spymaster
 			}
 			scope:discovered_spy = {
 				remove_character_flag = flipped
+				add_character_flag = spy_was_discovered
 			}
 		}
 	}

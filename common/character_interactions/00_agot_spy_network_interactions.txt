@@ -145,6 +145,7 @@
 			}
 			desc = CHARISMATIC_PERK
 		}
+		
 		modifier = {
 			scope:actor = {
 				tier_difference = {
@@ -256,6 +257,15 @@
 				}
 			}
 			desc = RANK_DIFFERENCE_REASON
+		}
+
+		# Previously been discovered
+		modifier = {
+			add = -100
+			scope:recipient = {
+				has_character_flag = spy_was_discovered
+			}
+			desc = PREVIOUSLY_DISCOVERED_REASON
 		}
 
 		# Opinion Modifier - numbers chosen so that high opinion alone is never enough to recruit
