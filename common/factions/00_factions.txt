@@ -159,6 +159,18 @@
 	ai_join_score = {
 		base = -150 # Base reluctance value we must overcome to join an Independence Faction.
 
+		# SAS Change
+		# Join Provoked faction instead of joining one of these
+		modifier = {
+			add = -10000
+			scope:target = {
+				any_targeting_faction = {
+					faction_is_type = provoked_independence_faction
+				}
+			}
+		}
+		# SAS End Change
+
 		############
 		# BLOCKERS #
 
