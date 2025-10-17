@@ -51,10 +51,9 @@
  agot_spy_network.0520.flipped.desc:0 "[discovered_spy.GetTitledFirstName] willingly exposed who was spying on you, begging for mercy: it was [discovered_spy_employer.GetTitledFirstName]!"
  agot_spy_network.0520.loyal.desc:0 "[discovered_spy.GetTitledFirstName] refuses to expose who was spying on you."
  agot_spy_network.0520.desc:0 "How do you want to proceed with the traitor?"
- agot_spy_network.0520.a:0 "[discovered_spy.GetTitledFirstNameNoTooltip] will be banished from the realm."
- agot_spy_network.0520.b:0 "[discovered_spy.GetTitledFirstNameNoTooltip] must rot in a cell."
- agot_spy_network.0520.c:0 "There is only one punishment for this crime: death!"
- agot_spy_network.0520.d:0 "I will be merciful. But this scheming must stop!"
+ agot_spy_network.0520.a:0 "[discovered_spy.GetTitledFirstNameNoTooltip] must rot in a cell."
+ agot_spy_network.0520.b:0 "There is only one punishment for this crime: death!"
+ agot_spy_network.0520.c:0 "I will be merciful. But this scheming must stop!"
 
  agot_spy_network.0600.t:0 "Your Spy Was Discovered!"
  agot_spy_network.0600.desc:0 "The clandestine reports we received from [discovered_spy.GetTitledFirstName] have suddenly stopped. It appears [discovered_spy.GetHerHis] skills were not enough to avoid discovery."

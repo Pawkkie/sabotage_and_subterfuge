@@ -2,17 +2,6 @@
 
 namespace = agot_spy_network
 
-# Add spy to network
-#agot_spy_network.0050 = {
-#	type = character_event
-#
-#	immediate = {
-#		try_create_suggestion = {
-#			suggestion_type = suggestion_fabricate_claim
-#		}
-#	}
-#}
-
 # Event fires on spy network owner, firing events on all of their spies to gather secrets
 agot_spy_network.0100 = {
 	type = character_event
@@ -196,10 +185,6 @@ agot_spy_network.0200 = {
 			save_scope_as = employer
 		}
 
-		#if = {
-		#	limit = { exists = employer.cp:councillor_spymaster }
-		#	NOT = { this = root.cp:councillor_spymaster }
-		#}
 		if = {
 			limit = {
 				exists = court_owner
@@ -577,27 +562,6 @@ agot_spy_network.0300 = {
 			}
 		}
 
-		#every_courtier = {
-		#	limit = {
-		#		is_ai = yes
-		#		is_adult = yes
-		#		is_imprisoned = no
-		#		NOT = { has_trait = incapable }
-		#		root = {
-		#			is_character_interaction_potentially_accepted = {
-		#				recipient = PREV
-		#				interaction = agot_invite_to_spy_network_interaction
-		#			}
-		#		}
-		#	}
-		#	root = {
-		#		add_to_variable_list = {
-		#			name = potential_spies
-		#			target = PREV
-		#		}
-		#	}
-		#}
-
 		liege = {
 			every_courtier = {
 				limit = {
@@ -744,17 +708,6 @@ agot_spy_network.0300 = {
 				clear_variable_list = potential_spies
 			}
 		}
-
-		# TODO: Make this work for AI rulers
-		# Since AI rulers don't interact with GUI windows, will need to find osme other way
-		# Tobbzn says "Make a scripted effect for the interaction and use it in both the event and the interaction"
-		#open_interaction_window = {
-		#	# TODO: Recruit interaction window needs to show the interaction's target
-		#	interaction = agot_invite_to_spy_network_interaction
-		#	#interaction = gift_interaction
-		#	actor = root
-		#	recipient = scope:recruit_target
-		#}
 	}
 }
 
@@ -822,16 +775,6 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 
 	weight_multiplier = {
 		base = 1
-		#modifier = {
-		#	add = {
-		#		value = scope:target_character.cp:councillor_spymaster.intrigue
-		#		multiply = -0.05
-		#	}
-		#	exists = scope:target_character.cp:councillor_spymaster
-		#	scope:target_character.cp:councillor_spymaster = {
-		#		is_performing_council_task = task_disrupt_schemes
-		#	}
-		#}
 		modifier = {
 			add = {
 				value = scope:councillor.intrigue
@@ -1037,7 +980,7 @@ agot_spy_network.0500 = { # A spy was discovered by your spymaster
 	option = {
 		name = agot_spy_network.0500.a
 
-		trigger_event = { # decide on the spies faith
+		trigger_event = { # decide on the spies fate
 			id = agot_spy_network.0520
 			days = 2
 		}
@@ -1152,35 +1095,8 @@ agot_spy_network.0520 = { # A spy was discovered by your spymaster
 		}
 	}
 
-	############### Get rid of this option ###############
 	option = {
-		name = agot_spy_network.0520.a   # banish   TODO: How to set a reason
-
-		trigger = {
-			scope:discovered_spy = {
-				NOT = { has_trait = kingsguard }
-			}
-		}
-
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_compassion = 0.5
-				ai_vengefulness = -0.5
-			}
-			modifier = {
-				factor = 1.5
-				scope:discovered_spy = { has_character_flag = flipped }
-			}
-		}
-	}
-	option = {
-		name = agot_spy_network.0520.b   # imprison
-
-		#imprison = {
-		#	target = scope:discovered_spy
-		#	type = dungeon
-		#}
+		name = agot_spy_network.0520.a   # imprison
 
 		rightfully_imprison_character_effect = {
 			TARGET = scope:discovered_spy
@@ -1196,7 +1112,7 @@ agot_spy_network.0520 = { # A spy was discovered by your spymaster
 		}
 	}
 	option = {
-		name = agot_spy_network.0520.c   # kill
+		name = agot_spy_network.0520.b   # kill
 
 		execute_prisoner_effect = {
 			VICTIM = scope:discovered_spy
@@ -1220,7 +1136,7 @@ agot_spy_network.0520 = { # A spy was discovered by your spymaster
 		}
 	}
 	option = {
-		name = agot_spy_network.0520.d   # mercy
+		name = agot_spy_network.0520.c   # mercy
 
 		scope:discovered_spy = {
 			add_opinion = {
@@ -1256,6 +1172,7 @@ agot_spy_network.0520 = { # A spy was discovered by your spymaster
 	}
 }
 
+# Inform employer about discovered spy, remove from list
 agot_spy_network.0600 = {
 	type = character_event
 	title = agot_spy_network.0600.t
