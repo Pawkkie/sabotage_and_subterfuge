@@ -91,4 +91,5 @@
  dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] has left the ranks of your sprawling spy network."
 
  # Check for Potential Spies
- agot_check_for_potential_spies_interaction_desc: "Check for Potential Spies Desc"
+ agot_check_for_potential_spies_interaction_desc: "Check [recipient.GetShortUIName]'s court for courtiers who might be willing to join your [sas_spy_network|E]"
+ check_for_potential_spies_actor.tt: "You will be notified of a potential [sas_spy|E] you may negotiate into joining your [sas_spy_network|E]"

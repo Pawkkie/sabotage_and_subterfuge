@@ -553,6 +553,12 @@ agot_check_for_potential_spies_interaction = {
 
 	auto_accept = yes
 
+	on_accept = {
+		scope:actor = {
+			custom_tooltip = check_for_potential_spies_actor.tt
+		}
+	}
+
 	on_send = {
 		scope:recipient = {
 			random_courtier = {
