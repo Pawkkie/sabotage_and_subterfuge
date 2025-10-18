@@ -5,11 +5,11 @@
 }
 
 provoked_independence_character_modifier = {
-	icon = prowess_negative
+	icon = prowess_positive
 	martial = 2
 }
 
 provoked_dissolution_character_modifier = {
-	icon = prowess_negative
+	icon = prowess_positive
 	levy_size = 0.1
 }

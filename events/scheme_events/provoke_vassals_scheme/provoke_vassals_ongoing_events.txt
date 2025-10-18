@@ -1,1 +1,441 @@
 ﻿namespace = provoke_vassals_ongoing
+
+# Feeding the flames
+provoke_vassals_ongoing.0001 = {
+	type = character_event
+	title = provoke_vassals_ongoing.0001.t
+	desc = provoke_vassals_ongoing.0001.desc
+	theme = provoke_vassals_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0001 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0001
+				value = yes
+			}
+		}
+		scope:target = {
+			ordered_vassal = {
+				limit = { 
+					is_ai = yes
+					can_create_faction = {
+						type = independence_faction
+						target = scope:target
+					}
+				}
+				order_by = {
+					value = "opinion(scope:target)"
+					multiply = -1
+				}
+				max = 1
+				check_range_bounds = no
+				save_scope_as = independence_vassal
+			}
+			primary_title = {
+				set_variable = {
+					name = provoke_vassals_schemer
+					value = scope:owner
+				}
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Weaponry
+		name = provoke_vassals_ongoing.0001.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_supplied_weaponry
+			}
+		}
+	}
+
+	option = { # Provisions
+		name = provoke_vassals_ongoing.0001.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_supplied_provisions
+			}
+		}
+	}
+}
+
+# Promising the Future
+provoke_vassals_ongoing.0002 = {
+	type = character_event
+	title = provoke_vassals_ongoing.0002.t
+	desc = provoke_vassals_ongoing.0002.desc
+	theme = provoke_vassals_scheme
+
+	override_background = {
+		reference = sitting_room	
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0002 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0002
+				value = yes
+			}
+		}
+		scope:target = {
+			ordered_vassal = {
+				limit = { 
+					is_ai = yes
+					can_create_faction = {
+						type = independence_faction
+						target = scope:target
+					}
+				}
+				order_by = {
+					value = "opinion(scope:target)"
+					multiply = -1
+				}
+				max = 1
+				check_range_bounds = no
+				save_scope_as = independence_vassal
+			}
+			primary_title = {
+				set_variable = {
+					name = provoke_vassals_schemer
+					value = scope:owner
+				}
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = writing
+	}
+
+	option = { # Shame it's stifling
+		name = provoke_vassals_ongoing.0002.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_stifling
+			}
+		}
+	}
+
+	option = { # Meritorious stepping stone
+		name = provoke_vassals_ongoing.0002.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_meritorious
+			}
+		}
+	}
+}
+
+# Staging Assassination Attempt
+provoke_vassals_ongoing.0003 = {
+	type = character_event
+	title = provoke_vassals_ongoing.0003.t
+	desc = provoke_vassals_ongoing.0003.desc
+	theme = provoke_vassals_scheme
+
+	override_background = {
+		reference = corridor_night	
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0003 }
+			exists = scope:owner.court_position:master_assassin_court_position
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0003
+				value = yes
+			}
+		}
+		scope:target = {
+			ordered_vassal = {
+				limit = { 
+					is_ai = yes
+					can_create_faction = {
+						type = independence_faction
+						target = scope:target
+					}
+				}
+				order_by = {
+					value = "opinion(scope:target)"
+					multiply = -1
+				}
+				max = 1
+				check_range_bounds = no
+				save_scope_as = independence_vassal
+			}
+			primary_title = {
+				set_variable = {
+					name = provoke_vassals_schemer
+					value = scope:owner
+				}
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+		scope:owner.court_position:master_assassin_court_position = {
+			save_scope_as = master_assassin_name
+		}
+	}
+
+	left_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = scheme
+	}
+
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	option = { # Go for it
+		name = provoke_vassals_ongoing.0003.a
+		scope:owner.court_position:master_assassin_court_position = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_trusted_judgment_opinion
+			}
+		}
+
+		random_list = {
+			20 = {
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 1
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 2
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 3
+						}
+					}
+					add = 20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 4
+						}
+					}
+					add = 20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = provoke_vassals_attempt_assassination
+					}
+				}
+			}
+			80 = {
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 1
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 2
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 3
+						}
+					}
+					add = -20
+				}
+				modifier = { 
+					scope:owner.court_position:master_assassin_court_position = { 
+						aptitude = {
+							court_position = master_assassin_court_position
+							value >= 4
+						}
+					}
+					add = -20
+				}
+				scope:scheme = {
+					add_scheme_modifier = {
+						type = provoke_vassals_failed_attempt_assassination
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Don't meddle
+		name = provoke_vassals_ongoing.0003.b
+		scope:owner.court_position:master_assassin_court_position = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_doubted_judgment_opinion
+			}
+		}
+	}
+}
+
+# Promising the Future
+provoke_vassals_ongoing.0004 = {
+	type = character_event
+	title = provoke_vassals_ongoing.0004.t
+	desc = provoke_vassals_ongoing.0004.desc
+	theme = provoke_vassals_scheme
+
+	override_background = {
+		reference = sitting_room	
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0004 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0004
+				value = yes
+			}
+		}
+		scope:target = {
+			ordered_vassal = {
+				limit = { 
+					is_ai = yes
+					can_create_faction = {
+						type = independence_faction
+						target = scope:target
+					}
+				}
+				order_by = {
+					value = "opinion(scope:target)"
+					multiply = -1
+				}
+				max = 1
+				check_range_bounds = no
+				save_scope_as = independence_vassal
+			}
+			primary_title = {
+				set_variable = {
+					name = provoke_vassals_schemer
+					value = scope:owner
+				}
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	right_portrait = {
+		character = scope:target
+		animation = idle
+	}
+
+	option = { # Looks tired
+		name = provoke_vassals_ongoing.0004.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_looks_tired
+			}
+		}
+	}
+
+	option = { # Looks competent
+		name = provoke_vassals_ongoing.0004.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = provoke_vassals_looks_competent
+			}
+		}
+	}
+}

@@ -57,3 +57,10 @@ sas_ennoblement_opinion = {
 	opinion = 50
 	decaying = no
 }
+
+attempted_to_provoke_vassals = {
+	opinion = -50
+	decaying = yes
+	years = 15
+	imprisonment_reason = yes
+}

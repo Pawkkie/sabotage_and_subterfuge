@@ -47,7 +47,7 @@ provoke_vassals_scheme = {
 		reference = bp1_bonfire
 	}
 	background = {
-		reference = tavern
+		reference = courtyard
 	}
 }
 
@@ -66,6 +66,6 @@ spread_plague_scheme = {
 		reference = bp1_bonfire
 	}
 	background = {
-		reference = tavern
+		reference = alley_night
 	}
 }

@@ -5,18 +5,12 @@
 	}
 
 	random_events = {
-		chance_to_happen = 10
+		chance_to_happen = 5
 		100 = 0
-		100 = rouse_rabble_ongoing.0001 # Invited to a feast
-		100 = rouse_rabble_ongoing.0002 # Responding to relief
-		100 = rouse_rabble_ongoing.0003 # Connecting with the youth
-		100 = rouse_rabble_ongoing.0004 # Staging a protest
-		100 = rouse_rabble_ongoing.0005 # A rowdy tavern
-		100 = rouse_rabble_ongoing.0006 # An interesting missive
-		100 = rouse_rabble_ongoing.0007 # A costly suggestion
-		100 = rouse_rabble_ongoing.0008 # Who is the rouser 
-		100 = rouse_rabble_ongoing.0009 # Caught crossing border
-		100 = rouse_rabble_ongoing.0010 # Rebellion picking up too fast
+		100 = provoke_vassals_ongoing.0001 # Feeding the Flames
+		100 = provoke_vassals_ongoing.0002 # Promising the Future
+		100 = provoke_vassals_ongoing.0003 # Assassination Attempt
+		100 = provoke_vassals_ongoing.0004 # Looks Tired
 
 		#############
 		# Generic Agent events

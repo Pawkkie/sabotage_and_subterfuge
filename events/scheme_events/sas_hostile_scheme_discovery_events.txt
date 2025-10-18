@@ -277,6 +277,14 @@ sas_hostile_scheme_discovery.3003 = {
 			}
 			rouse_rabble_failure_effect = yes
 		}
+		else_if = {
+			limit = {
+				scope:scheme = {
+					scheme_type = provoke_vassals
+				}
+			}
+			provoke_vassals_failure_effect = yes
+		}
 
 		scope:scheme = {
 			end_scheme = yes
