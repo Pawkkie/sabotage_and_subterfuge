@@ -1,0 +1,1 @@
+namespace = spread_plague_ongoing
