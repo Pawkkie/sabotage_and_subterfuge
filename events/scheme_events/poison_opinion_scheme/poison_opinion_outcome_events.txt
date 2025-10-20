@@ -61,7 +61,7 @@ poison_opinion_outcome.1001 = {
 	type = character_event
 	title = poison_opinion_outcome.1001.t
 	desc = poison_opinion_outcome.1001.desc
-	theme = sway_scheme
+	theme = poison_opinion_scheme
 	left_portrait = scope:target
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -108,25 +108,10 @@ poison_opinion_outcome.1001 = {
 					add_prestige = minor_prestige_gain
 
 					scope:target = {
-						if = {
-							limit = {
-								any_character_struggle = {
-									is_struggle_type = persian_struggle
-									has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-								}
-							}
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_and_compelled_to_submit_opinion
-								opinion = 50
-							}
-						}
-						else = {
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_opinion
-								opinion = 50
-							}
+						add_opinion = {
+							target = scope:target.liege
+							modifier = scheme_poison_opinion_opinion
+							opinion = -50
 						}
 					}
 				}
@@ -145,19 +130,19 @@ poison_opinion_outcome.1001 = {
 				}
 			}
 		}
-		sway_end_effect = yes
+		poison_opinion_end_effect = yes
 	}
 
 	option = {
 		name = poison_opinion_outcome.1001.b
 		scope:target = {
 			add_opinion = {
-				target = scope:owner
-				modifier = scheme_sway_opinion
-				opinion = 30
+				target = scope:target.liege
+				modifier = scheme_poison_opinion_opinion
+				opinion = -30
 			}
 		}
-		sway_end_effect = yes
+		poison_opinion_end_effect = yes
 	}
 }
 
@@ -168,13 +153,13 @@ poison_opinion_outcome.1002 = {
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				trigger = { faith = scope:target.faith }
+				trigger = { scope:target.liege.faith = scope:target.faith }
 				desc = poison_opinion_outcome.1002.same_faith
 			}
 			desc = poison_opinion_outcome.1002.other_faith
 		}
 	}
-	theme = sway_scheme
+	theme = poison_opinion_scheme
 	left_portrait = scope:target
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -234,25 +219,10 @@ poison_opinion_outcome.1002 = {
 					add_prestige = minor_prestige_gain
 
 					scope:target = {
-						if = {
-							limit = {
-								any_character_struggle = {
-									is_struggle_type = persian_struggle
-									has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-								}
-							}
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_and_compelled_to_submit_opinion
-								opinion = 50
-							}
-						}
-						else = {
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_opinion
-								opinion = 50
-							}
+						add_opinion = {
+							target = scope:target.liege
+							modifier = scheme_poison_opinion_opinion
+							opinion = -50
 						}
 					}
 				}
@@ -273,19 +243,19 @@ poison_opinion_outcome.1002 = {
 				}
 			}
 		}
-		sway_end_effect = yes
+		poison_opinion_end_effect = yes
 	}
 
 	option = {
 		name = poison_opinion_outcome.1002.b
 		scope:target = {
 			add_opinion = {
-				target = scope:owner
-				modifier = scheme_sway_opinion
-				opinion = 30
+				target = scope:target.liege
+				modifier = scheme_poison_opinion_opinion
+				opinion = -30
 			}
 		}
-		sway_end_effect = yes
+		poison_opinion_end_effect = yes
 	}
 }
 
@@ -295,9 +265,12 @@ poison_opinion_outcome.1003 = {
 	type = character_event
 	title = poison_opinion_outcome.1003.t
 	desc = poison_opinion_outcome.1003.desc
-	theme = sway_scheme
+	theme = poison_opinion_scheme
 	left_portrait = scope:target
-	right_portrait = scope:friend
+	right_portrait = scope:owner.court_position:femme_fatale_court_position
+	scope:owner.court_position:femme_fatale_court_position = {
+			save_scope_as = fatale_name
+		}
 	widget = {
 		gui = "event_window_widget_scheme"
 		container = "custom_widgets_container"
@@ -324,40 +297,10 @@ poison_opinion_outcome.1003 = {
 			years = 5
 		}
 		scope:target = {
-			if = {
-				limit = {
-					any_character_struggle = {
-						is_struggle_type = persian_struggle
-						has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-					}
-				}
-				add_opinion = {
-					target = scope:owner
-					modifier = scheme_sway_and_compelled_to_submit_opinion
-					opinion = 30
-				}
-			}
-			else = {
-				add_opinion = {
-					target = scope:owner
-					modifier = scheme_sway_opinion
-					opinion = 30
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_relation = {
-					type = friend
-					diplomacy > root.diplomacy
-				}
-			}
-			random_relation = {
-				type = friend
-				limit = {
-					diplomacy > root.diplomacy
-				}
-				save_scope_as = friend
+			add_opinion = {
+				target = scope:target.liege
+				modifier = scheme_poison_opinion_opinion
+				opinion = -30
 			}
 		}
 	}
@@ -366,7 +309,7 @@ poison_opinion_outcome.1003 = {
 		name = poison_opinion_outcome.1003.a
 		duel = {
 			target = scope:target
-			skill = diplomacy
+			skill = intrigue
 
 			30 = {
 				compare_modifier = {
@@ -378,25 +321,10 @@ poison_opinion_outcome.1003 = {
 					title = poison_opinion_outcome.1003.a.success
 
 					scope:target = {
-						if = {
-							limit = {
-								any_character_struggle = {
-									is_struggle_type = persian_struggle
-									has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-								}
-							}
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_and_compelled_to_submit_opinion
-								opinion = 20
-							}
-						}
-						else = {
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_opinion
-								opinion = 20
-							}
+						add_opinion = {
+							target = scope:target.liege
+							modifier = scheme_poison_opinion_opinion
+							opinion = -20
 						}
 					}
 				}
@@ -412,25 +340,10 @@ poison_opinion_outcome.1003 = {
 					title = poison_opinion_outcome.1003.a.failure
 
 					scope:target = {
-						if = {
-							limit = {
-								any_character_struggle = {
-									is_struggle_type = persian_struggle
-									has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-								}
-							}
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_and_compelled_to_submit_opinion
-								opinion = -10
-							}
-						}
-						else = {
-							add_opinion = {
-								target = scope:owner
-								modifier = scheme_sway_opinion
-								opinion = -10
-							}
+						add_opinion = {
+							target = scope:target.liege
+							modifier = scheme_poison_opinion_opinion
+							opinion = 10
 						}
 					}
 				}	
@@ -441,12 +354,12 @@ poison_opinion_outcome.1003 = {
 	option = { #Gamble! Friend helps you out!
 		name = poison_opinion_outcome.1003.a_friend
 		trigger = {
-			exists = scope:friend
+			exists = scope:owner.court_position:femme_fatale_court_position
 		}
-		scope:friend = {
+		scope:owner.court_position:femme_fatale_court_position = {
 			duel = {
 				target = scope:target
-				skill = diplomacy
+				skill = intrigue
 
 				40 = {
 					compare_modifier = {
@@ -458,25 +371,10 @@ poison_opinion_outcome.1003 = {
 						title = poison_opinion_outcome.1003.a.success
 
 						scope:target = {
-							if = {
-								limit = {
-									any_character_struggle = {
-										is_struggle_type = persian_struggle
-										has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-									}
-								}
-								add_opinion = {
-									target = scope:owner
-									modifier = scheme_sway_and_compelled_to_submit_opinion
-									opinion = 15
-								}
-							}
-							else = {
-								add_opinion = {
-									target = scope:owner
-									modifier = scheme_sway_opinion
-									opinion = 15
-								}
+							add_opinion = {
+								target = scope:target.liege
+								modifier = scheme_poison_opinion_opinion
+								opinion = -15
 							}
 						}
 					}
@@ -492,25 +390,10 @@ poison_opinion_outcome.1003 = {
 						title = poison_opinion_outcome.1003.a.failure
 
 						scope:target = {
-							if = {
-								limit = {
-									any_character_struggle = {
-										is_struggle_type = persian_struggle
-										has_struggle_phase_parameter = fp3_sway_vassals_removes_disloyalty
-									}
-								}
-								add_opinion = {
-									target = scope:owner
-									modifier = scheme_sway_and_compelled_to_submit_opinion
-									opinion = -10
-								}
-							}
-							else = {
-								add_opinion = {
-									target = scope:owner
-									modifier = scheme_sway_opinion
-									opinion = -10
-								}
+							add_opinion = {
+								target = scope:target.liege
+								modifier = scheme_poison_opinion_opinion
+								opinion = 10
 							}
 						}
 					}
@@ -525,179 +408,9 @@ poison_opinion_outcome.1003 = {
 	}
 
 	after = {
-		sway_end_effect = yes
+		poison_opinion_end_effect = yes
 	}
 }
-
-#A disloyal vassal can be compelled to reconsider during the Anarchy at Samarra Struggle 
-poison_opinion_outcome.1004 = {
-	type = character_event
-	title = poison_opinion_outcome.1004.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:target = {
-						ai_vengefulness >= medium_positive_ai_value
-					}
-				}
-				desc = poison_opinion_outcome_grudgingly.1004.desc
-			}
-			random_valid = {
-				desc = poison_opinion_outcome_magnanimity.1004.desc
-				desc = poison_opinion_outcome_blessed.1004.desc
-				triggered_desc = {
-					trigger = {
-						scope:target = {
-							NOR = {
-								has_trait = stubborn
-								has_trait = arrogant 
-								has_trait = august
-								has_trait = callous 
-							}
-						}
-					}
-					desc = poison_opinion_outcome_flattery.1004.desc 
-				}
-				triggered_desc = {
-					trigger = {
-						AND = {
-							scope:target = {
-								AND = {
-									OR = {
-										has_religion = religion:buddhism_religion
-										has_religion = religion:jainism_religion
-										has_religion = religion:hinduism_religion
-									}
-									ai_zeal >= low_positive_ai_value
-								}
-							}
-							scope:owner = {
-								OR = {
-									has_religion = religion:buddhism_religion
-									has_religion = religion:jainism_religion
-									has_religion = religion:hinduism_religion
-								} 
-							}
-						}
-					}
-					desc = poison_opinion_outcome_dharmic.1004.desc 
-				}
-				triggered_desc = {
-					trigger = {
-						scope:target = {
-							has_religion = religion:islam_religion
-							ai_zeal >= low_positive_ai_value
-							exists = faith.religious_head 
-							faith.religious_head = { this = root }
-						}
-					}
-					desc = poison_opinion_outcome_caliph.1004.desc 		
-				}				
-			}
-		}
-	}
-	theme = sway_scheme
-	left_portrait = {
-		character = scope:owner
-		triggered_animation = {
-			trigger = {
-				has_trait = callous
-				has_trait = vengeful
-				has_trait = sadistic
-			}
-			animation = personality_callous
-		}
-		animation = personality_bold 
-	}
-	right_portrait = {
-		character = scope:target
-		animation = throne_room_bow_1
-	}
-
-	trigger = {
-
-		any_character_struggle = {
-			is_struggle_type = persian_struggle
-			has_struggle_phase_parameter = fp3_sway_scheme_more_powerful
-		}
-
-		scope:target = { 
-			AND = {
-				is_vassal_of = scope:owner 
-				has_trait = disloyal
-			}
-			NOT = {
-				has_relation_rival = scope:owner
-			}
-		}
-	}
-
-	weight_multiplier = { #more likely to trigger if the target likes you, or has a flexible personality
-		base = 1
-		modifier = { 
-			add = 0.5
-			scope:target = { has_trait = fickle } #They're flexible 
-		}
-		modifier = { 
-			add = 0.5
-			scope:target = { has_trait = trusting } #They trust you
-		}
-		modifier = { 
-			add = -0.7
-			scope:target = { has_trait = stubborn } #They are not prone to change their ways
-		}
-		modifier = { 
-			add = -0.3
-			scope:target = { has_trait = vengeful } #They are not soon to forgive slights, real or imagined
-		}
-	}
-
-	immediate = {
-
-		scope:target = {
-			add_opinion = {
-				target = scope:owner
-				modifier = scheme_sway_opinion
-				opinion = 20
-			}
-			remove_trait = disloyal 
-		}
-	}
-
-	option = {
-		name = poison_opinion_outcome.1004.a 
-
-		trigger = {
-			OR = {
-				has_trait = vengeful
-				has_trait = arrogant
-				has_trait = paranoid
-			}
-		}
-
-		scope:scheme = {
-			end_scheme = yes
-		}
-	}
-
-	option = {
-		name = poison_opinion_outcome.1004.b 
-
-		trigger = {
-			NOR = {
-				has_trait = vengeful
-				has_trait = arrogant
-				has_trait = paranoid
-			}
-		}
-
-		scope:scheme = {
-			end_scheme = yes
-		}
-	}
-}
-
 
 #################################
 # Negative Outcomes
@@ -750,7 +463,7 @@ poison_opinion_outcome.2001 = {
 		}
 		desc = poison_opinion_outcome.2001.end
 	}
-	theme = sway_scheme
+	theme = poison_opinion_scheme
 	left_portrait = {
 		character = scope:target
 		animation = eyeroll
@@ -798,7 +511,7 @@ poison_opinion_outcome.2001 = {
 		scope:target = {
 			add_opinion = {
 				target = scope:owner
-				modifier = sway_blocker_opinion
+				modifier = poisoned_opinion_blocker_opinion
 				opinion = -10
 			}
 		}
@@ -814,7 +527,7 @@ poison_opinion_outcome.2002 = {
 	type = character_event
 	title = poison_opinion_outcome.2002.t
 	desc = poison_opinion_outcome.2002.desc
-	theme = sway_scheme
+	theme = poison_opinion_scheme
 	left_portrait = scope:target
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -856,7 +569,7 @@ poison_opinion_outcome.2002 = {
 		scope:target = {
 			add_opinion = {
 				target = scope:owner
-				modifier = sway_blocker_opinion
+				modifier = poisoned_opinion_blocker_opinion
 				opinion = -10
 			}
 			add_character_modifier = {

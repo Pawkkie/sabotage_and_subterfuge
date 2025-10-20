@@ -69,3 +69,18 @@ spread_plague_scheme = {
 		reference = alley_night
 	}
 }
+
+poison_opinion_scheme = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_diplomacy.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_blue.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_diplomacy"
+	}
+	background = {
+		reference = throne_room
+	}
+}

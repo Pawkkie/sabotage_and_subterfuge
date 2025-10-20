@@ -3,8 +3,7 @@
 		100 = poison_opinion_outcome.0001 #Standard success
 		2 = poison_opinion_outcome.1001 #Diplomacy duel for more opinion
 		2 = poison_opinion_outcome.1002 #Learning duel for more opinion
-		2 = poison_opinion_outcome.1003 #They're warming up to me, can I take it further?
-		50 = poison_opinion_outcome.1004 #Only triggered from the Persian Struggle 
+		2 = poison_opinion_outcome.1003 #They're cooling off, can I take it further?
 	}
 }
 
