@@ -7,33 +7,34 @@ provoke_vassals_scheme = {
 }
 
 poison_opinion_scheme = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds"
-}
-
-rabble_rouser_court_position = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
-}
-
-femme_fatale_court_position = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
-}
-
-smuggler_court_position = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds" # TODO
 }
 
 smuggle_artifact_scheme = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_steal_back_artifact.dds"
 }
 
 plan_heist_interaction = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
-}
-
-master_assassin_court_position = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+	texture = "gfx/interface/icons/inspiration/artisan_inspiration.dds"
 }
 
 spread_plague_scheme = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds" # TODO
 }
+
+rabble_rouser_court_position = {
+	texture = "gfx/interface/icons/court_position_types/rabble_rouser_court_position.dds"
+}
+
+femme_fatale_court_position = {
+	texture = "gfx/interface/icons/court_position_types/femme_fatale_court_position.dds"
+}
+
+smuggler_court_position = {
+	texture = "gfx/interface/icons/court_position_types/smuggler_court_position.dds"
+}
+
+master_assassin_court_position = {
+	texture = "gfx/interface/icons/court_position_types/master_assassin_court_position.dds"
+}
+
