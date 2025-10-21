@@ -23,6 +23,7 @@
 		scope:target = {
 			is_adult = yes
 			is_imprisoned = no
+			is_ai = yes
 		}
 		is_imprisoned = no
 		

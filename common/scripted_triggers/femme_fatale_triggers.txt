@@ -9,10 +9,10 @@
 	}
 	is_female = yes
 
-	custom_tooltip = {
-		text = femme_falate_not_married
-		is_married = no
-	}
+	# custom_tooltip = {
+	# 	text = femme_falate_not_married
+	# 	is_married = no
+	# }
 	custom_tooltip = {
 		text = femme_fatale_not_lowborn
 		is_lowborn = no

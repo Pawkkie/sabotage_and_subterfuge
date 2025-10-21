@@ -19,8 +19,7 @@ poison_opinion_failure = {
 poison_opinion_ongoing = {
 	random_events = {
 		500 = 0
-		2 = poison_opinion_ongoing.1001 #They have different culture, talk it up a bit
-		2 = poison_opinion_ongoing.1002 #Write them a letter complimenting them
-		1 = poison_opinion_ongoing.5011 #Visit vassal/liege
+		2 = poison_opinion_ongoing.1001 # Blame cultural backlash
+		2 = poison_opinion_ongoing.1002 # Spilling the Tea
 	}
 }

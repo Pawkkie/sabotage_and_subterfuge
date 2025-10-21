@@ -1,1 +1,1 @@
-namespace = spread_plague_ongoing
+﻿namespace = spread_plague_ongoing

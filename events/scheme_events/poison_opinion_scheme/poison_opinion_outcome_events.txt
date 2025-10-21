@@ -267,10 +267,6 @@ poison_opinion_outcome.1003 = {
 	desc = poison_opinion_outcome.1003.desc
 	theme = poison_opinion_scheme
 	left_portrait = scope:target
-	right_portrait = scope:owner.court_position:femme_fatale_court_position
-	scope:owner.court_position:femme_fatale_court_position = {
-			save_scope_as = fatale_name
-		}
 	widget = {
 		gui = "event_window_widget_scheme"
 		container = "custom_widgets_container"
@@ -347,57 +343,6 @@ poison_opinion_outcome.1003 = {
 						}
 					}
 				}	
-			}
-		}
-	}
-
-	option = { #Gamble! Friend helps you out!
-		name = poison_opinion_outcome.1003.a_friend
-		trigger = {
-			exists = scope:owner.court_position:femme_fatale_court_position
-		}
-		scope:owner.court_position:femme_fatale_court_position = {
-			duel = {
-				target = scope:target
-				skill = intrigue
-
-				40 = {
-					compare_modifier = {
-						value = scope:duel_value
-					}
-					desc = poison_opinion_outcome.1003.a.success
-					send_interface_toast = {
-						left_icon = scope:target
-						title = poison_opinion_outcome.1003.a.success
-
-						scope:target = {
-							add_opinion = {
-								target = scope:target.liege
-								modifier = scheme_poison_opinion_opinion
-								opinion = -15
-							}
-						}
-					}
-				}
-				20 = {
-					compare_modifier = {
-						value = scope:duel_value
-						multiplier = -1
-					}
-					desc = poison_opinion_outcome.1003.a.failure
-					send_interface_toast = {
-						left_icon = scope:target
-						title = poison_opinion_outcome.1003.a.failure
-
-						scope:target = {
-							add_opinion = {
-								target = scope:target.liege
-								modifier = scheme_poison_opinion_opinion
-								opinion = 10
-							}
-						}
-					}
-				}
 			}
 		}
 	}

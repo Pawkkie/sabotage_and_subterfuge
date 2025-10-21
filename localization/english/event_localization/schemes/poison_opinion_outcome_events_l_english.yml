@@ -17,7 +17,6 @@
  poison_opinion_outcome.1003.a: "Time to put my diplomatic skills to the test!"
  poison_opinion_outcome.1003.a.success: "[target.GetSheHe|U] is further emboldened"
  poison_opinion_outcome.1003.a.failure: "[target.GetSheHe|U] gets the wrong interpretation"
- poison_opinion_outcome.1003.a_friend: "I will let [fatale_name.GetFirstNameNoTooltip] handle this."
  poison_opinion_outcome.1003.b: "This victory is enough."
 
  poison_opinion_outcome.2001.t: "Poison Opinion: A Misunderstanding"

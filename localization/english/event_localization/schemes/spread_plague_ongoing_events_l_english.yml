@@ -1,24 +1,24 @@
 ﻿l_english:
  # Feeding the Flames
- provoke_vassals_ongoing.0001.t: "Feeding the Flames"
- provoke_vassals_ongoing.0001.desc: "It seems [independence_vassal.GetShortUIName] has been struggling with regional discontent as of late. High taxes in the region imposed by  [target.GetShortUIName] have the populace in some degree of turmoil.\n\nWhile it's unclear whether [independence_vassal.GetShortUIName] would genuinely prefer to lower their obligations or not, it is certainly clear that they long to have more direct control over the area without any influence from higher authority.\n\nPerhaps I can send them along some resources. Perhaps I can include a suggestion or two as to how they might be best applied..."
- provoke_vassals_ongoing.0001.a: "I'll supply weaponry"
- provoke_vassals_ongoing.0001.b: "I'll supply provisions"
+ spread_plague_ongoing.0001.t: "Feeding the Flames"
+ spread_plague_ongoing.0001.desc: "It seems [independence_vassal.GetShortUIName] has been struggling with regional discontent as of late. High taxes in the region imposed by  [target.GetShortUIName] have the populace in some degree of turmoil.\n\nWhile it's unclear whether [independence_vassal.GetShortUIName] would genuinely prefer to lower their obligations or not, it is certainly clear that they long to have more direct control over the area without any influence from higher authority.\n\nPerhaps I can send them along some resources. Perhaps I can include a suggestion or two as to how they might be best applied..."
+ spread_plague_ongoing.0001.a: "I'll supply weaponry"
+ spread_plague_ongoing.0001.b: "I'll supply provisions"
 
  # Promising the Future
- provoke_vassals_ongoing.0002.t: "Promising the Future"
- provoke_vassals_ongoing.0002.desc: "I received a letter from [independence_vassal.GetShortUIName] recently, standard diplomatic discussion for the most part. There was a nice flourish of personality at the end though!\n\nIt's apparent that [independence_vassal.GetSheHe] has been feeling rather stalled in [independence_vassal.GetHerHis] ambitions for growth, in wealth and renown for [independence_vassal.GetHerHis] family.\n\nIt's equally apparent that this is a fabulous opportunity to bait the kind of response we've been looking for here."
- provoke_vassals_ongoing.0002.a: "It's a shame vassalage is so stifling!"
- provoke_vassals_ongoing.0002.b: "Vassalage is but a meritorious stepping stone!"
+ spread_plague_ongoing.0002.t: "Promising the Future"
+ spread_plague_ongoing.0002.desc: "I received a letter from [independence_vassal.GetShortUIName] recently, standard diplomatic discussion for the most part. There was a nice flourish of personality at the end though!\n\nIt's apparent that [independence_vassal.GetSheHe] has been feeling rather stalled in [independence_vassal.GetHerHis] ambitions for growth, in wealth and renown for [independence_vassal.GetHerHis] family.\n\nIt's equally apparent that this is a fabulous opportunity to bait the kind of response we've been looking for here."
+ spread_plague_ongoing.0002.a: "It's a shame vassalage is so stifling!"
+ spread_plague_ongoing.0002.b: "Vassalage is but a meritorious stepping stone!"
 
  # Stage Assassination Attempt
- provoke_vassals_ongoing.0003.t: "Stage Assassination Attempt"
- provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] and [master_assassin_name.GetShortUIName] have come forth with a plan to stage an assassination attempt on [independence_vassal.GetShortUIName] or a member of [independence_vassal.GetHerHis] family, framing [target.GetShortUIName] and his soldiers.\n\nThey've both assured me that the plan is foolproof. With [master_assassin_name.GetShortUIName] acting undercover and alone the odds of failure are minimal at best, and messing it up will result in confusion rather than arrests.\n\nSuch confusion would likely prompt a response from [target.GetShortUIName] to reassure [independence_vassal.GetShortUIName] of [independence_vassal.GetHerHis] safety, which would be the opposite of productive. If it works, though..."
- provoke_vassals_ongoing.0003.a: "I trust you, let's go for it"
- provoke_vassals_ongoing.0003.b: "I'm not so sure this is a good idea"
+ spread_plague_ongoing.0003.t: "Stage Assassination Attempt"
+ spread_plague_ongoing.0003.desc: "[rouser_name.GetShortUIName] and [master_assassin_name.GetShortUIName] have come forth with a plan to stage an assassination attempt on [independence_vassal.GetShortUIName] or a member of [independence_vassal.GetHerHis] family, framing [target.GetShortUIName] and his soldiers.\n\nThey've both assured me that the plan is foolproof. With [master_assassin_name.GetShortUIName] acting undercover and alone the odds of failure are minimal at best, and messing it up will result in confusion rather than arrests.\n\nSuch confusion would likely prompt a response from [target.GetShortUIName] to reassure [independence_vassal.GetShortUIName] of [independence_vassal.GetHerHis] safety, which would be the opposite of productive. If it works, though..."
+ spread_plague_ongoing.0003.a: "I trust you, let's go for it"
+ spread_plague_ongoing.0003.b: "I'm not so sure this is a good idea"
 
  # Stage Assassination Attempt
- provoke_vassals_ongoing.0004.t: "A Summit of Sorts"
- provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName] invited myself and several other rulers and vassals to a peaceful discussion focused on the nature of plague and how we might insulate ourselves from the worst of it.\n\nThis is highly unusual at the best of times, and while conversation has been productive, it has lead some to question whether [target.GetSheHe] is competent enough to exhibit the confident leadership required of a ruler.\n\nAs conversation concludes, [independence_vassal.GetShortUIName] catches my ear to ask my opinion, doubt evident in [independence_vassal.GetHerHis] expression."
- provoke_vassals_ongoing.0004.a: "Don't you think [target.GetSheHe] looks tired?"
- provoke_vassals_ongoing.0004.b: "[target.GetSheHe] is absolutely capable"
+ spread_plague_ongoing.0004.t: "A Summit of Sorts"
+ spread_plague_ongoing.0004.desc: "[target.GetShortUIName] invited myself and several other rulers and vassals to a peaceful discussion focused on the nature of plague and how we might insulate ourselves from the worst of it.\n\nThis is highly unusual at the best of times, and while conversation has been productive, it has lead some to question whether [target.GetSheHe] is competent enough to exhibit the confident leadership required of a ruler.\n\nAs conversation concludes, [independence_vassal.GetShortUIName] catches my ear to ask my opinion, doubt evident in [independence_vassal.GetHerHis] expression."
+ spread_plague_ongoing.0004.a: "Don't you think [target.GetSheHe] looks tired?"
+ spread_plague_ongoing.0004.b: "[target.GetSheHe] is absolutely capable"

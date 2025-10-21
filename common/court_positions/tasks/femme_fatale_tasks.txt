@@ -19,7 +19,6 @@
 
 	base_employer_modifier = {
 		max_poison_opinion_schemes_add = 1
-		max_sway_schemes_add = 1
 	}
 
 	# Set Poison Opinion variable on start
