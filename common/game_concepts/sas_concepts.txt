@@ -7,7 +7,7 @@ provoke_vassals_scheme = {
 }
 
 poison_opinion_scheme = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_provoke_vassals.dds" # TODO
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_poison_opinion.dds"
 }
 
 smuggle_artifact_scheme = {
@@ -19,7 +19,7 @@ plan_heist_interaction = {
 }
 
 spread_plague_scheme = {
-	texture = "gfx/interface/icons/scheme_types/icon_scheme_poison_opinion.dds"
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_spread_plague.dds"
 }
 
 rabble_rouser_court_position = {

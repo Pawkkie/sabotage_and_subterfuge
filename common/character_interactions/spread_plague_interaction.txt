@@ -1,5 +1,5 @@
 ﻿spread_plague_interaction = {
-	icon = provoke_vassals
+	icon = spread_plague
 	category = interaction_category_hostile
 	scheme = spread_plague
 	common_interaction = yes

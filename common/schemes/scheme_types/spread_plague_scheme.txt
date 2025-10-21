@@ -4,7 +4,7 @@
 	desc = spread_plague_desc_general
 	success_desc = "SPREAD_PLAGUE_SUCCESS_DESC"
 	discovery_desc = "SPREAD_PLAGUE_DISCOVERY_DESC"
-	icon = icon_scheme_provoke_vassals
+	icon = icon_scheme_spread_plague
 	illustration = "gfx/interface/illustrations/event_scenes/courtyard.dds"
 	category = hostile
 	target_type = character
