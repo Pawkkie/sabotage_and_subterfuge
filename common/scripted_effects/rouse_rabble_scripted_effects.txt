@@ -379,3 +379,31 @@ provoke_vassals_failure_effect = {
 		}
 	}
 }
+
+smuggle_artifact_failure_effect = {
+	scope:target = {	
+		add_character_modifier = {
+			modifier = watchful_modifier
+			days = watchful_modifier_duration
+		}
+
+		add_opinion = {
+			target = scope:owner
+			modifier = attempted_to_steal_artifact_from_me
+		}
+	}
+}
+
+spread_plague_failure_effect = {
+	scope:target = {	
+		add_character_modifier = {
+			modifier = watchful_modifier
+			days = watchful_modifier_duration
+		}
+
+		add_opinion = {
+			target = scope:owner
+			modifier = attempted_to_spread_plague
+		}
+	}
+}

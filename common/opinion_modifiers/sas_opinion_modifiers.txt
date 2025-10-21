@@ -64,3 +64,10 @@ attempted_to_provoke_vassals = {
 	years = 15
 	imprisonment_reason = yes
 }
+
+attempted_to_spread_plague = {
+	opinion = -50
+	decaying = yes
+	years = 15
+	imprisonment_reason = yes
+}

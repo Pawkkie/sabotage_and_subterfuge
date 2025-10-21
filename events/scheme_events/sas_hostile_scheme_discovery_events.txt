@@ -1,7 +1,7 @@
 ﻿namespace = sas_hostile_scheme_discovery
 
 sas_hostile_scheme_discovery.1002 = {
-		type = character_event
+	type = character_event
 	title = sas_hostile_scheme_discovery.1002.t
 	desc = {
 		desc = {
@@ -59,7 +59,6 @@ sas_hostile_scheme_discovery.1002 = {
 		}
 	}
 
-	#
 	option = {
 		name = sas_hostile_scheme_discovery.1002.a
 		show_as_tooltip = {
@@ -226,6 +225,30 @@ sas_hostile_scheme_discovery.3003 = {
 				}
 				desc = sas_hostile_scheme_discovery.3003.rouse
 			}
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = provoke_vassals
+					}
+				}
+				desc = sas_hostile_scheme_discovery.3003.provoke
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = smuggle_artifact
+					}
+				}
+				desc = sas_hostile_scheme_discovery.3003.smuggle
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scheme = {
+						scheme_type = spread_plague
+					}
+				}
+				desc = sas_hostile_scheme_discovery.3003.plague
+			}
 			desc = sas_hostile_scheme_discovery.3003.fallback
 		}
 	}
@@ -284,6 +307,22 @@ sas_hostile_scheme_discovery.3003 = {
 				}
 			}
 			provoke_vassals_failure_effect = yes
+		}
+		else_if = {
+			limit = {
+				scope:scheme = {
+					scheme_type = smuggle_artifact
+				}
+			}
+			smuggle_artifact_failure_effect = yes
+		}
+		else_if = {
+			limit = {
+				scope:scheme = {
+					scheme_type = spread_plague
+				}
+			}
+			spread_plague_failure_effect = yes
 		}
 
 		scope:scheme = {

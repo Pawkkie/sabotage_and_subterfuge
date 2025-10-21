@@ -23,5 +23,8 @@
  sas_hostile_scheme_discovery.3003.t: "Involvement Discovered"
  sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has discovered that I am the mastermind behind the plot"
  sas_hostile_scheme_discovery.3003.rouse: "to rouse the peasant rabble belonging to [target.GetHerHim]!"
+ sas_hostile_scheme_discovery.3003.provoke: "to provoke [target.GetHerHis] vassals!"
+ sas_hostile_scheme_discovery.3003.smuggle: "to smuggle an artifact belonging to [target.GetHerHim]!"
+ sas_hostile_scheme_discovery.3003.plague: "to spread plague in [target.GetHerHis] realm!"
  sas_hostile_scheme_discovery.3003.fallback: "against [target.GetHerHim]!"
  sas_hostile_scheme_discovery.3003.a: "There must have been a misunderstanding!"
