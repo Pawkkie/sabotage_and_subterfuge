@@ -1194,3 +1194,40 @@ sas_scheme_critical_moments.1021 = {
 		}
 	}
 }
+
+##################################################
+# Smuggle Artifact Results
+# 1030 - 103X
+##################################################
+
+sas_scheme_critical_moments.1031 = {
+	hidden = yes
+
+	immediate = {
+		scope:scheme = {
+			random = {
+				chance = scope:scheme.scheme_success_chance
+
+				save_scope_value_as = {
+					name = scheme_successful
+					value = yes
+				}
+			}
+			scope:owner = {			
+				if = {
+					limit = {
+						exists = scope:scheme_successful
+					}
+					trigger_event = {
+						on_action = smuggle_artifact_success
+					}
+				}
+				else = {
+					trigger_event = {
+						on_action = smuggle_artifact_failure
+					}	
+				}
+			}
+		}
+	}
+}

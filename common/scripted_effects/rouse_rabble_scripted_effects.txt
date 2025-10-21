@@ -13,20 +13,6 @@ rouse_rabble_scheme_prep_effect = {
 	}
 }
 
-provoke_vassals_scheme_prep_effect = {
-	save_scope_as = scheme
-	save_scope_value_as = {
-		name = follow_up_event
-		value = event_id:sas_scheme_critical_moments.1011
-	}
-	if = {
-		limit = {
-			NOT = { exists = scope:suppress_next_event }
-		}
-		scheme_owner = { trigger_event = sas_scheme_critical_moments.0002 }
-	}
-}
-
 rouse_rabble_reveler_lifestyle_rank_up_check_effect = {
 	if = {
 		limit = {
@@ -362,48 +348,6 @@ rouse_rabble_failure_effect = {
 		add_opinion = {
 			target = scope:owner
 			modifier = attempted_to_rouse_rabble
-		}
-	}
-}
-
-provoke_vassals_failure_effect = {
-	scope:target = {	
-		add_character_modifier = {
-			modifier = watchful_modifier
-			days = watchful_modifier_duration
-		}
-
-		add_opinion = {
-			target = scope:owner
-			modifier = attempted_to_provoke_vassals
-		}
-	}
-}
-
-smuggle_artifact_failure_effect = {
-	scope:target = {	
-		add_character_modifier = {
-			modifier = watchful_modifier
-			days = watchful_modifier_duration
-		}
-
-		add_opinion = {
-			target = scope:owner
-			modifier = attempted_to_steal_artifact_from_me
-		}
-	}
-}
-
-spread_plague_failure_effect = {
-	scope:target = {	
-		add_character_modifier = {
-			modifier = watchful_modifier
-			days = watchful_modifier_duration
-		}
-
-		add_opinion = {
-			target = scope:owner
-			modifier = attempted_to_spread_plague
 		}
 	}
 }

@@ -1,5 +1,5 @@
 l_english:
- smuggle_artifact_event_title:1 "Steal Artifact:"
+ smuggle_artifact_event_title:1 "Smuggle Artifact:"
  smuggle_artifact_ongoing.1001.t:0 "$smuggle_artifact_event_title$ The Antiquarian"
  smuggle_artifact_ongoing.1001.desc:0 "One of the obvious hurdles to retrieving the artifact, is [target.GetTitledFirstNamePossessive] antiquarian, [antiquarian.GetTitledFirstName].\n\nThere are, of course, multiple ways to... #EMP deal#! with a person, but I wonder if [antiquarian.GetFirstNameNoTooltip] is the type of person whom I could persuade to look the other way by offering a suitable bribe."
  smuggle_artifact_ongoing.1001.a:0 "Gold is the universal language of bribery."
