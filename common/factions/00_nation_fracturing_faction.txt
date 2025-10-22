@@ -269,6 +269,17 @@
 				}
 			}
 		}
+		modifier = {
+			desc = "FACTION_REASON_POISONED_OPINION_MODIFIER"
+			AND = {
+				has_opinion_modifier = {
+					target = scope:faction.faction_target
+					modifier = scheme_poison_opinion_opinion
+				}
+				"opinion(scope:target)" < 0
+			}
+			add = 500
+		}
 		# SAS End Change
 
 		############

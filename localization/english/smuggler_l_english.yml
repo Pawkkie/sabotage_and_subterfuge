@@ -1,7 +1,7 @@
 ﻿l_english:
  # Court Position
  smuggler_court_position: "Smuggler"
- smuggler_court_position_desc: "HE DO BE SMUGGLIN"
+ smuggler_court_position_desc: "If you need goods moved from one point to another, the smuggler can get you connected. While not strictly required, dubious goods are their specialty. The smuggler allows for heist planning and artifact thievery, as well as bolstering your own transportation networks."
  smuggler_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" 
 
  # Traits
@@ -12,9 +12,9 @@
  smuggler_task_plan_heist_desc: "Plan the heist of a specific artifact, letting you and your crew work towards smuggling it out of their courtroom and into yours."
  allow_steal_artifact_scheme_tt: "Can use the [plan_heist_interaction|E] character interaction to enable the [smuggle_artifact_scheme|E] against a target. This task must be active to both start and continue the scheme.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
- # Provoke Vassals task
- smuggler_task_loot_and_scoot: "Loot and Scoot"
- smuggler_task_provoke_vassals_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
+ # Loot and Scoot task
+#  smuggler_task_loot_and_scoot: "Loot and Scoot"
+#  smuggler_task_provoke_vassals_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
 
  # Monitor Supplies
  smuggler_task_monitor_supplies: "Monitor Supplies"
