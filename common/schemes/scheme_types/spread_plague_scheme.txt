@@ -159,11 +159,11 @@
 					NOT = { has_variable = agents_added }
 				}
 			}
-			add_agent_slot = agent_rabble_rouser
-			add_agent_slot = agent_diplomat
-			add_agent_slot = agent_gabbler
-			add_agent_slot = agent_herald
-			add_agent_slot = agent_justiciar
+			add_agent_slot = agent_assassin
+			add_agent_slot = agent_alchemist
+			add_agent_slot = agent_infiltrator
+			add_agent_slot = agent_supplier
+			add_agent_slot = agent_lookout
 		}
 		scheme_owner = {
 			trigger_event = {

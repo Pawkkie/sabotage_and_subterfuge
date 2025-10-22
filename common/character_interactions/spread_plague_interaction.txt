@@ -60,13 +60,13 @@
 						TARGET_TYPE = target_character
 						TARGET_SCOPE = scope:recipient
 						# Success.
-						AGENT_1 = agent_rabble_rouser
-						AGENT_2 = agent_diplomat
-						AGENT_3 = agent_diplomat
+						AGENT_1 = agent_assassin
+						AGENT_2 = agent_assassin
+						AGENT_3 = agent_alchemist
 						# Speed.
-						AGENT_4 = agent_gabbler
+						AGENT_4 = agent_infiltrator
 						# Secrecy.
-						AGENT_5 = agent_justiciar
+						AGENT_5 = agent_lookout
 					}
 				}
 				# Speed.
@@ -77,13 +77,13 @@
 						TARGET_TYPE = target_character
 						TARGET_SCOPE = scope:recipient
 						# Success.
-						AGENT_1 = agent_rabble_rouser
+						AGENT_1 = agent_assassin
 						# Speed.
-						AGENT_2 = agent_gabbler
-						AGENT_3 = agent_gabbler
-						AGENT_4 = agent_herald
+						AGENT_2 = agent_infiltrator
+						AGENT_3 = agent_supplier
+						AGENT_4 = agent_planner
 						# Secrecy.
-						AGENT_5 = agent_justiciar
+						AGENT_5 = agent_lookout
 					}
 				}
 				# Secrecy.
@@ -94,13 +94,13 @@
 						TARGET_TYPE = target_character
 						TARGET_SCOPE = scope:recipient
 						# Success.
-						AGENT_1 = agent_rabble_rouser
+						AGENT_1 = agent_assassin
 						# Speed.
-						AGENT_2 = agent_gabbler
+						AGENT_2 = agent_infiltrator
 						# Secrecy.
-						AGENT_3 = agent_justiciar
-						AGENT_4 = agent_justiciar
-						AGENT_5 = agent_amanuensis
+						AGENT_3 = agent_lookout
+						AGENT_4 = agent_lookout
+						AGENT_5 = agent_courtesan
 					}
 				}
 				# Balanced.
@@ -110,13 +110,13 @@
 						TARGET_TYPE = target_character
 						TARGET_SCOPE = scope:recipient
 						# Success.
-						AGENT_1 = agent_rabble_rouser
-						AGENT_2 = agent_diplomat
+						AGENT_1 = agent_assassin
+						AGENT_2 = agent_alchemist
 						# Speed.
-						AGENT_3 = agent_gabbler
-						AGENT_4 = agent_herald
+						AGENT_3 = agent_infiltrator
+						AGENT_4 = agent_supplier
 						# Secrecy.
-						AGENT_5 = agent_justiciar
+						AGENT_5 = agent_lookout
 					}
 				}
 			}
