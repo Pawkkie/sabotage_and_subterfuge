@@ -9,15 +9,17 @@ spread_plague_outcome.0001 = {
 	desc = spread_plague_outcome.0001.desc
 	left_portrait = {
 		character = scope:owner
-		animation = toast_goblet
-	}
-	center_portrait = {
-		character = scope:owner.court_position:rabble_rouser_court_position
-		animation = drink_goblet
+		animation = scheme
 	}
 	right_portrait = {
-		character = scope:target
-		animation = dismissal
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	immediate = {
+		scope:owner.court_position:master_assassin_court_position ={
+			save_scope_as = master_assassin_name
+		}
 	}
 
 	option = {
@@ -59,17 +61,145 @@ spread_plague_outcome.0001 = {
 	}
 }
 
-# # Successful and discovered
-# spread_plague_outcome.0002 = {
+# Successful and discovered
+spread_plague_outcome.0002 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = spread_plague_scheme
+	title = spread_plague_outcome.0002.t
+	desc = spread_plague_outcome.0002.desc
+	left_portrait = {
+		character = scope:owner
+		animation = scheme
+	}
+	center_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+	right_portrait = {
+		character = scope:target
+		animation = rage
+	}
 
-# }
+	immediate = {
+		scope:owner.court_position:master_assassin_court_position ={
+			save_scope_as = master_assassin_name
+		}
+	}
 
-# # Unsuccessful and secret
-# spread_plague_outcome.0003 = {
+	option = {
+		name = spread_plague_outcome.0002.a
+		spread_plague_failure_effect = yes
+		scope:target = {
+			if = {
+				limit = { scope:owner.court_position:master_assassin_court_position.aptitude:master_assassin_court_position <= 2 }
+				ordered_realm_province = {
+					order_by = outbreak_chance_minor_default_value
+					check_range_bounds = no
+					max = 1
+					create_epidemic_outbreak = {
+						type = smallpox
+						intensity = minor
+					}
+				}
+			}
+			else = {
+				ordered_realm_province = {
+					order_by = outbreak_chance_major_default_value
+					check_range_bounds = no
+					max = 1
+					create_epidemic_outbreak = {
+						type = smallpox
+						intensity = major
+					}
+				}
+			}
+		}
+	}
 
-# }
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
 
-# # Unsuccessful and discovered
-# spread_plague_outcome.0004 = {
-	
-# }
+# Unsuccessful and secret
+spread_plague_outcome.0003 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = spread_plague_scheme
+	title = spread_plague_outcome.0003.t
+	desc = spread_plague_outcome.0003.desc
+	left_portrait = {
+		character = scope:owner
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	immediate = {
+		scope:owner.court_position:master_assassin_court_position ={
+			save_scope_as = master_assassin_name
+		}
+	}
+
+	option = {
+		name = spread_plague_outcome.0003.a
+	}
+
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
+
+# Unsuccessful and discovered
+spread_plague_outcome.0004 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = spread_plague_scheme
+	title = spread_plague_outcome.0004.t
+	desc = spread_plague_outcome.0004.desc
+	left_portrait = {
+		character = scope:owner
+		animation = stress
+	}
+	center_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+	right_portrait = {
+		character = scope:target
+		animation = rage
+	}
+
+	immediate = {
+		scope:owner.court_position:master_assassin_court_position ={
+			save_scope_as = master_assassin_name
+		}
+	}
+
+	option = {
+		name = spread_plague_outcome.0004.a
+		spread_plague_failure_effect = yes
+	}
+
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}

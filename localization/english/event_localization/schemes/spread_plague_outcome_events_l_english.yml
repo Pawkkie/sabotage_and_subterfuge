@@ -1,29 +1,21 @@
 ﻿l_english:
 
  ## Success and secret
- spread_plague_outcome.0001.t: "Whispers from Abroad"
- spread_plague_outcome.0001.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers in hushed tones about the burning flames of rebellion they'd seen in the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\nIt appears no one can figure out what has emboldened them so suddenly, but an uprising seems unavoidable, and [target.GetShortUIName] is barely aware. Our efforts worked perfectly!"
- spread_plague_outcome.0001.a: "Independence!"
- spread_plague_outcome.0001.b: "Dissolution!"
- spread_plague_outcome.0001.prog: "You and your [rabble_rouser|E] progress towards the [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]"
+ spread_plague_outcome.0001.t: "I Am Become Death"
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] has just returned after an extended absence. It seems the contaminants [master_assassin_name.GetSheHe] planted have borne fruit. [master_assassin_name.GetSheHe] lingered a few days in the region before returning home to see whether the plan had worked, and word of illness spreading rapidly reached [master_assassin_name.GetHerHim] quickly in the local markets.\n\nWho's to say how far the [epidemic|E] may spread from here, but it is clear we have started something that is now out of our hands."
+ spread_plague_outcome.0001.a: "Let it leave chaos in its wake!"
 
  ## Success and discovered
- spread_plague_outcome.0002.t: "Suspicions from Abroad"
- spread_plague_outcome.0002.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers in hushed tones about the burning flames of rebellion they'd seen in the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\nThey kept stealing glances in my direction, a gaze of biting distaste. It is no mystery what has emboldened them so suddenly, but an uprising seems unavoidable, and [target.GetShortUIName] is furious."
- spread_plague_outcome.0002.a: "Let their fires burn bright!"
+ spread_plague_outcome.0002.t: "Death Comes Announced"
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] has just returned after an extended absence. It seems the contaminants [master_assassin_name.GetSheHe] planted have borne fruit. [master_assassin_name.GetSheHe] lingered a few days in the region before returning home to see whether the plan had worked, and word of illness spreading rapidly reached [master_assassin_name.GetHerHim] quickly in the local markets.\n\nUnfortunately [master_assassin_name.GetSheHe] was stopped on the way out of town, and while [master_assassin_name.GetSheHe] managed to escape, some incriminating evidence conclusively implicating me in the plot was dropped and left behind."
+ spread_plague_outcome.0002.a: "At least the plan worked!"
 
  ## Unsuccessful and secret
- spread_plague_outcome.0003.t: "Unkindled Hearts"
- spread_plague_outcome.0003.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers about the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier], and their redoubled patriotism in the face of adversity.\n\nIn spite of our best efforts, the peasants are content with their lot in life."
- spread_plague_outcome.0003.a: "At least, for now..."
+ spread_plague_outcome.0003.t: "Hygiene Prevails"
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] has just returned after an extended absence. It seems the contaminants [master_assassin_name.GetSheHe] planted failed to bear fruit. [master_assassin_name.GetSheHe] lingered a few days in the region before returning home to see whether the plan had worked, and not a word of illness reached [master_assassin_name.GetHerHim] in any of the local markets.\n\nPerhaps our contaminants were too weak or applied too conservatively, who's to say."
+ spread_plague_outcome.0003.a: "Next time they won't be so lucky..."
 
  ## Unsuccessful and discovered
- spread_plague_outcome.0004.t: "Hardened Minds"
- spread_plague_outcome.0004.desc: "A guest recently drifted through my court, a traveler crossing the continent seeking fortune and adventure. I overheard them speaking with my courtiers about the peasantry of [target.GetCapitalLocation.GetTitle.GetNameNoTier], and their redoubled patriotism in the face of adversity.\n\nThey kept stealing glances in my direction, a gaze of biting distaste. It is no mystery that I attempted to drive them to rebellion, and [target.GetShortUIName] is furious."
- spread_plague_outcome.0004.a: "We'll get them eventually!"
-
- ## Gained Reveler trait
- spread_plague_outcome.0005.t: "Rousing the Soul"
- spread_plague_outcome.0005.desc: "Who'd have thought that cheering on and motivating the public could be so invigorating? There's food, there's drink, there's cheer... the common man looking out for one another, rallying against a sense of oppression.\n\nI may have started this plan with other motivations, but the plight of the people has become my own!"
- spread_plague_outcome.0005.a: "I look forward to toasting them when next we meet!"
- spread_plague_outcome.0005.b: "I should really keep myself at a distance..."
+ spread_plague_outcome.0004.t: "Gifts Ungiven"
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] has just returned after an extended absence. It seems the contaminants [master_assassin_name.GetSheHe] planted have borne fruit. [master_assassin_name.GetSheHe] lingered a few days in the region before returning home to see whether the plan had worked, and and not a word of illness reached [master_assassin_name.GetHerHim] in any of the local markets.\n\nPerhaps our contaminants were too weak or applied too conservatively, who's to say.\n\nUnfortunately [master_assassin_name.GetSheHe] was stopped on the way out of town, and while [master_assassin_name.GetSheHe] managed to escape, some incriminating evidence conclusively implicating me in the plot was dropped and left behind."
+ spread_plague_outcome.0004.a: "Well this is a disaster..."

@@ -241,18 +241,7 @@ rouse_rabble_outcome.0002 = {
 	}
 	option = {
 		name = rouse_rabble_outcome.0002.a
-		scope:target = {
-			add_character_modifier = {
-				modifier = watchful_modifier
-				days = watchful_modifier_duration
-			}
-
-			add_opinion = {
-				target = scope:owner
-				modifier = successfully_roused_rabble
-			}
-		}
-		
+		rouse_rabble_failure_effect = yes
 		hidden_effect = { rouse_rabble_reveler_lifestyle_rank_up_check_effect = yes }
 		custom_tooltip = {
 			text = progress_towards_reveler_tt
@@ -494,17 +483,7 @@ rouse_rabble_outcome.0004 = {
 	}
 	option = {
 		name = rouse_rabble_outcome.0004.a
-		scope:target = {
-			add_character_modifier = {
-				modifier = watchful_modifier
-				days = watchful_modifier_duration
-			}
-
-			add_opinion = {
-				target = scope:owner
-				modifier = attempted_to_rouse_rabble
-			}
-		}
+		rouse_rabble_failure_effect = yes
 	}
 	after = {
 		if = {

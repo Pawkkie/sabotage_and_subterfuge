@@ -1167,7 +1167,7 @@ sas_scheme_critical_moments.1021 = {
 				if = {
 					limit = { exists = scope:scheme_discovered }
 					scheme_owner = {
-						trigger_event = spread_plague_outcome.0001
+						trigger_event = spread_plague_outcome.0002
 					}
 				}
 				# Secret
@@ -1180,14 +1180,16 @@ sas_scheme_critical_moments.1021 = {
 			# On Failure:
 			else = {
 				if = {
+					# Discovered
 					limit = { exists = scope:scheme_discovered }
 					scheme_owner = {
-						trigger_event = spread_plague_outcome.0001
+						trigger_event = spread_plague_outcome.0004
 					}
 				}
+				# Secret
 				else = {
 					scheme_owner = {
-						trigger_event = spread_plague_outcome.0001
+						trigger_event = spread_plague_outcome.0003
 					}
 				}
 			}
