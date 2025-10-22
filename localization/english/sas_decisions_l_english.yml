@@ -1,0 +1,22 @@
+﻿l_english:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "Expand Spy Network"
+ sas_expand_spy_network_decision_desc: "The only two ways for a spider to expand its web are to spend more time weaving, or get more spiders involved. While our [sas_spy_network|E] has had a modest but successful inception, we may yet expand our reach ever further, entangling rulers far and wide and leveraging their closest held secrets to our advantage."
+ sas_expand_spy_network_decision_tooltip: "Grow your [sas_spy_network|E] in number and ability"
+ sas_expand_spy_network_decision_confirm: "The spider web grows!"
+ sas_expand_spy_network_double_spies.tt: "You may employ double the number of [sas_spies|E]"
+ sas_expand_spy_network_child_spies.tt: "You may employ children at least 8 years old as [sas_spies|E]"
+ sas_expand_spy_network_innovation_spies.tt: "Your [sas_spies|E] may steal civic or military [innovations|E] from their courts of residence #weak (25 year cooldown)#!"
+ sas_expand_spy_network_have_enough_spies_tt: "You employ at least 3 [sas_spies|E]"
+ sas_expand_spy_network_have_paid_spies_tt: "You have bought at least 3 [secrets|E] from [sas_spies|E]"
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "Establish Criminal Underground"
+ sas_establish_criminal_underground_decision_desc: "Keeping all your cards on the table is certainly one way to rule, but when it comes to international diplomacy, it's certainly easier to keep an ace or two hidden up your sleeve. Why dangle limply from the strings of decorum and propriety when you could be the puppet master?"
+ sas_establish_criminal_underground_decision_tooltip: "Encourage the employment of assorted scoundrels and [sas_spies|E] in your court"
+ sas_establish_criminal_underground_decision_confirm: "Let us dance in the darkness!"
+ sas_establish_criminal_underground_spy_network.tt: "Unlocks the ability to employ [sas_spies|E] in a [sas_spy_network|E]"
+ # sas_establish_criminal_underground_rabble_rouser.tt: ""
+ # sas_establish_criminal_underground_femme_fatale.tt: ""
+ # sas_establish_criminal_underground_smuggler.tt: ""
+ # sas_establish_criminal_underground_master_assassin.tt: ""

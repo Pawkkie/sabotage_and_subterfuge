@@ -1,0 +1,5 @@
+﻿sabotage_and_subterfuge = {
+	sort_order = 199
+	gui_tags = { big_button }
+	important_decision_group = yes
+}

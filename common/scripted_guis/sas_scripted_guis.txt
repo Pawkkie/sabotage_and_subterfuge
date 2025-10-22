@@ -1,0 +1,5 @@
+﻿show_spies_window = {
+    is_shown = {
+        can_use_spy_network = yes
+    }
+}

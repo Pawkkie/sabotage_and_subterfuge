@@ -1,4 +1,4 @@
-﻿rouse_rabble_scheme = {
+rouse_rabble_scheme = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_rouse_rabble.dds"
 }
 
@@ -38,3 +38,10 @@ master_assassin_court_position = {
 	texture = "gfx/interface/icons/court_position_types/master_assassin_court_position.dds"
 }
 
+sas_spy = {
+	texture = "gfx/interface/icons/character_interactions/secret.dds"
+	alias = { sas_spies }
+}
+sas_spy_network = {
+	texture = "gfx/interface/icons/character_interactions/secret.dds"
+}

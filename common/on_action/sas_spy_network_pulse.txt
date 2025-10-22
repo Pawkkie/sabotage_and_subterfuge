@@ -1,0 +1,140 @@
+﻿on_game_start_after_lobby = {
+	on_actions = {
+		initialize_can_use_spy_network
+	}
+}
+
+on_became_house_head = {
+	on_actions = {
+		new_house_head_can_use_spy_network
+		new_house_head_expanded_spy_network
+	}
+}
+
+# Sets up which houses are initially allowed to use the spy network
+initialize_can_use_spy_network = {
+	effect = {
+		every_living_character	= {
+			limit = { 
+				is_house_head = yes
+				has_government = administrative_government
+			}
+			house = {
+				set_variable = {
+					name = house_uses_spy_network
+					value = yes
+				}
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+new_house_head_can_use_spy_network = {
+	effect = {
+		if = {
+			limit = {
+				has_government = administrative_government
+			}
+			house = {
+				set_variable = {
+					name = house_uses_spy_network
+					value = yes
+				}
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+new_house_head_expanded_spy_network = {
+	effect = {
+		if = {
+			limit = {
+				exists = house.var:house_spy_network_expanded
+				house.var:house_spy_network_expanded = yes
+			}
+			add_character_modifier = {
+				modifier = sas_expand_spy_network_modifier
+			}
+		}
+	}
+}
+
+three_year_playable_pulse = {
+	on_actions = {
+		ai_employ_spy_pulse
+		learn_innovations_pulse
+	}
+}
+
+quarterly_playable_pulse = {
+	on_actions = {
+		gather_secrets_pulse
+		learn_innovations_pulse
+	}
+}
+
+# This pulse triggers the spy network events that make spies discover secrets and then reveal them to their employer
+gather_secrets_pulse = {
+	trigger = {
+		has_variable_list = spy_network_members
+		is_ruler = yes
+		is_alive = yes
+		is_landed = yes
+		any_in_list = {
+			variable = spy_network_members
+			count >= 1
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = agot_spy_network.0100
+		}
+	}
+}
+
+learn_innovations_pulse = {
+	trigger = {
+		has_variable_list = spy_network_members
+		is_ruler = yes
+		is_alive = yes
+		is_landed = yes
+		any_in_list = {
+			variable = spy_network_members
+			count >= 1
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = agot_spy_network.0105
+		}
+	}
+}
+
+ai_employ_spy_pulse = {
+	trigger = {
+		is_landed = yes
+		is_ai = yes
+		intrigue >= 12
+		OR = {
+			NOT = { has_variable_list = spy_network_members }
+			any_in_list = {
+				variable = spy_network_members
+				is_alive = yes
+				count < spy_network_limit
+			}
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = agot_spy_network.0300
+		}
+	}
+}
