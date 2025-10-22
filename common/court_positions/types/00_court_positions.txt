@@ -5826,9 +5826,18 @@ master_assassin_court_position = {
 			government_has_flag = government_is_nomadic
 		}
 		# SAS Change
-		# faith = {
-		# 	has_doctrine = tenet_fp3_fedayeen
-		# }
+		OR = {
+			faith = {
+				has_doctrine = tenet_fp3_fedayeen
+			}
+			custom_description = {
+				text = already_established_criminal_underground
+				AND = {
+					exists = house.var:house_has_criminal_underground
+					house.var:house_has_criminal_underground = yes
+				}
+			}
+		}
 		# SAS Change End
 	}
 

@@ -43,6 +43,11 @@ already_fighting_independence_faction = {
 	first_not = NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION
 }
 
+already_established_criminal_underground = {
+	first = ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND
+	first_not = NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND
+}
+
 already_fighting_dissolution_faction = {
 	first = ALREADY_FIGHTING_DISSOLUTION_FACTION
 	first_not = NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION
