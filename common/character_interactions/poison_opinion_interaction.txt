@@ -1,7 +1,7 @@
 ﻿poison_opinion_interaction = {
 	icon = poison_opinion
 	category = interaction_category_friendly
-	common_interaction = yes
+	common_interaction = no
 
 	send_name = START_SCHEME
 

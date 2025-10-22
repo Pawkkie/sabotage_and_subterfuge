@@ -1,6 +1,6 @@
 ﻿plan_heist_interaction = {
 	category = interaction_category_hostile
-	common_interaction = yes
+	common_interaction = no
 	ignores_pending_interaction_block = yes
 	icon = artisan_inspiration
 
@@ -363,7 +363,7 @@ smuggle_artifact_interaction = {
 	icon = icon_scheme_steal_back_artifact
 	interface_priority = 70
 	category = interaction_category_hostile
-	common_interaction = yes
+	common_interaction = no
 
 	desc = smuggle_artifact_interaction_desc
 

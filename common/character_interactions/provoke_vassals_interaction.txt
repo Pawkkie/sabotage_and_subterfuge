@@ -2,7 +2,7 @@
 	icon = provoke_vassals
 	category = interaction_category_hostile
 	scheme = provoke_vassals
-	common_interaction = yes
+	common_interaction = no
 	interface_priority = 60
 	ignores_pending_interaction_block = yes
 	send_name = START_SCHEME

@@ -2,7 +2,7 @@
 	icon = faction
 	category = interaction_category_hostile
 	scheme = rouse_rabble
-	common_interaction = yes
+	common_interaction = no
 	interface_priority = 60
 	ignores_pending_interaction_block = yes
 	send_name = START_SCHEME
