@@ -417,6 +417,10 @@
 				value = no
 			}
 			set_variable = {
+				name = femme_fatale_is_embracing_the_spiders
+				value = no
+			}
+			set_variable = {
 				name = femme_fatale_is_soothing_and_surveiling
 				value = no
 			}
@@ -426,6 +430,7 @@
 		basic_revoked_court_position_effect = yes
 		scope:liege = { 
 			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_embracing_the_spiders
 			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}
@@ -433,6 +438,7 @@
 		basic_invalidated_court_position_effect = yes
 		scope:liege = { 
 			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_embracing_the_spiders
 			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}
@@ -442,6 +448,7 @@
 		}
 		scope:liege = { 
 			remove_variable = femme_fatale_is_poisoning_opinion
+			remove_variable = femme_fatale_is_embracing_the_spiders
 			remove_variable = femme_fatale_is_soothing_and_surveiling
 		}
 	}

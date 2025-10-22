@@ -57,12 +57,10 @@ agot_spy_network.0100 = {
 							}
 						}
 						modifier = {
-							root = { has_perk = instructed_spies_perk }
-							add = 2
-						}
-						modifier = {
-							root = { has_perk = innocent_children_perk }
-							age < 16
+							root = { 
+								exists = var:femme_fatale_is_embracing_the_spiders
+								var:femme_fatale_is_embracing_the_spiders = yes
+							}
 							add = 3
 						}
 						trigger_event = {
@@ -119,7 +117,14 @@ agot_spy_network.0105 = {
 							root.culture = { can_get_innovation_from = scope:spy_temp.liege.capital_county.culture }
 						}
 						random = {
-						chance = 100
+							chance = 1
+							modifier = {
+								root = {
+									exists = var:femme_fatale_is_embracing_the_spiders
+									var:femme_fatale_is_embracing_the_spiders = yes
+								}
+								add = 1
+							}
 							root = {
 								send_interface_message = {
 									type = event_raid_good

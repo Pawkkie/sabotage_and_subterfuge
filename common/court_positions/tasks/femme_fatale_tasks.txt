@@ -90,6 +90,37 @@ femme_fatale_task_embrace_the_spiders = {
     # - Increase probability of discovering secrets
 	}
 
+	# Set Embracing the Spiders variable on start
+	on_start = { 
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_embracing_the_spiders
+				value = yes
+			}
+		}
+		custom_tooltip = femme_fatale_increase_spy_discovery_chance_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:femme_fatale_is_embracing_the_spiders = no }
+			set_variable = {
+				name = femme_fatale_is_embracing_the_spiders
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		scope:liege = {
+			set_variable = {
+				name = femme_fatale_is_embracing_the_spiders
+				value = no
+			}
+		}
+	}
+
 	scaling_employer_modifiers = {
 		terrible = {
 		 	scheme_discovery_chance_mult = 0.01
