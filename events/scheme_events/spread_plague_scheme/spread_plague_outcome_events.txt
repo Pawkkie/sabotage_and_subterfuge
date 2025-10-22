@@ -31,9 +31,47 @@ spread_plague_outcome.0001 = {
 					order_by = outbreak_chance_minor_default_value
 					check_range_bounds = no
 					max = 1
-					create_epidemic_outbreak = {
-						type = smallpox
-						intensity = minor
+					if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 1
+							}
+						}
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = minor
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 2
+							}
+						}
+						create_epidemic_outbreak = {
+							type = dysentery
+							intensity = minor
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 3
+							}
+						}
+						create_epidemic_outbreak = {
+							type = ergotism
+							intensity = minor
+						}
+					}
+					else = {
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = minor
+						}
 					}
 				}
 			}
@@ -42,9 +80,47 @@ spread_plague_outcome.0001 = {
 					order_by = outbreak_chance_major_default_value
 					check_range_bounds = no
 					max = 1
-					create_epidemic_outbreak = {
-						type = smallpox
-						intensity = major
+					if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 1
+							}
+						}
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = major
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 2
+							}
+						}
+						create_epidemic_outbreak = {
+							type = dysentery
+							intensity = major
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 3
+							}
+						}
+						create_epidemic_outbreak = {
+							type = ergotism
+							intensity = major
+						}
+					}
+					else = {
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = major
+						}
 					}
 				}
 			}
@@ -97,9 +173,47 @@ spread_plague_outcome.0002 = {
 					order_by = outbreak_chance_minor_default_value
 					check_range_bounds = no
 					max = 1
-					create_epidemic_outbreak = {
-						type = smallpox
-						intensity = minor
+					if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 1
+							}
+						}
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = minor
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 2
+							}
+						}
+						create_epidemic_outbreak = {
+							type = dysentery
+							intensity = minor
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 3
+							}
+						}
+						create_epidemic_outbreak = {
+							type = ergotism
+							intensity = minor
+						}
+					}
+					else = {
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = minor
+						}
 					}
 				}
 			}
@@ -108,9 +222,47 @@ spread_plague_outcome.0002 = {
 					order_by = outbreak_chance_major_default_value
 					check_range_bounds = no
 					max = 1
-					create_epidemic_outbreak = {
-						type = smallpox
-						intensity = major
+					if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 1
+							}
+						}
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = major
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 2
+							}
+						}
+						create_epidemic_outbreak = {
+							type = dysentery
+							intensity = major
+						}
+					}
+					else_if = {
+						limit = {
+							scope:scheme = {
+								exists = var:spread_plague_disease_choice
+								var:spread_plague_disease_choice = 3
+							}
+						}
+						create_epidemic_outbreak = {
+							type = ergotism
+							intensity = major
+						}
+					}
+					else = {
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = major
+						}
 					}
 				}
 			}

@@ -33,3 +33,28 @@ rouse_rabble_increase_tension_county_modifier = {
 	icon = county_modifier_control_negative
 	monthly_county_control_decline_add = -1
 }
+
+spread_plague_shipped_clothing_county_modifier = {
+	icon = rat_negative
+	epidemic_resistance = -15
+}
+
+spread_plague_waste_upstream_county_modifier = {
+	icon = rat_negative
+	epidemic_resistance = -15
+}
+
+spread_plague_diligent_water_sourcing_county_modifier = {
+	icon = rat_positive
+	epidemic_resistance = 10
+}
+
+spread_plague_tainted_larder_county_modifier = {
+	icon = rat_negative
+	epidemic_resistance = -10
+}
+
+spread_plague_food_inspection_county_modifier = {
+	icon = rat_positive
+	epidemic_resistance = 15
+}

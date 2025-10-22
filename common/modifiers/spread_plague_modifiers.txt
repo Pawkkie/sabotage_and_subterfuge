@@ -1,0 +1,37 @@
+﻿spread_plague_shipped_clothing = {
+	icon = intrigue_positive
+	scheme_success_chance = 30
+	scheme_phase_duration = major_scheme_phase_duration_bonus_value
+	scheme_secrecy = -10
+}
+
+spread_plague_did_not_ship_clothing = {
+	icon = intrigue_negative
+	scheme_success_chance = -10
+	scheme_secrecy = 10
+}
+
+spread_plague_waste_upstream_scheme_modifier = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_phase_duration = minor_scheme_phase_duration_bonus_value
+}
+
+spread_plague_water_in_town = {
+	icon = intrigue_positive
+	scheme_success_chance = 20
+	scheme_secrecy = -10
+}
+
+spread_plague_tainted_larder_scheme_modifier = {
+	icon = intrigue_positive
+	scheme_success_chance = 25
+	scheme_secrecy = -15
+	scheme_phase_duration = minor_scheme_phase_duration_bonus_value
+}
+
+spread_plague_tainted_field_scheme_modifier = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}

@@ -1,1 +1,537 @@
 ﻿namespace = spread_plague_ongoing
+
+# Disease selection
+spread_plague_ongoing.0001 = {
+	type = character_event
+	title = spread_plague_ongoing.0001.t
+	desc = spread_plague_ongoing.0001.desc
+	theme = spread_plague_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0001 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0001
+				value = yes
+			}
+		}
+		scope:owner.court_position:master_assassin_court_position = {
+			save_scope_as = master_assassin_name
+		}
+	}
+
+	option = { # Smallpox
+		name = spread_plague_ongoing.0001.a
+		custom_tooltip = spread_plague_ongoing.0001.smallpox.tt
+		scope:scheme = {
+			set_variable = {
+				name = spread_plague_disease_choice
+				value = 1
+			}
+		}
+	}
+
+	option = { # Bloody Flux
+		name = spread_plague_ongoing.0001.b
+		custom_tooltip = spread_plague_ongoing.0001.bloody_flux.tt
+		scope:scheme = {
+			set_variable = {
+				name = spread_plague_disease_choice
+				value = 2
+			}
+		}
+	}
+
+	option = { # Holy Fire
+		name = spread_plague_ongoing.0001.c
+		custom_tooltip = spread_plague_ongoing.0001.holy_fire.tt
+		scope:scheme = {
+			set_variable = {
+				name = spread_plague_disease_choice
+				value = 3
+			}
+		}
+	}
+}
+
+# Smallpox
+spread_plague_ongoing.0002 = {
+	type = character_event
+	title = spread_plague_ongoing.0002.t
+	desc = spread_plague_ongoing.0002.desc
+	theme = spread_plague_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0002 }
+			exists = var:spread_plague_disease_choice
+			var:spread_plague_disease_choice = 1
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0002
+				value = yes
+			}
+		}
+		scope:owner.court_position:master_assassin_court_position = {
+			save_scope_as = master_assassin_name
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+	}
+
+	option = { # Mix in clothing
+		name = spread_plague_ongoing.0002.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = spread_plague_shipped_clothing
+			}
+		}
+		scope:target = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = spread_plague_shipped_clothing_county_modifier } }
+				add_county_modifier = {
+					modifier = spread_plague_shipped_clothing_county_modifier
+					years = 10
+				}
+			}
+		}
+		scope:owner = {
+			random_realm_province = {
+				random_list = {
+					20 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = 20
+						}
+						# Effect
+					}
+					80 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = -20
+						}
+						create_epidemic_outbreak = {
+							type = smallpox
+							intensity = minor
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Too suspicious
+		name = spread_plague_ongoing.0002.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = spread_plague_did_not_ship_clothing
+			}
+		}
+	}
+}
+
+# Bloody Flux
+spread_plague_ongoing.0003 = {
+	type = character_event
+	title = spread_plague_ongoing.0003.t
+	desc = spread_plague_ongoing.0003.desc
+	theme = spread_plague_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0003 }
+			exists = var:spread_plague_disease_choice
+			var:spread_plague_disease_choice = 2
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0003
+				value = yes
+			}
+		}
+		scope:owner.court_position:master_assassin_court_position = {
+			save_scope_as = master_assassin_name
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+	}
+
+	option = { # Upstream
+		name = spread_plague_ongoing.0003.a
+		scope:target = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = spread_plague_waste_upstream_county_modifier } }
+				random_list = {
+					20 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = 20
+						}
+						add_county_modifier = {
+							modifier = spread_plague_waste_upstream_county_modifier
+							years = 10
+						}
+						scope:scheme = {
+							add_scheme_modifier = {
+								type = spread_plague_waste_upstream_scheme_modifier
+							}
+						}
+					}
+					80 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = -20
+						}
+						add_county_modifier = {
+							modifier = spread_plague_diligent_water_sourcing_county_modifier
+							years = 10
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { # In town
+		name = spread_plague_ongoing.0003.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = spread_plague_water_in_town
+			}
+		}
+	}
+}
+
+# Holy Fire
+spread_plague_ongoing.0004 = {
+	type = character_event
+	title = spread_plague_ongoing.0004.t
+	desc = spread_plague_ongoing.0004.desc
+	theme = spread_plague_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:master_assassin_court_position
+		animation = spymaster
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0004 }
+			exists = var:spread_plague_disease_choice
+			var:spread_plague_disease_choice = 3
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0003
+				value = yes
+			}
+		}
+		scope:owner.court_position:master_assassin_court_position = {
+			save_scope_as = master_assassin_name
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+	}
+
+	option = { # Larder
+		name = spread_plague_ongoing.0004.a
+		scope:target = {
+			random_sub_realm_county = {
+				limit = { NOT = { has_county_modifier = spread_plague_tainted_larder_county_modifier } }
+				random_list = {
+					20 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = 20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = 20
+						}
+						add_county_modifier = {
+							modifier = spread_plague_tainted_larder_county_modifier
+							years = 10
+						}
+						scope:scheme = {
+							add_scheme_modifier = {
+								type = spread_plague_tainted_larder_scheme_modifier
+							}
+						}
+					}
+					80 = {
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 1
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 2
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 3
+								}
+							}
+							add = -20
+						}
+						modifier = { 
+							scope:owner.court_position:master_assassin_court_position = { 
+								aptitude = {
+									court_position = master_assassin_court_position
+									value >= 4
+								}
+							}
+							add = -20
+						}
+						add_county_modifier = {
+							modifier = spread_plague_food_inspection_county_modifier
+							years = 10
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Field
+		name = spread_plague_ongoing.0004.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = spread_plague_tainted_field_scheme_modifier
+			}
+		}
+	}
+}

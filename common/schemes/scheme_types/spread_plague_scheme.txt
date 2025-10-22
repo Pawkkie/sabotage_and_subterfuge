@@ -165,6 +165,12 @@
 			add_agent_slot = agent_herald
 			add_agent_slot = agent_justiciar
 		}
+		scheme_owner = {
+			trigger_event = {
+				id = spread_plague_ongoing.0001
+				days = { 1 7 }
+			}
+		}
 	}
 	on_phase_completed = {
 		suppress_scheme_follow_up_event_till_input_given_effect = yes

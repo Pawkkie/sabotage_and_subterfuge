@@ -7,11 +7,10 @@
 	random_events = {
 		chance_to_happen = 10
 		100 = 0
-		100 = rouse_rabble_ongoing.0001 # Invited to a feast
-		100 = rouse_rabble_ongoing.0002 # Responding to relief
-		100 = rouse_rabble_ongoing.0003 # Connecting with the youth
-		100 = rouse_rabble_ongoing.0004 # Staging a protest
-		100 = rouse_rabble_ongoing.0005 # A rowdy tavern
+		# spread_plague_ongoing.0001 # Disease selection, handled in scheme directly
+		100 = spread_plague_ongoing.0002 # Smallpox
+		100 = spread_plague_ongoing.0003 # Bloody Flux
+		100 = spread_plague_ongoing.0004 # Holy Fire
 
 		#############
 		# Generic Agent events
