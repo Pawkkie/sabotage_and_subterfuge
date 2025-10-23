@@ -1,0 +1,24 @@
+﻿sas_embezzler = {
+
+	vassal_opinion = -15
+	independent_ruler_opinion = -15
+	liege_opinion = -15
+	stewardship = 2
+	diplomacy = -1
+	monthly_prestige_gain_mult = -0.1
+	category = fame
+	
+	ruler_designer_cost = -15
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sas_embezzler_desc
+			}
+			desc = trait_sas_embezzler_character_desc
+		}
+	}
+}

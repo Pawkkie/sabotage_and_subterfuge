@@ -6,7 +6,7 @@ sas_embezzle_interaction = {
 	icon = sas_embezzle
 	interface_priority = 12
 	common_interaction = yes
-	cooldown = { years = 10 }
+	cooldown = { years = 3 }
 
 	desc = sas_embezzle_interaction_desc
 

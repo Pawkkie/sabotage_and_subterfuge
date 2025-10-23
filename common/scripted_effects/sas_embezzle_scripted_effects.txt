@@ -1,5 +1,6 @@
 ﻿sas_embezzle_interaction_caught_embezzling_effect = {
 	scope:actor = {
+		add_trait = sas_embezzler
 		# Variable results depending on embezzlement level.
 		## Very high.
 		if = {
@@ -114,5 +115,11 @@
 			target = scope:recipient
 			modifier = embezzled_opinion
 		}
+	}
+}
+
+embezzle_consequences_known_or_exposed_effect = {
+	$EMBEZZLER$ = {
+		add_trait_only_force_tooltip_if_not_pov_effect = { TRAIT = sas_embezzler POV = $POV$ }
 	}
 }
