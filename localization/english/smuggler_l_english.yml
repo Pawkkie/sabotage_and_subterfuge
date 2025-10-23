@@ -2,7 +2,8 @@
  # Court Position
  smuggler_court_position: "Smuggler"
  smuggler_court_position_desc: "If you need goods moved from one point to another, the smuggler can get you connected. While not strictly required, dubious goods are their specialty. The smuggler allows for heist planning and artifact thievery, as well as bolstering your own transportation networks."
- smuggler_custom_effect_description: "$BULLET$Can allow access to the [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" 
+ smuggler_custom_effect_description_scheme: "$BULLET$Can allow access to the [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" 
+ smuggler_custom_effect_description_demand_payment: "$BULLET$Unlocks the [demand_payment|E] Interaction"
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]"
