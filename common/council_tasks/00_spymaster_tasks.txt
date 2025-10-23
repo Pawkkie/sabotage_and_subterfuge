@@ -724,14 +724,16 @@ task_find_secrets = {
 				divide = 2
 			}
 		}
-		if = { # AI's with Golden Obligations really like this
+		# SAS Change
+		if = { # AI's with Smugglers really like this
 			limit = {
 				scope:councillor_liege = {
-					has_perk = golden_obligations_perk
+					exists = court_position:smuggler_court_position
 				}
 			}
 			add = 25
 		}
+		# SAS Change End
 		if = { # AI's with certain focuses enjoy this
 			limit = {
 				scope:councillor_liege = {
