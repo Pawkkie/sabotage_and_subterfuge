@@ -21,3 +21,6 @@
  # Failure
  sas_embezzle_interaction.tt.failure.actor: "Your nefarious deeds are unmasked immediately"
  sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] been caught trying to embezzle!"
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Unlocks the [sas_embezzle_interaction|E] interaction"

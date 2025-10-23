@@ -1,5 +1,5 @@
 ﻿sas_ennoblement_interaction = {
-	icon = sas_embezzle
+	icon = sas_ennoblement
 	category = interaction_category_diplomacy
  	common_interaction = yes
 	interface_priority = 150
@@ -20,6 +20,7 @@
 
 		scope:actor = {
 			is_landed = yes
+			has_perk = accomplished_forger_perk
 		}
 
 		scope:recipient = {

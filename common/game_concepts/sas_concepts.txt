@@ -45,3 +45,11 @@ sas_spy = {
 sas_spy_network = {
 	texture = "gfx/interface/icons/character_interactions/secret.dds"
 }
+
+sas_ennoblement_interaction = {
+	texture = "gfx/interface/icons/character_interactions/sas_ennoblement.dds"
+}
+
+sas_embezzle_interaction = {
+	texture = "gfx/interface/icons/character_interactions/sas_embezzle.dds"
+}

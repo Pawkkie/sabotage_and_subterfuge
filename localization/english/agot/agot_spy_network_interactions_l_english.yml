@@ -93,3 +93,7 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Check [recipient.GetShortUIName]'s court for courtiers who might be willing to join your [sas_spy_network|E]"
  check_for_potential_spies_actor.tt: "You will be notified of a potential [sas_spy|E] you may negotiate into joining your [sas_spy_network|E]"
+
+ # Perks
+ DIGGING_FOR_DIRT_PERK_EFFECT: "Is convincing: $VALUE|=+0$"
+ SUBTLE_DESIRE_PERK_EFFECT: "Is attractive: $VALUE|=+0$"

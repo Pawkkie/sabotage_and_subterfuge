@@ -1035,7 +1035,7 @@ agot_spy_network.0510 = {
 			}
 			modifier = {
 				factor = 0.1
-				scope:discovered_spy_employer = { has_perk = omerta_perk }
+				scope:discovered_spy_employer = { has_perk = dreadful_perk }
 			}
 		}
 	}

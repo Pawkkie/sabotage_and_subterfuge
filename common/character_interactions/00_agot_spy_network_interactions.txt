@@ -126,24 +126,24 @@
 		# tier modifier
 		modifier = {
 			scope:actor = {
-				has_perk = convincing_perk
+				has_perk = digging_for_dirt_perk
 			}
 			add = {
-				value = 10
+				value = 15
 			}
-			desc = CONVINCING_PERK
+			desc = DIGGING_FOR_DIRT_PERK_EFFECT
 		}
 		modifier = {
 			scope:actor = {
-				has_perk = charismatic_perk
+				has_perk = subtle_desire_perk
 			}
 			scope:recipient = {
 				is_attracted_to_gender_of = scope:actor
 			}
 			add = {
-				value = 15
+				value = 25
 			}
-			desc = CHARISMATIC_PERK
+			desc = SUBTLE_DESIRE_PERK_EFFECT
 		}
 		
 		modifier = {

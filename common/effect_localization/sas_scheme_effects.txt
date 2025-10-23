@@ -27,3 +27,15 @@ rouse_rabble_invalidated_is_travelling = {
 	first_past = rouse_rabble_invalidated_is_travelling
 	third_past = rouse_rabble_invalidated_is_travelling
 }
+
+accomplished_forger_ennoble_perk_effect = {
+	global = ALLOW_ENNOBLE_INTERACTION_DESCRIPTION
+	first = ALLOW_ENNOBLE_INTERACTION_DESCRIPTION
+	third = ALLOW_ENNOBLE_INTERACTION_DESCRIPTION
+}
+
+golden_obligations_embezzle_perk_effect = {
+	global = ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION
+	first = ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION
+	third = ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION
+}
