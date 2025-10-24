@@ -792,6 +792,62 @@ ai_agent_join_chance_basic_suite_modifier = {
 		is_busy_in_events_localised = no
 		desc = SCHEME_NOT_DIPLOMATICALLY_AVAILABLE
 	}
+	# SAS Change: Spies and criminal court positions can be agents easier
+	modifier = { 
+		add = { 
+			if = {
+				limit = {
+					scope:owner = {
+						can_use_spy_network = yes
+						house = {
+							has_house_modifier = sas_special_operations_training_house_modifier
+						}
+					}
+				}
+				add = 50
+			}
+			else = {
+				add = 25
+			}
+		}
+
+		scope:owner = {
+			is_target_in_variable_list = {
+				name = spy_network_members
+				target = root
+			}
+		}
+
+		desc = AGOT_SCHEME_AGENT_IS_MY_SPY
+	}
+	modifier = {
+		add = 75
+		AND = {
+			scope:owner = {
+				house = { has_house_modifier = sas_special_operations_training_house_modifier }
+			}
+			OR = {
+				AND = {
+					exists = scope:owner.court_position:rabble_rouser_court_position
+					scope:owner.court_position:rabble_rouser_court_position = this
+				}
+				AND = {
+					exists = scope:owner.court_position:smuggler_court_position
+					scope:owner.court_position:smuggler_court_position = this
+				}
+				AND = {
+					exists = scope:owner.court_position:femme_fatale_court_position
+					scope:owner.court_position:femme_fatale_court_position = this
+				}
+				AND = {
+					exists = scope:owner.court_position:smuggler_court_position
+					scope:owner.court_position:smuggler_court_position = this
+				}
+			}
+		}
+		desc = SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND
+	}
+	# SAS Change End
 }
 
 # Core hostile modifiers that should be applied to most/all hostile schemes.
@@ -1198,34 +1254,6 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		scope:target = { has_character_modifier = spies_behind_every_corner_modifier }
 		desc = spies_behind_every_corner_modifier
 	}
-
-	# SAS Change: Spies may be agents easier
-	modifier = { 
-		add = { 
-			if = {
-				limit = {
-					scope:owner = {
-						can_use_spy_network = yes
-						has_perk = sleeper_cells_perk
-					}
-				}
-				add = 50
-			}
-			else = {
-				add = 25
-			}
-		}
-
-		scope:owner = {
-			is_target_in_variable_list = {
-				name = spy_network_members
-				target = root
-			}
-		}
-
-		desc = AGOT_SCHEME_AGENT_IS_MY_SPY
-	}
-	# SAS Change End
 }
 
 # Core personal modifiers that should be applied to most/all personal schemes.

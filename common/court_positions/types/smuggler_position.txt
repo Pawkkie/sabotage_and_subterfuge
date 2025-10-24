@@ -328,6 +328,15 @@
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
 			# Halved with obligation hook
 			else_if = {
 				limit = {
@@ -384,6 +393,15 @@
 				multiply = {
 					value = 0
 					desc = inner_circle_salary_mod
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}

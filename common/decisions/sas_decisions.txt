@@ -40,6 +40,20 @@
 	effect = {
 		if = {
 			limit = {
+				NOT = { exists = var:number_of_secrets_bought }
+			}
+			set_variable = {
+				name = number_of_secrets_bought
+				value = 0
+			}
+		}
+		custom_tooltip = sas_establish_criminal_underground_spy_network.tt
+		custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
+		custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
+		custom_tooltip = sas_establish_criminal_underground_smuggler.tt
+		custom_tooltip = sas_establish_criminal_underground_master_assassin.tt
+		if = {
+			limit = {
 				house = { has_house_modifier = sas_starter_spy_network_modifier }
 			}
 			house = {
@@ -51,26 +65,6 @@
 				modifier = sas_establish_criminal_underground_house_modifier
 			}
 		}
-		custom_tooltip = sas_establish_criminal_underground_spy_network.tt
-		house = {
-			set_variable = {
-				name = house_has_criminal_underground
-				value = yes
-			}
-		}
-		if = {
-			limit = {
-				NOT = { exists = var:number_of_secrets_bought }
-			}
-			set_variable = {
-				name = number_of_secrets_bought
-				value = 0
-			}
-		}
-		custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
-		custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
-		custom_tooltip = sas_establish_criminal_underground_smuggler.tt
-		custom_tooltip = sas_establish_criminal_underground_master_assassin.tt
 	}
 }
 
@@ -116,6 +110,9 @@ sas_expand_spy_network_decision = {
 	}
 
 	effect = {
+		custom_tooltip = sas_expand_spy_network_double_spies.tt
+		custom_tooltip = sas_expand_spy_network_child_spies.tt
+		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
 		add_character_modifier = {
 			modifier = sas_expand_spy_network_modifier
 		}
@@ -124,9 +121,6 @@ sas_expand_spy_network_decision = {
 				modifier = sas_expand_spy_network_house_modifier
 			}
 		}
-		custom_tooltip = sas_expand_spy_network_double_spies.tt
-		custom_tooltip = sas_expand_spy_network_child_spies.tt
-		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
 	}
 }
 
@@ -166,23 +160,22 @@ sas_special_operations_training_decision = {
 	}
 
 	cost = {
-		gold = 250
-		prestige = 250
-		piety = 50
+		gold = 50
+		prestige = 350
 	}
 
 	effect = {
-		add_character_modifier = {
-			modifier = sas_expand_spy_network_modifier
-		}
+		custom_tooltip = sas_special_operations_training_spies_intrigue_no_salary
+ 		custom_tooltip = sas_special_operations_training_spies_likely_to_join_schemes.tt
+ 		custom_tooltip = sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt
+ 		custom_tooltip = sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt
+ 		custom_tooltip = sas_special_operations_training_smuggler_likely_to_join_schemes.tt
+		custom_tooltip = sas_special_operations_training_master_assassin_likely_to_join_schemes.tt
 		house = {
 			add_house_modifier = {
-				modifier = sas_expand_spy_network_house_modifier
+				modifier = sas_special_operations_training_house_modifier
 			}
 		}
-		custom_tooltip = sas_expand_spy_network_double_spies.tt
-		custom_tooltip = sas_expand_spy_network_child_spies.tt
-		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
 	}
 }
 

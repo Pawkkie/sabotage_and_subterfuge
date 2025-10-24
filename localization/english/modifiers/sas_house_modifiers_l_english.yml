@@ -10,7 +10,9 @@
  sas_expand_spy_network_house_modifier_desc: "House members can recruit twice as many [sas_spies|E], and may recruit children at least 8 years old to their [sas_spy_network|E].\n\n[sas_spies|E] can steal [innovations|E]. #weak (25 year cooldown)#!"
 
  sas_special_operations_training_house_modifier: "Special Operations Training"
- sas_special_operations_training_house_modifier_desc: "Special Operations Training Desc"
+ sas_special_operations_training_house_modifier_desc: "House members can hire [intrigue|E] based [court_positions|E] at no cost.\n\n[sas_spies|E] as well as the [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E], and [master_assassin_court_position|E] [court_positions|E] are more likely to join your [hostile_schemes|E] as [agents|E]."
+ SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND: "I'm a part of your criminal underground"
+ special_operations_training_court_position_modifier: "Special Operations Training"
 
  house_of_sabotage_and_subterfuge: "House of Sabotage and Subterfuge"
  house_of_sabotage_and_subterfuge_desc: "House of Sabotage and Subterfuge Desc"

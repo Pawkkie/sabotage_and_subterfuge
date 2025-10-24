@@ -5903,6 +5903,17 @@ master_assassin_court_position = {
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# SAS Change
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# SAS Change End
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -5962,6 +5973,17 @@ master_assassin_court_position = {
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# SAS Change
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# SAS Change End
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -11814,6 +11836,17 @@ food_taster_court_position = { # EP1
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# SAS Change
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# SAS Change End
 			# Halved with obligation hook
 			else_if = {
 				limit = {
@@ -11873,6 +11906,17 @@ food_taster_court_position = { # EP1
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# SAS Change
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# SAS Change End
 			# Halved via obligation hook
 			else_if = {
 				limit = {
@@ -12991,6 +13035,17 @@ executioner_court_position = { # EP1
 					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
 				}
 			}
+			# SAS Change
+			# Set to 0 with Special Operations Training
+			if = {
+				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+				multiply = {
+					value = 0
+					desc = special_operations_training_court_position_modifier
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+			# SAS Change End
 			# Halved salary
 			if = {
 				limit = {
