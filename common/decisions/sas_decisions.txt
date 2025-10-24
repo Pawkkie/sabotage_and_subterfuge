@@ -104,9 +104,8 @@ sas_expand_spy_network_decision = {
 	}
 
 	cost = {
-		gold = 250
-		prestige = 250
-		piety = 50
+		gold = 200
+		prestige = 200
 	}
 
 	effect = {
@@ -148,9 +147,9 @@ sas_special_operations_training_decision = {
 			spy_network_members_count_gui >= 3
 		}
 		custom_tooltip = {
-			text = sas_expand_spy_network_have_paid_spies_tt
-			exists = var:number_of_secrets_bought
-			var:number_of_secrets_bought >= 3
+			text = sas_special_operations_completed_hostile_schemes_tt
+			exists = var:sas_hostile_scheme_count
+			var:sas_hostile_scheme_count >= 3
 		}
 	}
 

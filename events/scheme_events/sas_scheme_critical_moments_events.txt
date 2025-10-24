@@ -636,6 +636,8 @@ sas_scheme_critical_moments.0002 = {
 		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t1_value }
 
 		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+
+		scope:owner = { sas_count_hostile_scheme_and_add_renown = yes }
 	}
 
 	# Pricier completion: minor success chance gains.
@@ -674,6 +676,8 @@ sas_scheme_critical_moments.0002 = {
 		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t2_value }
 
 		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+
+		scope:owner = { sas_count_hostile_scheme_and_add_renown = yes }
 	}
 
 	# Very pricey completion: moderate success chance gains.
@@ -712,6 +716,8 @@ sas_scheme_critical_moments.0002 = {
 		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t3_value }
 
 		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+
+		scope:owner = { sas_count_hostile_scheme_and_add_renown = yes }
 	}
 
 	# Max pricey completion: excellent success chance gains.
@@ -753,6 +759,8 @@ sas_scheme_critical_moments.0002 = {
 		sas_scheme_critical_moments_0001_execute_scheme_default_flow_effect = { COST = multi_ending_scheme_charge_to_advance_threshold_t4_value }
 
 		ai_chance = { scheme_prep_ai_should_execute_scheme_modifier = yes }
+
+		scope:owner = { sas_count_hostile_scheme_and_add_renown = yes }
 	}
 
 	# Come back later.

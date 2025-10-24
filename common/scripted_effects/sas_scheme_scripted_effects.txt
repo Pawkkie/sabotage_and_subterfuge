@@ -722,3 +722,22 @@ sas_hostile_scheme_monthly_discovery_chance_effect = {
 		}
 	}
 }
+
+sas_count_hostile_scheme_and_add_renown = {
+	# Count hostile scheme towards running total
+	if = {
+		limit = {
+			exists = var:sas_hostile_scheme_count
+		}
+		change_variable = {
+			name = sas_hostile_scheme_count
+			add = 1
+		}
+	}
+	else = {
+		set_variable = {
+			name = sas_hostile_scheme_count
+			value = 1
+		}
+	}
+}
