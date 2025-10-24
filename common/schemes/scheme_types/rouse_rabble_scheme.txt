@@ -28,8 +28,6 @@
 		scope:target = {
 			highest_held_title_tier >= tier_duchy
 		}
-		
-		# Should hide decision if can't employ a rabble rouser
 	}
 	valid = {
 		scope:target = {

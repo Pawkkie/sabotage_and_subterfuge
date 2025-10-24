@@ -27,10 +27,10 @@ initialize_can_use_spy_network = {
 				add_house_modifier = {
 					modifier = sas_starter_spy_network_modifier
 				}
-				set_variable = {
-					name = number_of_secrets_bought
-					value = 0
-				}
+			}
+			set_variable = {
+				name = number_of_secrets_bought
+				value = 0
 			}
 		}
 	}
@@ -48,10 +48,10 @@ new_house_head_can_use_spy_network = {
 				add_house_modifier = {
 					modifier = sas_starter_spy_network_modifier
 				}
-				set_variable = {
-					name = number_of_secrets_bought
-					value = 0
-				}
+			}
+			set_variable = {
+				name = number_of_secrets_bought
+				value = 0
 			}
 		}
 	}

@@ -424,11 +424,9 @@ agot_spy_network.0210 = { #ask for money in exchange for secret
 					reveal_to = scope:employer
 				}
 			}
-			house = {
-				change_variable = {
-					name = number_of_secrets_bought
-					add = 1
-				}
+			change_variable = {
+				name = number_of_secrets_bought
+				add = 1
 			}
 		}
 

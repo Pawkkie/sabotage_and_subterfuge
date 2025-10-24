@@ -15,10 +15,10 @@ sas_expand_spy_network_house_modifier = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_special_operations_training = {
+sas_special_operations_training_house_modifier = {
 	icon = sabotage_and_subterfuge
 }
 
-house_of_sabotage_and_subterfuge = {
+house_of_sabotage_and_subterfuge_modifier = {
 	icon = sabotage_and_subterfuge
 }

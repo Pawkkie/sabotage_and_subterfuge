@@ -9,5 +9,8 @@
  sas_expand_spy_network_house_modifier: "Expanded Spy Network"
  sas_expand_spy_network_house_modifier_desc: "House members can recruit twice as many [sas_spies|E], and may recruit children at least 8 years old to their [sas_spy_network|E].\n\n[sas_spies|E] can steal [innovations|E]. #weak (25 year cooldown)#!"
 
+ sas_special_operations_training_house_modifier: "Special Operations Training"
+ sas_special_operations_training_house_modifier_desc: "Special Operations Training Desc"
+
  house_of_sabotage_and_subterfuge: "House of Sabotage and Subterfuge"
  house_of_sabotage_and_subterfuge_desc: "House of Sabotage and Subterfuge Desc"

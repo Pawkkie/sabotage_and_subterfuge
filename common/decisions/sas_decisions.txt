@@ -58,6 +58,15 @@
 				value = yes
 			}
 		}
+		if = {
+			limit = {
+				NOT = { exists = var:number_of_secrets_bought }
+			}
+			set_variable = {
+				name = number_of_secrets_bought
+				value = 0
+			}
+		}
 		custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
 		custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
 		custom_tooltip = sas_establish_criminal_underground_smuggler.tt
@@ -79,11 +88,6 @@ sas_expand_spy_network_decision = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
 			NOT = { has_house_modifier = sas_expand_spy_network_house_modifier }
 		}
-		NOT = {
-			house = {
-				has_house_modifier = sas_expand_spy_network_house_modifier
-			}
-		}
 	}
 
 	is_valid = {
@@ -95,8 +99,8 @@ sas_expand_spy_network_decision = {
 		}
 		custom_tooltip = {
 			text = sas_expand_spy_network_have_paid_spies_tt
-			exists = house.var:number_of_secrets_bought
-			house.var:number_of_secrets_bought >= 3
+			exists = var:number_of_secrets_bought
+			var:number_of_secrets_bought >= 3
 		}
 	}
 
@@ -126,65 +130,61 @@ sas_expand_spy_network_decision = {
 	}
 }
 
-# sas_special_operations_training_decision = {
-# 	picture = {
-# 		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
-# 	}
-# 	decision_group_type = sabotage_and_subterfuge
+sas_special_operations_training_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = sabotage_and_subterfuge
 
-# 	desc = sas_special_operations_training_decision_desc
+	desc = sas_special_operations_training_decision_desc
 
-# 	is_shown = {
-# 		exists = house.var:house_uses_spy_network
-# 		house.var:house_uses_spy_network = yes
-# 		NOT = {
-# 			AND = {
-# 				exists = house.var:house_spy_network_expanded
-# 				house.var:house_spy_network_expanded = yes
-# 			}
-# 		}
-# 	}
+	is_shown = {
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			NOT = { has_house_modifier = sas_special_operations_training_house_modifier }
+		}
+	}
 
-# 	is_valid = {
-# 		is_house_head = yes
-# 		cp:councillor_spymaster.intrigue >= 15
-# 		custom_tooltip = {
-# 			text = sas_expand_spy_network_have_enough_spies_tt
-# 			spy_network_members_count_gui >= 3
-# 		}
-# 		custom_tooltip = {
-# 			text = sas_expand_spy_network_have_paid_spies_tt
-# 			exists = house.var:number_of_secrets_bought
-# 			house.var:number_of_secrets_bought >= 3
-# 		}
-# 	}
+	is_valid = {
+		is_house_head = yes
+		cp:councillor_spymaster.intrigue >= 15
+		custom_tooltip = {
+			text = sas_expand_spy_network_have_enough_spies_tt
+			spy_network_members_count_gui >= 3
+		}
+		custom_tooltip = {
+			text = sas_expand_spy_network_have_paid_spies_tt
+			exists = var:number_of_secrets_bought
+			var:number_of_secrets_bought >= 3
+		}
+	}
 
-# 	is_valid_showing_failures_only = {
-# 		is_adult = yes
-# 		is_imprisoned = no
-# 	}
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_imprisoned = no
+	}
 
-# 	cost = {
-# 		gold = 250
-# 		prestige = 250
-# 		piety = 50
-# 	}
+	cost = {
+		gold = 250
+		prestige = 250
+		piety = 50
+	}
 
-# 	effect = {
-# 		add_character_modifier = {
-# 			modifier = sas_expand_spy_network_modifier
-# 		}
-# 		house = {
-# 			set_variable = {
-# 				name = house_spy_network_expanded
-# 				value = yes
-# 			}
-# 		}
-# 		custom_tooltip = sas_expand_spy_network_double_spies.tt
-# 		custom_tooltip = sas_expand_spy_network_child_spies.tt
-# 		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
-# 	}
-# }
+	effect = {
+		add_character_modifier = {
+			modifier = sas_expand_spy_network_modifier
+		}
+		house = {
+			add_house_modifier = {
+				modifier = sas_expand_spy_network_house_modifier
+			}
+		}
+		custom_tooltip = sas_expand_spy_network_double_spies.tt
+		custom_tooltip = sas_expand_spy_network_child_spies.tt
+		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
+	}
+}
 
 # sas_house_of_sabotage_and_subterfuge_decision = {
 # 	picture = {
