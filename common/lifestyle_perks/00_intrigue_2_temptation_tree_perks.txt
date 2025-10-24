@@ -189,9 +189,6 @@ enticing_opportunity_perk = {
 		custom_description_no_bullet = {
 			text = sas_enticing_opportunity_steal_bastard_effect
 		}
-		custom_description_no_bullet = {
-			text = sas_enticing_opportunity_reveal_true_father_effect
-		}
 	}
 	# SAS Change End
 }
