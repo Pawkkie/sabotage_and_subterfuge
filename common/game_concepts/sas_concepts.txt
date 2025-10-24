@@ -61,7 +61,3 @@ sas_induct_bastard_interaction = {
 sas_steal_bastard_interaction = {
 	texture = "gfx/interface/icons/traits/bastard.dds"
 }
-
-sas_reveal_true_father_interaction = {
-	texture = "gfx/interface/icons/traits/disputed_heritage.dds"
-}

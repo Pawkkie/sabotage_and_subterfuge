@@ -32,5 +32,3 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$"
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$"
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$"
- game_concept_sas_reveal_true_father_interaction: "$sas_reveal_true_father_interaction$"
- game_concept_sas_reveal_true_father_interaction_desc: "$sas_reveal_true_father_interaction_concept_desc$"

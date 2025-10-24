@@ -17,5 +17,4 @@
  EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Each of your [lover|E] and [soulmate|E] Relations gives you #P 2#! random [skill|E] points (To the Maximum of [EmptyScope.ScriptValue('friendly_counsel_max')|0])"
  ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Unlocks the [sas_induct_bastard_interaction|E] interaction"
  ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Unlocks the [sas_steal_bastard_interaction|E] interaction"
- ALLOW_REVEAL_TRUE_FATHER_INTERACTION_DESCRIPTION: "Unlocks the [sas_reveal_true_father_interaction|E] interaction"
  
