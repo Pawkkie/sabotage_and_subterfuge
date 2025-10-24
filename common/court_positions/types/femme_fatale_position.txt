@@ -201,10 +201,7 @@
 			has_government = administrative_government
 			custom_description = {
 				text = already_established_criminal_underground
-				AND = {
-					exists = house.var:house_has_criminal_underground
-					house.var:house_has_criminal_underground = yes
-				}
+				house = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
 			}
 		}
 	}

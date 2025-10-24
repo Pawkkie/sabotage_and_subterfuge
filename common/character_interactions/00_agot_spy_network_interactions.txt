@@ -25,8 +25,7 @@
 				AND = {
 					age >= 8
 					scope:actor = {
-						exists = house.var:house_spy_network_expanded
-						house.var:house_spy_network_expanded = yes
+						house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 					}
 				}
 			}
@@ -55,8 +54,7 @@
 				AND = {
 					age >= 8
 					scope:actor = {
-						exists = house.var:house_spy_network_expanded
-						house.var:house_spy_network_expanded = yes
+						house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 					}
 				}
 			}
@@ -529,8 +527,7 @@ agot_check_for_potential_spies_interaction = {
 						AND = {
 							age >= 8
 							scope:actor = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -569,8 +566,7 @@ agot_check_for_potential_spies_interaction = {
 						AND = {
 							age >= 8
 							scope:actor = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}

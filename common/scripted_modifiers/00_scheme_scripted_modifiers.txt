@@ -1204,7 +1204,10 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		add = { 
 			if = {
 				limit = {
-					scope:owner = { has_perk = sleeper_cells_perk }
+					scope:owner = {
+						can_use_spy_network = yes
+						has_perk = sleeper_cells_perk
+					}
 				}
 				add = 50
 			}

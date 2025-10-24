@@ -18,11 +18,14 @@ initialize_can_use_spy_network = {
 			limit = { 
 				is_house_head = yes
 				has_government = administrative_government
+				house = {
+					NOT = { has_house_modifier = sas_starter_spy_network_modifier }
+					NOT = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+				}
 			}
 			house = {
-				set_variable = {
-					name = house_uses_spy_network
-					value = yes
+				add_house_modifier = {
+					modifier = sas_starter_spy_network_modifier
 				}
 				set_variable = {
 					name = number_of_secrets_bought
@@ -38,11 +41,12 @@ new_house_head_can_use_spy_network = {
 		if = {
 			limit = {
 				has_government = administrative_government
+				NOT = { house = { has_house_modifier = sas_starter_spy_network_modifier } }
+				NOT = { house = { has_house_modifier = sas_establish_criminal_underground_house_modifier } }
 			}
 			house = {
-				set_variable = {
-					name = house_uses_spy_network
-					value = yes
+				add_house_modifier = {
+					modifier = sas_starter_spy_network_modifier
 				}
 				set_variable = {
 					name = number_of_secrets_bought
@@ -56,10 +60,7 @@ new_house_head_can_use_spy_network = {
 new_house_head_expanded_spy_network = {
 	effect = {
 		if = {
-			limit = {
-				exists = house.var:house_spy_network_expanded
-				house.var:house_spy_network_expanded = yes
-			}
+			house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 			add_character_modifier = {
 				modifier = sas_expand_spy_network_modifier
 			}
@@ -70,13 +71,17 @@ new_house_head_expanded_spy_network = {
 three_year_playable_pulse = {
 	on_actions = {
 		ai_employ_spy_pulse
-		learn_innovations_pulse
 	}
 }
 
 quarterly_playable_pulse = {
 	on_actions = {
 		gather_secrets_pulse
+	}
+}
+
+yearly_playable_pulse = {
+	on_actions = {
 		learn_innovations_pulse
 	}
 }
@@ -84,6 +89,7 @@ quarterly_playable_pulse = {
 # This pulse triggers the spy network events that make spies discover secrets and then reveal them to their employer
 gather_secrets_pulse = {
 	trigger = {
+		can_use_spy_network = yes
 		has_variable_list = spy_network_members
 		is_ruler = yes
 		is_alive = yes
@@ -102,6 +108,7 @@ gather_secrets_pulse = {
 
 learn_innovations_pulse = {
 	trigger = {
+		can_use_spy_network = yes
 		has_variable_list = spy_network_members
 		is_ruler = yes
 		is_alive = yes
@@ -123,6 +130,7 @@ ai_employ_spy_pulse = {
 		is_landed = yes
 		is_ai = yes
 		intrigue >= 12
+		can_use_spy_network = yes
 		OR = {
 			NOT = { has_variable_list = spy_network_members }
 			any_in_list = {

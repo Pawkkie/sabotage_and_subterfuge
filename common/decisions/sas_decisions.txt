@@ -1,4 +1,71 @@
-﻿sas_expand_spy_network_decision = {
+﻿sas_establish_criminal_underground_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/alley.dds"
+	}
+	decision_group_type = sabotage_and_subterfuge
+
+	desc = sas_establish_criminal_underground_decision_desc
+
+	is_shown = {
+		exists = house
+		NOT = {
+			house = {
+				has_house_modifier = sas_establish_criminal_underground_house_modifier
+			}
+		}
+	}
+
+	is_valid = {
+		is_house_head = yes
+		NOT = { has_government = tribal_government }
+		NOT = { has_government = clan_government }
+		NOT = { has_government = nomad_government }
+		OR = {
+			intrigue >= 15
+			cp:councillor_spymaster.intrigue >= 15
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_imprisoned = no
+	}
+
+	cost = {
+		gold = 300
+		prestige = 200
+		piety = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				house = { has_house_modifier = sas_starter_spy_network_modifier }
+			}
+			house = {
+				remove_house_modifier = sas_starter_spy_network_modifier
+			}
+		}
+		house = {
+			add_house_modifier = {
+				modifier = sas_establish_criminal_underground_house_modifier
+			}
+		}
+		custom_tooltip = sas_establish_criminal_underground_spy_network.tt
+		house = {
+			set_variable = {
+				name = house_has_criminal_underground
+				value = yes
+			}
+		}
+		custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
+		custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
+		custom_tooltip = sas_establish_criminal_underground_smuggler.tt
+		custom_tooltip = sas_establish_criminal_underground_master_assassin.tt
+	}
+}
+
+sas_expand_spy_network_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
 	}
@@ -7,12 +74,14 @@
 	desc = sas_expand_spy_network_decision_desc
 
 	is_shown = {
-		exists = house.var:house_uses_spy_network
-		house.var:house_uses_spy_network = yes
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			NOT = { has_house_modifier = sas_expand_spy_network_house_modifier }
+		}
 		NOT = {
-			AND = {
-				exists = house.var:house_spy_network_expanded
-				house.var:house_spy_network_expanded = yes
+			house = {
+				has_house_modifier = sas_expand_spy_network_house_modifier
 			}
 		}
 	}
@@ -36,14 +105,19 @@
 		is_imprisoned = no
 	}
 
+	cost = {
+		gold = 250
+		prestige = 250
+		piety = 50
+	}
+
 	effect = {
 		add_character_modifier = {
 			modifier = sas_expand_spy_network_modifier
 		}
 		house = {
-			set_variable = {
-				name = house_spy_network_expanded
-				value = yes
+			add_house_modifier = {
+				modifier = sas_expand_spy_network_house_modifier
 			}
 		}
 		custom_tooltip = sas_expand_spy_network_double_spies.tt
@@ -52,57 +126,68 @@
 	}
 }
 
-sas_establish_criminal_underground_decision = {
-	picture = {
-		reference = "gfx/interface/illustrations/event_scenes/alley.dds"
-	}
-	decision_group_type = sabotage_and_subterfuge
+# sas_special_operations_training_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+# 	}
+# 	decision_group_type = sabotage_and_subterfuge
 
-	desc = sas_establish_criminal_underground_decision_desc
+# 	desc = sas_special_operations_training_decision_desc
 
-	is_shown = {
-		NOT = {
-			AND = {
-				exists = house.var:house_has_criminal_underground
-				house.var:house_has_criminal_underground = yes
-			}
-		}
-	}
+# 	is_shown = {
+# 		exists = house.var:house_uses_spy_network
+# 		house.var:house_uses_spy_network = yes
+# 		NOT = {
+# 			AND = {
+# 				exists = house.var:house_spy_network_expanded
+# 				house.var:house_spy_network_expanded = yes
+# 			}
+# 		}
+# 	}
 
-	is_valid = {
-		is_house_head = yes
-		NOT = { has_government = tribal_government }
-		NOT = { has_government = clan_government }
-		NOT = { has_government = nomad_government }
-		OR = {
-			intrigue >= 15
-			cp:councillor_spymaster.intrigue >= 15
-		}
-		
-	}
+# 	is_valid = {
+# 		is_house_head = yes
+# 		cp:councillor_spymaster.intrigue >= 15
+# 		custom_tooltip = {
+# 			text = sas_expand_spy_network_have_enough_spies_tt
+# 			spy_network_members_count_gui >= 3
+# 		}
+# 		custom_tooltip = {
+# 			text = sas_expand_spy_network_have_paid_spies_tt
+# 			exists = house.var:number_of_secrets_bought
+# 			house.var:number_of_secrets_bought >= 3
+# 		}
+# 	}
 
-	is_valid_showing_failures_only = {
-		is_adult = yes
-		is_imprisoned = no
-	}
+# 	is_valid_showing_failures_only = {
+# 		is_adult = yes
+# 		is_imprisoned = no
+# 	}
 
-	effect = {
-		house = {
-			set_variable = {
-				name = house_uses_spy_network
-				value = yes
-			}
-		}
-		custom_tooltip = sas_establish_criminal_underground_spy_network.tt
-		house = {
-			set_variable = {
-				name = house_has_criminal_underground
-				value = yes
-			}
-		}
-		custom_tooltip = sas_establish_criminal_underground_rabble_rouser.tt
-		custom_tooltip = sas_establish_criminal_underground_femme_fatale.tt
-		custom_tooltip = sas_establish_criminal_underground_smuggler.tt
-		custom_tooltip = sas_establish_criminal_underground_master_assassin.tt
-	}
-}
+# 	cost = {
+# 		gold = 250
+# 		prestige = 250
+# 		piety = 50
+# 	}
+
+# 	effect = {
+# 		add_character_modifier = {
+# 			modifier = sas_expand_spy_network_modifier
+# 		}
+# 		house = {
+# 			set_variable = {
+# 				name = house_spy_network_expanded
+# 				value = yes
+# 			}
+# 		}
+# 		custom_tooltip = sas_expand_spy_network_double_spies.tt
+# 		custom_tooltip = sas_expand_spy_network_child_spies.tt
+# 		custom_tooltip = sas_expand_spy_network_innovation_spies.tt
+# 	}
+# }
+
+# sas_house_of_sabotage_and_subterfuge_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+# 	}
+# }

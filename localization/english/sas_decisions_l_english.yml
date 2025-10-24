@@ -22,3 +22,9 @@
  sas_establish_criminal_underground_master_assassin.tt: "Unlocks the [master_assassin_court_position|E] court position"
  ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "House [CHARACTER.GetHouse.GetName|U] has established a criminal underground"
  NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "House [CHARACTER.GetHouse.GetName|U] has not established a criminal underground"
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "Special Operations Training"
+ sas_special_operations_training_decision_desc: "Special Operations Training Desc"
+ sas_special_operations_training_decision_tooltip: "Train criminals and [sas_spies|E] to be more confident participating in [hostile_schemes|E]"
+ sas_special_operations_training_decision_confirm: "More knives in the dark!"

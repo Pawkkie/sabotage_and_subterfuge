@@ -95,8 +95,7 @@ agot_spy_network.0105 = {
 					count >= 1
 				}
 				root.culture.culture_head = root
-				exists = house.var:house_spy_network_expanded
-				house.var:house_spy_network_expanded = yes
+				house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 			}
 			random_in_list = {
 				variable = spy_network_members
@@ -494,8 +493,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -540,8 +538,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -576,8 +573,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -622,8 +618,7 @@ agot_spy_network.0300 = {
 							AND = {
 								age >= 8
 								root = {
-									exists = house.var:house_spy_network_expanded
-									house.var:house_spy_network_expanded = yes
+									house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 								}
 							}
 						}
@@ -669,8 +664,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -756,8 +750,7 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 					AND = {
 						age >= 8
 						root = {
-							exists = house.var:house_spy_network_expanded
-							house.var:house_spy_network_expanded = yes
+							house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 						}
 					}
 				}
@@ -798,8 +791,7 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 						AND = {
 							age >= 8
 							root = {
-								exists = house.var:house_spy_network_expanded
-								house.var:house_spy_network_expanded = yes
+								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}

@@ -1,10 +1,8 @@
 ﻿can_use_spy_network = {
-	exists = house.var:house_uses_spy_network
-	house.var:house_uses_spy_network = yes
-	# OR = {
-	# 	house = {
-			
-	# 		has_house_modifier = house_of_sabotage_and_subterfuge
-	# 	}
-	# }
+	house = {
+		OR = {
+			has_house_modifier = sas_starter_spy_network_modifier
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+		}
+	}
 }

@@ -1,4 +1,13 @@
 ﻿l_english: 
- house_of_sabotage_and_subterfuge: "House of Sabotage and Subterfuge"
- house_of_sabotage_and_subterfuge_desc: "This house has embraced the shadows, opening their doors to spies, rogues, and outlaws."
+ sas_starter_spy_network_modifier: "Fledgling Spy Network"
+ sas_starter_spy_network_modifier_desc: "House members can recruit [sas_spies|E] for their [sas_spy_network|E]."
+
+ sas_establish_criminal_underground_house_modifier: "Established Criminal Underground"
+ sas_establish_criminal_underground_house_modifier_desc: "House members have access to the [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E], and [master_assassin_court_position|E] [court_positions|E]. They can also recruit [sas_spies|E] for their [sas_spy_network|E]."
+
  sas_expand_spy_network_modifier: "Head of Expanded Spy Network"
+ sas_expand_spy_network_house_modifier: "Expanded Spy Network"
+ sas_expand_spy_network_house_modifier_desc: "House members can recruit twice as many [sas_spies|E], and may recruit children at least 8 years old to their [sas_spy_network|E].\n\n[sas_spies|E] can steal [innovations|E]. #weak (25 year cooldown)#!"
+
+ house_of_sabotage_and_subterfuge: "House of Sabotage and Subterfuge"
+ house_of_sabotage_and_subterfuge_desc: "House of Sabotage and Subterfuge Desc"

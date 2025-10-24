@@ -10,8 +10,7 @@
 	}
 	if = {
 		limit = {
-			exists = house.var:house_spy_network_expanded
-			house.var:house_spy_network_expanded = yes
+			house = { has_house_modifier = sas_expand_spy_network_house_modifier }
 		}
 		multiply = 2
 	}
