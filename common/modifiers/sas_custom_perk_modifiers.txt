@@ -1,0 +1,29 @@
+﻿mortal_adoration_martial_gain =  {
+	icon = martial_positive
+	martial = 2
+	stacking = yes
+}
+
+mortal_adoration_diplomacy_gain =  {
+	icon = diplomacy_positive
+	diplomacy = 2
+	stacking = yes
+}
+
+mortal_adoration_intrigue_gain =  {
+	icon = intrigue_positive
+	intrigue = 2
+	stacking = yes
+}
+
+mortal_adoration_stewardship_gain =  {
+	icon = stewardship_positive
+	stewardship = 2
+	stacking = yes
+}
+
+mortal_adoration_learning_gain =  {
+	icon = learning_positive
+	learning = 2
+	stacking = yes
+}

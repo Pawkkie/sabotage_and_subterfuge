@@ -1,4 +1,4 @@
-black_book_inherit_secrets_effect = {
+﻿black_book_inherit_secrets_effect = {
 	save_scope_as = dying_character
 	player_heir = {
 		save_scope_as = inherinting_character

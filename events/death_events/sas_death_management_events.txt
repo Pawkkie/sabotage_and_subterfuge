@@ -1,0 +1,23 @@
+﻿
+namespace = sas_death_management
+
+# Mortal Adoration
+# Called from on action: death & on action: remove lover 
+sas_death_management.1001 = {
+	hidden = yes
+
+	immediate = {
+		every_relation = {
+			type = lover
+			add_to_temporary_list = sas_death_management_1001_mortal_adoration_lovers
+		}
+		every_relation = {
+			type = soulmate
+			add_to_temporary_list = sas_death_management_1001_mortal_adoration_lovers
+		}
+		every_in_list = {
+			list = sas_death_management_1001_mortal_adoration_lovers
+			sas_mortal_adoration_skill_removal_effect = yes
+		}
+	}
+}

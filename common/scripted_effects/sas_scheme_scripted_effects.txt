@@ -10,7 +10,7 @@ sas_cap_schemes_and_fire_reminders_effect = {
 				scheme_owner = {
 					is_ai = no
 					NOR = {
-						has_character_flag = scheme_critical_moments.0011
+						has_character_flag = sas_scheme_critical_moments.0011
 						has_variable = opportunities_reminder
 					}
 				}
@@ -22,7 +22,7 @@ sas_cap_schemes_and_fire_reminders_effect = {
 					limit = {
 						always = no
 					}
-					add_character_flag = scheme_critical_moments.0011
+					add_character_flag = sas_scheme_critical_moments.0011
 				}
 			}
 			switch = {
@@ -99,7 +99,7 @@ sas_cap_schemes_and_fire_reminders_effect = {
 					is_ai = no
 					NOT = { has_variable = opportunities_reminder }
 				}
-				trigger_event = scheme_critical_moments.0011
+				trigger_event = sas_scheme_critical_moments.0011
 			}
 		}
 	}

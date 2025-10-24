@@ -1,0 +1,47 @@
+﻿on_set_relation_lover = {
+	on_actions = {
+		sas_on_gain_lover
+	}
+}
+
+on_set_relation_soulmate = {
+	on_actions = {
+		sas_on_gain_lover
+	}
+}
+
+on_death_relation_lover = {
+	on_actions = {
+		sas_on_lose_lover
+	}
+}
+
+on_remove_relation_lover = {
+	on_actions = {
+		sas_on_lose_lover
+	}
+}
+
+on_death_relation_soulmate = {
+	on_actions = {
+		sas_on_lose_lover
+	}
+}
+
+sas_on_gain_lover = {
+	effect = {
+		scope:target = {
+			sas_mortal_adoration_skill_gain_effect = yes
+		}
+		sas_mortal_adoration_skill_gain_effect = yes
+	}
+}
+
+sas_on_lose_lover = {
+	effect = {
+		trigger_event = sas_death_management.1001
+		scope:target = {
+			trigger_event = sas_death_management.1001
+		}
+	}
+}

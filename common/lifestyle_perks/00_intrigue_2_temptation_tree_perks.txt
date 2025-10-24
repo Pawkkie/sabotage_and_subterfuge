@@ -111,6 +111,28 @@ mortal_adoration_perk = {
 				text = admin_mortal_adoration_perk_effect
 			}
 		}
+		# SAS Change
+		custom_description_no_bullet = {
+			text = sas_mortal_adoration_lovers_perk_effect
+		}
+		hidden_effect = {
+			every_relation = {
+				type = lover
+				add_to_temporary_list = sas_mortal_adoration_lovers
+			}
+			every_relation = {
+				type = soulmate
+				limit = { NOT = { is_in_list = sas_mortal_adoration_lovers } }
+				add_to_temporary_list = sas_mortal_adoration_lovers
+			}
+			every_in_list = {
+				list = sas_mortal_adoration_lovers
+				root = {
+					sas_mortal_adoration_skill_gain_effect = yes
+				}
+			}
+		}
+		# SAS Change End
 	}
 }
 

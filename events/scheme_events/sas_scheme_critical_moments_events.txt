@@ -1106,7 +1106,7 @@ sas_scheme_critical_moments.1011 = {
 				if = {
 					limit = { exists = scope:scheme_discovered }
 					scheme_owner = {
-						trigger_event = provoke_vassals_outcome.0001
+						trigger_event = provoke_vassals_outcome.0002
 					}
 				}
 				# Secret
@@ -1121,12 +1121,12 @@ sas_scheme_critical_moments.1011 = {
 				if = {
 					limit = { exists = scope:scheme_discovered }
 					scheme_owner = {
-						trigger_event = provoke_vassals_outcome.0001
+						trigger_event = provoke_vassals_outcome.0004
 					}
 				}
 				else = {
 					scheme_owner = {
-						trigger_event = provoke_vassals_outcome.0001
+						trigger_event = provoke_vassals_outcome.0003
 					}
 				}
 			}

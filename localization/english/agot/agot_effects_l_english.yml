@@ -12,3 +12,7 @@
  SPYNETWORK_OMERTA_DESCRIPTION: "Your [sas_spies|E] are much less likely to flip and reveal your name if they get caught"
  I_SPYNETWORK_OMERTA_DESCRIPTION: "Your [sas_spies|E] are much less likely to flip and reveal your name if they get caught"
  THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U]'s [sas_spies|E] are much less likely to flip and reveal their employer if they get caught"
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Each of your [lover|E] and [soulmate|E] Relations gives you #P 2#! random [skill|E] points (To the Maximum of [EmptyScope.ScriptValue('friendly_counsel_max')|0])"
+ 

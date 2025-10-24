@@ -1,0 +1,145 @@
+﻿sas_mortal_adoration_skill_gain_effect = {
+	if = {
+		limit = {
+			has_perk = mortal_adoration_perk
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = current_mortal_adoration_perk_value }
+			}
+			set_variable = {
+				name = current_mortal_adoration_perk_value
+				value = 0
+			}
+		}
+
+		every_relation = {
+			type = lover
+			add_to_temporary_list = sas_mortal_adoration_lovers
+		}
+		every_relation = {
+			type = soulmate
+			add_to_temporary_list = sas_mortal_adoration_lovers
+		}
+
+		if = {
+			limit = {
+				exists = var:current_mortal_adoration_perk_value
+				save_temporary_scope_as = affected_lover
+				OR = {
+					var:current_mortal_adoration_perk_value < friendly_counsel_max
+					AND = { # If you have a Soulmate you get one extra skill
+						var:current_mortal_adoration_perk_value < 6
+						any_in_list = {
+							list = sas_mortal_adoration_lovers
+							has_relation_soulmate = root
+						}
+					}
+				}
+				any_in_list = {
+					list = sas_mortal_adoration_lovers
+					count > scope:affected_lover.var:current_mortal_adoration_perk_value
+				}
+			}
+			random_list = {
+				1 = {
+					add_character_modifier = {
+						modifier = mortal_adoration_martial_gain
+					}
+				}
+				1 = {
+					add_character_modifier = {
+						modifier = mortal_adoration_diplomacy_gain
+					}
+				}
+				1 = {
+					add_character_modifier = {
+						modifier = mortal_adoration_intrigue_gain
+					}
+				}
+				1 = {
+					add_character_modifier = {
+						modifier = mortal_adoration_stewardship_gain
+					}
+				}
+				1 = {
+					add_character_modifier = {
+						modifier = mortal_adoration_learning_gain
+					}
+				}
+			}
+			change_variable = {
+				name = current_mortal_adoration_perk_value
+				add = 1
+			}
+		}
+	}
+}
+
+sas_mortal_adoration_skill_removal_effect = {
+	if = {
+		limit = {
+			has_perk = mortal_adoration_perk
+		}
+
+		every_relation = {
+			type = lover
+			add_to_temporary_list = sas_mortal_adoration_lovers
+		}
+		every_relation = {
+			type = soulmate
+			add_to_temporary_list = sas_mortal_adoration_lovers
+		}
+
+		if = {
+			limit = {
+				exists = var:current_mortal_adoration_perk_value
+				save_temporary_scope_as = affected_lover
+				var:current_mortal_adoration_perk_value <= friendly_counsel_max
+				var:current_mortal_adoration_perk_value > 0
+				any_in_list = {
+					list = sas_mortal_adoration_lovers
+					count > scope:affected_lover.var:current_mortal_adoration_perk_value
+					NOT = { has_character_flag = about_to_die_but_not_dead_yet_flag  }
+				}
+			}
+			random_list = {
+				1 = {
+					trigger = {
+						has_character_modifier = mortal_adoration_martial_gain
+					}
+					remove_character_modifier = mortal_adoration_martial_gain
+				}
+				1 = {
+					trigger = {
+						has_character_modifier = mortal_adoration_diplomacy_gain
+					}
+					remove_character_modifier = mortal_adoration_diplomacy_gain
+				}
+				1 = {
+					trigger = {
+						has_character_modifier = mortal_adoration_intrigue_gain
+					}
+					remove_character_modifier = mortal_adoration_intrigue_gain
+				}
+				1 = {
+					trigger = {
+						has_character_modifier = mortal_adoration_stewardship_gain
+					}
+					remove_character_modifier = mortal_adoration_stewardship_gain
+				}
+				1 = {
+					trigger = {
+						has_character_modifier = mortal_adoration_learning_gain
+					}
+					remove_character_modifier = mortal_adoration_learning_gain
+				}
+			}
+
+			change_variable = {
+				name = current_mortal_adoration_perk_value
+				subtract = 1
+			}
+		}
+	}
+}
