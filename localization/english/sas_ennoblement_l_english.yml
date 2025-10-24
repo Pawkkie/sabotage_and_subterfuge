@@ -4,6 +4,7 @@
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] will be ennobled and found a new [dynasty|E]"
  sas_ennoblement_opinion: "Ennobled me"
  sas_ennoblement_title_name: "Ennoblement of [recipient.GetShortUINameNoTooltip]"
+ sas_ennoblement_memory: "Ennoblement"
  sas_ennoblement_memory_desc: "I was ennobled from my lowborn status"
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Unlocks the [sas_ennoblement_interaction|E] interaction"

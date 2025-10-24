@@ -60,7 +60,9 @@ new_house_head_can_use_spy_network = {
 new_house_head_expanded_spy_network = {
 	effect = {
 		if = {
-			house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+			limit = {
+				house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+			}
 			add_character_modifier = {
 				modifier = sas_expand_spy_network_modifier
 			}
