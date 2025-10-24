@@ -71,3 +71,8 @@ attempted_to_spread_plague = {
 	years = 15
 	imprisonment_reason = yes
 }
+
+sas_claimed_parentage_opinion_modifier = {
+	opinion = 20
+	decaying = no
+}

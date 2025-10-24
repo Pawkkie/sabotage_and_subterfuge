@@ -11,6 +11,8 @@
 
         scope:recipient = {
             has_trait = disputed_heritage
+            is_adult = no
+            NOT = { has_trait = legitimized_bastard }
         }
 
         OR = {
@@ -40,6 +42,15 @@
             stress_impact = {
                 arrogant = minor_stress_impact_gain
             }
+            send_interface_toast = {
+                title = sas_induct_bastard_interaction_toast_title
+                left_icon = scope:actor
+                right_icon = scope:recipient
+                custom_description_no_bullet = {
+                    object = scope:recipient
+                    text = sas_induct_bastard_interaction_toast_desc
+                }
+            }
         }
 
         scope:recipient = {
@@ -52,6 +63,10 @@
                     faith = { has_doctrine_parameter = bastards_legitimize }
                 }
                 add_trait = legitimized_bastard
+            }
+            add_opinion = {
+                target = scope:actor
+                modifier = sas_claimed_parentage_opinion_modifier
             }
         }
 
@@ -85,6 +100,8 @@ sas_steal_bastard_interaction = {
                 real_father = scope:actor
                 scope:actor.dynasty = scope:recipient.real_father.dynasty
             }
+            is_adult = no
+            NOT = { has_trait = legitimized_bastard }
         }
 
         NOT = {
@@ -109,6 +126,15 @@ sas_steal_bastard_interaction = {
             stress_impact = {
                 arrogant = minor_stress_impact_gain
             }
+            send_interface_toast = {
+                title = sas_steal_bastard_interaction_toast_title
+                left_icon = scope:actor
+                right_icon = scope:recipient
+                custom_description_no_bullet = {
+                    object = scope:recipient
+                    text = sas_steal_bastard_interaction_toast_desc
+                }
+            }
         }
 
         scope:recipient = {
@@ -117,6 +143,10 @@ sas_steal_bastard_interaction = {
             
             remove_trait = bastard
             add_trait = legitimized_bastard
+            add_opinion = {
+                target = scope:actor
+                modifier = sas_claimed_parentage_opinion_modifier
+            }
         }
 
         hidden_effect = {
