@@ -740,4 +740,14 @@ sas_count_hostile_scheme_and_add_renown = {
 			value = 1
 		}
 	}
+	if = {
+		limit = {
+			house = {
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+			}
+		}
+		dynasty = {
+			add_dynasty_prestige = 100
+		}
+	}
 }

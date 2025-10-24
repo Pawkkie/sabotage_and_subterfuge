@@ -143,7 +143,7 @@ sas_special_operations_training_decision = {
 		is_house_head = yes
 		cp:councillor_spymaster.intrigue >= 15
 		custom_tooltip = {
-			text = sas_expand_spy_network_have_enough_spies_tt
+			text = sas_special_operations_have_enough_spies_tt
 			spy_network_members_count_gui >= 3
 		}
 		custom_tooltip = {
@@ -178,8 +178,58 @@ sas_special_operations_training_decision = {
 	}
 }
 
-# sas_house_of_sabotage_and_subterfuge_decision = {
-# 	picture = {
-# 		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
-# 	}
-# }
+sas_house_of_sabotage_and_subterfuge_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = sabotage_and_subterfuge
+
+	desc = sas_house_of_sabotage_and_subterfuge_decision_desc
+
+	is_shown = {
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			NOT = { has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier }
+		}
+	}
+
+	is_valid = {
+		is_house_head = yes
+		cp:councillor_spymaster.intrigue >= 15
+		intrigue >= 15
+		custom_tooltip = {
+			text = sas_house_of_sabotage_and_subterfuge_enough_spies_tt
+			spy_network_members_count_gui >= 8
+		}
+		custom_tooltip = {
+			text = sas_house_of_sabotage_and_subterfuge_schemes_tt
+			exists = var:sas_hostile_scheme_count
+			var:sas_hostile_scheme_count >= 8
+		}
+		house = {
+			has_house_modifier = sas_special_operations_training_house_modifier
+			has_house_modifier = sas_expand_spy_network_house_modifier
+		}
+	}
+
+	cost = {
+		gold = 400
+		prestige = 400
+		piety = 200 
+	}
+
+	effect = {
+		custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown
+		custom_tooltip = sas_house_of_sabotage_and_subterfuge_spies_better_discovery
+		house = {
+			add_house_modifier = {
+				modifier = sas_house_of_sabotage_and_subterfuge_modifier
+			}
+		}
+		# Give black book artifact
+		dynasty = {
+			add_dynasty_prestige = 1000
+		}
+	}
+}

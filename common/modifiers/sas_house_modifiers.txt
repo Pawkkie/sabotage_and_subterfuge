@@ -19,6 +19,6 @@ sas_special_operations_training_house_modifier = {
 	icon = sabotage_and_subterfuge
 }
 
-house_of_sabotage_and_subterfuge_modifier = {
+sas_house_of_sabotage_and_subterfuge_modifier = {
 	icon = sabotage_and_subterfuge
 }

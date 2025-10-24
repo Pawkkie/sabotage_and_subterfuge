@@ -63,6 +63,14 @@ agot_spy_network.0100 = {
 							}
 							add = 3
 						}
+						modifier = {
+							root = {
+								house = {
+									has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+								}
+							}
+							add = 3
+						}
 						trigger_event = {
 							id = agot_spy_network.0200
 							days = { 1 15 }
@@ -121,6 +129,14 @@ agot_spy_network.0105 = {
 								root = {
 									exists = var:femme_fatale_is_embracing_the_spiders
 									var:femme_fatale_is_embracing_the_spiders = yes
+								}
+								add = 1
+							}
+							modifier = {
+								root = {
+									house = {
+										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+									}
 								}
 								add = 1
 							}
