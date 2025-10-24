@@ -173,7 +173,7 @@ enticing_opportunity_perk = {
 	can_be_picked = {
 		always = yes
 	}
-	
+
 	character_modifier = {
 		seduce_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
 	}
@@ -181,6 +181,19 @@ enticing_opportunity_perk = {
 		flag = government_is_landless_adventurer
 		seduce_scheme_phase_duration_add = monumental_scheme_phase_duration_bonus_value
 	}
+	# SAS Change
+	effect = {
+		custom_description_no_bullet = {	
+			text = sas_enticing_opportunity_induct_bastard_effect
+		}
+		custom_description_no_bullet = {
+			text = sas_enticing_opportunity_steal_bastard_effect
+		}
+		custom_description_no_bullet = {
+			text = sas_enticing_opportunity_reveal_true_father_effect
+		}
+	}
+	# SAS Change End
 }
 
 home_advantage_perk = {

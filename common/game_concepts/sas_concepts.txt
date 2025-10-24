@@ -53,3 +53,15 @@ sas_ennoblement_interaction = {
 sas_embezzle_interaction = {
 	texture = "gfx/interface/icons/character_interactions/sas_embezzle.dds"
 }
+
+sas_induct_bastard_interaction = {
+	texture = "gfx/interface/icons/traits/disputed_heritage.dds"
+}
+
+sas_steal_bastard_interaction = {
+	texture = "gfx/interface/icons/traits/bastard.dds"
+}
+
+sas_reveal_true_father_interaction = {
+	texture = "gfx/interface/icons/traits/disputed_heritage.dds"
+}

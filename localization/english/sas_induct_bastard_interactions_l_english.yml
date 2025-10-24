@@ -1,0 +1,10 @@
+﻿l_english:
+ sas_induct_bastard_interaction: "Induct Bastard"
+ sas_induct_bastard_interaction_desc: "Induct [recipient.GetFirstNameNicknamed] into your  [dynasty|E]."
+ sas_induct_bastard_interaction_concept_desc: "Induct an illegitimate child you have fathered with [GetTrait('disputed_heritage').GetName( GetNullCharacter )] into your [dynasty|E]."
+ sas_steal_bastard_interaction: "Underhanded Legitimization"
+ sas_steal_bastard_interaction_desc: "Make [recipient.GetFirstName] an offer [recipient.GetSheHe] can't refuse, by legitimizing them as a member of your [dynasty|E]."
+ sas_steal_bastard_interaction_concept_desc: "Induct a [GetTrait('bastard').GetName( GetNullCharacter )] you have fathered into your [dynasty|E]."
+ sas_reveal_true_father_interaction: "Reveal True Father"
+ sas_reveal_true_father_interaction_desc: "Reveal one of your illegitimate children's true fathers."
+ sas_reveal_true_father_interaction_concept_desc: "Reveal one of your illegitimate children's true fathers."

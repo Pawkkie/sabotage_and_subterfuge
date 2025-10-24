@@ -15,15 +15,3 @@ omerta_perk_effect = {
 	first = SPYNETWORK_OMERTA_DESCRIPTION
 	third = SPYNETWORK_OMERTA_DESCRIPTION
 }
-
-accomplished_forger_ennoble_perk_effect = {
-	global = FABRICATE_CLAIM_SPEED_GAIN
-	first = FABRICATE_CLAIM_SPEED_GAIN
-	third = FABRICATE_CLAIM_SPEED_GAIN
-}
-
-sas_mortal_adoration_lovers_perk_effect = {
-	global = EACH_LOVER_ADDS_RANDOM_SKILL_POINT
-	first = EACH_LOVER_ADDS_RANDOM_SKILL_POINT
-	third = EACH_LOVER_ADDS_RANDOM_SKILL_POINT
-}
