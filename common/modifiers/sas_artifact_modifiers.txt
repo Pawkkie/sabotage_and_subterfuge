@@ -1,0 +1,5 @@
+﻿artifact_black_book_modifier = {
+	intrigue_per_prestige_level = 1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	dread_baseline_add = 15
+}

@@ -1,0 +1,4 @@
+﻿black_book = {
+	icon = "sas_artifact_black_book.dds"
+	asset = ep1_western_book_big_01_a_entity
+}

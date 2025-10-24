@@ -1,0 +1,24 @@
+black_book_inherit_secrets_effect = {
+	save_scope_as = dying_character
+	player_heir = {
+		save_scope_as = inherinting_character
+	}
+
+	scope:dying_character = {
+		every_known_secret = {
+			limit = {
+				NOT = { is_known_by = scope:inherinting_character }
+				OR = {
+					NOR = {
+						secret_owner = scope:dying_character
+						AND = {
+							exists = secret_target
+							secret_target = scope:inherinting_character
+						}
+					}
+				}
+			}
+			reveal_to = scope:inherinting_character
+		}
+	}
+}

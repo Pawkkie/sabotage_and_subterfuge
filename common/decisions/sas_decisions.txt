@@ -227,7 +227,37 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 				modifier = sas_house_of_sabotage_and_subterfuge_modifier
 			}
 		}
-		# Give black book artifact
+		# Give black book artifact if don't have one
+		if = {
+			limit = {
+				NOT = {
+					any_character_artifact = {
+						has_artifact_modifier = artifact_black_book_modifier
+					}
+				}
+			}
+			save_scope_as = black_book_creator
+			# Create new black book
+			create_artifact = {
+				name = artifact_black_book_name
+				description = artifact_black_book_desc
+				modifier = artifact_black_book_modifier
+				template = black_book_template
+				type = miscellaneous
+				visuals = black_book
+				rarity = common
+				quality = 40
+				wealth = 40
+				decaying = no
+				history = {
+					type = created
+					actor = scope:black_book_creator
+					recipient = scope:black_book_creator
+					location = scope:black_book_creator.location
+				}
+			}
+		}
+		
 		dynasty = {
 			add_dynasty_prestige = 1000
 		}

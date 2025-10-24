@@ -1,0 +1,23 @@
+﻿black_book_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		house = {
+			has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+		}
+	}
+	can_reforge = {
+		always = no
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		intrigue = 2
+	}
+	ai_score = {
+		value = 100
+	}
+	unique = no
+}

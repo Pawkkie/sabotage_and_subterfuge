@@ -1,0 +1,23 @@
+﻿on_death = {
+	on_actions = { on_death_black_book_inherit_secrets }
+}
+
+on_death_black_book_inherit_secrets = {
+	trigger = {
+		is_ai = no
+		exists = player_heir
+	}
+	effect = {
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_artifact_modifier = artifact_black_book_modifier
+				}
+				house = {
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+				}
+			}
+		}
+		black_book_inherit_secrets_effect = yes
+	}
+}
