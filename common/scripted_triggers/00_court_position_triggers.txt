@@ -145,6 +145,7 @@ court_position_does_not_already_have_a_job_trigger = {
 			has_court_position = rabble_rouser_court_position
 			has_court_position = femme_fatale_court_position
 			has_court_position = smuggler_court_position
+			has_court_position = master_assassin_court_position
 			# SAS Change End
 			is_councillor = yes
 		}

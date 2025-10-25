@@ -218,6 +218,7 @@ provoked_dissolution_faction = {
 		liege = {
 			is_independent_ruler = yes
 		}
+		has_character_modifier = provoked_dissolution_character_modifier
 	}
 
 	can_character_create = {
@@ -227,6 +228,7 @@ provoked_dissolution_faction = {
 		liege = {
 			is_independent_ruler = yes
 		}
+		has_character_modifier = provoked_dissolution_character_modifier
 	}
 
 	can_character_join = {

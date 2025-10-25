@@ -15,7 +15,7 @@
 
  # Roused Rabble Funding Option
  sas_faction_demand.1003.t: "Roused Rabble Ready to Rock..."
- sas_faction_demand.1003.desc: "Word has reached me that the rabble we roused some time ago have nearly their preparations and will be ready to take their fight to the capital in four months' time.\n\nI have faith in them to get some damage done and potentially incite some real change, but I'm sure there's time to tip the scales in their favour..."
+ sas_faction_demand.1003.desc: "Word has reached me that the rabble we roused some time ago have nearly finished their preparations and will be ready to take their fight to the capital in four months' time.\n\nI have faith in them to get some damage done and potentially incite some real change, but I'm sure there's time to tip the scales in their favour..."
  sas_faction_demand.1003.a: "They have my unwavering support!"
  sas_faction_demand.1003.b: "We could use some addition leverage."
  sas_faction_demand.1003.c: "I suppose we can spare a few gold..."

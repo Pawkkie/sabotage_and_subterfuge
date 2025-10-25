@@ -5,7 +5,7 @@
 
 	court_position_asset = {
 		animation = dancing
-		background = "gfx/interface/illustrations/event_scenes/corridor_night.dds"
+		background = "gfx/interface/illustrations/event_scenes/fp2_corridor_night.dds"
 	}
 
 	opinion = {

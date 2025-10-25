@@ -35,8 +35,8 @@ rouse_rabble_outcome.0001 = {
 
 		hidden_effect = {
 			scope:target = {
-					primary_title = {
-						set_variable = {
+				primary_title = {
+					set_variable = {
 						name = roused_rabble_schemer
 						value = scope:owner
 					}
@@ -256,9 +256,11 @@ rouse_rabble_outcome.0002 = {
 
 		hidden_effect = {
 			scope:target = {
-				set_variable = {
-					name = roused_rabble_schemer
-					value = scope:owner
+				primary_title = {
+					set_variable = {
+						name = roused_rabble_schemer
+						value = scope:owner
+					}
 				}
 				ordered_sub_realm_county = {
 					limit = { 

@@ -91,7 +91,13 @@ yearly_playable_pulse = {
 # This pulse triggers the spy network events that make spies discover secrets and then reveal them to their employer
 gather_secrets_pulse = {
 	trigger = {
-		can_use_spy_network = yes
+		exists = house
+		trigger_if = {
+			limit = {
+				exists = house
+			}
+			can_use_spy_network = yes
+		}
 		has_variable_list = spy_network_members
 		is_ruler = yes
 		is_alive = yes
@@ -110,7 +116,13 @@ gather_secrets_pulse = {
 
 learn_innovations_pulse = {
 	trigger = {
-		can_use_spy_network = yes
+		exists = house
+		trigger_if = {
+			limit = {
+				exists = house
+			}
+			can_use_spy_network = yes
+		}
 		has_variable_list = spy_network_members
 		is_ruler = yes
 		is_alive = yes

@@ -263,7 +263,7 @@
 		# Join Provoked faction instead of joining one of these
 		modifier = {
 			add = -10000
-			scope:target = {
+			scope:faction.faction_target = {
 				any_targeting_faction = {
 					faction_is_type = provoked_dissolution_faction
 				}
@@ -276,7 +276,7 @@
 					target = scope:faction.faction_target
 					modifier = scheme_poison_opinion_opinion
 				}
-				"opinion(scope:target)" < 0
+				"opinion(scope:faction.faction_target)" < 0
 			}
 			add = 500
 		}
