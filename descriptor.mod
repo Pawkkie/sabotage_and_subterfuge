@@ -8,3 +8,4 @@ tags={
 }
 name="Sabotage and Subterfuge"
 supported_version="1.17.1"
+remote_file_id="3592971803"

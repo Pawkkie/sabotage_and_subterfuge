@@ -176,7 +176,7 @@
 		modifier = {
 			desc = SOOTHE_AND_SURVEIL_HURTS_BONUS
 			add = -5
-			scope:target = { 
+			scope:target.liege = { 
 				court_position:femme_fatale_court_position ?= {
 					aptitude = {
 						court_position = femme_fatale_court_position
@@ -191,7 +191,7 @@
 		modifier = {
 			desc = SOOTHE_AND_SURVEIL_HURTS_BONUS
 			add = -10
-			scope:target = { 
+			scope:target.liege = { 
 				court_position:femme_fatale_court_position ?= {
 					aptitude = {
 						court_position = femme_fatale_court_position
@@ -206,7 +206,7 @@
 		modifier = {
 			desc = SOOTHE_AND_SURVEIL_HURTS_BONUS
 			add = -15
-			scope:target = { 
+			scope:target.liege = { 
 				court_position:femme_fatale_court_position ?= {
 					aptitude = {
 						court_position = femme_fatale_court_position
@@ -221,7 +221,7 @@
 		modifier = {
 			desc = SOOTHE_AND_SURVEIL_HURTS_BONUS
 			add = -20
-			scope:target = { 
+			scope:target.liege = { 
 				court_position:femme_fatale_court_position ?= {
 					aptitude = {
 						court_position = femme_fatale_court_position
