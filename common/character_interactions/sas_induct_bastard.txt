@@ -47,7 +47,6 @@
                 left_icon = scope:actor
                 right_icon = scope:recipient
                 custom_tooltip = {
-                    object = scope:recipient
                     text = sas_induct_bastard_interaction_toast_desc
                 }
             }
@@ -131,7 +130,6 @@ sas_steal_bastard_interaction = {
                 left_icon = scope:actor
                 right_icon = scope:recipient
                 custom_tooltip = {
-                    object = scope:recipient
                     text = sas_steal_bastard_interaction_toast_desc
                 }
             }
