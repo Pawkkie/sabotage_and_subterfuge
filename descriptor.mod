@@ -6,7 +6,6 @@ tags={
 	"Gameplay"
 	"Schemes"
 }
-name="Sabotage and Subterfuge"
+name="SAS Dev"
 picture="thumbnail.png"
 supported_version="1.17.1"
-remote_file_id="3592971803"
