@@ -428,7 +428,7 @@
 				send_interface_toast = {
 					title = smuggle_artifact_invalidated_title
 					left_icon = scope:owner
-					custom_description_no_bullet = {
+					provoke_vassals_invalidated_no_rabble_rouser = {
 						text = smuggle_artifact_invalidated_no_smuggler
 					}
 				}
@@ -444,7 +444,7 @@
 				send_interface_toast = {
 					title = smuggle_artifact_invalidated_title
 					left_icon = scope:owner.court_position:smuggler_court_position
-					custom_description_no_bullet = {
+					provoke_vassals_invalidated_no_rabble_rouser = {
 						subject = scope:owner.court_position:smuggler_court_position
 						text = smuggle_artifact_invalidated_not_planning_heist
 					}

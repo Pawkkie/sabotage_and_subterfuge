@@ -34,6 +34,9 @@
 				exists = location
 				in_diplomatic_range = scope:owner
 			}
+			scope:target = {
+				highest_held_title_tier >= tier_county
+			}
 		}
 
 		# Master Assassin employed
@@ -238,6 +241,23 @@
 				}
 			}
 		}
+
+		# Target no longer controls at least Duchy
+		if = {
+			limit = {
+				scope:target = {
+					NOT = { highest_held_title_tier >= tier_county }
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = spread_plague_invalidated_title
+					custom_tooltip = rouse_rabble_invalidated_target_lost_title
+					left_icon = scope:target
+				}
+			}
+		}
+
 		# Master Assassin unemployed
 		if = {
 			limit = {
@@ -247,7 +267,7 @@
 				send_interface_toast = {
 					title = spread_plague_invalidated_title
 					left_icon = scope:owner
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						text = spread_plague_invalidated_no_master_assassin
 					}
 				}
@@ -264,7 +284,7 @@
 				send_interface_toast = {
 					title = spread_plague_invalidated_title
 					left_icon = scope:owner.court_position:master_assassin_court_position
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						subject = scope:owner.court_position:master_assassin_court_position
 						text = spread_plague_invalidated_not_spreading_plague
 					}

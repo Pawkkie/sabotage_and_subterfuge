@@ -722,7 +722,7 @@
 				send_interface_toast = {
 					title = provoke_vassals_invalidated_title
 					left_icon = scope:owner
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						text = provoke_vassals_invalidated_no_rabble_rouser
 					}
 				}
@@ -738,7 +738,7 @@
 				send_interface_toast = {
 					title = provoke_vassals_invalidated_title
 					left_icon = scope:owner.court_position:rabble_rouser_court_position
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						subject = scope:owner.court_position:rabble_rouser_court_position
 						text = provoke_vassals_invalidated_not_provoking_vassals
 					}

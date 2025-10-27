@@ -732,7 +732,7 @@
 				send_interface_toast = {
 					title = poison_opinion_invalidated_title
 					left_icon = scope:owner
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						text = poison_opinion_invalidated_no_femme_fatale
 					}
 				}
@@ -748,7 +748,7 @@
 				send_interface_toast = {
 					title = poison_opinion_invalidated_title
 					left_icon = scope:owner.court_position:femme_fatale_court_position
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						subject = scope:owner.court_position:femme_fatale_court_position
 						text = poison_opinion_invalidated_not_poisoning_opinion
 					}
@@ -765,7 +765,7 @@
 				send_interface_toast = {
 					title = poison_opinion_invalidated_title
 					left_icon = scope:target
-					custom_description_no_bullet = {
+					custom_tooltip = {
 						text = poison_opinion_invalidated_no_liege
 					}
 				}
