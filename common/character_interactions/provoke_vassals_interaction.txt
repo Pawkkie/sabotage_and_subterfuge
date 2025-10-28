@@ -10,7 +10,7 @@
 	desc = provoke_vassals_interaction_desc
 
 	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+		scope:recipient != scope:actor
 		scope:actor = {
 			is_adult = yes
 		}

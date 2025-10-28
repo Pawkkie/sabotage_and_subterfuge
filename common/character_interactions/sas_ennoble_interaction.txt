@@ -16,7 +16,7 @@
  	cooldown = { years = 2 }
 
 	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+		scope:recipient != scope:actor
 
 		scope:actor = {
 			is_landed = yes

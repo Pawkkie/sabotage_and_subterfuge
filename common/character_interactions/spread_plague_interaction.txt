@@ -10,7 +10,7 @@
 	desc = spread_plague_interaction_desc
 
 	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+		scope:recipient != scope:actor
 	}
 
 	is_valid_showing_failures_only = {
