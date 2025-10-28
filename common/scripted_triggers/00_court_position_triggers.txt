@@ -218,6 +218,11 @@ can_appoint_char_to_any_court_position = {
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = cherbi_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = yeke_jarquchi_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = keeper_of_the_horses_court_position }
+		# SAS Change
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = rabble_rouser_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = femme_fatale_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = smuggler_court_position }
+		# SAS Change End
 	}
 }
 
@@ -263,6 +268,11 @@ has_intrigue_court_position = {
 		has_court_position = food_taster_court_position
 		has_court_position = chief_eunuch_court_position
 		has_court_position = master_assassin_court_position
+		# SAS Change
+		has_court_position = rabble_rouser_court_position
+		has_court_position = femme_fatale_court_position
+		has_court_position = smuggler_court_position
+		# SAS Change End
 	}
 }
 
