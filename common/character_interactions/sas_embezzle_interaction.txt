@@ -203,7 +203,7 @@ sas_embezzle_interaction = {
 					}
 					if = {
 						limit = { 
-							scope:owner = {
+							scope:actor = {
 								any_vassal_or_below = {
 									this = scope:recipient
 								}
@@ -248,7 +248,7 @@ sas_embezzle_interaction = {
 		## Almost never against own subjects
 		modifier = {
 			add = -500
-			scope:owner = {
+			scope:actor = {
 				any_vassal_or_below = {
 					this = scope:recipient
 				}

@@ -185,7 +185,14 @@ roused_rabble_faction = {
 	can_county_create = {
 		title_is_a_faction_member = no
 		has_county_modifier = county_rabble_roused_modifier
-		NOT = { exists = faction_war }
+		NOT = { 
+			exists = faction_war
+			scope:target = {
+			any_targeting_faction = {
+				faction_is_type = roused_rabble_faction
+			}
+		}
+	 	}
 	}
 
 	can_character_become_leader = {

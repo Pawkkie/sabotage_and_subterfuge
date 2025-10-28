@@ -1,15 +1,8 @@
 ﻿ai_agent_join_chance_rabble_rouser = {
 	modifier = {
-		add = {
-			if = {
-				limit = { 
-					liege = scope:owner 
-					has_court_position = rabble_rouser_court_position 
-				}
-				value = 1000
-			}
-		}
-
+		add = 1000
+		liege = scope:owner 
+		scope:owner.court_position:rabble_rouser_court_position = root
 		desc = SCHEME_IS_RABBLE_ROUSER
 	}
 }
