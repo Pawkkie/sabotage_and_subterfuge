@@ -2,13 +2,40 @@
 	court_position_types = { 
 		smuggler_court_position
 	}
+	is_shown = {
+	}
+	is_valid_showing_failures_only = {
+	}
 	cost = {
 		round = no
 		gold = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = no
+					}
+				}
+			}
 			add = {
 				value = monthly_court_position_task_cost
 				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
 				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = yes
+					}
+				}
+				add = {
+					value = monthly_court_position_task_cost
+					desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+					format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+				}
 			}
 		}
 	}
@@ -59,7 +86,10 @@ smuggler_task_monitor_supplies = {
 	court_position_types = { 
 		smuggler_court_position 
 	}
-
+	is_shown = {
+	}
+	is_valid_showing_failures_only = {
+	}
 	cost = {
 		round = no
 		prestige = {

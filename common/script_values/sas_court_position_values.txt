@@ -1,0 +1,413 @@
+rabble_rouser_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = rabble_rouser } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved with obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = rabble_rouser
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = rabble_rouser }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = rabble_rouser }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+rabble_rouser_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = rabble_rouser } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = rabble_rouser
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = rabble_rouser }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = rabble_rouser }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+femme_fatale_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved with obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = femme_fatale
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = femme_fatale }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = femme_fatale }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+femme_fatale_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = femme_fatale
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = femme_fatale }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = femme_fatale }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+smuggler_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = smuggler } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved with obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = smuggler
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = smuggler }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = smuggler }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+smuggler_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = smuggler } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Set to 0 with Special Operations Training
+	if = {
+		limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		multiply = {
+			value = 0
+			desc = special_operations_training_court_position_modifier
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = smuggler
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = smuggler }
+		}
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = smuggler }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}

@@ -2,6 +2,7 @@
 	sort_order = 255
 	max_available_positions = 1
 	skill = intrigue
+	minimum_rank = county
 
 	court_position_asset = {
 		animation = dancing
@@ -166,6 +167,19 @@
 				desc = trait_education_intrigue
 			}
 		}
+		add = court_position_aptitude_eunuch_tradition_value
+		add = court_position_aptitude_traveling_friends_value
+
+		add = court_position_aptitude_family_business_value
+		add = court_position_aptitude_high_penalty_value
+		# Bonus from court.8311
+		if = {
+			limit = { var:bonus_aptitude_role ?= flag:femme_fatale }
+			add = {
+				value = cp_bonus_aptitude_value
+				desc = cp_bonus_aptitude
+			}
+		}
 		# Seneschal
 		if = {
 			limit = {
@@ -176,6 +190,18 @@
 			add = {
 				value = liege.court_position:seneschal_court_position.seneschal_improve_court_value
 				desc = seneschal_improve_court_aptitude_desc
+			}
+		}
+		# Yeke Jarquchi
+		if = {
+			limit = {
+				liege.court_position:yeke_jarquchi_court_position ?= {
+					has_variable = performing_improve_court
+				}
+			}
+			add = {
+				value = liege.court_position:yeke_jarquchi_court_position.yeke_jarquchi_improve_court_value
+				desc = yeke_jarquchi_improve_court_aptitude_desc
 			}
 		}
 	}
@@ -208,7 +234,7 @@
 
 	is_shown_character = {
 		scope:employee = {
-			is_imprisoned = no
+			court_position_employee_shown_trigger = yes
 		}
 	}
 
@@ -259,143 +285,42 @@
 	}
 
 	salary = {
-		round = no
 		gold = {
-			value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
-			# Set to 0 with Dynasty Perk Inner Circle
+			value = 0
 			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
-				multiply = {
-					value = 0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Set to 0 with Special Operations Training
-			if = {
-				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
-				multiply = {
-					value = 0
-					desc = special_operations_training_court_position_modifier
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Halved with obligation hook
-			else_if = {
 				limit = {
-					court_position_obligation_hook_salary_trigger = {
-						POS = femme_fatale
-						LIEGE = scope:liege
+					scope:liege = {
+						has_treasury = no
 					}
 				}
-				multiply = {
-					value = 0.5
-					desc = obligation_hook_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
+				add = femme_fatale_total_salary_value
 			}
-			# Halved salary
+		}
+		treasury = {
+			value = 0
 			if = {
 				limit = {
-					court_position_halved_salary_trigger = { POS = femme_fatale }
+					scope:liege = {
+						has_treasury = yes
+					}
 				}
-				multiply = {
-					value = 0.5
-					desc = court_position_halved_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Increased salary
-			if = {
-				limit = {
-					court_position_increased_salary_trigger = { POS = femme_fatale }
-				}
-				multiply = {
-					value = 1.5
-					desc = court_position_increased_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			#You're working with LAAMPS now
-			if = {
-				limit = { 
-					scope:liege ?= { government_has_flag = government_is_landless_adventurer }
-				}
-				multiply = {
-					value = 0
-					desc = court_position_laamps_free
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
+				add = femme_fatale_total_salary_value
 			}
 		}
 		prestige = {
-			value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
-			# Set to 0 with Dynasty Perk Inner Circle
-			if = {
-				limit = { court_position_inner_circle_salary_trigger = { POS = femme_fatale } }
-				multiply = {
-					value = 0
-					desc = inner_circle_salary_mod
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Set to 0 with Special Operations Training
-			if = {
-				limit = { scope:liege = { house = { has_house_modifier = sas_special_operations_training_house_modifier } } }
-				multiply = {
-					value = 0
-					desc = special_operations_training_court_position_modifier
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Halved via obligation hook
-			else_if = {
-				limit = {
-					court_position_obligation_hook_salary_trigger = {
-						POS = femme_fatale
-						LIEGE = scope:liege
-					}
-				}
-				multiply = {
-					value = 0.5
-					desc = obligation_hook_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Halved salary
-			if = {
-				limit = {
-					court_position_halved_salary_trigger = { POS = femme_fatale }
-				}
-				multiply = {
-					value = 0.5
-					desc = court_position_halved_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			# Increased salary
-			if = {
-				limit = {
-					court_position_increased_salary_trigger = { POS = femme_fatale }
-				}
-				multiply = {
-					value = 1.5
-					desc = court_position_increased_salary
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
-			#You're working with LAAMPS now
-			if = {
-				limit = { 
-					scope:liege ?= { government_has_flag = government_is_landless_adventurer }
-				}
-				multiply = {
-					value = 0
-					desc = court_position_laamps_free
-					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
-				}
-			}
+			value = femme_fatale_prestige_salary_value
 		}
+		round = no
+	}
+
+	received_salary = {
+		gold = {
+			value = femme_fatale_total_salary_value
+		}
+		prestige = {
+			value = femme_fatale_prestige_salary_value
+		}
+		round = no
 	}
 
 	is_powerful_agent = yes
@@ -481,10 +406,9 @@
 		}
 	}
 
-	candidate_score = {
+	# Scripted value to determine whether an AI will hire/fire a position or not. Hires over 0, fires under -50. Look in _court_positions.info for more extensive documentation!
+	ai_position_score = {
 		value = 50
-		add = scope:base_value
-		add = court_position_candidate_score_base_value
 		scope:liege = {
 			# More likely to hire if a Schemer
 			if = {
@@ -505,28 +429,28 @@
 				add = 25
 			}
 		}
-		# More likely to hire with low capital control
+		# More likely to if good at diplomacy and intrigue
 		scope:liege = {
 			if = {
 				limit = {
-					diplomacy >= 12
-					intrigue >= 12
+					diplomacy >= 10
+					intrigue >= 10
 				}
 				add = 50
 			}
 		}
-		if = {
-			limit = {
-				scope:employee_aptitude > 2
-			}
-			add = court_position_candidate_aptitude_value
-		}
+		add = court_position_debt_considerations_value
+	}
+	ai_candidate_score = {
+		value = 50
+		add = scope:base_value
+		add = court_position_candidate_score_base_value
+		add = court_position_candidate_aptitude_value
 		if = { # To stop petitioned positions immediately being fired by the AI
 			limit = {
-				court_position_petition_ai_weight_trigger = { ROLE = smuggler }
+				court_position_petition_ai_weight_trigger = { ROLE = femme_fatale }
 			}
 			add = 1000
 		}
-		add = court_position_debt_considerations_value
 	}
 }

@@ -6,6 +6,15 @@
 
 	desc = sas_establish_criminal_underground_decision_desc
 
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 120
+		kingdom = 180
+		empire = 180
+		hegemony = 180
+	}
+
 	is_shown = {
 		exists = house
 		NOT = {
@@ -66,6 +75,13 @@
 			}
 		}
 	}
+	
+	ai_will_do = {
+		exists = house
+	}
+	ai_potential = {
+		base = 10
+	}
 }
 
 sas_expand_spy_network_decision = {
@@ -75,6 +91,15 @@ sas_expand_spy_network_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_expand_spy_network_decision_desc
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 72
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
 
 	is_shown = {
 		exists = house
@@ -121,6 +146,12 @@ sas_expand_spy_network_decision = {
 			}
 		}
 	}
+	ai_will_do = {
+		exists = house
+	}
+	ai_potential = {
+		base = 10
+	}
 }
 
 sas_special_operations_training_decision = {
@@ -130,6 +161,15 @@ sas_special_operations_training_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_special_operations_training_decision_desc
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 72
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
 
 	is_shown = {
 		exists = house
@@ -176,6 +216,12 @@ sas_special_operations_training_decision = {
 			}
 		}
 	}
+	ai_will_do = {
+		exists = house
+	}
+	ai_potential = {
+		base = 10
+	}
 }
 
 sas_house_of_sabotage_and_subterfuge_decision = {
@@ -185,6 +231,15 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_house_of_sabotage_and_subterfuge_decision_desc
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 72
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
 
 	is_shown = {
 		exists = house
@@ -261,5 +316,11 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 		dynasty = {
 			add_dynasty_prestige = 1000
 		}
+	}
+	ai_will_do = {
+		exists = house
+	}
+	ai_potential = {
+		base = 10
 	}
 }
