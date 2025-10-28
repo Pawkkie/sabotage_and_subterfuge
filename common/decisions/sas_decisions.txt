@@ -77,10 +77,10 @@
 	}
 	
 	ai_will_do = {
-		exists = house
+		base = 10
 	}
 	ai_potential = {
-		base = 10
+		always = yes
 	}
 }
 
@@ -147,10 +147,10 @@ sas_expand_spy_network_decision = {
 		}
 	}
 	ai_will_do = {
-		exists = house
+		base = 10
 	}
 	ai_potential = {
-		base = 10
+		always = yes
 	}
 }
 
@@ -217,10 +217,10 @@ sas_special_operations_training_decision = {
 		}
 	}
 	ai_will_do = {
-		exists = house
+		base = 10
 	}
 	ai_potential = {
-		base = 10
+		always = yes
 	}
 }
 
@@ -318,9 +318,9 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 		}
 	}
 	ai_will_do = {
-		exists = house
+		base = 10
 	}
 	ai_potential = {
-		base = 10
+		always = yes
 	}
 }

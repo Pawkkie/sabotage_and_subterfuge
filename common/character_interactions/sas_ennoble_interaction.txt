@@ -39,7 +39,6 @@
 	is_valid_showing_failures_only = {
 		scope:actor.gold >= 50
 		scope:actor.prestige >= 150
-		scope:recipient = { is_busy_in_events_localised = yes }
 	}
 
 	cost = {

@@ -910,12 +910,6 @@ ai_agent_join_chance_basic_suite_modifier = {
 		this = scope:target
 		desc = COMPASSIONATE_REASON #SCHEME_NOT_AGAINST_SELF
 	}
-	## Agent is not diplomatically available
-	modifier = {
-		add = -1000
-		is_busy_in_events_localised = no
-		desc = SCHEME_NOT_DIPLOMATICALLY_AVAILABLE
-	}
 	# SAS Change: Spies and criminal court positions can be agents easier
 	modifier = { 
 		add = { 

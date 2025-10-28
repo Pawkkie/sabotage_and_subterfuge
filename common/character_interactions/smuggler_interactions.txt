@@ -43,7 +43,6 @@
 			any_character_artifact = { 
 				exists = this
 			}
-			is_busy_in_events_localised = yes
 		}
 
 		# Smuggler employed
