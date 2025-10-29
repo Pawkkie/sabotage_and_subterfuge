@@ -79,6 +79,17 @@ rouse_rabble_outcome.0001 = {
 					}
 			}
 		}
+		scope:owner = {
+			if = {
+				limit = {
+					has_trait = peasant_leader
+				}
+				add_trait_xp = {
+					trait = peasant_leader
+					value = peasant_leader_xp_value
+				}
+			}
+		}
 		random_list = {
 			20 = {
 				modifier = { 
@@ -121,29 +132,14 @@ rouse_rabble_outcome.0001 = {
 					if = {
 						limit = { 
 							NOT = { 
-								has_trait = populist_leader
+								has_trait = peasant_leader
 							} 
 						}
-						add_trait = populist_leader
+						add_trait = peasant_leader
 						if = { 
-							limit = { has_trait = peasant_leader }
-							remove_trait = peasant_leader
+							limit = { has_trait = populist_leader }
+							remove_trait = populist_leader
 						}
-					}
-				}
-				if = {
-					limit = { 
-						NOT = { 
-							has_trait = populist_leader
-						} 
-					}
-					random = {
-						chance = 15
-						add_trait = populist_leader
-					}
-					if = { 
-						limit = { has_trait = peasant_leader }
-						remove_trait = peasant_leader
 					}
 				}
 			}
@@ -183,29 +179,6 @@ rouse_rabble_outcome.0001 = {
 						}
 					}
 					add = -20
-				}
-				scope:owner.court_position:rabble_rouser_court_position = { 
-					if = {
-						limit = { 
-							NOT = { 
-								has_trait = peasant_leader 
-								has_trait = populist_leader
-							} 
-						}
-						add_trait = peasant_leader
-					}
-				}
-				if = {
-					limit = { 
-						NOT = { 
-							has_trait = peasant_leader 
-							has_trait = populist_leader
-						} 
-					}
-					random = {
-						chance = 15
-						add_trait = peasant_leader
-					}
 				}
 			}
 		}
@@ -295,6 +268,17 @@ rouse_rabble_outcome.0002 = {
 					}
 			}
 		}
+		scope:owner = {
+			if = {
+				limit = {
+					has_trait = peasant_leader
+				}
+				add_trait_xp = {
+					trait = peasant_leader
+					value = peasant_leader_xp_value
+				}
+			}
+		}
 		random_list = {
 			20 = {
 				modifier = { 
@@ -337,29 +321,14 @@ rouse_rabble_outcome.0002 = {
 					if = {
 						limit = { 
 							NOT = { 
-								has_trait = populist_leader
+								has_trait = peasant_leader
 							} 
 						}
-						add_trait = populist_leader
+						add_trait = peasant_leader
 						if = { 
-							limit = { has_trait = peasant_leader }
-							remove_trait = peasant_leader
+							limit = { has_trait = populist_leader }
+							remove_trait = populist_leader
 						}
-					}
-				}
-				if = {
-					limit = { 
-						NOT = { 
-							has_trait = populist_leader
-						} 
-					}
-					random = {
-						chance = 15
-						add_trait = populist_leader
-					}
-					if = { 
-						limit = { has_trait = peasant_leader }
-						remove_trait = peasant_leader
 					}
 				}
 			}
@@ -399,29 +368,6 @@ rouse_rabble_outcome.0002 = {
 						}
 					}
 					add = -20
-				}
-				scope:owner.court_position:rabble_rouser_court_position = { 
-					if = {
-						limit = { 
-							NOT = { 
-								has_trait = peasant_leader 
-								has_trait = populist_leader
-							} 
-						}
-						add_trait = peasant_leader
-					}
-				}
-				if = {
-					limit = { 
-						NOT = { 
-							has_trait = peasant_leader 
-							has_trait = populist_leader
-						} 
-					}
-					random = {
-						chance = 15
-						add_trait = peasant_leader
-					}
 				}
 			}
 		}
