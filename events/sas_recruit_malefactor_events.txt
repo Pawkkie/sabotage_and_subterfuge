@@ -1,0 +1,662 @@
+﻿namespace = sas_recruit_malefactor
+
+scripted_trigger mediocre_rabble_rouser_trigger = {
+	can_be_employed_as = rabble_rouser_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		diplomacy >= 7
+		intrigue >= 7
+	}
+}
+
+scripted_trigger good_rabble_rouser_trigger = {
+	can_be_employed_as = rabble_rouser_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		diplomacy >= 14
+		intrigue >= 14
+	}
+	OR = {
+		has_trait = education_intrigue
+		has_trait = education_diplomacy
+	}
+}
+
+sas_recruit_malefactor.1001 = {
+	type = character_event
+	title = sas_recruit_malefactor.1001.t
+	desc = sas_recruit_malefactor.1001.desc
+	theme = intrigue
+	
+	left_portrait = {
+		character = scope:mediocre_rabble_rouser
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:good_rabble_rouser
+		animation = personality_honorable
+	}
+
+	immediate = {
+		# Find a mediocre one
+		if = { # check for a mediocre character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					mediocre_rabble_rouser_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { mediocre_rabble_rouser_trigger = yes }
+				save_scope_as = mediocre_rabble_rouser
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				random_traits_list = {
+					count = 1
+					education_diplomacy_1 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = mediocre_rabble_rouser
+			}
+		}
+		# Find a good one
+		if = { # check for a GOOD character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					good_rabble_rouser_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { good_rabble_rouser_trigger = yes }
+				save_scope_as = good_rabble_rouser
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				random_traits_list = {
+					count = 1
+					education_diplomacy_1 = {}
+					education_diplomacy_2 = {}
+					education_diplomacy_3 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+					education_intrigue_3 = {}
+				}
+				random_traits_list = {
+					count = 1
+					brave = {}
+					diligent = {}
+					ambitious = {}
+					generous = {}
+					gregarious = {}
+					loyal = {}
+					lifestyle_wayfarer = {}
+					peasant_leader = {}
+					populist_leader = {}
+					lifestyle_reveler = {}
+					lifestyle_traveler = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = good_rabble_rouser
+			}
+		}
+	}
+	option = { 
+		name = sas_recruit_malefactor.1001.a
+		# custom_tooltip = sas_recruit_malefactor.1001.a.aptitude
+		pay_treasury_or_gold = {
+			target = scope:mediocre_rabble_rouser
+			value = low_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:mediocre_rabble_rouser }
+		court_position_grant_effect = {
+			CANDIDATE = scope:mediocre_rabble_rouser
+			POS = rabble_rouser
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1001.b
+		# custom_tooltip = sas_recruit_malefactor.1001.b.aptitude
+		pay_treasury_or_gold = {
+			target = scope:good_rabble_rouser
+			value = high_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:good_rabble_rouser }
+		court_position_grant_effect = {
+			CANDIDATE = scope:good_rabble_rouser
+			POS = rabble_rouser
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1001.c
+	}
+}
+
+scripted_trigger mediocre_femme_fatale_trigger = {
+	can_be_employed_as = femme_fatale_court_position
+	is_available_healthy_adult = yes
+	intrigue >= 7
+}
+
+scripted_trigger good_femme_fatale_trigger = {
+	can_be_employed_as = femme_fatale_court_position
+	is_available_healthy_adult = yes
+	intrigue >= 14
+	has_trait = education_intrigue
+}
+
+sas_recruit_malefactor.1002 = {
+	type = character_event
+	title = sas_recruit_malefactor.1002.t
+	desc = sas_recruit_malefactor.1002.desc
+	theme = intrigue
+	
+	left_portrait = {
+		character = scope:mediocre_femme_fatale
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:good_femme_fatale
+		animation = personality_honorable
+	}
+
+	immediate = {
+		# Find a mediocre one
+		if = { # check for a mediocre character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					mediocre_femme_fatale_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { mediocre_femme_fatale_trigger = yes }
+				save_scope_as = mediocre_femme_fatale
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = 100
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				dynasty = generate
+				random_traits_list = {
+					count = 1
+					education_diplomacy_1 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = mediocre_femme_fatale
+			}
+		}
+		# Find a good one
+		if = { # check for a GOOD character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					good_femme_fatale_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { good_femme_fatale_trigger = yes }
+				save_scope_as = good_femme_fatale
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = 100
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				dynasty = generate
+				random_traits_list = {
+					count = 1
+					education_diplomacy_1 = {}
+					education_diplomacy_2 = {}
+					education_diplomacy_3 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+					education_intrigue_3 = {}
+				}
+				random_traits_list = {
+					count = 1
+					lustful = {}
+					ambitious = {}
+					vengeful = {}
+					deceitful = {}
+					fickle = {}
+					beauty_good_1 = {}
+					adulterer = {}
+				}
+				random_traits = yes
+				diplomacy = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = good_femme_fatale
+			}
+		}
+	}
+	option = { 
+		name = sas_recruit_malefactor.1002.a
+		# custom_tooltip = sas_recruit_malefactor.1002.a.aptitude
+		pay_treasury_or_gold = {
+			target = scope:mediocre_femme_fatale
+			value = low_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:mediocre_femme_fatale }
+		court_position_grant_effect = {
+			CANDIDATE = scope:mediocre_femme_fatale
+			POS = femme_fatale
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1002.b
+		# custom_tooltip = sas_recruit_malefactor.1002.b.aptitude
+		pay_treasury_or_gold = {
+			target = scope:good_femme_fatale
+			value = high_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:good_femme_fatale }
+		court_position_grant_effect = {
+			CANDIDATE = scope:good_femme_fatale
+			POS = femme_fatale
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1002.c
+	}
+}
+
+scripted_trigger mediocre_smuggler_trigger = {
+	can_be_employed_as = smuggler_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		stewardship >= 7
+		intrigue >= 7
+	}
+}
+
+scripted_trigger good_smuggler_trigger = {
+	can_be_employed_as = smuggler_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		stewardship >= 14
+		intrigue >= 14
+	}
+	OR = {
+		has_trait = education_stewardship
+		has_trait = education_intrigue
+	}
+}
+
+sas_recruit_malefactor.1003 = {
+	type = character_event
+	title = sas_recruit_malefactor.1003.t
+	desc = sas_recruit_malefactor.1003.desc
+	theme = intrigue
+	
+	left_portrait = {
+		character = scope:mediocre_smuggler
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:good_smuggler
+		animation = personality_honorable
+	}
+
+	immediate = {
+		# Find a mediocre one
+		if = { # check for a mediocre character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					mediocre_smuggler_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { mediocre_smuggler_trigger = yes }
+				save_scope_as = mediocre_smuggler
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				dynasty = generate
+				random_traits_list = {
+					count = 1
+					education_stewardship_1 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+				}
+				random_traits = yes
+				stewardship = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = mediocre_smuggler
+			}
+		}
+		# Find a good one
+		if = { # check for a GOOD character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					good_smuggler_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { good_smuggler_trigger = yes }
+				save_scope_as = good_smuggler
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				random_traits_list = {
+					count = 1
+					education_stewardship_1 = {}
+					education_stewardship_2 = {}
+					education_stewardship_3 = {}
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+					education_intrigue_3 = {}
+				}
+				random_traits_list = {
+					count = 1
+					deceitful = {}
+					diligent = {}
+					paranoid = {}
+					patient = {}
+					greedy = {}
+					logistician = {}
+					loyal = {}
+					pilgrim = {}
+					traveler = {}
+				}
+				random_traits = yes
+				stewardship = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = good_smuggler
+			}
+		}
+	}
+	option = { 
+		name = sas_recruit_malefactor.1003.a
+		# custom_tooltip = sas_recruit_malefactor.1003.a.aptitude
+		pay_treasury_or_gold = {
+			target = scope:mediocre_smuggler
+			value = low_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:mediocre_smuggler }
+		court_position_grant_effect = {
+			CANDIDATE = scope:mediocre_smuggler
+			POS = smuggler
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1003.b
+		# custom_tooltip = sas_recruit_malefactor.1003.b.aptitude
+		pay_treasury_or_gold = {
+			target = scope:good_smuggler
+			value = high_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:good_smuggler }
+		court_position_grant_effect = {
+			CANDIDATE = scope:good_smuggler
+			POS = smuggler
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1003.c
+	}
+}
+
+scripted_trigger mediocre_master_assassin_trigger = {
+	can_be_employed_as = master_assassin_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		prowess >= 7
+		intrigue >= 7
+	}
+}
+
+scripted_trigger good_master_assassin_trigger = {
+	can_be_employed_as = master_assassin_court_position
+	is_available_healthy_adult = yes
+	OR = {
+		prowess >= 14
+		intrigue >= 14
+	}
+	has_trait = education_intrigue
+}
+
+sas_recruit_malefactor.1004 = {
+	type = character_event
+	title = sas_recruit_malefactor.1004.t
+	desc = sas_recruit_malefactor.1004.desc
+	theme = intrigue
+	
+	left_portrait = {
+		character = scope:mediocre_master_assassin
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:good_master_assassin
+		animation = personality_honorable
+	}
+
+	immediate = {
+		# Find a mediocre one
+		if = { # check for a mediocre character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					mediocre_master_assassin_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { mediocre_master_assassin_trigger = yes }
+				save_scope_as = mediocre_master_assassin
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				set_to_lowborn = yes
+				random_traits_list = {
+					count = 1
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+				}
+				random_traits = yes
+				prowess = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = mediocre_master_assassin
+				after_creation = {
+					set_to_lowborn = yes
+				}
+			}
+		}
+		# Find a good one
+		if = { # check for a GOOD character in the pool
+			limit = {
+				any_pool_character = {
+					province = root.capital_province
+					good_master_assassin_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.capital_province
+				limit = { good_master_assassin_trigger = yes }
+				save_scope_as = good_master_assassin
+			}
+		}
+		else = { # otherwise create one
+			create_character = {
+				location = root.capital_province
+				gender_female_chance = root_soldier_female_chance
+				age = { 16 30 }
+				culture = root.location.culture
+				faith = root.location.faith
+				set_to_lowborn = yes
+				random_traits_list = {
+					count = 1
+					education_intrigue_1 = {}
+					education_intrigue_2 = {}
+					education_intrigue_3 = {}
+				}
+				random_traits_list = {
+					count = 1
+					lifestyle_blademaster = {}
+					deceitful = {}
+					murderer = {}
+					order_member = {}
+					faith_warrior = {}
+					zealous = {}
+					brave = {}
+				}
+				random_traits = yes
+				prowess = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				intrigue = {
+					max_template_decent_skill
+					max_template_decent_skill
+				}
+				save_scope_as = good_master_assassin
+				after_creation = {
+					set_to_lowborn = yes
+				}
+			}
+		}
+	}
+	option = { 
+		name = sas_recruit_malefactor.1004.a
+		# custom_tooltip = sas_recruit_malefactor.1004.a.aptitude
+		pay_treasury_or_gold = {
+			target = scope:mediocre_master_assassin
+			value = low_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:mediocre_master_assassin }
+		court_position_grant_effect = {
+			CANDIDATE = scope:mediocre_master_assassin
+			POS = master_assassin
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1004.b
+		# custom_tooltip = sas_recruit_malefactor.1004.b.aptitude
+		pay_treasury_or_gold = {
+			target = scope:good_master_assassin
+			value = high_skill_court_physician_cost
+		}
+		hidden_effect = { add_courtier = scope:good_master_assassin }
+		court_position_grant_effect = {
+			CANDIDATE = scope:good_master_assassin
+			POS = master_assassin
+			EMPLOYER = root
+		}
+	}
+
+	option = {
+		name = sas_recruit_malefactor.1004.c
+	}
+}

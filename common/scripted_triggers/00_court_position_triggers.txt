@@ -1203,6 +1203,11 @@ can_be_employed_as_any_court_position_trigger = {
 		can_be_employed_as = yeke_jarquchi_court_position
 		can_be_employed_as = foreign_emissary_court_position
 		can_be_employed_as = keeper_of_the_horses_court_position
+		# SAS Change
+		can_be_employed_as = rabble_rouser_court_position
+		can_be_employed_as = femme_fatale_court_position
+		can_be_employed_as = smuggler_court_position
+		# SAS Change End
 	}
 }
 

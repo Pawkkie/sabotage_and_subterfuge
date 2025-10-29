@@ -5,7 +5,6 @@ tags={
 	"Decisions"
 	"Gameplay"
 	"Schemes"
-	"1.17 'Ascendant'"
 	"1.18 'Crane'"
 }
 name="SAS Dev"

@@ -324,3 +324,163 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 		always = yes
 	}
 }
+
+sas_recruit_malefactor_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = sabotage_and_subterfuge
+
+	desc = sas_recruit_malefactor_decision_desc
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	widget = {
+		gui = "decision_view_widget_option_list_generic"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON"
+		show_from_start = yes
+
+		item = { # Rabble Rouser
+			value = hire_rabble_rouser
+			is_shown = {
+				always = yes
+			}
+			is_valid = {
+				NOR = {
+					employs_court_position = rabble_rouser_court_position
+					custom_tooltip = {
+						text = recruit_rabble_rouser_cooldown_tt
+						has_character_flag = recruit_rabble_rouser_cooldown
+					}
+				}
+			}
+			current_description = hire_rabble_rouser_desc
+			localization = hire_rabble_rouser
+			icon = "gfx/interface/icons/court_position_types/rabble_rouser_court_position.dds"
+			ai_chance = { value = 100 }
+		} 
+		item = { # Femme Fatale
+			value = hire_femme_fatale
+			is_shown = {
+				always = yes
+			}
+			is_valid = {
+				NOR = {
+					employs_court_position = femme_fatale_court_position
+					custom_tooltip = {
+						text = recruit_femme_fatale_cooldown_tt
+						has_character_flag = recruit_femme_fatale_cooldown
+					}
+				}
+			}
+			current_description = hire_femme_fatale_desc
+			localization = hire_femme_fatale
+			icon = "gfx/interface/icons/court_position_types/femme_fatale_court_position.dds"
+			ai_chance = { value = 100 }
+		}
+		item = { # Smuggler
+			value = hire_smuggler
+			is_shown = {
+				always = yes
+			}
+			is_valid = {
+				NOR = {
+					employs_court_position = smuggler_court_position
+					custom_tooltip = {
+						text = recruit_smuggler_cooldown_tt
+						has_character_flag = recruit_smuggler_cooldown
+					}
+				}
+			}
+			current_description = hire_smuggler_desc
+			localization = hire_smuggler
+			icon = "gfx/interface/icons/court_position_types/smuggler_court_position.dds"
+			ai_chance = { value = 100 }
+		}
+		item = { # Master Assassin
+			value = hire_master_assassin
+			is_shown = {
+				always = yes
+			}
+			is_valid = {
+				NOR = {
+					employs_court_position = master_assassin_court_position
+					custom_tooltip = {
+						text = recruit_master_assassin_cooldown_tt
+						has_character_flag = recruit_master_assassin_cooldown
+					}
+				}
+			}
+			current_description = hire_master_assassin_desc
+			localization = hire_master_assassin
+			icon = "gfx/interface/icons/court_position_types/master_assassin_court_position.dds"
+			ai_chance = { value = 100 }
+		}
+	}
+
+	effect = {
+		custom_tooltip = sas_recruit_court_position_decision_tt
+		hidden_effect = {
+			custom_tooltip = sas_recruit_malefactor_decision_tooltip
+			if = { # Rabble Rouser
+				limit = { scope:hire_rabble_rouser = yes }
+				add_character_flag = {
+					flag = recruit_rabble_rouser_cooldown
+					years = 1
+				}
+				trigger_event = {
+					id = sas_recruit_malefactor.1001
+					days = { 7 14 }
+				}
+			}
+			else_if = { # Femme Fatale
+				limit = { scope:hire_femme_fatale = yes }
+				add_character_flag = {
+					flag = recruit_femme_fatale_cooldown
+					years = 1
+				}
+				trigger_event = {
+					id = sas_recruit_malefactor.1002
+					days = { 7 14 }
+				}
+			}
+			else_if = { # Smuggler
+				limit = { scope:hire_smuggler = yes }
+				add_character_flag = {
+					flag = recruit_smuggler_cooldown
+					years = 1
+				}
+				trigger_event = {
+					id = sas_recruit_malefactor.1003
+					days = { 7 14 }
+				}
+			}
+			else_if = { # Master Assassin
+				limit = { scope:hire_master_assassin = yes }
+				add_character_flag = {
+					flag = recruit_master_assassin_cooldown
+					years = 1
+				}
+				trigger_event = {
+					id = sas_recruit_malefactor.1004
+					days = { 7 14 }
+				}
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = no # Only players can do this. AI vassals go through the normal court events/hold court activity.
+	}
+}

@@ -46,4 +46,45 @@
  sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "You employ at least 8 [sas_spies|E]"
  sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "Gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time you complete a [hostile_schemes|E]"
  sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "Increase the chances of your [sas_spies|E] discovering secrets and innovations"
- 
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "Recruit Malefactor"
+ sas_recruit_malefactor_decision_desc: "A well-functioning criminal underground requires the work of many hands. I shall dispatch my servants far and wide to find suitable candidates for our more important vacancies."
+ sas_recruit_malefactor_decision_tooltip: "Search for a character to fill a [court_position|E] pertinent to the criminal underground for a fee\n\n#weak For example, you may hire a [GetCourtPositionType('rabble_rouser_court_position').GetName]#!"
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "Choose Position Type"
+ sas_recruit_malefactor_decision_confirm: "Confirm"
+ sas_recruit_court_position_decision_tt: "You will receive two suitable candidates from which to choose for the selected [court_position|E]"
+
+ # Rabble Rouser
+ hire_rabble_rouser: "Search for Rabble Rouser"
+ hire_rabble_rouser_tooltip: "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('rabble_rouser_court_position').GetName()]"
+ hire_rabble_rouser_desc: "A [rabble_rouser_court_position|E] is key to stirring up trouble in other realms, or keeping the populace content in our own. I will ask my servants to bring forth a number of suitable candidates."
+#  hire_rabble_rouser_decision_effect_tooltip: "You will be presented with a group of [GetCourtPositionType('rabble_rouser_court_position').GetName()] candidates and may hire one of them for a fee and a monthly salary"
+#  hire_rabble_rouser_decision_confirm: "Start the search"
+ recruit_rabble_rouser_cooldown_tt: "Recruiting a [GetCourtPositionType('rabble_rouser_court_position').GetName] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]"
+
+ # Femme Fatale
+ hire_femme_fatale: "Search for Femme Fatale"
+ hire_femme_fatale_tooltip: "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('femme_fatale_court_position').GetName()]"
+ hire_femme_fatale_desc: "A [femme_fatale_court_position|E] gives us means of controlling the courts from the shadows. I will ask my servants to bring forth a number of suitable candidates."
+#  hire_femme_fatale_decision_effect_tooltip: "You will be presented with a group of [GetCourtPositionType('femme_fatale_court_position').GetName()] candidates and may hire one of them for a fee and a monthly salary"
+#  hire_femme_fatale_decision_confirm: "Start the search"
+ recruit_femme_fatale_cooldown_tt: "Recruiting a [GetCourtPositionType('femme_fatale_court_position').GetName] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]"
+
+ # Smuggler
+ hire_smuggler: "Search for Smuggler"
+ hire_smuggler_tooltip: "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('smuggler_court_position').GetName()]"
+ hire_smuggler_desc: "A [smuggler_court_position|E] lets us...liberate, shall we say, artifacts from the clutches of... anyone else. I will ask my servants to bring forth a number of suitable candidates."
+#  hire_smuggler_decision_effect_tooltip: "You will be presented with a group of [GetCourtPositionType('smuggler_court_position').GetName()] candidates and may hire one of them for a fee and a monthly salary"
+#  hire_smuggler_decision_confirm: "Start the search"
+ recruit_smuggler_cooldown_tt: "Recruiting a [GetCourtPositionType('smuggler_court_position').GetName] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]"
+
+ # Master Assassin
+ hire_master_assassin: "Search for Master Assassin"
+ hire_master_assassin_tooltip: "Your servants will suggest a number of suitable candidates for the position of [GetCourtPositionType('master_assassin_court_position').GetName()]"
+ hire_master_assassin_desc: "A [master_assassin_court_position|E] take out key threats and potentially spread plague to in the realms of our enemies. I will ask my servants to bring forth a number of suitable candidates."
+#  hire_master_assassin_decision_effect_tooltip: "You will be presented with a group of [GetCourtPositionType('master_assassin_court_position').GetName()] candidates and may hire one of them for a fee and a monthly salary"
+#  hire_master_assassin_decision_confirm: "Start the search"
+ recruit_master_assassin_cooldown_tt: "Recruiting a [GetCourtPositionType('master_assassin_court_position').GetName] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]"

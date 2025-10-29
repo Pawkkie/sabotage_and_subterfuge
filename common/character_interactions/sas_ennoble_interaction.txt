@@ -88,6 +88,20 @@
 			create_character_memory = {
 				type = sas_ennoblement_memory
 			}
+			if = {
+				limit = {
+					NOT = {
+						has_trait = loyal
+					}
+				}
+				add_trait = loyal
+			}
+			if = {
+				limit = {
+					has_trait = disloyal
+				}
+				remove_trait = disloyal
+			}
 		}
 
 		hidden_effect = {
