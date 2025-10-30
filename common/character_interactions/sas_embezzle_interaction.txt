@@ -219,7 +219,20 @@ sas_embezzle_interaction = {
 	auto_accept = yes
 
 	# AI
-	ai_frequency = 12
+	ai_targets = {
+		ai_recipients = liege
+		ai_recipients = vassals
+		ai_recipients = neighboring_rulers
+	}
+
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 36
+		kingdom = 36
+		empire = 36
+		hegemony = 36
+	}
 
 	is_available = {
 		# Honest and generous characters never embezzle.

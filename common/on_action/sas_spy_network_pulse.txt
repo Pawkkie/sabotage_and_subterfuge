@@ -14,25 +14,53 @@ on_became_house_head = {
 # Sets up which houses are initially allowed to use the spy network
 initialize_can_use_spy_network = {
 	effect = {
-		every_living_character	= {
-			limit = { 
-				is_house_head = yes
-				has_government = administrative_government
-				highest_held_title_tier >= tier_county
-				exists = house
+		if = {
+			limit = {
+				has_game_rule = fledgling_undergrounds
+			}
+			every_living_character	= {
+				limit = { 
+					is_house_head = yes
+					has_government = administrative_government
+					highest_held_title_tier >= tier_county
+					exists = house
+					house = {
+						NOT = { has_house_modifier = sas_starter_spy_network_modifier }
+						NOT = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+					}
+				}
 				house = {
-					NOT = { has_house_modifier = sas_starter_spy_network_modifier }
-					NOT = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+					add_house_modifier = {
+						modifier = sas_starter_spy_network_modifier
+					}
+				}
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
 				}
 			}
-			house = {
-				add_house_modifier = {
-					modifier = sas_starter_spy_network_modifier
-				}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = full_undergrounds
 			}
-			set_variable = {
-				name = number_of_secrets_bought
-				value = 0
+			every_living_character	= {
+				limit = { 
+					is_house_head = yes
+					exists = house
+					house = {
+						NOT = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+					}
+				}
+				house = {
+					add_house_modifier = {
+						modifier = sas_establish_criminal_underground_house_modifier
+					}
+				}
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 0
+				}
 			}
 		}
 	}

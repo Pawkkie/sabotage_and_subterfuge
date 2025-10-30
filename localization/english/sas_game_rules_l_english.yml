@@ -1,0 +1,11 @@
+﻿l_english:
+ game_rule_category_sas: "Sabotage and Subterfuge"
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Starting Criminal Undergrounds"
+ setting_no_undergrounds: "None"
+ setting_no_undergrounds_desc: "Houses that exist at game start do not begin with a [sas_spy_network|E] or criminal underground"
+ setting_fledgling_undergrounds: "Fledgling Spy Networks"
+ setting_fledgling_undergrounds_desc: "Houses that exist at game start with a head that both controls a county and participates in an [administrative_government|E] begin with a [sas_spy_network|E]."
+ setting_full_undergrounds: "World of Crime"
+ setting_full_undergrounds_desc: "All houses that exist at game start begin with a [sas_spy_network|E] and criminal underground."

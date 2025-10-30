@@ -1,0 +1,12 @@
+﻿sas_initial_underground = {
+	categories = {
+		sas
+	}
+	default = fledgling_undergrounds
+	no_undergrounds = {
+	}
+	fledgling_undergrounds = {
+	}
+	full_undergrounds = {
+	}
+}
