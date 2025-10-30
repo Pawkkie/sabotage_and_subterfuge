@@ -221,12 +221,13 @@ sas_embezzle_interaction = {
 	# AI
 	ai_frequency = 12
 
-	ai_potential = {
+	is_available = {
 		# Honest and generous characters never embezzle.
 		NOR = {
 			has_trait = honest
 			has_trait = generous
 		}
+		has_perk = golden_obligations_perk
 	}
 
 	ai_will_do = {

@@ -55,20 +55,70 @@
 			}
 		}
 	}
-	
-	ai_potential = {
-		primary_title.tier >= tier_county
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_targets = {
+		ai_recipients = peer_vassals
+		ai_recipients = domicile_location_neighboring_top_realm_vassals
+		max = 10
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 24
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+
+	is_available = {
 		NOR = {
 			scheme_generic_ai_blocker_trigger = yes
 			primary_title = {
 				is_mercenary_company = yes
 			}
 		}
+		exists = court_position:femme_fatale_court_position
+		exists = var:femme_fatale_is_poisoning_opinion
+		var:femme_fatale_is_poisoning_opinion = yes
 	}
-	
+
 	auto_accept = yes
 	
 	ai_will_do = {
-
+		base = 0
+		modifier = {
+			OR = {
+				# Dislikes target's liege
+				scope:actor = {
+					opinion = {
+						target = scope:recipient.liege
+						value < 0
+					}
+				}
+				# Recipient likes their liege
+				scope:recipient = {
+					opinion = {
+						target = scope:recipient
+						value > 0
+					}
+				}
+			}
+			add = 50
+		}
+		
+		# Provoked Faction exists
+		modifier = {
+			scope:recipient.liege = {
+				any_targeting_faction = {
+					OR = {
+						faction_is_type = provoked_dissolution_faction
+						faction_is_type = provoked_independence_faction
+					}
+				}
+			}
+			add = 100
+		}
 	}
 }

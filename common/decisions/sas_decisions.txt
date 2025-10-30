@@ -6,15 +6,6 @@
 
 	desc = sas_establish_criminal_underground_decision_desc
 
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 36
-		duchy = 120
-		kingdom = 180
-		empire = 180
-		hegemony = 180
-	}
-
 	is_shown = {
 		exists = house
 		NOT = {
@@ -76,11 +67,45 @@
 		}
 	}
 	
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 72
+		duchy = 60
+		kingdom = 48
+		empire = 48
+		hegemony = 48
+	}
 	ai_will_do = {
-		base = 10
+		base = 0
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			has_trait = honest
+			add = -50
+		}
+		modifier = {
+			has_trait = deceitful
+			add = 50
+		}
 	}
 	ai_potential = {
-		always = yes
+		exists = house
+		NOT = {
+			house = {
+				has_house_modifier = sas_establish_criminal_underground_house_modifier
+			}
+		}
+		is_house_head = yes
+		OR = {
+			intrigue >= 15
+			cp:councillor_spymaster.intrigue >= 15
+		}
+		is_adult = yes
+		is_imprisoned = no
 	}
 }
 
@@ -91,15 +116,6 @@ sas_expand_spy_network_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_expand_spy_network_decision_desc
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 36
-		duchy = 72
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
 
 	is_shown = {
 		exists = house
@@ -146,11 +162,44 @@ sas_expand_spy_network_decision = {
 			}
 		}
 	}
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 72
+		duchy = 60
+		kingdom = 48
+		empire = 48
+		hegemony = 48
+	}
 	ai_will_do = {
-		base = 10
+		base = 0
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			has_trait = honest
+			add = -50
+		}
+		modifier = {
+			has_trait = deceitful
+			add = 50
+		}
 	}
 	ai_potential = {
-		always = yes
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			NOT = { has_house_modifier = sas_expand_spy_network_house_modifier }
+		}
+		is_house_head = yes
+		cp:councillor_spymaster.intrigue >= 15
+		spy_network_members_count_gui >= 3
+		exists = var:number_of_secrets_bought
+		var:number_of_secrets_bought >= 3
+		is_adult = yes
+		is_imprisoned = no
 	}
 }
 
@@ -161,15 +210,6 @@ sas_special_operations_training_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_special_operations_training_decision_desc
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 36
-		duchy = 72
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
 
 	is_shown = {
 		exists = house
@@ -216,11 +256,44 @@ sas_special_operations_training_decision = {
 			}
 		}
 	}
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 72
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
 	ai_will_do = {
-		base = 10
+		base = 0
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			has_trait = honest
+			add = -50
+		}
+		modifier = {
+			has_trait = deceitful
+			add = 50
+		}
 	}
 	ai_potential = {
-		always = yes
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			NOT = { has_house_modifier = sas_special_operations_training_house_modifier }
+		}
+		is_house_head = yes
+		cp:councillor_spymaster.intrigue >= 15
+		spy_network_members_count_gui >= 3
+		exists = var:sas_hostile_scheme_count
+		var:sas_hostile_scheme_count >= 3
+		is_adult = yes
+		is_imprisoned = no
 	}
 }
 
@@ -231,15 +304,6 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 	decision_group_type = sabotage_and_subterfuge
 
 	desc = sas_house_of_sabotage_and_subterfuge_decision_desc
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 36
-		duchy = 72
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
 
 	is_shown = {
 		exists = house
@@ -317,11 +381,47 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			add_dynasty_prestige = 1000
 		}
 	}
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 72
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
 	ai_will_do = {
-		base = 10
+		base = 0
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			add = intrigue
+		}
+		modifier = {
+			has_trait = honest
+			add = -50
+		}
+		modifier = {
+			has_trait = deceitful
+			add = 50
+		}
 	}
 	ai_potential = {
-		always = yes
+		exists = house
+		house = {
+			has_house_modifier = sas_establish_criminal_underground_house_modifier
+			has_house_modifier = sas_special_operations_training_house_modifier
+			has_house_modifier = sas_expand_spy_network_house_modifier
+			NOT = { has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier }
+		}
+		is_house_head = yes
+		cp:councillor_spymaster.intrigue >= 15
+		intrigue >= 15
+		spy_network_members_count_gui >= 8
+		exists = var:sas_hostile_scheme_count
+		var:sas_hostile_scheme_count >= 8
+		is_adult = yes
+		is_imprisoned = no
 	}
 }
 
@@ -480,7 +580,5 @@ sas_recruit_malefactor_decision = {
 		}
 	}
 	
-	ai_potential = {
-		always = no # Only players can do this. AI vassals go through the normal court events/hold court activity.
-	}
+	ai_check_interval = 0
 }

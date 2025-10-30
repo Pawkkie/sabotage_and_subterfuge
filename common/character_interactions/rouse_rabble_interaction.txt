@@ -160,13 +160,22 @@
 	}
 	
 	auto_accept = yes
-	ai_targets = { 
-		ai_recipients = neighboring_rulers 
-		ai_recipients = peer_vassals
+	ai_target_quick_trigger = {
+		adult = yes
 	}
-	ai_frequency = 60
+	ai_targets = { 
+		ai_recipients = neighboring_rulers
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 72
+		kingdom = 24
+		empire = 36
+		hegemony = 36
+	}
 
-	ai_potential = {
+	is_available = {
 		is_ruler = yes
 		ai_boldness >= low_positive_ai_value
 		OR = {
@@ -177,6 +186,9 @@
 			intrigue >= high_skill_rating
 			diplomacy >= high_skill_rating
 		}
+		exists = court_position:rabble_rouser_court_position
+		exists = var:rabble_rouser_is_rousing_rabble
+		var:rabble_rouser_is_rousing_rabble = yes
 	}
 
 	ai_will_do = {
@@ -196,6 +208,18 @@
 
 		ai_value_modifier = { ai_honor = -1 }
 		ai_value_modifier = { ai_boldness = 1 }
+		
+		# Roused Rabble exists
+		modifier = {
+			scope:recipient = {
+				any_targeting_faction = {
+					OR = {
+						faction_is_type = roused_rabble_faction
+					}
+				}
+			}
+			add = -1000
+		}
 
 		# Traits
 		# Positive modifiers
@@ -233,6 +257,11 @@
 			add = 75
 			scope:actor = { has_trait = populist_leader }
 			desc = ROUSE_RABBLE_POPULIST_LEADER
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = ambitious }
+			desc = PROVOKE_VASSALS_AMBITIOUS
 		}
 		modifier = {
 			add = {

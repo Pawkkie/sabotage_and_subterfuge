@@ -5245,7 +5245,6 @@ master_assassin_court_position = {
 		background = "gfx/interface/illustrations/event_scenes/fp2_corridor_night.dds"
 	}
 
-
 	opinion = {
 		value = regular_court_position_opinion
 	}

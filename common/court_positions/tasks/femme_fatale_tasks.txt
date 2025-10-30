@@ -80,16 +80,12 @@
 	}
 
 	ai_will_do = {
-		value = 0
-		if = {
-			limit = {
-				scope:liege = {
-					OR = {
-						is_at_war = no
-					}
-				}
-			}
-			add = 100
+		value = {
+			add = 25
+			add = ai_rationality
+			add = ai_vengefulness
+			subtract = ai_honor
+			subtract = ai_compassion
 		}
 	}
 }
@@ -189,7 +185,19 @@ femme_fatale_task_embrace_the_spiders = {
 	}
 
 	ai_will_do = {
-
+		value = {
+			add = 25
+			add = ai_rationality
+			subtract = ai_honor
+		}
+		if = {
+			limit = {
+				scope:liege = {
+					has_trait = paranoid
+				}
+			}
+			add = 50
+		}
 	}
 }
 
@@ -269,6 +277,14 @@ femme_fatale_task_soothe_and_surveil = {
 		value = {
 			add = 25
 			add = ai_sociability
+		}
+		if = {
+			limit = {
+				scope:liege = {
+					has_trait = paranoid
+				}
+			}
+			add = 50
 		}
 	}
 }

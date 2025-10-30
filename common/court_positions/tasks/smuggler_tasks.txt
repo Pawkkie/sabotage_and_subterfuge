@@ -78,7 +78,13 @@
 	}
 
 	ai_will_do = {
-
+		value = {
+			add = 25
+			add = ai_greed
+			add = ai_boldness
+			subtract = ai_honor
+			subtract = ai_compassion
+		}
 	}
 }
 
@@ -156,6 +162,11 @@ smuggler_task_monitor_supplies = {
 	}
 
 	ai_will_do = {
-
+		value = {
+			add = 25
+			add = ai_compassion
+			add = ai_rationality
+			subtract = ai_greed
+		}
 	}
 }

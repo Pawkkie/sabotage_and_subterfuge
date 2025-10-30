@@ -124,17 +124,98 @@
 	}
 	
 	auto_accept = yes
-	ai_targets = { 
-		ai_recipients = neighboring_rulers 
-	}
-	ai_frequency = 0
 
-	ai_potential = {
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_targets = { 
+		ai_recipients = neighboring_rulers
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 72
+		kingdom = 24
+		empire = 36
+		hegemony = 36
+	}
+
+	is_available = {
 		is_ruler = yes
+		ai_vengefulness >= high_positive_ai_value
+		exists = court_position:master_assassin_court_position
+		exists = var:master_assassin_is_spreading_plague
+		var:master_assassin_is_spreading_plague = yes
+		has_trait = sadistic
+		NOT = { has_trait = compassionate }
 	}
 
 	ai_will_do = {
 		# They shouldn't always do this.
-		base = -100
+		base = -50
+
+		# Opinion
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = -1
+		}
+		# At war with target
+		modifier = {
+			add = 100
+			scope:actor = { is_at_war_with = scope:recipient } 
+		}
+
+		ai_value_modifier = { ai_compassion = -1 }
+		ai_value_modifier = { ai_vengefulness = 1 }
+		
+		# Traits
+		# Positive modifiers
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = vengeful }
+		}
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = torturer }
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = lifestyle_physician }
+		}
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = wrathful }
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = lifestyle_herbalist }
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = craven }
+		}
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = lazy }
+		}
+		modifier = {
+			add = -50
+			scope:actor = { has_trait = generous }
+		}
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = forgiving }
+		}
+		modifier = {
+			add = -100
+			scope:actor = { has_trait = infirm }
+		}
 	}
 }

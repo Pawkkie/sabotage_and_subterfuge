@@ -942,7 +942,10 @@ ai_agent_join_chance_basic_suite_modifier = {
 		add = 75
 		AND = {
 			scope:owner = {
-				house = { has_house_modifier = sas_special_operations_training_house_modifier }
+				AND = {
+					exists = house
+					house = { has_house_modifier = sas_special_operations_training_house_modifier }
+				}
 			}
 			OR = {
 				AND = {

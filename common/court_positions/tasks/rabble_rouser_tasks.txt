@@ -93,6 +93,41 @@
 			}
 			add = 100
 		}
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						has_trait = brave
+						has_trait = gregarious
+						has_trait = diplomat
+						has_trait = schemer
+						has_trait = lifestyle_wayfarer
+						has_trait = lifestyle_reveler
+						has_trait = lifestyle_traveler
+						has_trait = peasant_leader
+						has_trait = populist_leader
+						has_trait = ambitious
+					}
+				}
+			}
+			add = 50
+		}
+
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						has_trait = craven
+						has_trait = lazy
+						has_trait = shy
+						has_trait = fickle
+						has_trait = reclusive
+						has_trait = infirm
+					}
+				}
+			}
+			add = -50
+		}
 	}
 }
 
@@ -181,7 +216,52 @@ rabble_rouser_task_provoke_vassals = {
 	}
 
 	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						is_at_war = yes
+					}
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						has_trait = brave
+						has_trait = gregarious
+						has_trait = diplomat
+						has_trait = schemer
+						has_trait = lifestyle_wayfarer
+						has_trait = lifestyle_reveler
+						has_trait = lifestyle_traveler
+						has_trait = peasant_leader
+						has_trait = populist_leader
+						has_trait = ambitious
+					}
+				}
+			}
+			add = 50
+		}
 
+		if = {
+			limit = {
+				scope:liege = {
+					OR = {
+						has_trait = craven
+						has_trait = lazy
+						has_trait = shy
+						has_trait = fickle
+						has_trait = reclusive
+						has_trait = infirm
+					}
+				}
+			}
+			add = -50
+		}
 	}
 }
 

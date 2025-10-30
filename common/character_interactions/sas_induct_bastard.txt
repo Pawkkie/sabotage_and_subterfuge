@@ -156,5 +156,6 @@ sas_steal_bastard_interaction = {
                 trigger_event = bastard_interaction.0010
             }            
         }
-    }    
+    }
+    ai_frequency = 0
 }

@@ -292,9 +292,16 @@
 		ai_recipients = neighboring_rulers
 	}
 
-	ai_frequency = 30
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 120
+		duchy = 30
+		kingdom = 30
+		empire = 30
+		hegemony = 30
+	}
 
-	ai_potential = {
+	is_available = {
 		# The basic requirements
 		is_imprisoned = no 
 		is_playable_character = yes 
@@ -306,6 +313,10 @@
 
 		# Only really greedy AI characters get to use this
 		ai_greed >= high_positive_ai_value
+
+		exists = court_position:smuggler_court_position
+		exists = var:smuggler_is_planning_heist
+		var:smuggler_is_planning_heist = yes
 	}
 
 	ai_will_do = {
@@ -685,7 +696,7 @@ smuggle_artifact_interaction = {
 	}
 	
 	# AI
-	ai_potential = {
+	is_available = {
 		is_imprisoned = no
 		ai_greed >= low_negative_ai_value
 		intrigue >= low_skill_rating
@@ -700,6 +711,9 @@ smuggle_artifact_interaction = {
 				}
 			}
 		}
+		exists = court_position:smuggler_court_position
+		exists = var:smuggler_is_planning_heist
+		var:smuggler_is_planning_heist = yes
 	}
 	
 	ai_target_quick_trigger = {
@@ -727,14 +741,21 @@ smuggle_artifact_interaction = {
 		max = 10
 	}
 
-	ai_frequency = 60
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 144
+		duchy = 72
+		kingdom = 36
+		empire = 36
+		hegemony = 36
+	}
 
 	ai_will_do = {
 		base = -30
 		# Factor for personality (excluding realism).
 		modifier = {
 			add = {
-				value = ai_boldness
+				value = ai_greed
 				multiply = -1
 			}
 		}
