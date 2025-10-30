@@ -140,7 +140,7 @@
 		hegemony = 36
 	}
 
-	is_available = {
+	ai_potential = {
 		is_ruler = yes
 		ai_vengefulness >= high_positive_ai_value
 		exists = court_position:master_assassin_court_position

@@ -1,4 +1,10 @@
 ﻿l_english:
+ # Embezzler
  trait_sas_embezzler: "Embezzler"
  trait_sas_embezzler_desc: "This character has embezzled funds from someone else."
  trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has embezzled funds from someone else."
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "Plaguebringer"
+ trait_sas_plaguebringer_desc: "This character has worked to bring about a great plague."
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has worked to bring about a great plague."

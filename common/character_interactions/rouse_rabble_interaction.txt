@@ -175,7 +175,7 @@
 		hegemony = 36
 	}
 
-	is_available = {
+	ai_potential = {
 		is_ruler = yes
 		ai_boldness >= low_positive_ai_value
 		OR = {

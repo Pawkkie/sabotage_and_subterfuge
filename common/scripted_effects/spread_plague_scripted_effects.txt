@@ -24,4 +24,7 @@ spread_plague_failure_effect = {
 			modifier = attempted_to_spread_plague
 		}
 	}
+	scope:owner = {
+		add_trait = sas_plaguebringer
+	}
 }

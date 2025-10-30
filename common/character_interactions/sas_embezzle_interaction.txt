@@ -234,7 +234,7 @@ sas_embezzle_interaction = {
 		hegemony = 36
 	}
 
-	is_available = {
+	ai_potential = {
 		# Honest and generous characters never embezzle.
 		NOR = {
 			has_trait = honest

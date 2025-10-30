@@ -72,7 +72,7 @@
 		hegemony = 0
 	}
 
-	is_available = {
+	ai_potential = {
 		NOR = {
 			scheme_generic_ai_blocker_trigger = yes
 			primary_title = {

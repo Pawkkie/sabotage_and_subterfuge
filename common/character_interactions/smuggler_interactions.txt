@@ -301,7 +301,7 @@
 		hegemony = 30
 	}
 
-	is_available = {
+	ai_potential = {
 		# The basic requirements
 		is_imprisoned = no 
 		is_playable_character = yes 
@@ -696,7 +696,7 @@ smuggle_artifact_interaction = {
 	}
 	
 	# AI
-	is_available = {
+	ai_potential = {
 		is_imprisoned = no
 		ai_greed >= low_negative_ai_value
 		intrigue >= low_skill_rating
