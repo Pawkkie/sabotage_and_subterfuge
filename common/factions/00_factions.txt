@@ -336,6 +336,9 @@
 		trigger_if = {
 			limit = {
 				government_allows = administrative
+				# SAS Change
+				has_game_rule = admin_independence_disabled
+				# SAS Change End
 			}
 			custom_tooltip = {
 				text = admin_high_tier_vassal_create_faction
@@ -413,6 +416,9 @@
 		trigger_if = {
 			limit = {
 				government_allows = administrative
+				# SAS Change
+				has_game_rule = admin_independence_disabled
+				# SAS Change End
 			}
 			custom_tooltip = {
 				text = admin_high_tier_vassal_create_faction
@@ -462,6 +468,9 @@
 		trigger_if = {
 			limit = {
 				government_allows = administrative
+				# SAS Change
+				has_game_rule = admin_independence_disabled
+				# SAS Change End
 			}
 			custom_tooltip = {
 				text = admin_high_tier_vassal_join_faction

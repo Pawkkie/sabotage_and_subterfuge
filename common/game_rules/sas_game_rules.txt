@@ -10,3 +10,25 @@
 	full_undergrounds = {
 	}
 }
+
+sas_administrative_dissolution = {
+	categories = {
+		sas
+	}
+	default = admin_dissolution_disabled
+	admin_dissolution_disabled = {
+	}
+	admin_dissolution_enabled = {
+	}
+}
+
+sas_administrative_independence = {
+	categories = {
+		sas
+	}
+	default = admin_independence_disabled
+	admin_independence_disabled = {
+	}
+	admin_independence_enabled = {
+	}
+}

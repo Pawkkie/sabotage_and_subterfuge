@@ -119,6 +119,9 @@
 		trigger_if = {
 			limit = {
 				scope:target = { government_allows = administrative }
+				# SAS Change
+				has_game_rule = admin_dissolution_disabled
+				# SAS Change End
 			}
 			scope:target = { save_temporary_scope_as = recipient }
 			custom_tooltip = {
@@ -183,6 +186,9 @@
 		trigger_if = {
 			limit = {
 				scope:target = { government_allows = administrative }
+				# SAS Change
+				has_game_rule = admin_dissolution_disabled
+				# SAS Change End
 			}
 			scope:target = { save_temporary_scope_as = recipient }
 			custom_tooltip = {
@@ -280,6 +286,9 @@
 		trigger_if = {
 			limit = {
 				scope:faction.faction_target = { government_allows = administrative }
+				# SAS Change
+				has_game_rule = admin_dissolution_disabled
+				# SAS Change End
 			}
 			scope:faction.faction_target = { save_temporary_scope_as = recipient }
 			custom_tooltip = {

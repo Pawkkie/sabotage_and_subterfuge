@@ -32,3 +32,6 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$"
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$"
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$"
+ game_concept_sas_nation_fracturing_faction: "Dissolution Faction"
+ game_concept_sas_nation_fracturing_factions: "Dissolution Factions"
+ game_concept_sas_nation_fracturing_faction_desc: "Members of the $game_concept_sas_nation_fracturing_faction$ seek to destroy the realm of their liege. If successful they will all become [independent|E], and their [liege|E] will lose their [primary_title|E] and other [titles|E] of the same [title_tier|E]."

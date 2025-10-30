@@ -61,3 +61,8 @@ sas_induct_bastard_interaction = {
 sas_steal_bastard_interaction = {
 	texture = "gfx/interface/icons/traits/bastard.dds"
 }
+
+sas_nation_fracturing_faction = {
+	alias = { sas_nation_fracturing_factions }
+	parent = faction
+}

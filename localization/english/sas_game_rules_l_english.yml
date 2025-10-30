@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "Starting Criminal Undergrounds"
  setting_no_undergrounds: "None"
- setting_no_undergrounds_desc: "Houses that exist at game start do not begin with a [sas_spy_network|E] or criminal underground"
+ setting_no_undergrounds_desc: "[houses|E] that exist at game start do not begin with a [sas_spy_network|E] or criminal underground"
  setting_fledgling_undergrounds: "Fledgling Spy Networks"
- setting_fledgling_undergrounds_desc: "Houses that exist at game start with a head that both controls a county and participates in an [administrative_government|E] begin with a [sas_spy_network|E]."
+ setting_fledgling_undergrounds_desc: "[houses|E] that exist at game start with a [house_head|E] that both controls a county and participates in an [administrative_government|E] begin with a [sas_spy_network|E]."
  setting_full_undergrounds: "World of Crime"
- setting_full_undergrounds_desc: "All houses that exist at game start begin with a [sas_spy_network|E] and criminal underground."
+ setting_full_undergrounds_desc: "All [houses|E] that exist at game start begin with a [sas_spy_network|E] and criminal underground."
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "Administrative Dissolution Factions"
+ setting_admin_dissolution_disabled: "Disabled (Vanilla)"
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] cannot form against an [administrative_governments|E]"
+ setting_admin_dissolution_enabled: "Enabled"
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] can form against [administrative_governments|E]"
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "Administrative Independence Factions"
+ setting_admin_independence_disabled: "Disabled (Vanilla)"
+ setting_admin_independence_disabled_desc: "[independence_factions|E] cannot form against [administrative_governments|E]"
+ setting_admin_independence_enabled: "Enabled"
+ setting_admin_independence_enabled_desc: "[independence_factions|E] can form against [administrative_governments|E]"
