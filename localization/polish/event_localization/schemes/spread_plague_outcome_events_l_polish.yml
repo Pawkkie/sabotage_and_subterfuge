@@ -1,0 +1,21 @@
+﻿l_polish:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "Staję się śmiercią" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] właśnie powrócił po dłuższej nieobecności. Wygląda na to, że skażenia zasiane przez [master_assassin_name.GetSheHe] przyniosły owoce. [master_assassin_name.GetSheHe|U] pozostał kilka dni w regionie przed powrotem do domu, aby sprawdzić, czy plan zadziałał, a wieść o rozprzestrzeniającej się chorobie szybko dotarła [master_assassin_name.GetHerHim] na lokalne rynki.\n\n Kto może powiedzieć, jak daleko [epidemic|E] może się stąd rozprzestrzenić, ale jasne jest, że rozpoczęliśmy coś, co jest teraz poza naszymi rękami." #deepl:108591925
+ spread_plague_outcome.0001.a: "Niech pozostawi po sobie chaos!" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "Ogłoszono nadejście śmierci" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] właśnie powrócił po dłuższej nieobecności. Wygląda na to, że skażenia zasiane przez [master_assassin_name.GetSheHe] przyniosły owoce. [master_assassin_name.GetSheHe|U] pozostał kilka dni w regionie, zanim wrócił do domu, aby sprawdzić, czy plan zadziałał, a wieść o rozprzestrzeniającej się chorobie szybko dotarła [master_assassin_name.GetHerHim] na lokalne rynki.\n\n Niestety [master_assassin_name.GetSheHe] został zatrzymany w drodze z miasta i chociaż [master_assassin_name.GetSheHe] zdołał uciec, niektóre obciążające dowody jednoznacznie implikujące mnie w spisek zostały porzucone i pozostawione." #deepl:1902814976
+ spread_plague_outcome.0002.a: "Przynajmniej plan zadziałał!" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "Higiena zwycięża" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] właśnie powrócił po dłuższej nieobecności. Wygląda na to, że skażenia [master_assassin_name.GetSheHe] nie przyniosły rezultatów. [master_assassin_name.GetSheHe|U] pozostał kilka dni w regionie, zanim wrócił do domu, aby sprawdzić, czy plan zadziałał, i ani słowo o chorobie nie dotarło [master_assassin_name.GetHerHim] do żadnego z lokalnych rynków.\n\n Być może nasze skażenia były zbyt słabe lub zastosowane zbyt zachowawczo, kto wie." #deepl:3939157326
+ spread_plague_outcome.0003.a: "Następnym razem nie będą mieli tyle szczęścia..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "Nieotrzymane prezenty" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] właśnie powrócił po dłuższej nieobecności. Wygląda na to, że skażenia zasiane przez [master_assassin_name.GetSheHe] przyniosły owoce. [master_assassin_name.GetSheHe|U] pozostał kilka dni w regionie przed powrotem do domu, aby sprawdzić, czy plan zadziałał, i ani słowo o chorobie nie dotarło do [master_assassin_name.GetHerHim] na żadnym z lokalnych rynków.\n\nByć może nasze środki skażające były zbyt słabe lub zastosowane zbyt zachowawczo, kto wie.\n\n Niestety [master_assassin_name.GetSheHe] został zatrzymany w drodze z miasta i chociaż [master_assassin_name.GetSheHe] zdołał uciec, niektóre obciążające dowody ostatecznie implikujące mnie w spisek zostały porzucone i pozostawione." #deepl:1196545157
+ spread_plague_outcome.0004.a: "Cóż, to jest katastrofa..." #deepl:4191637054

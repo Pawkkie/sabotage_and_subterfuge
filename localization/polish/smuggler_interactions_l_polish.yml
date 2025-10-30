@@ -1,0 +1,15 @@
+﻿l_polish:
+ plan_heist_interaction: "Plan napadu" #deepl:3591742283
+ plan_heist_interaction_desc: "Wydaj [prestige|E] lub [piety|E] wraz z [gold|E], aby zaplanować napad na jeden z [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] , pozwalający na użycie [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "Przemyt artefaktów #weak (schemat)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "Podejmij próbę kradzieży artefaktu ze strony [recipient.GetShortUINameNoTooltip], dla którego wcześniej zaplanowałeś napad." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "Zatrudniasz [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "Nie zatrudniasz [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] wykonuje zadanie Plan napadu" #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] nie wykonuje zadania Plan napadu" #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "W tej chwili nie mogę przemycić artefaktu" #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "Zaplanowałeś kradzież artefaktów" #deepl:538249166

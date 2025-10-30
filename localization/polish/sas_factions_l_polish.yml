@@ -1,0 +1,99 @@
+﻿l_polish:
+ # Roused Rabble
+ roused_rabble_faction: "Frakcja podburzonego motłochu" #deepl:256557288
+ roused_rabble_faction_desc: "Oddział Roused Rabble [faction|E], złożony z chłopów ośmielonych słowami płomiennego rewolucjonisty, zdecydował, że najwyższy czas przedstawić swoje skargi swojemu panu bezpośrednio na polu bitwy." #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "Chce zakłócić operacje swojego władcy" #deepl:3702182374
+ roused_rabble_faction_every_county: "Każdy [faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "Podnosi [new_title.GetAdjective] [army|E] proporcjonalnie do jego [levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "Do [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "Zbyt długo byliśmy obciążeni waszymi opresyjnymi prawami. Koniec z tym! Skończyliśmy płacić wam podatki.\n\n Kiedy wasza kasa wyschnie, a wasze spiżarnie będą puste, będziecie żałować, że nie traktowaliście nas bardziej sprawiedliwie." #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "Chyba mógłbym przyznać zastaw podatkowy..." #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "Nigdy! Chłop ma służyć swemu panu!" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "Roused Rabble" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "Bunt podburzonych tłumów" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "Cel [rouse_rabble_scheme|E]: $VALUE|0+=$" #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "Roused Rabble Ready to Rock..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "Dotarły do mnie wieści, że motłoch, który obudziliśmy jakiś czas temu, prawie zakończył przygotowania i będzie gotowy do podjęcia walki w stolicy za cztery miesiące.\n\n Wierzę w nich, że dokonają pewnych zniszczeń i potencjalnie wywołają prawdziwe zmiany, ale jestem pewien, że jest czas, aby przechylić szalę na ich korzyść..." #deepl:1060245800
+ sas_faction_demand.1003.a: "Mają moje niezachwiane wsparcie!" #deepl:521539079
+ sas_faction_demand.1003.b: "Przydałaby się nam dodatkowa dźwignia." #deepl:2408571671
+ sas_faction_demand.1003.c: "Przypuszczam, że możemy zaoszczędzić kilka złotych..." #deepl:3331857853
+ sas_faction_demand.1003.d: "Poradzą sobie same." #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "A teraz czas się rozkręcić!" #deepl:439050973
+ sas_faction_demand.1004.desc: "Wreszcie dotarły do mnie wieści, że frakcja motłochu, którą ośmieliliśmy do buntu, jest gotowa do szarży.\n\n Słyszałem dobre rzeczy o [peasant_leader.GetShortUIName] pocztą pantoflową, mam nadzieję, że [peasant_leader.GetSheHe] poprowadzi ich do zwycięstwa!" #deepl:2802403918
+ sas_faction_demand.1004.a: "I być może uda nam się wykorzystać sytuację..." #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "Wściekłość zwycięża" #deepl:3605552638
+ sas_faction_demand.1005.desc: "Wspierany przez nas motłoch zwyciężył w swojej rewolucji mającej na celu poprawę standardu życia! Powinno to znacznie utrudnić ich władcy dalszy rozwój królestwa i dać im trochę zasłużonego luzu." #deepl:449688228
+ sas_faction_demand.1005.a: "Mogłem mieć nadzieję na lepszy wynik" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "The Rabble Is Breaks Even" #deepl:1625263356
+ sas_faction_demand.1006.desc: "Wspierany przez nas motłoch zaprowadził biały pokój w swojej rewolucji, aby poprawić standard życia! Być może w pewnym stopniu zdestabilizowało to region, a odbudowa relacji może zająć trochę czasu." #deepl:4055594033
+ sas_faction_demand.1006.a: "Mam nadzieję, że nie za szybko" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "Wściekłość została pokonana" #deepl:735846347
+ sas_faction_demand.1007.desc: "Ci, których wspieraliśmy, przegrali swoją rewolucję mającą na celu poprawę standardu życia. Ten wynik jest niefortunny, ale nie całkowicie nieoczekiwany. Miejmy nadzieję, że wynieśliśmy z tej próby wszystko, czego potrzebowaliśmy." #deepl:3836426464
+ sas_faction_demand.1007.a: "Czas przejść do innych spraw" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "Powstanie wściekłych rabusiów" #deepl:2683090941
+ roused_rabble_war: "Frakcja podburzonego motłochu" #deepl:256557288
+ roused_rabble_faction_event_troops: "Powstanie wściekłych rabusiów" #deepl:2683090941
+ roused_rabble_war_victory_desc: "Wszyscy buntownicy [counties|E] tracą [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] ." #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "Podburzony motłoch zostaje rozwiązany." #deepl:3335355515
+ roused_rabble_war_defeat_desc: "Podburzony motłoch zostaje rozwiązany, a [attacker.GetShortUIName] uwięziony. Wszyscy buntownicy [counties|E] mają swoje [county_opinion|E] przymusowo zwiększone." #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "Sprowokowana niezależność" #deepl:3382659683
+ provoked_independence_faction_desc: "Członkowie frakcji Niepodległość [faction|E] dążą do uniezależnienia się od swoich [liege|E].\n\n #S  Ultimatum#!\n Wszyscy członkowie frakcji stają się [independent|E]\n [liege|E] przegrani. [prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Prowokacja do frakcji niepodległościowej: $VALUE|0+=$" #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "Zatruta opinia: $VALUE|0+=$" #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "Sprowokowane rozwiązanie" #deepl:736445653
+ provoked_dissolution_faction_desc: "Członkowie frakcji $nation_fracturing_faction$ [faction|E] dążą do zniszczenia królestwa, z którego pochodzą [liege|E].\n\n #S  Ultimatum#!\n Wszyscy członkowie frakcji stają się [independent|E]\n [liege|E] tracą swoje [primary_title|E] i inne [titles|E] tej samej frakcji. [title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "Sprowokowany do frakcji rozwiązania: $VALUE|0+=$" #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "Frakcja Niepodległości" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "Frakcja rozwiązania" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "Nigdy nie podnoszony z ziemi" #deepl:10412173
+ sas_faction_demand.1011.desc: "Wasale, których sprowokowaliśmy przeciwko [target.GetShortUIName], nigdy nie zdołali zebrać wystarczającego poparcia, aby popchnąć swoje ambicje do przodu, a królestwo pozostaje niestety stabilne.\n\n Ostatnie ślady frakcji, którą utworzyli, zostały teraz rozwiązane." #deepl:3369401508
+ sas_faction_demand.1011.a: "Czas przejść do innych spraw" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "Wasale zwyciężają" #deepl:52932465
+ sas_faction_demand.1012.desc: "Sprowokowani przez nas wasale wygrali wojnę z [defender.GetShortUIName]! Być może uda nam się wykorzystać chaos i odzyskać część królestwa dla siebie." #deepl:1568465405
+ sas_faction_demand.1012.a: "Mogłem mieć nadzieję na lepszy wynik" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "Wasale przełamują barierę" #deepl:1192072973
+ sas_faction_demand.1013.desc: "Sprowokowani przez nas wasale zawarli biały pokój przeciwko [defender.GetShortUIName]! Być może w pewnym stopniu zdestabilizowało to region, a odbudowa relacji może zająć trochę czasu." #deepl:789636467
+ sas_faction_demand.1013.a: "Mam nadzieję, że nie za szybko" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "Wasale zostali pokonani" #deepl:3897891145
+ sas_faction_demand.1014.desc: "Sprowokowani przez nas wasale przegrali z [defender.GetShortUIName]. Ten wynik jest niefortunny, ale nie całkowicie nieoczekiwany. Miejmy nadzieję, że wynieśliśmy z tej próby wszystko, czego potrzebowaliśmy." #deepl:2998637062
+ sas_faction_demand.1014.a: "Czas przejść do innych spraw" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "Wasale będą wysyłać żądania" #deepl:97930989
+ sas_faction_demand.1015.desc: "Wasale, których sprowokowaliśmy przeciwko [target.GetShortUIName], zebrali swoich zwolenników i oddziały. W końcu nadszedł czas! Albo królestwo zostanie podzielone, albo wybuchnie wojna. To pierwsze będzie oczywiste, jeśli do niej dojdzie, ale to drugie...\n\n To byłoby ekscytujące!" #deepl:776082749
+ sas_faction_demand.1015.a: "Bęben proszę..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "I tak to się zaczyna" #deepl:3272443967
+ sas_faction_demand.1016.desc: "Wojna! Powstanie wasali jest w pełnym rozkwicie, a królestwo stanie w ogniu konfliktu. Ciekawe, jak to się potoczy?" #deepl:47654385
+ sas_faction_demand.1016.a: "Czas pokaże..." #deepl:4070009588
+ 

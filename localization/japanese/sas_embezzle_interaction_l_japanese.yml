@@ -1,0 +1,26 @@
+﻿l_japanese:
+ sas_embezzle_interaction: "資金の横領" #deepl:648628518
+ sas_embezzle_interaction_desc: "隣国や家臣の商人から品物を押収したり、資金を密輸したりする口実を作る。" #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "何も取らなければ横領ではない" #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] 小額" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP #! 貴重品を数点紛失" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] ミディアム・サム" #deepl:2443027586
+ sas_embezzle_sum_medium: "予期せぬ関税の徴収" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] ラージサム" #deepl:566310994
+ sas_embezzle_sum_large: "不公平な什分の一商人" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] 巨額" #deepl:1311154991
+ sas_embezzle_sum_huge: "露骨な税金泥棒" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "横領に気づかず" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "あなたの悪行はすぐに暴かれる" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] 横領しようとして捕まった！" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "[sas_embezzle_interaction|E] インタラクションを解き放つ" #deepl:1189011648

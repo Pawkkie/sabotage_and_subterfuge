@@ -1,0 +1,28 @@
+﻿l_polish:
+ # Court Position
+ rabble_rouser_court_position: "Rabble Rouser" #deepl:63230416
+ rabble_rouser_court_position_desc: "Zamiłowany do podburzania, Rabble Rouser ma talent do wchodzenia w odpowiedni tłum i rozpalania go. Może podróżować do innych królestw i wzniecać bunty chłopskie lub powstania wasali, albo pozostać w domu i szerzyć dobrą nowinę o swojej doskonałości." #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$Umożliwia dostęp do stron [GetScheme('rouse_rabble').GetTypeName] i [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E] s" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "Rouse Rabble" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "Podburzyć motłoch na innym dworze, doprowadzając do zamieszek chłopskich i potencjalnie buntu na pełną skalę." #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "Można użyć [rouse_rabble_scheme|E]. To zadanie musi być aktywne, aby zarówno rozpocząć, jak i kontynuować schemat.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! do @scheme_success_icon!#P  +20%#! (w oparciu o [aptitude|E])." #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "Prowokowanie wasali" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "Prowokowanie wasali innego dworu, prowadzące do obniżenia opinii i potencjalnie pełnego powstania." #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "Można użyć [provoke_vassals_scheme|E]. To zadanie musi być aktywne, aby zarówno rozpocząć, jak i kontynuować schemat.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! do @scheme_success_icon!#P  +20%#! (na podstawie [aptitude|E])" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "Uspokoić masy" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "Przekonaj chłopów na swoim dworze, że ich los jest dobry i wygodny, zmniejszając szansę na bunt." #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "Wróg [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! do @scheme_success_icon!#P  -20%#! (na podstawie [aptitude|E])" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "Wróg [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! do @scheme_success_icon!#P  -20%#! (na podstawie [aptitude|E])" #deepl:1094715817

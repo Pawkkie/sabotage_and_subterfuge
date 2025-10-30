@@ -1,0 +1,23 @@
+﻿l_polish:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "Szepty z zagranicy" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami przyciszonym tonem o buntowniczej frakcji wasala z [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Wygląda na to, że nikt nie potrafi zrozumieć, co tak nagle ich ośmieliło, ale powstanie wydaje się nieuniknione, a [target.GetShortUIName] stara się zapanować nad sytuacją. Nasze wysiłki zadziałały doskonale!" #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "Niepodległość!" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "Rozwiązanie!" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "Podejrzenia z zagranicy" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami przyciszonym tonem o buntowniczej frakcji wasala z [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Wciąż rzucali spojrzenia w moim kierunku, spojrzenia pełne gryzącego niesmaku. Nie jest tajemnicą, co tak nagle ich ośmieliło, ale powstanie wydaje się nieuniknione, a [target.GetShortUIName] jest wściekły." #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "Niepodległość!" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "Rozwiązanie!" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "Nieskrępowane serca" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiał z moimi dworzanami o wasalach z [target.GetCapitalLocation.GetTitle.GetNameNoTier] i ich podwojonym patriotyzmie w obliczu przeciwności losu.\n\n Pomimo naszych najlepszych starań, są zadowoleni ze swojego losu." #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "Przynajmniej na razie..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "Zahartowane umysły" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami o wasalach z [target.GetCapitalLocation.GetTitle.GetNameNoTier] i ich podwojonym patriotyzmie w obliczu przeciwności.\n\n Wciąż rzucali w moją stronę spojrzenia pełne gryzącego niesmaku. Nie jest tajemnicą, że próbowałem doprowadzić ich do buntu, a [target.GetShortUIName] jest wściekły." #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "W końcu je zdobędziemy!" #deepl:1078680228

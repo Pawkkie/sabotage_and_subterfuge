@@ -1,0 +1,21 @@
+﻿l_japanese:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "私は死になる" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] が長期不在から戻ってきたところだ。[master_assassin_name.GetSheHe] 植え付けた汚染物質が実を結んだようだ。[master_assassin_name.GetSheHe|U] 計画がうまくいったかどうかを確かめるため、帰国する前に数日間この地域に滞在した。そして、病気が急速に広がっているという知らせは、地元の市場に素早く届いた。[master_assassin_name.GetHerHim]\n \n [epidemic|E] ここからどこまで広がるかは誰にもわからない。しかし、私たちが何かを始めてしまったことは明らかで、それはもう私たちの手には負えない。" #deepl:108591925
+ spread_plague_outcome.0001.a: "カオスを残すことになる！" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "デス・カムズ発表" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] が長期不在から戻ってきたところだ。[master_assassin_name.GetSheHe] 植え付けた汚染物質が実を結んだようだ。[master_assassin_name.GetSheHe|U] 計画がうまくいったかどうかを確かめるために帰国する前に、数日間その地域に滞在した。そして、病気が急速に広がっているという知らせは、地元の市場で瞬く間に[master_assassin_name.GetHerHim] 。\n\n 不運にも、[master_assassin_name.GetSheHe] 町を出る途中で止められ、[master_assassin_name.GetSheHe] なんとか逃げ延びたものの、私を陰謀に巻き込んだ決定的な証拠となるものが落とされ、置き去りにされた。" #deepl:1902814976
+ spread_plague_outcome.0002.a: "少なくとも計画はうまくいった！" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "衛生が優先" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] が長期不在から戻ってきたところだ。[master_assassin_name.GetSheHe] 植えた汚染物質が実を結ばなかったようだ。[master_assassin_name.GetSheHe|U] 計画がうまくいったかどうか確かめるため、帰国する前に数日間現地に滞在したが、現地のどの市場にも病気の知らせは届かなかった[master_assassin_name.GetHerHim] 。\n\n 汚染物質が弱すぎたのか、それとも散布が控えめすぎたのか、誰にもわからない。" #deepl:3939157326
+ spread_plague_outcome.0003.a: "次はそうもいかないだろう...。" #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "贈られなかった贈り物" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] が長期不在から戻ってきた。[master_assassin_name.GetSheHe] [master_assassin_name.GetSheHe|U] 計画が功を奏したかどうかを確認するため、帰国する前に数日間現地に滞在したが、現地のどの市場でも[master_assassin_name.GetHerHim] に病気の知らせは届かなかった。\n\n\n\n 不運にも、 は町を出る途中で止められた。 はなんとか逃げおおせたが、私をこの計画に関与させた決定的な証拠が落とされ、置き去りにされた。[master_assassin_name.GetSheHe] [master_assassin_name.GetSheHe] " #deepl:1196545157
+ spread_plague_outcome.0004.a: "これは災難だ...。" #deepl:4191637054

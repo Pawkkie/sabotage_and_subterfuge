@@ -1,0 +1,51 @@
+﻿l_japanese:
+ poison_opinion: "ポイズン・オピニオン" #deepl:489149273
+ poison_opinion_action: "ポイズン・オピニオン" #deepl:489149273
+ poison_opinion_desc: "私は、[SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] 、彼らの家臣の意見を害し、彼らの法廷を混乱させるつもりだ。" #deepl:879276979
+ poison_opinion_desc_general: "ポイズン・オピニオンとは、[personal_scheme|E] 、ターゲットの直接の[liege|E] に対する評価を下げようとするものである。このスキームは主に、あなた自身の[intrigue|E] と、あなたの[femme_fatale_court_position|E] の能力に依存する。[hostile_scheme|E] ではないので[secret_scheme_single|E] ではなく、[agents|E] も使わない。\n\n ほとんどのスキームとは異なるが、Sway[personal_scheme|E] のように、Poison Opinion は完了するとリスタートする。ポイズンオピニオンによって失われたオピニオンはスタッ クするので、このスキームを有効にしておくと、[scheme_target|E] は自分の家臣をあまり好まなくなる。\n\n このスキームの成功者は自分の家臣に否定的なオピニオンを持つので、[provoke_vassals_scheme|E] [hostile_scheme|E] によって作られた派閥に参加しやすくなる。" #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] の[liege|E] 。#P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "[TARGET_CHARACTER.GetShortUIName] [TARGET_CHARACTER.GetSheHe] が私に苛立っている間は、意見に毒を盛ることはできない。" #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]意見は毒されている" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]意見に毒されていない" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "あなたは[femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "を雇っていない。[femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] はポイズン・オピニオンのタスクを実行している" #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] ポイズン・オピニオンのタスクを実行していない" #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "あなたの[femme_fatale_court_position|E]'s'[intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "あなたは熟練したシャイマーだ。 " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$。" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$。" #deepl:335723911
+ previously_poisoned_opinion: "以前に毒された意見： $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "ライバル： $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]'援助: $VALUE|+0=-+$." #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "敵[femme_fatale_court_position|E]'の援助: $VALUE|+0=-+$." #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "ターゲットは[GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "ターゲットは[GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "ターゲットは[GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "ターゲットは[GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "ターゲットは[GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "ターゲットは[GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "ターゲットは[GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$ である。" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "ポイズン・オピニオン・スキーム終了" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] が亡くなった。あなたはもう、[target.GetHerHis] 家臣に対して[target.GetHerHis] 意見を毒することはできない。" #deepl:1019747224
+ poison_opinion_invalidated_war: "あなた方の戦争により、[target.GetShortUIName] の意見に毒を盛ることはできなくなった。" #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "あなたはもはや[femme_fatale_court_position|E] 。" #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] はもうポイズン・オピニオンのタスクを実行しない。" #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] は独立し、もはや家臣はいない。" #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "ポイズン・オピニオン#weak (スキーム)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "[recipient.GetShortUINameNoTooltip] 彼らの家臣に対する評価に毒を盛ろうとし、宮廷を混乱させた。" #deepl:1775251095
+ poison_opinion_interaction_notification: "毒物混入に関する意見" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "私は、[recipient.GetShortUINameNoTooltip] 、彼らの家臣に対する評価を低下させ、彼らの法廷を混乱させるだろう！" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "あなたは努力を続ける" #deepl:2630534722
+ poison_opinion_try_again: "あなたは再挑戦する" #deepl:2953815728
+ poison_opinion_complete: "あなたは[target.GetShortUIName] の意見に毒づくだけ毒づいた。" #deepl:61883654

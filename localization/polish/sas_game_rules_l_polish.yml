@@ -1,0 +1,11 @@
+﻿l_polish:
+ game_rule_category_sas: "Sabotaż i podstęp" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Uruchamianie podziemi kryminalnych" #deepl:511066023
+ setting_no_undergrounds: "Brak" #deepl:3312814158
+ setting_no_undergrounds_desc: "Domy, które istnieją na początku gry, nie zaczynają się od [sas_spy_network|E] lub kryminalnego podziemia." #deepl:3086919095
+ setting_fledgling_undergrounds: "Początkujące sieci szpiegowskie" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "Domy, które istnieją na początku gry z głową, która zarówno kontroluje hrabstwo, jak i uczestniczy w [administrative_government|E], zaczynają się od [sas_spy_network|E]." #deepl:2991418532
+ setting_full_undergrounds: "Świat zbrodni" #deepl:2146549835
+ setting_full_undergrounds_desc: "Wszystkie domy, które istnieją na początku gry, zaczynają się od [sas_spy_network|E] i kryminalnych podziemi." #deepl:2266201805

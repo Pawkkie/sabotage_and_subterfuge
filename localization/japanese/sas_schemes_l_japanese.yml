@@ -1,0 +1,75 @@
+﻿l_japanese:
+ ###########################
+ # Critical Moments
+ ###########################
+
+ # Scheme Type A Boilerplate
+ sas_scheme_critical_moments.0001.t.task_contract: "結論[GetPlayer.Custom('GetContractOrIssue')]" #deepl:1012265068
+ sas_scheme_critical_moments.0001.t.scheme: "スキームの実行" #deepl:2532843253
+ sas_scheme_critical_moments.0001.desc: "貯めた[scheme_opportunity_opportunities|E] を使って新しい[agent|E] スロットを追加するか、[scheme.GetName] [scheme|E] の完成を目指す。" #deepl:4157729825
+ sas_scheme_critical_moments.0001.a: "#WEAK (@scheme_opportunity_icon![scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] )#! 瞬間をつかむ" #deepl:666541376
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_opportunities: "少なくとも[scheme_opportunity_i][scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] が必要だ。[scheme_opportunity_opportunities|E]" #deepl:4113346938
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_success_chance: "少なくとも1％は必要[success_chance|E]" #deepl:22090382
+ sas_scheme_critical_moments.0001.a.tt.progress: "あなたは[scheme.GetTargetCharacter.GetShortUIName] #WEAK  ([scheme.GetSuccessChance|%/0] [success_chance|E] ) に対して[scheme.GetName] を確定する。#!" #deepl:3020828712
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable: "#WEAK #WEAK [target.GetTitledFirstNamePossessive] [court_positions|E] その他の防御により、 、 %の確率で殺人を阻止することができる。[target.GetHerHim] [scheme.MakeScope.Var('target_intercept_repeatable_chance').GetValue]#!#!" #deepl:1066499528
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable_and_unique: "#WEAK ランダムな偶然や特殊効果も、まれにその試みを妨害することがある。#!" #deepl:3063377230
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.unique: "#WEAK 偶然の産物や特殊効果によって、まれにその試みが妨げられることがある。#!" #deepl:2397171866
+ sas_scheme_critical_moments.0001.b: "[scheme.Custom('GetCorrectAgentType_ChoiceA_Icon')] [scheme.Custom('GetCorrectAgentType_ChoiceA')] エージェントスロットを追加。" #deepl:3263383410
+ sas_scheme_critical_moments.0001.b.fallback: "ランダムエージェントスロットを追加。" #deepl:1489889637
+ sas_scheme_critical_moments.0001.c: "[scheme.Custom('GetCorrectAgentType_ChoiceB_Icon')] [scheme.Custom('GetCorrectAgentType_ChoiceB')] エージェントスロットを追加。" #deepl:2992946553
+ sas_scheme_critical_moments.0001.c.fallback: "ランダムエージェントスロットを追加。" #deepl:1489889637
+ sas_scheme_critical_moments.0001.d: "@unpredictable_icon! こんなエージェントじゃダメだ。" #deepl:1013029851
+ sas_scheme_critical_moments.0001.d.tt: "これらの潜在的な[agent|E] スロットは破棄される。" #deepl:1290247234
+ sas_scheme_critical_moments.0001.e: "@icon_contract_modification_single! イベントのリスク" #deepl:2679306790
+ sas_scheme_critical_moments.0001.e.receive_event: "#P 役に立つ#! あるいは#N 害のある[scheme.GetName] 関連イベントをランダムに受け取ります。#!" #deepl:4000171554
+ sas_scheme_critical_moments.0001.e.debug.warning: "#D これらのイベントは吟味されていないので、リスクとリターンのバランスは悪いだろう。#!" #deepl:1193211861
+ sas_scheme_critical_moments.0001.f: "@scheme_success_icon! 成功確率に修正を加える" #deepl:828072647
+ sas_scheme_critical_moments.0001.g: "@scheme_success_max_icon! 最大成功確率の修正を加える" #deepl:1378556640
+ sas_scheme_critical_moments.0001.h: "@time_icon! もっと計画が必要だ...。" #deepl:3620623102
+ sas_scheme_critical_moments.0001.h.tt.some_opportunities: "[scheme_opportunity_i] [scheme_opportunity_opportunities|E]" #deepl:2469258378
+ sas_scheme_critical_moments.0001.h.tt.zero_opportunities: "[scheme_opportunity_i] [scheme_opportunity_opportunity|E]" #deepl:946611055
+ sas_scheme_critical_moments.0001.option.need_opportunities: "少なくとも[scheme_opportunity_i]1[scheme_opportunity_opportunity|E]" #deepl:1328090935
+ sas_scheme_critical_moments.0001.option.max_slots: "この[scheme|E] は最大[agent|E] スロットに達した。" #deepl:2882987660
+ sas_scheme_critical_moments.0001.option.opportunities_better_spent_on_agents: "#mixed_value@alert_icon! [scheme_opportunity_opportunities|E] は一般的に[agent|E] スロットに使った方が良い。#!" #deepl:902020936
+
+ # Scheme Type B Boilerplate
+ sas_scheme_critical_moments.0002.t: "sas_scheme_critical_moments.0001.t$。" #deepl:2535777279
+ sas_scheme_critical_moments.0002.desc: "貯めた[scheme_opportunity_opportunities|E] を使って[scheme.GetName] [scheme|E] の完成を目指す。強力な最終ボーナスを得るために、より多く消費する。" #deepl:2975502550
+ sas_scheme_critical_moments.0002.a: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')]#!:瞬間をつかむ" #deepl:2416618336
+ sas_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities: "少なくとも[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')] が必要だ。[scheme_opportunity_opportunities|E]" #deepl:222353579
+ sas_scheme_critical_moments.0002.b: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')]#!: $scheme_end_buff_t2_modifier$。" #deepl:2796944076
+ sas_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities: "少なくとも[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')] が必要だ。[scheme_opportunity_opportunities|E]" #deepl:3284097266
+ sas_scheme_critical_moments.0002.b.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] から最終的な     の合計が最大値を超えることはない。[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:2989463537
+ sas_scheme_critical_moments.0002.b.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E] 、このオプションの修飾子も含む) に対して[scheme.GetName] を確定する。#!" #deepl:1026627341
+ sas_scheme_critical_moments.0002.c: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')]#!: $scheme_end_buff_t3_modifier$。" #deepl:620615917
+ sas_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities: "少なくとも[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')] が必要だ。[scheme_opportunity_opportunities|E]" #deepl:2249578693
+ sas_scheme_critical_moments.0002.c.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t3_value')|=P/0%] から最終的な     の合計が最大値を超えることはない。[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:171408237
+ sas_scheme_critical_moments.0002.c.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t3_total_success_value')|P/0%] [success_chance|E] 、このオプションの修飾子も含む) に対して[scheme.GetName] を確定する。#!" #deepl:348010797
+ sas_scheme_critical_moments.0002.d: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')]#!: $scheme_end_buff_t4_modifier$。" #deepl:4245634060
+ sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities: "少なくとも[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')] が必要だ。[scheme_opportunity_opportunities|E]" #deepl:4114963779
+ sas_scheme_critical_moments.0002.d.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t4_value')|=P/0%] から最終的な     の合計が最大値を超えることはない。[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:1954019007
+ sas_scheme_critical_moments.0002.d.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t4_total_success_value')|P/0%] [success_chance|E] 、このオプションの修飾子も含む) に対して[scheme.GetName] を確定する。#!" #deepl:3356750797
+ sas_scheme_critical_moments.0002.e: "$sas_scheme_critical_moments.0001.h$." #deepl:527216822
+ sas_scheme_critical_moments.0002.e.tt.some_opportunities: "sas_scheme_critical_moments.0001.h.tt.some_opportunities$。" #deepl:860422857
+ sas_scheme_critical_moments.0002.e.tt.zero_opportunities: "sas_scheme_critical_moments.0001.h.tt.zero_opportunities$。" #deepl:3044083624
+ sas_scheme_end_buff_t2_modifier: "自信を持って実行する" #deepl:1096404347
+ sas_scheme_end_buff_t2_modifier_desc: "シュアリティは、それ自体が成功のブランドなのだ。" #deepl:2406515427
+ sas_scheme_end_buff_t3_modifier: "レバレッジの優位性" #deepl:2975369626
+ sas_scheme_end_buff_t3_modifier_desc: "確実なものなどないのだから、あらゆる可能性を押さえることだ。" #deepl:354067876
+ sas_scheme_end_buff_t4_modifier: "あらゆる角度をカバー" #deepl:2434671282
+ sas_scheme_end_buff_t4_modifier_desc: "勝者はギャンブルをする。" #deepl:416240098
+
+ # Reminders
+ sas_scheme_critical_moments.0011.t.boilerplate: "機会の限界" #deepl:741992334
+ sas_scheme_critical_moments.0011.t.task_contract: "sas_scheme_critical_moments.0001.t.task_contract$: $sas_scheme_critical_moments.0011.t.boilerplate$。" #deepl:2779270639
+ sas_scheme_critical_moments.0011.t.scheme: "$sas_scheme_critical_moments.0001.t.scheme$: $sas_scheme_critical_moments.0011.t.boilerplate$。" #deepl:4282407609
+ sas_scheme_critical_moments.0011.desc.intro: "私の計画[scheme.GetName]" #deepl:3413984870
+ sas_scheme_critical_moments.0011.desc.middle.character: "[scheme.GetTargetCharacter.GetTitledFirstName]" #deepl:4117363914
+ sas_scheme_critical_moments.0011.desc.middle.title: "[scheme.GetTargetTitle.GetDefinitiveName]" #deepl:2254312775
+ sas_scheme_critical_moments.0011.desc.outro: "#EMP #! \n \n 私が選択すれば、それを発展させることができる多くの道がある。しかし、さらなる#EMP 機会#! は、私が今あるもののいくつかを利用するまでは訪れそうにない。" #deepl:4243500226
+ sas_scheme_critical_moments.0011.immediate.tt: "Your[scheme.GetName] [scheme|E] has maximum[GetDefine('NScheme','SCHEME_MAX_OPPORTUNITIES')|0] [scheme_opportunities|E]" #deepl:3437879721
+ sas_scheme_critical_moments.0011.a: "私は適切と判断したときに行動する！" #deepl:3098732785
+ sas_scheme_critical_moments.0011.a.tt: "@warning_icon! #X この[scheme|E] が最大数に達した場合、アラートは受信されなくなります。[scheme_opportunity_opportunities|E]#!" #deepl:1081099080
+ sas_scheme_critical_moments.0011.b: "そういうことを常に把握しておくことは有益だ。" #deepl:1996839201
+ sas_scheme_critical_moments.0011.b.tt: "この[scheme|E] 、1年後に再び[scheme_opportunity_opportunities|E] 、上限数に達した場合は、再度お知らせします。" #deepl:1049117849
+ sas_scheme_critical_moments.0011.c: "すぐに実行する。" #deepl:3372487602

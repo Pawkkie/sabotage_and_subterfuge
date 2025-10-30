@@ -1,0 +1,51 @@
+﻿l_polish:
+ poison_opinion: "Poison Opinion" #deepl:489149273
+ poison_opinion_action: "Poison Opinion" #deepl:489149273
+ poison_opinion_desc: "Spróbuję zatruć [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] opinię o ich władcy, wywołując zamieszanie na ich dworach." #deepl:879276979
+ poison_opinion_desc_general: "Poison Opinion to [personal_scheme|E], który próbuje zmniejszyć opinię celu o jego bezpośrednim [liege|E]. Schemat ten opiera się głównie na własnych [intrigue|E] i umiejętnościach [femme_fatale_court_position|E]. Ponieważ nie jest to [hostile_scheme|E], nie jest to [secret_scheme_single|E] i nie używa [agents|E].\n\n W przeciwieństwie do większości schematów, ale podobnie jak Sway [personal_scheme|E], Poison Opinion uruchamia się ponownie po zakończeniu. Utracona opinia kumuluje się, więc utrzymanie jej aktywnej sprawi, że [scheme_target|E] będzie coraz mniej lubił swojego władcę.\n\n Skuteczne cele tego schematu z negatywnymi opiniami o swoim władcy będą bardziej skłonne do przyłączenia się do frakcji utworzonych za pomocą [provoke_vassals_scheme|E] [hostile_scheme|E] ." #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] ich [liege|E] zmniejszy się o #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "Nie można zatruwać opinii [TARGET_CHARACTER.GetShortUIName], gdy [TARGET_CHARACTER.GetSheHe] jest na mnie zirytowany" #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]opinia została zatruta" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]opinia nie została zatruta" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "Zatrudniasz [femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "Nie zatrudniasz [femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] wykonuje zadanie Poison Opinion" #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] nie wykonuje zadania Poison Opinion" #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "Twój [femme_fatale_court_position|E]'s' [intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "Jesteś utalentowanym Schemerem: $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]$VALUE|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]$VALUE|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "Poprzednio zatruta opinia: $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "Twój rywal: $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]'s aid: $VALUE|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "Wróg [femme_fatale_court_position|E]'pomoc: $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "Celem jest [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "Celem jest [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "Celem jest [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "Celem jest [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "Celem jest [GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "Celem jest [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "Celem jest [GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "Program Poison Opinion dobiega końca" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] odszedł. Nie można już zatruwać opinii [target.GetHerHis] przeciwko [target.GetHerHis] liege." #deepl:1019747224
+ poison_opinion_invalidated_war: "Z powodu wojny między wami nie można już zatruwać opinii [target.GetShortUIName]." #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "Nie zatrudniasz już [femme_fatale_court_position|E]." #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] nie wykonuje już zadania Poison Opinion." #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] stał się niezależny i nie ma już pana." #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "Poison Opinion #weak (Schemat)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "Próba zatrucia [recipient.GetShortUINameNoTooltip] opinii o ich władcy, powodując zamieszanie na ich dworach." #deepl:1775251095
+ poison_opinion_interaction_notification: "Opinia o zatruciu" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "Zatruję [recipient.GetShortUINameNoTooltip] opinię o ich władcy, powodując nieporządek na ich dworach!" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "Kontynuujesz swoje wysiłki" #deepl:2630534722
+ poison_opinion_try_again: "Podejmiesz kolejną próbę" #deepl:2953815728
+ poison_opinion_complete: "Zatrułeś opinię [target.GetShortUIName] tak bardzo, jak tylko mogłeś" #deepl:61883654

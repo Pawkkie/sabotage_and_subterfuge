@@ -1,0 +1,30 @@
+﻿l_japanese:
+ roused_rabble_faction_started_tt: "暴徒たちは農民[faction|E] 、来年あたりに反乱を起こすだろう。蜂起が始まる前に連絡が入るだろう。" #deepl:895772584
+
+ ## Success and secret
+ rouse_rabble_outcome.0001.t: "海外からのささやき" #deepl:3047973896
+ rouse_rabble_outcome.0001.desc: "幸運と冒険を求めて大陸を横断してきた旅人だ。私は彼らが私の廷臣たちと、彼らが[target.GetCapitalLocation.GetTitle.GetNameNoTier] の農民たちの中に見た反乱の燃え盛る炎について、ひそひそと話しているのを耳にした。\n\n 何が彼らを突然奮い立たせたのか、誰にもわからないようだが、反乱は避けられないようで、[target.GetShortUIName] はかろうじて気づいている。私たちの努力は完璧に機能した！" #deepl:3390693042
+ rouse_rabble_outcome.0001.a: "彼らの炎を燃え上がらせてほしい！" #deepl:1790369756
+ rouse_rabble_outcome.0001.prog: "あなたとあなたの[rabble_rouser|E] [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] 。[trait|E]" #deepl:2576651623
+
+ ## Success and discovered
+ rouse_rabble_outcome.0002.t: "海外からの疑念" #deepl:3269684831
+ rouse_rabble_outcome.0002.desc: "幸運と冒険を求めて大陸を横断する旅人だ。私は彼らが私の廷臣たちと、彼らが[target.GetCapitalLocation.GetTitle.GetNameNoTier] の農民たちの中に見た反乱の燃え盛る炎について、ひそひそと話しているのを耳にした。\n\n 彼らは私の方を盗み見ては、噛み付くような嫌悪のまなざしを向けていた。何が突然彼らを奮い立たせたのかは謎ではないが、反乱は避けられないようで、[target.GetShortUIName] 。" #deepl:1463922575
+ rouse_rabble_outcome.0002.a: "彼らの炎を燃え上がらせてほしい！" #deepl:1790369756
+
+ ## Unsuccessful and secret
+ rouse_rabble_outcome.0003.t: "不親切な心" #deepl:3841976415
+ rouse_rabble_outcome.0003.desc: "幸運と冒険を求めて大陸を横断している旅人だ。私は彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier] の農民について話しているのを小耳に挟んだ。逆境に直面した彼らの愛国心は倍増した。\n\n 私たちの最善の努力にもかかわらず、農民たちは自分たちの生活に満足している。" #deepl:556202482
+ rouse_rabble_outcome.0003.a: "少なくとも、今のところは...。" #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ rouse_rabble_outcome.0004.t: "硬化した心" #deepl:3138284672
+ rouse_rabble_outcome.0004.desc: "幸運と冒険を求めて大陸を横断してきた旅人だ。私は彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier] の農民について話しているのを耳にした。そして彼らは逆境に直面して、愛国心を倍増させたのだ。\n\n 彼らは私の方を盗み見し続けたが、その視線は噛み付くような嫌悪のまなざしだった。私が彼らを反乱に駆り立てようとしたことは不思議なことではなく、[target.GetShortUIName] は激怒している。" #deepl:2395136914
+ rouse_rabble_outcome.0004.a: "いずれは手に入れるだろう！" #deepl:1078680228
+
+ ## Gained Reveler trait
+ rouse_rabble_outcome.0005.t: "魂を奮い立たせる" #deepl:3339457466
+ rouse_rabble_outcome.0005.desc: "庶民を応援し、やる気を起こさせることが、これほど爽快なことだと誰が思っただろうか。食べ物あり、飲み物あり、歓声あり......庶民が互いに気を配り、抑圧感に対して結集するのだ。\n\n 私は別の動機でこの計画を始めたかもしれないが、国民の苦境は私自身のものとなった！" #deepl:4271649516
+ rouse_rabble_outcome.0005.a: "次に会ったときに乾杯するのが楽しみだ！" #deepl:3505615210
+ rouse_rabble_outcome.0005.b: "私は本当に距離を置くべきだ...。" #deepl:2837144994
+

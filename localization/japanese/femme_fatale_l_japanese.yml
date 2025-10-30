@@ -1,0 +1,33 @@
+﻿l_japanese:
+ # Court Position
+ femme_fatale_court_position: "ファム・ファタール" #deepl:2042176501
+ femme_fatale_court_position_desc: "廷臣たちを指先で操る達人であるファム・ファタールは、影から自分に最も適した方法で宮廷を指揮することを得意とする。彼女は家臣の目に映る家臣の評価を下げたり、あなたの[sas_spies|E] の効果を高めたり、あなた自身の宮廷での手続きを楽にしたりすることができる。" #deepl:275266301
+ femme_fatale_custom_effect_description: "$BULLET$ [GetScheme('poison_opinion').GetTypeName] 。[personal_scheme|E]" #deepl:3961591162
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #deepl:1704038344
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]" #deepl:4179113456
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]" #deepl:1335294579
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]" #deepl:571687154
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]" #deepl:439104194
+
+ # Eligibility
+ femme_fatale_not_lowborn: "#bold #! ではない。[lowborn|E]" #deepl:1427234325
+ femme_falate_not_married: "#bold #! ではない。[married|E]" #deepl:3606104437
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "ポイズン・オピニオン" #deepl:489149273
+ femme_fatale_task_poison_opinion_desc: "ターゲットの[liege|E] に対する評価を低下させ、宮廷内の混乱と無秩序を招く。" #deepl:1344370183
+ allow_poisoning_opinion_scheme_tt: "[poison_opinion_scheme|E] を使用することができる。 このタスクは、スキームの開始と継続の両方にアクティブでなければならない。\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! から@scheme_success_icon!#P  +20%#! ([aptitude|E] をベースとする)" #deepl:2799618372
+ max_poison_opinion_schemes_add: "マックス[GetScheme('poison_opinion').GetTypeName] [schemes|E]" #deepl:3008665747
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "クモを受け入れる" #deepl:1182524634
+ femme_fatale_task_embrace_the_spiders_desc: "[sas_spy_network|E] の網をより遠くまで張り巡らせ、外国の秘密をこれまで以上に効果的に学ぶ。" #deepl:4233153217
+ femme_fatale_increase_spy_discovery_chance_tt: "[sas_spies|E] 秘密や革新を発見するチャンスを増やす" #deepl:4182569517
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "鎮静と監視" #deepl:2527092364
+ femme_fatale_task_soothe_and_surveil_desc: "妨害の兆候に注意しながら、コート内の緊張の高まりを和らげる。" #deepl:2496953860
+ increased_poison_opinion_defense_tt: "敵[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ～@scheme_success_icon!#P  -20%#! ([aptitude|E] を基準として)" #deepl:228597342

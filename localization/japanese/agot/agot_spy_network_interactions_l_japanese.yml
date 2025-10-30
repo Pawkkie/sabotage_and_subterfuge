@@ -1,0 +1,99 @@
+﻿l_japanese:
+ agot_invite_to_spy_network_interaction: "Recruit as Spy"
+ agot_check_for_potential_spies_interaction: "スパイの可能性をチェックする" #deepl:3426630385
+ agot_remove_from_spy_network_interaction: "Dismiss Spy"
+ SPY_RECRUIT_GOLD: "Bribe"
+ SPY_RECRUIT_GOLD_VALID: "Pay [recipient.GetShortUINameNoTooltip] [gold_i] [SCOPE.ScriptValue('bribe_value')|V0]"
+ AGOT_RECRUIT_SPY_SKILL_MOD: "Your [intrigue|E] Skill: $VALUE|=+0$"
+ AGOT_RECRUIT_SPY_CAP_MODIFIER: "管理しきれないほどのスパイがいる: $VALUE|=+0$" #deepl:1742108695
+ AGOT_RECRUIT_SPY_KINGSGUARD_REASON: "[recipient.GetShortUINameNoTooltip] は近衛兵である。" #deepl:2943122130
+ highest_held_title_tier_greater_than: "あなたは彼らより上のタイトル層だ。" #deepl:3271074329
+ DECEITFUL_REASON: "[recipient.GetShortUINameNoTooltip] は欺瞞的である：$VALUE|+0=$。" #deepl:2981172720
+ HONEST_REASON: "[recipient.GetShortUINameNoTooltip] is Honest: $VALUE|+0=$"
+ JUST_REASON: "[recipient.GetShortUINameNoTooltip] は次のとおり。" #deepl:4104101612
+ TRUSTING_REASON: "[recipient.GetShortUINameNoTooltip] は信頼できる：$VALUE|+0=$。" #deepl:4155378834
+ LAZY_REASON: "[recipient.GetShortUINameNoTooltip] is Lazy: $VALUE|+0=$"
+ SHY_REASON: "[recipient.GetShortUINameNoTooltip] は内気です：$VALUE|+0=$。" #deepl:1013341979
+ CRAVEN_REASON: "[recipient.GetShortUINameNoTooltip] はクレイヴン：$VALUE|+0=$である。" #deepl:3840776540
+ PARANOID_REASON: "[recipient.GetShortUINameNoTooltip] is Paranoid: $VALUE|+0=$"
+ DRUNKARD_REASON: "[recipient.GetShortUINameNoTooltip] は酔っぱらい： $VALUE|+0=$." #deepl:3018668907
+ CONTRITE_REASON: "[recipient.GetShortUINameNoTooltip] はContrite: $VALUE|+0=$ である。" #deepl:418458151
+ PREVIOUSLY_DISCOVERED_REASON: "[recipient.GetShortUINameNoTooltip] was previously discovered spying: $VALUE|+0=$"
+
+ agot_spy_network.0200.interface.employer.t: "Spy Reveals Secret"
+ agot_spy_network.0200.interface.employer.desc: "[courtowner.GetTitledFirstNamePossessive] 、あなたのスパイの一人が、役に立つかもしれない秘密を暴露した。" #deepl:3645310449
+
+ agot_spy_network.0201.interface.employer.t: "Spy Reveals Information"
+ agot_spy_network.0201.interface.employer.desc: "あなたのスパイの一人が、宮廷の所有者の個人情報と軍事情報を暴露した。" #deepl:3546164191
+
+ agot_spy_network.0200.interface.spymaster.t: "スパイが秘密を暴露" #deepl:168050903
+ agot_spy_network.0200.interface.spymaster.desc: "One of your spies at [courtowner.GetTitledFirstNamePossessive] court revealed a secret that might prove useful."
+
+ agot_spy_network.0210.t: "私の[ROOT.Char.GetLadyLord] 、" #deepl:2169612167
+ agot_spy_network.0210.desc: "[secret_holder.GetTitledFirstName] が[courtowner.GetShortUINamePossessive] 裁判所で守ろうとしている秘密を入手することができた。私が見つけた証拠を渡しますが、私の奉仕が正当に報われる場合に限ります。" #deepl:294115213
+ agot_spy_network.0210.a: "I need to know everything!"
+ agot_spy_network.0210.b: "興味はない。" #deepl:2813068183
+ agot_spy_network.0210.c: "コインを持ってないんだ...。" #deepl:175325562
+
+ agot_spy_network.0400.t: "スパイがリクルートされた" #deepl:351168471
+ agot_spy_network.0400.desc: "[councillor.GetTitledFirstName] [target_character.GetShortUINamePossessive] 、あなたのためにスパイをしてくれる人を見つけた。" #deepl:3378650470
+ agot_spy_network.0400.a: "[new_spy.GetTitledFirstName] は私のために役立つだろう。" #deepl:1274442422
+
+ agot_spy_network.0500.t: "スパイ発見" #deepl:977083122
+ agot_spy_network.0500.desc: "[councillor.GetTitledFirstName] スパイを発見しました！[discovered_spy.GetTitledFirstName] 、あなたの宮廷の最も暗い隅で秘密を探っているところを捕まりました。" #deepl:725801880
+ agot_spy_network.0500.a: "Who sent you?"
+
+ agot_spy_network.0510.t: "あなたは発見された" #deepl:3792558933
+ agot_spy_network.0510.desc: "どういうわけかバレてしまった！[discovered_spy_employer.GetTitledFirstName] のためにスパイをしていたことがバレたんだ。今、私の人生は危険にさらされている。誰に雇われたのか言えば、生き延びられるかも？" #deepl:3491980837
+ agot_spy_network.0510.a: "マーシーすべて話す" #deepl:1040764062
+ agot_spy_network.0510.b: "My lips remain sealed!"
+
+ agot_spy_network.0520.t: "A Spy Was Discovered"
+ agot_spy_network.0520.flipped.desc: "[discovered_spy.GetTitledFirstName] 誰があなたをスパイしていたかを自ら暴露し、慈悲を乞うた。[discovered_spy_employer.GetTitledFirstName] ！" #deepl:706259308
+ agot_spy_network.0520.loyal.desc: "[discovered_spy.GetTitledFirstName] 誰があなたをスパイしていたかを暴露することを拒否する。" #deepl:4116753664
+ agot_spy_network.0520.desc: "裏切り者をどうする？" #deepl:1989995004
+ agot_spy_network.0520.a: "[discovered_spy.GetTitledFirstNameNoTooltip] must rot in a cell."
+ agot_spy_network.0520.b: "この罪に対する罰はただ一つ、死である！" #deepl:272277589
+ agot_spy_network.0520.c: "私は慈悲深い。しかし、この陰謀は止めなければならない！" #deepl:1546398863
+
+ agot_spy_network.0600.t: "あなたのスパイが発見された" #deepl:3648032057
+ agot_spy_network.0600.desc: "The clandestine reports we received from [discovered_spy.GetTitledFirstName] have suddenly stopped. It appears [discovered_spy.GetHerHis] skills were not enough to avoid discovery."
+ agot_spy_network.0600.flipped.desc: "さらに悪いことに、[discovered_spy.GetTitledFirstName] 、あなたの関与が明らかになった！" #deepl:3841062910
+ agot_spy_network.0600.a: "[discovered_spy.GetSheHe|U] 慎重さが足りなかった！" #deepl:3995574791
+
+ agot_spy_network.0700.t: "スパイが雇われた" #deepl:149732041
+ agot_spy_network.0700.desc: "[recipient.GetTitledFirstName] has joined the ranks of your sprawling spy network."
+ agot_spy_network.0700.a: "影響力は雑草のように育つ...。" #deepl:2693232088
+
+ agot_spy_network.0800.t: "A Spy Can Be Hired"
+ agot_spy_network.0800.desc: "Your spymaster found a potential new spy at [recipient.GetTitledFirstNamePossessive] court. [potential_new_spy.GetTitledFirstName] might be convinced to join your spy network."
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] 。" #deepl:3077370088
+
+ hostile_scheme_discovery_spy.2001.intro: "私のスパイマスター、[spymaster.GetTitledFirstName] は、[courtowner.GetTitledFirstNamePossessive] 裁判所で私に対する陰謀の準備を発見した。誰かはまだわからない、" #deepl:2805483937
+ potential_spy_in_court: "この法廷のある人物は、あなたのためにスパイになることを望んでいる。" #deepl:3390703719
+
+ #GUI
+ your_spies: "あなたのスパイ" #deepl:2960525419
+
+ ###################### New
+ # Recruit Spy
+ agot_invite_to_spy_network_interaction_desc: "Recruit [recipient.GetTitledFirstName] to your [sas_spy_network|E]"
+ invite_to_spy_network_interaction_target_added_to_network.tt: "You add [recipient.GetShortUIName] to your spy network"
+ invite_to_spy_network_interaction_target_becomes_spy.tt: "[recipient.GetShortUIName] is added to your spy network"
+ invite_to_spy_network_toast_title: "スパイ募集" #deepl:3971834391
+ invite_to_spy_network_toast_desc: "[recipient.GetTitledFirstName] はあなたの広大なスパイネットワークの仲間入りをした。" #deepl:2555271758
+
+ # Dismiss Spy
+ agot_remove_from_spy_network_interaction_desc: "Dismiss [recipient.GetTitledFirstName] from your [sas_spy_network|E]"
+ dismiss_from_spy_network_interaction_target_remove_from_network.tt: "You dismiss [recipient.GetShortUIName] from your spy network"
+ dismiss_from_spy_network_interaction_target_loses_spy.tt: "[recipient.GetShortUIName] スパイ・ネットワークから排除される" #deepl:1206633062
+ dismiss_from_spy_network_toast_title: "スパイ解任" #deepl:2246344130
+ dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] はあなたの広大なスパイ網の仲間から離脱した。" #deepl:360659420
+
+ # Check for Potential Spies
+ agot_check_for_potential_spies_interaction_desc: "[recipient.GetShortUIName] の宮廷に、あなたの仲間になってくれそうな廷臣がいないか調べてみよう。[sas_spy_network|E]" #deepl:3999256908
+ check_for_potential_spies_actor.tt: "[sas_spy|E] あなたのクラブに加入するよう交渉する可能性があることが通知される。[sas_spy_network|E]" #deepl:2541194663
+
+ # Perks
+ DIGGING_FOR_DIRT_PERK_EFFECT: "説得力がある： $VALUE|=+0$" #deepl:2797321221
+ SUBTLE_DESIRE_PERK_EFFECT: "魅力的である： $VALUE|=+0$" #deepl:567933818

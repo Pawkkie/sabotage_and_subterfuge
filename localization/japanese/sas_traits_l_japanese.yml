@@ -1,0 +1,10 @@
+﻿l_japanese:
+ # Embezzler
+ trait_sas_embezzler: "横領者" #deepl:2672472445
+ trait_sas_embezzler_desc: "このキャラクターは誰かから資金を横領した。" #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] 他人の資金を横領した。" #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "プラグブリンガー" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "このキャラクターは大疫病をもたらすために働いている。" #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] は大疫病をもたらすために働いた。" #deepl:4217708703

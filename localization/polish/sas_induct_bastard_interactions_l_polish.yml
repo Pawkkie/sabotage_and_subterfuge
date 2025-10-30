@@ -1,0 +1,12 @@
+﻿l_polish:
+ sas_induct_bastard_interaction: "Induct Bastard" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "Wprowadź [recipient.GetFirstNameNicknamed] do swojego [dynasty|E]." #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "Wprowadź nieślubne dziecko, które spłodziłeś z [GetTrait('disputed_heritage').GetName( GetNullCharacter )] do swojego [dynasty|E]." #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "Wprowadzony bękart" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "Wprowadzasz [recipient.GetShortUIName] do swojego [dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "Legitymizacja podstępem" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "[recipient.GetSheHe] Złóż [recipient.GetFirstName] ofertę nie do odrzucenia, legitymizując ich jako członków [dynasty|E]." #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "Wprowadź dziecko [GetTrait('bastard').GetName( GetNullCharacter )], którego jesteś ojcem, do swojego [dynasty|E]." #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "Skradziony drań" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "Wprowadzasz [recipient.GetShortUIName] do swojego [dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "Uznane rodzicielstwo" #deepl:3455245448

@@ -1,0 +1,10 @@
+﻿l_japanese:
+ poison_opinion_ongoing.1001.t: "ポイズン・オピニオン [target.GetLiege.GetCulture.GetNameNoTooltip] 文化" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "[target.GetCulture.GetNameNoTooltip] の血を引く平民が、[capital.GetNameNoTooltip] の路上で些細なことで声をかけられた。\n\n このトラブルについて、[target.GetLiege.GetCulture.GetNameNoTooltip] の急進的な一派を非難することで、[target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] を納得させることができるかもしれない。[target.GetCulture.GetNameNoTooltip] 被害者と同様、 も、おそらく彼らの家臣は予想以上に不愉快なのだろう。" #deepl:223848752
+ poison_opinion_ongoing.1001.a: "[target.GetLiege.GetCulture.GetCollectiveNounNoTooltip] に直接の責任がある。" #deepl:684523574
+ poison_opinion_ongoing.1001.b: "これは不幸な事故だ。" #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "ポイズン・オピニオンお茶をこぼす" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "[target_spouse.GetName] [target.GetNamePossessive]  配偶者とアフタヌーンティーに招待された。\n\n その場は楽しく、ゴシップに溢れた出来事で、[target_spouse.GetShortUIName] が[target.GetLiege.GetName] について、いくつかの魅力的なコメントを漏らすのに時間はかからなかった。これはきっと私に有利に働くだろう...。" #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "続けてくれ" #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "[target.GetLiege.GetSheHe] 、かつて恐ろしいことをしたと聞いたが...。" #deepl:595741215

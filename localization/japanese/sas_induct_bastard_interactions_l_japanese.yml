@@ -1,0 +1,12 @@
+﻿l_japanese:
+ sas_induct_bastard_interaction: "インダクト・バスタード" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "[recipient.GetFirstNameNicknamed] を[dynasty|E] に誘導する。" #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "あなたが[GetTrait('disputed_heritage').GetName( GetNullCharacter )] との間にもうけた隠し子を[dynasty|E] に入会させる。" #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "誘導されたろくでなし" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "[recipient.GetShortUIName] 。[dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "卑怯な合法化" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "[recipient.GetFirstName] [recipient.GetSheHe] をあなたの[dynasty|E] のメンバーとして正当化することで、断れないオファーをする。" #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "[GetTrait('bastard').GetName( GetNullCharacter )] あなたが産んだ子供を[dynasty|E] に入会させる。" #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "ストール・バスタード" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "[recipient.GetShortUIName] 。[dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "親子関係" #deepl:3455245448

@@ -1,0 +1,24 @@
+﻿l_japanese:
+ # Court Position
+ smuggler_court_position: "密輸業者" #deepl:2327268886
+ smuggler_court_position_desc: "ある地点から別の地点へ商品を移動させる必要がある場合、密輸業者はそれを手配することができる。厳密には必要ではないが、怪しげな商品は彼らの得意分野である。密輸業者は、強盗計画やアーティファクトの窃盗を可能にするだけでなく、あなた自身の輸送網を強化することもできる。" #deepl:760391573
+ smuggler_custom_effect_description_scheme: "$BULLET$ [GetScheme('smuggle_artifact').GetTypeName] 。[hostile_scheme|E]" #deepl:732188162
+ smuggler_custom_effect_description_demand_payment: "$BULLET$ [demand_payment|E] インタラクションを解き放つ" #deepl:1175097164
+
+ # Traits
+ # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+
+ # Rouse Rabble task
+ smuggler_task_plan_heist: "強盗計画" #deepl:3591742283
+ smuggler_task_plan_heist_desc: "特定のアーティファクトの強奪を計画し、そのアーティファクトを彼らの法廷から自分の法廷に密輸するために、あなたとクルーに仕事をさせる。" #deepl:3024560060
+ allow_steal_artifact_scheme_tt: "[plan_heist_interaction|E] インタラクションを使用して、ターゲットに対して[smuggle_artifact_scheme|E] を有効にすることができる。\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to@scheme_success_icon!#P  +20%#! ([aptitude|E] に基づく)" #deepl:4121225388
+
+ # Loot and Scoot task
+ #  smuggler_task_loot_and_scoot: "略奪とスクート" #deepl:1675967315
+ #  smuggler_task_provoke_vassals_desc: "他の宮廷の家臣を挑発し、世論を低下させ、蜂起の可能性もある。" #deepl:3289991535
+
+ # Monitor Supplies
+ smuggler_task_monitor_supplies: "モニター用品" #deepl:2707686834
+ smuggler_task_monitor_supplies_desc: "ロジスティクスに目を光らせ、安全で効率的なオペレーションを維持する。" #deepl:2420428664
+ increased_smuggle_artifact_defense_tt: "敵[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ～@scheme_success_icon!#P  -20%#! ([aptitude|E] を基準として)" #deepl:1035613496
+

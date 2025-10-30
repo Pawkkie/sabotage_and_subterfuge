@@ -1,0 +1,69 @@
+﻿l_polish:
+ # Invited to a feast
+ rouse_rabble_ongoing.0001.t: "Zaproszeni na ucztę" #deepl:1441220718
+ rouse_rabble_ongoing.0001.desc: "Starszy kierujący dużą rodziną chłopską na wiejskich obrzeżach [target_title.GetNameNoTier] zaprosił [rouser_name.GetShortUIName] na ucztę z okazji lokalnego święta. Kiedy [rouser_name.GetShortUIName] wyjaśnili, że są wdzięczni za ofertę i napiszą do swojego pracodawcy, aby poinformować go o późnym powrocie, zaproszenie zostało dalej rozszerzone, nieświadomie, na mnie.\n\n Ci chłopi nie mają pojęcia, że jestem w to w ogóle zaangażowany, a moja obecność może być dla nich szokiem... ale także silnym dowodem poparcia dla ich sprawy, zwłaszcza jeśli usiądziemy przy posiłku jak równy z równym." #deepl:2676334559
+ rouse_rabble_ongoing.0001.a: "Dołączę do uroczystości" #deepl:2695719965
+ rouse_rabble_ongoing.0001.b: "Wyślę prezent" #deepl:3810044038
+ rouse_rabble_ongoing.0001.c: "Nie powinienem się angażować" #deepl:1759156705
+
+ # The liege sends relief
+ rouse_rabble_ongoing.0002.t: "Liege wysyła pomoc" #deepl:2093183175
+ rouse_rabble_ongoing.0002.desc: "[rouser_name.GetShortUIName] poinformował mnie, że pożar rozprzestrzenił się ostatnio w niektórych wiejskich [target_title.GetNameNoTier] osadach, podpalając spichlerz i pobliskie budynki. To poważnie nadwyrężyło zapasy żywności dla chłopów.\n\n [target.GetShortUIName] zarządził wysłanie pomocy do dotkniętego obszaru w postaci żywności i materiałów budowlanych. Zaoferowanie naszego wsparcia zwiększyłoby dobrą wolę, ale ustabilizowałoby masy... Może zamiast tego zatrudnimy najemników, którzy przechwycą i zniszczą dostawy na trasie?\n\n Może to krok za daleko..." #deepl:1680985283
+ rouse_rabble_ongoing.0002.a: "Przechwycenie dostawy" #deepl:1927831992
+ rouse_rabble_ongoing.0002.b: "Zatwierdzenie dostawy" #deepl:2208938163
+ rouse_rabble_ongoing.0002.c: "Zobaczymy, co się stanie" #deepl:4098838832
+
+ # Connecting with the youth
+ rouse_rabble_ongoing.0003.t: "Kontakt z młodzieżą" #deepl:2985966255
+ rouse_rabble_ongoing.0003.desc: "Wygląda na to, że [rouser_name.GetShortUIName] został poproszony o pomoc w zorganizowaniu jarmarku dla miejscowej młodzieży chłopskiej! Jest całe popołudnie do wypełnienia jakąś aktywnością.\n\n Dzisiejsza młodzież to jutrzejsi rewolucjoniści. Zastanawiam się, czy jest to okazja do zasiania nasion, które mogą przynieść nam największe korzyści?" #deepl:2713189345
+ rouse_rabble_ongoing.0003.a: "Zaplanuj pozorowaną bitwę" #deepl:146267889
+ rouse_rabble_ongoing.0003.b: "Zorganizować turniej myśliwski" #deepl:991081673
+ rouse_rabble_ongoing.0003.c: "Przeprowadzenie warsztatów na temat wymiany kulturalnej" #deepl:2194861974
+
+ # Staging a protest
+ rouse_rabble_ongoing.0004.t: "Organizacja protestu" #deepl:2463182722
+ rouse_rabble_ongoing.0004.desc: "Niedawno czytałem powieść, w której bohaterowie, zamożni szlachcice, przebierali się za chłopów, aby wtopić się w ich otoczenie.\n\n Przyszło mi do głowy, że moglibyśmy zrobić to samo w [target_title.GetNameNoTier] i wysłać kilku członków naszego dworu, aby zorganizowali pokojowy protest, potencjalnie przekształcając go w gwałtowny." #deepl:3630176459
+ rouse_rabble_ongoing.0004.a: "Rozkołyszmy łódź" #deepl:4217286068
+ rouse_rabble_ongoing.0004.b: "Może lepiej zostawić to fikcji" #deepl:726165040
+
+ # A rowdy tavern
+ rouse_rabble_ongoing.0005.t: "Tawerna Rowdy" #deepl:226345630
+ rouse_rabble_ongoing.0005.desc: "Udałem się w tajemnicy do tawerny w okolicy [target_title.GetNameNoTier], gdzie [rouser_name.GetShortUIName] pracuje, aby uzyskać aktualizację od [rouser_name.GetHerHim]. Tawerna była pełna i hałaśliwa, bulgotała jak kocioł czarownicy\n\n Głos krzyczy ponad kakofonią, żołnierz królestwa zbyt głęboko w swoich kubkach, przemawiając do wieśniaków. W grupie rozlegają się pomruki niezadowolenia, choć nikt nie chce się do niego zbliżyć." #deepl:960826830
+ rouse_rabble_ongoing.0005.a: "Wstań i zgaś jego światło" #deepl:1867440387
+ rouse_rabble_ongoing.0005.b: "Dodać paliwa do pomruków niezadowolenia" #deepl:954247850
+ rouse_rabble_ongoing.0005.c: "Pomóż żołnierzowi wrócić do domu" #deepl:131614521
+ rouse_rabble_ongoing.0005.d: "Popijaj drinka i obserwuj" #deepl:1953099562
+
+ # An interesting missive
+ rouse_rabble_ongoing.0006.t: "Interesująca wiadomość" #deepl:4215557738
+ rouse_rabble_ongoing.0006.desc: "Otrzymałem list od, niewiarygodne, [target.GetShortUIName]. Ton jest pochlebny i serdeczny, władca melduje się u [target.GetHerHis] współczesnych.\n\n Interesującą częścią jest zakończenie. Wygląda na to, że [target.GetSheHe] ma do czynienia z pewnymi niepokojami ze strony chłopstwa i pyta mnie o opinię na temat najlepszej drogi naprzód. Jasne jest, że nie jestem podejrzany, ale może to jeszcze stanowić okazję." #deepl:640877473
+ rouse_rabble_ongoing.0006.a: "Zmiażdżyć ich" #deepl:2237847967
+ rouse_rabble_ongoing.0006.b: "Daj im trochę luzu" #deepl:693808399
+
+ # A Costly Suggestion
+ rouse_rabble_ongoing.0007.t: "Kosztowna sugestia" #deepl:869688950
+ rouse_rabble_ongoing.0007.desc: "Jeden z agentów zasugerował mi ostatnio, że rozsądnie byłoby spróbować dać przykład chłopskiej rebelii. Chodzi o to, by wykorzystać nasze królestwo jako świecącą latarnię tego, do czego powinni dążyć chłopi na całym świecie. [rouser_name.GetShortUIName] może następnie wykorzystać naszą łaskę jako konkretny dowód na to, że zmiana jest możliwa.\n\n Nie odbywa się to bez kosztów, ponieważ musimy oczywiście zmienić sposób, w jaki sami wchodzimy w interakcje z masami. Czy warto to robić tylko po to?" #deepl:2964475064
+ rouse_rabble_ongoing.0007.a: "Obniżenie podatków" #deepl:96913909
+ rouse_rabble_ongoing.0007.b: "Obniżenie opłat" #deepl:26427300
+ rouse_rabble_ongoing.0007.c: "Daj im trochę wolnego" #deepl:874460699
+ rouse_rabble_ongoing.0007.d: "Niebiosa, nie!" #deepl:162677040
+
+ # Who's the rouser
+ rouse_rabble_ongoing.0008.t: "Kto tu jest wściekłym furiatem?!" #deepl:1707284294
+ rouse_rabble_ongoing.0008.desc: "Bluźnierstwo! Malarky! Co za apokaliptycznie głupi pomysł! Skąd, u licha, w ogóle wzięła się ta sugestia, nie mogę zrozumieć, co oni w ogóle myślą!\n\n Domyślam się, że [rouser_name.GetShortUIName] jest tutaj profesjonalistą, ale naprawdę? NAPRAWDĘ?! Czy ten rodzaj rodowodu naprawdę zapewnia im tak wyjątkową perspektywę, aby dostrzec zalety takich pomysłów?\n\n Nie mogę tego zrozumieć, ale nadal musimy zdecydować o sposobie działania." #deepl:564414791
+ rouse_rabble_ongoing.0008.a: "Wiedzą, co robią" #deepl:3356801487
+ rouse_rabble_ongoing.0008.b: "Odrzucam ten nonsens" #deepl:1872803170
+ rouse_rabble_ongoing.0008.c: "Jestem pewien, że znajdziemy kompromis" #deepl:730623529
+
+ # Crossing the border
+ rouse_rabble_ongoing.0009.t: "Przyłapany na przekraczaniu granicy" #deepl:2951116650
+ rouse_rabble_ongoing.0009.desc: "Przekraczając granicę [target_title.GetNameNoTier], [rouser_name.GetShortUIName] natknął się na pecha w postaci rutynowego patrolu żołnierzy wędrujących po okolicy.\n\n Machają do [rouser_name.GetHerHim], aby przejść, nie pilnie ani nieuprzejmie, ale z wahającą się ciekawością. Jest to bardziej odległa część regionu, a przechodniów jest bardzo niewielu.\n\n Nie jest to zupełnie niespotykane, aby ludzie wędrowali po okolicy, ale jest to na tyle rzadkie, że może wywrzeć wrażenie na żołnierzach, jeśli sytuacja nie zostanie potraktowana taktownie." #deepl:4133707670
+ rouse_rabble_ongoing.0009.a: "Kłamstwo na temat celu" #deepl:3028399027
+ rouse_rabble_ongoing.0009.b: "Nawiąż swobodną rozmowę" #deepl:2801380731
+ rouse_rabble_ongoing.0009.c: "Zaoferować łapówkę" #deepl:1256381302
+
+ # Burning too bright
+ rouse_rabble_ongoing.0010.t: "Płomienie płoną zbyt jasno" #deepl:1391488323
+ rouse_rabble_ongoing.0010.desc: "Praca nad chłopstwem w [target_title.GetNameNoTier] wydaje się iść dobrze... być może trochę za dobrze.\n\n Widać, że ich zapał może rozlać się na inne regiony, w tym nasz.\n\n Możemy użyć naszych ludzi wewnątrz, aby spróbować nieco ochłodzić sytuację, ale będzie to miało konsekwencje." #deepl:4227841483
+ rouse_rabble_ongoing.0010.a: "Zachęcanie do intensywności" #deepl:3207464489
+ rouse_rabble_ongoing.0010.b: "Zwolnij" #deepl:1458867344

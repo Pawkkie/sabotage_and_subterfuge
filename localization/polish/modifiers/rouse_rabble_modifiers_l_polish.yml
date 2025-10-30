@@ -1,0 +1,46 @@
+﻿l_polish:
+ rouse_rabble_attended_local_feast: "Udział w lokalnym święcie" #deepl:2713133615
+ rouse_rabble_sent_gift_to_local_feast: "Prezent wysłany do mieszkańców" #deepl:231123044
+ rouse_rabble_ignored_local_feast: "Zignorowana lokalna uczta" #deepl:4143663347
+
+ rouse_rabble_intercept_aid: "Przechwycona pomoc lokalna" #deepl:1362272277
+ rouse_rabble_endorse_aid: "Zatwierdzona pomoc lokalna" #deepl:383506778
+ rouse_rabble_ignore_aid: "Zignorowana pomoc lokalna" #deepl:3141683792
+ rouse_rabble_endorsed_aid_opinion: "Zatwierdzona pomoc lokalna" #deepl:383506778
+
+ rouse_rabble_mock_battle: "Młodzieżowa bitwa próbna" #deepl:4072308434
+ rouse_rabble_hunting_tournament: "Młodzieżowy Turniej Myśliwski" #deepl:2973954280
+ rouse_rabble_cultural_exchange: "Wymiana kulturalna młodzieży" #deepl:1352443444
+
+ rouse_rabble_undercover_protest: "Protesty pod przykrywką" #deepl:1250919224
+
+ rouse_rabble_fought_soldier: "Okryty żołnierz" #deepl:2448626429
+ rouse_rabble_slandered_soldier: "Oczerniany żołnierz" #deepl:1847595356
+ rouse_rabble_helped_soldier_home: "Pomógł żołnierzowi" #deepl:1762562614
+ rouse_rabble_observed_soldier: "Obserwowany żołnierz" #deepl:1958705373
+
+ rouse_rabble_missive_crush_them: "Zalecane miażdżenie buntowników" #deepl:3024212291
+ rouse_rabble_missive_help_them: "Zalecana pomoc dla buntowników" #deepl:2424822606
+
+ rouse_rabble_suggestion_tax: "Obniżone podatki własne" #deepl:3298667024
+ rouse_rabble_suggestion_levies: "Zmniejszone opłaty własne" #deepl:3813493225
+ rouse_rabble_suggestion_development: "Ograniczony rozwój własny" #deepl:2538667592
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "Obniżone podatki" #deepl:3057853721
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "Obniżone opłaty" #deepl:3882781821
+ rouse_rabble_suggestion_reduce_development_county_modifier: "Ograniczony rozwój" #deepl:1216115176
+
+ rouse_rabble_argument_correct: "Prawidłowa decyzja" #deepl:4105672237
+ rouse_rabble_argument_incorrect: "Nieprawidłowa decyzja" #deepl:3636144073
+ rouse_rabble_trusted_judgment_opinion: "Zaufany osąd" #deepl:3001423300
+ rouse_rabble_doubted_judgment_opinion: "Wątpliwy osąd" #deepl:520569006
+ rouse_rabble_compromised_judgment_opinion: "Kompromisowa decyzja" #deepl:3044150383
+
+ rouse_rabble_soldiers_suspicious: "Podejrzani żołnierze" #deepl:2109321105
+ rouse_rabble_soldiers_unsuspecting: "Niczego niepodejrzewający żołnierze" #deepl:2952706296
+
+ rouse_rabble_increase_tension: "Zwiększone napięcie" #deepl:1175644696
+ rouse_rabble_cool_off_tension: "Ostudzone napięcia" #deepl:2228263524
+ rouse_rabble_increase_tension_county_modifier: "Zainspirowany przez Rebeliantów" #deepl:170963419
+
+ attempted_to_rouse_rabble: "Próba wywołania rabanu" #deepl:3448411340
+ successfully_roused_rabble: "Skutecznie podburzony tłum" #deepl:3121025999

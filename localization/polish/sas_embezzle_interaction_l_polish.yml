@@ -1,0 +1,26 @@
+﻿l_polish:
+ sas_embezzle_interaction: "Defraudacja funduszy" #deepl:648628518
+ sas_embezzle_interaction_desc: "Wymyślenie pretekstu do przejęcia towarów i przemytu funduszy od kupców z sąsiedniego królestwa, lennika lub wasala." #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "To nie defraudacja, jeśli niczego nie zabrałeś" #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Mała suma" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP Utrata#! kilku cennych przedmiotów" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] Średnia suma" #deepl:2443027586
+ sas_embezzle_sum_medium: "Nałożenie nieoczekiwanych opłat celnych" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] Duża suma" #deepl:566310994
+ sas_embezzle_sum_large: "Nieuczciwi handlarze dziesięciną" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] Ogromna suma" #deepl:1311154991
+ sas_embezzle_sum_huge: "Rażąca kradzież podatków" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "Niewykryta defraudacja" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Twoje nikczemne czyny są natychmiast demaskowane" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] został przyłapany na próbie defraudacji!" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Odblokowuje interakcję [sas_embezzle_interaction|E] " #deepl:1189011648

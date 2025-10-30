@@ -1,0 +1,34 @@
+﻿l_japanese:
+ game_concept_rouse_rabble_scheme: "$rouse_rabble$ スキーム" #deepl:1256911556
+ game_concept_rouse_rabble_scheme_desc: "$rouse_rabble_desc_general$" #deepl:44147011
+ game_concept_provoke_vassals_scheme: "$provoke_vassals$ スキーム" #deepl:2097908804
+ game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$" #deepl:3187202781
+ game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$" #deepl:1046129220
+ game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$" #deepl:2697849339
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$" #deepl:2264102523
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$" #deepl:2509590743
+ game_concept_poison_opinion_scheme: "$poison_opinion$ スキーム" #deepl:4069731557
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$" #deepl:2916212638
+ game_concept_smuggler_court_position: "$smuggler_court_position$" #deepl:708725340
+ game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$" #deepl:506615262
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ スキーム" #deepl:1623838666
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$" #deepl:843447062
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$" #deepl:669677987
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$" #deepl:1116663943
+ game_concept_master_assassin_court_position: "$master_assassin_court_position$" #deepl:2553385723
+ game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$" #deepl:2935660162
+ game_concept_spread_plague_scheme: "$spread_plague$ スキーム" #deepl:854597236
+ game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$" #deepl:1386105584
+ game_concept_sas_spy: "スパイ" #deepl:287978883
+ game_concept_sas_spies: "スパイ" #deepl:396918230
+ game_concept_sas_spy_desc: "スパイとは、どの裁判所にも駐在できる諜報員のことで、秘密を発見すると雇い主に報告する。彼らの雇い主は、少額の報酬を支払うことで、これらの秘密のいずれかを知ることができる。\n\n 1人の雇い主のために働くエージェントの集団は、[sas_spy_network|E] と呼ばれる。" #deepl:821312495
+ game_concept_sas_spy_network: "スパイ・ネットワーク" #deepl:1689171219
+ game_concept_sas_spy_network_desc: "[sas_spies|E] 同じ雇い主のもとで働くスパイの集まり。\n\n 他の宮廷にいるスパイは、[spymaster|E] によって秘密を探す評議会タスクを使って自然にリクルートされ、あなたの宮廷では陰謀を打ち砕く評議会タスクを使って発見することができる。\n\n [sas_spy_network|E] の効力は、特定の決定を行うことで強化することができ、その効果は、スパイの最大数を増やす、廷臣が喜んでサービスを提供しやすくする、スパイが を発見できるようにする、などである。[innovations|E]" #deepl:784788192
+ game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
+ game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
+ game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286
+ game_concept_sas_induct_bastard_interaction: "$sas_induct_bastard_interaction$" #deepl:439656646
+ game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
+ game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
+ game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979

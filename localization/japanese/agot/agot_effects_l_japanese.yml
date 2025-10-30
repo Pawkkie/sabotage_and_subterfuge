@@ -1,0 +1,20 @@
+﻿l_japanese:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "一般的に、キャラクターはあなたのために[sas_spy|E] 。" #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "一般的に、キャラクターはあなたのために[sas_spy|E] 。" #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "キャラクターは一般的に、[sas_spy|E] 。[CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "魅力的なキャラクターは、あなたのために[sas_spy|E] 。" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "魅力的なキャラクターは、あなたのために[sas_spy|E] 。" #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "魅力的なキャラクターは、[sas_spy|E] 。[CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "[sas_spies|E] 捕まったとしても、手のひらを返してあなたの名前を明かす可能性はずっと低くなる。" #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "[sas_spies|E] 捕まったとしても、手のひらを返してあなたの名前を明かす可能性はずっと低くなる。" #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U] [sas_spies|E] は、捕まっても手のひらを返して雇い主を明かす可能性はずっと低い。" #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "あなたの[lover|E] および[soulmate|E] リレーションはそれぞれ、#P 2#! ランダム[skill|E] ポイントをあなたに与える（最大[EmptyScope.ScriptValue('friendly_counsel_max')|0] ）。" #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "[sas_induct_bastard_interaction|E] インタラクションを解き放つ" #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "[sas_steal_bastard_interaction|E] インタラクションを解き放つ" #deepl:4140120211
+ 

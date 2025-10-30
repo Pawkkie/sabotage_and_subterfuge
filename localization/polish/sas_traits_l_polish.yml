@@ -1,0 +1,10 @@
+﻿l_polish:
+ # Embezzler
+ trait_sas_embezzler: "Defraudant" #deepl:2672472445
+ trait_sas_embezzler_desc: "Ta postać zdefraudowała fundusze od kogoś innego." #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] zdefraudował fundusze od kogoś innego." #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "Plaguebringer" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "Ta postać pracowała nad wywołaniem wielkiej plagi." #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] doprowadził do wielkiej plagi." #deepl:4217708703

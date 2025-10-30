@@ -1,0 +1,99 @@
+﻿l_japanese:
+ # Roused Rabble
+ roused_rabble_faction: "暴徒派" #deepl:256557288
+ roused_rabble_faction_desc: "熱狂的な革命家の言葉に勇気づけられた農民たちで結成された "憤怒の暴徒 "[faction|E] は、戦場で直接主君に不満をぶつける時が来たと判断した。" #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "家臣の作戦を妨害したい" #deepl:3702182374
+ roused_rabble_faction_every_county: "[faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "[new_title.GetAdjective] [army|E] に比例して上昇する。[levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "私たちはあまりにも長い間、あなた方の抑圧的な法律に苦しめられてきた。もうたくさんだ！\n\n 財源が枯渇し、食料庫が空になれば、私たちをもっと公平に扱っていればよかったと思うだろう。" #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "先取特権を認めてもいいと思うが...。" #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "決して農民は領主に仕えるのが仕事だ！" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "暴徒化" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "蜂起した暴徒の反乱" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "[rouse_rabble_scheme|E] のターゲット : $VALUE|0+=$." #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "ルースド・ラブル、ロックへの準備は整った..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "\n\n 私は、彼らがダメージを与え、真の変化を引き起こす可能性があると信じているが、彼らに有利なように天秤を傾ける時間はあると確信している。" #deepl:1060245800
+ sas_faction_demand.1003.a: "彼らは私の揺るぎない支えだ！" #deepl:521539079
+ sas_faction_demand.1003.b: "テコ入れが必要だ。" #deepl:2408571671
+ sas_faction_demand.1003.c: "金貨は少ししかないが...。" #deepl:3331857853
+ sas_faction_demand.1003.d: "彼らは自分たちだけで大丈夫だ。" #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "そして今、転がる時だ！" #deepl:439050973
+ sas_faction_demand.1004.desc: "\n\n 人づてに、[peasant_leader.GetShortUIName] について良い評判を聞いている。[peasant_leader.GetSheHe] が彼らを勝利に導いてくれることを願っている！" #deepl:2802403918
+ sas_faction_demand.1004.a: "そしておそらく、この状況を利用することができるだろう...。" #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "ラブルは勝利した" #deepl:3605552638
+ sas_faction_demand.1005.desc: "我々が支援した暴徒たちは、彼らの生活水準を向上させるための革命に勝利した！このことは、彼らの領主の王国のさらなる発展の妨げになるはずであり、彼ら全員を、当然の報いとして大目に見てやるべきだ。" #deepl:449688228
+ sas_faction_demand.1005.a: "これ以上の結果は望めなかった" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "ラブルは収支均衡" #deepl:1625263356
+ sas_faction_demand.1006.desc: "私たちが支援した暴徒たちは、彼らの生活水準を向上させるための革命で白い平和を引き寄せた！おそらくこのことは、地域をある程度不安定化させ、人間関係の回復には時間がかかるかもしれない。" #deepl:4055594033
+ sas_faction_demand.1006.a: "あまり急がないでほしい。" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "暴徒の敗北" #deepl:735846347
+ sas_faction_demand.1007.desc: "私たちが支援した有象無象は、彼らの生活水準を向上させるための革命に敗れた。この結果は残念だが、まったく予想外というわけではない。この試練から必要なものをすべて得ることができたことを願う。" #deepl:3836426464
+ sas_faction_demand.1007.a: "他の問題に移ろう" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "暴徒蜂起" #deepl:2683090941
+ roused_rabble_war: "暴徒派" #deepl:256557288
+ roused_rabble_faction_event_troops: "暴徒蜂起" #deepl:2683090941
+ roused_rabble_war_victory_desc: "すべての反抗的な[counties|E] [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] を失う。" #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "蜂起した暴徒は解散する。" #deepl:3335355515
+ roused_rabble_war_defeat_desc: "蜂起した暴徒は解散させられ、[attacker.GetShortUIName] は投獄される。反抗するすべての[counties|E] 、その[county_opinion|E] 。" #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "誘発された独立" #deepl:3382659683
+ provoked_independence_faction_desc: "Independence[faction|E] のメンバーは、所属する[liege|E] からの独立を求める。\n\n #S  Ultimatum#!\n すべての派閥メンバーが[independent|E]\n [liege|E] になる。[prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "独立派閥への挑発： $VALUE|0+=$." #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "毒された意見: $VALUE|0+=$." #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "誘発された解散" #deepl:736445653
+ provoked_dissolution_faction_desc: "$nation_fracturing_faction$ [faction|E] のメンバーは、その[liege|E] の領域を破壊しようとする。\n\n #S  アルティメイタム#!\n すべてのファクションメンバーは[independent|E]\n [liege|E] [primary_title|E] を失い、同じファクションの他の[titles|E] も失う。[title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "解散派閥への挑発： $VALUE|0+=$." #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "独立派" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "解散派閥" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "地面から離れない" #deepl:10412173
+ sas_faction_demand.1011.desc: "[target.GetShortUIName]\n\n 彼らが結成した派閥の最後の名残は、現在解散している。" #deepl:3369401508
+ sas_faction_demand.1011.a: "他の問題に移ろう" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "臣下の勝利" #deepl:52932465
+ sas_faction_demand.1012.desc: "我々が挑発した家臣たちは、[defender.GetShortUIName] に対する彼らの戦争に勝利した！おそらく、我々はこの混乱に乗じて、自分たちのためにレルムの破片のいくつかを拾うことができるだろう。" #deepl:1568465405
+ sas_faction_demand.1012.a: "これ以上の結果は望めなかった" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "臣下の収支" #deepl:1192072973
+ sas_faction_demand.1013.desc: "私たちが挑発した家臣たちは、[defender.GetShortUIName] に対して白い平和を引き寄せた！おそらくこのことは、地域をある程度不安定にし、人間関係の回復には時間がかかるかもしれない。" #deepl:789636467
+ sas_faction_demand.1013.a: "あまり急がないでほしい。" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "臣下の敗北" #deepl:3897891145
+ sas_faction_demand.1014.desc: "我々が挑発した家臣たちは、[defender.GetShortUIName] に対して敗れた。この結果は残念だが、まったく予想外というわけではない。この試練から必要なものをすべて得られたことを願う。" #deepl:2998637062
+ sas_faction_demand.1014.a: "他の問題に移ろう" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "臣下は要求を出すだろう" #deepl:97930989
+ sas_faction_demand.1015.desc: "[target.GetShortUIName] 、我々が挑発した家臣たちが支持者を集め、兵を挙げた。ついにその時が来た！王国が分裂するか、戦争が起こるか。前者は自明の理だが、後者は...\n\n 今ならエキサイティングだろう！" #deepl:776082749
+ sas_faction_demand.1015.a: "ドラムロールをお願いします..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "そして始まる" #deepl:3272443967
+ sas_faction_demand.1016.desc: "戦争だ！家臣の反乱が本格化し、王国は紛争で燃え上がるだろう。どうなるんだろう？" #deepl:47654385
+ sas_faction_demand.1016.a: "時間が解決してくれるだろう...。" #deepl:4070009588
+ 

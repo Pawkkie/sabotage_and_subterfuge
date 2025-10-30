@@ -1,0 +1,30 @@
+﻿l_polish:
+ roused_rabble_faction_started_tt: "W ciągu najbliższego roku motłoch założy chłopską [faction|E] i zbuntuje się. Otrzymasz wiadomość przed rozpoczęciem powstania." #deepl:895772584
+
+ ## Success and secret
+ rouse_rabble_outcome.0001.t: "Szepty z zagranicy" #deepl:3047973896
+ rouse_rabble_outcome.0001.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami przyciszonym tonem o płomieniach buntu, które widzieli w chłopach z [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Wygląda na to, że nikt nie może zrozumieć, co tak nagle ich ośmieliło, ale powstanie wydaje się nieuniknione, a [target.GetShortUIName] ledwo zdaje sobie z tego sprawę. Nasze wysiłki zadziałały doskonale!" #deepl:3390693042
+ rouse_rabble_outcome.0001.a: "Niech ich ogień płonie jasno!" #deepl:1790369756
+ rouse_rabble_outcome.0001.prog: "Ty i Twój [rabble_rouser|E] postępujecie w kierunku [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]" #deepl:2576651623
+
+ ## Success and discovered
+ rouse_rabble_outcome.0002.t: "Podejrzenia z zagranicy" #deepl:3269684831
+ rouse_rabble_outcome.0002.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami przyciszonym tonem o płomieniach buntu, które widzieli w chłopach z [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Wciąż rzucali spojrzenia w moim kierunku, spojrzenia pełne gryzącego niesmaku. Nie jest tajemnicą, co tak nagle ich ośmieliło, ale powstanie wydaje się nieuniknione, a [target.GetShortUIName] jest wściekły." #deepl:1463922575
+ rouse_rabble_outcome.0002.a: "Niech ich ogień płonie jasno!" #deepl:1790369756
+
+ ## Unsuccessful and secret
+ rouse_rabble_outcome.0003.t: "Nieskrępowane serca" #deepl:3841976415
+ rouse_rabble_outcome.0003.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiał z moimi dworzanami o chłopach z [target.GetCapitalLocation.GetTitle.GetNameNoTier] i ich podwojonym patriotyzmie w obliczu przeciwności losu.\n\n Pomimo naszych najlepszych starań, chłopi są zadowoleni ze swojego losu." #deepl:556202482
+ rouse_rabble_outcome.0003.a: "Przynajmniej na razie..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ rouse_rabble_outcome.0004.t: "Zahartowane umysły" #deepl:3138284672
+ rouse_rabble_outcome.0004.desc: "Niedawno przez mój dwór przewinął się gość, podróżnik przemierzający kontynent w poszukiwaniu szczęścia i przygód. Podsłuchałem, jak rozmawiali z moimi dworzanami o chłopach z [target.GetCapitalLocation.GetTitle.GetNameNoTier] i ich podwojonym patriotyzmie w obliczu przeciwności losu.\n\n Wciąż rzucali spojrzenia w moim kierunku, spojrzenia pełne gryzącego niesmaku. Nie jest tajemnicą, że próbowałem doprowadzić ich do buntu, a [target.GetShortUIName] jest wściekły." #deepl:2395136914
+ rouse_rabble_outcome.0004.a: "W końcu je zdobędziemy!" #deepl:1078680228
+
+ ## Gained Reveler trait
+ rouse_rabble_outcome.0005.t: "Pobudzenie duszy" #deepl:3339457466
+ rouse_rabble_outcome.0005.desc: "Kto by pomyślał, że dopingowanie i motywowanie społeczeństwa może być tak ożywcze? Jest jedzenie, jest picie, jest doping... zwykli ludzie troszczący się o siebie nawzajem, walczący z poczuciem ucisku.\n\n Może zacząłem ten plan z innymi motywacjami, ale trudna sytuacja ludzi stała się moją własną!" #deepl:4271649516
+ rouse_rabble_outcome.0005.a: "Nie mogę się doczekać wzniesienia za nich toastu, gdy następnym razem się spotkamy!" #deepl:3505615210
+ rouse_rabble_outcome.0005.b: "Naprawdę powinienem trzymać się na dystans..." #deepl:2837144994
+

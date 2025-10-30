@@ -1,0 +1,13 @@
+﻿l_japanese:
+ attempted_to_spread_plague: "ペスト蔓延未遂" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "汚染物質を出荷しなかった" #deepl:3309051214
+ spread_plague_shipped_clothing: "出荷された汚染物質" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "汚染貨物の受領" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "上流の汚染物質" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "精力的な水調達" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "上流の廃棄物" #deepl:1605090773
+ spread_plague_water_in_town: "汚水供給" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "汚染された食料庫" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "汚染された食料庫" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "慎重な食品検査" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "汚染された作物畑" #deepl:846309052

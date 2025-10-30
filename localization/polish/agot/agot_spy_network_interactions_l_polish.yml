@@ -1,0 +1,99 @@
+﻿l_polish:
+ agot_invite_to_spy_network_interaction: "Rekrut jako szpieg" #deepl:1569694964
+ agot_check_for_potential_spies_interaction: "Sprawdzanie potencjalnych szpiegów" #deepl:3426630385
+ agot_remove_from_spy_network_interaction: "Odrzuć szpiega" #deepl:750231688
+ SPY_RECRUIT_GOLD: "Łapówka" #deepl:3411393816
+ SPY_RECRUIT_GOLD_VALID: "Pay [recipient.GetShortUINameNoTooltip] [gold_i] [SCOPE.ScriptValue('bribe_value')|V0]" #deepl:2924690871
+ AGOT_RECRUIT_SPY_SKILL_MOD: "Umiejętność [intrigue|E]: $VALUE|=+0$" #deepl:840929455
+ AGOT_RECRUIT_SPY_CAP_MODIFIER: "Masz więcej szpiegów niż możesz zarządzać: $VALUE|=+0$" #deepl:1742108695
+ AGOT_RECRUIT_SPY_KINGSGUARD_REASON: "[recipient.GetShortUINameNoTooltip] jest Kingsguard: $VALUE|=+0$" #deepl:2943122130
+ highest_held_title_tier_greater_than: "Jesteś na wyższym poziomie niż oni." #deepl:3271074329
+ DECEITFUL_REASON: "[recipient.GetShortUINameNoTooltip] jest zwodniczy: $VALUE|+0=$" #deepl:2981172720
+ HONEST_REASON: "[recipient.GetShortUINameNoTooltip] jest uczciwy: $VALUE|+0=$" #deepl:2353170454
+ JUST_REASON: "[recipient.GetShortUINameNoTooltip] jest po prostu: $VALUE|+0=$" #deepl:4104101612
+ TRUSTING_REASON: "[recipient.GetShortUINameNoTooltip] is Trusting: $VALUE|+0=$" #deepl:4155378834
+ LAZY_REASON: "[recipient.GetShortUINameNoTooltip] jest Lazy: $VALUE|+0=$" #deepl:3792033341
+ SHY_REASON: "[recipient.GetShortUINameNoTooltip] jest nieśmiały: $VALUE|+0=$" #deepl:1013341979
+ CRAVEN_REASON: "[recipient.GetShortUINameNoTooltip] jest Craven: $VALUE|+0=$" #deepl:3840776540
+ PARANOID_REASON: "[recipient.GetShortUINameNoTooltip] jest paranoikiem: $VALUE|+0=$" #deepl:4183665893
+ DRUNKARD_REASON: "[recipient.GetShortUINameNoTooltip] jest pijakiem: $VALUE|+0=$" #deepl:3018668907
+ CONTRITE_REASON: "[recipient.GetShortUINameNoTooltip] jest Contrite: $VALUE|+0=$" #deepl:418458151
+ PREVIOUSLY_DISCOVERED_REASON: "[recipient.GetShortUINameNoTooltip] został wcześniej wykryty jako szpiegujący: $VALUE|+0=$" #deepl:1250348238
+
+ agot_spy_network.0200.interface.employer.t: "Szpieg ujawnia tajemnicę" #deepl:168050903
+ agot_spy_network.0200.interface.employer.desc: "Jeden z twoich szpiegów na dworze [courtowner.GetTitledFirstNamePossessive] ujawnił sekret, który może okazać się przydatny." #deepl:3645310449
+
+ agot_spy_network.0201.interface.employer.t: "Szpieg ujawnia informacje" #deepl:1319764910
+ agot_spy_network.0201.interface.employer.desc: "Jeden z twoich szpiegów ujawnił osobiste i wojskowe informacje o właścicielu ich dworu." #deepl:3546164191
+
+ agot_spy_network.0200.interface.spymaster.t: "Szpieg ujawnia tajemnicę" #deepl:168050903
+ agot_spy_network.0200.interface.spymaster.desc: "Jeden z twoich szpiegów na dworze [courtowner.GetTitledFirstNamePossessive] ujawnił sekret, który może okazać się przydatny." #deepl:3645310449
+
+ agot_spy_network.0210.t: "Mój [ROOT.Char.GetLadyLord]," #deepl:2169612167
+ agot_spy_network.0210.desc: "Udało mi się zdobyć tajemnicę, którą [secret_holder.GetTitledFirstName] stara się chronić w sądzie [courtowner.GetShortUINamePossessive]. Przekażę znalezione dowody, ale tylko wtedy, gdy moja służba zostanie uczciwie wynagrodzona." #deepl:294115213
+ agot_spy_network.0210.a: "Muszę wiedzieć wszystko!" #deepl:877721287
+ agot_spy_network.0210.b: "Nie jestem zainteresowany." #deepl:2813068183
+ agot_spy_network.0210.c: "Nie mam monety..." #deepl:175325562
+
+ agot_spy_network.0400.t: "Szpieg został zwerbowany" #deepl:351168471
+ agot_spy_network.0400.desc: "[councillor.GetTitledFirstName] znalazł osobę chętną do szpiegowania dla ciebie na dworze [target_character.GetShortUINamePossessive]." #deepl:3378650470
+ agot_spy_network.0400.a: "[new_spy.GetTitledFirstName] będzie mi dobrze służyć." #deepl:1274442422
+
+ agot_spy_network.0500.t: "Szpieg został odkryty" #deepl:977083122
+ agot_spy_network.0500.desc: "[councillor.GetTitledFirstName] odkrył szpiega! [discovered_spy.GetTitledFirstName] został przyłapany na poszukiwaniu sekretów w najciemniejszych zakamarkach twojego dworu." #deepl:725801880
+ agot_spy_network.0500.a: "Kto cię przysłał?" #deepl:2381662331
+
+ agot_spy_network.0510.t: "Zostałeś odkryty!" #deepl:3792558933
+ agot_spy_network.0510.desc: "Jakoś się dowiedzieli! Odkryto, że szpieguję dla [discovered_spy_employer.GetTitledFirstName]. Teraz moje życie jest zagrożone. Może uda mi się to przetrwać, jeśli powiem im, kto mnie wynajął?" #deepl:3491980837
+ agot_spy_network.0510.a: "Litości! Powiem ci wszystko!" #deepl:1040764062
+ agot_spy_network.0510.b: "Moje usta pozostają zamknięte!" #deepl:4091804868
+
+ agot_spy_network.0520.t: "Szpieg został odkryty" #deepl:977083122
+ agot_spy_network.0520.flipped.desc: "[discovered_spy.GetTitledFirstName] Chętnie ujawnił, kto cię szpiegował, błagając o litość: to był [discovered_spy_employer.GetTitledFirstName]!" #deepl:706259308
+ agot_spy_network.0520.loyal.desc: "[discovered_spy.GetTitledFirstName] odmawia ujawnienia, kto cię szpiegował." #deepl:4116753664
+ agot_spy_network.0520.desc: "Jak chcesz postąpić ze zdrajcą?" #deepl:1989995004
+ agot_spy_network.0520.a: "[discovered_spy.GetTitledFirstNameNoTooltip] musi zgnić w celi." #deepl:952618794
+ agot_spy_network.0520.b: "Jest tylko jedna kara za to przestępstwo: śmierć!" #deepl:272277589
+ agot_spy_network.0520.c: "Będę miłosierny. Ale te intrygi muszą się skończyć!" #deepl:1546398863
+
+ agot_spy_network.0600.t: "Twój szpieg został wykryty!" #deepl:3648032057
+ agot_spy_network.0600.desc: "Potajemne raporty, które otrzymywaliśmy od [discovered_spy.GetTitledFirstName] nagle ustały. Wygląda na to, że umiejętności [discovered_spy.GetHerHis] nie wystarczyły, by uniknąć odkrycia." #deepl:761471447
+ agot_spy_network.0600.flipped.desc: "Co gorsza, [discovered_spy.GetTitledFirstName] ujawnił twoje zaangażowanie!" #deepl:3841062910
+ agot_spy_network.0600.a: "[discovered_spy.GetSheHe|U] nie był wystarczająco ostrożny!" #deepl:3995574791
+
+ agot_spy_network.0700.t: "Szpieg został wynajęty" #deepl:149732041
+ agot_spy_network.0700.desc: "[recipient.GetTitledFirstName] dołączył do waszej rozległej sieci szpiegowskiej." #deepl:2555271758
+ agot_spy_network.0700.a: "Wpływ rośnie jak chwast..." #deepl:2693232088
+
+ agot_spy_network.0800.t: "Szpiega można wynająć" #deepl:3044204003
+ agot_spy_network.0800.desc: "Twój szpieg znalazł potencjalnego nowego szpiega na dworze [recipient.GetTitledFirstNamePossessive]. [potential_new_spy.GetTitledFirstName] może zostać przekonany do dołączenia do twojej siatki szpiegowskiej." #deepl:1672923704
+ agot_spy_network.0800.a: "Powinienem wkrótce skontaktować się z [potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+
+ hostile_scheme_discovery_spy.2001.intro: "Mój szpieg, [spymaster.GetTitledFirstName], odkrył przygotowania do intrygi przeciwko mnie na dworze [courtowner.GetTitledFirstNamePossessive]. Chociaż nie wiemy jeszcze kto," #deepl:2805483937
+ potential_spy_in_court: "Postać w tym sądzie jest gotowa szpiegować dla ciebie." #deepl:3390703719
+
+ #GUI
+ your_spies: "Twoi szpiedzy" #deepl:2960525419
+
+ ###################### New
+ # Recruit Spy
+ agot_invite_to_spy_network_interaction_desc: "Rekrutacja [recipient.GetTitledFirstName] do [sas_spy_network|E]" #deepl:3702489283
+ invite_to_spy_network_interaction_target_added_to_network.tt: "Dodajesz [recipient.GetShortUIName] do swojej sieci szpiegowskiej" #deepl:3755694883
+ invite_to_spy_network_interaction_target_becomes_spy.tt: "[recipient.GetShortUIName] jest dodawana do sieci szpiegowskiej" #deepl:2685456430
+ invite_to_spy_network_toast_title: "Zwerbowany szpieg" #deepl:3971834391
+ invite_to_spy_network_toast_desc: "[recipient.GetTitledFirstName] dołączył do waszej rozległej sieci szpiegowskiej." #deepl:2555271758
+
+ # Dismiss Spy
+ agot_remove_from_spy_network_interaction_desc: "Odrzuć [recipient.GetTitledFirstName] ze swojego [sas_spy_network|E]" #deepl:1707718945
+ dismiss_from_spy_network_interaction_target_remove_from_network.tt: "Odrzucasz [recipient.GetShortUIName] ze swojej sieci szpiegowskiej" #deepl:3128855620
+ dismiss_from_spy_network_interaction_target_loses_spy.tt: "[recipient.GetShortUIName] zostaje usunięty z sieci szpiegowskiej" #deepl:1206633062
+ dismiss_from_spy_network_toast_title: "Szpieg odrzucony" #deepl:2246344130
+ dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] opuścił szeregi waszej rozległej siatki szpiegowskiej." #deepl:360659420
+
+ # Check for Potential Spies
+ agot_check_for_potential_spies_interaction_desc: "Sprawdź stronę [recipient.GetShortUIName] w poszukiwaniu dworzan, którzy mogliby dołączyć do twojej drużyny. [sas_spy_network|E]" #deepl:3999256908
+ check_for_potential_spies_actor.tt: "Zostaniesz powiadomiony o potencjalnym [sas_spy|E], który możesz wynegocjować, aby dołączyć do swojego [sas_spy_network|E]" #deepl:2541194663
+
+ # Perks
+ DIGGING_FOR_DIRT_PERK_EFFECT: "Jest przekonujący: $VALUE|=+0$" #deepl:2797321221
+ SUBTLE_DESIRE_PERK_EFFECT: "Jest atrakcyjny: $VALUE|=+0$" #deepl:567933818

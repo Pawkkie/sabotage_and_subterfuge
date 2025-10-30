@@ -1,0 +1,23 @@
+﻿l_japanese:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "海外からのささやき" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "最近、幸運と冒険を求めて大陸を横断する旅人が、私の宮廷に流れ着いた。彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier] からの家臣の反抗的な一派について、ひそひそと話しているのを耳にした。\n\n 何が彼らを突然奮い立たせたのか、誰にもわからないようだが、反乱は避けられないようで、[target.GetShortUIName] は事態の収拾に奔走している。我々の努力は完璧に機能した！" #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "独立！" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "解散！" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "海外からの疑念" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "幸運と冒険を求めて大陸を横断する旅人である。私は彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier]\n \n からの家臣の反抗的な一派について、ひそひそと話しているのを耳にした。彼らは私の方を何度も盗み見ていたが、その視線は噛みつくような嫌悪のまなざしだった。何が突然彼らを奮い立たせたのかは謎ではないが、蜂起は避けられないようで、[target.GetShortUIName] 。" #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "独立！" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "解散！" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "不親切な心" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "最近、幸運と冒険を求めて大陸を横断する旅人が、私の宮廷に流れ着いた。私は彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier] の家臣たちについて話しているのを小耳に挟んだ。彼らは逆境に直面しても、倍増した愛国心を持っている。\n\n 私たちの最善の努力にもかかわらず、彼らは自分たちの生活に満足している。" #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "少なくとも、今のところは...。" #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "硬化した心" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "幸運と冒険を求めて大陸を横断する旅人である。私は彼らが私の廷臣たちと、[target.GetCapitalLocation.GetTitle.GetNameNoTier] 、逆境に直面した彼らの倍増した愛国心について話しているのを耳にした。\n\n 彼らは私の方向に視線を盗み続けていた、かむような嫌悪のまなざし。私が彼らを謀反に駆り立てようとしたのは不思議なことではなく、[target.GetShortUIName] 。" #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "いずれは手に入れるだろう！" #deepl:1078680228

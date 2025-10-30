@@ -1,0 +1,13 @@
+﻿l_japanese:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ 成功だ！" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "私は大きな誇りを感じ、自分が探し求めた品物を前にして、ニヤニヤせずにはいられなかった。[artifact.GetName] に新しい持ち主ができたのだ！\n\n 解放の苦難のせいで少し擦れて汚れているかもしれないが、それでも私はこの盗まれた品物の豪華な表面を指でなぞらずにはいられない...[artifact.GetName] 、素晴らしい賞品だ！" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "新しい家で歓迎されている！" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ 盗まれたアーティファクト" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "今日、私は自分の[artifact_to_steal.GetName] に見とれていた・・・が、恐ろしいことに、それがなくなっていた！#EMP #!\n \n 熱のこもった調査の結果、ある使用人が、[owner.GetName] が大胆な窃盗を画策したと名乗り出た！確かに、[owner.GetSheHe] は、[artifact_to_steal.GetName] が[owner.GetHerHis] の所有物になれば、どれほど見栄えが良くなるか、しばしば饒舌に語っていたらしい...。" #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "あの卑劣な泥棒を呪ってやる！" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ 失敗" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "狡猾に計画した潜入は計画通りに進んだが、[artifact.GetName] が見つからない！\n\n 移動したのか？隠されたのか？運が悪かったのか...それとも私の無能な手下が巧みに出し抜かれたのか...。この大失敗に慌てた彼らは、もう私を助けないだろう。私の賞品は持ち主の元にある..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "信じられない！#EMP 許せない！#!" #deepl:3003932934
+

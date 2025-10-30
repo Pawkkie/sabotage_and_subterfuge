@@ -1,0 +1,10 @@
+﻿l_polish:
+ poison_opinion_ongoing.1001.t: "Poison Opinion: [target.GetLiege.GetCulture.GetNameNoTooltip] Kultura" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "Pospolity mieszkaniec [target.GetCulture.GetNameNoTooltip] został zaatakowany na ulicach [capital.GetNameNoTooltip] z powodu drobnego wykroczenia.\n\n Obwiniając radykalną sektę [target.GetLiege.GetCulture.GetNameNoTooltip] awanturników o kłopoty, być może przekonałbym [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)], tak [target.GetCulture.GetNameNoTooltip] jak ofiary, że być może ich władca jest bardziej nieprzyjemny, niż mogliby się spodziewać." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "Bezpośrednią odpowiedzialność ponosi [target.GetLiege.GetCulture.GetCollectiveNounNoTooltip]." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "To tylko nieszczęśliwy wypadek." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "Poison Opinion: Rozlewanie herbaty" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "Zostałem zaproszony na popołudniową herbatę z [target_spouse.GetName], [target.GetNamePossessive] małżonkiem.\n\n Okazja jest przyjemna i pełna plotek, a [target_spouse.GetShortUIName] nie zajmuje dużo czasu, aby wypuścić kilka soczystych komentarzy na temat [target.GetLiege.GetName]. Z pewnością można to wykorzystać na moją korzyść..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "Kontynuuj..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "Słyszałem, że [target.GetLiege.GetSheHe] zrobił kiedyś coś strasznego..." #deepl:595741215

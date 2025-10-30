@@ -1,0 +1,35 @@
+﻿l_japanese:
+ poison_opinion_outcome.1001.t: "ポイズン・オピニオンチャンス" #deepl:2824793747
+ poison_opinion_outcome.1001.desc: "[target.GetTitledFirstNamePossessive] の利益を[target.GetHerHis] の家臣の利益に対して位置づけようとする試みの中で、私は好機を見つけた。私は、彼らの目標が実際には正反対であると主張できると思う。次の手紙を書きながら..." #deepl:4201339416
+ poison_opinion_outcome.1001.a: "...私は相容れない利益を強調する。" #deepl:360746116
+ poison_opinion_outcome.1001.a.success: "[target.GetFirstNameNoTooltip] 確信" #deepl:4019449334
+ poison_opinion_outcome.1001.a.failure: "[target.GetFirstNameNoTooltip] 私の努力を見抜く" #deepl:1317759691
+ poison_opinion_outcome.1001.b: "...私は繊細さを保とうとしている。" #deepl:3520019372
+
+ poison_opinion_outcome.1002.t: "ポイズン・オピニオン宗教的信念" #deepl:3068132753
+ poison_opinion_outcome.1002.same_faith: "I have gotten an idea in my attempts to align[target.GetTitledFirstName] against[target.GetHerHis] liege's interests.\n\n With the right arguments, I may be able to convince[target.GetHerHim] that[target.GetSheHe] is acting not merely in[target.GetHerHis] own interest, but in the interest of[ROOT.Char.GetFaith.HighGodNameAlternate] [ROOT.Char.GetFaith.HighGodHerselfHimself] !" #deepl:965859863
+ poison_opinion_outcome.1002.other_faith: "[target.GetTitledFirstName] [target.GetHerHis]\n\n  支配の束縛から解き放たれることが、すべての にとっての利益であると主張することができるのではないだろうか。[target.GetLiege.GetFaith.Name] [target.GetFaith.GetAdherentNamePlural] " #deepl:1318148979
+ poison_opinion_outcome.1002.a: "私は非常に説得力のある議論ができると信じている。" #deepl:878806595
+ poison_opinion_outcome.1002.b: "外交辞令を守るべきかもしれない。" #deepl:2089916252
+
+ poison_opinion_outcome.1003.t: "ポイズン・オピニオンプッシング・ラック" #deepl:2598640233
+ poison_opinion_outcome.1003.desc: "[target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] からの最新の手紙を読み終えて、微笑む。[target.GetSheHe] は、ついに[target.GetHerHis] リエージュに対して氷のように冷たくなったようだ。\n\n これは成功ではあるが、私はこの機会を利用して、二人をさらに仲たがいさせようという誘惑に駆られている...。" #deepl:1850530888
+ poison_opinion_outcome.1003.a: "外交手腕が試されるときだ！" #deepl:2787417524
+ poison_opinion_outcome.1003.a.success: "[target.GetSheHe|U] さらに強化される" #deepl:4130052052
+ poison_opinion_outcome.1003.a.failure: "[target.GetSheHe|U] 解釈を誤る" #deepl:3695719111
+ poison_opinion_outcome.1003.b: "この勝利で十分だ。" #deepl:3669306734
+
+ poison_opinion_outcome.2001.t: "ポイズン・オピニオン誤解" #deepl:2264483134
+ poison_opinion_outcome.2001.opening: "[target.GetTitledFirstName] に対する私の外交的な働きかけが、大きな誤解を招いたようだ！[target.GetSheHe] 、私がまったく別の目標を追求していると考えていることが明らかになった手紙を受け取った...。" #deepl:1789009900
+ poison_opinion_outcome.2001.not_interested_relation: "\n\n"私はあなたの[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))] 、[target.GetFaith.HighGodNamePossessive] のために！"" #deepl:3935174444
+ poison_opinion_outcome.2001.not_interested_romantically: "\n\n [ROOT.Char.GetWomanMan] "お世辞でも嬉しいですが、あなたのような地位の方には不適切な関心だと思います。"" #deepl:1590060400
+ poison_opinion_outcome.2001.not_interested_horses: "\n\n「いくらお世辞の手紙を送っても、純血種の馬を売るつもりはない。" #deepl:969794771
+ poison_opinion_outcome.2001.not_interested_toll_exemptions: "\n\n「いくら貿易を約束しても、通行料を免除することはできない。" #deepl:184694203
+ poison_opinion_outcome.2001.not_interested_friend: "\n\n「あなたが本当に必要としているのは友人であるように聞こえる。しかし、私はあなたに..."" #deepl:1460295060
+ poison_opinion_outcome.2001.not_interested_relics: "\n\n「私のために何度祈ってくれても、私の聖遺物は渡さない。" #deepl:3476711187
+ poison_opinion_outcome.2001.end: "\n\nこの先は読むまでもないだろう。" #deepl:3287867042
+ poison_opinion_outcome.2001.a: "これはすべて大きな誤解だ！" #deepl:2703424581
+
+ poison_opinion_outcome.2002.t: "ポイズン・オピニオン極悪非道な陰謀" #deepl:421660312
+ poison_opinion_outcome.2002.desc: ""My[ROOT.Char.GetLadyLord]![target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] has ended all conversation with you."\n\n 私の突然の関心と文通の多さを、邪悪な計画の兆候と見て、[target.GetSheHe] まるで私が[target.GetHerHim] に対して陰謀を企てているかのような印象を受けているようだ！" #deepl:3202853704
+ poison_opinion_outcome.2002.a: "ある意味、間違ってはいないと思うが......。" #deepl:513004656

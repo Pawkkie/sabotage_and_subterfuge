@@ -1,0 +1,5 @@
+﻿l_japanese: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "ペストの蔓延" #deepl:4245244667
+ master_assassin_task_spread_plague_desc: "[epidemic|E] キャラクターの宮廷に種をまき、彼らへの感染を試みると同時に、自分自身の抵抗力を強化する。" #deepl:1616301097
+ allow_spread_plague_scheme_tt: "[spread_plague_scheme|E]このタスクは、スキームの開始と継続の両方にアクティブでなければならない。" #deepl:2097629515

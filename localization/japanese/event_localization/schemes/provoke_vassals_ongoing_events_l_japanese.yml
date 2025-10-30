@@ -1,0 +1,24 @@
+﻿l_japanese:
+ # Feeding the Flames
+ provoke_vassals_ongoing.0001.t: "炎を燃やす" #deepl:504191995
+ provoke_vassals_ongoing.0001.desc: "[independence_vassal.GetShortUIName] 最近、地域の不満に悩まされているようだ。[target.GetShortUIName] によって課された地域の高い税金は、住民をある程度混乱させている。\n\n [independence_vassal.GetShortUIName] が純粋に義務を引き下げることを望んでいるかどうかは不明だが、彼らが高官からの影響を受けずに地域をより直接的に支配することを切望していることは確かである。\n\n おそらく私は彼らにいくつかの資源を送ることができるだろう。おそらく、それをどのように適用するのがベストなのか、1つか2つの提案を含めることができるだろう...。" #deepl:2916651416
+ provoke_vassals_ongoing.0001.a: "武器を提供する" #deepl:3294163484
+ provoke_vassals_ongoing.0001.b: "食料を提供する" #deepl:1722600124
+
+ # Promising the Future
+ provoke_vassals_ongoing.0002.t: "未来を約束する" #deepl:2733215959
+ provoke_vassals_ongoing.0002.desc: "最近、[independence_vassal.GetShortUIName] から手紙を受け取った。大部分は普通の外交的な議論だった。There was a nice flourish of personality at the end though!\n\n It's apparent that[independence_vassal.GetSheHe] has been feeling rather stalled in[independence_vassal.GetHerHis] ambitions for growth, in wealth and renown for[independence_vassal.GetHerHis] family.\n\n It's equally apparent that this is a fabulous opportunity to bait the kind of response we've been looking for here." #deepl:2800851299
+ provoke_vassals_ongoing.0002.a: "臣従が息苦しいのは残念だ！" #deepl:2781941790
+ provoke_vassals_ongoing.0002.b: "臣従は立派な踏み台にすぎない！" #deepl:1226632191
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0003.t: "暗殺未遂の舞台" #deepl:2745329543
+ provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] と[master_assassin_name.GetShortUIName] は、[independence_vassal.GetShortUIName] または[independence_vassal.GetHerHis] 家族の一員の暗殺未遂を演出し、[target.GetShortUIName] と彼の兵士に濡れ衣を着せる計画を打ち出した。\n\n 二人とも、計画は完璧だと断言している。[master_assassin_name.GetShortUIName] 潜入捜査と単独行動で、失敗する確率はせいぜい最小であり、失敗すれば逮捕どころか混乱に終わるだろう。\n\n そのような混乱は、[independence_vassal.GetHerHis] の安全を[independence_vassal.GetShortUIName] に安心させるために、[target.GetShortUIName] からの返答を促す可能性が高く、それは生産的とは正反対だろう。しかし、うまくいけば...。" #deepl:1236986410
+ provoke_vassals_ongoing.0003.a: "私はあなたを信頼している。" #deepl:3757966510
+ provoke_vassals_ongoing.0003.b: "これが良いアイデアかどうかは分からないが......。" #deepl:3991597292
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0004.t: "ある種のサミット" #deepl:2331725663
+ provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName]\n\n このようなことは極めて異例であり、会話は実り多いものであったが、 が支配者に求められる自信に満ちたリーダーシップを発揮するのに十分な能力を持っているのかどうか、疑問を抱く者もいた。  会話が終わると、 が私の耳に留まり、 の表情に疑念をにじませながら、私の意見を求めた。[target.GetSheHe]\n\n [independence_vassal.GetShortUIName] [independence_vassal.GetHerHis] " #deepl:1606362498
+ provoke_vassals_ongoing.0004.a: "[target.GetSheHe] 疲れていると思わない？" #deepl:111863169
+ provoke_vassals_ongoing.0004.b: "[target.GetSheHe] は絶対に可能だ" #deepl:3117045451

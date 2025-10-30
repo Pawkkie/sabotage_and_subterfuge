@@ -1,0 +1,29 @@
+﻿l_japanese:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "毒を選べ" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "With the decision made to attempt to start a[epidemic|E] in[target.GetUINamePossessive] realms, all that remains is to choose our method of attack.\n\n [master_assassin_name.GetUIName] tells me that we have access to the discarded bedding and clothes of an unfortunate soul who suffered a localized case of smallpox which might do the trick.\n\n We can also take the more direct means of soiling a local water supply, or instead perhaps taint their larders with some toxic fungus[master_assassin_name.GetShortUIName] has in their possession." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "汚染された寝具を使用する" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "水供給の土壌" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "食料を汚す" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "天然痘蔓延の試み" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "ブラッディ・フラックスを地域に広める試み" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "地域に聖なる火を広げようとする" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "温かな死の抱擁" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] [target_title.GetNameNoTier]\n\n これは、より多くの汚染物質を素早くこの地域に取り込む絶好の機会だが、必要以上の取り扱いは危険であり、疫病の発生源が我々まで遡られる可能性もある。" #deepl:2992183165
+ spread_plague_ongoing.0002.a: "汚染された物品を貨物に混ぜる" #deepl:616711320
+ spread_plague_ongoing.0002.b: "疑惑を招きかねない" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "ウォーター・ユー・ウェイティング・フォー・" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] [target_title.GetNameNoTier]\n\n 見つかることはほとんどないだろう。ただ、水が思い通りに流れるかどうかが問題だ。  あるいは、もっと直接的なアプローチを試みて、闇に紛れて町の主要なアクセスポイントに投棄することもできる。しかし、はるかに危険だ。\n\n" #deepl:388755539
+ spread_plague_ongoing.0003.a: "上流に捨てる" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "街に捨てる" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "私たちの中の菌" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] その胞子を摂取すると、恐ろしい症状を引き起こす可能性がある。[target_title.GetNameNoTier]\n\n しかし、食料品店にアクセスするのは容易ではない。その代わり、畑に直接菌を繁殖させる方が簡単かもしれない。この方がリスクは低いが、成功する可能性も低いだろう。" #deepl:113464637
+ spread_plague_ongoing.0004.a: "食料庫に忍び込む" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "畑を汚す" #deepl:4137778007

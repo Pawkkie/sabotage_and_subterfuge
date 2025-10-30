@@ -1,0 +1,69 @@
+﻿l_japanese:
+ # Invited to a feast
+ rouse_rabble_ongoing.0001.t: "饗宴への招待" #deepl:1441220718
+ rouse_rabble_ongoing.0001.desc: "[target_title.GetNameNoTier] の郊外にある農民の大家族を率いる長老が、[rouser_name.GetShortUIName] を地元の祝日を祝う宴会に招待した。[rouser_name.GetShortUIName] 彼らがその申し出に感謝し、彼らの雇い主に帰りが遅くなることを手紙で知らせることを明らかにすると、招待状はさらに、知らぬ間に、私にも差し伸べられた。\n\n この農民たちは、私がこの件にまったく関与していることを知らないし、私の存在は彼らにとって衝撃となるかもしれない......しかし、彼らの大義に対する強い支持を示すことにもなるかもしれない。特に、対等な立場で食事を共にすれば。" #deepl:2676334559
+ rouse_rabble_ongoing.0001.a: "お祭りに参加する" #deepl:2695719965
+ rouse_rabble_ongoing.0001.b: "プレゼントを送る" #deepl:3810044038
+ rouse_rabble_ongoing.0001.c: "関わるべきではない" #deepl:1759156705
+
+ # The liege sends relief
+ rouse_rabble_ongoing.0002.t: "リエージュが救援を送る" #deepl:2093183175
+ rouse_rabble_ongoing.0002.desc: "[rouser_name.GetShortUIName] [target_title.GetNameNoTier] の農村集落で最近火災が発生し、穀物倉や付近の建物に放火したとのことである。これは農民の食糧供給に深刻な打撃を与えている。    は、食糧と建築用品の形で被災地に救援物資を送るよう命じた。我々の支援を提供することは、善意を育むことになるが、大衆を安定させることになる。  それは行き過ぎかもしれない。\n\n[target.GetShortUIName]\n\n" #deepl:1680985283
+ rouse_rabble_ongoing.0002.a: "配達を妨害する" #deepl:1927831992
+ rouse_rabble_ongoing.0002.b: "配達を支持する" #deepl:2208938163
+ rouse_rabble_ongoing.0002.c: "何が起こるか見てみよう" #deepl:4098838832
+
+ # Connecting with the youth
+ rouse_rabble_ongoing.0003.t: "若者とのつながり" #deepl:2985966255
+ rouse_rabble_ongoing.0003.desc: "[rouser_name.GetShortUIName] 、地元の農民の若者のためのフェアを開催する手伝いを頼まれたようだ！\n\n 今日の若者は明日の革命家だ。これは、私たちにとって最も有益な種をまく機会なのだろうか？" #deepl:2713189345
+ rouse_rabble_ongoing.0003.a: "模擬戦を計画する" #deepl:146267889
+ rouse_rabble_ongoing.0003.b: "狩猟トーナメントを開催する" #deepl:991081673
+ rouse_rabble_ongoing.0003.c: "文化交流ワークショップを開催" #deepl:2194861974
+
+ # Staging a protest
+ rouse_rabble_ongoing.0004.t: "抗議行動の演出" #deepl:2463182722
+ rouse_rabble_ongoing.0004.desc: "\n\n これを[target_title.GetNameNoTier] でやってはどうかと思いついた。宮廷の何人かを送り込んで平和的な抗議活動をさせ、それが高まるにつれて暴力的になる可能性がある。" #deepl:3630176459
+ rouse_rabble_ongoing.0004.a: "ボートを揺らそう" #deepl:4217286068
+ rouse_rabble_ongoing.0004.b: "これはフィクションに任せた方がいいのかもしれない" #deepl:726165040
+
+ # A rowdy tavern
+ rouse_rabble_ongoing.0005.t: "騒々しい居酒屋" #deepl:226345630
+ rouse_rabble_ongoing.0005.desc: "[target_title.GetNameNoTier] [rouser_name.GetShortUIName] [rouser_name.GetHerHim] 。その酒場は満員で騒々しく、まるで魔女の大鍋のように泡を吹いていた。  不協和音に混じって叫ぶ声がした。酒に深入りしすぎて、農民たちを見下すように話している王国の兵士だ。|にできるようにあなたがそれをすることができます本当に出くわすことあなたは、実際には私のパートナーとi約束、誰でも素早くはちょうど無視これらの一見正確にどのように{}人のことを忘れることができます。\n\n" #deepl:960826830
+ rouse_rabble_ongoing.0005.a: "起きて、彼のライトを消す" #deepl:1867440387
+ rouse_rabble_ongoing.0005.b: "不満のつぶやきに火をつける" #deepl:954247850
+ rouse_rabble_ongoing.0005.c: "兵士の帰還を支援する" #deepl:131614521
+ rouse_rabble_ongoing.0005.d: "飲み物を飲みながら観察する" #deepl:1953099562
+
+ # An interesting missive
+ rouse_rabble_ongoing.0006.t: "興味深い一文" #deepl:4215557738
+ rouse_rabble_ongoing.0006.desc: "信じられないことに、[target.GetShortUIName] から手紙を受け取った。[target.GetHerHis]\n\n 興味深いのは結末だ。[target.GetSheHe] 、農民の動揺に対処しているようで、最善の方法について私の意見を求めている。私が疑われていないことは明らかだが、これはまだチャンスかもしれない。" #deepl:640877473
+ rouse_rabble_ongoing.0006.a: "彼らを打ち砕く" #deepl:2237847967
+ rouse_rabble_ongoing.0006.b: "大目に見てやれ" #deepl:693808399
+
+ # A Costly Suggestion
+ rouse_rabble_ongoing.0007.t: "高価な提案" #deepl:869688950
+ rouse_rabble_ongoing.0007.desc: "あるエージェントが最近私に、農民の反乱を模範的に導くのが賢明ではないか、と提案した。[rouser_name.GetShortUIName] そうすれば、変革が可能であるという具体的な証拠として、私たちの恩寵を利用することができる。\n\n このためには、私たち自身が大衆との関わり方を変えなければならないので、コストがかからないわけではない。それだけの価値があるのだろうか？" #deepl:2964475064
+ rouse_rabble_ongoing.0007.a: "税金を減らす" #deepl:96913909
+ rouse_rabble_ongoing.0007.b: "徴収金を削減する" #deepl:26427300
+ rouse_rabble_ongoing.0007.c: "休暇を与える" #deepl:874460699
+ rouse_rabble_ongoing.0007.d: "とんでもない！" #deepl:162677040
+
+ # Who's the rouser
+ rouse_rabble_ongoing.0008.t: "ここで暴言を吐いているのは誰だ？" #deepl:1707284294
+ rouse_rabble_ongoing.0008.desc: "神を冒涜するマラキー黙示録的なほど愚かな考えだ！一体どこからこんな提案が出てくるのか、彼らの考えていることが全く理解できない！\n\n [rouser_name.GetShortUIName] がプロだと思うが、本当に？本当に？\n\n 私には理解できないが、それでも方針を決める必要がある。" #deepl:564414791
+ rouse_rabble_ongoing.0008.a: "彼らは自分たちが何をしているかを知っている" #deepl:3356801487
+ rouse_rabble_ongoing.0008.b: "私はこのナンセンスを覆す" #deepl:1872803170
+ rouse_rabble_ongoing.0008.c: "妥協点を見つけることができると確信している" #deepl:730623529
+
+ # Crossing the border
+ rouse_rabble_ongoing.0009.t: "国境を越えて捕まる" #deepl:2951116650
+ rouse_rabble_ongoing.0009.desc: "国境を越えて[target_title.GetNameNoTier] 、[rouser_name.GetShortUIName] 、田舎をうろつく兵士たちの定期的なパトロールという形で、不運の連鎖に出くわした。\n\n 、彼らは[rouser_name.GetHerHim] 、緊急でも不親切でもなく、ためらいがちな好奇心のような雰囲気で、歩いてくるように手を振っている。\n\n 庶民がこの辺りをうろつくのは全く前代未聞というわけではないが、機転を利かせなければ兵士に印象を残すかもしれないほど珍しいことだ。" #deepl:4133707670
+ rouse_rabble_ongoing.0009.a: "目的について嘘をつく" #deepl:3028399027
+ rouse_rabble_ongoing.0009.b: "カジュアルな会話をする" #deepl:2801380731
+ rouse_rabble_ongoing.0009.c: "賄賂を提供する" #deepl:1256381302
+
+ # Burning too bright
+ rouse_rabble_ongoing.0010.t: "明るすぎる炎" #deepl:1391488323
+ rouse_rabble_ongoing.0010.desc: "[target_title.GetNameNoTier]\n\n 彼らの熱狂が他地域に波及する危険性があるのは明らかで、少なくとも我々の地域は含まれない。  内部の人間を使って状況を少し冷まそうとすることはできるが、それは結果を招くだろう。\n\n" #deepl:4227841483
+ rouse_rabble_ongoing.0010.a: "激しさを奨励する" #deepl:3207464489
+ rouse_rabble_ongoing.0010.b: "楽になる" #deepl:1458867344

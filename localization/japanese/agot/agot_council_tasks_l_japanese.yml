@@ -1,0 +1,142 @@
+﻿l_japanese:
+ # Personal Steward
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "あなたの個人的なスチュワードの外交手腕（[councillor.Custom('diplomacy_skill_level')] ）が、この大金をもたらしたのだ。" #deepl:3987054824
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "あなたの個人的なスチュワードの外交手腕（[councillor.Custom('diplomacy_skill_level')] ）にもかかわらず、これは起こった。" #deepl:2756273250
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "あなたの個人的な執事の武術の腕前（[councillor.Custom('martial_skill_level')] ）にもかかわらず、これは起こった。" #deepl:1672131809
+ personal_steward_task_martial_good_skilled_notification_tooltip: "あなたの個人的な執事の[councillor.Custom('martial_skill_level')] 武術の腕が、この風穴を開けた。" #deepl:1416132229
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "あなたの個人的なスチュワードの[councillor.Custom('stewardship_skill_level')] スチュワードシップのスキルが、この風穴を開けた。" #deepl:136762961
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "これは、あなたの個人的なスチュワードが[councillor.Custom('stewardship_skill_level')] スチュワードシップのスキルを持っているにもかかわらず起こった。" #deepl:2694643357
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "あなたの執事（[councillor.Custom('intrigue_skill_level')] ）の謀略スキルにもかかわらず、これは起こった。" #deepl:1782695802
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "あなたの個人的なスチュワードの[councillor.Custom('intrigue_skill_level')] 陰謀のスキルがこの大金をもたらした。" #deepl:2761615177
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "あなたの個人スチュワードの[councillor.Custom('learning_skill_level')] 学習スキルにもかかわらず、これは起こった。" #deepl:3263895679
+ personal_steward_task_learning_good_skilled_notification_tooltip: "あなたの個人的なスチュワードの[councillor.Custom('learning_skill_level')] 学習能力が、この風穴を開けた。" #deepl:4043423585
+ task_personal_steward_default_diplomacy_modifier: "パーソナル・スチュワードによるサポート" #deepl:628691585
+ task_personal_steward_default_martial_modifier: "パーソナル・スチュワードによるサポート" #deepl:628691585
+ task_personal_steward_default_stewardship_modifier: "パーソナル・スチュワードによるサポート" #deepl:628691585
+ task_personal_steward_default_intrigue_modifier: "パーソナル・スチュワードによるサポート" #deepl:628691585
+ task_personal_steward_default_learning_modifier: "パーソナル・スチュワードによるサポート" #deepl:628691585
+
+ # Personal Steward Tasks
+ task_personal_steward_default: "団長補佐" #deepl:3190029942
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip]\n\n  サポートが与えるナイトウォッチの管理という日々の仕事をアシストする：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_personal_steward_default')]" #deepl:2471906103
+ task_personal_steward_court_politics: "影響力の構築" #deepl:3874806014
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] focus on Night's Watch politics and improving relations among the Black Brothers\n\n [councillor.GetHerHis|U] support gives you：\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]" #deepl:1899957641
+ task_personal_steward_chivalry: "番を鍛える" #deepl:1093429720
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] focus on training men of the Night's Watch\n\n [councillor.GetHerHis|U] support gives you：\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]" #deepl:3578335599
+ task_personal_steward_court_intrigue: "耳をすませば" #deepl:3757386027
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip] focused on rumors and whispers of Black Brothers at your court\n\n [councillor.GetHerHis|U] support gives you：\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]" #deepl:238132299
+ task_personal_steward_manage_domain: "ギフトの管理" #deepl:3752812108
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip]\n\n  サポートはあなたに与える：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]" #deepl:795658195
+ task_personal_steward_patronage: "時計を教育する" #deepl:64939694
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] ウォッチ\n\n [councillor.GetHerHis|U] サポートが与える文化、宗教、教育の問題に焦点を当てる：\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]" #deepl:673679475
+ councillor_personal_steward_background.0001.diplomacy_notification: "経験とともに、[councillor.GetShortUINamePossessive] 、外交の手腕は増している。" #deepl:1853588496
+ councillor_personal_steward_background.0001.martial_notification: "経験とともに、[councillor.GetShortUINamePossessive] 、戦争に対する理解が深まった。" #deepl:26629406
+ councillor_personal_steward_background.0001.stewardship_notification: "経験とともに、[councillor.GetShortUINamePossessive] 管理能力も高まっている。" #deepl:1503349911
+ councillor_personal_steward_background.0001.intrigue_notification: "経験とともに、[councillor.GetShortUINamePossessive] 陰謀のスキルは上がっている。" #deepl:482384644
+ councillor_personal_steward_background.0001.learning_notification: "経験とともに、[councillor.GetShortUINamePossessive] 学術的な理解も深まっている。" #deepl:668661590
+
+ councillor_personal_steward_background.0001.title: "個人スチュワードのスキル" #deepl:607529410
+
+ task_promote_culture_effect_desc_wv_override: "#S  #V 100%  :   は を次のように変更する。#!#!\n$TAB$ [county|E] [culture|E] [councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]" #deepl:1353113911
+ task_promote_culture_effect_desc_ev_override: "#S  #V 100%  :   は を次のように変更する。#!#!\n$TAB$ [county|E] [culture|E] [councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]" #deepl:1820114630
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S At#V 100%#!#! :\n$TAB$ The[county|E] changes[culture|E] to one of following\n$TAB$ cultures： \n#S $TAB$ 80%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:916033769
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S At#V 100%#!#! :\n$TAB$ The[county|E] changes[culture|E] to one of following\n$TAB$ cultures： \n#S $TAB$ 60%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:3772183319
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S At#V 100%#!#! :\n$TAB$ The[county|E] changes[culture|E] to one of following\n$TAB$ cultures： \n#S $TAB$ 20%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:1153229959
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (アゴットエラー）#!#! ：アイアンボーン文化変換で何かが壊れた、典型的な報告" #deepl:1200773039
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S At#V 100%#!#! :\n$TAB$ The[county|E] changes[culture|E] to one of following\n$TAB$ cultures： \n#S $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.GetName]" #deepl:1126410652
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S  #V 100%  :   は を次の  カルチャーのいずれかに変更します：  60%     40%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.GetName]" #deepl:2667011599
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S At#V 100%#!#! :\n$TAB$ The[county|E] changes[culture|E] to one of following\n$TAB$ cultures： \n#S $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.GetName]" #deepl:3113041075
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (アゴットエラー）#!#! ：グリーンボーン培養変換で何かが壊れた、典型的な報告" #deepl:1510425940
+
+
+ # Castellan Tasks
+ task_castellan_default_1:0 "Oversee Realm" #martial
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip] \n\n  サポートはあなたに与える：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_1')]" #deepl:4119586948
+
+ task_castellan_default_2:0 "Oversee Realm" #learning
+ task_castellan_default_effect_desc_2: "[councillor.GetShortUINameNoTooltip] \n\n  サポートが与えてくれる：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_2')]" #deepl:373640728
+
+ task_castellan_default_3:0 "Oversee Realm" #intrigue
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] \n\n  サポートが与えてくれる：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_3')]" #deepl:150011693
+
+ task_castellan_default_4:0 "Oversee Realm" #stewardship
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip] \n\n  サポートは、お客様のドメイン管理を支援するために彼らの管理スキルを活用します：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_4')]" #deepl:930183188
+
+ task_castellan_default_5:0 "Oversee Realm" #diplomacy
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] は有能な政治家であり、統治には国家運営における着実な手腕が不可欠である。\n\n [councillor.GetHerHis|U] 支持が与えてくれるもの：\n[councillor.GetModifierDescForTask('task_castellan_default_5')]" #deepl:398758126
+
+
+ task_castellan_default_hodor: "ベストを尽くす" #deepl:3046448544
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] でも、彼らはベストを尽くしている。" #deepl:1327033284
+
+ task_castellan_court: "審議会の主宰" #deepl:1348124016
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]" #deepl:164605584
+
+ task_castellan_fortify: "守備を固める" #deepl:145040072
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]" #deepl:3665126672
+
+ castellan_fortify_province_modifier: "$task_castellan_fortify$" #deepl:3627279605
+
+ castellan_fortify_county_modifier: "守りを固める" #deepl:1470419536
+
+ castellan_court_opinion_modifier: "評議会を主宰するカステラン" #deepl:1892251711
+
+ task_train_commanders_maa_effect_desc: "プレースホルダー" #deepl:3525875382
+ task_train_commanders_maa_erudition_bonus_desc: "プレースホルダー" #deepl:3525875382
+
+ task_castellan_organise: "臣下との交渉" #deepl:3783553490
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]" #deepl:3948196146
+ task_castellan_organise_modifier: "評議会$councillor_castellan$" #deepl:566097349
+
+ task_castellan_scheme: "スキームの整理" #deepl:2331682327
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]" #deepl:4293595345
+ task_castellan_scheme_modifier: "評議会$councillor_castellan$" #deepl:566097349
+
+ task_castellan_clergy: "聖職者の招集" #deepl:415742451
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]" #deepl:4181075151
+ task_castellan_clergy_modifier: "評議会$councillor_castellan$" #deepl:566097349
+
+ # Admiral
+ task_admiral_fleet: "散開船団" #deepl:1618243021
+
+ task_admiral_fleet_modifier: "評議会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_fleet_effect_desc: "[supply|E] 期間#P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ Base：#P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ 評議員の[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n [fleet|E] 移動速度：#P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ Base：#P [SCOPE.ScriptValue('task_admiral_fleet_base')]+#!\n $TAB$ 参議院議員[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%.#!" #deepl:1383045148
+
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]#!\n" #deepl:28204122
+
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]#!" #deepl:136165875
+
+ task_admiral_raid: "エンボルデン・レイダース" #deepl:1570853202
+
+ cannot_raid: "#X 襲撃できる！#!" #deepl:1644501070
+
+ NOT_cannot_raid: "#X レイドはできない！#!" #deepl:1194432546
+
+ task_admiral_raid_modifier: "評議会$councillor_admiral$" #deepl:1798471343
+
+
+ task_admiral_raid_effect_desc: "[raid|E] スピード#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ ベース：#P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 参議院議員[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#! \n [raid_loot|E] 容量：#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ ベース：#P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 参議院議員[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n 移動速度：#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base：#P [SCOPE.ScriptValue('task_admiral_raid_base')]#!\n$TAB$+ 参議院議員[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%.#!" #deepl:4290845175
+
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]#!\n" #deepl:28204122
+
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]#!" #deepl:136165875
+
+ task_admiral_maritime: "貿易保護" #deepl:34268181
+
+ task_admiral_maritime_modifier: "評議会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_tax_modifier: "評議会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_effect_desc: "[domain|E] 税金#P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n $TAB$ ベース：#P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ 参議院議員[stewardship_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#! \n [supply|E] 定員：#P +[SCOPE.ScriptValue('task_admiral_maritime_modifier_value')]%#!\n $TAB$ ベース：#P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ 参議院議員[stewardship_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_maritime_skill_base')]%.#!" #deepl:763222540
+
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]#!\n" #deepl:28204122
+
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]#!" #deepl:136165875
+
+ # Court Chaplain
+ COURT_CHAPLAIN_SHATTERED_WORLD: "砕かれた世界 スタート・ボーナス" #deepl:3364461777
+
+ # Spymaster
+ agot_task_disrupt_schemes_discover_spies: "あなたのコートで外国人を発見するかもしれない[sas_spies|E] \n" #deepl:2680493951
+ agot_task_disrupt_schemes_recruit_spies: "[sas_spies|E] をターゲットコートで募集するかもしれない。\n" #deepl:2394015076

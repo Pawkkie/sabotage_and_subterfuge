@@ -1,0 +1,15 @@
+﻿l_japanese:
+ plan_heist_interaction: "強盗計画" #deepl:3591742283
+ plan_heist_interaction_desc: "[gold|E] と並行して[prestige|E] または[piety|E] を使い、[recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] のいずれかで強盗を計画する。[smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "アーティファクトの密輸#weak (スキーム)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "[recipient.GetShortUINameNoTooltip] 、以前に強盗を計画したアーティファクトを盗もうとする。" #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "あなたは[smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "を雇っていない。[smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] 計画強盗のタスクを実行中" #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] はプラン強盗のタスクを実行していない" #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "今はアーティファクトの密輸はできない" #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "アーティファクト強盗を計画した" #deepl:538249166

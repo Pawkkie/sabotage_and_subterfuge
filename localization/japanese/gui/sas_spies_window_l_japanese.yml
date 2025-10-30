@@ -1,0 +1,6 @@
+﻿l_japanese:
+ INTRIGUE_WINDOW_MY_SPIES_TITLE: "[sas_spies|E] あなたの[sas_spy_network|E]" #deepl:3897218222
+ INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T  [sas_spies|E]#!  最大数は、あなたとあなたの の合計 の5分の1として計算され、切り捨てられる。Expand Spy Networkの判定により2倍。\n [spymaster|E] [intrigue|E] " #deepl:583737040
+ INTRIGUE_WINDOW_DISMISS: "解散" #deepl:1713405472
+ INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T #!\n   を解任する。\n [Character.GetTitledFirstName] [sas_spy_network|E]" #deepl:3130473183
+ SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]" #deepl:794553844

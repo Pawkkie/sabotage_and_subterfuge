@@ -1,0 +1,90 @@
+﻿l_japanese:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "スパイネットワークの拡大" #deepl:1918218917
+ sas_expand_spy_network_decision_desc: "クモが巣を広げるには、より多くの時間を費やすか、より多くのクモを巻き込むしかない。私たちの[sas_spy_network|E] 、ささやかではあるが成功を収めた。しかし、私たちはさらに手を広げ、支配者たちを広く巻き込み、彼らの最も身近な秘密を利用して、私たちに有利なようにするかもしれない。" #deepl:2680910805
+ sas_expand_spy_network_decision_tooltip: "[sas_spy_network|E] 数と能力を伸ばす" #deepl:1080571400
+ sas_expand_spy_network_decision_confirm: "クモの巣が伸びていく！" #deepl:2491328231
+ sas_expand_spy_network_double_spies.tt: "の2倍を採用することができる。[sas_spies|E]" #deepl:3951820473
+ sas_expand_spy_network_child_spies.tt: "8歳以上の子供を以下の職業に就かせることができる。[sas_spies|E]" #deepl:594091579
+ sas_expand_spy_network_innovation_spies.tt: "あなたの[sas_spies|E] は、その居住地の裁判所から市民または軍[innovations|E] を盗むことができる#weak  （クールダウンは25年）。#!" #deepl:2062950662
+ sas_expand_spy_network_have_enough_spies_tt: "少なくとも3人を雇用している[sas_spies|E]" #deepl:769462268
+ sas_expand_spy_network_have_paid_spies_tt: "少なくとも3つの[secrets|E] 。[sas_spies|E]" #deepl:4061259209
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "アンダーグラウンド犯罪の確立" #deepl:1225823486
+ sas_establish_criminal_underground_decision_desc: "テーブルの上にすべてのカードを置いておくのもひとつの方法だが、国際外交となると、袖の下にエースを1枚か2枚隠しておく方が楽なのは確かだ。操り人形の主人になれるのに、なぜ礼儀や礼節の糸にぶら下がるのか？" #deepl:1579221697
+ sas_establish_criminal_underground_decision_tooltip: "あなたの宮廷で、悪党や[sas_spies|E] の雇用を奨励する。" #deepl:3565047867
+ sas_establish_criminal_underground_decision_confirm: "暗闇の中で踊ろう！" #deepl:764817339
+ sas_establish_criminal_underground_spy_network.tt: "[sas_spies|E] 。[sas_spy_network|E]" #deepl:417099671
+ sas_establish_criminal_underground_rabble_rouser.tt: "[rabble_rouser_court_position|E] コートポジションのロックを解除" #deepl:3231636541
+ sas_establish_criminal_underground_femme_fatale.tt: "[femme_fatale_court_position|E] コートポジションのロックを解除" #deepl:4153819485
+ sas_establish_criminal_underground_smuggler.tt: "[smuggler_court_position|E] コートポジションのロックを解除" #deepl:1659450848
+ sas_establish_criminal_underground_master_assassin.tt: "[master_assassin_court_position|E] コートポジションのロックを解除" #deepl:2159838119
+ ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "ハウス[CHARACTER.GetHouse.GetName|U] 、犯罪者の地下組織を設立した。" #deepl:134357733
+ NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "ハウス[CHARACTER.GetHouse.GetName|U] 、地下に刑事施設は設立されていない。" #deepl:2261484798
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "特殊作戦訓練" #deepl:3167735659
+ sas_special_operations_training_decision_desc: "適応は、影で生き残るための鍵である。アンダーグラウンドで知識を共有することに集中することで、私たちのエージェントはその技術を習得することができ、私たちの影響力の網を広げながら、彼ら自身の高度に几帳面な収入源を見つけることで、より自立的になることができる。" #deepl:3538227294
+ sas_special_operations_training_decision_tooltip: "犯罪者と[sas_spies|E] 、より自信を持って参加できるよう訓練する。[hostile_schemes|E]" #deepl:3991151590
+ sas_special_operations_training_decision_confirm: "暗闇の中でナイフが増える！" #deepl:3972594294
+ sas_special_operations_completed_hostile_schemes_tt: "少なくとも3つのコースを修了している[hostile_schemes|E]" #deepl:2270300827
+ sas_special_operations_have_enough_spies_tt: "少なくとも3人を雇用している[sas_spies|E]" #deepl:769462268
+ sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] ベース[court_positions|E] 無給" #deepl:647631714
+ sas_special_operations_training_spies_likely_to_join_schemes.tt: "あなたの[sas_spies|E] は、あなたの[hostile_schemes|E] に加わる可能性が高い。[agents|E]" #deepl:2830788156
+ sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "あなたの[rabble_rouser_court_position|E] は、あなたの[hostile_schemes|E] に加わる可能性が高い。[agent|E]" #deepl:1181319785
+ sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "あなたの[femme_fatale_court_position|E] は、あなたの[hostile_schemes|E] に加わる可能性が高い。[agent|E]" #deepl:2788309644
+ sas_special_operations_training_smuggler_likely_to_join_schemes.tt: "あなたの[smuggler_court_position|E] は、あなたの[hostile_schemes|E] に加わる可能性が高い。[agent|E]" #deepl:1165184473
+ sas_special_operations_training_master_assassin_likely_to_join_schemes.tt: "あなたの[master_assassin_court_position|E] は、あなたの[hostile_schemes|E] に加わる可能性が高い。[agent|E]" #deepl:2916929945
+
+ # House of Sabotage and Subterfuge
+ sas_house_of_sabotage_and_subterfuge_decision: "妨害と策略の家" #deepl:346655493
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "妨害と策略の家 Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_tooltip: "妨害と策略の遺産を固める" #deepl:3420083984
+ sas_house_of_sabotage_and_subterfuge_decision_confirm: "私たちは影と一体なのだ！" #deepl:1602826360
+ sas_house_of_sabotage_and_subterfuge_schemes_tt: "少なくとも8つのコースを修了している[hostile_schemes|E]" #deepl:2029350009
+ sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "少なくとも8人を雇用[sas_spies|E]" #deepl:2404724051
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "@dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] を完了するたびに獲得できる。[hostile_schemes|E]" #deepl:421351319
+ sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "[sas_spies|E] 秘密や革新を発見するチャンスを増やす" #deepl:4182569517
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "マレファクターをリクルート" #deepl:1281019616
+ sas_recruit_malefactor_decision_desc: "地下の犯罪組織がうまく機能するには、多くの人の手が必要だ。私は、より重要な欠員のために、適切な候補者を見つけるために、私の使用人を広く派遣しなければならない。" #deepl:1735662004
+ sas_recruit_malefactor_decision_tooltip: "地下の犯罪者に関連する[court_position|E] を埋めてくれる人物を有料で探す\n\n #weak  例えば、以下のような人物を雇うことができる。[GetCourtPositionType('rabble_rouser_court_position').GetName]#!" #deepl:790010884
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "ポジションタイプを選択" #deepl:3489192501
+ sas_recruit_malefactor_decision_confirm: "確認" #deepl:3524355688
+ sas_recruit_court_position_decision_tt: "選出された候補者の中から2名を選びます。[court_position|E]" #deepl:3036663020
+
+ # Rabble Rouser
+ hire_rabble_rouser: "暴れん坊を検索" #deepl:2458077144
+ hire_rabble_rouser_tooltip: "あなたの使用人は、以下のポジションにふさわしい候補者を何人か提案するだろう。[GetCourtPositionType('rabble_rouser_court_position').GetName()]" #deepl:1614552482
+ hire_rabble_rouser_desc: "[rabble_rouser_court_position|E] 、他領域で問題を引き起こすか、自領域で民衆を満足させるかが鍵となる。私のしもべたちに、適当な候補者を何人か連れてくるよう頼もう。" #deepl:1136401803
+ #  hire_rabble_rouser_decision_effect_tooltip: "[GetCourtPositionType('rabble_rouser_court_position').GetName()] の候補者の中から1人を選び、報酬と月給で雇うことができる。" #deepl:1865841153
+ #  hire_rabble_rouser_decision_confirm: "検索開始" #deepl:2082362254
+ recruit_rabble_rouser_cooldown_tt: "[GetCourtPositionType('rabble_rouser_court_position').GetName] 。[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]" #deepl:1478339175
+
+ # Femme Fatale
+ hire_femme_fatale: "ファム・ファタールを検索" #deepl:102309862
+ hire_femme_fatale_tooltip: "あなたの使用人は、以下のポジションにふさわしい候補者を何人か提案するだろう。[GetCourtPositionType('femme_fatale_court_position').GetName()]" #deepl:890583249
+ hire_femme_fatale_desc: "[femme_fatale_court_position|E] は、法廷を影からコントロールする手段を与えてくれる。私の使用人たちに、ふさわしい候補者を何人か連れてくるよう依頼しよう。" #deepl:1767789142
+ #  hire_femme_fatale_decision_effect_tooltip: "[GetCourtPositionType('femme_fatale_court_position').GetName()] の候補者の中から1人を選び、報酬と月給で雇うことができる。" #deepl:1223492537
+ #  hire_femme_fatale_decision_confirm: "検索開始" #deepl:2082362254
+ recruit_femme_fatale_cooldown_tt: "[GetCourtPositionType('femme_fatale_court_position').GetName] 。[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]" #deepl:2298014581
+
+ # Smuggler
+ hire_smuggler: "スマグラーの検索" #deepl:3552251679
+ hire_smuggler_tooltip: "あなたの使用人は、以下のポジションにふさわしい候補者を何人か提案するだろう。[GetCourtPositionType('smuggler_court_position').GetName()]" #deepl:3568294823
+ hire_smuggler_desc: "[smuggler_court_position|E] 、我々は...言うなれば、アーティファクトを...誰かの手から解放することができる。私の召使に頼んで、適当な候補者を何人か連れてこさせよう。" #deepl:4196276537
+ #  hire_smuggler_decision_effect_tooltip: "[GetCourtPositionType('smuggler_court_position').GetName()] の候補者の中から1人を選び、報酬と月給で雇うことができる。" #deepl:2197764143
+ #  hire_smuggler_decision_confirm: "検索開始" #deepl:2082362254
+ recruit_smuggler_cooldown_tt: "[GetCourtPositionType('smuggler_court_position').GetName] 。[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]" #deepl:40422166
+
+ # Master Assassin
+ hire_master_assassin: "マスター・アサシンを探す" #deepl:3609033881
+ hire_master_assassin_tooltip: "あなたの使用人は、以下のポジションにふさわしい候補者を何人か提案するだろう。[GetCourtPositionType('master_assassin_court_position').GetName()]" #deepl:2161765423
+ hire_master_assassin_desc: "[master_assassin_court_position|E] 主要な脅威を排除し、敵の領域に疫病を蔓延させる可能性がある。私のしもべたちに、適切な候補者を何人か連れてくるよう頼もう。" #deepl:2501111060
+ #  hire_master_assassin_decision_effect_tooltip: "[GetCourtPositionType('master_assassin_court_position').GetName()] の候補者の中から1人を選び、報酬と月給で雇うことができる。" #deepl:1797626658
+ #  hire_master_assassin_decision_confirm: "検索開始" #deepl:2082362254
+ recruit_master_assassin_cooldown_tt: "[GetCourtPositionType('master_assassin_court_position').GetName] 。[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]" #deepl:255274636

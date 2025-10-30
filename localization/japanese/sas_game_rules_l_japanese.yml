@@ -1,0 +1,11 @@
+﻿l_japanese:
+ game_rule_category_sas: "妨害工作と裏工作" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "犯罪者のアンダーグラウンドを始める" #deepl:511066023
+ setting_no_undergrounds: "なし" #deepl:3312814158
+ setting_no_undergrounds_desc: "ゲーム開始時に存在する家は、[sas_spy_network|E] や犯罪者の地下からは始まらない。" #deepl:3086919095
+ setting_fledgling_undergrounds: "駆け出しスパイ・ネットワーク" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "ゲーム開始時に存在する、郡を支配し、[administrative_government|E] に参加する首長のいる家は、[sas_spy_network|E] で始まる。" #deepl:2991418532
+ setting_full_undergrounds: "犯罪の世界" #deepl:2146549835
+ setting_full_undergrounds_desc: "ゲーム開始時に存在するすべての家は、[sas_spy_network|E] 、地下の犯罪者から始まる。" #deepl:2266201805

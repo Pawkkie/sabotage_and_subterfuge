@@ -1,0 +1,13 @@
+﻿l_polish:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ Sukces!" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "Czuję wielki przypływ dumy i nie mogę się powstrzymać od uśmiechu, gdy pokazuje mi się artefakt, o który się starałem. [artifact.GetName] ma nowego właściciela!\n\n Choć jest może nieco porysowany i brudny od trudów wyzwolenia, wciąż nie mogę się powstrzymać od przejechania palcami po luksusowej powierzchni tego skradzionego przedmiotu... [artifact.GetName], wspaniała nagroda!" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "Jest mile widziany w swoim nowym domu!" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ Skradziony artefakt!" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "Dzisiaj miałem ochotę podziwiać mój [artifact_to_steal.GetName]... ale ku mojemu przerażeniu okazało się, że zniknął! #EMP Zniknął!#!\n \n Po gorączkowym śledztwie zgłosił się służący, który powiedział, że [owner.GetName] zaaranżował bezczelną kradzież! Rzeczywiście, mówi się, że [owner.GetSheHe] często opowiadał o tym, o ile lepiej [artifact_to_steal.GetName] wyglądałby w posiadaniu [owner.GetHerHis]..." #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "Przeklnij tego podłego złodzieja!" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ Awaria" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "Moja sprytnie zaplanowana infiltracja przebiegła zgodnie z planem, ale nie udało mi się znaleźć [artifact.GetName]!\n\n Czy został przeniesiony? Ukryty? Albo głupie szczęście uratowało mój cel... albo moi niekompetentni lokaje zostali sprytnie przechytrzeni. Spanikowani tą całkowitą porażką, nie będą mi dalej pomagać. Moja nagroda pozostaje u właściciela..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "Nie mogę w to uwierzyć! #EMP Nie do przyjęcia!#!" #deepl:3003932934
+

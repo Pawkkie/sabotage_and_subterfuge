@@ -1,0 +1,14 @@
+﻿l_polish:
+ provoke_vassals_supplied_weaponry: "Dostarczona broń" #deepl:3599795622
+ provoke_vassals_supplied_provisions: "Dostarczone rezerwy" #deepl:882891120
+
+ provoke_vassals_stifling: "Tłumienie wasalstwa" #deepl:773364300
+ provoke_vassals_meritorious: "Meritorious Vassalage" #deepl:3890241118
+
+ provoke_vassals_attempt_assassination: "Wrobiony w próbę zamachu" #deepl:3152209219
+ provoke_vassals_failed_attempt_assassination: "Nieudana próba zamachu na życie" #deepl:137322991
+
+ provoke_vassals_looks_tired: "Liege wygląda na zmęczonego" #deepl:3010816921
+ provoke_vassals_looks_competent: "Liege wygląda kompetentnie" #deepl:2719656846
+
+ attempted_to_provoke_vassals: "Próba sprowokowania wasali" #deepl:191470277

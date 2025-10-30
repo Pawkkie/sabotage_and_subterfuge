@@ -1,0 +1,14 @@
+﻿l_polish:
+ smuggle_artifact_event_title: "Przemyt artefaktów:" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ Antykwariat" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "Jedną z oczywistych przeszkód w odzyskaniu artefaktu jest [target.GetTitledFirstNamePossessive] antykwariusz, [antiquarian.GetTitledFirstName].\n\n Istnieje oczywiście wiele sposobów... #EMP radzenia sobie#! z osobą, ale zastanawiam się, czy [antiquarian.GetFirstNameNoTooltip] jest typem osoby, którą mógłbym przekonać do spojrzenia w drugą stronę, oferując odpowiednią łapówkę." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "Złoto jest uniwersalnym językiem przekupstwa." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "Wierzysz, że [antiquarian.GetTitledFirstNamePossessive] lojalność można kupić za bogactwo..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "Może artefakt za artefakt?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] zgodzi się na równy "handel"." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "Wprowadzenie do [random_beauty.GetTitledFirstName] może okazać się... #EMP stymulujące#!." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "Obstawiasz, że [antiquarian.GetTitledFirstName] ceni sobie piękno fizyczne ponad lojalność." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "Zamiast tego sprawdzę inne możliwości." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] Przyjmuje łapówkę" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] Odmawia przyjęcia łapówki" #deepl:1499978674

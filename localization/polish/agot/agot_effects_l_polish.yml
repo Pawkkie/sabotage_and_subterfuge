@@ -1,0 +1,20 @@
+﻿l_polish:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "Postacie są zazwyczaj bardziej skłonne do [sas_spy|E] dla ciebie." #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "Postacie są zazwyczaj bardziej skłonne do [sas_spy|E] dla ciebie." #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "Postacie są zazwyczaj bardziej skłonne do [sas_spy|E] dla [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "Przyciągane postacie są bardziej skłonne do [sas_spy|E] dla ciebie" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Przyciągane postacie są znacznie bardziej skłonne do [sas_spy|E] dla ciebie" #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Przyciągane postacie są znacznie bardziej skłonne do [sas_spy|E] dla [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "Istnieje znacznie mniejsze prawdopodobieństwo, że [sas_spies|E] odwróci się i ujawni twoje imię, jeśli zostanie przyłapany" #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "Istnieje znacznie mniejsze prawdopodobieństwo, że [sas_spies|E] odwróci się i ujawni twoje imię, jeśli zostanie przyłapany" #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U] [sas_spies|E] są znacznie mniej skłonni do ujawnienia swojego pracodawcy, jeśli zostaną przyłapani" #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Każda z twoich relacji [lover|E] i [soulmate|E] daje ci #P 2#! losowe [skill|E] punkty (maksymalnie [EmptyScope.ScriptValue('friendly_counsel_max')|0])." #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Odblokowuje interakcję [sas_induct_bastard_interaction|E] " #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Odblokowuje interakcję [sas_steal_bastard_interaction|E] " #deepl:4140120211
+ 

@@ -1,0 +1,34 @@
+﻿l_polish:
+ game_concept_rouse_rabble_scheme: "$rouse_rabble$ Schemat" #deepl:1256911556
+ game_concept_rouse_rabble_scheme_desc: "$rouse_rabble_desc_general$" #deepl:44147011
+ game_concept_provoke_vassals_scheme: "$provoke_vassals$ Schemat" #deepl:2097908804
+ game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$" #deepl:3187202781
+ game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$" #deepl:1046129220
+ game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$" #deepl:2697849339
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$" #deepl:2264102523
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$" #deepl:2509590743
+ game_concept_poison_opinion_scheme: "$poison_opinion$ Schemat" #deepl:4069731557
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$" #deepl:2916212638
+ game_concept_smuggler_court_position: "$smuggler_court_position$" #deepl:708725340
+ game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$" #deepl:506615262
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ Schemat" #deepl:1623838666
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$" #deepl:843447062
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$" #deepl:669677987
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$" #deepl:1116663943
+ game_concept_master_assassin_court_position: "$master_assassin_court_position$" #deepl:2553385723
+ game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$" #deepl:2935660162
+ game_concept_spread_plague_scheme: "$spread_plague$ Schemat" #deepl:854597236
+ game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$" #deepl:1386105584
+ game_concept_sas_spy: "Szpieg" #deepl:287978883
+ game_concept_sas_spies: "Szpiedzy" #deepl:396918230
+ game_concept_sas_spy_desc: "Szpiedzy to agenci, którzy mogą pracować w dowolnym sądzie i informować swojego pracodawcę o odkrytych tajemnicach. Ich pracodawca może poznać każdy z tych sekretów, uiszczając niewielką opłatę.\n\n Grupa agentów pracujących dla jednego pracodawcy nazywana jest [sas_spy_network|E]." #deepl:821312495
+ game_concept_sas_spy_network: "Sieć szpiegowska" #deepl:1689171219
+ game_concept_sas_spy_network_desc: "Zbiór [sas_spies|E] pracujących dla tego samego pracodawcy. Sieć ta może być rozwijana za pomocą interakcji Rekrutuj szpiegów bezpośrednio na kwalifikujących się postaciach lub za pomocą interakcji Sprawdź szpiegów na konkretnym władcy, aby zbadać jego dwór pod kątem możliwości.\n\n Szpiedzy na innych dworach są naturalnie rekrutowani przez [spymaster|E] za pomocą zadania rady Znajdź sekrety i mogą zostać odkryci na twoim dworze za pomocą zadania rady Zakłóć schematy.\n\nSkuteczność [sas_spy_network|E] może zostać zwiększona poprzez podjęcie określonych decyzji, z takimi efektami jak zwiększenie maksymalnej liczby szpiegów, zwiększenie skłonności dworzan do oferowania swoich usług lub umożliwienie szpiegom odkrycia [innovations|E]." #deepl:784788192
+ game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
+ game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
+ game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286
+ game_concept_sas_induct_bastard_interaction: "$sas_induct_bastard_interaction$" #deepl:439656646
+ game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
+ game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
+ game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979

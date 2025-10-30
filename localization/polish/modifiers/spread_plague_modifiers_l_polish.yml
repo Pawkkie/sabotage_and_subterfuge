@@ -1,0 +1,13 @@
+﻿l_polish:
+ attempted_to_spread_plague: "Próba rozprzestrzenienia zarazy" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "Nie wysłano zanieczyszczeń" #deepl:3309051214
+ spread_plague_shipped_clothing: "Wysyłane zanieczyszczenia" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "Otrzymana zanieczyszczona przesyłka" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "Zanieczyszczenia w górę rzeki" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "Staranne pozyskiwanie wody" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "Odpady w górę strumienia" #deepl:1605090773
+ spread_plague_water_in_town: "Zaopatrzenie w wodę zanieczyszczoną" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "Skażona spiżarnia" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "Skażona spiżarnia" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "Dokładne inspekcje żywności" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "Skażone pole uprawne" #deepl:846309052

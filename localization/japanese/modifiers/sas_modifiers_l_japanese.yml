@@ -1,0 +1,18 @@
+﻿l_japanese: 
+ county_rabble_roused_modifier: "暴徒化" #deepl:2416044267
+ county_rabble_roused_modifier_desc: "農民の暴徒は、自分たちの家来に反旗を翻した。" #deepl:4173438114
+ rabble_roused_against_me: "最近扱われた暴言" #deepl:2758601433
+ roused_rabble_war_lost_county_modifier: "自律性の向上" #deepl:1597784654
+ provoked_independence_character_modifier: "独立派への挑発" #deepl:410340774
+ provoked_dissolution_character_modifier: "解散派への挑発" #deepl:2545846333
+
+ mortal_adoration_martial_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_martial_gain_desc: "恋人はいつでも、いいアドバイスをしてくれる。" #deepl:3722719594
+ mortal_adoration_diplomacy_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_diplomacy_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_intrigue_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_intrigue_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_stewardship_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_stewardship_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_learning_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_learning_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723

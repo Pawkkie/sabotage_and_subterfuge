@@ -1,0 +1,46 @@
+﻿l_japanese:
+ rouse_rabble_attended_local_feast: "地元の饗宴に出席" #deepl:2713133615
+ rouse_rabble_sent_gift_to_local_feast: "地元の人々にギフトを贈った" #deepl:231123044
+ rouse_rabble_ignored_local_feast: "無視された地元の饗宴" #deepl:4143663347
+
+ rouse_rabble_intercept_aid: "地方扶助の傍受" #deepl:1362272277
+ rouse_rabble_endorse_aid: "承認された地方援助" #deepl:383506778
+ rouse_rabble_ignore_aid: "無視された地方援助" #deepl:3141683792
+ rouse_rabble_endorsed_aid_opinion: "承認された地方援助" #deepl:383506778
+
+ rouse_rabble_mock_battle: "ユース模擬戦" #deepl:4072308434
+ rouse_rabble_hunting_tournament: "ユース・ハンティング・トーナメント" #deepl:2973954280
+ rouse_rabble_cultural_exchange: "青少年文化交流" #deepl:1352443444
+
+ rouse_rabble_undercover_protest: "覆面抗議活動" #deepl:1250919224
+
+ rouse_rabble_fought_soldier: "デッキ・ソルジャー" #deepl:2448626429
+ rouse_rabble_slandered_soldier: "中傷された兵士" #deepl:1847595356
+ rouse_rabble_helped_soldier_home: "助っ人ソルジャー" #deepl:1762562614
+ rouse_rabble_observed_soldier: "観察された兵士" #deepl:1958705373
+
+ rouse_rabble_missive_crush_them: "反乱軍の粉砕を進言" #deepl:3024212291
+ rouse_rabble_missive_help_them: "反乱軍を助ける助言" #deepl:2424822606
+
+ rouse_rabble_suggestion_tax: "税金の軽減" #deepl:3298667024
+ rouse_rabble_suggestion_levies: "自社負担金の削減" #deepl:3813493225
+ rouse_rabble_suggestion_development: "自社開発の削減" #deepl:2538667592
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "減税" #deepl:3057853721
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "軽減された賦課金" #deepl:3882781821
+ rouse_rabble_suggestion_reduce_development_county_modifier: "縮小開発" #deepl:1216115176
+
+ rouse_rabble_argument_correct: "正しい判断" #deepl:4105672237
+ rouse_rabble_argument_incorrect: "誤った判断" #deepl:3636144073
+ rouse_rabble_trusted_judgment_opinion: "信頼される判断" #deepl:3001423300
+ rouse_rabble_doubted_judgment_opinion: "疑わしい判断" #deepl:520569006
+ rouse_rabble_compromised_judgment_opinion: "妥協した決断" #deepl:3044150383
+
+ rouse_rabble_soldiers_suspicious: "怪しい兵士たち" #deepl:2109321105
+ rouse_rabble_soldiers_unsuspecting: "無防備な兵士たち" #deepl:2952706296
+
+ rouse_rabble_increase_tension: "緊張の高まり" #deepl:1175644696
+ rouse_rabble_cool_off_tension: "クールオフされた緊張" #deepl:2228263524
+ rouse_rabble_increase_tension_county_modifier: "反逆者たち" #deepl:170963419
+
+ attempted_to_rouse_rabble: "徒党を組んだ" #deepl:3448411340
+ successfully_roused_rabble: "暴徒の奮起に成功" #deepl:3121025999

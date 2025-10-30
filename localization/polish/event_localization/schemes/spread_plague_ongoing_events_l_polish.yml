@@ -1,0 +1,29 @@
+﻿l_polish:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "Wybierz swoją truciznę" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "Po podjęciu decyzji o próbie uruchomienia [epidemic|E] w królestwie [target.GetUINamePossessive], pozostaje tylko wybrać metodę ataku.\n\n [master_assassin_name.GetUIName] mówi mi, że mamy dostęp do wyrzuconej pościeli i ubrań nieszczęsnej duszy, która cierpiała na miejscowy przypadek ospy, co może załatwić sprawę.\n\n Możemy również zastosować bardziej bezpośrednie środki, aby zabrudzić lokalne źródło wody lub zamiast tego być może skazić ich spiżarnie toksycznym grzybem, który [master_assassin_name.GetShortUIName] jest w ich posiadaniu." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "Używać zanieczyszczonej ściółki" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "Gleba w zaopatrzeniu w wodę" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "Skaż ich spiżarnie" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "Próba rozprzestrzenienia ospy w regionie" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "Próba rozprzestrzenienia Bloody Flux w regionie" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "Próba rozprzestrzenienia Świętego Ognia w regionie" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "Ciepłe objęcia śmierci" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] znalazł kupca w [target_title.GetNameNoTier] zainteresowanego zakupem podstawowej odzieży, pościeli i innych tkanin.\n\n To doskonała okazja, aby szybko dostarczyć więcej zanieczyszczeń do regionu, ale obchodzenie się z nimi dłużej niż to konieczne jest niebezpieczne i istnieje możliwość, że źródło zarazy zostanie namierzone." #deepl:2992183165
+ spread_plague_ongoing.0002.a: "Wymieszać zanieczyszczone artykuły z przesyłką" #deepl:616711320
+ spread_plague_ongoing.0002.b: "Może to wzbudzić zbyt wiele podejrzeń" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "Woda, na którą czekasz" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] namierzył źródło wody w [target_title.GetNameNoTier] w górę rzeki i znalazł idealne miejsce do zrzucenia zanieczyszczeń.\n\n Powinniśmy być w dużej mierze bezpieczni przed wykryciem, to tylko kwestia tego, czy woda będzie płynąć tak, jak chcemy.\n\n Alternatywnie możemy spróbować bardziej bezpośredniego podejścia i zrzucić je bezpośrednio przy głównym punkcie dostępu do miasta pod osłoną ciemności. To jednak znacznie bardziej ryzykowne." #deepl:388755539
+ spread_plague_ongoing.0003.a: "Zrzuć je w górę rzeki" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "Wyrzuć je w mieście" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "Grzyb wśród nas" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] zdobył specyficzny rodzaj grzyba, którego zarodniki mogą prowadzić do strasznych objawów po spożyciu. Jeśli uda nam się dostać go do jakiejś zaściankowej spiżarni w [target_title.GetNameNoTier], rozprzestrzenianie się stamtąd powinno zająć się samo.\n\n Uzyskanie dostępu do sklepów z żywnością nie jest jednak łatwe, więc łatwiej będzie spróbować rozprzestrzenić grzyba bezpośrednio na polach. Wiąże się to z mniejszym ryzykiem, ale też prawdopodobnie mniejszym prawdopodobieństwem sukcesu." #deepl:113464637
+ spread_plague_ongoing.0004.a: "Zakradnij się do spiżarni" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "Skażenie pól" #deepl:4137778007
