@@ -1,0 +1,75 @@
+﻿l_russian:
+ ###########################
+ # Critical Moments
+ ###########################
+
+ # Scheme Type A Boilerplate
+ sas_scheme_critical_moments.0001.t.task_contract: "Заключение [GetPlayer.Custom('GetContractOrIssue')]" #deepl:1012265068
+ sas_scheme_critical_moments.0001.t.scheme: "Выполнить схему" #deepl:2532843253
+ sas_scheme_critical_moments.0001.desc: "Потратьте накопленные [scheme_opportunity_opportunities|E], чтобы добавить новые [agent|E] слоты или попытаться завершить [scheme.GetName] [scheme|E] ." #deepl:4157729825
+ sas_scheme_critical_moments.0001.a: "#WEAK (@scheme_opportunity_icon![scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] )#! Пользуйтесь моментом" #deepl:666541376
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_opportunities: "Вам нужно как минимум [scheme_opportunity_i][scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] [scheme_opportunity_opportunities|E]" #deepl:4113346938
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_success_chance: "Вам нужно не менее 1% [success_chance|E]" #deepl:22090382
+ sas_scheme_critical_moments.0001.a.tt.progress: "Вы завершаете свой [scheme.GetName] против [scheme.GetTargetCharacter.GetShortUIName] #WEAK  ([scheme.GetSuccessChance|%/0] [success_chance|E] )#!" #deepl:3020828712
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable: "#WEAK #WEAK [target.GetTitledFirstNamePossessive] [court_positions|E] &amp; другие средства защиты дают  % шанс перехватить успешное убийство. [target.GetHerHim] [scheme.MakeScope.Var('target_intercept_repeatable_chance').GetValue]#!#!" #deepl:1066499528
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable_and_unique: "#WEAK Случайность и особые эффекты могут также, в редких случаях, помешать попытке#!" #deepl:3063377230
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.unique: "#WEAK Случайности и особые эффекты могут в редких случаях помешать попытке#!" #deepl:2397171866
+ sas_scheme_critical_moments.0001.b: "[scheme.Custom('GetCorrectAgentType_ChoiceA_Icon')] Добавьте слот для агента [scheme.Custom('GetCorrectAgentType_ChoiceA')]." #deepl:3263383410
+ sas_scheme_critical_moments.0001.b.fallback: "Добавьте слот для случайного агента." #deepl:1489889637
+ sas_scheme_critical_moments.0001.c: "[scheme.Custom('GetCorrectAgentType_ChoiceB_Icon')] Добавьте слот для агента [scheme.Custom('GetCorrectAgentType_ChoiceB')]." #deepl:2992946553
+ sas_scheme_critical_moments.0001.c.fallback: "Добавьте слот для случайного агента." #deepl:1489889637
+ sas_scheme_critical_moments.0001.d: "@unpredictable_icon! Ба, эти агенты не подойдут." #deepl:1013029851
+ sas_scheme_critical_moments.0001.d.tt: "Эти потенциальные слоты [agent|E] будут отброшены." #deepl:1290247234
+ sas_scheme_critical_moments.0001.e: "@icon_contract_modification_single! Рискнуть событием" #deepl:2679306790
+ sas_scheme_critical_moments.0001.e.receive_event: "Вы получаете случайное событие, связанное с [scheme.GetName], которое может быть #P полезным#! или #N вредным.#!" #deepl:4000171554
+ sas_scheme_critical_moments.0001.e.debug.warning: "#D Эти события не были проверены, поэтому соотношение риска и вознаграждения, скорее всего, будет низким.#!" #deepl:1193211861
+ sas_scheme_critical_moments.0001.f: "@scheme_success_icon! Добавьте модификатор шанса на успех" #deepl:828072647
+ sas_scheme_critical_moments.0001.g: "@scheme_success_max_icon! Добавьте модификатор максимального шанса на успех" #deepl:1378556640
+ sas_scheme_critical_moments.0001.h: "@time_icon! Необходимо более тщательное планирование..." #deepl:3620623102
+ sas_scheme_critical_moments.0001.h.tt.some_opportunities: "Вы уходите, не потратив ни одного [scheme_opportunity_i]. [scheme_opportunity_opportunities|E]" #deepl:2469258378
+ sas_scheme_critical_moments.0001.h.tt.zero_opportunities: "Вам следует вернуться на сайт [scheme_opportunity_i]. [scheme_opportunity_opportunity|E]" #deepl:946611055
+ sas_scheme_critical_moments.0001.option.need_opportunities: "Вам нужно как минимум [scheme_opportunity_i]1 [scheme_opportunity_opportunity|E]" #deepl:1328090935
+ sas_scheme_critical_moments.0001.option.max_slots: "Этот [scheme|E] достиг своего максимального [agent|E] слота." #deepl:2882987660
+ sas_scheme_critical_moments.0001.option.opportunities_better_spent_on_agents: "#mixed_value @alert_icon! [scheme_opportunity_opportunities|E] , как правило, лучше потратить на [agent|E] слоты.#!" #deepl:902020936
+
+ # Scheme Type B Boilerplate
+ sas_scheme_critical_moments.0002.t: "$sas_scheme_critical_moments.0001.t$" #deepl:2535777279
+ sas_scheme_critical_moments.0002.desc: "Потратьте накопленные [scheme_opportunity_opportunities|E], чтобы попытаться завершить [scheme.GetName] [scheme|E] . Тратьте больше, чтобы получить мощные финальные бонусы." #deepl:2975502550
+ sas_scheme_critical_moments.0002.a: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')]#!: Пользуйтесь моментом" #deepl:2416618336
+ sas_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities: "Вам нужно как минимум [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')] [scheme_opportunity_opportunities|E]" #deepl:222353579
+ sas_scheme_critical_moments.0002.b: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')]#!: $scheme_end_buff_t2_modifier$" #deepl:2796944076
+ sas_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities: "Вам нужно как минимум [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')] [scheme_opportunity_opportunities|E]" #deepl:3284097266
+ sas_scheme_critical_moments.0002.b.tt.clarify_buff: "[scheme|E] достигает [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] до своего конечного [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ Общее [success_chance|E] никогда не может превысить максимум [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:2989463537
+ sas_scheme_critical_moments.0002.b.tt.progress: "Вы завершаете свой [scheme.GetName] против [scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E] , включая модификаторы этого варианта).#!" #deepl:1026627341
+ sas_scheme_critical_moments.0002.c: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')]#!: $scheme_end_buff_t3_modifier$" #deepl:620615917
+ sas_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities: "Вам нужно как минимум [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')] [scheme_opportunity_opportunities|E]" #deepl:2249578693
+ sas_scheme_critical_moments.0002.c.tt.clarify_buff: "[scheme|E] достигает [EmptyScope.ScriptValue('multi_ending_scheme_buff_t3_value')|=P/0%] до своего конечного [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ Общее [success_chance|E] никогда не может превысить максимум [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:171408237
+ sas_scheme_critical_moments.0002.c.tt.progress: "Вы завершаете свой [scheme.GetName] против [scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t3_total_success_value')|P/0%] [success_chance|E] , включая модификаторы этого варианта).#!" #deepl:348010797
+ sas_scheme_critical_moments.0002.d: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')]#!: $scheme_end_buff_t4_modifier$" #deepl:4245634060
+ sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities: "Вам нужно как минимум [scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')] [scheme_opportunity_opportunities|E]" #deepl:4114963779
+ sas_scheme_critical_moments.0002.d.tt.clarify_buff: "[scheme|E] достигает [EmptyScope.ScriptValue('multi_ending_scheme_buff_t4_value')|=P/0%] до своего конечного [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ Общее [success_chance|E] никогда не может превысить максимум [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:1954019007
+ sas_scheme_critical_moments.0002.d.tt.progress: "Вы завершаете свой [scheme.GetName] против [scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t4_total_success_value')|P/0%] [success_chance|E] , включая модификаторы этого варианта).#!" #deepl:3356750797
+ sas_scheme_critical_moments.0002.e: "$sas_scheme_critical_moments.0001.h$" #deepl:527216822
+ sas_scheme_critical_moments.0002.e.tt.some_opportunities: "$sas_scheme_critical_moments.0001.h.tt.some_opportunities$" #deepl:860422857
+ sas_scheme_critical_moments.0002.e.tt.zero_opportunities: "$sas_scheme_critical_moments.0001.h.tt.zeroo_opportunities$" #deepl:3044083624
+ sas_scheme_end_buff_t2_modifier: "Выполняйте с уверенностью" #deepl:1096404347
+ sas_scheme_end_buff_t2_modifier_desc: "Уверенность - это собственная марка успеха." #deepl:2406515427
+ sas_scheme_end_buff_t3_modifier: "Преимущества рычага" #deepl:2975369626
+ sas_scheme_end_buff_t3_modifier_desc: "Нет ничего верного, поэтому используйте все возможности." #deepl:354067876
+ sas_scheme_end_buff_t4_modifier: "Охватите все углы" #deepl:2434671282
+ sas_scheme_end_buff_t4_modifier_desc: "Победители играют в азартные игры, стратеги знают." #deepl:416240098
+
+ # Reminders
+ sas_scheme_critical_moments.0011.t.boilerplate: "Пределы возможностей" #deepl:741992334
+ sas_scheme_critical_moments.0011.t.task_contract: "$sas_scheme_critical_moments.0001.t.task_contract$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:2779270639
+ sas_scheme_critical_moments.0011.t.scheme: "$sas_scheme_critical_moments.0001.t.scheme$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:4282407609
+ sas_scheme_critical_moments.0011.desc.intro: "Моя схема [scheme.GetName]" #deepl:3413984870
+ sas_scheme_critical_moments.0011.desc.middle.character: "[scheme.GetTargetCharacter.GetTitledFirstName]" #deepl:4117363914
+ sas_scheme_critical_moments.0011.desc.middle.title: "[scheme.GetTargetTitle.GetDefinitiveName]" #deepl:2254312775
+ sas_scheme_critical_moments.0011.desc.outro: "продвигается хорошо - возможно, #EMP слишком#! хорошо.\n\n Есть много направлений, по которым я мог бы его развивать, если бы захотел, но дальнейшие #EMP возможности#! вряд ли появятся, пока я не воспользуюсь некоторыми из тех, что у меня есть." #deepl:4243500226
+ sas_scheme_critical_moments.0011.immediate.tt: "Ваш [scheme.GetName] [scheme|E] имеет максимальный [GetDefine('NScheme','SCHEME_MAX_OPPORTUNITIES')|0]. [scheme_opportunities|E]" #deepl:3437879721
+ sas_scheme_critical_moments.0011.a: "Я буду действовать, когда сочту нужным, а не раньше!" #deepl:3098732785
+ sas_scheme_critical_moments.0011.a.tt: "@warning_icon! #X Вы больше не будете получать предупреждения, когда этот [scheme|E] достигнет максимального количества. [scheme_opportunity_opportunities|E]#!" #deepl:1081099080
+ sas_scheme_critical_moments.0011.b: "Полезно быть в курсе таких вещей." #deepl:1996839201
+ sas_scheme_critical_moments.0011.b.tt: "Если через год этот [scheme|E] снова наберет максимальное количество [scheme_opportunity_opportunities|E], вы снова получите уведомление." #deepl:1049117849
+ sas_scheme_critical_moments.0011.c: "Я исполню его немедленно." #deepl:3372487602

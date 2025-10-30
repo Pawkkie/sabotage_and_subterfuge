@@ -1,0 +1,11 @@
+﻿l_german:
+ game_rule_category_sas: "Sabotage und Ausweichmanöver" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Start von kriminellen Untergründen" #deepl:511066023
+ setting_no_undergrounds: "Keine" #deepl:3312814158
+ setting_no_undergrounds_desc: "Häuser, die zu Spielbeginn existieren, beginnen nicht mit einem [sas_spy_network|E] oder kriminellen Untergrund" #deepl:3086919095
+ setting_fledgling_undergrounds: "Flüchtige Spionagenetze" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "Häuser, die zu Spielbeginn mit einem Oberhaupt existieren, das sowohl eine Grafschaft kontrolliert als auch an einer [administrative_government|E] teilnimmt, beginnen mit einer [sas_spy_network|E]." #deepl:2991418532
+ setting_full_undergrounds: "Welt des Verbrechens" #deepl:2146549835
+ setting_full_undergrounds_desc: "Alle Häuser, die zu Spielbeginn existieren, beginnen mit einem [sas_spy_network|E] und kriminellem Untergrund." #deepl:2266201805

@@ -1,0 +1,33 @@
+﻿l_simp_chinese:
+ # Court Position
+ femme_fatale_court_position: "魅力女性" #deepl:2042176501
+ femme_fatale_court_position_desc: "魅影女是一位善于利用朝臣的高手，她擅长在暗处以最适合自己的方式指挥宫廷。她可以让臣子对君主的看法大打折扣，提高您的[sas_spies|E] 的效率，并让您自己的宫廷程序更加顺畅。" #deepl:275266301
+ femme_fatale_custom_effect_description: "$BULLET$可允许访问[GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #deepl:1704038344
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]" #deepl:4179113456
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]" #deepl:1335294579
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]" #deepl:571687154
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]" #deepl:439104194
+
+ # Eligibility
+ femme_fatale_not_lowborn: "它们是#bold 而不是#! [lowborn|E]" #deepl:1427234325
+ femme_falate_not_married: "它们是#bold 而不是#! [married|E]" #deepl:3606104437
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "毒药意见" #deepl:489149273
+ femme_fatale_task_poison_opinion_desc: "毒化目标对其[liege|E] 的看法，导致其朝廷混乱不堪。" #deepl:1344370183
+ allow_poisoning_opinion_scheme_tt: "可使用[poison_opinion_scheme|E] 。该任务必须处于激活状态，才能启动和继续计划。\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to@scheme_success_icon!#P  +20%#! （基于[aptitude|E])" #deepl:2799618372
+ max_poison_opinion_schemes_add: "Max[GetScheme('poison_opinion').GetTypeName] [schemes|E]" #deepl:3008665747
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "拥抱蜘蛛" #deepl:1182524634
+ femme_fatale_task_embrace_the_spiders_desc: "在[sas_spy_network|E] 上编织更远的网，比以往更有效地学习外国的秘密。" #deepl:4233153217
+ femme_fatale_increase_spy_discovery_chance_tt: "增加[sas_spies|E] 发现秘密和创新的机会" #deepl:4182569517
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "安抚和监视" #deepl:2527092364
+ femme_fatale_task_soothe_and_surveil_desc: "缓和宫廷中不断升温的紧张局势，同时密切关注任何破坏迹象。" #deepl:2496953860
+ increased_poison_opinion_defense_tt: "敌人[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:228597342

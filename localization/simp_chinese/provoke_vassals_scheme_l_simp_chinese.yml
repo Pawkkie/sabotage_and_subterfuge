@@ -1,0 +1,74 @@
+﻿l_simp_chinese:
+ # Scheme modifiers
+ PROVOKE_VASSALS_AMBITIOUS: "[GetTrait('ambitious').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1541796170
+
+ # Scheme info
+ provoke_vassals: "挑衅附庸" #deepl:2492283152
+ provoke_vassals_desc: "让王国的臣民反对他们的君主" #deepl:2344881514
+ provoke_vassals_desc_general: "$provoke_vassals$ 是一个[hostile_scheme|E] ，它试图鼓动目标王国的臣民反抗他们的领主。该计划需要[rabble_rouser_court_position|E] [court_position|E] 的雇佣才能实施，您和您的目标必须同时掌管至少[duchy|E] 级别的王国。\n\n 如果[rabble_rouser_court_position|E] 在任何时候失业或更换任务，该计划将被取消。" #deepl:596805607
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ provoke_vassals_action: "挑衅" #deepl:3048438145
+
+ PROVOKE_VASSALS_SUCCESS_DESC: "诸侯受到挑衅，煽动叛乱" #deepl:4113621917
+ PROVOKE_VASSALS_DISCOVERY_DESC: "您可以在[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] 境界中继续挑衅诸侯。" #deepl:2391768
+
+ max_provoke_vassals_schemes_add: "Max[GetScheme('provoke_vassals').GetTypeName] [schemes|E]" #deepl:2813395320
+
+## Character Interaction Scheme Agent Packages
+ provoke_vassals_interaction.tt.agent_focus_balance: "[scheme_speed_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:2603902629
+ provoke_vassals_interaction.tt.agent_focus_success: "[success_chance_max_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1717624249
+ provoke_vassals_interaction.tt.agent_focus_speed: "[scheme_speed_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1227893453
+ provoke_vassals_interaction.tt.agent_focus_secrecy: "[secrecy_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_amanuensis' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]" #deepl:1200689629
+
+ # Allow
+ ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] 已经在处理一个[independence_faction|E]" #deepl:3421917769
+ NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] 还没有处理[independence_faction|E]" #deepl:1436193969
+ ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] 已经在处理[dissolution_faction|E]" #deepl:273673184
+ NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] 还没有处理[dissolution_faction|E]" #deepl:1642768420
+ VASSALS_CAN_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] 确实有可以说服其建立派系的附庸" #deepl:1144479962
+ VASSALS_CANNOT_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] 没有任何可以说服其建立派系的附庸" #deepl:2365097897
+
+ PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] [independence_faction|E] " #deepl:268040305
+ NOT_PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] [independence_faction|E] " #deepl:2661186461
+
+ PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] [dissolution_faction|E] " #deepl:3278188246
+ NOT_PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] [dissolution_faction|E] " #deepl:3613187446
+
+ PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U] [administrative_government|E] 还没有陷入派系战争" #deepl:2544808095
+ NOT_PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U] [administrative_government|E] 已经陷入派系斗争" #deepl:2525562439
+
+ PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]政府没有邦联分区继承权" #deepl:4276519694
+ NOT_PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]政府拥有邦联分治继承权" #deepl:3389078339
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "距离游戏开始时间超过 5 年" #deepl:4117658580
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "游戏开始后必须满 5 年" #deepl:3870898705
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "距离游戏开始时间超过 10 年" #deepl:1109302896
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "从游戏开始算起必须满 10 年" #deepl:707856254
+
+ PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] 不是大汗" #deepl:877924169
+ NOT_PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] 是最伟大的大汗" #deepl:4049601203
+
+ RABBLE_ROUSER_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] 正在执行 "挑衅瓦萨 "任务" #deepl:2415167053
+ RABBLE_ROUSER_NOT_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] 不执行 "挑衅瓦萨 "任务" #deepl:945030106
+ provoke_vassals_invalidated_title: "挑衅瓦萨计划结束" #deepl:1476132421
+ provoke_vassals_invalidated_dead: "[target.GetShortUIName] 已经逝去。您不能再挑起[target.GetHerHis] 诸侯对[target.GetHerHim] 的战争。" #deepl:484895812
+ provoke_vassals_invalidated_target_lost_title: "[target.GetShortUIName] 他们已经堕落到不再有重要的附庸可以挑衅的地步。" #deepl:2496312703
+ provoke_vassals_invalidated_no_rabble_rouser: "您不再雇用[rabble_rouser_court_position|E] 。" #deepl:710383329
+ provoke_vassals_invalidated_not_provoking_vassals: "[CHARACTER.GetShortUIName|U] 不再执行 "挑衅瓦萨 "任务。" #deepl:3053211157
+ provoke_vassals_invalidated_in_army: "[CHARACTER.GetShortUIName|U] 已无法使用，因为[CHARACTER.GetSheHe] 正在率领一支军队。" #deepl:1180147792
+ provoke_vassals_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] 由于[CHARACTER.GetSheHe] 已入狱，因此已无法使用。" #deepl:1720481333
+ provoke_vassals_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] 由于[CHARACTER.GetSheHe] 正在出差，因此不再提供。" #deepl:500171271
+ provoke_vassals_invalidated_has_dissolution_faction: "[CHARACTER.GetShortUIName|U] 已经成立了一个针对[dissolution_faction|E] 的[CHARACTER.GetHerHim] 。" #deepl:2485077500
+ provoke_vassals_invalidated_has_independence_faction: "[CHARACTER.GetShortUIName|U] 已经有一个针对[CHARACTER.GetHerHim] 的[independence_faction|E] 。" #deepl:1667653504
+ provoke_vassals_invalidated_no_eligible_vassals: "[CHARACTER.GetShortUIName|U] 不再有任何可以说服其建立派系的附庸。" #deepl:2468938260
+ provoke_vassals_invalidated_recent_independence_war: "[CHARACTER.GetShotUIName|U] 刚刚与[independence_faction|E] 交手。" #deepl:2519575917
+ provoke_vassals_invalidated_recent_dissolution_war: "[CHARACTER.GetShotUIName|U] 刚刚与[dissolution_faction|E] 交手。" #deepl:3059438666
+ provoke_vassals_invalidated_admin_faction_war: "[CHARACTER.GetShortUIName|U] [administrative_government|E] 现在又陷入了另一场派系战争。" #deepl:172355172
+ provoke_vassals_invalidated_confederate_partition: "[CHARACTER.GetShortUIName|U]政府通过了邦联分治继承。" #deepl:3065007221
+ provoke_vassals_invalidated_greatest_of_khans: "[CHARACTER.GetShortUIName|U] 已成为最伟大的可汗。" #deepl:71598631
+
+ ## Interaction
+ provoke_vassals_interaction: "挑衅 Vassals#weak  （计划）#!" #deepl:2546310469
+ provoke_vassals_interaction_desc: "企图挑衅[recipient.GetShortUINameNoTooltip] 王国的诸侯，发动[independence_faction|E] 或[dissolution_faction|E]" #deepl:3078725279
+ provoke_vassals_interaction_notification: "挑衅附庸" #deepl:569161018

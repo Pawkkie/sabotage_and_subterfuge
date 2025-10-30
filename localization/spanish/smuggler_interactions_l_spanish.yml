@@ -1,0 +1,15 @@
+﻿l_spanish:
+ plan_heist_interaction: "Plan Heist" #deepl:3591742283
+ plan_heist_interaction_desc: "Gasta [prestige|E] o [piety|E] junto con [gold|E] para planear un atraco en uno de [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] , permitiendo el uso de la [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "Artefacto de contrabando #weak (Esquema)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "Intenta robar un artefacto de [recipient.GetShortUINameNoTooltip] para el que has planeado previamente un atraco." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "Usted emplea a un [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "Usted no emplea a un [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] está realizando la tarea Plan Heist" #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] no está realizando la tarea Plan Heist" #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "No puedo pasar de contrabando un artefacto en este momento" #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "Planeaste un robo de artefactos" #deepl:538249166

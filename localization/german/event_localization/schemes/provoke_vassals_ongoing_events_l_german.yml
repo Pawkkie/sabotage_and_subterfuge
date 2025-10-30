@@ -1,0 +1,24 @@
+﻿l_german:
+ # Feeding the Flames
+ provoke_vassals_ongoing.0001.t: "Die Flammen nähren" #deepl:504191995
+ provoke_vassals_ongoing.0001.desc: "Es scheint, dass [independence_vassal.GetShortUIName] in letzter Zeit mit regionaler Unzufriedenheit zu kämpfen hat. Hohe Steuern in der Region, die von [target.GetShortUIName] auferlegt wurden, haben die Bevölkerung in Aufruhr versetzt.\n\n Während es unklar ist, ob [independence_vassal.GetShortUIName] es wirklich vorziehen würde, ihre Verpflichtungen zu senken oder nicht, ist es sicherlich klar, dass sie sich danach sehnen, mehr direkte Kontrolle über das Gebiet zu haben, ohne jeglichen Einfluss von höherer Stelle.\n\n Vielleicht kann ich ihnen einige Ressourcen zukommen lassen. Vielleicht kann ich auch ein oder zwei Vorschläge machen, wie sie am besten eingesetzt werden könnten..." #deepl:2916651416
+ provoke_vassals_ongoing.0001.a: "Ich werde die Waffen liefern" #deepl:3294163484
+ provoke_vassals_ongoing.0001.b: "Ich sorge für Proviant" #deepl:1722600124
+
+ # Promising the Future
+ provoke_vassals_ongoing.0002.t: "Versprechen für die Zukunft" #deepl:2733215959
+ provoke_vassals_ongoing.0002.desc: "Ich habe vor kurzem einen Brief von [independence_vassal.GetShortUIName] erhalten, eine diplomatische Standarddiskussion im Wesentlichen. Am Ende gab es jedoch eine nette persönliche Note!\n\n Es ist offensichtlich, dass [independence_vassal.GetSheHe] sich in [independence_vassal.GetHerHis] Ambitionen für Wachstum, Reichtum und Ansehen für [independence_vassal.GetHerHis] Familie ziemlich festgefahren fühlt.\n\n Es ist ebenso offensichtlich, dass dies eine fabelhafte Gelegenheit ist, die Art von Reaktion zu ködern, nach der wir hier gesucht haben." #deepl:2800851299
+ provoke_vassals_ongoing.0002.a: "Es ist eine Schande, dass das Vasallentum so erdrückend ist!" #deepl:2781941790
+ provoke_vassals_ongoing.0002.b: "Das Lehnswesen ist nur ein verdienstvolles Sprungbrett!" #deepl:1226632191
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0003.t: "Szenisches Attentat" #deepl:2745329543
+ provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] und [master_assassin_name.GetShortUIName] haben einen Plan ausgearbeitet, um ein Attentat auf [independence_vassal.GetShortUIName] oder ein Mitglied der Familie [independence_vassal.GetHerHis] zu inszenieren und [target.GetShortUIName] und seinen Soldaten die Schuld in die Schuhe zu schieben.\n\n Sie haben mir beide versichert, dass der Plan narrensicher ist. Da [master_assassin_name.GetShortUIName] verdeckt und allein agiert, ist die Wahrscheinlichkeit eines Fehlschlags bestenfalls minimal, und ein Fehlschlag würde eher zu Verwirrung als zu Verhaftungen führen.\n\n Eine solche Verwirrung würde wahrscheinlich zu einer Reaktion von [target.GetShortUIName] führen, um [independence_vassal.GetShortUIName] die Sicherheit von [independence_vassal.GetHerHis] zu versichern, was das Gegenteil von produktiv wäre. Wenn es aber funktioniert..." #deepl:1236986410
+ provoke_vassals_ongoing.0003.a: "Ich vertraue dir, lass es uns versuchen" #deepl:3757966510
+ provoke_vassals_ongoing.0003.b: "Ich bin mir nicht sicher, ob das eine gute Idee ist." #deepl:3991597292
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0004.t: "Ein Gipfeltreffen der besonderen Art" #deepl:2331725663
+ provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName] lud mich und einige andere Herrscher und Vasallen zu einer friedlichen Diskussion ein, die sich auf die Natur der Pest konzentrierte und darauf, wie wir uns vor dem Schlimmsten bewahren könnten.\n\n Das ist im besten Fall höchst ungewöhnlich, und obwohl die Unterhaltung produktiv war, hat sie einige dazu veranlasst, sich zu fragen, ob [target.GetSheHe] kompetent genug ist, um die selbstbewusste Führung zu übernehmen, die von einem Herrscher verlangt wird.\n\n Als das Gespräch zu Ende ist, fängt [independence_vassal.GetShortUIName] mein Ohr, um mich nach meiner Meinung zu fragen, wobei Zweifel in [independence_vassal.GetHerHis] Ausdruck deutlich werden." #deepl:1606362498
+ provoke_vassals_ongoing.0004.a: "Findest du nicht auch, dass [target.GetSheHe] müde aussieht?" #deepl:111863169
+ provoke_vassals_ongoing.0004.b: "[target.GetSheHe] ist absolut fähig" #deepl:3117045451

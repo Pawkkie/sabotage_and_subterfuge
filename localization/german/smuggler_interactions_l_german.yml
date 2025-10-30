@@ -1,0 +1,15 @@
+﻿l_german:
+ plan_heist_interaction: "Plan Raub" #deepl:3591742283
+ plan_heist_interaction_desc: "Geben Sie [prestige|E] oder [piety|E] zusammen mit [gold|E] aus, um einen Raubüberfall auf eine der Seiten [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] zu planen. [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "Artefakt schmuggeln #weak (Schema)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "Versuchen Sie, ein Artefakt von [recipient.GetShortUINameNoTooltip] zu stehlen, für das Sie zuvor einen Raub geplant haben." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "Sie beschäftigen einen [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "Sie beschäftigen keine [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] führt die Aufgabe Plan Heist durch" #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] die Aufgabe "Plan Heist" nicht ausführt" #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "Ich kann zur Zeit kein Artefakt schmuggeln" #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "Du hast einen Artefakt-Raub geplant" #deepl:538249166

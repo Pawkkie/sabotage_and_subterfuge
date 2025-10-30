@@ -1,0 +1,26 @@
+﻿l_german:
+ sas_embezzle_interaction: "Gelder veruntreuen" #deepl:648628518
+ sas_embezzle_interaction_desc: "Erfinde einen Vorwand, um Waren zu beschlagnahmen und Gelder von Kaufleuten eines benachbarten Reiches, eines Lehnsmannes oder eines Vasallen zu schmuggeln." #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "Es ist keine Veruntreuung, wenn Sie nichts nehmen." #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Kleine Summe" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP #! ein paar Wertsachen verlieren" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] Mittlere Summe" #deepl:2443027586
+ sas_embezzle_sum_medium: "Unerwartete Zollgebühren erheben" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] Große Summe" #deepl:566310994
+ sas_embezzle_sum_large: "Ungerechtigkeit der Zehnthändler" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] Riesige Summe" #deepl:1311154991
+ sas_embezzle_sum_huge: "Unverhohlener Steuerdiebstahl" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "Sie veruntreuen unbemerkt" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Ihre schändlichen Taten werden sofort aufgedeckt" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] bei einem Veruntreuungsversuch erwischt wurde!" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Schaltet die [sas_embezzle_interaction|E] Interaktion frei" #deepl:1189011648

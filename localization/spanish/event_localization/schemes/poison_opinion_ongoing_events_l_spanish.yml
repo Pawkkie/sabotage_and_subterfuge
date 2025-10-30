@@ -1,0 +1,10 @@
+﻿l_spanish:
+ poison_opinion_ongoing.1001.t: "Opinión envenenada: [target.GetLiege.GetCulture.GetNameNoTooltip] Cultura" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "Un plebeyo de ascendencia [target.GetCulture.GetNameNoTooltip] ha sido abordado en las calles de [capital.GetNameNoTooltip] por alguna ofensa menor.\n\n Culpando a una secta radical de [target.GetLiege.GetCulture.GetNameNoTooltip] advenedizos del problema, quizá podría convencer a [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)], tan [target.GetCulture.GetNameNoTooltip] como a las víctimas, de que quizá su señor es más desagradable de lo que podrían esperar." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "Los responsables directos son [target.GetLiege.GetCulture.GetCollectiveNounNoTooltip]." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "Esto es sólo un desafortunado accidente." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "Opinión envenenada: Derramar el té" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "Me han invitado a tomar el té de la tarde con [target_spouse.GetName], [target.GetNamePossessive] cónyuge.\n\n La ocasión es agradable y está cargada de cotilleos, y no tarda [target_spouse.GetShortUIName] en dejar escapar jugosos comentarios sobre [target.GetLiege.GetName]. Seguro que esto se puede aprovechar en mi beneficio..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "Continúa..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "Escuché que [target.GetLiege.GetSheHe] una vez hizo algo horrible..." #deepl:595741215

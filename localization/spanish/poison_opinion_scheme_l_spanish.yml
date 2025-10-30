@@ -1,0 +1,51 @@
+﻿l_spanish:
+ poison_opinion: "Opinión sobre el veneno" #deepl:489149273
+ poison_opinion_action: "Opinión sobre el veneno" #deepl:489149273
+ poison_opinion_desc: "Voy a tratar de envenenar [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]'s opinión de su señor, causando desorden en sus tribunales." #deepl:879276979
+ poison_opinion_desc_general: "Opinión envenenada es un [personal_scheme|E] que intenta reducir la opinión del objetivo sobre su [liege|E] directo. Este esquema depende principalmente de su propio [intrigue|E] y de las habilidades de su [femme_fatale_court_position|E]. Como no es un [hostile_scheme|E], no es [secret_scheme_single|E] y no usa [agents|E].\n\n A diferencia de la mayoría de los esquemas pero como el Sway [personal_scheme|E], Poison Opinion se reinicia al completarse. La opinión que se pierde con ella se acumula, por lo que mantenerla activa hará que a los [scheme_target|E] les guste cada vez menos su señor.\n\n Los objetivos de esta estratagema que tengan una opinión negativa de su señor serán más propensos a unirse a facciones creadas a través del [provoke_vassals_scheme|E] [hostile_scheme|E] ." #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de su [liege|E] disminuirá en #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "No se puede envenenar la opinión [TARGET_CHARACTER.GetShortUIName] mientras [TARGET_CHARACTER.GetSheHe] me irrita" #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]La opinión pública ha sido envenenada" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]no ha sido envenenada" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "Usted emplea a un [femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "Usted no emplea a un [femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] está llevando a cabo la tarea Poison Opinion" #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] no está realizando la tarea de Opinión Veneno" #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "Su [femme_fatale_court_position|E]'s' [intrigue|E]: $VALOR|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "Usted es un hábil Schemer: $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALOR|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALOR|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "Opinión previamente envenenada: $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "Su rival: $VALOR|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]'s ayuda: $VALOR|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "Enemigo [femme_fatale_court_position|E]'s ayuda: $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "El objetivo es [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "El objetivo es [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "El objetivo es [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "El objetivo es [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "El objetivo es [GetTrait('content').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "El objetivo es [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "El objetivo es [GetTrait('loyal').GetName( GetNullCharacter )]: $VALOR|+0=$" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "Finaliza el plan de dictámenes envenenados" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] ha fallecido. Ya no puedes envenenar la opinión de [target.GetHerHis] contra [target.GetHerHis] liege." #deepl:1019747224
+ poison_opinion_invalidated_war: "Debido a la guerra entre ustedes, ya no pueden envenenar la opinión de [target.GetShortUIName]." #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "Usted ya no emplea a un [femme_fatale_court_position|E]." #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] ya no realiza la tarea de Opinión sobre venenos." #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] se ha independizado y ya no tiene señor." #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "Opinión sobre el veneno #weak (Scheme)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "Intento de envenenar [recipient.GetShortUINameNoTooltip]'s opinión de su señor, causando desorden en sus tribunales" #deepl:1775251095
+ poison_opinion_interaction_notification: "Envenenamiento Opinión" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "¡Envenenaré la opinión que [recipient.GetShortUINameNoTooltip] tiene de su señor, causando desorden en sus cortes!" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "Sigue esforzándote" #deepl:2630534722
+ poison_opinion_try_again: "Harás otro intento" #deepl:2953815728
+ poison_opinion_complete: "Usted ha envenenado [target.GetShortUIName]'s opinión tanto como usted puede" #deepl:61883654

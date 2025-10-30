@@ -1,0 +1,12 @@
+﻿l_german:
+ sas_induct_bastard_interaction: "Bastard einführen" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "[recipient.GetFirstNameNicknamed] in Ihr [dynasty|E] einbinden." #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "Nehmen Sie ein uneheliches Kind, das Sie mit [GetTrait('disputed_heritage').GetName( GetNullCharacter )] gezeugt haben, in Ihr [dynasty|E] auf." #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "Eingeweihter Bastard" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "Sie nehmen [recipient.GetShortUIName] in Ihr [dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "Hinterhältige Legitimierung" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "Machen Sie [recipient.GetFirstName] ein Angebot, das [recipient.GetSheHe] nicht ablehnen kann, indem Sie sie als Mitglied Ihrer [dynasty|E] legitimieren." #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "Nehmen Sie ein [GetTrait('bastard').GetName( GetNullCharacter )] Kind, das Sie gezeugt haben, in Ihr [dynasty|E] auf." #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "Gestohlener Bastard" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "Sie nehmen [recipient.GetShortUIName] in Ihr [dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "Behauptete Abstammung" #deepl:3455245448

@@ -1,0 +1,15 @@
+﻿l_russian:
+ plan_heist_interaction: "План ограбления" #deepl:3591742283
+ plan_heist_interaction_desc: "Потратьте [prestige|E] или [piety|E] вместе с [gold|E], чтобы спланировать ограбление одного из [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] , позволяющее использовать [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "Контрабандный артефакт #weak (схема)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "Попытайтесь украсть артефакт с сайта [recipient.GetShortUINameNoTooltip], для которого вы ранее планировали ограбление." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "Вы нанимаете [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "Вы не нанимаете [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] выполняет задание "План ограбления"." #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] не выполняет задание "План ограбления"." #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "Я не могу провезти артефакт в данный момент." #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "Вы планировали ограбление артефакта" #deepl:538249166

@@ -1,0 +1,29 @@
+﻿l_german:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "Wählen Sie Ihr Gift" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "Da die Entscheidung getroffen wurde, eine [epidemic|E] in [target.GetUINamePossessive] zu starten, müssen wir nur noch unsere Angriffsmethode wählen.\n\n [master_assassin_name.GetUIName] sagt mir, dass wir Zugang zu weggeworfener Bettwäsche und Kleidung einer unglücklichen Seele haben, die einen lokalen Fall von Pocken erlitten hat, was den Trick ausmachen könnte.\n\n Wir können auch den direkteren Weg nehmen, eine lokale Wasserversorgung zu beschmutzen, oder stattdessen vielleicht ihre Speisekammern mit irgendeinem giftigen Pilz verseuchen, den [master_assassin_name.GetShortUIName] in ihrem Besitz hat." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "Verwenden Sie die kontaminierte Einstreu" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "Verschmutzung der Wasserversorgung" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "Verderben ihre Speisekammern" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "Versuch, die Pocken in der Region zu verbreiten" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "Versuch, Bloody Flux in der Region zu verbreiten" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "Versuch, das Heilige Feuer in der Region zu verbreiten" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "Warme Umarmung des Todes" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] hat einen Händler in [target_title.GetNameNoTier] gefunden, der daran interessiert ist, einfache Kleidung, Bettwäsche und andere Stoffe zu erwerben.\n\n Das ist die perfekte Gelegenheit, um schnell mehr Kontaminanten in die Region zu bringen, aber es ist gefährlich, sie mehr als nötig zu handhaben, und es besteht die Möglichkeit, dass die Quelle der Pest zu uns zurückverfolgt wird." #deepl:2992183165
+ spread_plague_ongoing.0002.a: "Mischen Sie die kontaminierten Artikel unter die Sendung" #deepl:616711320
+ spread_plague_ongoing.0002.b: "Das könnte zu viel Verdacht erregen" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "Wasser, auf das Sie warten" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] hat auf [target_title.GetNameNoTier] eine Wasserquelle flussaufwärts ausfindig gemacht und einen idealen Ort gefunden, an dem wir die Schadstoffe ablassen können.\n\n Wir sollten weitgehend sicher sein, nicht entdeckt zu werden, es ist nur die Frage, ob das Wasser so fließt, wie wir es wollen.\n\n Alternativ könnten wir einen direkteren Weg wählen und sie im Schutz der Dunkelheit direkt am Hauptzugangspunkt einer Stadt ablassen. Das ist allerdings viel riskanter." #deepl:388755539
+ spread_plague_ongoing.0003.a: "Sie flussaufwärts zu entsorgen" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "Entsorgen Sie sie in der Stadt" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "Ein Pilz unter uns" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] hat sich eine bestimmte Art von Pilz beschafft, dessen Sporen bei Einnahme zu schrecklichen Symptomen führen können. Wenn wir diesen Pilz in eine Vorratskammer in [target_title.GetNameNoTier] bringen können, sollte sich die Verbreitung von dort aus von selbst erledigen.\n\n Der Zugang zu Lebensmittellagern ist jedoch nicht einfach, und es könnte einfacher sein, zu versuchen, den Pilz direkt auf den Feldern zu verbreiten. Das ist zwar risikoärmer, aber wahrscheinlich auch weniger erfolgversprechend." #deepl:113464637
+ spread_plague_ongoing.0004.a: "In eine Speisekammer schleichen" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "Verschmutzen Sie die Felder" #deepl:4137778007

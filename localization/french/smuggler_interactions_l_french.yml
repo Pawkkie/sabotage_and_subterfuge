@@ -1,0 +1,15 @@
+﻿l_french:
+ plan_heist_interaction: "Plan Heist" #deepl:3591742283
+ plan_heist_interaction_desc: "Dépensez [prestige|E] ou [piety|E] en même temps que [gold|E] pour planifier un vol sur l'un des sites [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] , ce qui permet d'utiliser la fonction [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "Contrebande d'artefacts #weak (Schéma)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "Tentez de voler un artefact sur [recipient.GetShortUINameNoTooltip] pour lequel vous avez déjà planifié un vol." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "Vous employez un [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "Vous n'employez pas de [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] exécute la tâche Plan Heist" #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] n'exécute pas la tâche Plan Heist" #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "Je ne peux pas faire passer un artefact en contrebande pour le moment." #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "Vous avez planifié un vol d'artefact" #deepl:538249166

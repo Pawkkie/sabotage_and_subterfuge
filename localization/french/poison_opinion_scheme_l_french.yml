@@ -1,0 +1,51 @@
+﻿l_french:
+ poison_opinion: "Avis sur les poisons" #deepl:489149273
+ poison_opinion_action: "Avis sur les poisons" #deepl:489149273
+ poison_opinion_desc: "Je vais tenter d'empoisonner l'opinion de [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]'s sur leur seigneur, en semant le trouble dans leurs cours." #deepl:879276979
+ poison_opinion_desc_general: "Poison Opinion est un site [personal_scheme|E] qui tente de réduire l'opinion de la cible à l'égard de son interlocuteur direct [liege|E]. Ce stratagème repose principalement sur votre propre [intrigue|E] et sur les capacités de votre [femme_fatale_court_position|E]. Comme il ne s'agit pas d'un [hostile_scheme|E], il n'est pas [secret_scheme_single|E] et n'utilise pas [agents|E].\n\n Contrairement à la plupart des stratagèmes, mais comme le Sway [personal_scheme|E], Poison Opinion redémarre dès qu'il est terminé. L'opinion perdue s'accumule, de sorte qu'en la gardant active, les [scheme_target|E] aimeront de moins en moins leur suzerain.\n\n Les cibles de ce stratagème qui ont une opinion négative de leur suzerain seront plus susceptibles de rejoindre les factions créées par le biais de [provoke_vassals_scheme|E] [hostile_scheme|E] ." #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de leur [liege|E] diminuera de #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "Vous ne pouvez pas empoisonner l'opinion [TARGET_CHARACTER.GetShortUIName] alors que [TARGET_CHARACTER.GetSheHe] est irrité contre moi." #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]L'opinion du député a été empoisonnée" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]L'opinion du président de la Commission n'a pas été empoisonnée" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "Vous employez un [femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "Vous n'employez pas de [femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] exécute la tâche de l'avis de poison" #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] n'effectue pas la tâche de l'avis sur les poisons" #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "Votre [femme_fatale_court_position|E]'s'[intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "Vous êtes un Schemer compétent : $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "Avis précédemment empoisonné : $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "Votre rival : $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]Aide : $VALUE|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "Ennemi [femme_fatale_court_position|E]'s aid : $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "La cible est [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "La cible est [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "La cible est [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "La cible est [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "La cible est [GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "La cible est [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "La cible est [GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "Fin du système d'avis sur les poisons" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] est décédé. Vous ne pouvez plus empoisonner l'opinion de [target.GetHerHis] contre [target.GetHerHis] liege." #deepl:1019747224
+ poison_opinion_invalidated_war: "En raison de la guerre qui vous oppose, vous ne pouvez plus empoisonner l'opinion de [target.GetShortUIName]." #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "Vous n'employez plus de [femme_fatale_court_position|E]." #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] ne remplit plus la mission d'avis antipoison." #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] est devenu indépendant et n'a plus de seigneur." #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "Poison Opinion #weak (Scheme)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "Tentative d'empoisonnement de l'opinion de [recipient.GetShortUINameNoTooltip] sur leur seigneur, provoquant le désordre dans leurs cours." #deepl:1775251095
+ poison_opinion_interaction_notification: "Avis sur l'empoisonnement" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "J'empoisonnerai l'opinion de [recipient.GetShortUINameNoTooltip]'s sur leur seigneur et je sèmerai le trouble dans leurs cours !" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "Vous poursuivez vos efforts" #deepl:2630534722
+ poison_opinion_try_again: "Vous ferez une nouvelle tentative" #deepl:2953815728
+ poison_opinion_complete: "Vous avez empoisonné l'opinion de [target.GetShortUIName] autant que vous le pouviez" #deepl:61883654

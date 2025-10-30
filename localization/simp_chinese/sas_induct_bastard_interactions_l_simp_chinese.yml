@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ sas_induct_bastard_interaction: "感应混蛋" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "将[recipient.GetFirstNameNicknamed] 输入您的[dynasty|E] 。" #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "将您与[GetTrait('disputed_heritage').GetName( GetNullCharacter )] 所生的私生子纳入您的[dynasty|E] 。" #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "入选混蛋" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "您将[recipient.GetShortUIName] 加入您的[dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "暗中合法化" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "通过使[recipient.GetFirstName] 成为您的[dynasty|E] 会员，让[recipient.GetSheHe] 无法拒绝。" #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "将您所生的[GetTrait('bastard').GetName( GetNullCharacter )] 孩子纳入您的[dynasty|E] 。" #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "偷窃的混蛋" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "您将[recipient.GetShortUIName] 加入您的[dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "声称的亲子关系" #deepl:3455245448

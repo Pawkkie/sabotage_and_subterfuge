@@ -1,0 +1,18 @@
+﻿l_french: 
+ county_rabble_roused_modifier: "La populace s'agite" #deepl:2416044267
+ county_rabble_roused_modifier_desc: "La populace s'est soulevée contre son seigneur" #deepl:4173438114
+ rabble_roused_against_me: "Récemment traité avec Roused Rabble" #deepl:2758601433
+ roused_rabble_war_lost_county_modifier: "Autonomie accrue" #deepl:1597784654
+ provoked_independence_character_modifier: "Provoqué dans la faction de l'indépendance" #deepl:410340774
+ provoked_dissolution_character_modifier: "Provoqué dans la faction de dissolution" #deepl:2545846333
+
+ mortal_adoration_martial_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_martial_gain_desc: "On peut toujours compter sur un amoureux pour donner de bons conseils." #deepl:3722719594
+ mortal_adoration_diplomacy_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_diplomacy_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_intrigue_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_intrigue_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_stewardship_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_stewardship_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_learning_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_learning_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723

@@ -1,0 +1,20 @@
+﻿l_spanish:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "Los personajes suelen estar más dispuestos a [sas_spy|E] por ti" #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "Los personajes suelen estar más dispuestos a [sas_spy|E] por ti" #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "Los personajes suelen estar más dispuestos a [sas_spy|E] para [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "Atraído personajes mucho están más dispuestos a [sas_spy|E] para usted" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Los personajes atraídos están mucho más dispuestos a [sas_spy|E] para usted" #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Los personajes atraídos están mucho más dispuestos a [sas_spy|E] para [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "Es mucho menos probable que tu [sas_spies|E] se vuelva loco y revele tu nombre si te pillan." #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "Es mucho menos probable que tu [sas_spies|E] se vuelva loco y revele tu nombre si te pillan." #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U]'s [sas_spies|E] son mucho menos propensos a dar la vuelta y revelar su empleador si son atrapados" #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Cada una de tus Relaciones [lover|E] y [soulmate|E] te da #P 2#! puntos aleatorios [skill|E] (Hasta el Máximo de [EmptyScope.ScriptValue('friendly_counsel_max')|0])" #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Desbloquea la interacción [sas_induct_bastard_interaction|E] " #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Desbloquea la interacción [sas_steal_bastard_interaction|E] " #deepl:4140120211
+ 

@@ -1,0 +1,34 @@
+﻿l_russian:
+ game_concept_rouse_rabble_scheme: "$rouse_rabble$ Схема" #deepl:1256911556
+ game_concept_rouse_rabble_scheme_desc: "$rouse_rabble_desc_general$" #deepl:44147011
+ game_concept_provoke_vassals_scheme: "$provoke_vassals$ Схема" #deepl:2097908804
+ game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$" #deepl:3187202781
+ game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$" #deepl:1046129220
+ game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$" #deepl:2697849339
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$" #deepl:2264102523
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$" #deepl:2509590743
+ game_concept_poison_opinion_scheme: "$poison_opinion$ Схема" #deepl:4069731557
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$" #deepl:2916212638
+ game_concept_smuggler_court_position: "$smuggler_court_position$" #deepl:708725340
+ game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$" #deepl:506615262
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ Схема" #deepl:1623838666
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$" #deepl:843447062
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$" #deepl:669677987
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$" #deepl:1116663943
+ game_concept_master_assassin_court_position: "$master_assassin_court_position$" #deepl:2553385723
+ game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$" #deepl:2935660162
+ game_concept_spread_plague_scheme: "$spread_plague$ Схема" #deepl:854597236
+ game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$" #deepl:1386105584
+ game_concept_sas_spy: "Шпион" #deepl:287978883
+ game_concept_sas_spies: "Шпионы" #deepl:396918230
+ game_concept_sas_spy_desc: "Шпионы - это агенты, которые могут находиться в любом дворе и сообщать своему работодателю о найденных секретах. Их работодатель может узнать любой из этих секретов, заплатив небольшое вознаграждение.\n\n Коллективная группа агентов, работающих на одного работодателя, называется [sas_spy_network|E]." #deepl:821312495
+ game_concept_sas_spy_network: "Шпионская сеть" #deepl:1689171219
+ game_concept_sas_spy_network_desc: "Коллекция [sas_spies|E], работающая на одного работодателя. Эту сеть можно развить, используя взаимодействие "Завербовать шпиона" на подходящих персонажах напрямую или используя взаимодействие "Проверить на наличие шпионов" на конкретном правителе, чтобы изучить его двор на предмет возможностей.\n\n Шпионы при других дворах естественным образом вербуются [spymaster|E] с помощью задания совета "Найти секреты", а также могут быть обнаружены при вашем дворе с помощью задания совета "Нарушить схемы".\n\nЭффективность [sas_spy_network|E] можно повысить, принимая определенные решения, например, увеличить максимальное количество шпионов, повысить вероятность того, что придворные предложат свои услуги, или позволить шпионам обнаружить [innovations|E]." #deepl:784788192
+ game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
+ game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
+ game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286
+ game_concept_sas_induct_bastard_interaction: "$sas_induct_bastard_interaction$" #deepl:439656646
+ game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
+ game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
+ game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979

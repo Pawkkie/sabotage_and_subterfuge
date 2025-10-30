@@ -1,0 +1,51 @@
+﻿l_korean:
+ poison_opinion: "포이즌 의견" #deepl:489149273
+ poison_opinion_action: "포이즌 의견" #deepl:489149273
+ poison_opinion_desc: "나는 그들의 군주에 대한 [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] 의 의견을 독살하여 그들의 법정에 혼란을 일으키려고 합니다." #deepl:879276979
+ poison_opinion_desc_general: "포이즌 오피니언은 대상의 직접적인 [liege|E] 에 대한 의견을 감소시키려고 시도하는 [personal_scheme|E] 입니다. 이 계획은 주로 자신의 [intrigue|E] 과 [femme_fatale_court_position|E] 의 능력에 의존합니다. [hostile_scheme|E] 이 아니므로 [secret_scheme_single|E] 도 아니고 [agents|E] 도 사용하지 않습니다.\n\n 대부분의 계획과 달리 Sway [personal_scheme|E] 와 마찬가지로 포이즌 오피니언은 완료되면 다시 시작됩니다. 잃은 의견은 누적되므로 계속 활성화하면 [scheme_target|E] 이 군주를 좋아하지 않게 됩니다.\n\n 군주에 대해 부정적인 의견을 가진 이 계획의 성공적인 표적은 [provoke_vassals_scheme|E] [hostile_scheme|E] 을 통해 생성된 파벌에 가입할 가능성이 높아집니다." #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] 의 [liege|E] 이 감소합니다. #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "의견을 독살 할 수 없습니다 [TARGET_CHARACTER.GetShortUIName] [TARGET_CHARACTER.GetSheHe] 나에게 짜증나는 동안" #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]의 의견이 독이 되었습니다." #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]의 의견은 독이 되지 않았습니다." #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "귀하는 [femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "귀하는 [femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] 포이즌 오피니언 작업을 수행 중입니다." #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] 가 포이즌 오피니언 작업을 수행하지 않습니다." #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "귀하의 [femme_fatale_court_position|E]'s' [intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "귀하는 숙련된 스키머입니다: $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "이전 중독된 의견: $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "라이벌: $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]의 지원: $VALUE|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "적 [femme_fatale_court_position|E] 의 원조: $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "대상은 [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "대상은 [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "대상은 [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "대상은 [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "대상은 [GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "대상은 [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "대상은 [GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$입니다." #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "포이즌 의견 제도 종료" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] 가 세상을 떠났습니다. 더 이상 [target.GetHerHis] 의견에 대해 [target.GetHerHis] 거짓말을 할 수 없습니다." #deepl:1019747224
+ poison_opinion_invalidated_war: "여러분 사이의 전쟁으로 인해 더 이상 [target.GetShortUIName] 의 의견을 독살할 수 없습니다." #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "더 이상 [femme_fatale_court_position|E] 을 사용하지 않습니다." #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] 는 더 이상 포이즌 오피니언 작업을 수행하지 않습니다." #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] 는 독립하여 더 이상 군주가 없습니다." #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "포이즌 의견 #weak (계획)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "[recipient.GetShortUINameNoTooltip] 의 군주에 대한 의견을 독살하여 법정에 혼란을 야기하려는 시도" #deepl:1775251095
+ poison_opinion_interaction_notification: "중독 의견" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "나는 [recipient.GetShortUINameNoTooltip] 의 의견을 독살하여 법정에 혼란을 일으킬 것입니다!" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "계속 노력합니다." #deepl:2630534722
+ poison_opinion_try_again: "다시 시도합니다." #deepl:2953815728
+ poison_opinion_complete: "[target.GetShortUIName] 의 의견을 최대한 훼손했습니다." #deepl:61883654

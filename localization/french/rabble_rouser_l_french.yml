@@ -1,0 +1,28 @@
+﻿l_french:
+ # Court Position
+ rabble_rouser_court_position: "Rabatteur" #deepl:63230416
+ rabble_rouser_court_position_desc: "Le fougueux a le don de s'introduire dans la bonne foule et de l'enflammer. Il peut voyager dans d'autres royaumes et provoquer des révoltes paysannes ou des soulèvements de vassaux, ou rester chez lui et répandre la bonne parole de votre excellence." #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$Peut permettre l'accès aux sites [GetScheme('rouse_rabble').GetTypeName] et [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E] s" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "Rouse Rabble" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "Ameuter la populace d'une autre cour, entraînant des émeutes paysannes et potentiellement une révolte à grande échelle." #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "[rouse_rabble_scheme|E]Cette tâche doit être active pour démarrer et poursuivre le programme.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to @scheme_success_icon!#P  +20%#! (basé sur [aptitude|E])" #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "Provoquer les vassaux" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "Provoquer les vassaux d'une autre cour, ce qui entraînera une baisse de l'opinion et, éventuellement, un soulèvement général." #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "[provoke_vassals_scheme|E]Cette tâche doit être active pour démarrer et poursuivre le programme.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to @scheme_success_icon!#P  +20%#! (basé sur [aptitude|E])" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "Pacifier les masses" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "Encouragez les paysans de votre cour à penser que leur sort est bon et confortable, ce qui réduit les risques de révolte." #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "Ennemi [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! à @scheme_success_icon!#P  -20%#! (basé sur [aptitude|E])" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "Ennemi [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! à @scheme_success_icon!#P  -20%#! (basé sur [aptitude|E])" #deepl:1094715817

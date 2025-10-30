@@ -1,0 +1,98 @@
+﻿l_german: 
+
+ # Agent Rabble Rouser
+ SCHEME_IS_RABBLE_ROUSER: "Ich werde dafür bezahlt, als Ihr Hetzer zu arbeiten: $VALUE|=+0$" #deepl:1792372743
+ SCHEME_AGENT_IS_RABBLE_ROUSER: "[target.GetShortUINamePossessiveNoTooltip] $rabble_rouser_court_position$" #deepl:2793117015
+ agent_rabble_rouser: "Aufwiegler" #deepl:3332647567
+ agent_rabble_rouser_i: "[success_chance_max_i]" #deepl:1124858639
+ agent_rabble_rouser_desc: "$agent_rabble_rouser_desc.flavour$ \n$agent_rabble_rouser_desc.requirements$" #deepl:1666301298
+ agent_rabble_rouser_desc.flavour: "#WEAK Ich bin laut, ich bin stolz, und ich bin bereit, die ganze Welt für unsere Sache zu mobilisieren! Lasst uns da rausgehen und etwas bewegen.#!" #deepl:988008942
+ agent_rabble_rouser_desc.requirements: "$EFFECT_LIST_BULLET$ Bietet [success_chance_max_i] [scheme_potential|E] \n $EFFECT_LIST_BULLET$ Benötigt [diplomacy_i] [diplomacy|E] &amp; [intrigue_i] [intrigue|E] \n $EFFECT_LIST_BULLET$ #P  Nutzt#! von [traits|E] wie [GetTrait('gregarious').GetName( GetNullCharacter )] und [GetTrait('peasant_leader').GetName( GetNullCharacter )]\n $EFFECT_LIST_BULLET$ #N  Leidet#! von [traits|E] wie [GetTrait('shy').GetName( GetNullCharacter )] und [GetTrait('reclusive').GetName( GetNullCharacter )]" #deepl:4277366262
+
+ # Agent Rabble Rouser modifiers
+ scheme_agent_aptitude.trait.reclusive: "[GetTrait('reclusive').GetName( GetNullCharacter )]" #deepl:4087307931
+ scheme_agent_aptitude.trait.infirm: "[GetTrait('infirm').GetName( GetNullCharacter )]" #deepl:3577196452
+ scheme_agent_aptitude.trait.lifestyle_wayfarer: "[GetTrait('lifestyle_wayfarer').GetName( GetNullCharacter )]" #deepl:1795443180
+ scheme_agent_aptitude.trait.peasant_leader: "[GetTrait('peasant_leader').GetName( GetNullCharacter )]" #deepl:1998546572
+ scheme_agent_aptitude.trait.populist_leader: "[GetTrait('populist_leader').GetName( GetNullCharacter )]" #deepl:3859123510
+ scheme_agent_aptitude.trait.lifestyle_reveler: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]" #deepl:2953523392
+ scheme_agent_aptitude.trait.lifestyle_traveler: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )]" #deepl:1809484247
+ scheme_agent_aptitude.trait.education_diplomacy_1: "[GetTrait('education_diplomacy_1').GetName( GetNullCharacter )]" #deepl:2970949910
+ scheme_agent_aptitude.trait.education_diplomacy_2: "[GetTrait('education_diplomacy_2').GetName( GetNullCharacter )]" #deepl:690150929
+ scheme_agent_aptitude.trait.education_diplomacy_3: "[GetTrait('education_diplomacy_3').GetName( GetNullCharacter )]" #deepl:1590664428
+ scheme_agent_aptitude.trait.education_diplomacy_4: "[GetTrait('education_diplomacy_4').GetName( GetNullCharacter )]" #deepl:2991084828
+ scheme_agent_aptitude.trait.education_diplomacy_5: "[GetTrait('education_diplomacy_5').GetName( GetNullCharacter )]" #deepl:3315931105
+ scheme_agent_aptitude.trait.education_intrigue_1: "[GetTrait('education_intrigue_1').GetName( GetNullCharacter )]" #deepl:3865792887
+ scheme_agent_aptitude.trait.education_intrigue_2: "[GetTrait('education_intrigue_2').GetName( GetNullCharacter )]" #deepl:2119997040
+ scheme_agent_aptitude.trait.education_intrigue_3: "[GetTrait('education_intrigue_3').GetName( GetNullCharacter )]" #deepl:162649229
+ scheme_agent_aptitude.trait.education_intrigue_4: "[GetTrait('education_intrigue_4').GetName( GetNullCharacter )]" #deepl:3845528957
+ scheme_agent_aptitude.trait.education_intrigue_5: "[GetTrait('education_intrigue_5').GetName( GetNullCharacter )]" #deepl:2463850368
+ scheme_agent_aptitude.rabble_rouser_court_position: "Arbeitet als Aufwiegler" #deepl:1494253222
+
+ # Scheme modifiers
+ ROUSE_RABBLE_BRAVE: "[GetTrait('brave').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2403920549
+ ROUSE_RABBLE_DILIGENT: "[GetTrait('diligent').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:972127537
+ ROUSE_RABBLE_GENEROUS: "[GetTrait('generous').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1451163242
+ ROUSE_RABBLE_GREGARIOUS: "[GetTrait('gregarious').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1403792515
+ ROUSE_RABBLE_DIPLOMAT: "[GetTrait('diplomat').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:463035944
+ ROUSE_RABBLE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:314310244
+ ROUSE_RABBLE_WAYFARER: "[GetTrait('lifestyle_wayfarer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:4135872773
+ ROUSE_RABBLE_PEASANT_LEADER: "[GetTrait('peasant_leader').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2894021184
+ ROUSE_RABBLE_POPULIST_LEADER: "[GetTrait('populist_leader').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2909658579
+ ROUSE_RABBLE_LOYAL: "[GetTrait('loyal').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:891652849
+ ROUSE_RABBLE_CRAVEN: "[GetTrait('craven').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:794823784
+ ROUSE_RABBLE_LAZY: "[GetTrait('lazy').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1265673369
+ ROUSE_RABBLE_SHY: "[GetTrait('shy').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2200792238
+ ROUSE_RABBLE_FICKLE: "[GetTrait('fickle').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2212848154
+ ROUSE_RABBLE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2264568722
+ ROUSE_RABBLE_INFIRM: "[GetTrait('infirm').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:243593996
+ ROUSE_RABBLE_DISLOYAL: "[GetTrait('disloyal').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2598282759
+ ROUSE_RABBLE_REVELER: "[GetTrait('lifestyle_reveler').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3616244587
+ ROUSE_RABBLE_TRAVELER: "[GetTrait('lifestyle_traveler').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3403121665
+ ROUSE_RABBLE_HELPS_BONUS: "[rabble_rouser_court_position|E]Die Beihilfe: $VALUE|+0=-+$" #deepl:3207520238
+ PACIFY_THE_MASSES_HURTS_BONUS: "Feindliche [rabble_rouser_court_position|E]'s Hilfe: $VALUE|+0=-+$" #deepl:2290869309
+
+ # Scheme info
+ rouse_rabble: "Lausepöbel" #deepl:4205226659
+ rouse_rabble_desc: "Die Bauern eines Reiches gegen seine Herrscher aufbringen" #deepl:161189800
+ rouse_rabble_desc_general: "$rouse_rabble$ ist eine [hostile_scheme|E], die versucht, die Bauern im Reich des Ziels zum Aufstand gegen ihren Lehnsherrn zu ermutigen. Es erfordert die Beschäftigung eines [rabble_rouser_court_position|E] [court_position|E] , um durchgeführt zu werden, und Sie und Ihr Ziel müssen beide über Reiche von mindestens [duchy|E] Rang verfügen.\n\n Wenn der [rabble_rouser_court_position|E] zu irgendeinem Zeitpunkt arbeitslos wird oder die Aufgabe wechselt, wird der Plan abgebrochen." #deepl:2019029114
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ rouse_rabble_action: "Wecken Sie den Pöbel der" #deepl:2624184007
+
+ ROUSE_RABBLE_SUCCESS_DESC: "Der Pöbel ist aufgewühlt und hat einen Bauernaufstand angezettelt." #deepl:1199245697
+ ROUSE_RABBLE_DISCOVERY_DESC: "Sie können weiterhin den Pöbel im Bereich [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] aufstacheln." #deepl:211674071
+
+ max_rouse_rabble_schemes_add: "Max [GetScheme('rouse_rabble').GetTypeName] [schemes|E]" #deepl:3448259929
+
+## Character Interaction Scheme Agent Packages
+ rouse_rabble_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:2603902629
+ rouse_rabble_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1717624249
+ rouse_rabble_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1227893453
+ rouse_rabble_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_amanuensis' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]" #deepl:1200689629
+
+ ## Allow
+ HAVE_RABBLE_ROUSER_COURT_POSITION: "Sie beschäftigen einen [rabble_rouser_court_position|E]" #deepl:1274732303
+ NO_RABBLE_ROUSER_COURT_POSITION: "Sie beschäftigen keine [rabble_rouser_court_position|E]" #deepl:3332567507
+ ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] hat bereits mit einer aufgewiegelten Pöbelgruppe zu tun" #deepl:1793186398
+ NOT_ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] nicht bereits mit einer aufgewiegelten Pöbelfraktion zu tun hat" #deepl:3909492403
+ RABBLE_ROUSER_AVAILABLE: "[CHARACTER.GetShortUIName|U] ist verfügbar" #deepl:3569913773
+ RABBLE_ROUSER_IN_ARMY: "[CHARACTER.GetShortUIName|U] ist in einer Armee" #deepl:1551522730
+ RABBLE_ROUSER_TRAVELING: "[CHARACTER.GetShortUIName|U] ist auf Reisen" #deepl:2427905953
+ RABBLE_ROUSER_IN_PRISON: "[CHARACTER.GetShortUIName|U] ist im Gefängnis" #deepl:2757669189
+ RABBLE_ROUSER_UNAVAILABLE: "[CHARACTER.GetShortUIName|U] ist nicht verfügbar" #deepl:67370776
+ RABBLE_ROUSER_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] führt die Aufgabe "Rouse Rabble" aus" #deepl:269067143
+ RABBLE_ROUSER_NOT_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] nicht die Aufgabe "Rouse Rabble" ausführt" #deepl:1078887661
+ rouse_rabble_invalidated_title: "Rouse Rabble Scheme endet" #deepl:216954123
+ rouse_rabble_invalidated_dead: "[target.GetShortUIName] ist von uns gegangen. Sie können den Pöbel nicht mehr gegen die Herrschaft von [target.GetHerHis] aufbringen." #deepl:1563788818
+ rouse_rabble_invalidated_target_lost_title: "[target.GetShortUIName] ist so weit in Ungnade gefallen, dass sie nicht mehr genug Pöbel unter Kontrolle hat, um aufzurütteln." #deepl:2219542655
+ rouse_rabble_invalidated_no_rabble_rouser: "Sie sind nicht mehr bei [rabble_rouser_court_position|E] beschäftigt." #deepl:710383329
+ rouse_rabble_invalidated_not_rousing_rabble: "[CHARACTER.GetShortUIName|U] führt die Aufgabe "Pöbeln" nicht mehr aus." #deepl:648649247
+ rouse_rabble_invalidated_in_army: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] eine Armee anführt." #deepl:1180147792
+ rouse_rabble_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] im Gefängnis ist." #deepl:1720481333
+ rouse_rabble_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] auf Reisen ist." #deepl:500171271
+ rouse_rabble_invalidated_has_faction: "[CHARACTER.GetShortUIName|U]Der Pöbel ist aufgewühlt und hat bereits eine Fraktion gegen [CHARACTER.GetHerHim] gebildet." #deepl:1390097188
+
+ ## Interaction
+ rouse_rabble_interaction: "Rouse Rabble #weak (Schema)#!" #deepl:3796037058
+ rouse_rabble_interaction_desc: "Versuch, den Pöbel in [recipient.GetShortUINameNoTooltip]'s Reich aufzurütteln, um einen Bauernaufstand zu starten" #deepl:493648604
+ rouse_rabble_interaction_notification: "Den Pöbel aufstacheln" #deepl:4129947386

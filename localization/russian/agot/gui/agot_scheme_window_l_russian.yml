@@ -1,0 +1,7 @@
+﻿l_russian:
+ INTRIGUE_WINDOW_SPY_NETWORK: "Шпионская сеть" #deepl:1689171219
+ INTRIGUE_WINDOW_NO_SPIES: "У вас нет шпионов" #deepl:4182165397
+ OPEN_SPY_NETWORK_TAB: "Шпионы" #deepl:396918230
+
+ AGOT_SCHEME_AGENT_IS_MY_SPY: "Ваш шпион: $VALUE|+0=$" #deepl:1615455053
+ AGOT_SCHEME_IS_AGAINST_ILLEGITIMATE_HOUSE: "Против незаконного дома" #deepl:2381711688

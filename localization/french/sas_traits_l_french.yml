@@ -1,0 +1,10 @@
+﻿l_french:
+ # Embezzler
+ trait_sas_embezzler: "Détourneur de fonds" #deepl:2672472445
+ trait_sas_embezzler_desc: "Ce personnage a détourné des fonds de quelqu'un d'autre." #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] a détourné des fonds de quelqu'un d'autre." #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "Plaguebringer" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "Ce personnage a œuvré pour provoquer une grande épidémie." #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] a œuvré pour provoquer un grand fléau." #deepl:4217708703

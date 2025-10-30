@@ -1,0 +1,39 @@
+﻿l_simp_chinese:
+
+ # Scheme info
+ spread_plague: "传播瘟疫" #deepl:4245244667
+ spread_plague_desc: "在目标国首都播下[epidemic|E] 的种子。" #deepl:1153062815
+ spread_plague_desc_general: "$spread_plague$ 是一个[hostile_scheme|E] ，试图在目标的首都发动一场严重程度不同的[epidemic|E] 。它需要雇用[master_assassin_court_position|E] [court_position|E] 才能进行，目标必须掌管至少[county|E] 层级的领域。\n\n 如果[master_assassin_court_position|E] 在任何时候失业或更换任务，计划将被取消。" #deepl:2819109603
+ SPREAD_PLAGUE_SUCCESS_DESC: "瘟疫的种子已经播下，[epidemic|E] 。" #deepl:177361638
+ SPREAD_PLAGUE_DISCOVERY_DESC: "您可以继续在[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] 领域传播瘟疫。" #deepl:865020768
+
+ HAVE_MASTER_ASSASSIN_COURT_POSITION: "您雇用了[master_assassin_court_position|E]" #deepl:3484085729
+ NO_MASTER_ASSASSIN_COURT_POSITION: "您没有雇用[master_assassin_court_position|E]" #deepl:3967107842
+ MASTER_ASSASSIN_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] 正在执行传播瘟疫任务" #deepl:1534254913
+ MASTER_ASSASSIN_NOT_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] 不执行传播瘟疫任务" #deepl:1807230680
+
+ spread_plague_invalidated_title: "传播瘟疫计划结束" #deepl:2440907814
+ spread_plague_invalidated_no_master_assassin: "您不再雇用[master_assassin_court_position|E] 。" #deepl:2580810679
+ spread_plague_invalidated_not_spreading_plague: "[CHARACTER.GetShortUIName|U] 不再执行传播瘟疫任务。" #deepl:111818189
+ spread_plague_invalidated_dead: "[target.GetShortUIName] 已经去世。您不能再向[target.GetHerHim] 传播瘟疫了。" #deepl:771244859
+
+ SPREAD_PLAGUE_WITCH: "[GetTrait('witch').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3138983613
+ SPRREAD_PLAGUE_HERBALIST: "[GetTrait('lifestyle_herbalist').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2461950543
+ SPREAD_PLAGUE_TORTURER: "[GetTrait('torturer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:4240971996
+ SPREAD_PLAGUE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:314310244
+ SPREAD_PLAGUE_PHYSICIAN: "[GetTrait('lifestyle_physician').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3711850210
+ SPREAD_PLAGUE_SADISTIC: "[GetTrait('sadistic').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:457203633
+ SPREAD_PLAGUE_WRATHFUL: "[GetTrait('wrathful').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1019726632
+ SPREAD_PLAGUE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2264568722
+
+ # Interaction
+ spread_plague_interaction: "传播瘟疫#weak  （计划）#!" #deepl:1053377975
+ spread_plague_interaction_desc: "试图在[recipient.GetShortUINameNoTooltip] 的领土上传播瘟疫，以掀起一场[epidemic|E]" #deepl:2424974884
+ spread_plague_interaction_notification: "传播瘟疫" #deepl:1997907
+ spread_plague_action: "将瘟疫传播到" #deepl:4271144009
+
+## Character Interaction Scheme Agent Packages
+ spread_plague_interaction.tt.agent_focus_balance: "[scheme_speed_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_alchemist' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_supplier' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:2118420640
+ spread_plague_interaction.tt.agent_focus_success: "[success_chance_max_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_alchemist' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:2866489891
+ spread_plague_interaction.tt.agent_focus_speed: "[scheme_speed_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_supplier' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_planner' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:4160035714
+ spread_plague_interaction.tt.agent_focus_secrecy: "[secrecy_i] $schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName] \n $EFFECT_LIST_BULLET$ [GetAgentSlotType( 'agent_courtesan' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]" #deepl:43299151

@@ -1,0 +1,51 @@
+﻿l_russian:
+ poison_opinion: "Ядовитое мнение" #deepl:489149273
+ poison_opinion_action: "Ядовитое мнение" #deepl:489149273
+ poison_opinion_desc: "Я попытаюсь отравить [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]'мнение об их сеньоре, вызвав беспорядок в их дворах." #deepl:879276979
+ poison_opinion_desc_general: "Poison Opinion - это [personal_scheme|E], который пытается снизить мнение цели о ее непосредственном [liege|E]. Эта схема в первую очередь полагается на ваши собственные [intrigue|E] и способности вашего [femme_fatale_court_position|E]. Поскольку это не [hostile_scheme|E], она не [secret_scheme_single|E] и не использует [agents|E].\n\n В отличие от большинства схем, но как и Sway [personal_scheme|E], Poison Opinion перезапускается после завершения. Потерянное от него мнение накапливается, поэтому, если держать его активным, [scheme_target|E] будет нравиться своему сеньору все меньше и меньше.\n\n Успешные цели этой схемы с негативным мнением о своем сеньоре будут с большей вероятностью присоединяться к фракциям, созданным с помощью [provoke_vassals_scheme|E] [hostile_scheme|E] ." #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] их [liege|E] уменьшится на #P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "Вы не можете отравить мнение [TARGET_CHARACTER.GetShortUIName], пока [TARGET_CHARACTER.GetSheHe] раздражается на меня." #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]Мнение было отравлено" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]Мнение не было отравлено" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "Вы нанимаете [femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "Вы не нанимаете [femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] выполняет задание "Ядовитое мнение"." #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] не выполняет задание "Ядовитое мнение"." #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "Ваш [femme_fatale_court_position|E]'s' [intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "Вы опытный схемотехник: $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "Ранее отравленное мнение: $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "Ваш соперник: $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]'помощь: $VALUE|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "Враг [femme_fatale_court_position|E]'помощь: $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "Цель - [GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "Цель - [GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "Цель - [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "Цель - [GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "Цель - [GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "Цель - [GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "Цель - [GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "Программа "Ядовитое мнение" завершена" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] скончался. Вы больше не можете отравлять [target.GetHerHis] мнение против [target.GetHerHis] сеньора." #deepl:1019747224
+ poison_opinion_invalidated_war: "Из-за войны между вами вы больше не можете отравлять мнение [target.GetShortUIName]." #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "Вы больше не работаете на сайте [femme_fatale_court_position|E]." #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] больше не выполняет задачу "Ядовитое мнение"." #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] стал независимым и больше не имеет сеньора." #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "Ядовитое мнение #weak (схема)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "Попытка отравить [recipient.GetShortUINameNoTooltip]'мнение о своем сеньоре, вызвать беспорядки при дворе." #deepl:1775251095
+ poison_opinion_interaction_notification: "Мнение об отравлении" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "Я отравлю [recipient.GetShortUINameNoTooltip]'мнение об их сеньоре, посеяв беспорядок в их дворах!" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "Вы продолжаете свои усилия" #deepl:2630534722
+ poison_opinion_try_again: "Вы предпримете еще одну попытку" #deepl:2953815728
+ poison_opinion_complete: "Вы отравили мнение [target.GetShortUIName] настолько, насколько это возможно." #deepl:61883654

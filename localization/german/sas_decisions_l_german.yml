@@ -1,0 +1,90 @@
+﻿l_german:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "Spionagenetz ausbauen" #deepl:1918218917
+ sas_expand_spy_network_decision_desc: "Eine Spinne kann ihr Netz nur erweitern, indem sie mehr Zeit mit dem Weben verbringt oder mehr Spinnen einbezieht. Auch wenn unser [sas_spy_network|E] einen bescheidenen, aber erfolgreichen Anfang hatte, können wir unsere Reichweite immer weiter ausdehnen, Herrscher weit und breit verstricken und ihre am besten gehüteten Geheimnisse zu unserem Vorteil ausnutzen." #deepl:2680910805
+ sas_expand_spy_network_decision_tooltip: "Erweitern Sie Ihre [sas_spy_network|E] in Anzahl und Fähigkeit" #deepl:1080571400
+ sas_expand_spy_network_decision_confirm: "Das Spinnennetz wächst!" #deepl:2491328231
+ sas_expand_spy_network_double_spies.tt: "Sie können die doppelte Anzahl von [sas_spies|E]" #deepl:3951820473
+ sas_expand_spy_network_child_spies.tt: "Sie können Kinder im Alter von mindestens 8 Jahren beschäftigen als [sas_spies|E]" #deepl:594091579
+ sas_expand_spy_network_innovation_spies.tt: "Dein [sas_spies|E] kann zivile oder militärische [innovations|E] von ihren Wohnhöfen stehlen #weak (25 Jahre Abklingzeit)#!" #deepl:2062950662
+ sas_expand_spy_network_have_enough_spies_tt: "Sie beschäftigen mindestens 3 [sas_spies|E]" #deepl:769462268
+ sas_expand_spy_network_have_paid_spies_tt: "Sie haben mindestens 3 [secrets|E] gekauft von [sas_spies|E]" #deepl:4061259209
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "Einrichtung eines kriminellen Untergrunds" #deepl:1225823486
+ sas_establish_criminal_underground_decision_desc: "Alle Karten auf den Tisch zu legen ist sicherlich eine Möglichkeit zu regieren, aber wenn es um internationale Diplomatie geht, ist es sicherlich einfacher, ein oder zwei Asse im Ärmel zu haben. Warum sollte man an den Fäden von Anstand und Korrektheit baumeln, wenn man der Puppenspieler sein kann?" #deepl:1579221697
+ sas_establish_criminal_underground_decision_tooltip: "Ermutigen Sie die Beschäftigung verschiedener Schurken und [sas_spies|E] an Ihrem Hof" #deepl:3565047867
+ sas_establish_criminal_underground_decision_confirm: "Lasst uns in der Dunkelheit tanzen!" #deepl:764817339
+ sas_establish_criminal_underground_spy_network.tt: "Ermöglicht den Einsatz von [sas_spies|E] in einem [sas_spy_network|E]" #deepl:417099671
+ sas_establish_criminal_underground_rabble_rouser.tt: "Entriegelt die Position [rabble_rouser_court_position|E] court" #deepl:3231636541
+ sas_establish_criminal_underground_femme_fatale.tt: "Entriegelt die Position [femme_fatale_court_position|E] court" #deepl:4153819485
+ sas_establish_criminal_underground_smuggler.tt: "Entriegelt die Position [smuggler_court_position|E] court" #deepl:1659450848
+ sas_establish_criminal_underground_master_assassin.tt: "Entriegelt die Position [master_assassin_court_position|E] court" #deepl:2159838119
+ ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "Das Haus [CHARACTER.GetHouse.GetName|U] hat einen kriminellen Untergrund geschaffen." #deepl:134357733
+ NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "Das Haus [CHARACTER.GetHouse.GetName|U] hat keinen kriminellen Untergrund geschaffen." #deepl:2261484798
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "Ausbildung für Spezialeinsätze" #deepl:3167735659
+ sas_special_operations_training_decision_desc: "Anpassungsfähigkeit ist der Schlüssel zum Überleben im Verborgenen. Indem wir uns darauf konzentrieren, Wissen über den Untergrund zu teilen, können unsere Agenten ihr Handwerk meisterhaft beherrschen und selbständiger werden, indem sie das finden, wovon wir nur annehmen können, dass es ihre eigenen, äußerst gewissenhaften Einkommensströme sind, während wir unser Einflussnetz ausbauen." #deepl:3538227294
+ sas_special_operations_training_decision_tooltip: "Schulung von Kriminellen und [sas_spies|E], um mehr Selbstvertrauen für die Teilnahme an [hostile_schemes|E]" #deepl:3991151590
+ sas_special_operations_training_decision_confirm: "Mehr Messer im Dunkeln!" #deepl:3972594294
+ sas_special_operations_completed_hostile_schemes_tt: "Sie haben mindestens 3 [hostile_schemes|E]" #deepl:2270300827
+ sas_special_operations_have_enough_spies_tt: "Sie beschäftigen mindestens 3 [sas_spies|E]" #deepl:769462268
+ sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] auf der Grundlage [court_positions|E] kosten kein Gehalt" #deepl:647631714
+ sas_special_operations_training_spies_likely_to_join_schemes.tt: "Die Wahrscheinlichkeit, dass Ihre [sas_spies|E] Ihrem [hostile_schemes|E] beitritt, ist größer, da [agents|E]" #deepl:2830788156
+ sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "Ihre [rabble_rouser_court_position|E] wird mit größerer Wahrscheinlichkeit Ihr [hostile_schemes|E] als [agent|E]" #deepl:1181319785
+ sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "Ihre [femme_fatale_court_position|E] wird mit größerer Wahrscheinlichkeit Ihr [hostile_schemes|E] als [agent|E]" #deepl:2788309644
+ sas_special_operations_training_smuggler_likely_to_join_schemes.tt: "Ihre [smuggler_court_position|E] wird mit größerer Wahrscheinlichkeit Ihr [hostile_schemes|E] als [agent|E]" #deepl:1165184473
+ sas_special_operations_training_master_assassin_likely_to_join_schemes.tt: "Ihre [master_assassin_court_position|E] wird mit größerer Wahrscheinlichkeit Ihr [hostile_schemes|E] als [agent|E]" #deepl:2916929945
+
+ # House of Sabotage and Subterfuge
+ sas_house_of_sabotage_and_subterfuge_decision: "Ein Haus der Sabotage und der Täuschung" #deepl:346655493
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Ein Haus der Sabotage und Ausrede Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Zementieren Sie das Erbe Ihres Hauses an Sabotage und Täuschung" #deepl:3420083984
+ sas_house_of_sabotage_and_subterfuge_decision_confirm: "Wir sind eins mit den Schatten!" #deepl:1602826360
+ sas_house_of_sabotage_and_subterfuge_schemes_tt: "Sie haben mindestens 8 [hostile_schemes|E]" #deepl:2029350009
+ sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "Sie beschäftigen mindestens 8 [sas_spies|E]" #deepl:2404724051
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "Gewinnen Sie @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] jedes Mal, wenn Sie eine [hostile_schemes|E]" #deepl:421351319
+ sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "Erhöhen Sie die Chancen, dass Ihre [sas_spies|E] Geheimnisse und Innovationen entdeckt" #deepl:4182569517
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "Malefactor rekrutieren" #deepl:1281019616
+ sas_recruit_malefactor_decision_desc: "Ein gut funktionierender krimineller Untergrund erfordert die Arbeit vieler Hände. Ich werde meine Diener weit und breit aussenden, um geeignete Kandidaten für unsere wichtigsten Stellen zu finden." #deepl:1735662004
+ sas_recruit_malefactor_decision_tooltip: "Suche nach einer Person, die gegen ein Honorar eine [court_position|E] mit Bezug zum kriminellen Untergrund ausfüllt\n\n #weak  Sie können zum Beispiel einen [GetCourtPositionType('rabble_rouser_court_position').GetName]#!" #deepl:790010884
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "Positionstyp wählen" #deepl:3489192501
+ sas_recruit_malefactor_decision_confirm: "Bestätigen Sie" #deepl:3524355688
+ sas_recruit_court_position_decision_tt: "Sie erhalten zwei geeignete Kandidaten, aus denen Sie sich für die ausgewählte [court_position|E]" #deepl:3036663020
+
+ # Rabble Rouser
+ hire_rabble_rouser: "Suche nach Rabble Rouser" #deepl:2458077144
+ hire_rabble_rouser_tooltip: "Ihre Bediensteten werden Ihnen eine Reihe geeigneter Kandidaten für die Stelle des [GetCourtPositionType('rabble_rouser_court_position').GetName()]" #deepl:1614552482
+ hire_rabble_rouser_desc: "Eine [rabble_rouser_court_position|E] ist der Schlüssel, um Unruhe in anderen Reichen zu stiften oder die Bevölkerung in unserem eigenen Reich zufrieden zu stellen. Ich werde meine Diener bitten, eine Reihe geeigneter Kandidaten aufzutreiben." #deepl:1136401803
+ #  hire_rabble_rouser_decision_effect_tooltip: "Sie bekommen eine Gruppe von [GetCourtPositionType('rabble_rouser_court_position').GetName()] Bewerbern präsentiert und können einen von ihnen gegen eine Gebühr und ein monatliches Gehalt einstellen" #deepl:1865841153
+ #  hire_rabble_rouser_decision_confirm: "Starten Sie die Suche" #deepl:2082362254
+ recruit_rabble_rouser_cooldown_tt: "Die Rekrutierung einer [GetCourtPositionType('rabble_rouser_court_position').GetName] ist auf Abklingzeit für [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]" #deepl:1478339175
+
+ # Femme Fatale
+ hire_femme_fatale: "Suche nach Femme Fatale" #deepl:102309862
+ hire_femme_fatale_tooltip: "Ihre Bediensteten werden Ihnen eine Reihe geeigneter Kandidaten für die Stelle des [GetCourtPositionType('femme_fatale_court_position').GetName()]" #deepl:890583249
+ hire_femme_fatale_desc: "Eine [femme_fatale_court_position|E] gibt uns die Möglichkeit, die Gerichte aus dem Verborgenen zu kontrollieren. Ich werde meine Diener bitten, eine Reihe geeigneter Kandidaten vorzuschlagen." #deepl:1767789142
+ #  hire_femme_fatale_decision_effect_tooltip: "Sie bekommen eine Gruppe von [GetCourtPositionType('femme_fatale_court_position').GetName()] Bewerbern präsentiert und können einen von ihnen gegen eine Gebühr und ein monatliches Gehalt einstellen" #deepl:1223492537
+ #  hire_femme_fatale_decision_confirm: "Starten Sie die Suche" #deepl:2082362254
+ recruit_femme_fatale_cooldown_tt: "Die Rekrutierung einer [GetCourtPositionType('femme_fatale_court_position').GetName] ist auf Abklingzeit für [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]" #deepl:2298014581
+
+ # Smuggler
+ hire_smuggler: "Suche nach Schmuggler" #deepl:3552251679
+ hire_smuggler_tooltip: "Ihre Bediensteten werden Ihnen eine Reihe geeigneter Kandidaten für die Stelle des [GetCourtPositionType('smuggler_court_position').GetName()]" #deepl:3568294823
+ hire_smuggler_desc: "Auf [smuggler_court_position|E] können wir, sagen wir, Artefakte aus den Klauen von... irgendjemandem befreien. Ich werde meine Diener bitten, eine Anzahl geeigneter Kandidaten herbeizuschaffen." #deepl:4196276537
+ #  hire_smuggler_decision_effect_tooltip: "Sie bekommen eine Gruppe von [GetCourtPositionType('smuggler_court_position').GetName()] Bewerbern präsentiert und können einen von ihnen gegen eine Gebühr und ein monatliches Gehalt einstellen" #deepl:2197764143
+ #  hire_smuggler_decision_confirm: "Starten Sie die Suche" #deepl:2082362254
+ recruit_smuggler_cooldown_tt: "Die Rekrutierung einer [GetCourtPositionType('smuggler_court_position').GetName] ist auf Abklingzeit für [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]" #deepl:40422166
+
+ # Master Assassin
+ hire_master_assassin: "Suche nach Master Assassin" #deepl:3609033881
+ hire_master_assassin_tooltip: "Ihre Bediensteten werden Ihnen eine Reihe geeigneter Kandidaten für die Stelle des [GetCourtPositionType('master_assassin_court_position').GetName()]" #deepl:2161765423
+ hire_master_assassin_desc: "A [master_assassin_court_position|E] die wichtigsten Bedrohungen auszuschalten und möglicherweise die Pest in den Reichen unserer Feinde zu verbreiten. Ich werde meine Diener bitten, eine Reihe geeigneter Kandidaten vorzuschlagen." #deepl:2501111060
+ #  hire_master_assassin_decision_effect_tooltip: "Sie bekommen eine Gruppe von [GetCourtPositionType('master_assassin_court_position').GetName()] Bewerbern präsentiert und können einen von ihnen gegen eine Gebühr und ein monatliches Gehalt einstellen" #deepl:1797626658
+ #  hire_master_assassin_decision_confirm: "Starten Sie die Suche" #deepl:2082362254
+ recruit_master_assassin_cooldown_tt: "Die Rekrutierung einer [GetCourtPositionType('master_assassin_court_position').GetName] ist auf Abklingzeit für [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]" #deepl:255274636

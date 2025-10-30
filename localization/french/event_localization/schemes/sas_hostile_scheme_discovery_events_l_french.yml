@@ -1,0 +1,30 @@
+﻿l_french: 
+ sas_hostile_scheme_discovery.1002.t: "Découverte d'un escroc !" #deepl:2806885743
+ sas_hostile_scheme_discovery.1002.intro: "Mon [spymaster.GetCouncilTitle] vient m'annoncer une grave nouvelle : il est... [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:116762934
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "Une grave nouvelle m'est parvenue : [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:782412105
+ sas_hostile_scheme_discovery.1002.rouse: "qui soulève la populace paysanne appartenant au domaine de l'économie de marché." #deepl:2701494178
+ sas_hostile_scheme_discovery.1002.fallback: "qui complote contre" #deepl:3376091286
+ sas_hostile_scheme_discovery.1002.a: "Le monstre [owner.Custom('InsultAdjective')]!" #deepl:2541491147
+
+ sas_hostile_scheme_discovery.2001.t: "Un système à [ROOT.Char.Custom('GetCourt')|U]" #deepl:3607653157
+ sas_hostile_scheme_discovery.2001.intro: "Mon [spymaster.GetCouncilTitle] m'a fait part d'une grave nouvelle. Bien que nous ne sachions pas encore qui," #deepl:4082077002
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "De graves nouvelles me sont parvenues. Bien que l'on ne sache pas encore qui," #deepl:3279496608
+ sas_hostile_scheme_discovery.2001.fallback: "quelqu'un complote contre" #deepl:3932481048
+ sas_hostile_scheme_discovery.2001.rouse: "quelqu'un ameute la populace paysanne appartenant au royaume des" #deepl:1810264608
+ sas_hostile_scheme_discovery.2001.target_other: "mon [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], [target.GetTitledFirstName]!" #deepl:3121120145
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]!\n\n Ils ne savent pas à qui ils ont affaire, mon [ROOT.Char.GetLadyLord]. Ils pensent qu'ils peuvent me tuer #EMP #! ? Je leur montrerai. Oh oui, je leur montrerai." #deepl:4001813834
+ sas_hostile_scheme_discovery.2001.target_me: "moi !" #deepl:4031713392
+ sas_hostile_scheme_discovery.2001.a: "Nous devons arrêter le méchant qui se cache derrière tout cela !" #deepl:148308102
+
+ sas_hostile_scheme_discovery.3002.t: "Découverte d'un stratagème" #deepl:385952488
+ sas_hostile_scheme_discovery.3002.desc: "L'existence de mon complot à l'adresse [scheme.GetFullActionName] a été découverte !\n\n Bien que mon implication ne soit pas encore connue, cela rendra beaucoup plus difficile la réalisation de mes plans." #deepl:3976066101
+ sas_hostile_scheme_discovery.3002.a: "Malédiction !" #deepl:1623550253
+
+ sas_hostile_scheme_discovery.3003.t: "Implication découverte" #deepl:2924354761
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] a découvert que je suis le maître d'œuvre du complot" #deepl:1505803270
+ sas_hostile_scheme_discovery.3003.rouse: "pour réveiller la populace paysanne de [target.GetHerHim]!" #deepl:2089024288
+ sas_hostile_scheme_discovery.3003.provoke: "pour provoquer [target.GetHerHis] vassaux !" #deepl:2832962550
+ sas_hostile_scheme_discovery.3003.smuggle: "pour faire passer en contrebande un artefact appartenant à [target.GetHerHim]!" #deepl:2229529354
+ sas_hostile_scheme_discovery.3003.plague: "pour répandre la peste dans le royaume [target.GetHerHis]!" #deepl:44403764
+ sas_hostile_scheme_discovery.3003.fallback: "contre [target.GetHerHim]!" #deepl:1408398656
+ sas_hostile_scheme_discovery.3003.a: "Il doit y avoir un malentendu !" #deepl:2938075201

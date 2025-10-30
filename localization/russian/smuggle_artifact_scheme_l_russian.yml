@@ -1,0 +1,31 @@
+﻿l_russian:
+ smuggle_artifact: "Контрабандный артефакт" #deepl:2554631965
+ smuggle_artifact_general_desc: "[scheme|E], где персонаж пытается украсть [artifact|e], для которого он планировал ограбление." #deepl:255018178
+ smuggle_artifact_action: "Контрабанда артефакта из" #deepl:1692569405
+ smuggle_artifact_desc: "Я попытаюсь украсть артефакт, на который положил глаз, прямо из-под носа [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]." #deepl:1414131686
+ smuggle_artifact_desc_general: "Попытка украсть артефакт, для которого вы запланировали ограбление цели." #deepl:1645696405
+ scheme_interaction_tt_smuggle_artifact_approved: "[recipient.GetShortUIName] больше не будет владеть тем, что я с радостью освободил!" #deepl:759467292
+ smuggle_artifact_success_message: "[artifact_to_steal.GetName] Твой!" #deepl:836888504
+ smuggle_artifact_failed_message: "Артефакт остается с [target.GetShortUINameNoTooltip]" #deepl:2450765736
+ scheme_interaction_tt_smuggle_artifact_desc: "Я освобожу то, что [recipient.GetShortUINameNoTooltip] запер от меня, и оно будет моим!" #deepl:3898096970
+ smuggle_artifact_foreign_target: "Цель находится в иностранном царстве: $VALUE|=+0$" #deepl:608165749
+ smuggle_artifact_my_intrigue: "Ваша интрига: $VALUE|=+0$" #deepl:2079339109
+ smuggle_artifact_complete: "Вы украли артефакт из [target.GetShortUIName]" #deepl:3483740664
+ smuggle_artifact_invalidated_title: "@scheme_icon! Схема контрабанды артефактов завершена" #deepl:2412995361
+ they_smuggle_artifact_must_have_heist_blocker: "[CHARACTER.GetShortUIName|U] не владеет сайтом [artifact|E], на котором [TARGET_CHARACTER.GetShortUIName] планирует ограбление." #deepl:2202407269
+ i_smuggle_artifact_must_have_heist_blocker: "[TARGET_CHARACTER.GetShortUIName] не владеет [artifact|E], на который я планировал ограбление." #deepl:3372971550
+
+ SMUGGLE_ARTIFACT_SUCCESS_DESC: "Вам предстоит украсть [artifact|E] с сайта [TARGET_CHARACTER.GetShortUIName], на котором вы планировали ограбление." #deepl:1630679103
+ smuggle_artifact_invalidated_war: "Из-за войны между вами вы больше не можете $smuggle_artifact_action$ [target.GetShortUIName]" #deepl:3621304098
+ smuggle_artifact_invalidated_dead: "[target.GetShortUIName|U] скончался. Вы больше не можете украсть их артефакты. [target.GetHerHim]" #deepl:3636007517
+ smuggle_artifact_invalidated_no_smuggler: "Вы больше не работаете на сайте [smuggler_court_position|E]." #deepl:505500122
+ smuggle_artifact_invalidated_not_planning_heist: "[CHARACTER.GetShortUIName|U] больше не выполняет задание "План ограбления"." #deepl:1642073108
+
+ PLAN_HEIST_HELPS_BONUS: "[smuggler_court_position|E]'помощь: $VALUE|+0=-+" #deepl:3878474763
+ MONITOR_SUPPLIES_HURTS: "Враг [smuggler_court_position|E]'помощь: $VALUE|+0=-+$" #deepl:1079239737
+ SMUGGLE_ARTIFACT_GREEDY: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_PARANOID: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_AVARICIOUS: "[GetTrait('avaricious').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:227351965
+ SMUGGLE_ARTIFACT_PATIENT: "[GetTrait('patient').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:198284427
+ SMUGGLE_ARTIFACT_LOGISTICIAN: "[GetTrait('logistician').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1854127353
+ SMUGGLE_ARTIFACT_PILGRIM: "[GetTrait('pilgrim').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:697714941

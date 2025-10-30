@@ -1,0 +1,46 @@
+﻿l_russian:
+ rouse_rabble_attended_local_feast: "Посетили местный праздник" #deepl:2713133615
+ rouse_rabble_sent_gift_to_local_feast: "Подарок местным жителям" #deepl:231123044
+ rouse_rabble_ignored_local_feast: "Игнорируемый местный праздник" #deepl:4143663347
+
+ rouse_rabble_intercept_aid: "Перехваченная местная помощь" #deepl:1362272277
+ rouse_rabble_endorse_aid: "Одобренная местная помощь" #deepl:383506778
+ rouse_rabble_ignore_aid: "Игнорируемая местная помощь" #deepl:3141683792
+ rouse_rabble_endorsed_aid_opinion: "Одобренная местная помощь" #deepl:383506778
+
+ rouse_rabble_mock_battle: "Молодежный шуточный бой" #deepl:4072308434
+ rouse_rabble_hunting_tournament: "Молодежный охотничий турнир" #deepl:2973954280
+ rouse_rabble_cultural_exchange: "Молодежный культурный обмен" #deepl:1352443444
+
+ rouse_rabble_undercover_protest: "Протесты под прикрытием" #deepl:1250919224
+
+ rouse_rabble_fought_soldier: "Палубный солдат" #deepl:2448626429
+ rouse_rabble_slandered_soldier: "Оклеветанный солдат" #deepl:1847595356
+ rouse_rabble_helped_soldier_home: "Помог солдату" #deepl:1762562614
+ rouse_rabble_observed_soldier: "Наблюдаемый солдат" #deepl:1958705373
+
+ rouse_rabble_missive_crush_them: "Советуем Сокрушительные мятежи" #deepl:3024212291
+ rouse_rabble_missive_help_them: "Советуем помогать бунтарям" #deepl:2424822606
+
+ rouse_rabble_suggestion_tax: "Снижение собственных налогов" #deepl:3298667024
+ rouse_rabble_suggestion_levies: "Сокращение собственных сборов" #deepl:3813493225
+ rouse_rabble_suggestion_development: "Сокращение собственного развития" #deepl:2538667592
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "Снижение налогов" #deepl:3057853721
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "Снижение сборов" #deepl:3882781821
+ rouse_rabble_suggestion_reduce_development_county_modifier: "Снижение уровня развития" #deepl:1216115176
+
+ rouse_rabble_argument_correct: "Принято правильное решение" #deepl:4105672237
+ rouse_rabble_argument_incorrect: "Неправильное решение" #deepl:3636144073
+ rouse_rabble_trusted_judgment_opinion: "Доверенное суждение" #deepl:3001423300
+ rouse_rabble_doubted_judgment_opinion: "Сомнительное суждение" #deepl:520569006
+ rouse_rabble_compromised_judgment_opinion: "Компромиссное решение" #deepl:3044150383
+
+ rouse_rabble_soldiers_suspicious: "Подозрительные солдаты" #deepl:2109321105
+ rouse_rabble_soldiers_unsuspecting: "Ничего не подозревающие солдаты" #deepl:2952706296
+
+ rouse_rabble_increase_tension: "Повышенное напряжение" #deepl:1175644696
+ rouse_rabble_cool_off_tension: "Остывшая напряженность" #deepl:2228263524
+ rouse_rabble_increase_tension_county_modifier: "Вдохновленные бунтарями" #deepl:170963419
+
+ attempted_to_rouse_rabble: "Попытка разбудить буйных" #deepl:3448411340
+ successfully_roused_rabble: "Успешно взбунтовавшаяся толпа" #deepl:3121025999

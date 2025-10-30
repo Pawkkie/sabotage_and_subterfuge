@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+ # Court Position
+ rabble_rouser_court_position: "咆哮者" #deepl:63230416
+ rabble_rouser_court_position_desc: "热衷于搅局的狂言者善于与合适的人群打成一片，并将他们煽动起来。他们可以前往其他王国煽动农民起义或附庸起义，也可以留在国内传播您的卓越成就。" #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$可允许访问[GetScheme('rouse_rabble').GetTypeName] 和[GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E] s" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "Rouse Rabble" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "激怒另一个宫廷的乌合之众，导致农民暴动，甚至可能引发全面叛乱。" #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "可使用[rouse_rabble_scheme|E] 。该任务必须处于激活状态，才能启动和继续计划。\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to@scheme_success_icon!#P  +20%#! （基于[aptitude|E])" #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "挑衅附庸" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "激怒其他朝廷的臣子，导致舆论低落，甚至可能引发全面起义。" #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "可使用[provoke_vassals_scheme|E] 。该任务必须处于激活状态，才能启动和继续计划。\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to@scheme_success_icon!#P  +20%#! （基于[aptitude|E])" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "安抚群众" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "鼓励宫廷中的农民，让他们知道他们的生活是美好而舒适的，从而减少造反的机会。" #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "敌人[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "敌人[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:1094715817

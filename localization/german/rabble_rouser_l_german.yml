@@ -1,0 +1,28 @@
+﻿l_german:
+ # Court Position
+ rabble_rouser_court_position: "Aufwiegler" #deepl:63230416
+ rabble_rouser_court_position_desc: "Der Pöbler hat ein Händchen dafür, die richtigen Leute anzusprechen und sie anzustacheln. Er kann in andere Reiche reisen und Bauernrevolten oder Vasallenaufstände anzetteln, oder zu Hause bleiben und das gute Wort von deiner Exzellenz verbreiten." #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$Kann den Zugriff auf [GetScheme('rouse_rabble').GetTypeName] und [GetScheme('provoke_vassals').GetTypeName] ermöglichen [hostile_scheme|E]s" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "Lausepöbel" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "Aufwiegelung des Pöbels an einem anderen Hof, was zu Bauernaufständen und möglicherweise zu einer umfassenden Revolte führen könnte." #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "Kann die [rouse_rabble_scheme|E] verwenden. Diese Aufgabe muss aktiv sein, um das Schema zu starten und fortzusetzen.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! bis @scheme_success_icon!#P  +20%#! (basierend auf [aptitude|E])" #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "Vasallen provozieren" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "Provozieren Sie die Vasallen eines anderen Hofes, was zu einem Meinungsumschwung und möglicherweise zu einem Aufstand führen kann." #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "Kann die [provoke_vassals_scheme|E] verwenden. Diese Aufgabe muss aktiv sein, um das Schema zu starten und fortzusetzen.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! bis @scheme_success_icon!#P  +20%#! (basierend auf [aptitude|E])" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "Die Massen befrieden" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "Ermutigen Sie die Bauern Ihres Hofes, dass ihr Los gut und bequem ist, und verringern Sie so die Gefahr einer Revolte." #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "Feind [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! bis @scheme_success_icon!#P  -20%#! (basierend auf [aptitude|E])" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "Feind [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! bis @scheme_success_icon!#P  -20%#! (basierend auf [aptitude|E])" #deepl:1094715817

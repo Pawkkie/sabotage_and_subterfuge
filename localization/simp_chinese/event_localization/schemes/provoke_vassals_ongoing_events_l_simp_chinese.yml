@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+ # Feeding the Flames
+ provoke_vassals_ongoing.0001.t: "喂养火焰" #deepl:504191995
+ provoke_vassals_ongoing.0001.desc: "最近，[independence_vassal.GetShortUIName] 似乎一直在与地区不满情绪作斗争。[target.GetShortUIName] 在该地区征收的高额税款让民众陷入了一定程度的动荡。\n\n 虽然不清楚[independence_vassal.GetShortUIName] 是否真的希望降低他们的义务，但可以肯定的是，他们渴望在不受上级当局影响的情况下对该地区拥有更直接的控制权。\n\n 也许我可以给他们送去一些资源。也许我还可以就如何更好地应用这些资源提出一两点建议......" #deepl:2916651416
+ provoke_vassals_ongoing.0001.a: "我来提供武器" #deepl:3294163484
+ provoke_vassals_ongoing.0001.b: "我会提供给养" #deepl:1722600124
+
+ # Promising the Future
+ provoke_vassals_ongoing.0002.t: "展望未来" #deepl:2733215959
+ provoke_vassals_ongoing.0002.desc: "我最近收到了一封来自[independence_vassal.GetShortUIName] 的信，信中大部分都是标准的外交讨论。不过，信的结尾还是很有个性的！\n\n 很明显，[independence_vassal.GetSheHe] 在[independence_vassal.GetHerHis] 雄心壮志的发展、财富和家族声誉方面一直感到相当停滞不前，[independence_vassal.GetHerHis] 。\n\n 同样明显的是，这是一个绝好的机会，可以诱使我们在这里寻找的那种回应。" #deepl:2800851299
+ provoke_vassals_ongoing.0002.a: "附庸制如此令人窒息，实在令人遗憾！" #deepl:2781941790
+ provoke_vassals_ongoing.0002.b: "附庸不过是一块功勋卓著的垫脚石！" #deepl:1226632191
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0003.t: "舞台暗杀企图" #deepl:2745329543
+ provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] [master_assassin_name.GetShortUIName] [independence_vassal.GetShortUIName] [independence_vassal.GetHerHis] [target.GetShortUIName]\n\n 他们都向我保证，这个计划万无一失。 单独卧底行动，失败的几率微乎其微，搞砸了只会造成混乱而不是逮捕。  这样的混乱很可能会促使 做出反应，向 保证 的安全，而这恰恰会适得其反。不过，如果成功的话[master_assassin_name.GetShortUIName]\n\n [target.GetShortUIName] [independence_vassal.GetShortUIName] [independence_vassal.GetHerHis] " #deepl:1236986410
+ provoke_vassals_ongoing.0003.a: "我相信你，让我们开始吧" #deepl:3757966510
+ provoke_vassals_ongoing.0003.b: "我不确定这是不是个好主意" #deepl:3991597292
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0004.t: "各种峰会" #deepl:2331725663
+ provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName]\n\n 这在最好的情况下也是极不寻常的，虽然谈话很有成效，但也让一些人怀疑 是否有足够的能力展现出统治者所需的自信领导力。  在谈话结束时， 抓住我的耳朵询问我的意见，从 的表情中可以明显看出怀疑。[target.GetSheHe]\n\n [independence_vassal.GetShortUIName] [independence_vassal.GetHerHis] " #deepl:1606362498
+ provoke_vassals_ongoing.0004.a: "你不觉得[target.GetSheHe] 看起来很疲惫吗？" #deepl:111863169
+ provoke_vassals_ongoing.0004.b: "[target.GetSheHe] 绝对有能力" #deepl:3117045451

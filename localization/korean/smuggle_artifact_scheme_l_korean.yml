@@ -1,0 +1,31 @@
+﻿l_korean:
+ smuggle_artifact: "밀수 유물" #deepl:2554631965
+ smuggle_artifact_general_desc: "캐릭터가 강도를 계획한 [artifact|e] 을 훔치려고 시도하는 경우 [scheme|E] " #deepl:255018178
+ smuggle_artifact_action: "다음에서 유물 밀수" #deepl:1692569405
+ smuggle_artifact_desc: "제가 눈여겨보던 유물을 [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] 바로 코앞에서 훔치려고 합니다." #deepl:1414131686
+ smuggle_artifact_desc_general: "목표물에서 강탈을 계획한 유물을 훔치려고 시도합니다." #deepl:1645696405
+ scheme_interaction_tt_smuggle_artifact_approved: "[recipient.GetShortUIName] 내가 기쁜 마음으로 해방시킨 것을 더 이상 소유할 수 없습니다!" #deepl:759467292
+ smuggle_artifact_success_message: "[artifact_to_steal.GetName] 는 당신의 것입니다!" #deepl:836888504
+ smuggle_artifact_failed_message: "아티팩트 잔존 [target.GetShortUINameNoTooltip]" #deepl:2450765736
+ scheme_interaction_tt_smuggle_artifact_desc: "나는 [recipient.GetShortUINameNoTooltip] 가 내게서 가둬둔 것을 해방시킬 것이며, 그것은 내 것이 될 것입니다!" #deepl:3898096970
+ smuggle_artifact_foreign_target: "타겟이 외국 영역에 있음: $VALUE|=+0$" #deepl:608165749
+ smuggle_artifact_my_intrigue: "당신의 음모: $VALUE|=+0$" #deepl:2079339109
+ smuggle_artifact_complete: "다음에서 유물을 훔쳤습니다. [target.GetShortUIName]" #deepl:3483740664
+ smuggle_artifact_invalidated_title: "@scheme_icon! 밀수 유물 계획 종료" #deepl:2412995361
+ they_smuggle_artifact_must_have_heist_blocker: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName] 강도를 계획한 [artifact|E] 소유하지 않습니다." #deepl:2202407269
+ i_smuggle_artifact_must_have_heist_blocker: "[TARGET_CHARACTER.GetShortUIName] 내가 강도를 계획하고 있는 [artifact|E] 을 소유하고 있지 않습니다." #deepl:3372971550
+
+ SMUGGLE_ARTIFACT_SUCCESS_DESC: "강도를 계획하고 있는 [TARGET_CHARACTER.GetShortUIName] 에서 [artifact|E] 을 훔칩니다." #deepl:1630679103
+ smuggle_artifact_invalidated_war: "당신들 사이의 전쟁으로 인해 더 이상 $smuggle_artifact_action$ [target.GetShortUIName]" #deepl:3621304098
+ smuggle_artifact_invalidated_dead: "[target.GetShortUIName|U] 가 세상을 떠났습니다. 더 이상 그들의 유물을 훔칠 수 없습니다. [target.GetHerHim]" #deepl:3636007517
+ smuggle_artifact_invalidated_no_smuggler: "더 이상 [smuggler_court_position|E] 을 사용하지 않습니다." #deepl:505500122
+ smuggle_artifact_invalidated_not_planning_heist: "[CHARACTER.GetShortUIName|U] 는 더 이상 계획 강탈 작업을 수행하지 않습니다." #deepl:1642073108
+
+ PLAN_HEIST_HELPS_BONUS: "[smuggler_court_position|E]의 지원: $VALUE|+0=-+" #deepl:3878474763
+ MONITOR_SUPPLIES_HURTS: "적 [smuggler_court_position|E] 의 원조: $VALUE|+0=-+$" #deepl:1079239737
+ SMUGGLE_ARTIFACT_GREEDY: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_PARANOID: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_AVARICIOUS: "[GetTrait('avaricious').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:227351965
+ SMUGGLE_ARTIFACT_PATIENT: "[GetTrait('patient').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:198284427
+ SMUGGLE_ARTIFACT_LOGISTICIAN: "[GetTrait('logistician').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1854127353
+ SMUGGLE_ARTIFACT_PILGRIM: "[GetTrait('pilgrim').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:697714941

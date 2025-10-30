@@ -1,0 +1,30 @@
+﻿l_german:
+ roused_rabble_faction_started_tt: "Der Pöbel wird im nächsten Jahr oder so einen Bauernaufstand veranstalten: [faction|E]. Ihr werdet informiert, bevor der Aufstand beginnt." #deepl:895772584
+
+ ## Success and secret
+ rouse_rabble_outcome.0001.t: "Geflüster aus dem Ausland" #deepl:3047973896
+ rouse_rabble_outcome.0001.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen in gedämpftem Ton über die Flammen der Rebellion sprachen, die sie in der Bauernschaft von [target.GetCapitalLocation.GetTitle.GetNameNoTier] gesehen hatten.\n\n Es scheint, dass niemand herausfinden kann, was sie so plötzlich ermutigt hat, aber ein Aufstand scheint unvermeidlich zu sein, und [target.GetShortUIName] ist sich dessen kaum bewusst. Unsere Bemühungen haben perfekt funktioniert!" #deepl:3390693042
+ rouse_rabble_outcome.0001.a: "Lasst ihre Feuer hell brennen!" #deepl:1790369756
+ rouse_rabble_outcome.0001.prog: "Sie und Ihr [rabble_rouser|E] machen Fortschritte auf der [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]" #deepl:2576651623
+
+ ## Success and discovered
+ rouse_rabble_outcome.0002.t: "Verdachtsmomente aus dem Ausland" #deepl:3269684831
+ rouse_rabble_outcome.0002.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen in gedämpftem Ton über die Flammen der Rebellion sprachen, die sie in der Bauernschaft von [target.GetCapitalLocation.GetTitle.GetNameNoTier] gesehen hatten.\n\n Sie warfen immer wieder Blicke in meine Richtung, die von beißender Abneigung geprägt waren. Es ist kein Geheimnis, was sie so plötzlich ermutigt hat, aber ein Aufstand scheint unvermeidlich zu sein, und [target.GetShortUIName] ist wütend." #deepl:1463922575
+ rouse_rabble_outcome.0002.a: "Lasst ihre Feuer hell brennen!" #deepl:1790369756
+
+ ## Unsuccessful and secret
+ rouse_rabble_outcome.0003.t: "Unverlorene Herzen" #deepl:3841976415
+ rouse_rabble_outcome.0003.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen über die Bauernschaft von [target.GetCapitalLocation.GetTitle.GetNameNoTier] und ihren ungebrochenen Patriotismus im Angesicht der Widrigkeiten sprachen.\n\n Trotz unserer Bemühungen sind die Bauern mit ihrem Schicksal zufrieden." #deepl:556202482
+ rouse_rabble_outcome.0003.a: "Zumindest im Moment..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ rouse_rabble_outcome.0004.t: "Abgehärtete Gemüter" #deepl:3138284672
+ rouse_rabble_outcome.0004.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen über die Bauernschaft von [target.GetCapitalLocation.GetTitle.GetNameNoTier] und ihren verdoppelten Patriotismus im Angesicht der Not sprachen.\n\n Sie warfen immer wieder Blicke in meine Richtung, die von beißender Abneigung geprägt waren. Es ist kein Geheimnis, dass ich versucht habe, sie zur Rebellion anzustacheln, und [target.GetShortUIName] ist wütend." #deepl:2395136914
+ rouse_rabble_outcome.0004.a: "Wir kriegen sie schon noch!" #deepl:1078680228
+
+ ## Gained Reveler trait
+ rouse_rabble_outcome.0005.t: "Die Seele aufrütteln" #deepl:3339457466
+ rouse_rabble_outcome.0005.desc: "Wer hätte gedacht, dass das Anfeuern und Motivieren der Öffentlichkeit so belebend sein kann? Es gibt Essen, es gibt Trinken, es gibt Jubel... der einfache Mann, der sich füreinander einsetzt, der sich gegen das Gefühl der Unterdrückung auflehnt.\n\n Ich habe diesen Plan vielleicht mit einer anderen Motivation begonnen, aber die Not der Menschen ist meine eigene geworden!" #deepl:4271649516
+ rouse_rabble_outcome.0005.a: "Ich freue mich darauf, bei unserem nächsten Treffen mit ihnen anzustoßen!" #deepl:3505615210
+ rouse_rabble_outcome.0005.b: "Ich sollte wirklich auf Abstand gehen..." #deepl:2837144994
+

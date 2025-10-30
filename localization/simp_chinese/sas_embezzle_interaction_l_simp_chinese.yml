@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ sas_embezzle_interaction: "挪用资金" #deepl:648628518
+ sas_embezzle_interaction_desc: "设计一个借口，从邻国、领主或附庸的商人那里扣押货物和走私资金。" #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "什么都不拿就不算贪污" #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] 小金额" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP 丢失#! 几件贵重物品" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] 中额" #deepl:2443027586
+ sas_embezzle_sum_medium: "征收意外海关费用" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] 大额款项" #deepl:566310994
+ sas_embezzle_sum_large: "不公平的提成商人" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] 巨额资金" #deepl:1311154991
+ sas_embezzle_sum_huge: "公然偷税" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "你盗用公款而不被发现" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "你的罪恶行径立即被揭穿" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] 贪污被抓！" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "打开[sas_embezzle_interaction|E] 互动" #deepl:1189011648

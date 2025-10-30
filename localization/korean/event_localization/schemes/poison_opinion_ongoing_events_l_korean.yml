@@ -1,0 +1,10 @@
+﻿l_korean:
+ poison_opinion_ongoing.1001.t: "포이즌 오피니언: [target.GetLiege.GetCulture.GetNameNoTooltip] 문화" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "[target.GetCulture.GetNameNoTooltip] 가문의 한 평민이 사소한 범죄로 [capital.GetNameNoTooltip] 거리에서 습격당했습니다.\n\n 급진적인 종파의 [target.GetLiege.GetCulture.GetNameNoTooltip] 신참을 문제 삼으면, 피해자들처럼 [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)], [target.GetCulture.GetNameNoTooltip] 에게 그들의 군주가 생각보다 더 불쾌할 수도 있다고 설득할 수 있을 것입니다." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "[target.GetLiege.GetCulture.GetCollectiveNounNoTooltip] 에서 직접 책임을 집니다." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "이것은 불행한 사고일 뿐입니다." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "포이즌 오피니언: 차 흘리기" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "저는 [target_spouse.GetName], [target.GetNamePossessive] 배우자와 함께 애프터눈 티에 초대받았습니다.\n\n 이 행사는 즐겁고 가십으로 가득 찬 행사이며, [target_spouse.GetShortUIName] 이 [target.GetLiege.GetName] 에 대해 수다를 떠는 데는 그리 오래 걸리지 않습니다. 분명히 이것은 나에게 유리하게 활용될 수 있습니다..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "계속하세요..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "[target.GetLiege.GetSheHe] 한 번은 끔찍한 일을 했다고 들었는데..." #deepl:595741215

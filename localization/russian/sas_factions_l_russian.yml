@@ -1,0 +1,99 @@
+﻿l_russian:
+ # Roused Rabble
+ roused_rabble_faction: "Фракция "Восставшие из бешенства" #deepl:256557288
+ roused_rabble_faction_desc: "Отряд Roused Rabble [faction|E], состоящий из крестьян, воодушевленных словами пламенного революционера, решил, что настало время донести свои жалобы до своего сеньора прямо на поле боя." #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "Хочет сорвать операции своего сеньора." #deepl:3702182374
+ roused_rabble_faction_every_county: "Каждый [faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "Поднимает [new_title.GetAdjective] [army|E] пропорционально его [levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "На [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "Мы слишком долго были обременены вашими деспотичными законами. Хватит! Мы больше не будем платить вам налоги.\n\n Когда ваша казна иссякнет и ваши кладовые опустеют, вы пожалеете, что не обращались с нами более справедливо." #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "Думаю, я мог бы предъявить налоговый иск..." #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "Никогда! Удел крестьянина - служить своему господину!" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "Пробудившийся буйный" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "Восставший бунтарь" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "Цель [rouse_rabble_scheme|E]: $VALUE|0+=$" #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "Roused Rabble Ready to Rock..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "До меня дошли слухи о том, что сброд, который мы подняли некоторое время назад, почти закончил свои приготовления и через четыре месяца будет готов принять бой в столице.\n\n Я верю в то, что они смогут нанести некоторый ущерб и, возможно, вызвать реальные изменения, но я уверен, что есть время склонить чашу весов в их пользу..." #deepl:1060245800
+ sas_faction_demand.1003.a: "Я оказываю им неизменную поддержку!" #deepl:521539079
+ sas_faction_demand.1003.b: "Нам бы не помешали дополнительные рычаги." #deepl:2408571671
+ sas_faction_demand.1003.c: "Полагаю, мы можем выделить несколько золотых..." #deepl:3331857853
+ sas_faction_demand.1003.d: "Они справятся сами." #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "И теперь настало время кататься!" #deepl:439050973
+ sas_faction_demand.1004.desc: "Наконец, мне сообщили, что фракция сброда, которую мы подстрекнули к восстанию, готова вступить в бой.\n\n Я слышал много хорошего о [peasant_leader.GetShortUIName], надеюсь, [peasant_leader.GetSheHe] сможет привести их к победе!" #deepl:2802403918
+ sas_faction_demand.1004.a: "И, возможно, мы сможем воспользоваться ситуацией..." #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "Победа за "Беспорядком" #deepl:3605552638
+ sas_faction_demand.1005.desc: "Сброд, который мы поддерживали, одержал победу в своей революции за повышение уровня жизни! Это должно существенно затруднить их сеньору дальнейшее развитие королевства и дать им всем заслуженную слабину." #deepl:449688228
+ sas_faction_demand.1005.a: "Я мог бы с ужасом надеяться на лучший исход." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "The Rabble Is Breaks Even" #deepl:1625263356
+ sas_faction_demand.1006.desc: "Оборванцы, которых мы поддерживали, втянули белый мир в свою революцию, чтобы повысить уровень жизни! Возможно, это в некоторой степени дестабилизировало регион, и отношениям может потребоваться некоторое время, чтобы восстановиться." #deepl:4055594033
+ sas_faction_demand.1006.a: "Надеюсь, не слишком быстро." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "Разбойники побеждены" #deepl:735846347
+ sas_faction_demand.1007.desc: "Люди, которых мы поддерживали, потерпели поражение в своей революции, направленной на повышение уровня жизни. Такой исход прискорбен, но не совсем неожидан. Надеюсь, мы получили от этого испытания все, что хотели." #deepl:3836426464
+ sas_faction_demand.1007.a: "Пора переходить к другим делам" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "Восстание бунтарей" #deepl:2683090941
+ roused_rabble_war: "Фракция "Восставшие из бешенства" #deepl:256557288
+ roused_rabble_faction_event_troops: "Восстание бунтарей" #deepl:2683090941
+ roused_rabble_war_victory_desc: "Все непокорные [counties|E] теряют [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] ." #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "Разбушевавшийся сброд распущен." #deepl:3335355515
+ roused_rabble_war_defeat_desc: "Восставший сброд распущен, а [attacker.GetShortUIName] заключен в тюрьму. Всем восставшим [counties|E] принудительно увеличивается [county_opinion|E]." #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "Спровоцированная независимость" #deepl:3382659683
+ provoked_independence_faction_desc: "Члены фракции "Независимость" [faction|E] стремятся к независимости от своего [liege|E].\n\n #S  Ультиматум#!\n Все члены фракции становятся [independent|E]\n [liege|E] проигрывают. [prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Спровоцированная на независимость фракция: $VALUE|0+=$" #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "Отравленное мнение: $VALUE|0+=$" #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "Спровоцированное расторжение брака" #deepl:736445653
+ provoked_dissolution_faction_desc: "Члены $nation_fracturing_faction$ [faction|E] стремятся уничтожить королевство своего [liege|E].\n\n #S  Ультиматум#!\n Все члены фракции становятся [independent|E]\n [liege|E] теряют свой [primary_title|E] и другие [titles|E] того же [title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "Спровоцировано на распад фракции: $VALUE|0+=$" #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "Фракция независимости" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "Фракция распада" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "Никогда не поднимался с земли" #deepl:10412173
+ sas_faction_demand.1011.desc: "Вассалы, которых мы спровоцировали против [target.GetShortUIName], так и не смогли собрать достаточно поддержки, чтобы продвинуть свои амбиции, и королевство, к сожалению, остается стабильным.\n\n Последние остатки фракции, которую они сформировали, теперь распущены." #deepl:3369401508
+ sas_faction_demand.1011.a: "Пора переходить к другим делам" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "Вассалы побеждают" #deepl:52932465
+ sas_faction_demand.1012.desc: "Вассалы, которых мы спровоцировали, победили в своей войне против [defender.GetShortUIName]! Возможно, мы сможем воспользоваться хаосом и забрать часть королевства себе." #deepl:1568465405
+ sas_faction_demand.1012.a: "Я мог бы с ужасом надеяться на лучший исход." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "Вассалы сдают позиции" #deepl:1192072973
+ sas_faction_demand.1013.desc: "Вассалы, которых мы спровоцировали, заключили белый мир против [defender.GetShortUIName]! Возможно, это в некоторой степени дестабилизировало регион, и отношениям может потребоваться некоторое время для восстановления." #deepl:789636467
+ sas_faction_demand.1013.a: "Надеюсь, не слишком быстро." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "Вассалы побеждены" #deepl:3897891145
+ sas_faction_demand.1014.desc: "Вассалы, которых мы спровоцировали, проиграли в сражении с [defender.GetShortUIName]. Такой исход прискорбен, но не совсем неожидан. Надеюсь, мы получили от этого испытания все, что хотели." #deepl:2998637062
+ sas_faction_demand.1014.a: "Пора переходить к другим делам" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "Вассалы будут выдвигать требования" #deepl:97930989
+ sas_faction_demand.1015.desc: "Вассалы, которых мы спровоцировали против [target.GetShortUIName], собрали своих сторонников и подняли войска. Наконец-то пришло время! Либо королевство будет расколото, либо начнется война. Первое будет само собой разумеющимся, но второе...\n\n Вот это было бы интересно!" #deepl:776082749
+ sas_faction_demand.1015.a: "Барабанная дробь..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "И это начинается" #deepl:3272443967
+ sas_faction_demand.1016.desc: "Война! Восстание вассалов в самом разгаре, и королевство будет охвачено конфликтом. Интересно, чем все закончится?" #deepl:47654385
+ sas_faction_demand.1016.a: "Только время покажет..." #deepl:4070009588
+ 

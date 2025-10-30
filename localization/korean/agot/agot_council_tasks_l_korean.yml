@@ -1,0 +1,142 @@
+﻿l_korean:
+ # Personal Steward
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "개인 청지기의 [councillor.Custom('diplomacy_skill_level')] 외교 기술이 이 횡재를 이끌어냈습니다." #deepl:3987054824
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "이는 개인 관리자의 [councillor.Custom('diplomacy_skill_level')] 외교 능력에도 불구하고 발생한 일입니다." #deepl:2756273250
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "개인 청지기의 [councillor.Custom('martial_skill_level')] 무술 실력에도 불구하고 이런 일이 발생했습니다." #deepl:1672131809
+ personal_steward_task_martial_good_skilled_notification_tooltip: "개인 청지기의 [councillor.Custom('martial_skill_level')] 무술 실력이 이 횡재를 이끌어냈습니다." #deepl:1416132229
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "개인 청지기의 [councillor.Custom('stewardship_skill_level')] 관리 능력이 이 횡재를 이끌어냈습니다." #deepl:136762961
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "이는 개인 스튜어드( [councillor.Custom('stewardship_skill_level')] )의 스튜어드십 스킬에도 불구하고 발생한 일입니다." #deepl:2694643357
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "개인 관리자의 [councillor.Custom('intrigue_skill_level')] 음모 기술에도 불구하고 이런 일이 발생했습니다." #deepl:1782695802
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "개인 청지기의 [councillor.Custom('intrigue_skill_level')] 음모 스킬이 이 횡재를 이끌어냈습니다." #deepl:2761615177
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "개인 관리자의 [councillor.Custom('learning_skill_level')] 학습 능력에도 불구하고 이런 일이 발생했습니다." #deepl:3263895679
+ personal_steward_task_learning_good_skilled_notification_tooltip: "개인 관리자의 [councillor.Custom('learning_skill_level')] 학습 기술이 이 횡재를 이끌어냈습니다." #deepl:4043423585
+ task_personal_steward_default_diplomacy_modifier: "개인 관리인의 지원" #deepl:628691585
+ task_personal_steward_default_martial_modifier: "개인 관리인의 지원" #deepl:628691585
+ task_personal_steward_default_stewardship_modifier: "개인 관리인의 지원" #deepl:628691585
+ task_personal_steward_default_intrigue_modifier: "개인 관리인의 지원" #deepl:628691585
+ task_personal_steward_default_learning_modifier: "개인 관리인의 지원" #deepl:628691585
+
+ # Personal Steward Tasks
+ task_personal_steward_default: "사령관 보좌" #deepl:3190029942
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip] 나이트 워치 관리의 일상적인 업무를 지원합니다\n\n [councillor.GetHerHis|U] 지원을 제공합니다:\n[councillor.GetModifierDescForTask('task_personal_steward_default')]" #deepl:2471906103
+ task_personal_steward_court_politics: "영향력 구축" #deepl:3874806014
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] 나이트 워치 정치와 블랙 브라더스 간의 관계 개선에 초점을 맞춘\n\n [councillor.GetHerHis|U] 지원을 제공합니다:\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]" #deepl:1899957641
+ task_personal_steward_chivalry: "시계 훈련" #deepl:1093429720
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] 밤의 경비대원 훈련에 집중\n\n [councillor.GetHerHis|U] 지원을 제공합니다:\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]" #deepl:3578335599
+ task_personal_steward_court_intrigue: "귀 기울이기" #deepl:3757386027
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip] 법원의 블랙 브라더스에 대한 소문과 귓속말에 집중합니다\n\n [councillor.GetHerHis|U] 지원이 제공됩니다:\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]" #deepl:238132299
+ task_personal_steward_manage_domain: "선물 관리" #deepl:3752812108
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip] 선물 관리 및 시계 보유량 증가에 집중\n\n [councillor.GetHerHis|U] 지원이 제공됩니다:\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]" #deepl:795658195
+ task_personal_steward_patronage: "시계 교육" #deepl:64939694
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] 시계에서 문화, 종교 및 교육 문제에 중점을 둡니다\n\n [councillor.GetHerHis|U] 지원을 제공합니다:\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]" #deepl:673679475
+ councillor_personal_steward_background.0001.diplomacy_notification: "경험이 쌓이면서 [councillor.GetShortUINamePossessive] 외교 능력이 향상되었습니다." #deepl:1853588496
+ councillor_personal_steward_background.0001.martial_notification: "경험을 통해 [councillor.GetShortUINamePossessive] 전쟁에 대한 이해도가 높아졌습니다." #deepl:26629406
+ councillor_personal_steward_background.0001.stewardship_notification: "경험이 쌓이면서 [councillor.GetShortUINamePossessive] 관리 능력이 향상되었습니다." #deepl:1503349911
+ councillor_personal_steward_background.0001.intrigue_notification: "경험에 따라 [councillor.GetShortUINamePossessive] 음모 기술이 향상되었습니다." #deepl:482384644
+ councillor_personal_steward_background.0001.learning_notification: "경험을 통해 [councillor.GetShortUINamePossessive] 학술적 이해도가 높아졌습니다." #deepl:668661590
+
+ councillor_personal_steward_background.0001.title: "개인 청지기의 기술" #deepl:607529410
+
+ task_promote_culture_effect_desc_wv_override: "#S  #V 100 %  :   변경 으로#!#!\n$TAB$ [county|E] [culture|E] [councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]" #deepl:1353113911
+ task_promote_culture_effect_desc_ev_override: "#S  #V 100 %  :   변경 으로#!#!\n$TAB$ [county|E] [culture|E] [councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]" #deepl:1820114630
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S  #V 100%  :    을 다음 중 하나로 변경  문화:  80%     20%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:916033769
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S  #V 100%  :    을 다음 중 하나로 변경  문화:  60%     40%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:3772183319
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S  #V 100%  :    을 다음 중 하나로 변경  문화:  20%     80%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:1153229959
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (아고트 오류)#!#! : 철인 문화 전환에 문제가 발생하여 일반으로 보고합니다." #deepl:1200773039
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S  #V 100%  :    을 다음 중 하나로 변경  문화:  80%     20%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.GetName]" #deepl:1126410652
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S  #V 100%  :    을 다음 중 하나로 변경  문화::  60%     40%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.GetName]" #deepl:2667011599
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S  #V 100%  :    을 다음 중 하나로 변경  문화:  20%     80%#!#!\n$TAB$ [county|E] [culture|E]\n$TAB$ \n#S $TAB$#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$#! [councillor_liege.GetCulture.GetName]" #deepl:3113041075
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (agot 오류)#!#! : 그린본 컬처 전환에 문제가 발생하여 일반으로 보고합니다." #deepl:1510425940
+
+
+ # Castellan Tasks
+ task_castellan_default_1:0 "Oversee Realm" #martial
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip] \n\n  지원은 이 땅에 대한 당신의 지배력을 강화할 것입니다:[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_1')]" #deepl:4119586948
+
+ task_castellan_default_2:0 "Oversee Realm" #learning
+ task_castellan_default_effect_desc_2: "[councillor.GetShortUINameNoTooltip] 의 현명하고 학식 있는 조언으로 현명하게 통치하세요. \n\n [councillor.GetHerHis|U] 지원이 제공됩니다:\n[councillor.GetModifierDescForTask('task_castellan_default_2')]" #deepl:373640728
+
+ task_castellan_default_3:0 "Oversee Realm" #intrigue
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] 보이지 않는 원을 그리며 이동하여 영역의 그림자 속에서 우위를 점할 수 있습니다. \n\n [councillor.GetHerHis|U] 지원이 제공됩니다:\n[councillor.GetModifierDescForTask('task_castellan_default_3')]" #deepl:150011693
+
+ task_castellan_default_4:0 "Oversee Realm" #stewardship
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip] 는 관리 기술을 활용하여 도메인 관리를 지원합니다. \n\n [councillor.GetHerHis|U] 지원을 제공합니다:\n[councillor.GetModifierDescForTask('task_castellan_default_4')]" #deepl:930183188
+
+ task_castellan_default_5:0 "Oversee Realm" #diplomacy
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] 는 유능한 정치인이며, 통치에는 안정적인 국정 운영이 필수적입니다. \n\n [councillor.GetHerHis|U] 지지를 보내주세요:\n[councillor.GetModifierDescForTask('task_castellan_default_5')]" #deepl:398758126
+
+
+ task_castellan_default_hodor: "최선을 다하기" #deepl:3046448544
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] 어떻게 여기까지 왔는지는 모르겠지만 최선을 다하고 있습니다." #deepl:1327033284
+
+ task_castellan_court: "이사회 주재" #deepl:1348124016
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]" #deepl:164605584
+
+ task_castellan_fortify: "방어 강화" #deepl:145040072
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]" #deepl:3665126672
+
+ castellan_fortify_province_modifier: "$task_castellan_fortify$" #deepl:3627279605
+
+ castellan_fortify_county_modifier: "방어 강화" #deepl:1470419536
+
+ castellan_court_opinion_modifier: "카스텔란이 협의회를 주재합니다." #deepl:1892251711
+
+ task_train_commanders_maa_effect_desc: "자리 표시자" #deepl:3525875382
+ task_train_commanders_maa_erudition_bonus_desc: "자리 표시자" #deepl:3525875382
+
+ task_castellan_organise: "가신과 협상" #deepl:3783553490
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]" #deepl:3948196146
+ task_castellan_organise_modifier: "위원회 $councillor_castellan$" #deepl:566097349
+
+ task_castellan_scheme: "계획 구성" #deepl:2331682327
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]" #deepl:4293595345
+ task_castellan_scheme_modifier: "위원회 $councillor_castellan$" #deepl:566097349
+
+ task_castellan_clergy: "성직자 소집" #deepl:415742451
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]" #deepl:4181075151
+ task_castellan_clergy_modifier: "위원회 $councillor_castellan$" #deepl:566097349
+
+ # Admiral
+ task_admiral_fleet: "흩어지는 함대" #deepl:1618243021
+
+ task_admiral_fleet_modifier: "위원회 $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_fleet_effect_desc: "[supply|E] 기간 #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ 기지: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ 의원 [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n [fleet|E] 이동 속도: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ 기지: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ 의원 [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#!" #deepl:1383045148
+
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_raid: "엠볼든 레이더스" #deepl:1570853202
+
+ cannot_raid: "#X 레이드할 수 있습니다!#!" #deepl:1644501070
+
+ NOT_cannot_raid: "#X 레이드는 불가능합니다!#!" #deepl:1194432546
+
+ task_admiral_raid_modifier: "위원회 $councillor_admiral$" #deepl:1798471343
+
+
+ task_admiral_raid_effect_desc: "[raid|E] Speed: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ 베이스: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 의원 [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#! \n [raid_loot|E] 용량: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 의원용 [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n 이동 속도: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ 기지: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 의원용 [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#!" #deepl:4290845175
+
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_maritime: "거래 보호" #deepl:34268181
+
+ task_admiral_maritime_modifier: "위원회 $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_tax_modifier: "위원회 $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_effect_desc: "[domain|E] Tax: #P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n $TAB$ 기본: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ 의원 [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#! \n [supply|E] 수용 인원: #P +[SCOPE.ScriptValue('task_admiral_maritime_modifier_value')]%#!\n $TAB$ 기본: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ 의원용 [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_base')]%#!" #deepl:763222540
+
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ # Court Chaplain
+ COURT_CHAPLAIN_SHATTERED_WORLD: "부서진 세계 시작 보너스" #deepl:3364461777
+
+ # Spymaster
+ agot_task_disrupt_schemes_discover_spies: "귀하의 법원에서 외국 [sas_spies|E] 을 발견할 수 있습니다. \n" #deepl:2680493951
+ agot_task_disrupt_schemes_recruit_spies: "타겟 코트에서 [sas_spies|E] 모집 가능 \n" #deepl:2394015076

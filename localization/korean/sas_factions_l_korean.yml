@@ -1,0 +1,99 @@
+﻿l_korean:
+ # Roused Rabble
+ roused_rabble_faction: "흥분한 폭도 진영" #deepl:256557288
+ roused_rabble_faction_desc: "불타는 혁명가의 말에 용기를 얻은 농민들로 구성된 폭도들 [faction|E] 은 이제 전장에서 직접 군주에게 불만을 제기할 때가 되었다고 판단했습니다." #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "군주의 작전을 방해하려는 경우" #deepl:3702182374
+ roused_rabble_faction_every_county: "모든 [faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "에 비례하여 [new_title.GetAdjective] [army|E] 을 올립니다. [levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "우리는 너무 오랫동안 억압적인 법률로 인해 부담을 느껴왔습니다. 더 이상은 안 됩니다! 우리는 더 이상 세금을 내지 않습니다.\n\n 금고가 마르고 곳간이 비워지면 우리를 더 공정하게 대했더라면 하는 아쉬움이 남을 것입니다." #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "세금 유치권을 인정할 수 있을 것 같은데..." #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "절대 안 돼요! 농민의 제비는 주인을 섬기는 것입니다!" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "흥분한 래블" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "흥분한 폭도 반란" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "[rouse_rabble_scheme|E] 대상 : $VALUE|0+=$" #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "흥분한 래블 준비 완료..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "얼마 전에 우리가 일으킨 폭도들이 준비를 거의 마쳤으며 4 개월 후에 수도로 싸울 준비가되어 있다는 소식이 나에게 전해졌습니다.\n\n 나는 그들이 약간의 피해를 입히고 잠재적으로 진정한 변화를 일으킬 수 있다는 믿음을 가지고 있지만, 그들에게 유리하게 저울을 기울일 시간이 있다고 확신합니다...." #deepl:1060245800
+ sas_faction_demand.1003.a: "그들은 저의 변함없는 지지를 받고 있습니다!" #deepl:521539079
+ sas_faction_demand.1003.b: "추가 레버리지를 사용할 수 있습니다." #deepl:2408571671
+ sas_faction_demand.1003.c: "금 몇 개를 아낄 수 있을 것 같은데..." #deepl:3331857853
+ sas_faction_demand.1003.d: "혼자서도 괜찮을 것입니다." #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "이제 롤링할 시간입니다!" #deepl:439050973
+ sas_faction_demand.1004.desc: "마침내 우리가 반란을 일으킨 폭도들이 전투에 돌입할 준비가 되었다는 소식을 전해 들었습니다.\n\n 포도밭을 통해 [peasant_leader.GetShortUIName] 에 대한 좋은 소식을 들었는데, [peasant_leader.GetSheHe] 이 그들을 승리로 이끌 수 있기를 바랍니다!" #deepl:2802403918
+ sas_faction_demand.1004.a: "그리고 아마도 우리는 이 상황을 활용할 수 있을 것입니다..." #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "래블의 승리" #deepl:3605552638
+ sas_faction_demand.1005.desc: "우리가 지원한 폭도들이 혁명에서 승리하여 삶의 수준을 향상시켰습니다! 이것은 그들의 군주가 왕국을 더 발전시키는 데 상당한 방해가 될 것이며, 그들 모두에게 마땅히 누려야 할 여유를 줄 것입니다." #deepl:449688228
+ sas_faction_demand.1005.a: "더 나은 결과를 기대하며 겁을 먹을 수도 있었어요." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "래블이 손익분기점 돌파" #deepl:1625263356
+ sas_faction_demand.1006.desc: "우리가 지원한 폭도들은 삶의 수준을 향상시키기 위해 혁명을 통해 하얀 평화를 이끌어냈습니다! 이로 인해 이 지역이 어느 정도 불안정해졌을 수도 있고, 관계가 회복되려면 시간이 걸릴 수도 있습니다." #deepl:4055594033
+ sas_faction_demand.1006.a: "너무 빠르지 않기를 바랍니다." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "래블이 패배했습니다" #deepl:735846347
+ sas_faction_demand.1007.desc: "우리가 지지했던 폭도들은 삶의 수준을 개선하기 위한 혁명에서 패배했습니다. 이 결과는 안타깝지만 완전히 예상치 못한 것은 아닙니다. 이 시련에서 우리가 필요한 모든 것을 얻었기를 바랍니다." #deepl:3836426464
+ sas_faction_demand.1007.a: "다른 문제로 넘어갈 시간" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "흥분한 폭도 봉기" #deepl:2683090941
+ roused_rabble_war: "흥분한 폭도 진영" #deepl:256557288
+ roused_rabble_faction_event_troops: "흥분한 폭도 봉기" #deepl:2683090941
+ roused_rabble_war_victory_desc: "모든 반항적인 [counties|E] 패배 [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] ." #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "흥분한 폭도들은 해산합니다." #deepl:3335355515
+ roused_rabble_war_defeat_desc: "흥분한 폭도들은 해산하고 [attacker.GetShortUIName] 감옥에 갇힙니다. 모든 반란군 [counties|E] 의 [county_opinion|E] 이 강제로 증가합니다." #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "도발된 독립" #deepl:3382659683
+ provoked_independence_faction_desc: "독립 [faction|E] 회원은 [liege|E] 으로부터 독립을 추구합니다\n\n #S  최후통첩#!\n 모든 진영 회원은 [independent|E]\n [liege|E] 패배 [prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "독립 진영으로 도발: $VALUE|0+=$" #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "포이즌드 오피니언: $VALUE|0+=$" #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "유발된 해산" #deepl:736445653
+ provoked_dissolution_faction_desc: "$nation_fracturing_faction$ [faction|E] 회원은 [liege|E] 영역을 파괴하려고 합니다\n\n #S  최후통첩#!\n 모든 진영 회원은 [independent|E]\n [liege|E] [primary_title|E] 및 다른 [titles|E] 를 잃게 됩니다. [title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "해산 진영으로 도발: $VALUE|0+=$" #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "독립 진영" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "해산 진영" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "지상에서 들어올린 적 없음" #deepl:10412173
+ sas_faction_demand.1011.desc: "우리가 도발한 가신들은 [target.GetShortUIName] 그들의 야망을 추진하기에 충분한 지원을 모으지 못했고, 왕국은 불행히도 여전히 안정적입니다.\n\n 그들이 결성한 파벌의 마지막 흔적은 이제 해산했습니다." #deepl:3369401508
+ sas_faction_demand.1011.a: "다른 문제로 넘어갈 시간" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "가신들이 승리하다" #deepl:52932465
+ sas_faction_demand.1012.desc: "우리가 도발한 가신들이 전쟁에서 승리했습니다 [defender.GetShortUIName]! 혼란을 틈타서 왕국의 일부를 차지할 수 있을지도 모르죠." #deepl:1568465405
+ sas_faction_demand.1012.a: "더 나은 결과를 기대하며 겁을 먹을 수도 있었어요." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "가신은 손익분기점을 넘깁니다" #deepl:1192072973
+ sas_faction_demand.1013.desc: "우리가 도발한 가신들이 [defender.GetShortUIName] 에 대해 백기를 들었습니다! 이로 인해 지역이 어느 정도 불안정해졌을 수 있으며 관계가 회복되는 데 시간이 걸릴 수 있습니다." #deepl:789636467
+ sas_faction_demand.1013.a: "너무 빠르지 않기를 바랍니다." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "가신이 패배했습니다" #deepl:3897891145
+ sas_faction_demand.1014.desc: "우리가 도발한 가신들이 패배했습니다 [defender.GetShortUIName]. 이 결과는 안타깝지만 완전히 예상치 못한 것은 아닙니다. 이 시련에서 필요한 모든 것을 얻었기를 바랍니다." #deepl:2998637062
+ sas_faction_demand.1014.a: "다른 문제로 넘어갈 시간" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "가신들이 요구를 보낼 것입니다" #deepl:97930989
+ sas_faction_demand.1015.desc: "우리가 도발한 [target.GetShortUIName] 의 가신들이 지지자들을 모아 군대를 일으켰습니다. 드디어 때가 왔습니다! 왕국이 분열되거나 전쟁이 일어날 것입니다. 전자는 전쟁이 일어나면 자명하겠지만, 후자는...\n\n 이제 흥미진진하겠군요!" #deepl:776082749
+ sas_faction_demand.1015.a: "드럼 연주 부탁드립니다..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "그렇게 시작됩니다" #deepl:3272443967
+ sas_faction_demand.1016.desc: "전쟁이 시작됩니다! 가신 반란이 본격화되고 왕국은 분쟁으로 불타고 있습니다. 어떻게 될까요?" #deepl:47654385
+ sas_faction_demand.1016.a: "시간이 지나봐야 알겠지만..." #deepl:4070009588
+ 

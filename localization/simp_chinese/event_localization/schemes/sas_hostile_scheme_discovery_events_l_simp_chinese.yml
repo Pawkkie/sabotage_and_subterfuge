@@ -1,0 +1,30 @@
+﻿l_simp_chinese: 
+ sas_hostile_scheme_discovery.1002.t: "发现谋士" #deepl:2806885743
+ sas_hostile_scheme_discovery.1002.intro: "我的[spymaster.GetCouncilTitle] 带给我一个严重的消息：它是[owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:116762934
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "噩耗传来[owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:782412105
+ sas_hostile_scheme_discovery.1002.rouse: "那就是唤醒属于"...... "领域的农民乌合之众。" #deepl:2701494178
+ sas_hostile_scheme_discovery.1002.fallback: "阴谋反对" #deepl:3376091286
+ sas_hostile_scheme_discovery.1002.a: "[owner.Custom('InsultAdjective')] 恶魔！" #deepl:2541491147
+
+ sas_hostile_scheme_discovery.2001.t: "一项计划[ROOT.Char.Custom('GetCourt')|U]" #deepl:3607653157
+ sas_hostile_scheme_discovery.2001.intro: "我的[spymaster.GetCouncilTitle] 带来了一个严重的消息。虽然我们还不知道是谁、" #deepl:4082077002
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "噩耗传来。虽然还不知道是谁" #deepl:3279496608
+ sas_hostile_scheme_discovery.2001.fallback: "有人暗算" #deepl:3932481048
+ sas_hostile_scheme_discovery.2001.rouse: "有人在唤醒属于 "阶级 "领域的农民乌合之众" #deepl:1810264608
+ sas_hostile_scheme_discovery.2001.target_other: "我的[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))],[target.GetTitledFirstName] ！" #deepl:3121120145
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]\n\n 他们不知道自己在和谁打交道，我的 。 他们以为可以杀了 我 ？我会给他们好看的。哦，是的，我会的。[ROOT.Char.GetLadyLord] #EMP #!" #deepl:4001813834
+ sas_hostile_scheme_discovery.2001.target_me: "我" #deepl:4031713392
+ sas_hostile_scheme_discovery.2001.a: "我们必须阻止幕后黑手！" #deepl:148308102
+
+ sas_hostile_scheme_discovery.3002.t: "发现计划" #deepl:385952488
+ sas_hostile_scheme_discovery.3002.desc: "我在[scheme.GetFullActionName] 的阴谋已被发现！\n\n 虽然我的参与还不为人所知，但这将大大增加我实现计划的难度。" #deepl:3976066101
+ sas_hostile_scheme_discovery.3002.a: "诅咒" #deepl:1623550253
+
+ sas_hostile_scheme_discovery.3003.t: "发现参与" #deepl:2924354761
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] 发现我是阴谋的幕后策划者" #deepl:1505803270
+ sas_hostile_scheme_discovery.3003.rouse: "唤醒属于[target.GetHerHim] 的农民乌合之众！" #deepl:2089024288
+ sas_hostile_scheme_discovery.3003.provoke: "以挑衅[target.GetHerHis] 诸侯！" #deepl:2832962550
+ sas_hostile_scheme_discovery.3003.smuggle: "走私属于[target.GetHerHim] 的文物！" #deepl:2229529354
+ sas_hostile_scheme_discovery.3003.plague: "在[target.GetHerHis] 领域传播瘟疫！" #deepl:44403764
+ sas_hostile_scheme_discovery.3003.fallback: "反对[target.GetHerHim] ！" #deepl:1408398656
+ sas_hostile_scheme_discovery.3003.a: "这一定是个误会！" #deepl:2938075201

@@ -1,0 +1,7 @@
+﻿l_french:
+ INTRIGUE_WINDOW_SPY_NETWORK: "Réseau d'espionnage" #deepl:1689171219
+ INTRIGUE_WINDOW_NO_SPIES: "Vous n'avez pas d'espions" #deepl:4182165397
+ OPEN_SPY_NETWORK_TAB: "Espions" #deepl:396918230
+
+ AGOT_SCHEME_AGENT_IS_MY_SPY: "Votre espion est-il : $VALUE|+0=$ ?" #deepl:1615455053
+ AGOT_SCHEME_IS_AGAINST_ILLEGITIMATE_HOUSE: "Contre la maison illégitime" #deepl:2381711688

@@ -1,0 +1,21 @@
+﻿l_simp_chinese:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "我就是死亡" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] 在离开很长时间后刚刚返回。看来[master_assassin_name.GetSheHe] 种植的污染物已经结出了果实。[master_assassin_name.GetSheHe|U] ，在该地区逗留了几天后才返回家中查看计划是否奏效，疾病迅速传播的消息很快传到了[master_assassin_name.GetHerHim] 当地市场。\n\n 谁也说不准[epidemic|E] 会从这里传播到多远的地方，但很明显，我们已经开始做一些我们现在无法控制的事情了。" #deepl:108591925
+ spread_plague_outcome.0001.a: "让它留下一片混乱！" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "宣布死亡来临" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] 在离开很长时间后刚刚返回。[master_assassin_name.GetSheHe] [master_assassin_name.GetSheHe|U] 在该地区逗留了几天后才回家查看计划是否奏效，疾病迅速蔓延的消息很快传到了[master_assassin_name.GetHerHim] 的当地市场。\n\n 不幸的是，[master_assassin_name.GetSheHe] 在出城途中被拦下，虽然[master_assassin_name.GetSheHe] 成功逃脱，但一些确凿证明我参与了阴谋的罪证却被丢弃并遗留了下来。" #deepl:1902814976
+ spread_plague_outcome.0002.a: "至少计划成功了！" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "讲究卫生" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] 在离开很长时间之后，他刚刚返回。[master_assassin_name.GetSheHe] [master_assassin_name.GetSheHe|U] 在该地区逗留了几天后才返回家乡，看看计划是否奏效，但[master_assassin_name.GetHerHim] 在当地的任何市场上都没有传出任何有关疾病的消息。\n\n 也许是我们的污染物太弱了，或者是施用得太保守了，谁也说不准。" #deepl:3939157326
+ spread_plague_outcome.0003.a: "下次他们就没这么幸运了" #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "未赠送的礼物" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] 在离开很长时间之后，他刚刚回来。[master_assassin_name.GetSheHe] [master_assassin_name.GetSheHe|U] 在该地区逗留了几天，然后才回家看看计划是否奏效，而[master_assassin_name.GetHerHim] 在当地的任何市场上都没有听到任何关于疾病的消息。\n\n也许是我们的污染物太弱了，或者是施用得太保守了，谁也说不准。\n\n 不幸的是，[master_assassin_name.GetSheHe] 在出城的路上被拦住了，虽然[master_assassin_name.GetSheHe] 成功逃脱，但一些确凿证明我参与了阴谋的罪证却被丢弃并遗留了下来。" #deepl:1196545157
+ spread_plague_outcome.0004.a: "这真是一场灾难" #deepl:4191637054

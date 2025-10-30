@@ -1,0 +1,11 @@
+﻿l_russian:
+ game_rule_category_sas: "Саботаж и уловки" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Начало криминального андерграунда" #deepl:511066023
+ setting_no_undergrounds: "Нет" #deepl:3312814158
+ setting_no_undergrounds_desc: "Дома, существующие в начале игры, не начинаются с [sas_spy_network|E] или криминального подполья." #deepl:3086919095
+ setting_fledgling_undergrounds: "Новые шпионские сети" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "Дома, существующие в начале игры, с главой, который одновременно контролирует графство и участвует в [administrative_government|E], начинаются с [sas_spy_network|E]." #deepl:2991418532
+ setting_full_undergrounds: "Мир преступлений" #deepl:2146549835
+ setting_full_undergrounds_desc: "Все дома, существующие в начале игры, начинаются с [sas_spy_network|E] и криминального подполья." #deepl:2266201805

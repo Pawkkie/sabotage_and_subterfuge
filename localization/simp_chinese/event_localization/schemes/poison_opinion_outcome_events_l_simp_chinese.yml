@@ -1,0 +1,35 @@
+﻿l_simp_chinese:
+ poison_opinion_outcome.1001.t: "毒药意见：机遇" #deepl:2824793747
+ poison_opinion_outcome.1001.desc: "在我试图将[target.GetTitledFirstNamePossessive] 的利益与[target.GetHerHis] 的利益对立起来的过程中，我发现了一个机会。我想我可以说，他们的目标实际上是截然相反的。当我口述我的下一封信时" #deepl:4201339416
+ poison_opinion_outcome.1001.a: "......我强调的是那些不相容的利益。" #deepl:360746116
+ poison_opinion_outcome.1001.a.success: "[target.GetFirstNameNoTooltip] 确信" #deepl:4019449334
+ poison_opinion_outcome.1001.a.failure: "[target.GetFirstNameNoTooltip] 看透我的努力" #deepl:1317759691
+ poison_opinion_outcome.1001.b: "......我尽量保持含蓄。" #deepl:3520019372
+
+ poison_opinion_outcome.1002.t: "毒药意见：宗教信仰" #deepl:3068132753
+ poison_opinion_outcome.1002.same_faith: "在我试图让[target.GetTitledFirstName] 与[target.GetHerHis] 陛下的利益保持一致的过程中，我有了一个想法。\n\n 如果论据充分，我也许能说服[target.GetHerHim] [target.GetSheHe] 不仅仅是为了[target.GetHerHis] 自己的利益，也是为了[ROOT.Char.GetFaith.HighGodNameAlternate] [ROOT.Char.GetFaith.HighGodHerselfHimself] 的利益！" #deepl:965859863
+ poison_opinion_outcome.1002.other_faith: "在我试图让[target.GetTitledFirstName] 与[target.GetHerHis] 郡主的利益保持一致的过程中，我有了一个想法。\n\n 也许我可以说，在力所能及的范围内，摆脱[target.GetLiege.GetFaith.Name] 统治的枷锁符合所有[target.GetFaith.GetAdherentNamePlural] 的利益？" #deepl:1318148979
+ poison_opinion_outcome.1002.a: "我相信我能提出一个非常有说服力的论点。" #deepl:878806595
+ poison_opinion_outcome.1002.b: "也许我应该保持外交礼节。" #deepl:2089916252
+
+ poison_opinion_outcome.1003.t: "毒药观点推动运气" #deepl:2598640233
+ poison_opinion_outcome.1003.desc: "读完[target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] 的最新来信后，我笑了--[target.GetSheHe] 似乎终于对[target.GetHerHis] liege 冷淡了。\n\n 虽然这是一次成功，但我很想利用这次机会，试图让他们离得更远..." #deepl:1850530888
+ poison_opinion_outcome.1003.a: "是时候考验一下我的外交技巧了！" #deepl:2787417524
+ poison_opinion_outcome.1003.a.success: "[target.GetSheHe|U] 更加有恃无恐" #deepl:4130052052
+ poison_opinion_outcome.1003.a.failure: "[target.GetSheHe|U] 误解" #deepl:3695719111
+ poison_opinion_outcome.1003.b: "这次胜利就足够了。" #deepl:3669306734
+
+ poison_opinion_outcome.2001.t: "毒药意见：误解" #deepl:2264483134
+ poison_opinion_outcome.2001.opening: "看来我对[target.GetTitledFirstName] 的外交姿态引起了很大的误会！我收到了一封信，信中明确表示[target.GetSheHe] 认为我一直在追求的目标完全不同..." #deepl:1789009900
+ poison_opinion_outcome.2001.not_interested_relation: "\n\n"我是你的[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))] ，看在[target.GetFaith.HighGodNamePossessive] 的份上！"" #deepl:3935174444
+ poison_opinion_outcome.2001.not_interested_romantically: "\n\n"虽然我受宠若惊 但我觉得你的兴趣对你这样的[ROOT.Char.GetWomanMan] "" #deepl:1590060400
+ poison_opinion_outcome.2001.not_interested_horses: "\n\n"不管你寄来多少奉承信，我都不会卖掉我的纯种马！"" #deepl:969794771
+ poison_opinion_outcome.2001.not_interested_toll_exemptions: "\n\n"无论你们承诺多少贸易，我都不能给予你们通行费豁免！"" #deepl:184694203
+ poison_opinion_outcome.2001.not_interested_friend: "\n\n"听起来你真正需要的是一个朋友，恐怕我不能成为你的朋友。不过，我可以建议你......"" #deepl:1460295060
+ poison_opinion_outcome.2001.not_interested_relics: "\n\n"我不会给你我的任何遗物 不管你为我祈祷多少次！"" #deepl:3476711187
+ poison_opinion_outcome.2001.end: "\n\n我不需要读下去就能明白。" #deepl:3287867042
+ poison_opinion_outcome.2001.a: "这是个天大的误会！" #deepl:2703424581
+
+ poison_opinion_outcome.2002.t: "毒药意见：邪恶的阴谋" #deepl:421660312
+ poison_opinion_outcome.2002.desc: ""我的[ROOT.Char.GetLadyLord] ！[target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] 已经结束了与你的所有谈话。"\n\n 把我突然产生的兴趣和来往信件的数量看作是邪恶计划的迹象，似乎[target.GetSheHe] 认为我在密谋反对[target.GetHerHim] ！" #deepl:3202853704
+ poison_opinion_outcome.2002.a: "我想，从某种意义上说，他们并没有错......" #deepl:513004656

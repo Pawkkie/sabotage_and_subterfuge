@@ -1,0 +1,18 @@
+﻿l_russian: 
+ sas_starter_spy_network_modifier: "Новая шпионская сеть" #deepl:4085502466
+ sas_starter_spy_network_modifier_desc: "Члены палаты представителей могут набирать [sas_spies|E] для своего сайта [sas_spy_network|E]." #deepl:3242081027
+
+ sas_establish_criminal_underground_house_modifier: "Созданное криминальное подполье" #deepl:1493896910
+ sas_establish_criminal_underground_house_modifier_desc: "Члены палаты имеют доступ к сайтам [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E] и [master_assassin_court_position|E] [court_positions|E] . Они также могут набирать [sas_spies|E] для своего [sas_spy_network|E]." #deepl:2452820577
+
+ sas_expand_spy_network_modifier: "Глава расширенной шпионской сети" #deepl:2107637170
+ sas_expand_spy_network_house_modifier: "Расширенная шпионская сеть" #deepl:3378507362
+ sas_expand_spy_network_house_modifier_desc: "Члены Дома могут набирать в два раза больше [sas_spies|E], а также могут набирать в свой [sas_spy_network|E] детей не моложе 8 лет.\n\n [sas_spies|E] могут украсть [innovations|E]. #weak (25 лет простоя).#!" #deepl:2775509273
+
+ sas_special_operations_training_house_modifier: "Обучение специальным операциям" #deepl:3167735659
+ sas_special_operations_training_house_modifier_desc: "Члены палаты представителей могут нанять [intrigue|E] на основе [court_positions|E] бесплатно.\n\n [sas_spies|E] , а также [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E], и [master_assassin_court_position|E] [court_positions|E] с большей вероятностью присоединятся к вашему [hostile_schemes|E] как [agents|E]." #deepl:3266661613
+ SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND: "Я часть вашего преступного подполья: $VALUE|=+0$" #deepl:1487660810
+ special_operations_training_court_position_modifier: "Обучение специальным операциям" #deepl:3167735659
+
+ sas_house_of_sabotage_and_subterfuge_modifier: "Дом саботажа и ухищрений" #deepl:535697053
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "Дом саботажа и ухищрений Desc" #deepl:717491357

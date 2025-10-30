@@ -1,0 +1,6 @@
+﻿l_korean:
+ INTRIGUE_WINDOW_MY_SPIES_TITLE: "[sas_spies|E] 당신의 [sas_spy_network|E]" #deepl:3897218222
+ INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T  [sas_spies|E]#!  최대값은 귀하와 귀하의 합계의 5분의 1로 계산된 , 반올림. 스파이 네트워크 확장 결정에 따라 두 배가 됩니다.\n [intrigue|E] [spymaster|E]" #deepl:583737040
+ INTRIGUE_WINDOW_DISMISS: "해지" #deepl:1713405472
+ INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T #!\n    삭제하기\n [Character.GetTitledFirstName] [sas_spy_network|E]" #deepl:3130473183
+ SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]" #deepl:794553844

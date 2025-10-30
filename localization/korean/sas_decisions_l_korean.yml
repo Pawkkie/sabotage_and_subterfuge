@@ -1,0 +1,90 @@
+﻿l_korean:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "스파이 네트워크 확장" #deepl:1918218917
+ sas_expand_spy_network_decision_desc: "거미가 거미줄을 확장하는 유일한 두 가지 방법은 거미줄을 짜는 데 더 많은 시간을 할애하거나 더 많은 거미를 참여시키는 것입니다. 저희( [sas_spy_network|E] )의 시작은 미약했지만 성공적이었지만, 앞으로 더 많은 지배자들을 얽어매고 그들의 가장 가까운 비밀을 활용하여 우리의 영역을 더욱 넓힐 수 있을 것입니다." #deepl:2680910805
+ sas_expand_spy_network_decision_tooltip: "[sas_spy_network|E] 수와 능력을 키우세요" #deepl:1080571400
+ sas_expand_spy_network_decision_confirm: "거미줄이 커집니다!" #deepl:2491328231
+ sas_expand_spy_network_double_spies.tt: "두 배의 인원을 고용할 수 있습니다. [sas_spies|E]" #deepl:3951820473
+ sas_expand_spy_network_child_spies.tt: "8세 이상의 어린이를 다음과 같이 고용할 수 있습니다. [sas_spies|E]" #deepl:594091579
+ sas_expand_spy_network_innovation_spies.tt: "[sas_spies|E] 거주지 법원에서 시민 또는 군인 [innovations|E] 을 훔칠 수 있습니다 #weak (25년 재사용 대기시간).#!" #deepl:2062950662
+ sas_expand_spy_network_have_enough_spies_tt: "최소 3명의 직원을 고용하고 있습니다. [sas_spies|E]" #deepl:769462268
+ sas_expand_spy_network_have_paid_spies_tt: "다음에서 [secrets|E] 3개 이상 구매했습니다. [sas_spies|E]" #deepl:4061259209
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "범죄 지하 조직 설립" #deepl:1225823486
+ sas_establish_criminal_underground_decision_desc: "모든 카드를 테이블 위에 올려놓는 것도 분명 통치하는 한 가지 방법이지만, 국제 외교에서는 에이스 한두 개를 소매 속에 숨겨두는 것이 확실히 더 쉽습니다. 꼭두각시가 될 수 있는데 왜 예의와 예의의 끈에 매달릴 필요가 있을까요?" #deepl:1579221697
+ sas_establish_criminal_underground_decision_tooltip: "법원에서 다양한 악당과 [sas_spies|E] 고용을 장려하세요." #deepl:3565047867
+ sas_establish_criminal_underground_decision_confirm: "어둠 속에서 춤을 추자!" #deepl:764817339
+ sas_establish_criminal_underground_spy_network.tt: "[sas_spies|E] 을 사용할 수 있는 기능을 잠금 해제합니다. [sas_spy_network|E]" #deepl:417099671
+ sas_establish_criminal_underground_rabble_rouser.tt: "[rabble_rouser_court_position|E] 법원 위치 잠금 해제" #deepl:3231636541
+ sas_establish_criminal_underground_femme_fatale.tt: "[femme_fatale_court_position|E] 법원 위치 잠금 해제" #deepl:4153819485
+ sas_establish_criminal_underground_smuggler.tt: "[smuggler_court_position|E] 법원 위치 잠금 해제" #deepl:1659450848
+ sas_establish_criminal_underground_master_assassin.tt: "[master_assassin_court_position|E] 법원 위치 잠금 해제" #deepl:2159838119
+ ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "집 [CHARACTER.GetHouse.GetName|U] 은 범죄 지하 조직을 설립했습니다." #deepl:134357733
+ NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "집 [CHARACTER.GetHouse.GetName|U] 범죄 지하를 설립하지 않았습니다." #deepl:2261484798
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "특수 작전 교육" #deepl:3167735659
+ sas_special_operations_training_decision_desc: "어둠 속에서 살아남기 위해서는 적응이 중요합니다. 지하에서 지식을 공유하는 데 집중함으로써 우리 요원들은 자신의 기술을 숙달하고, 매우 꼼꼼한 수입원을 찾아내는 데 더욱 자급자족할 수 있으며, 영향력을 확대할 수 있습니다." #deepl:3538227294
+ sas_special_operations_training_decision_tooltip: "범죄자 교육 및 [sas_spies|E] 에 더 자신감 있게 참여하기 위해 [hostile_schemes|E]" #deepl:3991151590
+ sas_special_operations_training_decision_confirm: "어둠 속에서 더 많은 칼!" #deepl:3972594294
+ sas_special_operations_completed_hostile_schemes_tt: "3개 이상 완료했습니다. [hostile_schemes|E]" #deepl:2270300827
+ sas_special_operations_have_enough_spies_tt: "최소 3명의 직원을 고용하고 있습니다. [sas_spies|E]" #deepl:769462268
+ sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] 기준 [court_positions|E] 급여 없음" #deepl:647631714
+ sas_special_operations_training_spies_likely_to_join_schemes.tt: "[sas_spies|E] 님은 [hostile_schemes|E] 으로 가입할 가능성이 높습니다. [agents|E]" #deepl:2830788156
+ sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "귀하의 [rabble_rouser_court_position|E] 는 [hostile_schemes|E] 으로 가입할 가능성이 높습니다. [agent|E]" #deepl:1181319785
+ sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "귀하의 [femme_fatale_court_position|E] 는 [hostile_schemes|E] 으로 가입할 가능성이 높습니다. [agent|E]" #deepl:2788309644
+ sas_special_operations_training_smuggler_likely_to_join_schemes.tt: "귀하의 [smuggler_court_position|E] 는 [hostile_schemes|E] 으로 가입할 가능성이 높습니다. [agent|E]" #deepl:1165184473
+ sas_special_operations_training_master_assassin_likely_to_join_schemes.tt: "귀하의 [master_assassin_court_position|E] 는 [hostile_schemes|E] 으로 가입할 가능성이 높습니다. [agent|E]" #deepl:2916929945
+
+ # House of Sabotage and Subterfuge
+ sas_house_of_sabotage_and_subterfuge_decision: "사보타주와 교란의 집" #deepl:346655493
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "사보타주와 교란술의 집" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_tooltip: "집안의 방해와 교란의 유산을 굳히세요." #deepl:3420083984
+ sas_house_of_sabotage_and_subterfuge_decision_confirm: "우리는 그림자와 하나입니다!" #deepl:1602826360
+ sas_house_of_sabotage_and_subterfuge_schemes_tt: "8개 이상 완료했습니다. [hostile_schemes|E]" #deepl:2029350009
+ sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "최소 8명 이상의 직원을 고용하고 있습니다. [sas_spies|E]" #deepl:2404724051
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "획득 @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] [hostile_schemes|E]" #deepl:421351319
+ sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "[sas_spies|E] 에서 비밀과 혁신을 발견할 가능성을 높이세요." #deepl:4182569517
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "말레팩터 모집" #deepl:1281019616
+ sas_recruit_malefactor_decision_desc: "지하 범죄 조직이 잘 운영되려면 많은 사람의 손길이 필요합니다. 나는 내 하인들을 널리 파견하여 더 중요한 공석에 적합한 후보자를 찾아야 한다." #deepl:1735662004
+ sas_recruit_malefactor_decision_tooltip: "\n\n #weak  예를 들어, 범죄자 지하와 관련된 [court_position|E] 을 채울 캐릭터를 검색할 수 있습니다. [GetCourtPositionType('rabble_rouser_court_position').GetName]#!" #deepl:790010884
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "포지션 유형 선택" #deepl:3489192501
+ sas_recruit_malefactor_decision_confirm: "확인" #deepl:3524355688
+ sas_recruit_court_position_decision_tt: "선택한 후보자 중에서 선택할 수 있는 두 가지 적합한 후보가 제공됩니다. [court_position|E]" #deepl:3036663020
+
+ # Rabble Rouser
+ hire_rabble_rouser: "래블 루저 검색" #deepl:2458077144
+ hire_rabble_rouser_tooltip: "하인이 다음 직책에 적합한 후보를 여러 명 추천할 것입니다. [GetCourtPositionType('rabble_rouser_court_position').GetName()]" #deepl:1614552482
+ hire_rabble_rouser_desc: "[rabble_rouser_court_position|E] 다른 영역에서 문제를 일으키거나 우리 영역에서 민중을 만족시키는 것이 중요합니다. 내 신하들에게 적합한 후보를 많이 추천해 달라고 부탁하겠소." #deepl:1136401803
+ #  hire_rabble_rouser_decision_effect_tooltip: "[GetCourtPositionType('rabble_rouser_court_position').GetName()] 후보자 그룹이 표시되며, 이 중 한 명을 수수료와 월급을 받고 고용할 수 있습니다." #deepl:1865841153
+ #  hire_rabble_rouser_decision_confirm: "검색 시작하기" #deepl:2082362254
+ recruit_rabble_rouser_cooldown_tt: "[GetCourtPositionType('rabble_rouser_court_position').GetName] 모집은 재사용 대기 시간 중입니다. [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]" #deepl:1478339175
+
+ # Femme Fatale
+ hire_femme_fatale: "팜므파탈 검색" #deepl:102309862
+ hire_femme_fatale_tooltip: "하인이 다음 직책에 적합한 후보를 여러 명 추천할 것입니다. [GetCourtPositionType('femme_fatale_court_position').GetName()]" #deepl:890583249
+ hire_femme_fatale_desc: "[femme_fatale_court_position|E] 은 음지에서 법원을 통제할 수 있는 수단을 제공합니다. 내 신하들에게 적합한 후보자를 많이 추천해 달라고 부탁하겠습니다." #deepl:1767789142
+ #  hire_femme_fatale_decision_effect_tooltip: "[GetCourtPositionType('femme_fatale_court_position').GetName()] 후보자 그룹이 표시되며, 이 중 한 명을 수수료와 월급을 받고 고용할 수 있습니다." #deepl:1223492537
+ #  hire_femme_fatale_decision_confirm: "검색 시작하기" #deepl:2082362254
+ recruit_femme_fatale_cooldown_tt: "[GetCourtPositionType('femme_fatale_court_position').GetName] 모집은 재사용 대기 시간 중입니다. [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]" #deepl:2298014581
+
+ # Smuggler
+ hire_smuggler: "밀수업자 검색" #deepl:3552251679
+ hire_smuggler_tooltip: "하인이 다음 직책에 적합한 후보를 여러 명 추천할 것입니다. [GetCourtPositionType('smuggler_court_position').GetName()]" #deepl:3568294823
+ hire_smuggler_desc: "[smuggler_court_position|E] 을 통해 우리는... 다른 사람의 손아귀에서 유물을 해방시킬 수 있습니다. 내 신하들에게 적합한 후보자를 많이 추천해 달라고 부탁하겠소." #deepl:4196276537
+ #  hire_smuggler_decision_effect_tooltip: "[GetCourtPositionType('smuggler_court_position').GetName()] 후보자 그룹이 표시되며, 이 중 한 명을 수수료와 월급을 받고 고용할 수 있습니다." #deepl:2197764143
+ #  hire_smuggler_decision_confirm: "검색 시작하기" #deepl:2082362254
+ recruit_smuggler_cooldown_tt: "[GetCourtPositionType('smuggler_court_position').GetName] 모집은 재사용 대기 시간 중입니다. [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]" #deepl:40422166
+
+ # Master Assassin
+ hire_master_assassin: "마스터 어쌔신 검색" #deepl:3609033881
+ hire_master_assassin_tooltip: "하인이 다음 직책에 적합한 후보를 여러 명 추천할 것입니다. [GetCourtPositionType('master_assassin_court_position').GetName()]" #deepl:2161765423
+ hire_master_assassin_desc: "[master_assassin_court_position|E] 적의 영역에서 주요 위협을 제거하고 전염병을 퍼뜨릴 수 있는 잠재적 인물을 제거하십시오. 내 신하들에게 적합한 후보를 많이 추천해 달라고 부탁하겠소." #deepl:2501111060
+ #  hire_master_assassin_decision_effect_tooltip: "[GetCourtPositionType('master_assassin_court_position').GetName()] 후보자 그룹이 표시되며, 이 중 한 명을 수수료와 월급을 받고 고용할 수 있습니다." #deepl:1797626658
+ #  hire_master_assassin_decision_confirm: "검색 시작하기" #deepl:2082362254
+ recruit_master_assassin_cooldown_tt: "[GetCourtPositionType('master_assassin_court_position').GetName] 모집은 재사용 대기 시간 중입니다. [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]" #deepl:255274636

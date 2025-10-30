@@ -1,0 +1,18 @@
+﻿l_russian: 
+ county_rabble_roused_modifier: "Разбушевавшийся" #deepl:2416044267
+ county_rabble_roused_modifier_desc: "Крестьянский сброд восстал против своего сеньора" #deepl:4173438114
+ rabble_roused_against_me: "Недавно вы имели дело с Roused Rabble" #deepl:2758601433
+ roused_rabble_war_lost_county_modifier: "Повышенная автономность" #deepl:1597784654
+ provoked_independence_character_modifier: "Спровоцированная на независимость фракция" #deepl:410340774
+ provoked_dissolution_character_modifier: "Спровоцированный на распад фракции" #deepl:2545846333
+
+ mortal_adoration_martial_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_martial_gain_desc: "Вы всегда можете рассчитывать на хороший совет от любимого человека." #deepl:3722719594
+ mortal_adoration_diplomacy_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_diplomacy_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_intrigue_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_intrigue_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_stewardship_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_stewardship_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_learning_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_learning_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723

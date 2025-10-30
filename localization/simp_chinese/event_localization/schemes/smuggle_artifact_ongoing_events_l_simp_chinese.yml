@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ smuggle_artifact_event_title: "走私文物：" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ 古籍" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "#! 取回文物的一个明显障碍是[target.GetTitledFirstNamePossessive] 古董，[antiquarian.GetTitledFirstName] 。\n\n 当然，有多种方法可以......#EMP ，但我不知道[antiquarian.GetFirstNameNoTooltip] ，我是否可以通过提供适当的贿赂来说服他睁一只眼闭一只眼。" #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "黄金是贿赂的通用语言。" #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "您相信[antiquarian.GetTitledFirstNamePossessive] 忠诚可以用财富来收买..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "也许是以文物换文物？" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] 会同意平价 "交易"。" #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "[random_beauty.GetTitledFirstName] 的介绍可能会证明......#EMP 刺激#! 。" #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "你是在赌[antiquarian.GetTitledFirstName] 欣赏外表美丽胜过忠诚。" #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "我会考虑其他可能性。" #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] 接受贿赂" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] 拒绝贿赂" #deepl:1499978674

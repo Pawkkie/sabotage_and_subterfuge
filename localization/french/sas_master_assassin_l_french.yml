@@ -1,0 +1,5 @@
+﻿l_french: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "Propager la peste" #deepl:4245244667
+ master_assassin_task_spread_plague_desc: "Semez [epidemic|E] dans la cour d'un personnage, en essayant de l'infecter tout en renforçant votre propre résistance." #deepl:1616301097
+ allow_spread_plague_scheme_tt: "Peut utiliser le site [spread_plague_scheme|E]. Cette tâche doit être active pour démarrer et poursuivre le programme." #deepl:2097629515

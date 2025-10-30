@@ -1,0 +1,30 @@
+﻿l_simp_chinese:
+ roused_rabble_faction_started_tt: "乌合之众将建立一个农民[faction|E] ，并在明年左右起义。您会在起义开始前收到消息。" #deepl:895772584
+
+ ## Success and secret
+ rouse_rabble_outcome.0001.t: "来自国外的低语" #deepl:3047973896
+ rouse_rabble_outcome.0001.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们用低沉的语调与我的臣子们谈论他们在[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的农民中看到的熊熊燃烧的叛乱火焰。\n\n 似乎没有人知道是什么让他们突然变得如此大胆，但起义似乎不可避免，[target.GetShortUIName] 几乎没有察觉。我们的努力完全奏效！" #deepl:3390693042
+ rouse_rabble_outcome.0001.a: "让他们的火焰熊熊燃烧！" #deepl:1790369756
+ rouse_rabble_outcome.0001.prog: "您和您的[rabble_rouser|E] 向[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] 迈进[trait|E]" #deepl:2576651623
+
+ ## Success and discovered
+ rouse_rabble_outcome.0002.t: "来自国外的猜疑" #deepl:3269684831
+ rouse_rabble_outcome.0002.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们用低沉的语调谈论着他们在[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的农民身上看到的熊熊燃烧的叛乱火焰。\n\n 他们不停地偷瞄我的方向，目光中充满了憎恶。是什么让他们突然变得如此胆大妄为，这并不神秘，但起义似乎不可避免，[target.GetShortUIName] 怒不可遏。" #deepl:1463922575
+ rouse_rabble_outcome.0002.a: "让他们的火焰熊熊燃烧！" #deepl:1790369756
+
+ ## Unsuccessful and secret
+ rouse_rabble_outcome.0003.t: "未被唤醒的心" #deepl:3841976415
+ rouse_rabble_outcome.0003.desc: "最近，我的宫廷里来了一位客人，他是一位穿越大陆、寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们谈论[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的农民，以及他们在逆境中加倍的爱国主义精神。\n\n 尽管我们竭尽全力，但农民们还是满足于他们的生活。" #deepl:556202482
+ rouse_rabble_outcome.0003.a: "至少，现在..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ rouse_rabble_outcome.0004.t: "淬炼心灵" #deepl:3138284672
+ rouse_rabble_outcome.0004.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们谈论[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的农民，以及他们在逆境中加倍的爱国主义。\n\n 他们不停地偷瞄我的方向，目光中充满了厌恶。我企图驱使他们造反，这一点也不神秘，[target.GetShortUIName] 怒不可遏。" #deepl:2395136914
+ rouse_rabble_outcome.0004.a: "我们最终会得到它们的！" #deepl:1078680228
+
+ ## Gained Reveler trait
+ rouse_rabble_outcome.0005.t: "唤醒灵魂" #deepl:3339457466
+ rouse_rabble_outcome.0005.desc: "谁能想到，为公众加油鼓劲会如此振奋人心？有吃、有喝、有欢呼......普通人互相照顾，团结起来反抗压迫感。\n\n 我也许是出于其他动机开始这项计划的，但人民的困境已成为我的动力！" #deepl:4271649516
+ rouse_rabble_outcome.0005.a: "我期待着下次见面时向他们敬酒！" #deepl:3505615210
+ rouse_rabble_outcome.0005.b: "我真的应该保持距离......" #deepl:2837144994
+

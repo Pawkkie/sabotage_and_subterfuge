@@ -1,0 +1,14 @@
+﻿l_russian:
+ provoke_vassals_supplied_weaponry: "Поставляемое оружие" #deepl:3599795622
+ provoke_vassals_supplied_provisions: "Поставляемые предметы" #deepl:882891120
+
+ provoke_vassals_stifling: "Удушающий вассалитет" #deepl:773364300
+ provoke_vassals_meritorious: "Заслуженный вассал" #deepl:3890241118
+
+ provoke_vassals_attempt_assassination: "Покушение на убийство в рамке" #deepl:3152209219
+ provoke_vassals_failed_attempt_assassination: "Неудавшееся подставное покушение" #deepl:137322991
+
+ provoke_vassals_looks_tired: "Льеж выглядит уставшим" #deepl:3010816921
+ provoke_vassals_looks_competent: "Льеж выглядит компетентным" #deepl:2719656846
+
+ attempted_to_provoke_vassals: "Попытка спровоцировать вассалов" #deepl:191470277

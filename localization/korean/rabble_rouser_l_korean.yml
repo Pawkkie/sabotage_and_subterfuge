@@ -1,0 +1,28 @@
+﻿l_korean:
+ # Court Position
+ rabble_rouser_court_position: "래블 루저" #deepl:63230416
+ rabble_rouser_court_position_desc: "난동을 부리고 싶어 하는 래블 루저는 적절한 군중과 어울려 그들을 선동하는 데 능숙합니다. 다른 왕국으로 이동하여 농민 반란이나 가신 반란을 선동하거나 집에 머물며 자신의 우수성을 널리 알릴 수 있습니다." #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$ [GetScheme('rouse_rabble').GetTypeName] 및  s에 대한 액세스를 허용할 수 있습니다. [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E]" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "루즈 래블" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "다른 궁정의 폭도들을 자극하여 농민 폭동과 잠재적으로 전면적인 반란을 일으킬 수 있습니다." #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "[rouse_rabble_scheme|E]\n[GetScheme('rouse_rabble').GetTypeName]   :   +0% ~  +20% ( 기준 ) [scheme|E] [success_chance|E]\n@scheme_success_icon!#P #! @scheme_success_icon!#P #! [aptitude|E]" #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "가신 도발" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "다른 왕실의 가신들을 자극하여 여론을 낮추고 잠재적으로 전면적인 반란을 일으킬 수 있습니다." #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "[provoke_vassals_scheme|E]\n[GetScheme('provoke_vassals').GetTypeName]   :   +0% ~  +20% ( 기준 ) [scheme|E] [success_chance|E]\n@scheme_success_icon!#P #! @scheme_success_icon!#P #! [aptitude|E]" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "대중을 달래기" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "궁정의 농민들에게 그들의 부지가 좋고 편안하다고 격려하여 반란의 가능성을 줄이세요." #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "적 [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "적 [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:1094715817

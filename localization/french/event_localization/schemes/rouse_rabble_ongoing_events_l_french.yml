@@ -1,0 +1,69 @@
+﻿l_french:
+ # Invited to a feast
+ rouse_rabble_ongoing.0001.t: "Invités à un festin" #deepl:1441220718
+ rouse_rabble_ongoing.0001.desc: "Un aîné à la tête d'une grande famille de paysans dans la périphérie rurale de [target_title.GetNameNoTier] a invité [rouser_name.GetShortUIName] à un festin célébrant une fête locale. Lorsque [rouser_name.GetShortUIName] a fait savoir qu'il était reconnaissant de l'offre et qu'il écrirait à son employeur pour l'informer d'un retour tardif, l'invitation a été étendue, à mon insu, à moi.\n\n Ces paysans n'ont aucune idée que je suis impliqué dans cette affaire et ma présence pourrait être un choc pour eux... mais aussi une forte démonstration de soutien à leur cause, surtout si nous nous asseyons autour d'un repas en tant qu'égaux." #deepl:2676334559
+ rouse_rabble_ongoing.0001.a: "Je me joindrai aux festivités" #deepl:2695719965
+ rouse_rabble_ongoing.0001.b: "J'enverrai un cadeau" #deepl:3810044038
+ rouse_rabble_ongoing.0001.c: "Je ne devrais pas m'impliquer" #deepl:1759156705
+
+ # The liege sends relief
+ rouse_rabble_ongoing.0002.t: "Le Liège envoie de l'aide" #deepl:2093183175
+ rouse_rabble_ongoing.0002.desc: "[rouser_name.GetShortUIName] m'a informé qu'un incendie s'est récemment propagé dans certaines localités rurales [target_title.GetNameNoTier], brûlant un grenier à blé et les bâtiments avoisinants. Cette situation a gravement compromis l'approvisionnement alimentaire des paysans.\n\n [target.GetShortUIName] a ordonné l'envoi de secours dans la région touchée sous la forme de nourriture et de matériaux de construction. Offrir notre soutien favoriserait la bonne volonté mais stabiliserait les masses... Peut-être devrions-nous plutôt engager des mercenaires pour intercepter et détruire les livraisons en cours de route ?\n\n C'est peut-être aller trop loin..." #deepl:1680985283
+ rouse_rabble_ongoing.0002.a: "Intercepter la livraison" #deepl:1927831992
+ rouse_rabble_ongoing.0002.b: "Approuver la livraison" #deepl:2208938163
+ rouse_rabble_ongoing.0002.c: "On verra bien ce qui se passera" #deepl:4098838832
+
+ # Connecting with the youth
+ rouse_rabble_ongoing.0003.t: "Se connecter avec les jeunes" #deepl:2985966255
+ rouse_rabble_ongoing.0003.desc: "Il semble que l'on ait demandé à [rouser_name.GetShortUIName] d'aider à organiser une foire pour la jeunesse paysanne locale ! Il y a tout un après-midi à occuper avec une activité quelconque.\n\n Les jeunes d'aujourd'hui sont les révolutionnaires de demain. Je me demande si ce n'est pas l'occasion de semer les graines qui nous seront le plus utiles ?" #deepl:2713189345
+ rouse_rabble_ongoing.0003.a: "Organiser une bataille simulée" #deepl:146267889
+ rouse_rabble_ongoing.0003.b: "Organiser un tournoi de chasse" #deepl:991081673
+ rouse_rabble_ongoing.0003.c: "Organiser un atelier sur les échanges culturels" #deepl:2194861974
+
+ # Staging a protest
+ rouse_rabble_ongoing.0004.t: "Organiser une manifestation" #deepl:2463182722
+ rouse_rabble_ongoing.0004.desc: "J'ai lu récemment un roman dans lequel les personnages, de riches nobles, se déguisaient pour se fondre dans la masse paysanne.\n\n Il m'est venu à l'esprit que nous pourrions faire la même chose à [target_title.GetNameNoTier], et envoyer quelques membres de notre cour pour organiser une manifestation pacifique, qui pourrait devenir violente au fur et à mesure qu'elle se développe." #deepl:3630176459
+ rouse_rabble_ongoing.0004.a: "Faisons tanguer le bateau" #deepl:4217286068
+ rouse_rabble_ongoing.0004.b: "Il est peut-être préférable de laisser cette question à la fiction" #deepl:726165040
+
+ # A rowdy tavern
+ rouse_rabble_ongoing.0005.t: "Une taverne turbulente" #deepl:226345630
+ rouse_rabble_ongoing.0005.desc: "Je me suis rendu en secret dans une taverne de la région de [target_title.GetNameNoTier] où travaille [rouser_name.GetShortUIName] pour obtenir une mise à jour de [rouser_name.GetHerHim]. La taverne était bondée et bruyante, bouillonnante comme un chaudron de sorcière\n\n Une voix s'élève au-dessus de la cacophonie, celle d'un soldat du royaume trop plongé dans ses tasses, s'adressant à la paysannerie. Des grondements de mécontentement parcourent le groupe, mais aucun n'est prêt à s'approcher de lui." #deepl:960826830
+ rouse_rabble_ongoing.0005.a: "Se lever et l'assommer" #deepl:1867440387
+ rouse_rabble_ongoing.0005.b: "Ajouter de l'eau au moulin des mécontents" #deepl:954247850
+ rouse_rabble_ongoing.0005.c: "Aider le soldat à rentrer chez lui" #deepl:131614521
+ rouse_rabble_ongoing.0005.d: "Sirotez votre boisson et observez" #deepl:1953099562
+
+ # An interesting missive
+ rouse_rabble_ongoing.0006.t: "Une missive intéressante" #deepl:4215557738
+ rouse_rabble_ongoing.0006.desc: "J'ai reçu une lettre de, incroyablement, [target.GetShortUIName]. Le ton est flatteur et cordial, celui d'un souverain qui prend des nouvelles de ses contemporains [target.GetHerHis].\n\n Ce qui est intéressant, c'est la fin. Il semble que [target.GetSheHe] soit confronté à une certaine agitation de la part de la paysannerie et qu'il me demande mon avis sur la meilleure façon de procéder. Il est clair que je ne suis pas soupçonné, mais cela pourrait représenter une opportunité." #deepl:640877473
+ rouse_rabble_ongoing.0006.a: "Les écraser" #deepl:2237847967
+ rouse_rabble_ongoing.0006.b: "Donnez-leur un peu de mou" #deepl:693808399
+
+ # A Costly Suggestion
+ rouse_rabble_ongoing.0007.t: "Une suggestion coûteuse" #deepl:869688950
+ rouse_rabble_ongoing.0007.desc: "Un agent m'a récemment suggéré qu'il serait prudent d'essayer de mener la rébellion paysanne par l'exemple. Il s'agit d'utiliser notre royaume comme un phare brillant de ce que les paysans du monde devraient aspirer à réaliser pour eux-mêmes. [rouser_name.GetShortUIName] peut alors utiliser notre bonne grâce comme une preuve concrète que le changement est possible.\n\n Cela n'est pas sans coût, car nous devons évidemment changer la façon dont nous interagissons avec les masses nous-mêmes. Cela en vaut-il la peine ?" #deepl:2964475064
+ rouse_rabble_ongoing.0007.a: "Réduire leurs impôts" #deepl:96913909
+ rouse_rabble_ongoing.0007.b: "Réduire leurs prélèvements" #deepl:26427300
+ rouse_rabble_ongoing.0007.c: "Donnez-leur du temps libre" #deepl:874460699
+ rouse_rabble_ongoing.0007.d: "Ciel non !" #deepl:162677040
+
+ # Who's the rouser
+ rouse_rabble_ongoing.0008.t: "Qui est le rabatteur ici ?" #deepl:1707284294
+ rouse_rabble_ongoing.0008.desc: "Blasphème ! Malarky ! Quelle idée stupide et apocalyptique ! D'où vient cette suggestion, je ne comprends pas du tout ce qu'ils pensent !\n\n Je suppose que [rouser_name.GetShortUIName] est le professionnel ici, mais vraiment ? VRAIMENT ! Ce genre de pedigree lui donne-t-il vraiment une perspective unique qui lui permet de voir le bien-fondé d'idées comme celle-ci ?\n\n Je ne peux pas comprendre, mais nous devons quand même décider d'un plan d'action." #deepl:564414791
+ rouse_rabble_ongoing.0008.a: "Ils savent ce qu'ils font" #deepl:3356801487
+ rouse_rabble_ongoing.0008.b: "Je passe outre à cette absurdité" #deepl:1872803170
+ rouse_rabble_ongoing.0008.c: "Je suis sûr que nous pouvons trouver un compromis" #deepl:730623529
+
+ # Crossing the border
+ rouse_rabble_ongoing.0009.t: "Pris en flagrant délit de franchissement de la frontière" #deepl:2951116650
+ rouse_rabble_ongoing.0009.desc: "En traversant la frontière avec [target_title.GetNameNoTier], [rouser_name.GetShortUIName] est tombé sur un coup de malchance sous la forme d'une patrouille de soldats errant dans la campagne.\n\n Ils font signe à [rouser_name.GetHerHim] de s'approcher, non pas de manière urgente ou malveillante, mais avec un air de curiosité hésitante. Il s'agit d'une partie reculée de la région, et les passants sont très rares.\n\n Il n'est pas totalement inhabituel que des gens se promènent dans la région, mais c'est suffisamment rare pour laisser une impression sur les soldats si la situation n'est pas gérée avec tact." #deepl:4133707670
+ rouse_rabble_ongoing.0009.a: "Mentir sur l'objectif" #deepl:3028399027
+ rouse_rabble_ongoing.0009.b: "Conversation décontractée" #deepl:2801380731
+ rouse_rabble_ongoing.0009.c: "Proposer un pot-de-vin" #deepl:1256381302
+
+ # Burning too bright
+ rouse_rabble_ongoing.0010.t: "Les flammes brûlent trop fort" #deepl:1391488323
+ rouse_rabble_ongoing.0010.desc: "La mobilisation de la paysannerie à [target_title.GetNameNoTier] semble aller bon train... peut-être un peu trop.\n\n Il est évident que leur ferveur risque de s'étendre à d'autres régions, dont la nôtre n'est pas la moindre.\n\n Nous pouvons utiliser notre personnel à l'intérieur pour essayer de calmer un peu la situation, mais cela aura des conséquences." #deepl:4227841483
+ rouse_rabble_ongoing.0010.a: "Encourager l'intensité" #deepl:3207464489
+ rouse_rabble_ongoing.0010.b: "Se détendre" #deepl:1458867344

@@ -1,0 +1,99 @@
+﻿l_simp_chinese:
+ # Roused Rabble
+ roused_rabble_faction: "咆哮的暴民派别" #deepl:256557288
+ roused_rabble_faction_desc: "Roused Rabble[faction|E] 由农民组成，他们被一位火热的革命者的话所鼓舞，决定是时候在战场上直接向他们的领袖提出控诉了。" #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "想要扰乱陛下的行动" #deepl:3702182374
+ roused_rabble_faction_every_county: "每个[faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "提升[new_title.GetAdjective] [army|E] ，提升比例与其[levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "致[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "我们被你们的压迫性法律压得太久了。我们受够了！\n\n 一旦你们的国库干涸，你们的储藏室空空如也，你们就会希望能更公平地对待我们。" #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "我想我可以批准税收留置权......" #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "从来没有农民的命运就是为他们的主人服务！" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "愤怒的咆哮" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "愤怒的暴民起义" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "[rouse_rabble_scheme|E] 的目标： $VALUE|0+=$" #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "Roused Rabble 准备摇滚..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "我得到消息，我们前段时间唤起的乌合之众已基本完成准备工作，将在四个月后向首都发起战斗。\n\n 我相信他们会造成一些破坏，并有可能煽动一些真正的变革，但我相信还有时间让天平倾向于他们..." #deepl:1060245800
+ sas_faction_demand.1003.a: "我坚定不移地支持他们！" #deepl:521539079
+ sas_faction_demand.1003.b: "我们可以增加一些筹码。" #deepl:2408571671
+ sas_faction_demand.1003.c: "我想我们可以腾出一些金币..." #deepl:3331857853
+ sas_faction_demand.1003.d: "他们自己会没事的。" #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "现在是时候开拍了！" #deepl:439050973
+ sas_faction_demand.1004.desc: "最后，我得到消息，被我们鼓动叛乱的那群乌合之众已经准备好冲锋陷阵了。\n\n 我通过小道消息听说了[peasant_leader.GetShortUIName] 的好话，希望[peasant_leader.GetSheHe] 能带领他们取得胜利！" #deepl:2802403918
+ sas_faction_demand.1004.a: "也许我们可以利用这种情况..." #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "乌合之众大获全胜" #deepl:3605552638
+ sas_faction_demand.1005.desc: "我们支持的乌合之众在提高生活水平的革命中取得了胜利！这应该会极大地阻碍他们的陛下进一步发展王国，让他们得到一些应得的松懈。" #deepl:449688228
+ sas_faction_demand.1005.a: "我希望能有更好的结果" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "乌合之众》实现收支平衡" #deepl:1625263356
+ sas_faction_demand.1006.desc: "我们支持的乌合之众在革命中为提高生活水平赢得了白色和平！也许，这在一定程度上破坏了该地区的稳定，人际关系可能需要一段时间才能恢复。" #deepl:4055594033
+ sas_faction_demand.1006.a: "希望不要太快" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "乌合之众被击败" #deepl:735846347
+ sas_faction_demand.1007.desc: "我们支持的乌合之众在提高生活水平的革命中失败了。这一结果令人遗憾，但并非完全出乎意料。希望我们已经从这场磨难中得到了我们需要的一切。" #deepl:3836426464
+ sas_faction_demand.1007.a: "是时候转向其他事项了" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "愤怒的暴民起义" #deepl:2683090941
+ roused_rabble_war: "咆哮的暴民派别" #deepl:256557288
+ roused_rabble_faction_event_troops: "愤怒的暴民起义" #deepl:2683090941
+ roused_rabble_war_victory_desc: "所有反叛的[counties|E] 都会失去[SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] 。" #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "愤怒的乌合之众被解散。" #deepl:3335355515
+ roused_rabble_war_defeat_desc: "愤怒的乌合之众被解散，[attacker.GetShortUIName] 被囚禁。所有反叛的[counties|E] 都被强行增加了[county_opinion|E] 。" #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "引发独立" #deepl:3382659683
+ provoked_independence_faction_desc: "独立派[faction|E] 成员寻求从其[liege|E] 中独立出来。\n\n #S  最后通牒#!\n 所有派别成员成为[independent|E]\n [liege|E] 失败[prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "被煽动独立派: $VALUE|0+=$" #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "中毒意见：$VALUE|0+=$" #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "引发解散" #deepl:736445653
+ provoked_dissolution_faction_desc: "$nation_fracturing_faction$ [faction|E] 的成员试图摧毁其[liege|E] 的领域。\n\n #S  最后通牒#!\n 所有派别成员都成为[independent|E]\n [liege|E] 失去其[primary_title|E] 和其他[titles|E] 的相同[title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "被煽动解散派别: $VALUE|0+=$" #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "独立派" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "解散派" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "从未离地" #deepl:10412173
+ sas_faction_demand.1011.desc: "[target.GetShortUIName]\n\n 他们组建的派系的最后残余势力现已解散。" #deepl:3369401508
+ sas_faction_demand.1011.a: "是时候转向其他事项了" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "附庸胜利了" #deepl:52932465
+ sas_faction_demand.1012.desc: "我们挑起的诸侯国在与[defender.GetShortUIName] 的战争中取得了胜利！也许我们可以趁乱捡回一些王国的碎片。" #deepl:1568465405
+ sas_faction_demand.1012.a: "我希望能有更好的结果" #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "附庸国收支平衡" #deepl:1192072973
+ sas_faction_demand.1013.desc: "我们挑衅的诸侯国已经向[defender.GetShortUIName] 签发了白色和约！也许这在一定程度上破坏了该地区的稳定，关系可能需要一段时间才能恢复。" #deepl:789636467
+ sas_faction_demand.1013.a: "希望不要太快" #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "附庸被击败" #deepl:3897891145
+ sas_faction_demand.1014.desc: "我们挑衅的诸侯国在与[defender.GetShortUIName] 的对决中败下阵来。这个结果令人遗憾，但并非完全出乎意料。希望我们已经从这场磨难中得到了我们需要的一切。" #deepl:2998637062
+ sas_faction_demand.1014.a: "是时候转向其他事项了" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "附庸国将提出要求" #deepl:97930989
+ sas_faction_demand.1015.desc: "我们向[target.GetShortUIName] 发起挑衅的诸侯们已经聚集了他们的支持者，并组建了自己的军队。时机终于来临！要么王国分裂，要么战争爆发。前者一旦发生将不言而喻，但后者......\n\n 那才叫刺激！" #deepl:776082749
+ sas_faction_demand.1015.a: "请击鼓..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "就这样开始了" #deepl:3272443967
+ sas_faction_demand.1016.desc: "战争来了！诸侯起义正在如火如荼地进行，整个王国都将充满冲突。不知道事态会如何发展？" #deepl:47654385
+ sas_faction_demand.1016.a: "只有时间才能证明" #deepl:4070009588
+ 

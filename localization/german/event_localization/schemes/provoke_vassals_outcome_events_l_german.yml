@@ -1,0 +1,23 @@
+﻿l_german:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "Geflüster aus dem Ausland" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen in gedämpftem Ton über die rebellische Fraktion eines Vasallen von [target.GetCapitalLocation.GetTitle.GetNameNoTier] sprachen.\n\n Es scheint, dass niemand herausfinden kann, was sie so plötzlich ermutigt hat, aber ein Aufstand scheint unvermeidlich zu sein, und [target.GetShortUIName] bemüht sich, die Situation unter Kontrolle zu bringen. Unsere Bemühungen haben perfekt funktioniert!" #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "Unabhängigkeit!" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "Auflösung!" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "Verdachtsmomente aus dem Ausland" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen in gedämpftem Ton über die rebellische Fraktion eines Vasallen von [target.GetCapitalLocation.GetTitle.GetNameNoTier] sprachen.\n\n Sie warfen immer wieder Blicke in meine Richtung, die von beißender Abneigung geprägt waren. Es ist kein Geheimnis, was sie so plötzlich ermutigt hat, aber ein Aufstand scheint unvermeidlich zu sein, und [target.GetShortUIName] ist wütend." #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "Unabhängigkeit!" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "Auflösung!" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "Unverlorene Herzen" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen über die Vasallen von [target.GetCapitalLocation.GetTitle.GetNameNoTier] sprachen und über deren ungebrochenen Patriotismus im Angesicht der Widrigkeiten.\n\n Trotz unserer Bemühungen sind sie mit ihrem Schicksal zufrieden." #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "Zumindest im Moment..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "Abgehärtete Gemüter" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "Vor kurzem kam ein Gast an meinen Hof, ein Reisender, der den Kontinent auf der Suche nach Glück und Abenteuer durchquerte. Ich hörte, wie sie mit meinen Höflingen über die Vasallen von [target.GetCapitalLocation.GetTitle.GetNameNoTier] sprachen, und über ihren verdoppelten Patriotismus im Angesicht der Not.\n\n Sie warfen immer wieder Blicke in meine Richtung, die von beißender Abneigung geprägt waren. Es ist kein Geheimnis, dass ich versucht habe, sie zur Rebellion zu treiben, und [target.GetShortUIName] ist wütend." #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "Wir kriegen sie schon noch!" #deepl:1078680228

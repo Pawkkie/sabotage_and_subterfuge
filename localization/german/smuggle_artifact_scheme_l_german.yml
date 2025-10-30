@@ -1,0 +1,31 @@
+﻿l_german:
+ smuggle_artifact: "Artefakt schmuggeln" #deepl:2554631965
+ smuggle_artifact_general_desc: "Eine [scheme|E], in der eine Figur versucht, ein [artifact|e] zu stehlen, für das sie einen Raub geplant hat" #deepl:255018178
+ smuggle_artifact_action: "Schmuggel eines Artefakts aus" #deepl:1692569405
+ smuggle_artifact_desc: "Ich werde versuchen, ein Artefakt zu stehlen, auf das ich ein Auge geworfen habe, direkt vor der Nase von [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip]." #deepl:1414131686
+ smuggle_artifact_desc_general: "Versuchen Sie, ein Artefakt zu stehlen, für das Sie einen Raub des Ziels geplant haben." #deepl:1645696405
+ scheme_interaction_tt_smuggle_artifact_approved: "[recipient.GetShortUIName] wird nicht mehr besitzen, was ich mit Freude befreit habe!" #deepl:759467292
+ smuggle_artifact_success_message: "[artifact_to_steal.GetName] gehört Ihnen!" #deepl:836888504
+ smuggle_artifact_failed_message: "Artefakt verbleibt bei [target.GetShortUINameNoTooltip]" #deepl:2450765736
+ scheme_interaction_tt_smuggle_artifact_desc: "Ich werde befreien, was [recipient.GetShortUINameNoTooltip] mir vorenthalten hat, und es wird mir gehören!" #deepl:3898096970
+ smuggle_artifact_foreign_target: "Ziel ist in fremdem Reich: $VALUE|=+0$" #deepl:608165749
+ smuggle_artifact_my_intrigue: "Ihre Intrige: $VALUE|=+0$" #deepl:2079339109
+ smuggle_artifact_complete: "Du hast ein Artefakt gestohlen von [target.GetShortUIName]" #deepl:3483740664
+ smuggle_artifact_invalidated_title: "@scheme_icon! Artefakt-Schmuggelprogramm endet" #deepl:2412995361
+ they_smuggle_artifact_must_have_heist_blocker: "[CHARACTER.GetShortUIName|U] keine [artifact|E] besitzt, für die [TARGET_CHARACTER.GetShortUIName] einen Raub geplant hat" #deepl:2202407269
+ i_smuggle_artifact_must_have_heist_blocker: "[TARGET_CHARACTER.GetShortUIName] keine [artifact|E] besitzt, für die ich einen Raub geplant habe" #deepl:3372971550
+
+ SMUGGLE_ARTIFACT_SUCCESS_DESC: "Du stiehlst eine [artifact|E] von [TARGET_CHARACTER.GetShortUIName], für die du einen Raub geplant hast." #deepl:1630679103
+ smuggle_artifact_invalidated_war: "Aufgrund des Krieges zwischen Ihnen, können Sie nicht mehr $smuggle_artifact_action$ [target.GetShortUIName]" #deepl:3621304098
+ smuggle_artifact_invalidated_dead: "[target.GetShortUIName|U] ist verstorben. Du kannst ihre Artefakte nicht mehr stehlen. [target.GetHerHim]" #deepl:3636007517
+ smuggle_artifact_invalidated_no_smuggler: "Sie sind nicht mehr bei [smuggler_court_position|E] beschäftigt." #deepl:505500122
+ smuggle_artifact_invalidated_not_planning_heist: "[CHARACTER.GetShortUIName|U] führt die Aufgabe Plan Heist nicht mehr aus." #deepl:1642073108
+
+ PLAN_HEIST_HELPS_BONUS: "[smuggler_court_position|E]Die Beihilfe: $VALUE|+0=-+" #deepl:3878474763
+ MONITOR_SUPPLIES_HURTS: "Feindliche [smuggler_court_position|E]'s Hilfe: $VALUE|+0=-+$" #deepl:1079239737
+ SMUGGLE_ARTIFACT_GREEDY: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_PARANOID: "[GetTrait('greedy').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1785019016
+ SMUGGLE_ARTIFACT_AVARICIOUS: "[GetTrait('avaricious').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:227351965
+ SMUGGLE_ARTIFACT_PATIENT: "[GetTrait('patient').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:198284427
+ SMUGGLE_ARTIFACT_LOGISTICIAN: "[GetTrait('logistician').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:1854127353
+ SMUGGLE_ARTIFACT_PILGRIM: "[GetTrait('pilgrim').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:697714941

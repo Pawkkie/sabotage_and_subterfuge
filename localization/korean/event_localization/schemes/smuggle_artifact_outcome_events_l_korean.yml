@@ -1,0 +1,13 @@
+﻿l_korean:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ 성공!" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "그토록 찾던 유물을 손에 넣으니 가슴이 벅차오르고 미소를 지을 수밖에 없었습니다. [artifact.GetName] 새 주인을 찾았습니다!\n\n 해방 후의 고난으로 약간 긁히고 더러워졌지만, 이 도난품의 고급스러운 표면을 손가락으로 더듬어 보니... [artifact.GetName], 훌륭한 상품입니다!" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "새로운 보금자리에서 환영받습니다!" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ 도난당한 유물!" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "오늘, 저는 [artifact_to_steal.GetName]... 하지만 놀랍게도 사라진 것을 발견했습니다! #EMP 사라졌다!#!\n \n 열띤 조사 끝에 하인이 [owner.GetName] 이 뻔뻔한 절도를 사주했다고 증언했습니다! 사실, [owner.GetSheHe] 종종 [artifact_to_steal.GetName] 소유에서 [owner.GetHerHis] 얼마나 더 좋아 보일지에 대해 왁스 칠했다고합니다 ..." #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "저 비열한 도둑놈을 저주해!" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ 실패" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "교묘하게 계획한 잠입은 계획대로 진행되었지만 [artifact.GetName] 을 찾을 수 없습니다!\n\n 옮겼나요? 숨겨졌나? 멍청한 운이 내 표식을 구했거나... 아니면 무능한 부하들이 교묘하게 속였을 수도 있겠지. 이 완전한 실패에 당황한 그들은 더 이상 나를 돕지 않을 것입니다. 내 상은 주인에게 남아있다..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "믿을 수가 없어요! #EMP 용납할 수 없습니다!#!" #deepl:3003932934
+

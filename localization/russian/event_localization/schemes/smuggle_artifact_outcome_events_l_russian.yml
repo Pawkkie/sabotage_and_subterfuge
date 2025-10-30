@@ -1,0 +1,13 @@
+﻿l_russian:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ Успех!" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "Я испытываю прилив гордости и не могу удержаться от ухмылки, когда мне вручают артефакт, на который я претендовал. У [artifact.GetName] новый владелец!\n\n Хотя он, возможно, слегка потертый и грязный от тягот освобождения, я все равно не могу не провести пальцами по роскошной поверхности этой украденной вещи... [artifact.GetName], прекрасный приз!" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "Его ждут в новом доме!" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ Украденный артефакт!" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "Сегодня я решил полюбоваться своим [artifact_to_steal.GetName]... но, к своему ужасу, обнаружил, что он исчез! #EMP Пропал!#!\n \n После лихорадочного расследования слуга заявил, что [owner.GetName] организовал эту дерзкую кражу! Говорят, что [owner.GetSheHe] часто рассуждал о том, насколько лучше [artifact_to_steal.GetName] будет смотреться во владении [owner.GetHerHis]..." #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "Будь проклят этот подлый вор!" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ Отказ" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "Мое хитроумное проникновение прошло по плану, но [artifact.GetName] не удалось найти!\n\n Он был перемещен? Спрятан? Либо удача спасла меня... либо мои некомпетентные лакеи были ловко обмануты. Запаниковав от такого провала, они больше не будут мне помогать. Мой приз останется у его владельца..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "Я не могу в это поверить! #EMP Неприемлемо!#!" #deepl:3003932934
+

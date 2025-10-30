@@ -1,0 +1,34 @@
+﻿l_korean:
+ game_concept_rouse_rabble_scheme: "$rouse_rabble$ 계획" #deepl:1256911556
+ game_concept_rouse_rabble_scheme_desc: "$rouse_rabble_desc_general$" #deepl:44147011
+ game_concept_provoke_vassals_scheme: "$provoke_vassals$ 계획" #deepl:2097908804
+ game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$" #deepl:3187202781
+ game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$" #deepl:1046129220
+ game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$" #deepl:2697849339
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$" #deepl:2264102523
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$" #deepl:2509590743
+ game_concept_poison_opinion_scheme: "$poison_opinion$ 계획" #deepl:4069731557
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$" #deepl:2916212638
+ game_concept_smuggler_court_position: "$smuggler_court_position$" #deepl:708725340
+ game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$" #deepl:506615262
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ 계획" #deepl:1623838666
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$" #deepl:843447062
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$" #deepl:669677987
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$" #deepl:1116663943
+ game_concept_master_assassin_court_position: "$master_assassin_court_position$" #deepl:2553385723
+ game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$" #deepl:2935660162
+ game_concept_spread_plague_scheme: "$spread_plague$ 계획" #deepl:854597236
+ game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$" #deepl:1386105584
+ game_concept_sas_spy: "Spy" #deepl:287978883
+ game_concept_sas_spies: "스파이" #deepl:396918230
+ game_concept_sas_spy_desc: "스파이란 어느 법원에서든 활동할 수 있는 요원으로, 비밀을 발견하면 고용주에게 보고합니다. 고용주는 소정의 수수료를 지불하면 이러한 비밀을 알아낼 수 있습니다.\n\n 한 고용주를 위해 일하는 요원들의 집합을 [sas_spy_network|E] 이라고 합니다." #deepl:821312495
+ game_concept_sas_spy_network: "스파이 네트워크" #deepl:1689171219
+ game_concept_sas_spy_network_desc: "모두 같은 고용주 밑에서 일하는 [sas_spies|E] 의 집합입니다. 이 네트워크는 적격 캐릭터에게 직접 스파이 모집 상호작용을 사용하거나 특정 통치자에게 스파이 확인 상호작용을 사용해 해당 법정을 조사하여 기회를 찾아 성장시킬 수 있습니다.\n\n 다른 법정에 있는 스파이들은 비밀 찾기 협의회 과제를 사용하는 [spymaster|E] 에 의해 자연스럽게 모집되며, 내 법원에서 계획 방해 협의회 과제를 사용해 발견할 수 있습니다.\n\n [sas_spy_network|E] 의 효과는 특정 결정을 통해 향상시킬 수 있으며, 최대 스파이 수를 늘리거나, 법관이 기꺼이 서비스를 제공할 가능성을 높이거나, 스파이가 을 발견하도록 하는 등의 효과를 얻을 수 있습니다. [innovations|E]" #deepl:784788192
+ game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
+ game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
+ game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286
+ game_concept_sas_induct_bastard_interaction: "$sas_induct_bastard_interaction$" #deepl:439656646
+ game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
+ game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
+ game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979

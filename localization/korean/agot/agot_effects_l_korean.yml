@@ -1,0 +1,20 @@
+﻿l_korean:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "캐릭터는 일반적으로 다음과 같은 경우 [sas_spy|E] " #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "캐릭터는 일반적으로 다음과 같은 경우 [sas_spy|E] " #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "캐릭터는 일반적으로 다음과 같은 경우 [sas_spy|E] [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "매력적인 캐릭터는 훨씬 더 기꺼이 [sas_spy|E] 당신을 위해" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "매력적인 캐릭터는 훨씬 더 기꺼이 [sas_spy|E] 당신을 위해" #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "끌리는 캐릭터는 다음을 위해 훨씬 더 기꺼이 [sas_spy|E] [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "[sas_spies|E] 이 걸리면 이름을 뒤집어 공개할 가능성이 훨씬 적습니다." #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "[sas_spies|E] 이 걸리면 이름을 뒤집어 공개할 가능성이 훨씬 적습니다." #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U]의 [sas_spies|E] 는 잡히면 고용주를 뒤집고 공개 할 가능성이 훨씬 적습니다." #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "[lover|E] 및 [soulmate|E] 관계 각각에 #P 2#! 무작위 [skill|E] 포인트(최대 [EmptyScope.ScriptValue('friendly_counsel_max')|0])가 제공됩니다." #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "[sas_induct_bastard_interaction|E] 상호 작용을 잠금 해제합니다." #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "[sas_steal_bastard_interaction|E] 상호 작용을 잠금 해제합니다." #deepl:4140120211
+ 

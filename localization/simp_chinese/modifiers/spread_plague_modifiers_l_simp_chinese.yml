@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ attempted_to_spread_plague: "企图传播瘟疫" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "未运送污染物" #deepl:3309051214
+ spread_plague_shipped_clothing: "运输污染物" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "收到受污染货物" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "上游污染物" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "勤奋的水源采购" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "上游废物" #deepl:1605090773
+ spread_plague_water_in_town: "污水供应" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "污秽食堂" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "污秽食堂" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "仔细检查食品" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "受污染的农田" #deepl:846309052

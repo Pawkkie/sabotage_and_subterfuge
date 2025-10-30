@@ -1,0 +1,30 @@
+﻿l_russian: 
+ sas_hostile_scheme_discovery.1002.t: "Обнаружен интриган!" #deepl:2806885743
+ sas_hostile_scheme_discovery.1002.intro: "Мой [spymaster.GetCouncilTitle] пришел ко мне с серьезным известием: это [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:116762934
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "До меня дошли серьезные новости: [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:782412105
+ sas_hostile_scheme_discovery.1002.rouse: "который возбуждает крестьянский сброд, принадлежащий к царству" #deepl:2701494178
+ sas_hostile_scheme_discovery.1002.fallback: "который замышляет против" #deepl:3376091286
+ sas_hostile_scheme_discovery.1002.a: "[owner.Custom('InsultAdjective')] изверг!" #deepl:2541491147
+
+ sas_hostile_scheme_discovery.2001.t: "Схема на [ROOT.Char.Custom('GetCourt')|U]" #deepl:3607653157
+ sas_hostile_scheme_discovery.2001.intro: "Мой [spymaster.GetCouncilTitle] пришел ко мне с серьезными новостями. Пока мы не знаем, кто именно," #deepl:4082077002
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "До меня дошли тяжкие вести. Пока неизвестно, кто именно," #deepl:3279496608
+ sas_hostile_scheme_discovery.2001.fallback: "кто-то замышляет против" #deepl:3932481048
+ sas_hostile_scheme_discovery.2001.rouse: "кто-то будит крестьянский сброд, принадлежащий к царству" #deepl:1810264608
+ sas_hostile_scheme_discovery.2001.target_other: "мой [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], [target.GetTitledFirstName]!" #deepl:3121120145
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]\n\n Они не знают, с кем имеют дело, с моим . Они думают, что могут убить меня ? Я им покажу. О да, покажу. [ROOT.Char.GetLadyLord] #EMP #!" #deepl:4001813834
+ sas_hostile_scheme_discovery.2001.target_me: "я!" #deepl:4031713392
+ sas_hostile_scheme_discovery.2001.a: "Мы должны остановить злодея, стоящего за этим!" #deepl:148308102
+
+ sas_hostile_scheme_discovery.3002.t: "Схема раскрыта" #deepl:385952488
+ sas_hostile_scheme_discovery.3002.desc: "О существовании моего заговора на [scheme.GetFullActionName] стало известно!\n\n Хотя о моем участии пока не известно, это значительно усложнит реализацию моих планов." #deepl:3976066101
+ sas_hostile_scheme_discovery.3002.a: "Проклятия!" #deepl:1623550253
+
+ sas_hostile_scheme_discovery.3003.t: "Обнаружено вовлечение" #deepl:2924354761
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] обнаружил, что я являюсь организатором заговора." #deepl:1505803270
+ sas_hostile_scheme_discovery.3003.rouse: "чтобы разбудить крестьянский сброд, принадлежащий [target.GetHerHim]!" #deepl:2089024288
+ sas_hostile_scheme_discovery.3003.provoke: "провоцировать вассалов [target.GetHerHis]!" #deepl:2832962550
+ sas_hostile_scheme_discovery.3003.smuggle: "чтобы переправить артефакт, принадлежащий [target.GetHerHim]!" #deepl:2229529354
+ sas_hostile_scheme_discovery.3003.plague: "чтобы распространить чуму в [target.GetHerHis] царстве!" #deepl:44403764
+ sas_hostile_scheme_discovery.3003.fallback: "против [target.GetHerHim]!" #deepl:1408398656
+ sas_hostile_scheme_discovery.3003.a: "Должно быть, произошло недоразумение!" #deepl:2938075201

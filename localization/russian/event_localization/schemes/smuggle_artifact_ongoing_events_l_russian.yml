@@ -1,0 +1,14 @@
+﻿l_russian:
+ smuggle_artifact_event_title: "Контрабандный артефакт:" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ Антиквар" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "Одним из очевидных препятствий на пути к поиску артефакта является [target.GetTitledFirstNamePossessive] антиквар, [antiquarian.GetTitledFirstName].\n\n Конечно, существует множество способов... #EMP разобраться#! с человеком, но мне интересно, [antiquarian.GetFirstNameNoTooltip] ли он из тех, кого я смогу убедить посмотреть на ситуацию с другой стороны, предложив подходящую взятку." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "Золото - универсальный язык подкупа." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "Вы верите, что преданность [antiquarian.GetTitledFirstNamePossessive] можно купить богатством..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "Может быть, артефакт ради артефакта?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] согласится на равный "обмен"." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "Знакомство с сайтом [random_beauty.GetTitledFirstName] может оказаться... #EMP стимулирующим#!." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "Вы делаете ставку на то, что [antiquarian.GetTitledFirstName] ценит физическую красоту выше верности." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "Я рассмотрю другие возможности." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] Принимает взятку" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] Отказывается от взятки" #deepl:1499978674

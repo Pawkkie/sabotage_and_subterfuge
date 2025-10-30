@@ -1,0 +1,90 @@
+﻿l_spanish:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "Ampliar la red de espionaje" #deepl:1918218917
+ sas_expand_spy_network_decision_desc: "Las dos únicas formas que tiene una araña de ampliar su red son dedicar más tiempo a tejerla o conseguir que participen más arañas. Aunque nuestra [sas_spy_network|E] ha tenido un comienzo modesto pero exitoso, aún podemos ampliar nuestro alcance aún más, enredando a gobernantes de todas partes y aprovechando sus secretos más íntimos en nuestro beneficio." #deepl:2680910805
+ sas_expand_spy_network_decision_tooltip: "Haz crecer tu [sas_spy_network|E] en número y capacidad" #deepl:1080571400
+ sas_expand_spy_network_decision_confirm: "La tela de araña crece." #deepl:2491328231
+ sas_expand_spy_network_double_spies.tt: "Puede emplear el doble de [sas_spies|E]" #deepl:3951820473
+ sas_expand_spy_network_child_spies.tt: "Puede emplear a niños de al menos 8 años como [sas_spies|E]" #deepl:594091579
+ sas_expand_spy_network_innovation_spies.tt: "Tu [sas_spies|E] puede robar cívicos o militares [innovations|E] de sus cortes de residencia #weak (25 años de enfriamiento)#!" #deepl:2062950662
+ sas_expand_spy_network_have_enough_spies_tt: "Emplea al menos a 3 [sas_spies|E]" #deepl:769462268
+ sas_expand_spy_network_have_paid_spies_tt: "Ha comprado al menos 3 [secrets|E] en [sas_spies|E]" #deepl:4061259209
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "Establecer la clandestinidad penal" #deepl:1225823486
+ sas_establish_criminal_underground_decision_desc: "Poner todas las cartas sobre la mesa es sin duda una forma de gobernar, pero cuando se trata de diplomacia internacional, es sin duda más fácil guardar un as o dos escondidos en la manga. ¿Por qué colgar de los hilos del decoro y la corrección cuando se puede ser el maestro de las marionetas?" #deepl:1579221697
+ sas_establish_criminal_underground_decision_tooltip: "Fomentar el empleo de sinvergüenzas variados y [sas_spies|E] en su corte" #deepl:3565047867
+ sas_establish_criminal_underground_decision_confirm: "Bailemos en la oscuridad" #deepl:764817339
+ sas_establish_criminal_underground_spy_network.tt: "Desbloquea la capacidad de emplear [sas_spies|E] en un [sas_spy_network|E]" #deepl:417099671
+ sas_establish_criminal_underground_rabble_rouser.tt: "Desbloquea la posición de pista [rabble_rouser_court_position|E] " #deepl:3231636541
+ sas_establish_criminal_underground_femme_fatale.tt: "Desbloquea la posición de pista [femme_fatale_court_position|E] " #deepl:4153819485
+ sas_establish_criminal_underground_smuggler.tt: "Desbloquea la posición de pista [smuggler_court_position|E] " #deepl:1659450848
+ sas_establish_criminal_underground_master_assassin.tt: "Desbloquea la posición de pista [master_assassin_court_position|E] " #deepl:2159838119
+ ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "Casa [CHARACTER.GetHouse.GetName|U] ha establecido una clandestinidad criminal" #deepl:134357733
+ NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "Casa [CHARACTER.GetHouse.GetName|U] no ha establecido una clandestinidad penal" #deepl:2261484798
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "Formación en operaciones especiales" #deepl:3167735659
+ sas_special_operations_training_decision_desc: "La adaptación es clave para sobrevivir en la sombra. Si nos centramos en compartir conocimientos a través de la clandestinidad, nuestros agentes pueden desarrollar un dominio de su oficio, volviéndose más autosuficientes a la hora de encontrar lo que sólo podemos suponer que son sus propios flujos de ingresos altamente escrupulosos, al tiempo que crece nuestra red de influencia." #deepl:3538227294
+ sas_special_operations_training_decision_tooltip: "Formar a los delincuentes y [sas_spies|E] para que participen con más confianza en [hostile_schemes|E]" #deepl:3991151590
+ sas_special_operations_training_decision_confirm: "¡Más cuchillos en la oscuridad!" #deepl:3972594294
+ sas_special_operations_completed_hostile_schemes_tt: "Ha completado al menos 3 [hostile_schemes|E]" #deepl:2270300827
+ sas_special_operations_have_enough_spies_tt: "Emplea al menos a 3 [sas_spies|E]" #deepl:769462268
+ sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] basado [court_positions|E] coste sin salario" #deepl:647631714
+ sas_special_operations_training_spies_likely_to_join_schemes.tt: "Es más probable que su [sas_spies|E] se una a su [hostile_schemes|E] como [agents|E]" #deepl:2830788156
+ sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "Su [rabble_rouser_court_position|E] es más probable que se una a su [hostile_schemes|E] como un [agent|E]" #deepl:1181319785
+ sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "Su [femme_fatale_court_position|E] es más probable que se una a su [hostile_schemes|E] como un [agent|E]" #deepl:2788309644
+ sas_special_operations_training_smuggler_likely_to_join_schemes.tt: "Su [smuggler_court_position|E] es más probable que se una a su [hostile_schemes|E] como un [agent|E]" #deepl:1165184473
+ sas_special_operations_training_master_assassin_likely_to_join_schemes.tt: "Su [master_assassin_court_position|E] es más probable que se una a su [hostile_schemes|E] como un [agent|E]" #deepl:2916929945
+
+ # House of Sabotage and Subterfuge
+ sas_house_of_sabotage_and_subterfuge_decision: "Una casa de sabotajes y subterfugios" #deepl:346655493
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Una casa de sabotajes y subterfugios Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Cimentar el legado de sabotaje y subterfugio de tu casa" #deepl:3420083984
+ sas_house_of_sabotage_and_subterfuge_decision_confirm: "¡Somos uno con las sombras!" #deepl:1602826360
+ sas_house_of_sabotage_and_subterfuge_schemes_tt: "Ha completado al menos 8 [hostile_schemes|E]" #deepl:2029350009
+ sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "Emplea al menos a 8 [sas_spies|E]" #deepl:2404724051
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "Gane @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] cada vez que complete un [hostile_schemes|E]" #deepl:421351319
+ sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "Aumente las posibilidades de que su [sas_spies|E] descubra secretos e innovaciones" #deepl:4182569517
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "Reclutar Malhechor" #deepl:1281019616
+ sas_recruit_malefactor_decision_desc: "Una clandestinidad criminal que funcione bien requiere el trabajo de muchas manos. Enviaré a mis sirvientes por todas partes para encontrar candidatos adecuados para nuestras vacantes más importantes." #deepl:1735662004
+ sas_recruit_malefactor_decision_tooltip: "Buscar un personaje para llenar un [court_position|E] pertinente a la clandestinidad penal por una tarifa\n\n #weak  Por ejemplo, puede contratar a un [GetCourtPositionType('rabble_rouser_court_position').GetName]#!" #deepl:790010884
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "Elija el tipo de posición" #deepl:3489192501
+ sas_recruit_malefactor_decision_confirm: "Confirme" #deepl:3524355688
+ sas_recruit_court_position_decision_tt: "Recibirá dos candidatos adecuados entre los que podrá elegir para la selección [court_position|E]" #deepl:3036663020
+
+ # Rabble Rouser
+ hire_rabble_rouser: "Búsqueda de Rabble Rouser" #deepl:2458077144
+ hire_rabble_rouser_tooltip: "Sus criados le sugerirán una serie de candidatos adecuados para el puesto de [GetCourtPositionType('rabble_rouser_court_position').GetName()]" #deepl:1614552482
+ hire_rabble_rouser_desc: "[rabble_rouser_court_position|E] es clave para crear problemas en otros reinos o para mantener a la población contenta en el nuestro. Pediré a mis sirvientes que presenten a varios candidatos adecuados." #deepl:1136401803
+ #  hire_rabble_rouser_decision_effect_tooltip: "Se le presentará un grupo de candidatos de [GetCourtPositionType('rabble_rouser_court_position').GetName()] y podrá contratar a uno de ellos a cambio de unos honorarios y un salario mensual." #deepl:1865841153
+ #  hire_rabble_rouser_decision_confirm: "Iniciar la búsqueda" #deepl:2082362254
+ recruit_rabble_rouser_cooldown_tt: "Reclutar un [GetCourtPositionType('rabble_rouser_court_position').GetName] está en enfriamiento para [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]" #deepl:1478339175
+
+ # Femme Fatale
+ hire_femme_fatale: "Búsqueda de Femme Fatale" #deepl:102309862
+ hire_femme_fatale_tooltip: "Sus criados le propondrán una serie de candidatos idóneos para el puesto de [GetCourtPositionType('femme_fatale_court_position').GetName()]" #deepl:890583249
+ hire_femme_fatale_desc: "Un [femme_fatale_court_position|E] nos da medios para controlar los tribunales desde las sombras. Pediré a mis sirvientes que presenten varios candidatos adecuados." #deepl:1767789142
+ #  hire_femme_fatale_decision_effect_tooltip: "Se le presentará un grupo de candidatos de [GetCourtPositionType('femme_fatale_court_position').GetName()] y podrá contratar a uno de ellos a cambio de unos honorarios y un salario mensual." #deepl:1223492537
+ #  hire_femme_fatale_decision_confirm: "Iniciar la búsqueda" #deepl:2082362254
+ recruit_femme_fatale_cooldown_tt: "Reclutar un [GetCourtPositionType('femme_fatale_court_position').GetName] está en enfriamiento para [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]" #deepl:2298014581
+
+ # Smuggler
+ hire_smuggler: "Búsqueda de Contrabandista" #deepl:3552251679
+ hire_smuggler_tooltip: "Sus criados le propondrán una serie de candidatos idóneos para el puesto de [GetCourtPositionType('smuggler_court_position').GetName()]" #deepl:3568294823
+ hire_smuggler_desc: "Un [smuggler_court_position|E] nos permite... liberar, digamos, artefactos de las garras de... cualquier otro. Pediré a mis sirvientes que traigan un número de candidatos adecuados." #deepl:4196276537
+ #  hire_smuggler_decision_effect_tooltip: "Se le presentará un grupo de candidatos de [GetCourtPositionType('smuggler_court_position').GetName()] y podrá contratar a uno de ellos a cambio de unos honorarios y un salario mensual." #deepl:2197764143
+ #  hire_smuggler_decision_confirm: "Iniciar la búsqueda" #deepl:2082362254
+ recruit_smuggler_cooldown_tt: "Reclutar un [GetCourtPositionType('smuggler_court_position').GetName] está en enfriamiento para [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]" #deepl:40422166
+
+ # Master Assassin
+ hire_master_assassin: "Búsqueda de Maestro Asesino" #deepl:3609033881
+ hire_master_assassin_tooltip: "Sus criados le propondrán una serie de candidatos idóneos para el puesto de [GetCourtPositionType('master_assassin_court_position').GetName()]" #deepl:2161765423
+ hire_master_assassin_desc: "A [master_assassin_court_position|E] eliminar amenazas clave y potencialmente propagar la peste a en los reinos de nuestros enemigos. Pediré a mis sirvientes que presenten un número de candidatos adecuados." #deepl:2501111060
+ #  hire_master_assassin_decision_effect_tooltip: "Se le presentará un grupo de candidatos de [GetCourtPositionType('master_assassin_court_position').GetName()] y podrá contratar a uno de ellos a cambio de unos honorarios y un salario mensual." #deepl:1797626658
+ #  hire_master_assassin_decision_confirm: "Iniciar la búsqueda" #deepl:2082362254
+ recruit_master_assassin_cooldown_tt: "Reclutar un [GetCourtPositionType('master_assassin_court_position').GetName] está en enfriamiento para [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]" #deepl:255274636

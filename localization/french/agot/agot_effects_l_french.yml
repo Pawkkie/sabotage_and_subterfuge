@@ -1,0 +1,20 @@
+﻿l_french:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "Les personnages sont généralement plus enclins à [sas_spy|E] pour vous." #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "Les personnages sont généralement plus enclins à [sas_spy|E] pour vous." #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "Les personnages sont généralement plus enclins à se rendre sur le site [sas_spy|E] pour [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "Les personnages attirés sont plus disposés à [sas_spy|E] pour vous" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Les personnages attirés sont beaucoup plus disposés à [sas_spy|E] pour vous." #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Les personnages attirés sont beaucoup plus enclins à se rendre sur le site [sas_spy|E] pour [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "Vos [sas_spies|E] sont beaucoup moins susceptibles de se retourner et de révéler votre nom s'ils sont pris en flagrant délit." #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "Vos [sas_spies|E] sont beaucoup moins susceptibles de se retourner et de révéler votre nom s'ils sont pris en flagrant délit." #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U]Les employés du site [sas_spies|E] sont beaucoup moins susceptibles de se retourner et de révéler leur employeur s'ils sont pris en flagrant délit." #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Chacune de vos relations [lover|E] et [soulmate|E] vous donne #P 2#! points aléatoires [skill|E] (jusqu'à un maximum de [EmptyScope.ScriptValue('friendly_counsel_max')|0])." #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Débloque l'interaction [sas_induct_bastard_interaction|E] " #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Débloque l'interaction [sas_steal_bastard_interaction|E] " #deepl:4140120211
+ 

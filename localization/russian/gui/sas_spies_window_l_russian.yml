@@ -1,0 +1,6 @@
+﻿l_russian:
+ INTRIGUE_WINDOW_MY_SPIES_TITLE: "[sas_spies|E] В вашем [sas_spy_network|E]" #deepl:3897218222
+ INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T Количество [sas_spies|E]#! \n Максимальное количество рассчитывается как одна пятая от общего количества [intrigue|E] вас и вашего [spymaster|E], округленное вниз. Удваивается по решению Расширенной шпионской сети." #deepl:583737040
+ INTRIGUE_WINDOW_DISMISS: "Увольте" #deepl:1713405472
+ INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T Убрать#!\n \n Убрать [Character.GetTitledFirstName] из вашего [sas_spy_network|E]" #deepl:3130473183
+ SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]" #deepl:794553844

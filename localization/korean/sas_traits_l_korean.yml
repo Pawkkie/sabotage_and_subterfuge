@@ -1,0 +1,10 @@
+﻿l_korean:
+ # Embezzler
+ trait_sas_embezzler: "횡령자" #deepl:2672472445
+ trait_sas_embezzler_desc: "이 캐릭터는 다른 사람의 자금을 횡령했습니다." #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] 다른 사람의 자금을 횡령했습니다." #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "전염병 전파자" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "이 캐릭터는 큰 전염병을 일으키기 위해 노력했습니다." #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] 가 큰 전염병을 일으켰습니다." #deepl:4217708703

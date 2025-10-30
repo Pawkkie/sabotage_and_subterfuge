@@ -1,0 +1,33 @@
+﻿l_korean:
+ # Court Position
+ femme_fatale_court_position: "팜므파탈" #deepl:2042176501
+ femme_fatale_court_position_desc: "팜므파탈은 음지에서 최선을 다하는 방식으로 법정을 지휘하는 데 특화된 궁녀입니다. 그녀는 신하의 눈에 비친 군주의 의견을 바꾸고, [sas_spies|E] 의 효율성을 높이며, 자신의 법정에서 절차를 쉽게 진행할 수 있습니다." #deepl:275266301
+ femme_fatale_custom_effect_description: "$BULLET$ [GetScheme('poison_opinion').GetTypeName] 에 대한 액세스를 허용할 수 있습니다. [personal_scheme|E]" #deepl:3961591162
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #deepl:1704038344
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]" #deepl:4179113456
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]" #deepl:1335294579
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]" #deepl:571687154
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]" #deepl:439104194
+
+ # Eligibility
+ femme_fatale_not_lowborn: "#! 이 아닌 #bold 입니다. [lowborn|E]" #deepl:1427234325
+ femme_falate_not_married: "#! 이 아닌 #bold 입니다. [married|E]" #deepl:3606104437
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "포이즌 의견" #deepl:489149273
+ femme_fatale_task_poison_opinion_desc: "대상의 의견을 독살 [liege|E], 법정에 혼란과 무질서를 초래합니다." #deepl:1344370183
+ allow_poisoning_opinion_scheme_tt: "[poison_opinion_scheme|E]\n[GetScheme('poison_opinion').GetTypeName]   :   +0% ~  +20% ( 기준 ) [scheme|E] [success_chance|E]\n@scheme_success_icon!#P #! @scheme_success_icon!#P #! [aptitude|E]" #deepl:2799618372
+ max_poison_opinion_schemes_add: "최대 [GetScheme('poison_opinion').GetTypeName] [schemes|E]" #deepl:3008665747
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "거미 수용" #deepl:1182524634
+ femme_fatale_task_embrace_the_spiders_desc: "[sas_spy_network|E] 의 거미줄을 더 멀리까지 엮어 그 어느 때보다 효과적으로 외국의 비밀을 알아보세요." #deepl:4233153217
+ femme_fatale_increase_spy_discovery_chance_tt: "[sas_spies|E] 에서 비밀과 혁신을 발견할 가능성을 높이세요." #deepl:4182569517
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "진정 및 감시" #deepl:2527092364
+ femme_fatale_task_soothe_and_surveil_desc: "방해 행위의 징후를 면밀히 주시하면서 법정의 긴장감을 완화하세요." #deepl:2496953860
+ increased_poison_opinion_defense_tt: "적 [GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:228597342

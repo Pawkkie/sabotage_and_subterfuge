@@ -1,0 +1,35 @@
+﻿l_french:
+ poison_opinion_outcome.1001.t: "Avis de poison : Une opportunité" #deepl:2824793747
+ poison_opinion_outcome.1001.desc: "Dans mes tentatives de positionner les intérêts de [target.GetTitledFirstNamePossessive] par rapport à ceux de [target.GetHerHis], j'ai trouvé une opportunité. Je pense pouvoir affirmer que leurs objectifs sont, en fait, diamétralement opposés. Alors que je dicte ma prochaine lettre..." #deepl:4201339416
+ poison_opinion_outcome.1001.a: "...J'insiste sur ces intérêts incompatibles." #deepl:360746116
+ poison_opinion_outcome.1001.a.success: "[target.GetFirstNameNoTooltip] est convaincu" #deepl:4019449334
+ poison_opinion_outcome.1001.a.failure: "[target.GetFirstNameNoTooltip] voit à travers mes efforts" #deepl:1317759691
+ poison_opinion_outcome.1001.b: "...j'essaie de rester subtil." #deepl:3520019372
+
+ poison_opinion_outcome.1002.t: "Poison Opinion : Convictions religieuses" #deepl:3068132753
+ poison_opinion_outcome.1002.same_faith: "J'ai eu une idée dans mes tentatives d'aligner [target.GetTitledFirstName] contre les intérêts de [target.GetHerHis] liege.\n\n Avec les bons arguments, je pourrais être en mesure de convaincre [target.GetHerHim] que [target.GetSheHe] n'agit pas seulement dans l'intérêt de [target.GetHerHis], mais aussi dans l'intérêt de [ROOT.Char.GetFaith.HighGodNameAlternate] [ROOT.Char.GetFaith.HighGodHerselfHimself] !" #deepl:965859863
+ poison_opinion_outcome.1002.other_faith: "Il m'est venu une idée dans mes tentatives d'aligner [target.GetTitledFirstName] contre les intérêts de [target.GetHerHis] liege.\n\n Peut-être pourrais-je soutenir qu'il est dans l'intérêt de tous les [target.GetFaith.GetAdherentNamePlural] de se libérer des chaînes de la règle [target.GetLiege.GetFaith.Name] dans la mesure où ils en sont capables ?" #deepl:1318148979
+ poison_opinion_outcome.1002.a: "Je pense pouvoir présenter un argument très convaincant." #deepl:878806595
+ poison_opinion_outcome.1002.b: "Je devrais peut-être m'en tenir aux subtilités diplomatiques." #deepl:2089916252
+
+ poison_opinion_outcome.1003.t: "Poison Opinion : Pousser la chance" #deepl:2598640233
+ poison_opinion_outcome.1003.desc: "Je termine la lecture de la dernière lettre de [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] et je souris - [target.GetSheHe] semble enfin se montrer glacial à l'égard de [target.GetHerHis] liege.\n\n Bien que ce soit un succès, je suis tenté de profiter de cette occasion pour essayer de les éloigner encore plus l'un de l'autre..." #deepl:1850530888
+ poison_opinion_outcome.1003.a: "Il est temps de mettre mes talents de diplomate à l'épreuve !" #deepl:2787417524
+ poison_opinion_outcome.1003.a.success: "[target.GetSheHe|U] s'enhardit davantage" #deepl:4130052052
+ poison_opinion_outcome.1003.a.failure: "[target.GetSheHe|U] se trompe d'interprétation" #deepl:3695719111
+ poison_opinion_outcome.1003.b: "Cette victoire est suffisante." #deepl:3669306734
+
+ poison_opinion_outcome.2001.t: "Opinion sur les poisons : Un malentendu" #deepl:2264483134
+ poison_opinion_outcome.2001.opening: "Il semble que mes ouvertures diplomatiques vers [target.GetTitledFirstName] aient provoqué un malentendu majeur ! J'ai reçu une lettre qui montre clairement que [target.GetSheHe] pense que j'ai poursuivi un tout autre objectif..." #deepl:1789009900
+ poison_opinion_outcome.2001.not_interested_relation: "\n\n"Je suis votre [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))], pour l'amour de [target.GetFaith.HighGodNamePossessive]!"" #deepl:3935174444
+ poison_opinion_outcome.2001.not_interested_romantically: "\n\n"Bien que je sois flatté, je trouve votre intérêt inapproprié pour un [ROOT.Char.GetWomanMan] de votre rang."" #deepl:1590060400
+ poison_opinion_outcome.2001.not_interested_horses: "\n\n"Je ne vendrai pas mes chevaux de race, quel que soit le nombre de lettres de flatterie que vous m'enverrez !" #deepl:969794771
+ poison_opinion_outcome.2001.not_interested_toll_exemptions: "\n\n"Je ne peux pas vous accorder d'exemption de péage, quelle que soit l'ampleur des échanges commerciaux que vous promettez !" #deepl:184694203
+ poison_opinion_outcome.2001.not_interested_friend: "\n\n"Il semble que vous ayez besoin d'un ami, et j'ai bien peur de ne pas pouvoir le faire. Cependant, je peux vous recommander de..."" #deepl:1460295060
+ poison_opinion_outcome.2001.not_interested_relics: "\n\n"Je ne vous donnerai aucune de mes reliques, peu importe le nombre de fois que vous prierez pour moi !"" #deepl:3476711187
+ poison_opinion_outcome.2001.end: "\n\nJe n'ai pas besoin de lire la suite pour comprendre." #deepl:3287867042
+ poison_opinion_outcome.2001.a: "Il s'agit d'un grand malentendu !" #deepl:2703424581
+
+ poison_opinion_outcome.2002.t: "Opinion sur les poisons : Complot infâme" #deepl:421660312
+ poison_opinion_outcome.2002.desc: ""Mon [ROOT.Char.GetLadyLord]! [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] a mis fin à toute conversation avec vous."\n\n Voyant mon intérêt soudain et la quantité de correspondance comme un signe de plans infâmes, il semble que [target.GetSheHe] ait l'impression que je complote contre [target.GetHerHim]!" #deepl:3202853704
+ poison_opinion_outcome.2002.a: "Dans un sens, ils n'ont pas tort..." #deepl:513004656

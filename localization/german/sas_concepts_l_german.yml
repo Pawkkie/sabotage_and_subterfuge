@@ -1,0 +1,34 @@
+﻿l_german:
+ game_concept_rouse_rabble_scheme: "$rouse_rabble$ Schema" #deepl:1256911556
+ game_concept_rouse_rabble_scheme_desc: "$rouse_rabble_desc_general$" #deepl:44147011
+ game_concept_provoke_vassals_scheme: "$provoke_vassals$ Schema" #deepl:2097908804
+ game_concept_provoke_vassals_scheme_desc: "$provoke_vassals_desc_general$" #deepl:3187202781
+ game_concept_rabble_rouser_court_position: "$rabble_rouser_court_position$" #deepl:1046129220
+ game_concept_rabble_rouser_court_position_desc: "$rabble_rouser_court_position_desc$" #deepl:2697849339
+ game_concept_femme_fatale_court_position: "$femme_fatale_court_position$" #deepl:2264102523
+ game_concept_femme_fatale_court_position_desc: "$femme_fatale_court_position_desc$" #deepl:2509590743
+ game_concept_poison_opinion_scheme: "$poison_opinion$ Schema" #deepl:4069731557
+ game_concept_poison_opinion_scheme_desc: "$poison_opinion_desc_general$" #deepl:2916212638
+ game_concept_smuggler_court_position: "$smuggler_court_position$" #deepl:708725340
+ game_concept_smuggler_court_position_desc: "$smuggler_court_position_desc$" #deepl:506615262
+ game_concept_smuggle_artifact_scheme: "$smuggle_artifact$ Schema" #deepl:1623838666
+ game_concept_smuggle_artifact_scheme_desc: "$smuggle_artifact_desc_general$" #deepl:843447062
+ game_concept_plan_heist_interaction: "$plan_heist_interaction$" #deepl:669677987
+ game_concept_plan_heist_interaction_desc: "$plan_hest_interaction_desc$" #deepl:1116663943
+ game_concept_master_assassin_court_position: "$master_assassin_court_position$" #deepl:2553385723
+ game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$" #deepl:2935660162
+ game_concept_spread_plague_scheme: "$spread_plague$ Schema" #deepl:854597236
+ game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$" #deepl:1386105584
+ game_concept_sas_spy: "Spionage" #deepl:287978883
+ game_concept_sas_spies: "Spione" #deepl:396918230
+ game_concept_sas_spy_desc: "Spione sind Agenten, die an jedem beliebigen Ort tätig sein können und ihrem Arbeitgeber Bericht erstatten, wenn sie Geheimnisse entdeckt haben. Ihr Arbeitgeber kann diese Geheimnisse gegen eine geringe Gebühr in Erfahrung bringen.\n\n Die kollektive Gruppe von Agenten, die für einen Arbeitgeber arbeiten, wird [sas_spy_network|E] genannt." #deepl:821312495
+ game_concept_sas_spy_network: "Spionage-Netzwerk" #deepl:1689171219
+ game_concept_sas_spy_network_desc: "Eine Sammlung von [sas_spies|E], die alle für denselben Arbeitgeber arbeiten. Dieses Netzwerk kann durch die Interaktion "Spion rekrutieren" bei geeigneten Charakteren oder durch die Interaktion "Nach Spionen suchen" bei einem bestimmten Herrscher erweitert werden, um dessen Hof nach Möglichkeiten zu durchsuchen.\n\n Spione an anderen Höfen werden natürlich von einem [spymaster|E] mit der Ratsaufgabe "Geheimnisse finden" rekrutiert und können an deinem Hof mit der Ratsaufgabe "Schemata stören" entdeckt werden.\n\nDie Effektivität von [sas_spy_network|E] kann durch bestimmte Entscheidungen erhöht werden, z. B. durch die Erhöhung der maximalen Anzahl von Spionen, die Erhöhung der Bereitschaft von Höflingen, ihre Dienste anzubieten, oder die Möglichkeit für Spione, [innovations|E] zu entdecken." #deepl:784788192
+ game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
+ game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
+ game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286
+ game_concept_sas_induct_bastard_interaction: "$sas_induct_bastard_interaction$" #deepl:439656646
+ game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
+ game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
+ game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979

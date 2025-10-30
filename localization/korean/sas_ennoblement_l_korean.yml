@@ -1,0 +1,11 @@
+﻿l_korean:
+ sas_ennoblement_interaction: "고귀함" #deepl:1551274390
+ sas_ennoblement_interaction_desc: "[recipient.GetShortUINameNoTooltip] 을 천한 신분에서 고귀하게 만들어 잠재적으로 호의나 충성심을 얻을 수 있는 구실을 고안해 보세요 [hook|E]." #deepl:737595951
+ sas_ennoblement_interaction_concept_desc: "천한 신분의 궁녀를 고귀하게 만들어 호의나 충성심을 얻을 수 있는 구실을 고안하세요 [hook|E]." #deepl:3597071352
+ sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] 를 고귀하게 만들고 새로운 [dynasty|E]" #deepl:2220918683
+ sas_ennoblement_opinion: "나를 고귀하게" #deepl:2618147878
+ sas_ennoblement_title_name: "고귀함 [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
+ sas_ennoblement_memory: "고귀함" #deepl:1551274390
+ sas_ennoblement_memory_desc: "천한 신분에서 고귀한 신분이 되었습니다." #deepl:476341155
+
+ ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "[sas_ennoblement_interaction|E] 상호 작용을 잠금 해제합니다." #deepl:1840771504

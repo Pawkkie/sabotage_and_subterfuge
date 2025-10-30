@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ sas_ennoblement_interaction: "诰命" #deepl:1551274390
+ sas_ennoblement_interaction_desc: "设计一个借口，将[recipient.GetShortUINameNoTooltip] 从卑微的地位提升到有可能获得恩惠或忠诚的地位[hook|E] 。" #deepl:737595951
+ sas_ennoblement_interaction_concept_desc: "为出身低微的朝臣找一个加官进爵的借口，从而可能获得恩宠或忠诚[hook|E] 。" #deepl:3597071352
+ sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] 将得到升华，并找到一个新的[dynasty|E]" #deepl:2220918683
+ sas_ennoblement_opinion: "使我受宠若惊" #deepl:2618147878
+ sas_ennoblement_title_name: "敕封[recipient.GetShortUINameNoTooltip]" #deepl:1104397307
+ sas_ennoblement_memory: "诰命" #deepl:1551274390
+ sas_ennoblement_memory_desc: "我从出身低微的地位上得到了提升" #deepl:476341155
+
+ ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "打开[sas_ennoblement_interaction|E] 互动" #deepl:1840771504

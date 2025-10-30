@@ -1,0 +1,46 @@
+﻿l_korean:
+ rouse_rabble_attended_local_feast: "지역 축제 참석" #deepl:2713133615
+ rouse_rabble_sent_gift_to_local_feast: "현지인에게 선물 보내기" #deepl:231123044
+ rouse_rabble_ignored_local_feast: "무시된 지역 잔치" #deepl:4143663347
+
+ rouse_rabble_intercept_aid: "차단된 지역 원조" #deepl:1362272277
+ rouse_rabble_endorse_aid: "승인된 지역 원조" #deepl:383506778
+ rouse_rabble_ignore_aid: "무시된 지역 지원" #deepl:3141683792
+ rouse_rabble_endorsed_aid_opinion: "승인된 지역 원조" #deepl:383506778
+
+ rouse_rabble_mock_battle: "청소년 모의 배틀" #deepl:4072308434
+ rouse_rabble_hunting_tournament: "청소년 사냥 토너먼트" #deepl:2973954280
+ rouse_rabble_cultural_exchange: "청소년 문화 교류" #deepl:1352443444
+
+ rouse_rabble_undercover_protest: "위장 시위" #deepl:1250919224
+
+ rouse_rabble_fought_soldier: "갑판 병사" #deepl:2448626429
+ rouse_rabble_slandered_soldier: "비방하는 병사" #deepl:1847595356
+ rouse_rabble_helped_soldier_home: "더 견고하게 지원" #deepl:1762562614
+ rouse_rabble_observed_soldier: "관찰된 병사" #deepl:1958705373
+
+ rouse_rabble_missive_crush_them: "반란군 분쇄 조언" #deepl:3024212291
+ rouse_rabble_missive_help_them: "반란군 돕기 권고" #deepl:2424822606
+
+ rouse_rabble_suggestion_tax: "자체 세금 감소" #deepl:3298667024
+ rouse_rabble_suggestion_levies: "자체 부과금 감소" #deepl:3813493225
+ rouse_rabble_suggestion_development: "자체 개발 감소" #deepl:2538667592
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "세금 절감" #deepl:3057853721
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "부과금 감소" #deepl:3882781821
+ rouse_rabble_suggestion_reduce_development_county_modifier: "개발 단축" #deepl:1216115176
+
+ rouse_rabble_argument_correct: "올바르게 결정" #deepl:4105672237
+ rouse_rabble_argument_incorrect: "잘못 결정됨" #deepl:3636144073
+ rouse_rabble_trusted_judgment_opinion: "신뢰할 수 있는 판단" #deepl:3001423300
+ rouse_rabble_doubted_judgment_opinion: "의심스러운 판단" #deepl:520569006
+ rouse_rabble_compromised_judgment_opinion: "타협된 결정" #deepl:3044150383
+
+ rouse_rabble_soldiers_suspicious: "수상한 병사" #deepl:2109321105
+ rouse_rabble_soldiers_unsuspecting: "의심하지 않는 병사" #deepl:2952706296
+
+ rouse_rabble_increase_tension: "긴장감 증가" #deepl:1175644696
+ rouse_rabble_cool_off_tension: "긴장감 해소" #deepl:2228263524
+ rouse_rabble_increase_tension_county_modifier: "반란군에서 영감을 얻다" #deepl:170963419
+
+ attempted_to_rouse_rabble: "래블 깨우기 시도" #deepl:3448411340
+ successfully_roused_rabble: "래블 깨우기 성공" #deepl:3121025999

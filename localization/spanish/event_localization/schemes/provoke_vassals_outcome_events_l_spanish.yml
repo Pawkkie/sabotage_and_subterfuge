@@ -1,0 +1,23 @@
+﻿l_spanish:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "Susurros del extranjero" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "Hace poco pasó por mi corte un invitado, un viajero que cruzaba el continente en busca de fortuna y aventuras. Les oí hablar con mis cortesanos en voz baja sobre la facción rebelde de un vasallo de [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Parece que nadie puede averiguar qué les ha envalentonado tan repentinamente, pero un levantamiento parece inevitable, y [target.GetShortUIName] se apresura a controlar la situación. Nuestros esfuerzos han funcionado a la perfección." #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "¡Independencia!" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "¡Disolución!" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "Sospechas desde el extranjero" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "Hace poco pasó por mi corte un invitado, un viajero que cruzaba el continente en busca de fortuna y aventuras. Les oí hablar con mis cortesanos en voz baja sobre la facción rebelde de un vasallo de [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n No dejaban de lanzar miradas en mi dirección, una mirada de desagrado mordaz. No es ningún misterio lo que les ha envalentonado tan repentinamente, pero un levantamiento parece inevitable, y [target.GetShortUIName] está furioso." #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "¡Independencia!" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "¡Disolución!" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "Corazones no encendidos" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "Hace poco pasó por mi corte un invitado, un viajero que cruzaba el continente en busca de fortuna y aventuras. Le oí hablar con mis cortesanos sobre los vasallos de [target.GetCapitalLocation.GetTitle.GetNameNoTier], y su redoblado patriotismo ante la adversidad.\n\n A pesar de nuestros esfuerzos, están contentos con su suerte en la vida." #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "Al menos, por ahora..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "Mentes endurecidas" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "Hace poco pasó por mi corte un invitado, un viajero que cruzaba el continente en busca de fortuna y aventuras. Le oí hablar con mis cortesanos sobre los vasallos de [target.GetCapitalLocation.GetTitle.GetNameNoTier], y su redoblado patriotismo ante la adversidad.\n\n No dejaban de lanzar miradas en mi dirección, una mirada de mordaz desagrado. No es ningún misterio que intenté llevarlos a la rebelión, y [target.GetShortUIName] está furioso." #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "¡Al final los conseguiremos!" #deepl:1078680228

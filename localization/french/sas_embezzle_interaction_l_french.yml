@@ -1,0 +1,26 @@
+﻿l_french:
+ sas_embezzle_interaction: "Détourner des fonds" #deepl:648628518
+ sas_embezzle_interaction_desc: "Concevoir un prétexte pour saisir des marchandises et faire passer des fonds en contrebande à des marchands d'un royaume voisin, d'un seigneur ou d'un vassal." #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "Il ne s'agit pas d'un détournement de fonds si vous ne prenez rien." #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Petite somme" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP Perdre#! quelques objets de valeur" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] Somme moyenne" #deepl:2443027586
+ sas_embezzle_sum_medium: "Prélèvement de frais de douane inattendus" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] Grandes sommes" #deepl:566310994
+ sas_embezzle_sum_large: "Les marchands de dîme injustement" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] Somme énorme" #deepl:1311154991
+ sas_embezzle_sum_huge: "Vol fiscal flagrant" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "Vous détournez des fonds sans être repéré" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Vos actes malveillants sont immédiatement démasqués" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] a été pris en train d'essayer de détourner de l'argent !" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Débloque l'interaction [sas_embezzle_interaction|E] " #deepl:1189011648

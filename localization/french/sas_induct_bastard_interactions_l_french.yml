@@ -1,0 +1,12 @@
+﻿l_french:
+ sas_induct_bastard_interaction: "Inducter le bâtard" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "Induisez [recipient.GetFirstNameNicknamed] dans votre [dynasty|E]." #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "Induisez un enfant illégitime que vous avez engendré avec [GetTrait('disputed_heritage').GetName( GetNullCharacter )] dans votre [dynasty|E]." #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "Bâtard intronisé" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "Vous intégrez [recipient.GetShortUIName] dans votre [dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "Légitimation sournoise" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "Faites à [recipient.GetFirstName] une offre que [recipient.GetSheHe] ne pourra pas refuser, en les légitimant en tant que membres de votre [dynasty|E]." #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "Induisez un enfant [GetTrait('bastard').GetName( GetNullCharacter )] que vous avez engendré dans votre [dynasty|E]." #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "Bâtard volé" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "Vous intégrez [recipient.GetShortUIName] dans votre [dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "Parenté revendiquée" #deepl:3455245448

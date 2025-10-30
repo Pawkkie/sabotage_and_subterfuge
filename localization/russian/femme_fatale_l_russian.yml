@@ -1,0 +1,33 @@
+﻿l_russian:
+ # Court Position
+ femme_fatale_court_position: "Роковая женщина" #deepl:2042176501
+ femme_fatale_court_position_desc: "Мастер обводить придворных вокруг пальца, Роковая женщина специализируется на том, чтобы из тени руководить двором так, чтобы это было выгодно ей. Она может испортить мнение о сеньоре в глазах его вассала, повысить эффективность вашего [sas_spies|E] и облегчить разбирательство при вашем собственном дворе." #deepl:275266301
+ femme_fatale_custom_effect_description: "$BULLET$Можно открыть доступ к сайту [GetScheme('poison_opinion').GetTypeName]. [personal_scheme|E]" #deepl:3961591162
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #deepl:1704038344
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]" #deepl:4179113456
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]" #deepl:1335294579
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]" #deepl:571687154
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]" #deepl:439104194
+
+ # Eligibility
+ femme_fatale_not_lowborn: "Это #bold , а не#!. [lowborn|E]" #deepl:1427234325
+ femme_falate_not_married: "Это #bold , а не#!. [married|E]" #deepl:3606104437
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "Ядовитое мнение" #deepl:489149273
+ femme_fatale_task_poison_opinion_desc: "Отравить мнение цели о своем [liege|E], привести к хаосу и беспорядку при дворе." #deepl:1344370183
+ allow_poisoning_opinion_scheme_tt: "Можно использовать [poison_opinion_scheme|E]. Это задание должно быть активным как для запуска, так и для продолжения схемы.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! до @scheme_success_icon!#P  +20%#! (на основе [aptitude|E])" #deepl:2799618372
+ max_poison_opinion_schemes_add: "Макс [GetScheme('poison_opinion').GetTypeName] [schemes|E]" #deepl:3008665747
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "Примите пауков" #deepl:1182524634
+ femme_fatale_task_embrace_the_spiders_desc: "Плетите паутины [sas_spy_network|E] все дальше и дальше, узнавая чужие секреты эффективнее, чем когда-либо." #deepl:4233153217
+ femme_fatale_increase_spy_discovery_chance_tt: "Повысьте вероятность того, что ваш [sas_spies|E] откроет секреты и инновации." #deepl:4182569517
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "Успокаивать и наблюдать" #deepl:2527092364
+ femme_fatale_task_soothe_and_surveil_desc: "Ослабьте нарастающую напряженность при дворе, внимательно следя за любыми признаками саботажа." #deepl:2496953860
+ increased_poison_opinion_defense_tt: "Враг [GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! до @scheme_success_icon!#P  -20%#! (на основе [aptitude|E])" #deepl:228597342

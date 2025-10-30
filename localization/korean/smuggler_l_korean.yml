@@ -1,0 +1,24 @@
+﻿l_korean:
+ # Court Position
+ smuggler_court_position: "밀수업자" #deepl:2327268886
+ smuggler_court_position_desc: "한 지점에서 다른 지점으로 물품을 이동해야 하는 경우 밀수꾼을 연결해줄 수 있습니다. 반드시 필요한 것은 아니지만, 의심스러운 물품은 이들의 전문 분야입니다. 밀수업자를 통해 강도 계획과 유물 절도를 할 수 있을 뿐만 아니라 자체 운송 네트워크를 강화할 수도 있습니다." #deepl:760391573
+ smuggler_custom_effect_description_scheme: "$BULLET$ [GetScheme('smuggle_artifact').GetTypeName] 에 대한 액세스를 허용할 수 있습니다. [hostile_scheme|E]" #deepl:732188162
+ smuggler_custom_effect_description_demand_payment: "$BULLET$ [demand_payment|E] 상호 작용을 잠금 해제합니다." #deepl:1175097164
+
+ # Traits
+ # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+
+ # Rouse Rabble task
+ smuggler_task_plan_heist: "계획 강탈" #deepl:3591742283
+ smuggler_task_plan_heist_desc: "특정 유물의 강탈을 계획하고, 당신과 당신의 승무원들이 그 유물을 법정에서 당신의 법정으로 밀반입하도록 하세요." #deepl:3024560060
+ allow_steal_artifact_scheme_tt: "[plan_heist_interaction|E] 상호 작용을 사용하여 대상에 대해 [smuggle_artifact_scheme|E] 을 활성화할 수 있습니다. \n [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! ~ @scheme_success_icon!#P  +20%#! ( [aptitude|E] 기준 )" #deepl:4121225388
+
+ # Loot and Scoot task
+ #  smuggler_task_loot_and_scoot: "전리품 및 스쿠트" #deepl:1675967315
+ #  smuggler_task_provoke_vassals_desc: "다른 왕실의 가신들을 자극하여 여론을 낮추고 잠재적으로 전면적인 반란을 일으킬 수 있습니다." #deepl:3289991535
+
+ # Monitor Supplies
+ smuggler_task_monitor_supplies: "모니터 소모품" #deepl:2707686834
+ smuggler_task_monitor_supplies_desc: "영역 물류를 면밀히 주시하여 운영이 안전하고 효율적으로 유지되도록 하세요." #deepl:2420428664
+ increased_smuggle_artifact_defense_tt: "적 [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:1035613496
+

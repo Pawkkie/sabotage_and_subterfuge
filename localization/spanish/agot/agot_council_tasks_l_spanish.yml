@@ -1,0 +1,142 @@
+﻿l_spanish:
+ # Personal Steward
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "La habilidad diplomática de su mayordomo personal [councillor.Custom('diplomacy_skill_level')] le ha llevado a esta ganancia inesperada." #deepl:3987054824
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "Esto sucedió a pesar de la habilidad diplomática de su mayordomo personal [councillor.Custom('diplomacy_skill_level')]." #deepl:2756273250
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "Esto sucedió a pesar de la habilidad marcial de su mayordomo personal [councillor.Custom('martial_skill_level')]." #deepl:1672131809
+ personal_steward_task_martial_good_skilled_notification_tooltip: "La habilidad marcial de su administrador personal [councillor.Custom('martial_skill_level')] llevó a esta ganancia inesperada." #deepl:1416132229
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "La habilidad de administración de su administrador personal [councillor.Custom('stewardship_skill_level')] le ha llevado a esta ganancia inesperada." #deepl:136762961
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "Esto ocurrió a pesar de la habilidad de su administrador personal [councillor.Custom('stewardship_skill_level')] stewardship skill." #deepl:2694643357
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "Esto sucedió a pesar de la habilidad de intriga de su mayordomo personal [councillor.Custom('intrigue_skill_level')]." #deepl:1782695802
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "La habilidad de intriga de tu administrador personal [councillor.Custom('intrigue_skill_level')] te ha llevado a esta ganancia inesperada." #deepl:2761615177
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "Esto ocurrió a pesar de la habilidad de aprendizaje de su administrador personal [councillor.Custom('learning_skill_level')]." #deepl:3263895679
+ personal_steward_task_learning_good_skilled_notification_tooltip: "La habilidad de aprendizaje de su administrador personal [councillor.Custom('learning_skill_level')] le llevó a esta ganancia inesperada." #deepl:4043423585
+ task_personal_steward_default_diplomacy_modifier: "Asistencia del administrador personal" #deepl:628691585
+ task_personal_steward_default_martial_modifier: "Asistencia del administrador personal" #deepl:628691585
+ task_personal_steward_default_stewardship_modifier: "Asistencia del administrador personal" #deepl:628691585
+ task_personal_steward_default_intrigue_modifier: "Asistencia del administrador personal" #deepl:628691585
+ task_personal_steward_default_learning_modifier: "Asistencia del administrador personal" #deepl:628691585
+
+ # Personal Steward Tasks
+ task_personal_steward_default: "Ayudar al Lord Comandante" #deepl:3190029942
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip] le ayuda en el día a día de la gestión de la Guardia de la Noche\n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_personal_steward_default')]" #deepl:2471906103
+ task_personal_steward_court_politics: "Crear influencia" #deepl:3874806014
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] se centra en la política de la Guardia de la Noche y en mejorar las relaciones entre los Hermanos Negros\n\n [councillor.GetHerHis|U] apoyo te da:\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]" #deepl:1899957641
+ task_personal_steward_chivalry: "Formar a la Guardia" #deepl:1093429720
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] se centra en el entrenamiento de los hombres de la Guardia de la Noche\n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]" #deepl:3578335599
+ task_personal_steward_court_intrigue: "Manténgase alerta" #deepl:3757386027
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip] se centra en los rumores y susurros de los Hermanos Negros en su corte\n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]" #deepl:238132299
+ task_personal_steward_manage_domain: "Gestionar el regalo" #deepl:3752812108
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip] se centra en gestionar el Regalo y aumentar las posesiones del Reloj\n\n [councillor.GetHerHis|U] apoyo te da:\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]" #deepl:795658195
+ task_personal_steward_patronage: "Educar al reloj" #deepl:64939694
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] se centra en cuestiones de cultura, religión y educación en el Watch\n\n [councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]" #deepl:673679475
+ councillor_personal_steward_background.0001.diplomacy_notification: "Con la experiencia, la habilidad diplomática de [councillor.GetShortUINamePossessive] ha aumentado." #deepl:1853588496
+ councillor_personal_steward_background.0001.martial_notification: "Con la experiencia, [councillor.GetShortUINamePossessive] ha aumentado su comprensión de la guerra." #deepl:26629406
+ councillor_personal_steward_background.0001.stewardship_notification: "Con la experiencia, las capacidades administrativas de [councillor.GetShortUINamePossessive] han aumentado." #deepl:1503349911
+ councillor_personal_steward_background.0001.intrigue_notification: "Con la experiencia, las habilidades de intriga de [councillor.GetShortUINamePossessive] han aumentado." #deepl:482384644
+ councillor_personal_steward_background.0001.learning_notification: "Con la experiencia, ha aumentado la comprensión académica de [councillor.GetShortUINamePossessive]." #deepl:668661590
+
+ councillor_personal_steward_background.0001.title: "Habilidades del administrador personal" #deepl:607529410
+
+ task_promote_culture_effect_desc_wv_override: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a [councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]" #deepl:1353113911
+ task_promote_culture_effect_desc_ev_override: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a [councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]" #deepl:1820114630
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:916033769
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas: \n#S $TAB$ 60%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:3772183319
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:1153229959
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (AGOT ERROR)#!#! : Algo se rompió con la conversión de la cultura ironborn, Informe a la típica" #deepl:1200773039
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.GetName]" #deepl:1126410652
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas:: \n#S $TAB$ 60%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.GetName]" #deepl:2667011599
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S En #V 100%#!#! :\n$TAB$ El [county|E] cambia [culture|E] a una de las siguientes\n$TAB$ culturas: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.GetName]" #deepl:3113041075
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (AGOT ERROR)#!#! : Algo se rompió con la conversión de la cultura greenborn, Informe a la típica" #deepl:1510425940
+
+
+ # Castellan Tasks
+ task_castellan_default_1:0 "Oversee Realm" #martial
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip]'s experiencia en asuntos de guerra reforzará su control sobre esta tierra. \n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_castellan_default_1')]" #deepl:4119586948
+
+ task_castellan_default_2:0 "Oversee Realm" #learning
+ task_castellan_default_effect_desc_2: "Con el consejo de la mente sabia y erudita de [councillor.GetShortUINameNoTooltip] gobernarás sabiamente. \n\n [councillor.GetHerHis|U] apoyo te da:\n[councillor.GetModifierDescForTask('task_castellan_default_2')]" #deepl:373640728
+
+ task_castellan_default_3:0 "Oversee Realm" #intrigue
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] se mueve en círculos invisibles para la mayoría, lo que le da una ventaja en las sombras de su reino. \n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_castellan_default_3')]" #deepl:150011693
+
+ task_castellan_default_4:0 "Oversee Realm" #stewardship
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip] hará uso de sus conocimientos administrativos para ayudarle en la gestión de su dominio. \n\n [councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_castellan_default_4')]" #deepl:930183188
+
+ task_castellan_default_5:0 "Oversee Realm" #diplomacy
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] es un político capaz, y una mano firme en el arte de gobernar es esencial para gobernar. \n\n [councillor.GetHerHis|U] apoyo le da:\n[councillor.GetModifierDescForTask('task_castellan_default_5')]" #deepl:398758126
+
+
+ task_castellan_default_hodor: "Hacer todo lo posible" #deepl:3046448544
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] no sabe cómo han acabado aquí, pero hacen lo que pueden." #deepl:1327033284
+
+ task_castellan_court: "Presidir el Consejo" #deepl:1348124016
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]" #deepl:164605584
+
+ task_castellan_fortify: "Fortalecer las defensas" #deepl:145040072
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]" #deepl:3665126672
+
+ castellan_fortify_province_modifier: "$task_castellan_fortify$" #deepl:3627279605
+
+ castellan_fortify_county_modifier: "Fortalecer las defensas" #deepl:1470419536
+
+ castellan_court_opinion_modifier: "Castellan preside el consejo" #deepl:1892251711
+
+ task_train_commanders_maa_effect_desc: "Marcador de posición" #deepl:3525875382
+ task_train_commanders_maa_erudition_bonus_desc: "Marcador de posición" #deepl:3525875382
+
+ task_castellan_organise: "Negociar con vasallos" #deepl:3783553490
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]" #deepl:3948196146
+ task_castellan_organise_modifier: "Consejo $councillor_castellan$" #deepl:566097349
+
+ task_castellan_scheme: "Organizar esquemas" #deepl:2331682327
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]" #deepl:4293595345
+ task_castellan_scheme_modifier: "Consejo $councillor_castellan$" #deepl:566097349
+
+ task_castellan_clergy: "Convocar al clero" #deepl:415742451
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]" #deepl:4181075151
+ task_castellan_clergy_modifier: "Consejo $councillor_castellan$" #deepl:566097349
+
+ # Admiral
+ task_admiral_fleet: "Flota de dispersión" #deepl:1618243021
+
+ task_admiral_fleet_modifier: "Consejo $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_fleet_effect_desc: "[supply|E] Duración: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ Concejal [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n [fleet|E] Velocidad de Movimiento: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ Concejal's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#!" #deepl:1383045148
+
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_raid: "Envalentonar a los Raiders" #deepl:1570853202
+
+ cannot_raid: "#X ¡Puedes asaltar!#!" #deepl:1644501070
+
+ NOT_cannot_raid: "#X ¡No puedes asaltar!#!" #deepl:1194432546
+
+ task_admiral_raid_modifier: "Consejo $councillor_admiral$" #deepl:1798471343
+
+
+ task_admiral_raid_effect_desc: "[raid|E] Velocidad: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Concejalía [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#! \n [raid_loot|E] Capacidad: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Concejal's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n Velocidad de Movimiento: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Concejal's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#!" #deepl:4290845175
+
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_maritime: "Proteger el comercio" #deepl:34268181
+
+ task_admiral_maritime_modifier: "Consejo $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_tax_modifier: "Consejo $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_effect_desc: "[domain|E] Impuestos: #P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ Concejalía [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#! \n [supply|E] Capacidad: #P +[SCOPE.ScriptValue('task_admiral_maritime_modifier_value')]%#!\n $TAB$ Base: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ Concejalía [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_base')]%#!" #deepl:763222540
+
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ # Court Chaplain
+ COURT_CHAPLAIN_SHATTERED_WORLD: "Bonificación de inicio de Shattered World" #deepl:3364461777
+
+ # Spymaster
+ agot_task_disrupt_schemes_discover_spies: "Podría descubrir extranjeros [sas_spies|E] en su corte \n" #deepl:2680493951
+ agot_task_disrupt_schemes_recruit_spies: "Podría reclutar [sas_spies|E] en la cancha de objetivos \n" #deepl:2394015076

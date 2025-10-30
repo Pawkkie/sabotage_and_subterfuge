@@ -1,0 +1,14 @@
+﻿l_french:
+ smuggle_artifact_event_title: "Contrebande d'artefacts :" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ L'antiquaire" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "L'un des obstacles évidents à la récupération de l'artefact est [target.GetTitledFirstNamePossessive] antiquaire, [antiquarian.GetTitledFirstName].\n\n Il y a, bien sûr, de multiples façons de... #EMP traiter#! avec une personne, mais je me demande si [antiquarian.GetFirstNameNoTooltip] est le type de personne que je pourrais persuader de regarder de l'autre côté en offrant un pot-de-vin convenable." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "L'or est le langage universel de la corruption." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "Vous pensez que la loyauté de [antiquarian.GetTitledFirstNamePossessive] peut être achetée avec des richesses..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "Peut-être un artefact pour un artefact ?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] acceptera un "échange" équitable." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "Une introduction à [random_beauty.GetTitledFirstName] pourrait s'avérer... #EMP stimulant#!." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "Vous faites le pari que [antiquarian.GetTitledFirstName] apprécie la beauté physique plus que la loyauté." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "Je vais plutôt envisager d'autres possibilités." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] Accepte le pot-de-vin" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] Refuse le pot-de-vin" #deepl:1499978674

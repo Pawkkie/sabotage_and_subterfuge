@@ -1,0 +1,30 @@
+﻿l_spanish: 
+ sas_hostile_scheme_discovery.1002.t: "¡Tramposo descubierto!" #deepl:2806885743
+ sas_hostile_scheme_discovery.1002.intro: "Mi [spymaster.GetCouncilTitle] ha venido a mí con graves noticias: es [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:116762934
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "Me han llegado noticias graves: [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:782412105
+ sas_hostile_scheme_discovery.1002.rouse: "que está despertando a la chusma campesina perteneciente al reino de" #deepl:2701494178
+ sas_hostile_scheme_discovery.1002.fallback: "que está conspirando contra" #deepl:3376091286
+ sas_hostile_scheme_discovery.1002.a: "¡El demonio de [owner.Custom('InsultAdjective')]!" #deepl:2541491147
+
+ sas_hostile_scheme_discovery.2001.t: "Un plan en [ROOT.Char.Custom('GetCourt')|U]" #deepl:3607653157
+ sas_hostile_scheme_discovery.2001.intro: "Mi [spymaster.GetCouncilTitle] ha venido a mí con graves noticias. Aunque todavía no sabemos quién," #deepl:4082077002
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "Me han llegado noticias graves. Aunque aún no se sabe quién," #deepl:3279496608
+ sas_hostile_scheme_discovery.2001.fallback: "alguien conspira contra" #deepl:3932481048
+ sas_hostile_scheme_discovery.2001.rouse: "alguien está despertando a la chusma campesina perteneciente al reino de" #deepl:1810264608
+ sas_hostile_scheme_discovery.2001.target_other: "¡mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], [target.GetTitledFirstName]!" #deepl:3121120145
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]!\n\n No saben con quién están tratando, mi [ROOT.Char.GetLadyLord]. ¿Creen que pueden matarme #EMP #! ? Yo les mostraré. Oh, sí, lo haré." #deepl:4001813834
+ sas_hostile_scheme_discovery.2001.target_me: "¡Yo!" #deepl:4031713392
+ sas_hostile_scheme_discovery.2001.a: "¡Debemos detener al villano que está detrás de esto!" #deepl:148308102
+
+ sas_hostile_scheme_discovery.3002.t: "Esquema descubierto" #deepl:385952488
+ sas_hostile_scheme_discovery.3002.desc: "Se ha descubierto la existencia de mi complot para [scheme.GetFullActionName]!\n\n Aunque aún no se conoce mi implicación, esto hará mucho más difícil que mis planes fructifiquen." #deepl:3976066101
+ sas_hostile_scheme_discovery.3002.a: "¡Maldición!" #deepl:1623550253
+
+ sas_hostile_scheme_discovery.3003.t: "Implicación descubierta" #deepl:2924354761
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ha descubierto que soy el cerebro detrás de la trama" #deepl:1505803270
+ sas_hostile_scheme_discovery.3003.rouse: "¡para despertar a la chusma campesina que pertenece a [target.GetHerHim]!" #deepl:2089024288
+ sas_hostile_scheme_discovery.3003.provoke: "¡para provocar a [target.GetHerHis] vasallos!" #deepl:2832962550
+ sas_hostile_scheme_discovery.3003.smuggle: "¡para pasar de contrabando un artefacto perteneciente a [target.GetHerHim]!" #deepl:2229529354
+ sas_hostile_scheme_discovery.3003.plague: "¡para propagar la peste en el reino [target.GetHerHis]!" #deepl:44403764
+ sas_hostile_scheme_discovery.3003.fallback: "¡contra [target.GetHerHim]!" #deepl:1408398656
+ sas_hostile_scheme_discovery.3003.a: "¡Debe haber habido un malentendido!" #deepl:2938075201

@@ -1,0 +1,14 @@
+﻿l_german:
+ provoke_vassals_supplied_weaponry: "Mitgelieferte Waffen" #deepl:3599795622
+ provoke_vassals_supplied_provisions: "Mitgelieferte Lebensmittel" #deepl:882891120
+
+ provoke_vassals_stifling: "Erstickendes Vasallentum" #deepl:773364300
+ provoke_vassals_meritorious: "Verdienstvolle Vasallentätigkeit" #deepl:3890241118
+
+ provoke_vassals_attempt_assassination: "Reingelegter Attentatsversuch" #deepl:3152209219
+ provoke_vassals_failed_attempt_assassination: "Gescheitertes abgekartetes Attentat" #deepl:137322991
+
+ provoke_vassals_looks_tired: "Lüttich sieht müde aus" #deepl:3010816921
+ provoke_vassals_looks_competent: "Lüttich sieht souverän aus" #deepl:2719656846
+
+ attempted_to_provoke_vassals: "Versuchte Provokation von Vasallen" #deepl:191470277

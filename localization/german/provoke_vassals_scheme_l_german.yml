@@ -1,0 +1,74 @@
+﻿l_german:
+ # Scheme modifiers
+ PROVOKE_VASSALS_AMBITIOUS: "[GetTrait('ambitious').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1541796170
+
+ # Scheme info
+ provoke_vassals: "Vasallen provozieren" #deepl:2492283152
+ provoke_vassals_desc: "Die Vasallen eines Reiches gegen ihren Lehnsherrn aufbringen" #deepl:2344881514
+ provoke_vassals_desc_general: "$provoke_vassals$ ist eine [hostile_scheme|E], die versucht, die Vasallen im Reich des Ziels zu einer Revolte gegen ihren Lehnsherrn zu ermutigen. Dazu muss ein [rabble_rouser_court_position|E] [court_position|E] angestellt werden, und Sie und Ihr Ziel müssen beide über Reiche von mindestens [duchy|E] Rang verfügen.\n\n Wenn der [rabble_rouser_court_position|E] zu irgendeinem Zeitpunkt arbeitslos wird oder seine Aufgabe wechselt, wird der Plan abgebrochen." #deepl:596805607
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ provoke_vassals_action: "Provoziere die Vasallen von" #deepl:3048438145
+
+ PROVOKE_VASSALS_SUCCESS_DESC: "Die Vasallen sind provoziert worden und haben einen Aufstand angezettelt." #deepl:4113621917
+ PROVOKE_VASSALS_DISCOVERY_DESC: "Ihr könnt weiterhin die Vasallen im Reich [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] provozieren." #deepl:2391768
+
+ max_provoke_vassals_schemes_add: "Max [GetScheme('provoke_vassals').GetTypeName] [schemes|E]" #deepl:2813395320
+
+## Character Interaction Scheme Agent Packages
+ provoke_vassals_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:2603902629
+ provoke_vassals_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1717624249
+ provoke_vassals_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1227893453
+ provoke_vassals_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_amanuensis' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]" #deepl:1200689629
+
+ # Allow
+ ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] ist bereits mit einer [independence_faction|E]" #deepl:3421917769
+ NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] sich nicht bereits mit einer [independence_faction|E]" #deepl:1436193969
+ ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] ist bereits mit einer [dissolution_faction|E]" #deepl:273673184
+ NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] sich nicht bereits mit einer [dissolution_faction|E]" #deepl:1642768420
+ VASSALS_CAN_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] hat Vasallen, die überzeugt werden können, Fraktionen zu gründen" #deepl:1144479962
+ VASSALS_CANNOT_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] keine Vasallen hat, die zur Gründung von Fraktionen überredet werden können" #deepl:2365097897
+
+ PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] kämpfte vor kurzem nicht gegen eine [independence_faction|E] " #deepl:268040305
+ NOT_PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] kämpfte vor kurzem auch gegen eine [independence_faction|E] " #deepl:2661186461
+
+ PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] nicht erst vor kurzem gegen eine [dissolution_faction|E] gekämpft hat" #deepl:3278188246
+ NOT_PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] kämpfte vor kurzem auch gegen eine [dissolution_faction|E] " #deepl:3613187446
+
+ PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U]'s [administrative_government|E] ist nicht bereits in einem Fraktionskrieg" #deepl:2544808095
+ NOT_PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U]Die Website [administrative_government|E] befindet sich bereits in einem Krieg der Fraktionen." #deepl:2525562439
+
+ PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]Die Regierung hat keine eidgenössische Teilungsfolge" #deepl:4276519694
+ NOT_PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]Die Regierung hat die Nachfolge der eidgenössischen Teilung" #deepl:3389078339
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Mehr als 5 Jahre vom Spielbeginn entfernt" #deepl:4117658580
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Es müssen 5 Jahre ab Spielbeginn vergangen sein" #deepl:3870898705
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Mehr als 10 Jahre vom Spielbeginn entfernt" #deepl:1109302896
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Es müssen 10 Jahre seit Spielbeginn vergangen sein." #deepl:707856254
+
+ PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] ist nicht der Größte der Khans" #deepl:877924169
+ NOT_PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] ist der Größte der Khans" #deepl:4049601203
+
+ RABBLE_ROUSER_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] die Aufgabe "Vasallen provozieren" durchführt" #deepl:2415167053
+ RABBLE_ROUSER_NOT_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] die Aufgabe "Vasallen provozieren" nicht ausführt" #deepl:945030106
+ provoke_vassals_invalidated_title: "Provoke Vassals Scheme Ends" #deepl:1476132421
+ provoke_vassals_invalidated_dead: "[target.GetShortUIName] ist von uns gegangen. Sie können nicht länger [target.GetHerHis] Vasallen gegen [target.GetHerHim] aufhetzen." #deepl:484895812
+ provoke_vassals_invalidated_target_lost_title: "[target.GetShortUIName] ist so weit in Ungnade gefallen, dass sie keine bedeutenden Vasallen mehr hat, die sie provozieren könnte." #deepl:2496312703
+ provoke_vassals_invalidated_no_rabble_rouser: "Sie sind nicht mehr bei [rabble_rouser_court_position|E] beschäftigt." #deepl:710383329
+ provoke_vassals_invalidated_not_provoking_vassals: "[CHARACTER.GetShortUIName|U] führt die Aufgabe "Vasallen provozieren" nicht mehr aus." #deepl:3053211157
+ provoke_vassals_invalidated_in_army: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] eine Armee anführt." #deepl:1180147792
+ provoke_vassals_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] im Gefängnis ist." #deepl:1720481333
+ provoke_vassals_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] ist nicht mehr verfügbar, da [CHARACTER.GetSheHe] auf Reisen ist." #deepl:500171271
+ provoke_vassals_invalidated_has_dissolution_faction: "[CHARACTER.GetShortUIName|U] hat bereits eine [dissolution_faction|E] gegen [CHARACTER.GetHerHim] gebildet." #deepl:2485077500
+ provoke_vassals_invalidated_has_independence_faction: "[CHARACTER.GetShortUIName|U] hat bereits eine [independence_faction|E] gegen [CHARACTER.GetHerHim] gebildet." #deepl:1667653504
+ provoke_vassals_invalidated_no_eligible_vassals: "[CHARACTER.GetShortUIName|U] hat keine Vasallen mehr, die zur Gründung von Fraktionen überredet werden können." #deepl:2468938260
+ provoke_vassals_invalidated_recent_independence_war: "[CHARACTER.GetShotUIName|U] gerade gegen eine [independence_faction|E] gekämpft." #deepl:2519575917
+ provoke_vassals_invalidated_recent_dissolution_war: "[CHARACTER.GetShotUIName|U] kämpfte gerade gegen eine [dissolution_faction|E]." #deepl:3059438666
+ provoke_vassals_invalidated_admin_faction_war: "[CHARACTER.GetShortUIName|U]Die Website [administrative_government|E] befindet sich nun in einem weiteren Krieg zwischen den Fraktionen." #deepl:172355172
+ provoke_vassals_invalidated_confederate_partition: "[CHARACTER.GetShortUIName|U]Die Regierung der Schweiz hat die eidgenössische Teilungsordnung verabschiedet." #deepl:3065007221
+ provoke_vassals_invalidated_greatest_of_khans: "[CHARACTER.GetShortUIName|U] ist der Größte der Khans geworden." #deepl:71598631
+
+ ## Interaction
+ provoke_vassals_interaction: "Vasallen provozieren #weak (Schema)#!" #deepl:2546310469
+ provoke_vassals_interaction_desc: "Versuch, die Vasallen des Reiches von [recipient.GetShortUINameNoTooltip] zu provozieren, um eine [independence_faction|E] oder [dissolution_faction|E]" #deepl:3078725279
+ provoke_vassals_interaction_notification: "Provokation der Vasallen" #deepl:569161018

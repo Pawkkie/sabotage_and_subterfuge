@@ -1,0 +1,99 @@
+﻿l_german:
+ # Roused Rabble
+ roused_rabble_faction: "Aufgewühlte Pöbel-Fraktion" #deepl:256557288
+ roused_rabble_faction_desc: "Der aufgewiegelte Pöbel [faction|E], der sich aus Bauern zusammensetzt, die durch die Worte eines feurigen Revolutionärs ermutigt wurden, hat beschlossen, dass es an der Zeit ist, ihre Beschwerden direkt auf dem Schlachtfeld an ihren Herrn zu richten." #deepl:2317208078
+ roused_rabble_faction_short_effect_desc: "Will die Operationen ihres Lehnsherrn stören" #deepl:3702182374
+ roused_rabble_faction_every_county: "Alle [faction|E] [county|E]" #deepl:3568567921
+ roused_rabble_faction_spawn_county_levies: "Erhöht eine [new_title.GetAdjective] [army|E] proportional zu ihrer [levies|E]" #deepl:381664188
+ FACTION_DEMAND_ROUSED_RABBLE: "Zur [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstName]" #deepl:3582531469
+ FACTION_DEMAND_ROUSED_RABBLE_DESC: "Wir sind schon viel zu lange mit euren unterdrückerischen Gesetzen belastet worden. Schluss damit! Wir haben es satt, euch Steuern zu zahlen.\n\n Wenn eure Kassen erst einmal ausgetrocknet und eure Vorratskammern leer sind, werdet ihr euch wünschen, ihr hättet uns gerechter behandelt." #deepl:194928992
+ FACTION_DEMAND_ROUSED_RABBLE_ACCEPT: "Ich schätze, ich könnte ein Steuerpfandrecht gewähren..." #deepl:2430240536
+ FACTION_DEMAND_ROUSED_RABBLE_REFUSE: "Niemals! Das Los eines Bauern ist es, seinem Herrn zu dienen!" #deepl:2158219723
+ FACTION_ROUSED_RABBLE_NAME: "Aufgewühlter Pöbel" #deepl:4007931024
+ FACTION_ROUSED_RABBLE_TITLE_NAME: "Aufgewühlter Pöbelaufstand" #deepl:2661092801
+ FACTION_REASON_RABBLE_ROUSED: "Ziel einer [rouse_rabble_scheme|E]: $VALUE|0+=$" #deepl:2256659613
+
+ # Roused Rabble Funding Option
+ sas_faction_demand.1003.t: "Roused Rabble Ready to Rock..." #deepl:2642437462
+ sas_faction_demand.1003.desc: "Ich habe erfahren, dass der Pöbel, den wir vor einiger Zeit aufgeweckt haben, seine Vorbereitungen fast abgeschlossen hat und in vier Monaten bereit sein wird, seinen Kampf in die Hauptstadt zu tragen.\n\n Ich vertraue darauf, dass sie einigen Schaden anrichten und möglicherweise einen echten Wandel herbeiführen werden, aber ich bin sicher, dass sie noch Zeit haben, die Waage zu ihren Gunsten zu kippen..." #deepl:1060245800
+ sas_faction_demand.1003.a: "Sie haben meine uneingeschränkte Unterstützung!" #deepl:521539079
+ sas_faction_demand.1003.b: "Wir könnten ein zusätzliches Druckmittel gebrauchen." #deepl:2408571671
+ sas_faction_demand.1003.c: "Ich nehme an, wir können ein paar Goldstücke entbehren..." #deepl:3331857853
+ sas_faction_demand.1003.d: "Sie kommen schon allein zurecht." #deepl:3956158741
+
+ # Roused Rabble Pre-War Check In
+ sas_faction_demand.1004.t: "Und jetzt ist es Zeit, loszulegen!" #deepl:439050973
+ sas_faction_demand.1004.desc: "Endlich habe ich die Nachricht erhalten, dass der Pöbel, den wir zur Rebellion ermutigt haben, bereit ist, in die Schlacht zu ziehen.\n\n Ich habe viel Gutes über [peasant_leader.GetShortUIName] gehört, hoffentlich kann [peasant_leader.GetSheHe] sie zum Sieg führen!" #deepl:2802403918
+ sas_faction_demand.1004.a: "Und vielleicht können wir die Situation ausnutzen..." #deepl:103532994
+
+ # War Ended in Victory
+ sas_faction_demand.1005.t: "Der Pöbel ist siegreich" #deepl:3605552638
+ sas_faction_demand.1005.desc: "Der Pöbel, den wir unterstützt haben, hat in seiner Revolution zur Verbesserung seines Lebensstandards gewonnen! Dies sollte die weitere Entwicklung des Reiches durch ihren Lehnsherrn erheblich behindern und ihnen allen eine wohlverdiente Pause verschaffen." #deepl:449688228
+ sas_faction_demand.1005.a: "Ich hätte mir kaum ein besseres Ergebnis erhoffen können." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1006.t: "The Rabble Is Breaks Even" #deepl:1625263356
+ sas_faction_demand.1006.desc: "Der von uns unterstützte Pöbel hat in seiner Revolution zur Verbesserung seines Lebensstandards einen weißen Frieden gezogen! Vielleicht hat dies die Region bis zu einem gewissen Grad destabilisiert, und es kann einige Zeit dauern, bis sich die Beziehungen erholen." #deepl:4055594033
+ sas_faction_demand.1006.a: "Nicht zu schnell, hoffe ich." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1007.t: "Der Pöbel ist besiegt" #deepl:735846347
+ sas_faction_demand.1007.desc: "Der Pöbel, den wir unterstützt haben, hat in seiner Revolution zur Verbesserung seines Lebensstandards verloren. Dieses Ergebnis ist zwar bedauerlich, aber nicht völlig unerwartet. Hoffentlich haben wir aus dieser Tortur alles herausgeholt, was wir brauchten." #deepl:3836426464
+ sas_faction_demand.1007.a: "Zeit, sich anderen Themen zuzuwenden" #deepl:396143665
+
+ # Roused Rabble War
+ ROUSED_RABBLE_WAR_NAME: "Aufgewühlter Pöbelaufstand" #deepl:2683090941
+ roused_rabble_war: "Aufgewühlte Pöbel-Fraktion" #deepl:256557288
+ roused_rabble_faction_event_troops: "Aufgewühlter Pöbelaufstand" #deepl:2683090941
+ roused_rabble_war_victory_desc: "Alle rebellischen [counties|E] verlieren [SCOPE.ScriptValue('peasant_war_victory_county_control_loss')|N0] [control|E] ." #deepl:2983339293
+ roused_rabble_war_white_peace_desc: "Der aufgewiegelte Pöbel wird aufgelöst." #deepl:3335355515
+ roused_rabble_war_defeat_desc: "Der aufgewiegelte Pöbel wird aufgelöst und [attacker.GetShortUIName] wird inhaftiert. Alle rebellierenden [counties|E] werden zwangsweise auf [county_opinion|E] vergrößert." #deepl:871786174
+
+
+ # Provoked Independence
+ provoked_independence_faction: "Provozierte Unabhängigkeit" #deepl:3382659683
+ provoked_independence_faction_desc: "Die Mitglieder der Unabhängigkeit [faction|E] suchen die Unabhängigkeit von ihrem [liege|E].\n\n #S  Ultimatum#!\n Alle Fraktionsmitglieder werden [independent|E]\n [liege|E] verliert [prestige|E]" #deepl:27103813
+ FACTION_REASON_PROVOKED_INDEPENDENCE_MODIFIER: "Provoziert in die Unabhängigkeit Fraktion: $VALUE|0+=$" #deepl:1953657133
+ FACTION_REASON_POISONED_OPINION_MODIFIER: "Vergiftete Meinung: $VALUE|0+=$" #deepl:4258996856
+
+ # Provoked Dissolution
+ provoked_dissolution_faction: "Provozierte Auflösung" #deepl:736445653
+ provoked_dissolution_faction_desc: "Mitglieder der $nation_fracturing_faction$ [faction|E] versuchen, das Reich ihrer [liege|E] zu zerstören.\n\n #S  Ultimatum#!\n Alle Fraktionsmitglieder werden [independent|E]\n [liege|E] verlieren ihre [primary_title|E] und andere [titles|E] der gleichen [title_tier|E]" #deepl:3282571830
+ FACTION_REASON_PROVOKED_DISSOLUTION_MODIFIER: "Provoziert in Auflösung Fraktion: $VALUE|0+=$" #deepl:1898886580
+
+ # Provoked Independence War
+ provoked_independence_faction_war: "Unabhängigkeitsfraktion" #deepl:3839543735
+
+ # Provoked Dissolution War
+ provoked_dissolution_faction_war: "Auflösungsfraktion" #deepl:3327982817
+
+ # Faction gave up
+ sas_faction_demand.1011.t: "Nie vom Boden abgehoben" #deepl:10412173
+ sas_faction_demand.1011.desc: "Die Vasallen, die wir gegen [target.GetShortUIName] aufbrachten, konnten nie genug Unterstützung aufbringen, um ihre Ambitionen voranzutreiben, und das Reich bleibt leider stabil.\n\n Die letzten Überreste der von ihnen gebildeten Fraktion haben sich nun aufgelöst." #deepl:3369401508
+ sas_faction_demand.1011.a: "Zeit, sich anderen Themen zuzuwenden" #deepl:396143665
+
+ # War Ended in Victory
+ sas_faction_demand.1012.t: "Die Vasallen sind siegreich" #deepl:52932465
+ sas_faction_demand.1012.desc: "Die Vasallen, die wir provoziert haben, haben in ihrem Krieg gegen [defender.GetShortUIName] gewonnen! Vielleicht können wir das Chaos ausnutzen und einige Teile des Reiches für uns beanspruchen." #deepl:1568465405
+ sas_faction_demand.1012.a: "Ich hätte mir kaum ein besseres Ergebnis erhoffen können." #deepl:3309798585
+
+ # War Ended in White Peace
+ sas_faction_demand.1013.t: "Die Vasallen erreichen die Gewinnzone" #deepl:1192072973
+ sas_faction_demand.1013.desc: "Die Vasallen, die wir provoziert haben, haben einen weißen Frieden gegen [defender.GetShortUIName] gezogen! Vielleicht hat dies die Region bis zu einem gewissen Grad destabilisiert, die Beziehungen könnten einige Zeit brauchen, um sich zu erholen." #deepl:789636467
+ sas_faction_demand.1013.a: "Nicht zu schnell, hoffe ich." #deepl:3735457413
+
+ # War Ended in Defeat
+ sas_faction_demand.1014.t: "Die Vasallen sind besiegt" #deepl:3897891145
+ sas_faction_demand.1014.desc: "Die Vasallen, die wir provoziert haben, haben gegen [defender.GetShortUIName] verloren. Dieses Ergebnis ist bedauerlich, aber nicht völlig unerwartet. Hoffentlich haben wir aus dieser Tortur alles herausgeholt, was wir brauchten." #deepl:2998637062
+ sas_faction_demand.1014.a: "Zeit, sich anderen Themen zuzuwenden" #deepl:396143665
+
+ # Demand being sent
+ sas_faction_demand.1015.t: "Die Vasallen werden Forderungen stellen" #deepl:97930989
+ sas_faction_demand.1015.desc: "Die Vasallen, die wir gegen [target.GetShortUIName] aufgebracht haben, haben ihre Anhänger versammelt und ihre Truppen aufgestellt. Die Zeit ist endlich reif für uns! Entweder wird das Reich zerbrechen, oder es wird Krieg geben. Ersteres wird selbstverständlich sein, wenn es dazu kommt, aber Letzteres...\n\n Das wäre aufregend!" #deepl:776082749
+ sas_faction_demand.1015.a: "Trommelwirbel bitte..." #deepl:659307981
+
+ # War Declared
+ sas_faction_demand.1016.t: "Und so fängt es an" #deepl:3272443967
+ sas_faction_demand.1016.desc: "Es herrscht Krieg! Der Aufstand der Vasallen ist in vollem Gange, und das Reich wird von Konflikten erschüttert werden. Ich frage mich, wie das wohl ausgehen wird?" #deepl:47654385
+ sas_faction_demand.1016.a: "Nur die Zeit wird es zeigen..." #deepl:4070009588
+ 

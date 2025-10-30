@@ -1,0 +1,57 @@
+﻿l_german:
+ activity_MISSING: "#true_white #underline Aufenthaltsort Unbekannt#!" #deepl:2589670414
+ activity_PROPER: "Besuchen Sie [ACTIVITY.GetName|V] in [PROVINCE.GetName|V]" #deepl:2899953008
+ CHARACTER_IN_LOCATION_MISSING: "#underline Der Standort dieses Charakters kann nicht bestimmt werden.#!" #deepl:1152593234
+ CHARACTER_IN_LOCATION_PROPER: "#underline Angesiedelt in [Character.GetCurrentLocation.GetName|V]#!" #deepl:3323452286
+
+ NO_PATRON: "Kein Schirmherr ausgewählt" #deepl:3373182812
+
+ AGOT_RULER_DESIGNER_HEIGHT_3_4: "[GeneCategory.GetName]: [Select_float(GreaterThan_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)4.0'), '(float)4', '(float)3')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:2282626069
+ AGOT_RULER_DESIGNER_HEIGHT_5_6: "[GeneCategory.GetName]: [Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)6.0'), '(float)6', '(float)5')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:538148862
+ AGOT_RULER_DESIGNER_HEIGHT_7_8: "[GeneCategory.GetName]: [Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)8.0'), '(float)8', '(float)7')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:1504814872
+ AGOT_RULER_DESIGNER_HEIGHT_CM: "[GeneCategory.GetName]: [Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.46509803921568627450980392156863', '(float)0.5078431372549019607843137254902')), Select_float(RulerDesignerWindow.IsFemale, '(float)114.3', '(float)119.4'))]cm" #deepl:532816563
+
+ AGOT_RULER_DESIGNER_GENE_ONLY_MEN: "Nur für Männer sichtbar" #deepl:533332604
+
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL: "Kleidung anzeigen" #deepl:2652019048
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\nZeigt die Kleidung auf dem Charakterporträt. Sie werden auch nach der Fertigstellung noch Kleidung tragen.\n\n #I  Zum Ausblenden klicken#!" #deepl:2111600134
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\nBlendet die Kleidung auf dem Charakterporträt aus. Sie werden auch nach der Fertigstellung Kleidung tragen.\n\n #I  Zum Anzeigen klicken#!" #deepl:3422908735
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP: "[SelectLocalization( Not(GetGlobalVariable('character_undress').IsSet), 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE' )]" #deepl:2628953934
+
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL: "Feste Profilansicht" #deepl:1652583814
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\nAktiviert die feste Profilansicht, die die festen Front- und Seitenansichten des Charakterporträts verwendet.\n\n #I  Klicken Sie, um die feste Profilansicht zu deaktivieren.#!" #deepl:557180594
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\nDeaktiviert die feste Profilansicht, die die standardmäßig versetzten vorderen und seitlichen Blickwinkel des Zeichenporträts verwendet.\n\n #I  Klicken Sie, um die feste Profilansicht zu aktivieren.#!" #deepl:3410983546
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP: "[SelectLocalization( GetGlobalVariable('true_profile_view').IsSet, 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE' )]" #deepl:2587200608
+
+ DRAGON_DESIGNER_STORE_DNA_TOOLTIP: "#T Drachen-DNA speichern#!\n Speichert die DNA-Einstellungen, die sich derzeit im Customizer befinden.\n\n@warning_icon! #X Sie verlieren diese Werte, wenn Ihr Charakter stirbt.#!" #deepl:924222140
+ DRAGON_DESIGNER_APPLY_DNA_TOOLTIP: "#T Gespeicherte DNA anwenden#!\n Wenden Sie die gespeicherten DNA-Einstellungen auf den Customizer an." #deepl:2671363870
+ DRAGON_DESIGNER_UNDO_DNA_TOOLTIP: "#T Angewandte DNA rückgängig machen#!\n Setzen Sie die DNA-Einstellungen im Customizer auf die Werte zurück, die sie vor der Anwendung hatten." #deepl:326668943
+ DRAGON_DESIGNER_EXPORT_VALUES: "#T Inhalt des Ereignisses kopieren#!\n Kopiert den Inhalt des Ereignistextes in die Zwischenablage.\n\n Der Ereignistext enthält einen geskripteten Effekt, den Sie in eine #high import_dragon_dna.txt#! Datei einfügen können.\n\n@warning_icon! #X Bitte verwenden Sie die Schaltfläche  Ereignisinhalte neu generieren  (die Aktualisierungsschaltfläche links von dieser Schaltfläche), um den Ereignistext neu zu generieren und die neuesten Werte aus dem Customizer zu erhalten#! #T #! #X #!" #deepl:1364123390
+ DRAGON_DESIGNER_IMPORT_VALUES: "#T DNA aus einer Datei importieren#!\n Vergewissern Sie sich, bevor Sie diese Schaltfläche verwenden:\n$BULLET_WITH_TAB$ Dieser Ordner wird erstellt: #high %USERPROFILE%/Documents/Paradox Interactive/Crusader Kings III/run#! - erstellen Sie den Ordner, wenn er nicht existiert.\n$BULLET_WITH_TAB$Es gibt eine Datei namens #high import_dragon_dna.txt#! im Ordner #high run#!.\n$BULLET_WITH_TAB$ Es gibt einen #high import_dragon_dna = {}#! Effekt in der #high import_dragon_dna.txt#! Datei.\n\n@warning_icon! #X Bitte beachten Sie, dass dadurch jeder Effekt in der Datei ausgelöst wird. Stellen Sie sicher, dass Sie nur die Effekte in der Datei haben, die Sie ausführen möchten.#!" #deepl:3791460998
+
+ agot_character_performing_councillor_task: "während der Durchführung einer Aufgabe" #deepl:602773449
+ agot_character_traveling: "während der Fahrt" #deepl:112387279
+
+ cant_be_kingsguard: "#X Kann kein Mitglied der Königsgarde sein" #deepl:1449117284
+ cant_be_nw: "#X Kann kein Mitglied der Nachtwache sein" #deepl:1174047844
+ cant_be_silent_sis: "#X Kann kein Mitglied der Silent Sisters sein" #deepl:2111153960
+
+ COURT_POSITION_NAME_DISPLAY: "#high [CourtPosition.GetEmployee.Custom('AGOTCustomGetShortUIName')]#![CourtPosition.GetEmployee.Custom('TitleSuffix')]" #deepl:4106785100
+ ACCLAIMED_KNIGHT_NAME_DISPLAY: "[Accolade.GetAcclaimedKnight.Custom('AGOTCustomGetTitledFullNameDynasty')][Accolade.GetAcclaimedKnight.Custom('TitleSuffix')]" #deepl:4249902692
+ BARBERSHOP_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ MY_REALM_CHARNAME_DISPLAY: "#high [MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('AGOTCustomGetShortUIName')]#![MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('TitleSuffix')]" #deepl:3705399477
+ COURT_POSITION_APPOINT_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ COOLTIP_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal][Character.Custom('WordSpace')][Character.Custom('SurnameSwitch')]#medium [Character.Custom('TitleSuffix')]#!#medium , [Character.GetAge]#!" #deepl:1092325654
+ COOLTIP_KNIGHT_NAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip][Character.Custom('WordSpace')] [Character.GetHouse.GetNameNoTooltip] #medium  , [Character.GetAge]#!" #deepl:2422609432
+ COOLTIP_MAESTER_NAME_DISPLAY: "[Character.Custom('MaesterCheck')] [Character.GetTitledFirstNameNicknamedNoTooltip]#medium , [Character.GetAge]#!" #deepl:3203973981
+ COOLTIP_SILENTSISTER_NAME_DISPLAY: "Silent Sister [Character.GetFirstNameNicknamedNoTooltip]#medium  , [Character.GetAge]#!" #deepl:3118680272
+ COOLTIP_BASTARD_NAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')]#medium , [Character.GetAge]#!" #deepl:799121695
+ COOLTIP_KNIGHT_BASTARD_NAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')] #medium  , [Character.GetAge]#!" #deepl:2214245248
+ COOLTIP_UNLANDED_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal]#medium [Character.Custom('TitleSuffix')]#!#medium , [Character.GetAge]#!" #deepl:848487151
+ COOLTIP_HIGHSEPTON_NAME_DISPLAY: "[Character.GetNickname]#medium , [Character.GetAge]#!" #deepl:1349441906
+ COOLTIP_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] von [Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  , [Character.GetAge]#!" #deepl:305290230
+ COOLTIP_SER_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip] von [Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  , [Character.GetAge]#!" #deepl:2204980815
+ LIST_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ AGOT_CANNOT_HIRE_MENATARMS: "#T Neu erstellen [men_at_arms|E] [regiment|E] #! \n [MilitaryItem.GetMaACanBeCreatedTooltip] \n @warning_icon! #X  Solange Sie dem [GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] unterliegen, können Sie keine Soldaten einstellen. #!" #deepl:3923605812
+ AGOT_HIRE_MERCENARIES_TOOLTIP: "#T [MercenaryCompany.GetName] #!\n#I Klicken Sie hier, um Details zu sehen#![SelectLocalization(GetScriptedGui('agot_can_hire_mercenaries').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), '', 'AGOT_HIRE_MERCENARIES_ADD')]" #deepl:4282356010
+ AGOT_HIRE_MERCENARIES_ADD: "\n\n@warning_icon! #X Sie können keine Söldner anheuern, solange Sie der unterliegen. [GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] #!" #deepl:3522849467

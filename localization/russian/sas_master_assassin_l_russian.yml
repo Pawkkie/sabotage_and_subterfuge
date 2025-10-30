@@ -1,0 +1,5 @@
+﻿l_russian: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "Распространение чумы" #deepl:4245244667
+ master_assassin_task_spread_plague_desc: "Посеять [epidemic|E] при дворе персонажа, пытаясь заразить его и одновременно усилить собственное сопротивление." #deepl:1616301097
+ allow_spread_plague_scheme_tt: "Можно использовать [spread_plague_scheme|E]. Это задание должно быть активным как для запуска, так и для продолжения работы схемы." #deepl:2097629515

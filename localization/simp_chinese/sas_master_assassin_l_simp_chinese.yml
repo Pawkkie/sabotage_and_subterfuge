@@ -1,0 +1,5 @@
+﻿l_simp_chinese: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "传播瘟疫" #deepl:4245244667
+ master_assassin_task_spread_plague_desc: "在角色的宫廷中播种[epidemic|E] ，试图感染他们，同时增强自己的抵抗力。" #deepl:1616301097
+ allow_spread_plague_scheme_tt: "可以使用[spread_plague_scheme|E] 。该任务必须处于激活状态，才能启动和继续计划。" #deepl:2097629515

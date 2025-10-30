@@ -1,0 +1,20 @@
+﻿l_german:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "Die Charaktere sind im Allgemeinen eher bereit, [sas_spy|E] für Sie zu öffnen." #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "Die Charaktere sind im Allgemeinen eher bereit, [sas_spy|E] für Sie zu öffnen." #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "Die Charaktere sind im Allgemeinen eher bereit, [sas_spy|E] für [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "Angezogene Charaktere sind viel eher bereit, [sas_spy|E] für Sie" #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Angezogene Personen sind viel eher bereit, [sas_spy|E] für dich zu öffnen." #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Angezogene Personen sind viel eher bereit, [sas_spy|E] für [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "Auf [sas_spies|E] ist die Wahrscheinlichkeit, dass Sie Ihren Namen preisgeben, wenn Sie erwischt werden, viel geringer." #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "Auf [sas_spies|E] ist die Wahrscheinlichkeit, dass Sie Ihren Namen preisgeben, wenn Sie erwischt werden, viel geringer." #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U] [sas_spies|E] ist es viel weniger wahrscheinlich, dass sie ihren Arbeitgeber verraten, wenn sie erwischt werden." #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Jede Ihrer [lover|E] und [soulmate|E] Beziehungen gibt Ihnen #P 2#! zufällige [skill|E] Punkte (bis zum Maximum von [EmptyScope.ScriptValue('friendly_counsel_max')|0])" #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Schaltet die [sas_induct_bastard_interaction|E] Interaktion frei" #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Schaltet die [sas_steal_bastard_interaction|E] Interaktion frei" #deepl:4140120211
+ 

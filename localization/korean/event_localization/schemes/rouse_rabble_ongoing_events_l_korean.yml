@@ -1,0 +1,69 @@
+﻿l_korean:
+ # Invited to a feast
+ rouse_rabble_ongoing.0001.t: "잔치에 초대" #deepl:1441220718
+ rouse_rabble_ongoing.0001.desc: "[target_title.GetNameNoTier] 시골 외곽에서 대농민 가족을 이끌고 있는 한 장로가 지역 명절을 기념하는 잔치에 [rouser_name.GetShortUIName] 을 초대했습니다. [rouser_name.GetShortUIName]\n \n 이 농민들은 내가 이 일에 전혀 관여하지 않았고, 나의 존재가 그들에게 충격이 될 수도 있지만, 특히 우리가 동등하게 식사를 함께 한다면 그들의 대의에 대한 강력한 지지의 표시가 될 것입니다." #deepl:2676334559
+ rouse_rabble_ongoing.0001.a: "축제에 참여하겠습니다" #deepl:2695719965
+ rouse_rabble_ongoing.0001.b: "선물을 보내겠습니다." #deepl:3810044038
+ rouse_rabble_ongoing.0001.c: "관여하지 말아야 합니다" #deepl:1759156705
+
+ # The liege sends relief
+ rouse_rabble_ongoing.0002.t: "리게가 구호를 보내다" #deepl:2093183175
+ rouse_rabble_ongoing.0002.desc: "[rouser_name.GetShortUIName] 는 최근 일부 농촌 [target_title.GetNameNoTier] 정착촌에서 화재가 발생하여 곡물 창고와 인근 건물이 불타고 있다고 알려왔습니다. 이로 인해 농민들의 식량 공급이 심각하게 위협받고 있습니다.\n\n [target.GetShortUIName] 피해 지역에 식량과 건축 자재 등의 형태로 구호품을 보내달라고 요청했습니다. 우리의 지원을 제공하면 선의를 키울 수 있지만 대중을 안정시킬 수 있습니다... 대신 용병을 고용해 배달되는 식량을 가로채 파괴하는 건 어떨까요?\n\n 그건 너무 과한 조치일지도..." #deepl:1680985283
+ rouse_rabble_ongoing.0002.a: "배달 가로채기" #deepl:1927831992
+ rouse_rabble_ongoing.0002.b: "배송 승인" #deepl:2208938163
+ rouse_rabble_ongoing.0002.c: "어떤 일이 일어나는지 확인해 보세요." #deepl:4098838832
+
+ # Connecting with the youth
+ rouse_rabble_ongoing.0003.t: "청소년과 소통하기" #deepl:2985966255
+ rouse_rabble_ongoing.0003.desc: "[rouser_name.GetShortUIName] 지역 농민 청소년을 위한 박람회를 도와달라는 요청을 받은 것 같습니다! \n \n 오늘의 청소년은 내일의 혁명가입니다. 이 자리가 우리에게 가장 도움이 될 수 있는 씨앗을 뿌릴 수 있는 기회가 아닐까요?" #deepl:2713189345
+ rouse_rabble_ongoing.0003.a: "모의 배틀 계획하기" #deepl:146267889
+ rouse_rabble_ongoing.0003.b: "사냥 토너먼트 개최" #deepl:991081673
+ rouse_rabble_ongoing.0003.c: "문화 교류 워크숍 운영" #deepl:2194861974
+
+ # Staging a protest
+ rouse_rabble_ongoing.0004.t: "시위 준비하기" #deepl:2463182722
+ rouse_rabble_ongoing.0004.desc: "최근에 부유한 귀족인 주인공들이 농민들과 섞이기 위해 복장과 태도를 변장한 소설을 읽었습니다.\n\n 우리도 [target_title.GetNameNoTier] 에서 이렇게 할 수 있을 것 같다는 생각이 들었고, 평화적인 시위를 벌이기 위해 일부 궁중 인원을 파견하여 시위가 격렬해지면 폭력적으로 변할 수도 있겠다는 생각이 들었습니다." #deepl:3630176459
+ rouse_rabble_ongoing.0004.a: "배를 흔들자" #deepl:4217286068
+ rouse_rabble_ongoing.0004.b: "어쩌면 이것은 소설에 맡기는 것이 더 나을 수도 있습니다." #deepl:726165040
+
+ # A rowdy tavern
+ rouse_rabble_ongoing.0005.t: "소란스러운 선술집" #deepl:226345630
+ rouse_rabble_ongoing.0005.desc: "[target_title.GetNameNoTier] 저는 [rouser_name.GetShortUIName] 에서 업데이트를 받기 위해 [rouser_name.GetHerHim] 의 한 선술집으로 몰래 이동했습니다. 선술집은 마녀의 가마솥처럼 붐비고 소란스러웠습니다\n\n 불협화음 너머로 한 목소리가 들려왔는데, 잔에 너무 깊이 취한 왕국의 병사가 농민들에게 말을 거는 것이었습니다. 불만의 소리가 울려 퍼지지만 누구도 그에게 다가서려 하지 않습니다." #deepl:960826830
+ rouse_rabble_ongoing.0005.a: "일어나서 불을 끄세요" #deepl:1867440387
+ rouse_rabble_ongoing.0005.b: "불만의 불평에 기름을 더하다" #deepl:954247850
+ rouse_rabble_ongoing.0005.c: "더 견고한 가정에 도움" #deepl:131614521
+ rouse_rabble_ongoing.0005.d: "음료를 마시며 다음을 관찰하세요." #deepl:1953099562
+
+ # An interesting missive
+ rouse_rabble_ongoing.0006.t: "흥미로운 미시" #deepl:4215557738
+ rouse_rabble_ongoing.0006.desc: "믿을 수 없을 정도로 [target.GetShortUIName] 으로부터 편지를 받았습니다. [target.GetHerHis]\n \n 흥미로운 부분은 결말입니다. [target.GetSheHe] 은 농민들의 불안을 다루고 있으며, 앞으로 나아갈 최선의 방법에 대해 제 의견을 묻고 있는 것 같습니다. 제가 의심을 받고 있지는 않지만 아직 기회가 될 수도 있습니다." #deepl:640877473
+ rouse_rabble_ongoing.0006.a: "분쇄" #deepl:2237847967
+ rouse_rabble_ongoing.0006.b: "조금만 여유를 가지세요" #deepl:693808399
+
+ # A Costly Suggestion
+ rouse_rabble_ongoing.0007.t: "비용이 많이 드는 제안" #deepl:869688950
+ rouse_rabble_ongoing.0007.desc: "최근 한 요원이 제게 농민 반란을 모범으로 이끄는 것이 현명할 수 있다고 제안했습니다. 즉, 우리의 영역을 전 세계 농민들이 스스로 성취하고자 열망하는 것을 보여주는 빛나는 등대로 활용하자는 것입니다. [rouser_name.GetShortUIName] 그러면 우리의 선행을 변화가 가능하다는 구체적인 증거로 사용할 수 있습니다.\n\n 이것은 우리 스스로 대중과 소통하는 방식을 분명히 바꿔야 하기 때문에 대가 없이 오는 것은 아닙니다. 이걸 위해 그만한 가치가 있을까요?" #deepl:2964475064
+ rouse_rabble_ongoing.0007.a: "세금 절감" #deepl:96913909
+ rouse_rabble_ongoing.0007.b: "부과금 감소" #deepl:26427300
+ rouse_rabble_ongoing.0007.c: "휴식 시간 제공" #deepl:874460699
+ rouse_rabble_ongoing.0007.d: "세상에나!" #deepl:162677040
+
+ # Who's the rouser
+ rouse_rabble_ongoing.0008.t: "여기 래블 루저가 누구야?!" #deepl:1707284294
+ rouse_rabble_ongoing.0008.desc: "신성 모독! 말도 안 돼! 종말론적으로 어리석은 생각입니다! 도대체 어디서 이런 제안이 나온 건지 도저히 이해할 수가 없네요!\n\n [rouser_name.GetShortUIName] 이쪽은 전문가인 것 같은데, 정말? 정말요?! 그런 종류의 혈통이 정말 이런 아이디어의 장점을 볼 수있는 독특한 관점을 제공합니까?\n\n 이해할 수 없지만 여전히 행동 방침을 결정해야합니다." #deepl:564414791
+ rouse_rabble_ongoing.0008.a: "그들은 자신이 무엇을 하고 있는지 알고 있습니다." #deepl:3356801487
+ rouse_rabble_ongoing.0008.b: "이 말도 안 되는 소리는 무시하겠습니다." #deepl:1872803170
+ rouse_rabble_ongoing.0008.c: "타협점을 찾을 수 있을 거라 확신합니다." #deepl:730623529
+
+ # Crossing the border
+ rouse_rabble_ongoing.0009.t: "국경을 넘다 적발" #deepl:2951116650
+ rouse_rabble_ongoing.0009.desc: "국경을 넘어 [target_title.GetNameNoTier] 로 가던 중 [rouser_name.GetShortUIName] 시골을 순찰하는 군인들의 일상적인 순찰에서 불운의 연속을 만났습니다.\n\n 그들은 급하거나 불친절하지는 않지만 망설이는 호기심에 손을 흔들며 [rouser_name.GetHerHim] 걸어오라고 합니다. \n \n 사람들이 이 지역을 돌아다니는 것이 전혀 드문 일은 아니지만, 상황을 재치 있게 처리하지 않으면 군인들에게 인상을 남길 수 있을 만큼 흔하지 않은 일입니다." #deepl:4133707670
+ rouse_rabble_ongoing.0009.a: "목적에 대한 거짓말" #deepl:3028399027
+ rouse_rabble_ongoing.0009.b: "일상적인 대화 나누기" #deepl:2801380731
+ rouse_rabble_ongoing.0009.c: "뇌물 제공" #deepl:1256381302
+
+ # Burning too bright
+ rouse_rabble_ongoing.0010.t: "불길이 너무 밝게 타오릅니다" #deepl:1391488323
+ rouse_rabble_ongoing.0010.desc: "[target_title.GetNameNoTier] 농민 운동이 잘 진행되고 있는 것 같습니다... 어쩌면 너무 잘 진행되고 있는 것 같습니다.\n\n 그들의 열정이 다른 지역으로 확산될 위험이 있는 것이 분명합니다.\n\n 내부의 사람들을 이용해 상황을 조금 진정시킬 수는 있지만, 결과가 있을 것입니다." #deepl:4227841483
+ rouse_rabble_ongoing.0010.a: "강도 높이기" #deepl:3207464489
+ rouse_rabble_ongoing.0010.b: "완화" #deepl:1458867344

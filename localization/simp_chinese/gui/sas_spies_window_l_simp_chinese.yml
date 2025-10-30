@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ INTRIGUE_WINDOW_MY_SPIES_TITLE: "[sas_spies|E] 在您的[sas_spy_network|E]" #deepl:3897218222
+ INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T  [sas_spies|E]#!  最大值按您和您的 的总和 的五分之一计算，四舍五入。扩大间谍网决定加倍。\n [spymaster|E] [intrigue|E] " #deepl:583737040
+ INTRIGUE_WINDOW_DISMISS: "解散" #deepl:1713405472
+ INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T 将#!\n \n 从您的电子邮件中删除[Character.GetTitledFirstName] [sas_spy_network|E]" #deepl:3130473183
+ SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]" #deepl:794553844

@@ -1,0 +1,21 @@
+﻿l_russian:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "Я становлюсь смертью" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] только что вернулся после длительного отсутствия. Похоже, заражение, [master_assassin_name.GetSheHe] заложенное в него, принесло свои плоды. [master_assassin_name.GetSheHe|U] задержался в регионе на несколько дней, прежде чем вернуться домой, чтобы проверить, сработал ли план, и слухи о быстро распространяющейся болезни [master_assassin_name.GetHerHim] быстро дошли до местных рынков.\n\n Кто скажет, как далеко [epidemic|E] может распространиться отсюда, но ясно, что мы начали что-то, что теперь не в наших силах." #deepl:108591925
+ spread_plague_outcome.0001.a: "Пусть он оставит после себя хаос!" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "Объявлено о приходе смерти" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] только что вернулся после длительного отсутствия. Похоже, заражение, которое [master_assassin_name.GetSheHe] подбросили, принесло свои плоды. [master_assassin_name.GetSheHe|U] задержался в регионе на несколько дней, прежде чем вернуться домой, чтобы проверить, сработал ли план, и слухи о быстро распространяющейся болезни быстро достигли [master_assassin_name.GetHerHim] на местных рынках.\n\n К сожалению, [master_assassin_name.GetSheHe] был остановлен на пути из города, и, хотя [master_assassin_name.GetSheHe] удалось сбежать, некоторые улики, окончательно обвиняющие меня в заговоре, были брошены и оставлены позади." #deepl:1902814976
+ spread_plague_outcome.0002.a: "По крайней мере, план сработал!" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "Гигиена преобладает" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] только что вернулся после длительного отсутствия. [master_assassin_name.GetHerHim] Похоже, что заразительные вещества, которые [master_assassin_name.GetSheHe] посадили, не принесли плодов. [master_assassin_name.GetSheHe|U] задержался в регионе на несколько дней, прежде чем вернуться домой, чтобы проверить, сработал ли план, но ни на одном из местных рынков не появилось ни слова о болезни.\n\n Возможно, наши заразительные вещества были слишком слабыми или применялись слишком консервативно, кто скажет." #deepl:3939157326
+ spread_plague_outcome.0003.a: "В следующий раз им так не повезет..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "Непрощенные подарки" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] только что вернулся после длительного отсутствия. Похоже, зараженные [master_assassin_name.GetSheHe] принесли свои плоды. [master_assassin_name.GetSheHe|U] задержался в регионе на несколько дней, прежде чем вернуться домой, чтобы проверить, сработал ли план, и ни на одном из местных рынков не появилось ни слова о болезни [master_assassin_name.GetHerHim].\n\nВозможно, наши заразители были слишком слабыми или применялись слишком консервативно, кто знает.\n\n К сожалению, [master_assassin_name.GetSheHe] был остановлен на выезде из города, и хотя [master_assassin_name.GetSheHe] удалось сбежать, некоторые улики, окончательно обвиняющие меня в заговоре, были брошены и оставлены позади." #deepl:1196545157
+ spread_plague_outcome.0004.a: "Это катастрофа..." #deepl:4191637054

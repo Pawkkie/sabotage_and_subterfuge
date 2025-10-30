@@ -1,0 +1,13 @@
+﻿l_spanish:
+ attempted_to_spread_plague: "Intento de propagación de la peste" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "No envió contaminantes" #deepl:3309051214
+ spread_plague_shipped_clothing: "Contaminantes transportados" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "Envío contaminado recibido" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "Contaminantes aguas arriba" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "Abastecimiento diligente de agua" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "Residuos aguas arriba" #deepl:1605090773
+ spread_plague_water_in_town: "Suministro de agua sucia" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "Despensa contaminada" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "Despensa contaminada" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "Inspecciones alimentarias minuciosas" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "Campo de cultivo contaminado" #deepl:846309052

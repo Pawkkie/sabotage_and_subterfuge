@@ -1,0 +1,75 @@
+﻿l_korean:
+ ###########################
+ # Critical Moments
+ ###########################
+
+ # Scheme Type A Boilerplate
+ sas_scheme_critical_moments.0001.t.task_contract: "결론 [GetPlayer.Custom('GetContractOrIssue')]" #deepl:1012265068
+ sas_scheme_critical_moments.0001.t.scheme: "스키마 실행" #deepl:2532843253
+ sas_scheme_critical_moments.0001.desc: "적립된 [scheme_opportunity_opportunities|E] 을 사용하여 새로운 [agent|E] 슬롯을 추가하거나 [scheme.GetName] [scheme|E] 을 완료할 수 있습니다." #deepl:4157729825
+ sas_scheme_critical_moments.0001.a: "#WEAK (@scheme_opportunity_icon![scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] )#! 순간 포착하기" #deepl:666541376
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_opportunities: "[scheme_opportunity_i][scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] [scheme_opportunity_opportunities|E]" #deepl:4113346938
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_success_chance: "최소 1%가 필요합니다. [success_chance|E]" #deepl:22090382
+ sas_scheme_critical_moments.0001.a.tt.progress: "[scheme.GetName] [scheme.GetTargetCharacter.GetShortUIName] #WEAK  (  )[scheme.GetSuccessChance|%/0] [success_chance|E]#!" #deepl:3020828712
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable: "#WEAK #WEAK [target.GetTitledFirstNamePossessive] [court_positions|E] &amp; 기타 방어는  %의 성공 확률을 제공합니다. [target.GetHerHim] [scheme.MakeScope.Var('target_intercept_repeatable_chance').GetValue]#!#!" #deepl:1066499528
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable_and_unique: "#WEAK 무작위 확률과 특수 효과도 드물게 시도를 방해할 수 있습니다.#!" #deepl:3063377230
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.unique: "#WEAK 드물게 무작위 확률과 특수 효과로 시도를 방해할 수 있습니다.#!" #deepl:2397171866
+ sas_scheme_critical_moments.0001.b: "[scheme.Custom('GetCorrectAgentType_ChoiceA_Icon')] [scheme.Custom('GetCorrectAgentType_ChoiceA')] 상담원 슬롯을 추가합니다." #deepl:3263383410
+ sas_scheme_critical_moments.0001.b.fallback: "무작위 상담원 슬롯을 추가합니다." #deepl:1489889637
+ sas_scheme_critical_moments.0001.c: "[scheme.Custom('GetCorrectAgentType_ChoiceB_Icon')] [scheme.Custom('GetCorrectAgentType_ChoiceB')] 상담원 슬롯을 추가합니다." #deepl:2992946553
+ sas_scheme_critical_moments.0001.c.fallback: "무작위 상담원 슬롯을 추가합니다." #deepl:1489889637
+ sas_scheme_critical_moments.0001.d: "@unpredictable_icon! 아, 이 에이전트들은 안 돼요." #deepl:1013029851
+ sas_scheme_critical_moments.0001.d.tt: "이러한 잠재적인 [agent|E] 슬롯은 폐기됩니다." #deepl:1290247234
+ sas_scheme_critical_moments.0001.e: "@icon_contract_modification_single! 이벤트 위험" #deepl:2679306790
+ sas_scheme_critical_moments.0001.e.receive_event: "#P 도움이 될 수 있는#! 또는 #N 유해할 수 있는 [scheme.GetName] 관련 이벤트가 무작위로 전송됩니다.#!" #deepl:4000171554
+ sas_scheme_critical_moments.0001.e.debug.warning: "#D 이러한 이벤트는 검증되지 않았으므로 위험 대비 보상의 균형이 좋지 않을 수 있습니다.#!" #deepl:1193211861
+ sas_scheme_critical_moments.0001.f: "@scheme_success_icon! 성공 확률 수정자 추가" #deepl:828072647
+ sas_scheme_critical_moments.0001.g: "@scheme_success_max_icon! 최대 성공 확률 수정자 추가" #deepl:1378556640
+ sas_scheme_critical_moments.0001.h: "@time_icon! 더 많은 계획이 필요합니다..." #deepl:3620623102
+ sas_scheme_critical_moments.0001.h.tt.some_opportunities: "비용을 지출하지 않고 종료합니다 [scheme_opportunity_i] [scheme_opportunity_opportunities|E]" #deepl:2469258378
+ sas_scheme_critical_moments.0001.h.tt.zero_opportunities: "[scheme_opportunity_i] [scheme_opportunity_opportunity|E]" #deepl:946611055
+ sas_scheme_critical_moments.0001.option.need_opportunities: "[scheme_opportunity_i]1 이상이 필요합니다. [scheme_opportunity_opportunity|E]" #deepl:1328090935
+ sas_scheme_critical_moments.0001.option.max_slots: "이 [scheme|E] 최대 [agent|E] 슬롯에 도달했습니다." #deepl:2882987660
+ sas_scheme_critical_moments.0001.option.opportunities_better_spent_on_agents: "#혼합 값 @alert_icon! [scheme_opportunity_opportunities|E] 일반적으로 [agent|E] 슬롯에 더 잘 사용됩니다.#!" #deepl:902020936
+
+ # Scheme Type B Boilerplate
+ sas_scheme_critical_moments.0002.t: "sas_scheme_critical_moments.0001.t$" #deepl:2535777279
+ sas_scheme_critical_moments.0002.desc: "누적된 [scheme_opportunity_opportunities|E] 을 사용하여 [scheme.GetName] [scheme|E] 을 완료하세요. 더 많이 사용하면 강력한 최종 보너스를 받을 수 있습니다." #deepl:2975502550
+ sas_scheme_critical_moments.0002.a: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')]#!: 순간 포착" #deepl:2416618336
+ sas_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities: "[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')] [scheme_opportunity_opportunities|E]" #deepl:222353579
+ sas_scheme_critical_moments.0002.b: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')]#!스키마_끝_버프_t2_modifier$" #deepl:2796944076
+ sas_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities: "[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')] [scheme_opportunity_opportunities|E]" #deepl:3284097266
+ sas_scheme_critical_moments.0002.b.tt.clarify_buff: "[scheme|E] 이득 [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] ~ 최종 [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ 총 [success_chance|E] 최대를 초과할 수 없습니다. [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:2989463537
+ sas_scheme_critical_moments.0002.b.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E] , 이 옵션의 수정자 포함)에 대해 [scheme.GetName] 을 완성합니다.#!" #deepl:1026627341
+ sas_scheme_critical_moments.0002.c: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')]#!스키마_끝_버프_t3_modifier$" #deepl:620615917
+ sas_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities: "[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')] [scheme_opportunity_opportunities|E]" #deepl:2249578693
+ sas_scheme_critical_moments.0002.c.tt.clarify_buff: "[scheme|E] 이득 [EmptyScope.ScriptValue('multi_ending_scheme_buff_t3_value')|=P/0%] ~ 최종 [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ 총 [success_chance|E] 최대를 초과할 수 없습니다. [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:171408237
+ sas_scheme_critical_moments.0002.c.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t3_total_success_value')|P/0%] [success_chance|E] , 이 옵션의 수정자 포함)에 대해 [scheme.GetName] 을 완성합니다.#!" #deepl:348010797
+ sas_scheme_critical_moments.0002.d: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')]#!스키마_끝_버프_t4_모듈레이터$" #deepl:4245634060
+ sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities: "[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')] [scheme_opportunity_opportunities|E]" #deepl:4114963779
+ sas_scheme_critical_moments.0002.d.tt.clarify_buff: "[scheme|E] 이득 [EmptyScope.ScriptValue('multi_ending_scheme_buff_t4_value')|=P/0%] ~ 최종 [success_chance|E]\n #WEAK  $EFFECT_LIST_BULLET$ 총 [success_chance|E] 최대를 초과할 수 없습니다. [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:1954019007
+ sas_scheme_critical_moments.0002.d.tt.progress: "[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t4_total_success_value')|P/0%] [success_chance|E] , 이 옵션의 수정자 포함)에 대해 [scheme.GetName] 을 완성합니다.#!" #deepl:3356750797
+ sas_scheme_critical_moments.0002.e: "sas_scheme_critical_moments.0001.h$" #deepl:527216822
+ sas_scheme_critical_moments.0002.e.tt.some_opportunities: "sas_scheme_critical_moments.0001.h.tt.일부_기회$" #deepl:860422857
+ sas_scheme_critical_moments.0002.e.tt.zero_opportunities: "sas_scheme_critical_moments.0001.h.tt.zero_opportunities$" #deepl:3044083624
+ sas_scheme_end_buff_t2_modifier: "자신 있게 실행" #deepl:1096404347
+ sas_scheme_end_buff_t2_modifier_desc: "슈어티는 그 자체로 성공의 브랜드입니다." #deepl:2406515427
+ sas_scheme_end_buff_t3_modifier: "레버리지 이점" #deepl:2975369626
+ sas_scheme_end_buff_t3_modifier_desc: "확실한 것은 없으니 모든 가능성을 열어두세요." #deepl:354067876
+ sas_scheme_end_buff_t4_modifier: "모든 각도 커버" #deepl:2434671282
+ sas_scheme_end_buff_t4_modifier_desc: "승자는 도박을 한다는 것을 전략가들은 알고 있습니다." #deepl:416240098
+
+ # Reminders
+ sas_scheme_critical_moments.0011.t.boilerplate: "기회의 한계" #deepl:741992334
+ sas_scheme_critical_moments.0011.t.task_contract: "sas_scheme_critical_moments.0001.t.task_contract$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:2779270639
+ sas_scheme_critical_moments.0011.t.scheme: "sas_scheme_critical_moments.0001.t.scheme$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:4282407609
+ sas_scheme_critical_moments.0011.desc.intro: "내 계획은 다음과 같습니다. [scheme.GetName]" #deepl:3413984870
+ sas_scheme_critical_moments.0011.desc.middle.character: "[scheme.GetTargetCharacter.GetTitledFirstName]" #deepl:4117363914
+ sas_scheme_critical_moments.0011.desc.middle.title: "[scheme.GetTargetTitle.GetDefinitiveName]" #deepl:2254312775
+ sas_scheme_critical_moments.0011.desc.outro: "잘 진행되고 있습니다 - 아마도 #EMP 너무#! 잘.\n\n 제가 원한다면 더 발전시킬 수 있는 길은 많지만, 제가 가진 것들 중 일부를 활용하기 전까지는 #EMP 더 많은 기회#! 가 나타나지 않을 것 같습니다." #deepl:4243500226
+ sas_scheme_critical_moments.0011.immediate.tt: "귀하의 [scheme.GetName] [scheme|E] 최대 [GetDefine('NScheme','SCHEME_MAX_OPPORTUNITIES')|0] [scheme_opportunities|E]" #deepl:3437879721
+ sas_scheme_critical_moments.0011.a: "그 전에가 아니라 적절하다고 판단될 때 행동하겠습니다!" #deepl:3098732785
+ sas_scheme_critical_moments.0011.a.tt: "@warning_icon! #X  [scheme|E] 의 최대 개수인 경우 더 이상 알림을 받지 않습니다. [scheme_opportunity_opportunities|E]#!" #deepl:1081099080
+ sas_scheme_critical_moments.0011.b: "이러한 사항을 파악하는 것이 유용합니다." #deepl:1996839201
+ sas_scheme_critical_moments.0011.b.tt: "이 [scheme|E] 이 1년 후 다시 최대 수인 [scheme_opportunity_opportunities|E] 에 도달하면 다시 알림을 받게 됩니다." #deepl:1049117849
+ sas_scheme_critical_moments.0011.c: "즉시 실행하겠습니다." #deepl:3372487602

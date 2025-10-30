@@ -1,0 +1,18 @@
+﻿l_german: 
+ sas_starter_spy_network_modifier: "Junges Spionagenetz" #deepl:4085502466
+ sas_starter_spy_network_modifier_desc: "Mitglieder des Repräsentantenhauses können [sas_spies|E] für ihre [sas_spy_network|E] rekrutieren." #deepl:3242081027
+
+ sas_establish_criminal_underground_house_modifier: "Etablierte kriminelle Unterwelt" #deepl:1493896910
+ sas_establish_criminal_underground_house_modifier_desc: "Die Mitglieder der Kammern haben Zugang zu den Websites [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E] und [master_assassin_court_position|E] [court_positions|E] . Sie können auch [sas_spies|E] für ihre [sas_spy_network|E] rekrutieren." #deepl:2452820577
+
+ sas_expand_spy_network_modifier: "Leiter des erweiterten Spionagenetzes" #deepl:2107637170
+ sas_expand_spy_network_house_modifier: "Erweitertes Spionagenetz" #deepl:3378507362
+ sas_expand_spy_network_house_modifier_desc: "Hausmitglieder können doppelt so viele [sas_spies|E] rekrutieren und können Kinder im Alter von mindestens 8 Jahren für ihre [sas_spy_network|E] rekrutieren.\n\n [sas_spies|E] kann [innovations|E] stehlen. #weak (25 Jahre Abklingzeit)#!" #deepl:2775509273
+
+ sas_special_operations_training_house_modifier: "Ausbildung für Spezialeinsätze" #deepl:3167735659
+ sas_special_operations_training_house_modifier_desc: "Die Mitglieder des Hauses können [intrigue|E] mit [court_positions|E] kostenlos einstellen.\n\n [sas_spies|E] sowie die [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E] und [master_assassin_court_position|E] [court_positions|E] sind eher bereit, sich Ihrem [hostile_schemes|E] als [agents|E] anzuschließen." #deepl:3266661613
+ SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND: "Ich gehöre zu Ihrem kriminellen Untergrund: $VALUE|=+0$" #deepl:1487660810
+ special_operations_training_court_position_modifier: "Ausbildung für Spezialeinsätze" #deepl:3167735659
+
+ sas_house_of_sabotage_and_subterfuge_modifier: "Haus der Sabotage und des Betrugs" #deepl:535697053
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "Haus der Sabotage und des Betrugs Desc" #deepl:717491357

@@ -1,0 +1,14 @@
+﻿l_german:
+ smuggle_artifact_event_title: "Artefakt schmuggeln:" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ Der Antiquar" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "#! Eine der offensichtlichen Hürden bei der Wiederbeschaffung des Artefakts ist [target.GetTitledFirstNamePossessive] antiquarisch, [antiquarian.GetTitledFirstName].\n\n Es gibt natürlich mehrere Möglichkeiten, #EMP mit einer Person umzugehen, aber ich frage mich, ob [antiquarian.GetFirstNameNoTooltip] die Art von Person ist, die ich mit einer angemessenen Bestechung dazu bringen könnte, wegzuschauen." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "Gold ist die universelle Sprache der Bestechung." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "Sie glauben, dass [antiquarian.GetTitledFirstNamePossessive] Loyalität mit Reichtum erkauft werden kann..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "Vielleicht ein Artefakt für ein Artefakt?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] wird einem gleichmäßigen "Handel" zustimmen." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "Eine Einführung in [random_beauty.GetTitledFirstName] könnte sich als... #EMP anregend#! erweisen." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "Sie gehen davon aus, dass [antiquarian.GetTitledFirstName] körperliche Schönheit höher schätzt als Loyalität." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "Ich werde mich stattdessen nach anderen Möglichkeiten umsehen." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] Nimmt die Bestechung an" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] Verweigert die Bestechung" #deepl:1499978674

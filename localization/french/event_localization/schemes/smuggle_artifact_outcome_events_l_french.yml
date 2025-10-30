@@ -1,0 +1,13 @@
+﻿l_french:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ Succès !" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "Je ressens une grande fierté et je ne peux m'empêcher de sourire lorsqu'on me présente l'artefact que j'ai cherché à revendiquer. Le [artifact.GetName] a un nouveau propriétaire !\n\n Bien qu'il soit peut-être légèrement éraflé et sali par les travaux de la libération, je ne peux m'empêcher de faire glisser mes doigts sur la surface luxueuse de cet objet volé... le [artifact.GetName], une belle récompense !" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "Il est le bienvenu dans sa nouvelle maison !" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ Artéfact volé !" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "Aujourd'hui, j'ai eu envie d'admirer mon [artifact_to_steal.GetName]... mais à ma grande horreur, j'ai constaté qu'il avait disparu ! #EMP Disparu !#!\n \n Après une enquête fébrile, un domestique se présente et dit que [owner.GetName] a orchestré le vol effronté ! En effet, il est dit que [owner.GetSheHe] a souvent insisté sur le fait que [artifact_to_steal.GetName] serait bien plus beau en possession de [owner.GetHerHis]..." #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "Maudite soit cette ignoble voleuse !" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ Échec" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "Mon infiltration astucieuse s'est déroulée comme prévu, mais le site [artifact.GetName] est introuvable !\n\n A-t-il été déplacé ? Caché ? Soit la chance m'a sauvé la mise... soit mes laquais incompétents ont été intelligemment dépassés. Paniqués par cet échec total, ils ne m'aideront plus. Mon prix reste avec son propriétaire..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "Je n'en reviens pas ! #EMP C'est inacceptable !#!" #deepl:3003932934
+

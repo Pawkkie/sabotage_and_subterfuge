@@ -1,0 +1,18 @@
+﻿l_simp_chinese: 
+ county_rabble_roused_modifier: "哗然" #deepl:2416044267
+ county_rabble_roused_modifier_desc: "农民乌合之众被煽动起来反对他们的主人" #deepl:4173438114
+ rabble_roused_against_me: "最近处理的 Roused Rabble 事件" #deepl:2758601433
+ roused_rabble_war_lost_county_modifier: "增强自主性" #deepl:1597784654
+ provoked_independence_character_modifier: "煽动独立派" #deepl:410340774
+ provoked_dissolution_character_modifier: "煽动解散派别" #deepl:2545846333
+
+ mortal_adoration_martial_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_martial_gain_desc: "爱人总是能给你很好的建议。" #deepl:3722719594
+ mortal_adoration_diplomacy_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_diplomacy_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_intrigue_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_intrigue_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_stewardship_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_stewardship_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_learning_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_learning_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723

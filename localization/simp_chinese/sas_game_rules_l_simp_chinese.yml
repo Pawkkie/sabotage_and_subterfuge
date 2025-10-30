@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ game_rule_category_sas: "破坏与诡计" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "启动地下犯罪活动" #deepl:511066023
+ setting_no_undergrounds: "无" #deepl:3312814158
+ setting_no_undergrounds_desc: "游戏开始时存在的房屋不会从[sas_spy_network|E] 或地下罪犯开始。" #deepl:3086919095
+ setting_fledgling_undergrounds: "新生间谍网络" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "游戏开始时存在的房屋，其户主既控制一个郡，又参与[administrative_government|E] ，则以[sas_spy_network|E] 开始。" #deepl:2991418532
+ setting_full_undergrounds: "犯罪世界" #deepl:2146549835
+ setting_full_undergrounds_desc: "游戏开始时，所有存在的房屋都有一个[sas_spy_network|E] 和地下罪犯。" #deepl:2266201805

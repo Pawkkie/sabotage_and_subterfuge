@@ -1,0 +1,14 @@
+﻿l_french:
+ provoke_vassals_supplied_weaponry: "Armement fourni" #deepl:3599795622
+ provoke_vassals_supplied_provisions: "Provisions fournies" #deepl:882891120
+
+ provoke_vassals_stifling: "Vassalité étouffante" #deepl:773364300
+ provoke_vassals_meritorious: "Vassalité méritoire" #deepl:3890241118
+
+ provoke_vassals_attempt_assassination: "Tentative d'assassinat encadrée" #deepl:3152209219
+ provoke_vassals_failed_attempt_assassination: "Tentative d'assassinat manquée et encadrée" #deepl:137322991
+
+ provoke_vassals_looks_tired: "Liège semble fatigué" #deepl:3010816921
+ provoke_vassals_looks_competent: "Liège semble compétent" #deepl:2719656846
+
+ attempted_to_provoke_vassals: "Tentative de provocation des vassaux" #deepl:191470277

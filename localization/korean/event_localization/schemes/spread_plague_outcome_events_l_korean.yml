@@ -1,0 +1,21 @@
+﻿l_korean:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "나는 죽음이 된다" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] 가 오랜 부재 끝에 막 복귀했습니다. [master_assassin_name.GetSheHe] 심은 오염 물질이 결실을 맺은 것 같습니다. [master_assassin_name.GetSheHe|U] 계획이 효과가 있었는지 확인하기 위해 며칠 동안 그 지역에 머물렀다가 귀국했고, 질병이 빠르게 퍼지고 있다는 소문이 현지 시장에서 [master_assassin_name.GetHerHim] 빠르게 퍼졌습니다.\n\n 여기서부터 [epidemic|E] 어디까지 확산될지 누가 알겠습니까? 하지만 이제 우리가 손을 쓸 수 없는 일을 시작한 것은 분명합니다." #deepl:108591925
+ spread_plague_outcome.0001.a: "그 여파로 혼란을 남기게 놔두세요!" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "죽음이 온다" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] 가 오랜 부재 끝에 막 복귀했습니다. [master_assassin_name.GetSheHe] 심은 오염 물질이 결실을 맺은 것 같습니다. [master_assassin_name.GetSheHe|U] 계획이 효과가 있었는지 확인하기 위해 며칠 동안 그 지역에 머물렀다가 귀국했고, 질병에 대한 소문이 빠르게 퍼져 지역 시장에 [master_assassin_name.GetHerHim] 빠르게 도달했습니다.\n\n 불행히도 [master_assassin_name.GetSheHe] 마을을 떠나는 길에 제지당했고 [master_assassin_name.GetSheHe] 탈출에 성공했지만 음모에 나를 연루시켰다는 결정적인 증거가 떨어지고 남겨져 버렸죠." #deepl:1902814976
+ spread_plague_outcome.0002.a: "적어도 계획은 성공했습니다!" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "위생이 우선" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] 가 오랜 부재 끝에 막 돌아왔습니다. [master_assassin_name.GetSheHe] 뿌린 오염 물질이 결실을 맺지 못한 것 같습니다. [master_assassin_name.GetSheHe|U] 계획이 효과가 있었는지 확인하기 위해 며칠 동안 그 지역에 머물렀다가 귀국했는데, 현지 시장에서는 [master_assassin_name.GetHerHim] 병에 걸렸다는 얘기가 들리지 않았습니다.\n\n 오염 물질이 너무 약했거나 너무 보수적으로 적용했을 수도 있겠죠, 누가 알겠습니까." #deepl:3939157326
+ spread_plague_outcome.0003.a: "다음번에는 그렇게 운이 좋지는 않을 겁니다..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "선물 미지급" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] 가 오랜 부재 끝에 막 돌아왔습니다. [master_assassin_name.GetSheHe] 뿌린 오염 물질이 결실을 맺은 것 같습니다. [master_assassin_name.GetSheHe|U] 계획이 효과가 있었는지 확인하기 위해 며칠 동안 그 지역에 머물렀다가 귀국했는데, 현지 시장에서는 [master_assassin_name.GetHerHim] 병에 걸렸다는 소문이 전혀 들리지 않았습니다.\n\n아마도 우리의 오염 물질이 너무 약했거나 너무 보수적으로 적용되었을 것입니다.\n\n 불행히도 [master_assassin_name.GetSheHe] 마을을 떠나는 길에 멈췄고 [master_assassin_name.GetSheHe] 탈출에 성공했지만 음모에 저를 연루시키는 결정적인 증거가 떨어지고 남겨졌습니다." #deepl:1196545157
+ spread_plague_outcome.0004.a: "이건 재앙이네요..." #deepl:4191637054

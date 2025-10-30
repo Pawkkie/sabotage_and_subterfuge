@@ -1,0 +1,30 @@
+﻿l_french:
+ roused_rabble_faction_started_tt: "La populace établira une [faction|E] et se révoltera dans l'année à venir. Vous serez informé avant le début de la révolte." #deepl:895772584
+
+ ## Success and secret
+ rouse_rabble_outcome.0001.t: "Murmures de l'étranger" #deepl:3047973896
+ rouse_rabble_outcome.0001.desc: "Un invité a récemment traversé ma cour, un voyageur traversant le continent en quête de fortune et d'aventure. Je l'ai entendu parler à voix basse avec mes courtisans des flammes brûlantes de la rébellion qu'il avait observées dans la paysannerie de [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Il semble que personne ne puisse comprendre ce qui les a enhardis si soudainement, mais un soulèvement semble inévitable, et [target.GetShortUIName] en est à peine conscient. Nos efforts ont parfaitement fonctionné !" #deepl:3390693042
+ rouse_rabble_outcome.0001.a: "Que leurs feux brûlent !" #deepl:1790369756
+ rouse_rabble_outcome.0001.prog: "Vous et votre [rabble_rouser|E] progressez vers le [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]" #deepl:2576651623
+
+ ## Success and discovered
+ rouse_rabble_outcome.0002.t: "Soupçons à l'étranger" #deepl:3269684831
+ rouse_rabble_outcome.0002.desc: "Un invité a récemment traversé ma cour, un voyageur traversant le continent en quête de fortune et d'aventure. Je l'ai entendu parler à voix basse avec mes courtisans des flammes brûlantes de la rébellion qu'il avait observées dans la paysannerie de [target.GetCapitalLocation.GetTitle.GetNameNoTier].\n\n Ils n'arrêtaient pas de jeter des coups d'œil dans ma direction, un regard d'un dégoût mordant. Ce qui les a enhardis si soudainement n'est pas un mystère, mais un soulèvement semble inévitable, et [target.GetShortUIName] est furieux." #deepl:1463922575
+ rouse_rabble_outcome.0002.a: "Que leurs feux brûlent !" #deepl:1790369756
+
+ ## Unsuccessful and secret
+ rouse_rabble_outcome.0003.t: "Les cœurs insoumis" #deepl:3841976415
+ rouse_rabble_outcome.0003.desc: "Un invité a récemment traversé ma cour, un voyageur traversant le continent à la recherche de la fortune et de l'aventure. Je l'ai entendu parler à mes courtisans de la paysannerie de [target.GetCapitalLocation.GetTitle.GetNameNoTier], et de son patriotisme redoublé face à l'adversité.\n\n Malgré tous nos efforts, les paysans sont satisfaits de leur sort." #deepl:556202482
+ rouse_rabble_outcome.0003.a: "Du moins, pour l'instant..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ rouse_rabble_outcome.0004.t: "Des esprits endurcis" #deepl:3138284672
+ rouse_rabble_outcome.0004.desc: "Un invité a récemment traversé ma cour, un voyageur traversant le continent en quête de fortune et d'aventure. Je l'ai entendu parler à mes courtisans de la paysannerie de [target.GetCapitalLocation.GetTitle.GetNameNoTier], et de son patriotisme redoublé face à l'adversité.\n\n Ils n'arrêtaient pas de jeter des coups d'œil dans ma direction, un regard d'un dégoût mordant. Ce n'est pas un mystère que j'ai tenté de les pousser à la rébellion, et [target.GetShortUIName] est furieux." #deepl:2395136914
+ rouse_rabble_outcome.0004.a: "Nous finirons par les obtenir !" #deepl:1078680228
+
+ ## Gained Reveler trait
+ rouse_rabble_outcome.0005.t: "Éveiller l'âme" #deepl:3339457466
+ rouse_rabble_outcome.0005.desc: "Qui aurait pensé qu'encourager et motiver le public pouvait être aussi revigorant ? Il y a de la nourriture, il y a de la boisson, il y a de la joie... l'homme ordinaire qui prend soin des autres, qui se mobilise contre un sentiment d'oppression.\n\n J'ai peut-être commencé ce plan avec d'autres motivations, mais le sort du peuple est devenu le mien !" #deepl:4271649516
+ rouse_rabble_outcome.0005.a: "J'ai hâte de leur porter un toast lors de notre prochaine rencontre !" #deepl:3505615210
+ rouse_rabble_outcome.0005.b: "Je devrais vraiment me tenir à distance..." #deepl:2837144994
+

@@ -1,0 +1,29 @@
+﻿l_spanish:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "Elige tu veneno" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "Una vez tomada la decisión de intentar iniciar un [epidemic|E] en los reinos de [target.GetUINamePossessive], sólo nos queda elegir nuestro método de ataque.\n\n [master_assassin_name.GetUIName] me dice que tenemos acceso a la ropa de cama y las ropas desechadas de un alma desafortunada que sufrió un caso localizado de viruela que podría servir.\n\n También podemos tomar el medio más directo de ensuciar un suministro de agua local, o en su lugar quizás manchar sus despensas con algún hongo tóxico que [master_assassin_name.GetShortUIName] tenga en su poder." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "Utilizar la ropa de cama contaminada" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "Ensuciar el suministro de agua" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "Contaminar sus despensas" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "Intento de propagación de la viruela en la región" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "Intento de propagar el Flujo Sangriento en la región" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "Intento de propagar el Fuego Sagrado en la región" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "El cálido abrazo de la muerte" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] ha encontrado un comerciante en [target_title.GetNameNoTier] interesado en hacer una adquisición de ropa básica, ropa de cama y otros tejidos.\n\n Esta es la oportunidad perfecta para conseguir más contaminantes en la región rápidamente, pero manipularlos más de lo necesario es peligroso y existe la posibilidad de que la fuente de la plaga sea rastreada hasta nosotros." #deepl:2992183165
+ spread_plague_ongoing.0002.a: "Mezclar los artículos contaminados en el envío" #deepl:616711320
+ spread_plague_ongoing.0002.b: "Esto podría levantar demasiadas sospechas" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "Agua que esperas" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] ha rastreado una fuente de agua en [target_title.GetNameNoTier] río arriba, y ha encontrado un lugar ideal para que vertamos los contaminantes.\n\n En gran medida deberíamos estar a salvo de la detección, es sólo una cuestión de si el agua fluirá de la manera que queremos.\n\n Alternativamente podríamos intentar un enfoque más directo, y verterlos justo en el punto de acceso principal de una ciudad al amparo de la oscuridad. Aunque es mucho más arriesgado." #deepl:388755539
+ spread_plague_ongoing.0003.a: "Volcarlos río arriba" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "Tirarlos en la ciudad" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "Un hongo entre nosotros" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] ha conseguido un tipo específico de hongo cuyas esporas pueden provocar síntomas horribles si se ingieren. Si conseguimos introducirlo en alguna despensa recóndita de [target_title.GetNameNoTier], la propagación desde allí debería hacerse por sí sola.\n\n Sin embargo, acceder a las tiendas de alimentos no es fácil, y podría ser más fácil intentar propagar el hongo directamente en los campos. El riesgo es menor, pero también las probabilidades de éxito." #deepl:113464637
+ spread_plague_ongoing.0004.a: "Colarse en una despensa" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "Contaminar los campos" #deepl:4137778007

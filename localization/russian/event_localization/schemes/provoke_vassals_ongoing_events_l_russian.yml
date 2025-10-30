@@ -1,0 +1,24 @@
+﻿l_russian:
+ # Feeding the Flames
+ provoke_vassals_ongoing.0001.t: "Подпитывая пламя" #deepl:504191995
+ provoke_vassals_ongoing.0001.desc: "Похоже, в последнее время [independence_vassal.GetShortUIName] борется с недовольством в регионе. Высокие налоги, введенные [target.GetShortUIName], приводят население в некоторое смятение.\n\n Хотя неясно, действительно ли [independence_vassal.GetShortUIName] предпочтет снизить свои обязательства или нет, ясно, что они хотят иметь более прямой контроль над областью без какого-либо влияния со стороны высшей власти.\n\n Возможно, я смогу отправить им некоторые ресурсы. Возможно, я смогу включить пару предложений о том, как их лучше применить..." #deepl:2916651416
+ provoke_vassals_ongoing.0001.a: "Я предоставлю оружие." #deepl:3294163484
+ provoke_vassals_ongoing.0001.b: "Я предоставлю провизию." #deepl:1722600124
+
+ # Promising the Future
+ provoke_vassals_ongoing.0002.t: "Обещая будущее" #deepl:2733215959
+ provoke_vassals_ongoing.0002.desc: "Недавно я получил письмо от [independence_vassal.GetShortUIName]. По большей части это стандартная дипломатическая беседа. Однако в конце был приятный всплеск индивидуальности!\n\n Очевидно, что [independence_vassal.GetSheHe] чувствует себя довольно заторможенным в [independence_vassal.GetHerHis] стремлении к росту, богатству и известности [independence_vassal.GetHerHis] семьи.\n\n Не менее очевидно, что это прекрасная возможность приманить тот тип ответа, который мы здесь искали." #deepl:2800851299
+ provoke_vassals_ongoing.0002.a: "Жаль, что вассалитет так удушлив!" #deepl:2781941790
+ provoke_vassals_ongoing.0002.b: "Вассалитет - это всего лишь достойная ступенька!" #deepl:1226632191
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0003.t: "Инсценировка покушения на убийство" #deepl:2745329543
+ provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] и [master_assassin_name.GetShortUIName] разработали план инсценировки покушения на [independence_vassal.GetShortUIName] или члена семьи [independence_vassal.GetHerHis], подставив [target.GetShortUIName] и его солдат.\n\n Они оба заверили меня, что план надежен. Поскольку [master_assassin_name.GetShortUIName] действует под прикрытием и в одиночку, шансы на провал в лучшем случае минимальны, а ошибка приведет скорее к путанице, чем к арестам.\n\n Такая путаница, скорее всего, вызовет ответ [target.GetShortUIName], который заверит [independence_vassal.GetShortUIName] в безопасности [independence_vassal.GetHerHis], что будет прямо противоположно продуктивному. Однако если это сработает..." #deepl:1236986410
+ provoke_vassals_ongoing.0003.a: "Я доверяю тебе, давай сделаем это." #deepl:3757966510
+ provoke_vassals_ongoing.0003.b: "Я не уверен, что это хорошая идея." #deepl:3991597292
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0004.t: "Саммит разного рода" #deepl:2331725663
+ provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName] пригласил меня и нескольких других правителей и вассалов на мирную беседу, посвященную природе чумы и тому, как мы можем уберечься от ее последствий.\n\n Это крайне необычно в лучшие времена, и хотя беседа была продуктивной, она заставила некоторых усомниться в том, что [target.GetSheHe] достаточно компетентен, чтобы демонстрировать уверенное лидерство, необходимое правителю.\n\n Когда беседа заканчивается, [independence_vassal.GetShortUIName] ловит мое ухо, чтобы спросить мое мнение, сомнение очевидно в выражении [independence_vassal.GetHerHis]." #deepl:1606362498
+ provoke_vassals_ongoing.0004.a: "Вам не кажется, что [target.GetSheHe] выглядит усталым?" #deepl:111863169
+ provoke_vassals_ongoing.0004.b: "[target.GetSheHe] абсолютно способен" #deepl:3117045451

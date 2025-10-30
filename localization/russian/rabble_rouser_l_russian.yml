@@ -1,0 +1,28 @@
+﻿l_russian:
+ # Court Position
+ rabble_rouser_court_position: "Бунтарь" #deepl:63230416
+ rabble_rouser_court_position_desc: "Любитель пошуметь, он умеет найти общий язык с нужными людьми и разжечь их. Они могут отправиться в другие королевства и подстрекать крестьянские бунты или восстания вассалов, а могут остаться дома и распространять добрые вести о вашем превосходстве." #deepl:3014080276
+ rabble_rouser_custom_effect_description: "$BULLET$Можно получить доступ к сайтам [GetScheme('rouse_rabble').GetTypeName] и [GetScheme('provoke_vassals').GetTypeName] [hostile_scheme|E] s" #deepl:3829337143
+
+ # Traits
+ court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+ court_position_peasant_leader_trait: "[GetTrait('peasant_leader').GetName( ROOT.Char )]:" #deepl:2014081632
+ court_position_populist_leader_trait: "[GetTrait('populist_leader').GetName( ROOT.Char )]:" #deepl:888039081
+ court_position_disloyal_trait: "[GetTrait('disloyal').GetName( ROOT.Char )]:" #deepl:4088443214
+
+ # Rouse Rabble task
+ rabble_rouser_task_rouse_rabble: "Rouse Rabble" #deepl:4205226659
+ rabble_rouser_task_rouse_rabble_desc: "Разбудить сброд другого двора, что приведет к крестьянским бунтам и, возможно, к полномасштабному восстанию." #deepl:47285353
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ allow_rouse_rabble_scheme_tt: "Можно использовать [rouse_rabble_scheme|E]. Это задание должно быть активным как для начала, так и для продолжения схемы.\n[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! до @scheme_success_icon!#P  +20%#! (на основе [aptitude|E])" #deepl:2048036236
+
+ # Provoke Vassals task
+ rabble_rouser_task_provoke_vassals: "Провоцировать вассалов" #deepl:2492283152
+ rabble_rouser_task_provoke_vassals_desc: "Спровоцируйте вассалов другого двора, что приведет к снижению мнения и возможному восстанию." #deepl:3289991535
+ allow_provoke_vassals_scheme_tt: "Можно использовать [provoke_vassals_scheme|E]. Это задание должно быть активным как для запуска, так и для продолжения схемы.\n[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! до @scheme_success_icon!#P  +20%#! (на основе [aptitude|E])" #deepl:3928875385
+
+ # Pacify the Masses task
+ rabble_rouser_task_pacify_the_masses: "Умиротворить массы" #deepl:1452681300
+ rabble_rouser_task_pacify_the_masses_desc: "Внушите крестьянам вашего двора, что их участь хороша и удобна, что снизит вероятность бунта." #deepl:3498212988
+ increased_rouse_rabble_defense_tt: "Враг [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! до @scheme_success_icon!#P  -20%#! (на основе [aptitude|E])" #deepl:2064610578
+ # increased_provoke_vassals_defense_tt: "Враг [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! до @scheme_success_icon!#P  -20%#! (на основе [aptitude|E])" #deepl:1094715817

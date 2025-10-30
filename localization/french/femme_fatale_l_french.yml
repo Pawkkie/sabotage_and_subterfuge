@@ -1,0 +1,33 @@
+﻿l_french:
+ # Court Position
+ femme_fatale_court_position: "Femme Fatale" #deepl:2042176501
+ femme_fatale_court_position_desc: "Passée maître dans l'art de faire tourner les courtisans autour de ses doigts, la Femme Fatale se spécialise dans l'art de diriger les cours d'une manière qui lui convient le mieux depuis l'ombre. Elle peut aigrir l'opinion d'un seigneur aux yeux de son vassal, accroître l'efficacité de votre [sas_spies|E] et faciliter les procédures dans votre propre cour." #deepl:275266301
+ femme_fatale_custom_effect_description: "$BULLET$Peut permettre l'accès au site [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+
+ # Traits
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #deepl:1704038344
+ court_position_beauty_good_1_trait: "[GetTrait('beauty_good_1').GetName( ROOT.Char )]" #deepl:4179113456
+ court_position_beauty_good_2_trait: "[GetTrait('beauty_good_2').GetName( ROOT.Char )]" #deepl:1335294579
+ court_position_beauty_good_3_trait: "[GetTrait('beauty_good_3').GetName( ROOT.Char )]" #deepl:571687154
+ court_position_adulterer_trait: "[GetTrait('adulterer').GetName( ROOT.Char )]" #deepl:439104194
+
+ # Eligibility
+ femme_fatale_not_lowborn: "Il s'agit de #bold et non de#! [lowborn|E]" #deepl:1427234325
+ femme_falate_not_married: "Il s'agit de #bold et non de#! [married|E]" #deepl:3606104437
+
+ # Poison Opinion task
+ femme_fatale_task_poison_opinion: "Avis sur les poisons" #deepl:489149273
+ femme_fatale_task_poison_opinion_desc: "Empoisonner l'opinion de la cible sur leur [liege|E], ce qui entraîne le chaos et le désordre dans leur cour." #deepl:1344370183
+ allow_poisoning_opinion_scheme_tt: "[poison_opinion_scheme|E]Cette tâche doit être active pour démarrer et poursuivre le programme.\n[GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! to @scheme_success_icon!#P  +20%#! (basé sur [aptitude|E])" #deepl:2799618372
+ max_poison_opinion_schemes_add: "Max [GetScheme('poison_opinion').GetTypeName] [schemes|E]" #deepl:3008665747
+
+ # Embrace the Spiders task
+ femme_fatale_task_embrace_the_spiders: "Embrasser les araignées" #deepl:1182524634
+ femme_fatale_task_embrace_the_spiders_desc: "Tissez les toiles du site [sas_spy_network|E] toujours plus loin, en apprenant les secrets étrangers plus efficacement que jamais." #deepl:4233153217
+ femme_fatale_increase_spy_discovery_chance_tt: "Augmenter les chances que votre [sas_spies|E] découvre des secrets et des innovations" #deepl:4182569517
+
+ # Soothe and Surveil task
+ femme_fatale_task_soothe_and_surveil: "Apaiser et surveiller" #deepl:2527092364
+ femme_fatale_task_soothe_and_surveil_desc: "Apaisez les tensions croissantes dans votre cour, tout en restant attentif à tout signe de sabotage." #deepl:2496953860
+ increased_poison_opinion_defense_tt: "Ennemi [GetScheme('poison_opinion').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! à @scheme_success_icon!#P  -20%#! (basé sur [aptitude|E])" #deepl:228597342

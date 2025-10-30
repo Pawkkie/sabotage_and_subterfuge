@@ -1,0 +1,13 @@
+﻿l_korean:
+ attempted_to_spread_plague: "전염병 확산 시도" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "오염 물질을 배송하지 않음" #deepl:3309051214
+ spread_plague_shipped_clothing: "배송된 오염 물질" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "오염된 배송물 수령" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "업스트림 오염 물질" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "부지런한 물 조달" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "업스트림 폐기물" #deepl:1605090773
+ spread_plague_water_in_town: "오염된 물 공급" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "오염된 라더" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "오염된 라더" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "세심한 식품 검사" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "오염된 작물 밭" #deepl:846309052

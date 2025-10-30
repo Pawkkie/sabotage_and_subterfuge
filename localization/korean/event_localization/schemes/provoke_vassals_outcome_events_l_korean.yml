@@ -1,0 +1,23 @@
+﻿l_korean:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "해외에서 들려오는 속삭임" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "최근 부와 모험을 찾아 대륙을 횡단하는 여행자 한 명이 제 궁전을 찾아왔습니다. 저는 그들이 [target.GetCapitalLocation.GetTitle.GetNameNoTier] 에서 반란을 일으킨 가신에 대해 조용한 어조로 내 신하들과 이야기하는 것을 우연히 들었습니다.\n\n 무엇이 그들을 갑자기 대담하게 만들었는지 아무도 알 수 없지만 반란은 피할 수 없는 것 같고 [target.GetShortUIName] 는 상황을 통제하기 위해 분주히 움직이고 있습니다. 우리의 노력은 완벽하게 성공했습니다!" #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "독립!" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "해산!" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "해외에서 제기된 의혹" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "부와 모험을 찾아 대륙을 횡단하는 여행자 한 명이 최근 내 궁전을 찾아왔어요. 나는 그들이 내 신하들과 조용한 어조로 [target.GetCapitalLocation.GetTitle.GetNameNoTier] 에서 반란을 일으킨 가신에 대해 이야기하는 것을 엿들었습니다.\n\n 그들은 계속해서 내 방향을 훔쳐보며 혐오스러운 눈빛을 보냈습니다. 무엇이 그들을 갑자기 대담하게 만들었는지는 알 수 없지만, 반란은 피할 수 없을 것 같고 [target.GetShortUIName] 는 분노하고 있습니다." #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "독립!" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "해산!" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "언킨들드 하트" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "최근 부와 모험을 찾아 대륙을 횡단하는 여행자 한 명이 제 궁정을 찾아왔습니다. 나는 그들이 내 신하들과 [target.GetCapitalLocation.GetTitle.GetNameNoTier] 의 가신들과 역경에 직면한 그들의 두 배가 된 애국심에 대해 이야기하는 것을 우연히 들었습니다.\n\n 우리의 최선의 노력에도 불구하고 그들은 인생의 운명에 만족하고 있습니다." #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "적어도 지금은..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "굳건한 마음" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "부와 모험을 찾아 대륙을 횡단하는 여행자 한 명이 최근 제 궁전을 찾아왔습니다. 나는 그들이 내 신하들과 [target.GetCapitalLocation.GetTitle.GetNameNoTier] 의 가신들과 역경에 직면한 그들의 두 배가 된 애국심에 대해 이야기하는 것을 우연히 들었습니다.\n\n 그들은 계속 내 방향을 훔쳐보며 혐오의 시선을 보냈습니다. 내가 그들을 반란으로 몰고 가려고 했다는 것은 미스터리가 아니며, [target.GetShortUIName] 는 분노했습니다." #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "언젠가는 얻을 수 있을 겁니다!" #deepl:1078680228

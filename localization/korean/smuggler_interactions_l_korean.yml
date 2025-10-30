@@ -1,0 +1,15 @@
+﻿l_korean:
+ plan_heist_interaction: "계획 강탈" #deepl:3591742283
+ plan_heist_interaction_desc: "[prestige|E] 또는 [piety|E] 을 [gold|E] 과 함께 사용하여 [recipient.GetShortUINamePossessiveNoTooltip] [artifacts|E] 중 하나에서 강도를 계획할 수 있습니다. [smuggle_artifact_scheme|E]" #deepl:400555691
+ smuggle_artifact_interaction: "밀수 유물 #weak (계획)#!" #deepl:2194081119
+ smuggle_artifact_interaction_desc: "이전에 강탈을 계획했던 [recipient.GetShortUINameNoTooltip] 에서 유물을 훔치려고 시도합니다." #deepl:3313565735
+
+ # Allow
+ HAVE_SMUGGLER_COURT_POSITION: "귀하는 [smuggler_court_position|E]" #deepl:577327249
+ NO_SMUGGLER_COURT_POSITION: "귀하는 [smuggler_court_position|E]" #deepl:1575326324
+ SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] 계획 강탈 작업을 수행 중입니다." #deepl:2804124622
+ SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] 가 계획 강탈 작업을 수행하지 않습니다." #deepl:4213936722
+ smuggle_artifact_can_start_scheme: "지금은 유물을 밀수할 수 없습니다." #deepl:1719411168
+
+ # Toast
+ planned_heist.t: "유물 강탈을 계획했습니다." #deepl:538249166

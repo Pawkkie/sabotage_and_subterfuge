@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ smuggle_artifact_outcome.1001.t: "$smuggle_artifact_event_title$ 成功！" #deepl:4085025392
+ smuggle_artifact_outcome.1001.desc: "我感到无比自豪，并情不自禁地咧开嘴笑了起来，因为我看到了我想要的艺术品。[artifact.GetName] 有了新主人！\n\n 虽然它可能因为解放的艰辛而略有磨损和脏污，但我还是忍不住用手指在这件失物奢华的表面上划过......[artifact.GetName] ，这是个很好的奖品！" #deepl:1782732239
+ smuggle_artifact_outcome.1001.a: "它在新家很受欢迎！" #deepl:1504214141
+
+ smuggle_artifact_outcome.1002.t: "$smuggle_artifact_event_title$ 被盗文物" #deepl:2182870559
+ smuggle_artifact_outcome.1002.desc: "今天，我想欣赏一下我的[artifact_to_steal.GetName]......但我惊恐地发现它不见了！#EMP 不见了！#!\n \n 经过一番疯狂的调查，一个仆人站出来说，[owner.GetName] 策划了这起无耻的盗窃案！事实上，据说[owner.GetSheHe] 经常滔滔不绝地谈论[artifact_to_steal.GetName] 在[owner.GetHerHis] 手中会有多好看......" #deepl:3399866452
+ smuggle_artifact_outcome.1002.a: "诅咒那个卑鄙的小偷" #deepl:1123972848
+
+ smuggle_artifact_outcome.2001.t: "$smuggle_artifact_event_title$ 失败" #deepl:4260889525
+ smuggle_artifact_outcome.2001: "我狡猾的潜入计划如期进行，但[artifact.GetName] 却找不到了！\n\n 它被移动了吗？藏起来了？要么是愚蠢的运气救了我的目标......要么是我无能的走狗们被巧妙地耍弄了。这次彻底的失败让他们惊慌失措 他们不会再帮我了我的战利品还在它的主人那里..." #deepl:662514981
+ smuggle_artifact_outcome.2001.a: "我简直不敢相信！#EMP 无法接受#!" #deepl:3003932934
+

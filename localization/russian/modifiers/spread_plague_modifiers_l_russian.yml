@@ -1,0 +1,13 @@
+﻿l_russian:
+ attempted_to_spread_plague: "Попытка распространения чумы" #deepl:3478771572
+ spread_plague_did_not_ship_clothing: "Не отправляли загрязняющие вещества" #deepl:3309051214
+ spread_plague_shipped_clothing: "Отгруженные загрязняющие вещества" #deepl:761716245
+ spread_plague_shipped_clothing_county_modifier: "Получение загрязненного груза" #deepl:1267320763
+ spread_plague_waste_upstream_county_modifier: "Загрязняющие вещества в верхнем течении" #deepl:3108670198
+ spread_plague_diligent_water_sourcing_county_modifier: "Тщательный поиск воды" #deepl:94731590
+ spread_plague_waste_upstream_scheme_modifier: "Отходы вверх по течению" #deepl:1605090773
+ spread_plague_water_in_town: "Подача загрязненной воды" #deepl:3193994613
+ spread_plague_tainted_larder_county_modifier: "Испорченная кладовая" #deepl:1897457513
+ spread_plague_tainted_larder_scheme_modifier: "Испорченная кладовая" #deepl:1897457513
+ spread_plague_food_inspection_county_modifier: "Тщательная проверка продуктов питания" #deepl:2357918860
+ spread_plague_tainted_field_scheme_modifier: "Поле с испорченными культурами" #deepl:846309052

@@ -1,0 +1,12 @@
+﻿l_spanish:
+ sas_induct_bastard_interaction: "Inducir Bastardo" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "Induce [recipient.GetFirstNameNicknamed] en tu [dynasty|E]." #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "Induce a un hijo ilegítimo que has engendrado con [GetTrait('disputed_heritage').GetName( GetNullCharacter )] en tu [dynasty|E]." #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "Bastardo inducido" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "Usted induce [recipient.GetShortUIName] en su [dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "Legitimación solapada" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "Haga a [recipient.GetFirstName] una oferta que [recipient.GetSheHe] no pueda rechazar, legitimándole como miembro de su [dynasty|E]." #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "Induce a un niño [GetTrait('bastard').GetName( GetNullCharacter )] que hayas engendrado en tu [dynasty|E]." #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "Robo Bastardo" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "Usted induce [recipient.GetShortUIName] en su [dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "Parentesco reclamado" #deepl:3455245448

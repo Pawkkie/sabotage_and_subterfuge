@@ -1,0 +1,26 @@
+﻿l_spanish:
+ sas_embezzle_interaction: "Malversación de fondos" #deepl:648628518
+ sas_embezzle_interaction_desc: "Inventa una excusa para apoderarte de bienes y contrabandear fondos de mercaderes de un reino vecino, un señor feudal o un vasallo." #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "No es malversación si no te llevas nada." #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Pequeña suma" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP Perder#! algunos objetos de valor" #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] Suma media" #deepl:2443027586
+ sas_embezzle_sum_medium: "Imposición de gastos de aduana imprevistos" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] Gran suma" #deepl:566310994
+ sas_embezzle_sum_large: "Comerciantes del diezmo injustamente" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] Suma enorme" #deepl:1311154991
+ sas_embezzle_sum_huge: "Robo fiscal flagrante" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "Malversas sin ser detectado" #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Sus actos nefastos son desenmascarados inmediatamente" #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] ¡le han pillado intentando desfalcar!" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Desbloquea la interacción [sas_embezzle_interaction|E] " #deepl:1189011648

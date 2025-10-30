@@ -1,0 +1,11 @@
+﻿l_spanish:
+ game_rule_category_sas: "Sabotaje y subterfugio" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Comenzar a delinquir" #deepl:511066023
+ setting_no_undergrounds: "Ninguno" #deepl:3312814158
+ setting_no_undergrounds_desc: "Las casas que existen al comienzo del juego no empiezan con un [sas_spy_network|E] o un subterráneo criminal" #deepl:3086919095
+ setting_fledgling_undergrounds: "Redes de espionaje en ciernes" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "Las casas que existen al comienzo del juego con un jefe que a la vez controla un condado y participa en un [administrative_government|E] comienzan con un [sas_spy_network|E]." #deepl:2991418532
+ setting_full_undergrounds: "El mundo del crimen" #deepl:2146549835
+ setting_full_undergrounds_desc: "Todas las casas que existen al inicio del juego comienzan con un [sas_spy_network|E] y un subterráneo criminal." #deepl:2266201805

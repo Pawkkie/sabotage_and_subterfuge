@@ -1,0 +1,35 @@
+﻿l_russian:
+ poison_opinion_outcome.1001.t: "Ядовитое мнение: Возможность" #deepl:2824793747
+ poison_opinion_outcome.1001.desc: "В своих попытках противопоставить интересы [target.GetTitledFirstNamePossessive] интересам [target.GetHerHis] сеньора, я нашел возможность. Думаю, я могу утверждать, что их цели, по сути, диаметрально противоположны. Пока я диктую свое следующее письмо..." #deepl:4201339416
+ poison_opinion_outcome.1001.a: "...я подчеркиваю эти несовместимые интересы." #deepl:360746116
+ poison_opinion_outcome.1001.a.success: "[target.GetFirstNameNoTooltip] убеждён" #deepl:4019449334
+ poison_opinion_outcome.1001.a.failure: "[target.GetFirstNameNoTooltip] видит, как я стараюсь" #deepl:1317759691
+ poison_opinion_outcome.1001.b: "...Я стараюсь сохранять тонкость." #deepl:3520019372
+
+ poison_opinion_outcome.1002.t: "Ядовитое мнение: Религиозные убеждения" #deepl:3068132753
+ poison_opinion_outcome.1002.same_faith: "У меня появилась идея в попытках согласовать [target.GetTitledFirstName] с [target.GetHerHis] интересами сеньора.\n\n С помощью правильных аргументов я смогу убедить [target.GetHerHim], что [target.GetSheHe] действует не только в [target.GetHerHis] собственных интересах, но и в интересах [ROOT.Char.GetFaith.HighGodNameAlternate] [ROOT.Char.GetFaith.HighGodHerselfHimself] !" #deepl:965859863
+ poison_opinion_outcome.1002.other_faith: "У меня появилась идея в попытках согласовать [target.GetTitledFirstName] с [target.GetHerHis] интересами сеньора.\n\n Возможно, я мог бы утверждать, что в интересах всех [target.GetFaith.GetAdherentNamePlural] освободиться от оков [target.GetLiege.GetFaith.Name] правления в той мере, в какой они способны?" #deepl:1318148979
+ poison_opinion_outcome.1002.a: "Я считаю, что могу привести очень убедительные аргументы." #deepl:878806595
+ poison_opinion_outcome.1002.b: "Возможно, мне следует придерживаться дипломатических тонкостей." #deepl:2089916252
+
+ poison_opinion_outcome.1003.t: "Ядовитое мнение: Натиск удачи" #deepl:2598640233
+ poison_opinion_outcome.1003.desc: "Я дочитываю последнее письмо от [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] и улыбаюсь - [target.GetSheHe], кажется, наконец-то стал ледяным по отношению к [target.GetHerHis] сеньору.\n\n Хотя это и успех, я склонен использовать эту возможность, чтобы попытаться развести их еще дальше..." #deepl:1850530888
+ poison_opinion_outcome.1003.a: "Пора проверить свои дипломатические способности!" #deepl:2787417524
+ poison_opinion_outcome.1003.a.success: "[target.GetSheHe|U] еще больше ободряет" #deepl:4130052052
+ poison_opinion_outcome.1003.a.failure: "[target.GetSheHe|U] получает неверное толкование" #deepl:3695719111
+ poison_opinion_outcome.1003.b: "Этой победы достаточно." #deepl:3669306734
+
+ poison_opinion_outcome.2001.t: "Ядовитое мнение: Недоразумение" #deepl:2264483134
+ poison_opinion_outcome.2001.opening: "Похоже, мои дипломатические замашки по отношению к [target.GetTitledFirstName] вызвали серьезное недопонимание! Я получил письмо, из которого ясно, что [target.GetSheHe] считает, что я преследовал совершенно другие цели..." #deepl:1789009900
+ poison_opinion_outcome.2001.not_interested_relation: "\n\n"Я ваш [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('target'))], ради [target.GetFaith.HighGodNamePossessive]!"" #deepl:3935174444
+ poison_opinion_outcome.2001.not_interested_romantically: "\n\n"Хотя я польщен, я нахожу ваш интерес неуместным для [ROOT.Char.GetWomanMan] вашей должности"." #deepl:1590060400
+ poison_opinion_outcome.2001.not_interested_horses: "\n\n"Я не продам своих породистых лошадей, сколько бы лестных писем вы ни прислали!"" #deepl:969794771
+ poison_opinion_outcome.2001.not_interested_toll_exemptions: "\n\n"Я не могу предоставить вам освобождение от платы за проезд, сколько бы вы ни обещали!"" #deepl:184694203
+ poison_opinion_outcome.2001.not_interested_friend: "\n\n"Похоже, что вам действительно нужен друг, но, боюсь, я не могу вам им стать. Однако я могу порекомендовать вам..."" #deepl:1460295060
+ poison_opinion_outcome.2001.not_interested_relics: "\n\n"Я не отдам тебе ни одной из своих реликвий, сколько бы ты ни молился за меня!"" #deepl:3476711187
+ poison_opinion_outcome.2001.end: "\n\nМне не нужно читать дальше, чтобы понять суть." #deepl:3287867042
+ poison_opinion_outcome.2001.a: "Это все большое недоразумение!" #deepl:2703424581
+
+ poison_opinion_outcome.2002.t: "Ядовитое мнение: Гнусный заговор" #deepl:421660312
+ poison_opinion_outcome.2002.desc: ""Мой [ROOT.Char.GetLadyLord]! [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] прекратил с вами все разговоры".\n\n Рассматривая мой внезапный интерес и количество переписки как признак гнусных планов, [target.GetSheHe] кажется, что я замышляю против [target.GetHerHim]!" #deepl:3202853704
+ poison_opinion_outcome.2002.a: "Думаю, в каком-то смысле они не ошибаются..." #deepl:513004656

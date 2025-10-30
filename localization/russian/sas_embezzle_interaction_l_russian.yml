@@ -1,0 +1,26 @@
+﻿l_russian:
+ sas_embezzle_interaction: "Растрата средств" #deepl:648628518
+ sas_embezzle_interaction_desc: "Придумайте предлог для захвата товаров и контрабанды средств у купцов соседнего королевства, сеньора или вассала." #deepl:719478993
+
+ # Valid
+ sas_embezzle_interaction.tt.must_embezzle_something: "Это не хищение, если вы ничего не взяли." #deepl:3676126213
+
+ # Options
+ sas_embezzle_sum_small_name: "[gold_i] Небольшая сумма" #deepl:1993147211
+ sas_embezzle_sum_small: "#EMP Потеряйте#! несколько ценных вещей." #deepl:2382407358
+ sas_embezzle_sum_medium_name: "[gold_i] Средняя сумма" #deepl:2443027586
+ sas_embezzle_sum_medium: "Взимание неожиданных таможенных платежей" #deepl:1983203375
+ sas_embezzle_sum_large_name: "[gold_i] Большая сумма" #deepl:566310994
+ sas_embezzle_sum_large: "Несправедливое обложение торговцев десятиной" #deepl:3920945144
+ sas_embezzle_sum_huge_name: "[gold_i] Огромная сумма" #deepl:1311154991
+ sas_embezzle_sum_huge: "Вопиющее воровство налогов" #deepl:3846823782
+
+ # Success
+ sas_embezzle_interaction.tt.success: "Вы совершаете хищение незаметно." #deepl:1011098745
+
+ # Failure
+ sas_embezzle_interaction.tt.failure.actor: "Ваши гнусные делишки будут немедленно разоблачены." #deepl:2074798199
+ sas_embezzle_interaction.tt.failure.recipient: "[actor.GetShortUIName|U] [Select_CString(actor.IsLocalPlayer, 'have', 'has')] был пойман при попытке присвоения!" #deepl:1304551093
+
+ # Perk
+ ALLOW_EMBEZZLE_INTERACTION_DESCRIPTION: "Разблокируйте взаимодействие [sas_embezzle_interaction|E]." #deepl:1189011648

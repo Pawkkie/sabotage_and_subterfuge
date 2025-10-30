@@ -1,0 +1,30 @@
+﻿l_korean: 
+ sas_hostile_scheme_discovery.1002.t: "스키머가 발견되었습니다!" #deepl:2806885743
+ sas_hostile_scheme_discovery.1002.intro: "제 [spymaster.GetCouncilTitle] 에 심각한 소식이 들어왔습니다. [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:116762934
+ sas_hostile_scheme_discovery.1002.intro_no_spymaster: "심각한 소식이 전해졌습니다: [owner.Custom2('MyCharacterIntroduction', ROOT.Char)]" #deepl:782412105
+ sas_hostile_scheme_discovery.1002.rouse: "의 영역에 속하는 농민 폭도들을 깨우고 있습니다." #deepl:2701494178
+ sas_hostile_scheme_discovery.1002.fallback: "에 대한 음모를 꾸미고 있습니다." #deepl:3376091286
+ sas_hostile_scheme_discovery.1002.a: "[owner.Custom('InsultAdjective')] 악마!" #deepl:2541491147
+
+ sas_hostile_scheme_discovery.2001.t: "의 계획 [ROOT.Char.Custom('GetCourt')|U]" #deepl:3607653157
+ sas_hostile_scheme_discovery.2001.intro: "제 [spymaster.GetCouncilTitle] 에서 심각한 소식을 전해왔습니다. 아직 누구인지는 알 수 없습니다," #deepl:4082077002
+ sas_hostile_scheme_discovery.2001.intro_no_spymaster: "심각한 소식이 전해졌습니다. 아직 누구인지는 알려지지 않았지만요," #deepl:3279496608
+ sas_hostile_scheme_discovery.2001.fallback: "누군가 음모를 꾸미고 있습니다." #deepl:3932481048
+ sas_hostile_scheme_discovery.2001.rouse: "누군가 영역에 속한 농민 폭도들을 깨우고 있습니다." #deepl:1810264608
+ sas_hostile_scheme_discovery.2001.target_other: "내 [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('target'))], [target.GetTitledFirstName]!" #deepl:3121120145
+ sas_hostile_scheme_discovery.2001.target_spymaster: "[target.GetHerHim]\n\n 그들은 그들이 누구를 상대하는지 모릅니다, 내 . 그들은 나를 죽일 수 있다고 생각합니다 ? 내가 보여줄게요. 오, 그래요. [ROOT.Char.GetLadyLord] #EMP #!" #deepl:4001813834
+ sas_hostile_scheme_discovery.2001.target_me: "나!" #deepl:4031713392
+ sas_hostile_scheme_discovery.2001.a: "배후에 있는 악당을 막아야 합니다!" #deepl:148308102
+
+ sas_hostile_scheme_discovery.3002.t: "스키마 발견" #deepl:385952488
+ sas_hostile_scheme_discovery.3002.desc: "[scheme.GetFullActionName] 에 대한 제 음모의 존재가 발견되었습니다!\n\n 아직 제가 연루된 것은 알려지지 않았지만, 이로 인해 제 계획을 실현하는 것이 훨씬 더 어려워질 것입니다." #deepl:3976066101
+ sas_hostile_scheme_discovery.3002.a: "저주!" #deepl:1623550253
+
+ sas_hostile_scheme_discovery.3003.t: "발견한 참여" #deepl:2924354761
+ sas_hostile_scheme_discovery.3003.desc: "[target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] 음모의 배후가 저라는 사실을 알아냈습니다." #deepl:1505803270
+ sas_hostile_scheme_discovery.3003.rouse: "에 속한 농민 폭도들을 깨우기 위해 [target.GetHerHim]!" #deepl:2089024288
+ sas_hostile_scheme_discovery.3003.provoke: "[target.GetHerHis] 가신들을 자극하기 위해!" #deepl:2832962550
+ sas_hostile_scheme_discovery.3003.smuggle: "에 속한 유물을 밀수하기 위해 [target.GetHerHim]!" #deepl:2229529354
+ sas_hostile_scheme_discovery.3003.plague: "[target.GetHerHis] 영역에 전염병을 퍼뜨립니다!" #deepl:44403764
+ sas_hostile_scheme_discovery.3003.fallback: "에 대해 [target.GetHerHim]!" #deepl:1408398656
+ sas_hostile_scheme_discovery.3003.a: "오해가 있었나 봅니다!" #deepl:2938075201

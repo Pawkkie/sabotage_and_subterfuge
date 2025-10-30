@@ -1,0 +1,21 @@
+﻿l_spanish:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "Me he convertido en muerte" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] acaba de regresar tras una larga ausencia. Parece que los contaminantes [master_assassin_name.GetSheHe] sembrados han dado sus frutos. [master_assassin_name.GetSheHe|U] permaneció unos días en la región antes de regresar a casa para comprobar si el plan había funcionado, y la noticia de la rápida propagación de la enfermedad llegó [master_assassin_name.GetHerHim] rápidamente a los mercados locales.\n\n Quién sabe hasta dónde puede extenderse la [epidemic|E] desde aquí, pero está claro que hemos iniciado algo que ya no está en nuestras manos." #deepl:108591925
+ spread_plague_outcome.0001.a: "¡Que deje el caos a su paso!" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "Se anuncia la muerte" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] acaba de regresar tras una larga ausencia. Parece que los contaminantes que plantó [master_assassin_name.GetSheHe] han dado sus frutos. [master_assassin_name.GetSheHe|U] permaneció unos días en la región antes de regresar a casa para comprobar si el plan había funcionado, y la noticia de la rápida propagación de la enfermedad llegó rápidamente a [master_assassin_name.GetHerHim] los mercados locales.\n\n Por desgracia, [master_assassin_name.GetSheHe] fue detenido cuando salía de la ciudad, y aunque [master_assassin_name.GetSheHe] logró escapar, algunas pruebas incriminatorias que me implicaban de forma concluyente en la trama fueron arrojadas y abandonadas." #deepl:1902814976
+ spread_plague_outcome.0002.a: "Al menos el plan funcionó." #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "Prevalece la higiene" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] acaba de regresar tras una larga ausencia. Parece que los contaminantes que plantó [master_assassin_name.GetSheHe] no dieron fruto. [master_assassin_name.GetSheHe|U] se quedó unos días en la región antes de volver a casa para ver si el plan había funcionado, y ni una palabra de enfermedad llegó [master_assassin_name.GetHerHim] a ninguno de los mercados locales.\n\n Quizá nuestros contaminantes eran demasiado débiles o se aplicaron de forma demasiado conservadora, quién sabe." #deepl:3939157326
+ spread_plague_outcome.0003.a: "La próxima vez no tendrán tanta suerte..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "Regalos no concedidos" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] acaba de regresar tras una larga ausencia. Parece que los contaminantes que plantó [master_assassin_name.GetSheHe] han dado sus frutos. [master_assassin_name.GetSheHe|U] permaneció unos días en la región antes de regresar a casa para comprobar si el plan había funcionado, y ni una palabra de enfermedad llegó a [master_assassin_name.GetHerHim] en ninguno de los mercados locales.\n\nTal vez nuestros contaminantes eran demasiado débiles o se aplicaron de forma demasiado conservadora, quién sabe.\n\n Por desgracia, [master_assassin_name.GetSheHe] fue detenido cuando salía de la ciudad, y aunque [master_assassin_name.GetSheHe] consiguió escapar, algunas pruebas incriminatorias que me implicaban de forma concluyente en la trama fueron arrojadas y abandonadas." #deepl:1196545157
+ spread_plague_outcome.0004.a: "Bueno, esto es un desastre..." #deepl:4191637054

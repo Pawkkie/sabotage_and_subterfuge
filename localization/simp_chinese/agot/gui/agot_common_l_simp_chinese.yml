@@ -1,0 +1,57 @@
+﻿l_simp_chinese:
+ activity_MISSING: "#true_white#underline 下落不明#!" #deepl:2589670414
+ activity_PROPER: "参加[ACTIVITY.GetName|V] in[PROVINCE.GetName|V]" #deepl:2899953008
+ CHARACTER_IN_LOCATION_MISSING: "#underline 该角色的位置无法确定。#!" #deepl:1152593234
+ CHARACTER_IN_LOCATION_PROPER: "#underline 位于[Character.GetCurrentLocation.GetName|V]#!" #deepl:3323452286
+
+ NO_PATRON: "未选择赞助人" #deepl:3373182812
+
+ AGOT_RULER_DESIGNER_HEIGHT_3_4: "[GeneCategory.GetName]:[Select_float(GreaterThan_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)4.0'), '(float)4', '(float)3')]ft[Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:2282626069
+ AGOT_RULER_DESIGNER_HEIGHT_5_6: "[GeneCategory.GetName]:[Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)6.0'), '(float)6', '(float)5')]ft[Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:538148862
+ AGOT_RULER_DESIGNER_HEIGHT_7_8: "[GeneCategory.GetName]:[Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)8.0'), '(float)8', '(float)7')]ft[Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:1504814872
+ AGOT_RULER_DESIGNER_HEIGHT_CM: "[GeneCategory.GetName]:[Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.46509803921568627450980392156863', '(float)0.5078431372549019607843137254902')), Select_float(RulerDesignerWindow.IsFemale, '(float)114.3', '(float)119.4'))]cm" #deepl:532816563
+
+ AGOT_RULER_DESIGNER_GENE_ONLY_MEN: "只对男性可见" #deepl:533332604
+
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL: "展示服装" #deepl:2652019048
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\n显示人物肖像上的服装。最终定稿时，他们仍将穿着衣服。\n\n #I  点击隐藏#!" #deepl:2111600134
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\n隐藏人物肖像上的衣服。最终确定后，他们仍会穿着衣服。\n\n #I  点击显示#!" #deepl:3422908735
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP: "[SelectLocalization( Not(GetGlobalVariable('character_undress').IsSet), 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE' )]" #deepl:2628953934
+
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL: "固定轮廓视图" #deepl:1652583814
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\n启用固定轮廓视图，使用角色肖像的固定正面和侧面视角。\n\n #I  点击禁用固定轮廓视图#!" #deepl:557180594
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\n使用字符肖像的标准偏移正面和侧面视角，禁用固定轮廓视图。\n\n #I  点击启用固定轮廓视图#!" #deepl:3410983546
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP: "[SelectLocalization( GetGlobalVariable('true_profile_view').IsSet, 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE' )]" #deepl:2587200608
+
+ DRAGON_DESIGNER_STORE_DNA_TOOLTIP: "#T 存储龙 DNA#!\n 存储当前自定义器中的 DNA 设置。\n\n@warning_icon! #X 如果角色死亡，您将丢失这些值#!" #deepl:924222140
+ DRAGON_DESIGNER_APPLY_DNA_TOOLTIP: "#T Apply Stored DNA#!\n 将存储的 DNA 设置应用到定制器。" #deepl:2671363870
+ DRAGON_DESIGNER_UNDO_DNA_TOOLTIP: "#T 撤销已应用的 DNA#!\n 将自定义器中的 DNA 设置恢复到应用前的值。" #deepl:326668943
+ DRAGON_DESIGNER_EXPORT_VALUES: "#T 复制事件内容#!\n 将事件文本内容复制到剪贴板。\n\n 事件文本将包含脚本特效，您可以将其放入#high import_dragon_dna.txt#! 文件中。\n\n@warning_icon! #X 请使用#! #T  重新生成事件内容#! #X  按钮（此按钮左侧的刷新按钮）重新生成事件文本，并从自定义器中获取最新值。#!" #deepl:1364123390
+ DRAGON_DESIGNER_IMPORT_VALUES: "#T 从文件导入 DNA#!\n 使用此按钮前请确认以下内容：\n$BULLET_WITH_TAB$ 已创建此文件夹：#high %USERPROFILE%/Documents/Paradox Interactive/Crusader Kings III/run#! - 如果文件夹不存在，请创建。\n$BULLET_WITH_TAB$ #high run 文件夹内有一个名为 import_dragon_dna.txt 的文件。   import_dragon_dna.txt 文件夹内有一个 import_dragon_dna = {} 特效。请注意，这将启动文件中的所有特效，请确保只运行您想要的特效。#! #high #!\n$BULLET_WITH_TAB$ #high #! #high #!\n\n@warning_icon! #X #!" #deepl:3791460998
+
+ agot_character_performing_councillor_task: "在执行任务时" #deepl:602773449
+ agot_character_traveling: "旅途中" #deepl:112387279
+
+ cant_be_kingsguard: "#X 不能是御林铁卫成员" #deepl:1449117284
+ cant_be_nw: "#X 不能是守夜人成员" #deepl:1174047844
+ cant_be_silent_sis: "#X 不能是沉默姐妹成员" #deepl:2111153960
+
+ COURT_POSITION_NAME_DISPLAY: "#high [CourtPosition.GetEmployee.Custom('AGOTCustomGetShortUIName')]#![CourtPosition.GetEmployee.Custom('TitleSuffix')]" #deepl:4106785100
+ ACCLAIMED_KNIGHT_NAME_DISPLAY: "[Accolade.GetAcclaimedKnight.Custom('AGOTCustomGetTitledFullNameDynasty')][Accolade.GetAcclaimedKnight.Custom('TitleSuffix')]" #deepl:4249902692
+ BARBERSHOP_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ MY_REALM_CHARNAME_DISPLAY: "#high [MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('AGOTCustomGetShortUIName')]#![MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('TitleSuffix')]" #deepl:3705399477
+ COURT_POSITION_APPOINT_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ COOLTIP_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal][Character.Custom('WordSpace')][Character.Custom('SurnameSwitch')]#medium [Character.Custom('TitleSuffix')]#!#medium ,[Character.GetAge]#!" #deepl:1092325654
+ COOLTIP_KNIGHT_NAME_DISPLAY: "Ser[Character.GetFirstNameNicknamedNoTooltip][Character.Custom('WordSpace')] [Character.GetHouse.GetNameNoTooltip] #medium  、[Character.GetAge]#!" #deepl:2422609432
+ COOLTIP_MAESTER_NAME_DISPLAY: "[Character.Custom('MaesterCheck')] [Character.GetTitledFirstNameNicknamedNoTooltip]#medium ,[Character.GetAge]#!" #deepl:3203973981
+ COOLTIP_SILENTSISTER_NAME_DISPLAY: "沉默的姐妹[Character.GetFirstNameNicknamedNoTooltip]#medium  、[Character.GetAge]#!" #deepl:3118680272
+ COOLTIP_BASTARD_NAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')]#medium ,[Character.GetAge]#!" #deepl:799121695
+ COOLTIP_KNIGHT_BASTARD_NAME_DISPLAY: "Ser[Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')] #medium  、[Character.GetAge]#!" #deepl:2214245248
+ COOLTIP_UNLANDED_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal]#medium [Character.Custom('TitleSuffix')]#!#medium ,[Character.GetAge]#!" #deepl:848487151
+ COOLTIP_HIGHSEPTON_NAME_DISPLAY: "[Character.GetNickname]#medium ,[Character.GetAge]#!" #deepl:1349441906
+ COOLTIP_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] 的[Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  、[Character.GetAge]#!" #deepl:305290230
+ COOLTIP_SER_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "Ser[Character.GetFirstNameNicknamedNoTooltip] of[Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  、[Character.GetAge]#!" #deepl:2204980815
+ LIST_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ AGOT_CANNOT_HIRE_MENATARMS: "#T 创建新的[men_at_arms|E] [regiment|E] #! \n [MilitaryItem.GetMaACanBeCreatedTooltip] \n @warning_icon! #X  在受[GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] 约束时，您不能雇用士兵。#!" #deepl:3923605812
+ AGOT_HIRE_MERCENARIES_TOOLTIP: "#T [MercenaryCompany.GetName] #!\n#I 点击查看详情#![SelectLocalization(GetScriptedGui('agot_can_hire_mercenaries').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), '', 'AGOT_HIRE_MERCENARIES_ADD')]" #deepl:4282356010
+ AGOT_HIRE_MERCENARIES_ADD: "\n\n@warning_icon! #X 在[GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] 下，您不能雇佣雇佣军。#!" #deepl:3522849467

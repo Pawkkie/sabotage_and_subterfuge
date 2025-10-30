@@ -1,0 +1,29 @@
+﻿l_french:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "Choisissez votre poison" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "La décision ayant été prise de tenter de lancer une [epidemic|E] dans les royaumes de [target.GetUINamePossessive], il ne reste plus qu'à choisir notre méthode d'attaque.\n\n [master_assassin_name.GetUIName] me dit que nous avons accès à la literie et aux vêtements jetés d'une âme malheureuse qui a souffert d'un cas localisé de variole, ce qui pourrait faire l'affaire.\n\n Nous pouvons également prendre des moyens plus directs pour souiller une réserve d'eau locale, ou plutôt pour contaminer leurs garde-manger avec un champignon toxique que [master_assassin_name.GetShortUIName] a en sa possession." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "Utiliser la literie contaminée" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "Sol de l'approvisionnement en eau" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "Souiller leur garde-manger" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "Tentative de propagation de la variole dans la région" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "Tentative de diffusion du Bloody Flux dans la région" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "Tentative de propagation du feu sacré dans la région" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "L'étreinte chaleureuse de la mort" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] a trouvé un marchand à [target_title.GetNameNoTier] intéressé par l'acquisition de vêtements de base, de literie et d'autres tissus.\n\n C'est l'occasion rêvée d'introduire rapidement d'autres contaminants dans la région, mais il est dangereux de les manipuler plus que nécessaire et il est possible que la source de la peste remonte jusqu'à nous." #deepl:2992183165
+ spread_plague_ongoing.0002.a: "Mélanger les articles contaminés à la cargaison" #deepl:616711320
+ spread_plague_ongoing.0002.b: "Cela pourrait éveiller trop de soupçons" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "L'eau que vous attendez" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] a repéré une source d'eau à [target_title.GetNameNoTier] en amont de la rivière, et a trouvé un endroit idéal pour déverser les contaminants.\n\n Nous devrions être largement à l'abri de toute détection, il s'agit juste de savoir si l'eau coule comme nous le voulons.\n\n Nous pourrions aussi tenter une approche plus directe, et les déverser directement au point d'accès principal d'une ville sous le couvert de l'obscurité. Mais c'est beaucoup plus risqué." #deepl:388755539
+ spread_plague_ongoing.0003.a: "Les rejeter en amont" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "Déposez-les en ville" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "Un champignon parmi nous" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] s'est procuré un type spécifique de champignon dont les spores peuvent provoquer d'horribles symptômes en cas d'ingestion. Si nous parvenons à l'introduire dans un garde-manger reculé de [target_title.GetNameNoTier], la propagation devrait se faire d'elle-même.\n\n Il n'est cependant pas facile d'accéder aux magasins d'alimentation, et il pourrait être plus facile d'essayer de propager le champignon directement dans les champs. C'est moins risqué, mais aussi probablement moins susceptible de réussir." #deepl:113464637
+ spread_plague_ongoing.0004.a: "Se faufiler dans un garde-manger" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "Souiller les champs" #deepl:4137778007

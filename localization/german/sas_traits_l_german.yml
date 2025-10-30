@@ -1,0 +1,10 @@
+﻿l_german:
+ # Embezzler
+ trait_sas_embezzler: "Veruntreuer" #deepl:2672472445
+ trait_sas_embezzler_desc: "Dieser Charakter hat Gelder von jemand anderem veruntreut." #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] Gelder von einer anderen Person veruntreut hat." #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "Plaguebringer" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "Dieses Zeichen hat dazu beigetragen, eine große Plage herbeizuführen." #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] hat dazu beigetragen, eine große Plage herbeizuführen." #deepl:4217708703

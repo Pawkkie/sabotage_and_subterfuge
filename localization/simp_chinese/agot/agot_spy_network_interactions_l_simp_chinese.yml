@@ -1,0 +1,99 @@
+﻿l_simp_chinese:
+ agot_invite_to_spy_network_interaction: "招募间谍" #deepl:1569694964
+ agot_check_for_potential_spies_interaction: "检查潜在间谍" #deepl:3426630385
+ agot_remove_from_spy_network_interaction: "解散间谍" #deepl:750231688
+ SPY_RECRUIT_GOLD: "贿赂" #deepl:3411393816
+ SPY_RECRUIT_GOLD_VALID: "薪酬[recipient.GetShortUINameNoTooltip] [gold_i] [SCOPE.ScriptValue('bribe_value')|V0]" #deepl:2924690871
+ AGOT_RECRUIT_SPY_SKILL_MOD: "您的[intrigue|E] 技能： $VALUE|=+0$" #deepl:840929455
+ AGOT_RECRUIT_SPY_CAP_MODIFIER: "您的间谍数量超出了您的管理能力： $VALUE|=+0$" #deepl:1742108695
+ AGOT_RECRUIT_SPY_KINGSGUARD_REASON: "[recipient.GetShortUINameNoTooltip] 是王卫： $VALUE|=+0$" #deepl:2943122130
+ highest_held_title_tier_greater_than: "你的头衔级别比他们高。" #deepl:3271074329
+ DECEITFUL_REASON: "[recipient.GetShortUINameNoTooltip] 是欺骗： $VALUE|+0=$" #deepl:2981172720
+ HONEST_REASON: "[recipient.GetShortUINameNoTooltip] 是诚实的： $VALUE|+0=$" #deepl:2353170454
+ JUST_REASON: "[recipient.GetShortUINameNoTooltip] 就是： $VALUE|+0=$" #deepl:4104101612
+ TRUSTING_REASON: "[recipient.GetShortUINameNoTooltip] 是否信任： $VALUE|+0=$" #deepl:4155378834
+ LAZY_REASON: "[recipient.GetShortUINameNoTooltip] 是懒惰： $VALUE|+0=$" #deepl:3792033341
+ SHY_REASON: "[recipient.GetShortUINameNoTooltip] 害羞： $VALUE|+0=$" #deepl:1013341979
+ CRAVEN_REASON: "[recipient.GetShortUINameNoTooltip] is Craven: $VALUE|+0=$" #deepl:3840776540
+ PARANOID_REASON: "[recipient.GetShortUINameNoTooltip] 是偏执狂： $VALUE|+0=$" #deepl:4183665893
+ DRUNKARD_REASON: "[recipient.GetShortUINameNoTooltip] 是个醉鬼：$VALUE|+0=$" #deepl:3018668907
+ CONTRITE_REASON: "[recipient.GetShortUINameNoTooltip] is Contrite: $VALUE|+0=$" #deepl:418458151
+ PREVIOUSLY_DISCOVERED_REASON: "[recipient.GetShortUINameNoTooltip] 之前被发现的间谍活动： $VALUE|+0=$" #deepl:1250348238
+
+ agot_spy_network.0200.interface.employer.t: "间谍揭秘" #deepl:168050903
+ agot_spy_network.0200.interface.employer.desc: "您在[courtowner.GetTitledFirstNamePossessive] 法庭的一名间谍透露了一个秘密，这个秘密可能会有用。" #deepl:3645310449
+
+ agot_spy_network.0201.interface.employer.t: "间谍披露信息" #deepl:1319764910
+ agot_spy_network.0201.interface.employer.desc: "你们的一名间谍泄露了宫廷主人的个人和军事信息。" #deepl:3546164191
+
+ agot_spy_network.0200.interface.spymaster.t: "间谍揭秘" #deepl:168050903
+ agot_spy_network.0200.interface.spymaster.desc: "您在[courtowner.GetTitledFirstNamePossessive] 法庭的一名间谍透露了一个秘密，这个秘密可能会有用。" #deepl:3645310449
+
+ agot_spy_network.0210.t: "我的[ROOT.Char.GetLadyLord] 、" #deepl:2169612167
+ agot_spy_network.0210.desc: "我在[courtowner.GetShortUINamePossessive] 法庭上获得了[secret_holder.GetTitledFirstName] 想要保护的一个秘密。我会交出我找到的证据，但前提是我的服务必须得到公平的回报。" #deepl:294115213
+ agot_spy_network.0210.a: "我需要知道一切！" #deepl:877721287
+ agot_spy_network.0210.b: "我不感兴趣。" #deepl:2813068183
+ agot_spy_network.0210.c: "我没有硬币..." #deepl:175325562
+
+ agot_spy_network.0400.t: "招募间谍" #deepl:351168471
+ agot_spy_network.0400.desc: "[councillor.GetTitledFirstName] 在[target_character.GetShortUINamePossessive] 法庭上找到了一个愿意为您当间谍的人。" #deepl:3378650470
+ agot_spy_network.0400.a: "[new_spy.GetTitledFirstName] 会让我受益匪浅。" #deepl:1274442422
+
+ agot_spy_network.0500.t: "发现间谍" #deepl:977083122
+ agot_spy_network.0500.desc: "[councillor.GetTitledFirstName] [discovered_spy.GetTitledFirstName] 在您宫廷最黑暗的角落寻找秘密时被抓获。" #deepl:725801880
+ agot_spy_network.0500.a: "谁派你来的？" #deepl:2381662331
+
+ agot_spy_network.0510.t: "你被发现了" #deepl:3792558933
+ agot_spy_network.0510.desc: "不知怎的，他们发现了！我被发现为[discovered_spy_employer.GetTitledFirstName] 从事间谍活动。现在我的生命受到威胁。如果我告诉他们是谁雇了我，也许我还能活下来？" #deepl:3491980837
+ agot_spy_network.0510.a: "怜悯我会告诉你一切的" #deepl:1040764062
+ agot_spy_network.0510.b: "我的嘴唇依然紧闭！" #deepl:4091804868
+
+ agot_spy_network.0520.t: "发现间谍" #deepl:977083122
+ agot_spy_network.0520.flipped.desc: "[discovered_spy.GetTitledFirstName] 心甘情愿地揭露谁在监视你，向你求饶：那是[discovered_spy_employer.GetTitledFirstName] ！" #deepl:706259308
+ agot_spy_network.0520.loyal.desc: "[discovered_spy.GetTitledFirstName] 拒绝揭露谁在监视你。" #deepl:4116753664
+ agot_spy_network.0520.desc: "你想怎么处理这个叛徒？" #deepl:1989995004
+ agot_spy_network.0520.a: "[discovered_spy.GetTitledFirstNameNoTooltip] 必须在牢房里腐烂。" #deepl:952618794
+ agot_spy_network.0520.b: "这种罪行只有一种惩罚：死刑！" #deepl:272277589
+ agot_spy_network.0520.c: "我会手下留情的但这种阴谋必须停止！" #deepl:1546398863
+
+ agot_spy_network.0600.t: "你的间谍被发现了" #deepl:3648032057
+ agot_spy_network.0600.desc: "我们从[discovered_spy.GetTitledFirstName] 收到的秘密报告突然停止了。看来[discovered_spy.GetHerHis] 的技能不足以避免被发现。" #deepl:761471447
+ agot_spy_network.0600.flipped.desc: "更糟糕的是，[discovered_spy.GetTitledFirstName] ，暴露了你的参与！" #deepl:3841062910
+ agot_spy_network.0600.a: "[discovered_spy.GetSheHe|U] 不够小心！" #deepl:3995574791
+
+ agot_spy_network.0700.t: "雇佣间谍" #deepl:149732041
+ agot_spy_network.0700.desc: "[recipient.GetTitledFirstName] 已经加入了你们庞大的间谍网络行列。" #deepl:2555271758
+ agot_spy_network.0700.a: "影响像野草一样生长..." #deepl:2693232088
+
+ agot_spy_network.0800.t: "间谍是可以雇佣的" #deepl:3044204003
+ agot_spy_network.0800.desc: "您的间谍头子在[recipient.GetTitledFirstNamePossessive] 宫廷发现了一名潜在的新间谍。[potential_new_spy.GetTitledFirstName] 可能会被说服加入您的间谍网络。" #deepl:1672923704
+ agot_spy_network.0800.a: "我应该尽快联系[potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+
+ hostile_scheme_discovery_spy.2001.intro: "我的间谍头子[spymaster.GetTitledFirstName] 在[courtowner.GetTitledFirstNamePossessive] 法庭上发现了针对我的阴谋准备。虽然我们还不知道是谁、" #deepl:2805483937
+ potential_spy_in_court: "这个宫廷里的一个人物愿意为你当间谍。" #deepl:3390703719
+
+ #GUI
+ your_spies: "你的间谍" #deepl:2960525419
+
+ ###################### New
+ # Recruit Spy
+ agot_invite_to_spy_network_interaction_desc: "招聘[recipient.GetTitledFirstName] 到您的[sas_spy_network|E]" #deepl:3702489283
+ invite_to_spy_network_interaction_target_added_to_network.tt: "您将[recipient.GetShortUIName] 添加到您的间谍网络" #deepl:3755694883
+ invite_to_spy_network_interaction_target_becomes_spy.tt: "[recipient.GetShortUIName] 被添加到您的间谍网络" #deepl:2685456430
+ invite_to_spy_network_toast_title: "招募间谍" #deepl:3971834391
+ invite_to_spy_network_toast_desc: "[recipient.GetTitledFirstName] 已经加入了你们庞大的间谍网络行列。" #deepl:2555271758
+
+ # Dismiss Spy
+ agot_remove_from_spy_network_interaction_desc: "将[recipient.GetTitledFirstName] 从您的[sas_spy_network|E]" #deepl:1707718945
+ dismiss_from_spy_network_interaction_target_remove_from_network.tt: "您将[recipient.GetShortUIName] 从您的间谍网中删除" #deepl:3128855620
+ dismiss_from_spy_network_interaction_target_loses_spy.tt: "[recipient.GetShortUIName] 从您的间谍网络中删除" #deepl:1206633062
+ dismiss_from_spy_network_toast_title: "间谍被解职" #deepl:2246344130
+ dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] 已经离开了你们庞大的间谍网络。" #deepl:360659420
+
+ # Check for Potential Spies
+ agot_check_for_potential_spies_interaction_desc: "在[recipient.GetShortUIName] 的宫廷中寻找可能愿意加入您的团队的朝臣。[sas_spy_network|E]" #deepl:3999256908
+ check_for_potential_spies_actor.tt: "[sas_spy|E] ，您可以通过协商加入您的公司。[sas_spy_network|E]" #deepl:2541194663
+
+ # Perks
+ DIGGING_FOR_DIRT_PERK_EFFECT: "是否令人信服： $VALUE|=+0$" #deepl:2797321221
+ SUBTLE_DESIRE_PERK_EFFECT: "是否有吸引力： $VALUE|=+0$" #deepl:567933818

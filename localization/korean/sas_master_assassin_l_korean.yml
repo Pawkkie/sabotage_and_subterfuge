@@ -1,0 +1,5 @@
+﻿l_korean: 
+ # Spread Plague task
+ master_assassin_task_spread_plague: "전염병 확산" #deepl:4245244667
+ master_assassin_task_spread_plague_desc: "캐릭터의 궁전에 [epidemic|E] 를 뿌려 자신의 저항력을 강화하면서 감염을 시도합니다." #deepl:1616301097
+ allow_spread_plague_scheme_tt: "[spread_plague_scheme|E] 을 사용할 수 있습니다. 이 작업은 계획을 시작하고 계속하려면 모두 활성화되어 있어야 합니다." #deepl:2097629515

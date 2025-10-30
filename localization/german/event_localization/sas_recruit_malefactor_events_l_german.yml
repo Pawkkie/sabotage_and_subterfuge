@@ -1,0 +1,48 @@
+﻿l_german:
+ # Find Rabble Rouser
+ sas_recruit_malefactor.1001.t: "[GetCourtPositionType('rabble_rouser_court_position').GetNameNoTooltip()]" #deepl:3495011948
+ sas_recruit_malefactor.1001.desc: "Auf meine Bitte hin haben meine Bediensteten zwei Kandidaten für die Rolle von [rabble_rouser_court_position|E] zusammengestellt. [good_rabble_rouser.GetName] ist bereits eine bewährte Führungspersönlichkeit, aber [mediocre_rabble_rouser.GetName] ist ein angehender Aktivist. " #deepl:4120463873
+ sas_recruit_malefactor.1001.a: "[mediocre_rabble_rouser.GetNameNoTooltip] sollte eine gute Wahl sein." #deepl:803165706
+ sas_recruit_malefactor.1001.b: "[good_rabble_rouser.GetNameNoTooltip] macht mich schon ganz heiß!" #deepl:2331199384
+ sas_recruit_malefactor.1001.c: "Keine dieser Möglichkeiten ist angemessen." #deepl:1889973686
+ sas_recruit_malefactor.1001.a.aptitude: "[mediocre_rabble_rouser.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [mediocre_rabble_rouser.GetCourtPositionAptitude( GetCourtPositionType( 'rabble_rouser_court_position' ) )]" #deepl:1451797391
+ sas_recruit_malefactor.1001.b.aptitude: "[good_rabble_rouser.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [good_rabble_rouser.GetCourtPositionAptitude( GetCourtPositionType( 'rabble_rouser_court_position' ) )]" #deepl:3077490358
+
+ rabble_rouser_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'rabble_rouser_court_position' ) )]" #deepl:3139221876
+ rabble_rouser_old_holder_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'rabble_rouser_court_position' ) )] #weak  ([old_holder.GetFirstName] [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'rabble_rouser_court_position' ) )] )#!" #deepl:3226310355
+ rabble_rouser_salary_tooltip: "[GetCourtPositionType( 'rabble_rouser_court_position' ).GetName()] hat ein monatliches Gehalt von [gold_i][SCOPE.ScriptValue('medium_court_position_salary')|2]" #deepl:4090579942
+
+ # Find Femme Fatale
+ sas_recruit_malefactor.1002.t: "[GetCourtPositionType('femme_fatale_court_position').GetNameNoTooltip()]" #deepl:1841351527
+ sas_recruit_malefactor.1002.desc: "Auf meine Bitte hin haben meine Diener zwei Optionen für die Rolle von [femme_fatale_court_position|E] zusammengestellt. [good_femme_fatale.GetName] ist ein erfahrener Manipulator, aber [mediocre_femme_fatale.GetName] hat ein gewisses... Funkeln in den Augen. " #deepl:3489094135
+ sas_recruit_malefactor.1002.a: "[mediocre_femme_fatale.GetNameNoTooltip] sollte eine gute Wahl sein." #deepl:3182654510
+ sas_recruit_malefactor.1002.b: "[good_femme_fatale.GetNameNoTooltip] lässt mich bereits erröten!" #deepl:3114746142
+ sas_recruit_malefactor.1002.c: "Keine dieser Möglichkeiten ist angemessen." #deepl:1889973686
+ sas_recruit_malefactor.1002.a.aptitude: "[mediocre_femme_fatale.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [mediocre_femme_fatale.GetCourtPositionAptitude( GetCourtPositionType( 'femme_fatale_court_position' ) )]" #deepl:3485723115
+ sas_recruit_malefactor.1002.b.aptitude: "[good_femme_fatale.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [good_femme_fatale.GetCourtPositionAptitude( GetCourtPositionType( 'femme_fatale_court_position' ) )]" #deepl:4148192339
+
+ femme_fatale_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'femme_fatale_court_position' ) )]" #deepl:3089282141
+ femme_fatale_old_holder_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'femme_fatale_court_position' ) )] #weak  ([old_holder.GetFirstName] [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'femme_fatale_court_position' ) )] )#!" #deepl:785999332
+ femme_fatale_salary_tooltip: "[GetCourtPositionType( 'femme_fatale_court_position' ).GetName()] hat ein monatliches Gehalt von [gold_i][SCOPE.ScriptValue('medium_court_position_salary')|2]" #deepl:2476852950
+
+ # Find Smuggler
+ sas_recruit_malefactor.1003.t: "[GetCourtPositionType('smuggler_court_position').GetNameNoTooltip()]" #deepl:3010995331
+ sas_recruit_malefactor.1003.desc: "Auf meine Bitte hin haben mir meine Diener zwei Kandidaten für die Rolle von [smuggler_court_position|E] zusammengestellt. [good_smuggler.GetName] hat viel Erfahrung im Umgang mit Schmuggelware, aber [mediocre_smuggler.GetName] hat in letzter Zeit hervorragende Arbeit in der Logistik der Armee geleistet. " #deepl:3704835338
+ sas_recruit_malefactor.1003.a: "[mediocre_smuggler.GetNameNoTooltip] sollte eine gute Wahl sein." #deepl:2982331336
+ sas_recruit_malefactor.1003.b: "[good_smuggler.GetNameNoTooltip] hat bereits klebrige Finger." #deepl:1902586098
+ sas_recruit_malefactor.1003.c: "Keine dieser Möglichkeiten ist angemessen." #deepl:1889973686
+ sas_recruit_malefactor.1003.a.aptitude: "[mediocre_smuggler.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [mediocre_smuggler.GetCourtPositionAptitude( GetCourtPositionType( 'smuggler_court_position' ) )]" #deepl:1946464372
+ sas_recruit_malefactor.1003.b.aptitude: "[good_smuggler.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [good_smuggler.GetCourtPositionAptitude( GetCourtPositionType( 'smuggler_court_position' ) )]" #deepl:300844186
+
+ smuggler_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'smuggler_court_position' ) )]" #deepl:541183524
+ smuggler_old_holder_aptitude_tooltip: "[candidate.GetHerHisMy|U] [aptitude|E] ist [candidate.GetCourtPositionAptitude( GetCourtPositionType( 'smuggler_court_position' ) )] #weak  ([old_holder.GetFirstName] [old_holder.GetCourtPositionAptitude( GetCourtPositionType( 'smuggler_court_position' ) )] )#!" #deepl:3692797845
+ smuggler_salary_tooltip: "[GetCourtPositionType( 'smuggler_court_position' ).GetName()] hat ein monatliches Gehalt von [gold_i][SCOPE.ScriptValue('medium_court_position_salary')|2]" #deepl:3530498401
+
+ # Find Master Assassin
+ sas_recruit_malefactor.1004.t: "[GetCourtPositionType('master_assassin_court_position').GetNameNoTooltip()]" #deepl:3447179709
+ sas_recruit_malefactor.1004.desc: "Auf meine Bitte hin haben meine Diener zwei Optionen für die Rolle von [master_assassin_court_position|E] zusammengestellt. [good_master_assassin.GetName] hat die Veranlagung eines lebenden Schattens, aber [mediocre_master_assassin.GetName] hat kürzlich mit einem Dolch trainiert. " #deepl:4173821888
+ sas_recruit_malefactor.1004.a: "[mediocre_master_assassin.GetNameNoTooltip] sollte eine gute Wahl sein." #deepl:2001705351
+ sas_recruit_malefactor.1004.b: "[good_master_assassin.GetNameNoTooltip] macht mich nervös, wenn ich hier stehe, das ist perfekt!" #deepl:2117115917
+ sas_recruit_malefactor.1004.c: "Keine dieser Möglichkeiten ist angemessen." #deepl:1889973686
+ sas_recruit_malefactor.1004.a.aptitude: "[mediocre_master_assassin.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [mediocre_master_assassin.GetCourtPositionAptitude( GetCourtPositionType( 'master_assassin_court_position' ) )]" #deepl:2042950937
+ sas_recruit_malefactor.1004.b.aptitude: "[good_master_assassin.GetFirstNamePossessiveNoTooltip] [aptitude|E] ist [good_master_assassin.GetCourtPositionAptitude( GetCourtPositionType( 'master_assassin_court_position' ) )]" #deepl:3030921634

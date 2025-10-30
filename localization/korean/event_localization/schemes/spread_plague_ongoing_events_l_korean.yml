@@ -1,0 +1,29 @@
+﻿l_korean:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "독을 선택하세요" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "[target.GetUINamePossessive] 영역에서 [epidemic|E] 공격을 시도하기로 결정했으니 이제 남은 것은 공격 방법을 선택하는 일입니다.\n\n [master_assassin_name.GetUIName] 천연두를 앓은 불행한 영혼이 버린 침구와 옷에 접근할 수 있다고 합니다.\n\n 지역 상수도를 오염시키는 보다 직접적인 방법을 택하거나 [master_assassin_name.GetShortUIName] 그들이 가지고 있는 독성 곰팡이로 그들의 창고를 오염시킬 수도 있겠죠." #deepl:3077033759
+ spread_plague_ongoing.0001.a: "오염된 침구 사용" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "상수도 토양 정화" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "저장고 오염" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "지역 내 천연두 확산 시도" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "지역 내 블러디 플럭스 확산 시도" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "지역 내 성스러운 불 확산 시도" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "따뜻한 죽음의 포옹" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] 에서 기본 의류, 침구류 및 기타 직물을 구입하려는 [target_title.GetNameNoTier] 의 상인을 찾았습니다.\n\n 이 지역에 더 많은 오염 물질을 빠르게 유입시킬 수 있는 완벽한 기회이지만 필요 이상으로 취급하면 위험하고 전염병의 출처가 우리에게 추적될 가능성이 있습니다." #deepl:2992183165
+ spread_plague_ongoing.0002.a: "오염된 물품을 발송물에 혼합합니다." #deepl:616711320
+ spread_plague_ongoing.0002.b: "너무 많은 의심을 받을 수 있습니다." #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "기다리는 물" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] [target_title.GetNameNoTier] 상류의 수원지를 추적하여 오염 물질을 버리기에 이상적인 장소를 찾았습니다.\n\n 우리는 대부분 탐지되지 않을 것이며, 단지 물이 우리가 원하는 방식으로 흘러갈지 여부가 문제입니다.\n\n 또는 더 직접적인 접근 방식을 시도하여 어둠 속에서 마을의 주요 접근 지점에 바로 버릴 수 있습니다. 하지만 훨씬 더 위험합니다." #deepl:388755539
+ spread_plague_ongoing.0003.a: "업스트림에 덤프" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "마을에 버리기" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "우리 사이의 곰팡이" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] 포자를 섭취하면 끔찍한 증상을 유발할 수 있는 특정 종류의 곰팡이를 확보했습니다. 이 균을 [target_title.GetNameNoTier] 의 창고에 넣을 수 있다면 거기서부터의 확산은 저절로 해결될 것입니다.\n\n 하지만 식품점에 접근하는 것은 쉽지 않으며, 대신 밭에서 직접 균을 번식시키는 것이 더 쉬울 수 있습니다. 이 방법은 위험은 낮지만 성공 확률은 낮습니다." #deepl:113464637
+ spread_plague_ongoing.0004.a: "라더에 몰래 들어가기" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "필드 오염" #deepl:4137778007

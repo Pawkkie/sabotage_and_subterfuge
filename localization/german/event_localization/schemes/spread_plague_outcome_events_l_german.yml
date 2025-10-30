@@ -1,0 +1,21 @@
+﻿l_german:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "Ich bin der Tod geworden" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] ist gerade nach längerer Abwesenheit zurückgekehrt. Es scheint, als hätten die Kontaminanten [master_assassin_name.GetSheHe] Früchte getragen. [master_assassin_name.GetSheHe|U] verweilte einige Tage in der Region, bevor er nach Hause zurückkehrte, um zu sehen, ob der Plan funktioniert hatte, und die Nachricht von der raschen Ausbreitung der Krankheit verbreitete sich [master_assassin_name.GetHerHim] schnell auf den lokalen Märkten.\n\n Wer kann schon sagen, wie weit sich die [epidemic|E] von hier aus ausbreiten wird, aber es ist klar, dass wir etwas in Gang gesetzt haben, das jetzt nicht mehr in unseren Händen liegt." #deepl:108591925
+ spread_plague_outcome.0001.a: "Lasst das Chaos in seinem Kielwasser zurück!" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "Der Tod kommt angekündigt" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] ist gerade nach längerer Abwesenheit zurückgekehrt. Es scheint, dass die Verseuchung [master_assassin_name.GetSheHe] Früchte getragen hat. [master_assassin_name.GetSheHe|U] hielt sich einige Tage in der Region auf, bevor er nach Hause zurückkehrte, um zu sehen, ob der Plan funktioniert hatte, und die Nachricht von der raschen Ausbreitung der Krankheit verbreitete sich [master_assassin_name.GetHerHim] schnell auf den lokalen Märkten.\n\n Leider wurde [master_assassin_name.GetSheHe] auf dem Weg aus der Stadt aufgehalten, und während [master_assassin_name.GetSheHe] entkommen konnte, wurden einige belastende Beweise, die mich eindeutig in das Komplott verwickelten, fallen gelassen und zurückgelassen." #deepl:1902814976
+ spread_plague_outcome.0002.a: "Wenigstens hat der Plan funktioniert!" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "Hygiene setzt sich durch" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] ist gerade nach längerer Abwesenheit zurückgekehrt. Es scheint, als hätten die Schadstoffe, die [master_assassin_name.GetSheHe] ausgebracht hat, nicht gefruchtet. [master_assassin_name.GetSheHe|U] verweilte einige Tage in der Region, bevor er nach Hause zurückkehrte, um zu sehen, ob der Plan funktioniert hatte, und kein einziges Wort von Krankheit erreichte [master_assassin_name.GetHerHim] in irgendeinem der lokalen Märkte.\n\n Vielleicht waren unsere Schadstoffe zu schwach oder zu konservativ eingesetzt, wer weiß das schon." #deepl:3939157326
+ spread_plague_outcome.0003.a: "Das nächste Mal werden sie nicht so viel Glück haben..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "Unvergebene Geschenke" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] ist gerade nach längerer Abwesenheit zurückgekehrt. Es scheint, als hätten die von [master_assassin_name.GetSheHe] ausgebrachten Schadstoffe Früchte getragen. [master_assassin_name.GetSheHe|U] hielt sich einige Tage in der Region auf, bevor er nach Hause zurückkehrte, um zu sehen, ob der Plan aufgegangen war, und kein einziges Wort über eine Krankheit erreichte [master_assassin_name.GetHerHim] auf einem der lokalen Märkte.\n\nVielleicht waren unsere Kontaminanten zu schwach oder zu konservativ eingesetzt, wer weiß.\n\n Leider wurde [master_assassin_name.GetSheHe] auf dem Weg aus der Stadt angehalten, und während es [master_assassin_name.GetSheHe] gelang zu entkommen, wurden einige belastende Beweise, die mich eindeutig in das Komplott verwickelten, fallengelassen und zurückgelassen." #deepl:1196545157
+ spread_plague_outcome.0004.a: "Nun, das ist eine Katastrophe..." #deepl:4191637054

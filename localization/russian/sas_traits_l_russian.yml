@@ -1,0 +1,10 @@
+﻿l_russian:
+ # Embezzler
+ trait_sas_embezzler: "Растратчик" #deepl:2672472445
+ trait_sas_embezzler_desc: "Этот персонаж присвоил чужие средства." #deepl:2963769134
+ trait_sas_embezzler_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] присвоил чужие средства." #deepl:507092251
+
+ # Plaguebringer
+ trait_sas_plaguebringer: "Plaguebringer" #deepl:2249137281
+ trait_sas_plaguebringer_desc: "Этот персонаж поработал над тем, чтобы вызвать великую чуму." #deepl:4242511777
+ trait_sas_plaguebringer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] послужило причиной великой чумы." #deepl:4217708703

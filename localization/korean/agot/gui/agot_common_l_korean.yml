@@ -1,0 +1,57 @@
+﻿l_korean:
+ activity_MISSING: "# #underline 소재 불명#!" #deepl:2589670414
+ activity_PROPER: "[ACTIVITY.GetName|V] 에 참석 [PROVINCE.GetName|V]" #deepl:2899953008
+ CHARACTER_IN_LOCATION_MISSING: "#underline 이 캐릭터의 위치를 확인할 수 없습니다.#!" #deepl:1152593234
+ CHARACTER_IN_LOCATION_PROPER: "#underline 위치 [Character.GetCurrentLocation.GetName|V]#!" #deepl:3323452286
+
+ NO_PATRON: "선택한 후원자 없음" #deepl:3373182812
+
+ AGOT_RULER_DESIGNER_HEIGHT_3_4: "[GeneCategory.GetName]: [Select_float(GreaterThan_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)4.0'), '(float)4', '(float)3')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:2282626069
+ AGOT_RULER_DESIGNER_HEIGHT_5_6: "[GeneCategory.GetName]: [Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)6.0'), '(float)6', '(float)5')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:538148862
+ AGOT_RULER_DESIGNER_HEIGHT_7_8: "[GeneCategory.GetName]: [Select_float(GreaterThanOrEqualTo_float(Divide_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0'), '(float)8.0'), '(float)8', '(float)7')]ft [Modulo_float(Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.18313725490196078431372549019608', '(float)0.2')), Select_float(RulerDesignerWindow.IsFemale, '(float)45.0', '(float)47.0')), '(float)12.0')]in" #deepl:1504814872
+ AGOT_RULER_DESIGNER_HEIGHT_CM: "[GeneCategory.GetName]: [Add_float(Multiply_float(RulerDesignerWindow.GetMorphGeneValue(GeneCategory.Self), Select_float(RulerDesignerWindow.IsFemale, '(float)0.46509803921568627450980392156863', '(float)0.5078431372549019607843137254902')), Select_float(RulerDesignerWindow.IsFemale, '(float)114.3', '(float)119.4'))]cm" #deepl:532816563
+
+ AGOT_RULER_DESIGNER_GENE_ONLY_MEN: "남성에게만 표시" #deepl:533332604
+
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL: "의류 표시" #deepl:2652019048
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\n캐릭터 초상화의 의상을 표시합니다. 최종 완성 시에도 옷을 입고 있을 것입니다.\n\n #I  숨기려면 클릭하세요.#!" #deepl:2111600134
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_LABEL$#!\n캐릭터 초상화의 옷을 숨깁니다. 최종 완성 시에도 여전히 옷을 입고 있습니다.\n\n #I  표시하려면 클릭하세요.#!" #deepl:3422908735
+ RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP: "[SelectLocalization( Not(GetGlobalVariable('character_undress').IsSet), 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SHOW_CLOTHING_TOOLTIP_HIDE' )]" #deepl:2628953934
+
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL: "고정 프로필 보기" #deepl:1652583814
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\n캐릭터 초상화의 고정된 정면 및 측면 보기 각도를 사용하여 고정 프로필 보기를 활성화합니다.\n\n #I  고정 프로필 보기를 비활성화하려면 클릭합니다.#!" #deepl:557180594
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE: "#T $RULER_DESIGNER_TOGGLE_SIDE_PROFILE_LABEL$#!\n캐릭터 초상화의 표준 오프셋 전면 및 측면 보기 각도를 사용하여 고정 프로필 보기를 비활성화합니다.\n\n #I  고정 프로필 보기를 활성화하려면 클릭합니다.#!" #deepl:3410983546
+ RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP: "[SelectLocalization( GetGlobalVariable('true_profile_view').IsSet, 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_SHOW', 'RULER_DESIGNER_TOGGLE_SIDE_PROFILE_TOOLTIP_HIDE' )]" #deepl:2587200608
+
+ DRAGON_DESIGNER_STORE_DNA_TOOLTIP: "#T 드래곤 DNA 저장#!\n 현재 커스터마이저에 있는 DNA 설정을 저장합니다.\n\n@warning_icon! #X 캐릭터가 사망하면 이 값을 잃게 됩니다.#!" #deepl:924222140
+ DRAGON_DESIGNER_APPLY_DNA_TOOLTIP: "#T 저장된 DNA 적용#!\n 저장된 DNA 설정을 커스터마이저에 적용합니다." #deepl:2671363870
+ DRAGON_DESIGNER_UNDO_DNA_TOOLTIP: "#T 적용된 DNA 실행 취소#!\n 커스터마이저의 DNA 설정을 적용하기 전의 값으로 복원합니다." #deepl:326668943
+ DRAGON_DESIGNER_EXPORT_VALUES: "#T 이벤트 내용 복사#!\n 이벤트 텍스트의 내용을 클립보드에 복사합니다.\n\n 이벤트 텍스트에는 #high import_dragon_dna.txt#! 파일에 넣을 수 있는 스크립트 효과가 포함됩니다.\n\n@warning_icon! #X #!  이벤트 내용 재생성  버튼(이 버튼 왼쪽에 있는 새로 고침 버튼)을 사용하여 이벤트 텍스트를 재생성하고 커스터마이저에서 가장 최근 값을 가져옵니다. #T #! #X #!" #deepl:1364123390
+ DRAGON_DESIGNER_IMPORT_VALUES: "#T 파일에서 DNA 가져오기#!\n 이 버튼을 사용하기 전에 다음을 확인하세요:\n$BULLET_WITH_TAB$ 이 폴더가 생성됩니다: #high %사용자 프로필%/문서/패러독스 인터랙티브/크루세이더 킹 III/실행#! - 폴더가 없는 경우 폴더를 생성합니다.\n$BULLET_WITH_TAB$ #high run 폴더 안에 import_dragon_dna.txt 파일이 있습니다.   import_dragon_dna = {} 효과 파일 안에 import_dragon_dna = {} 효과가 있습니다. 이렇게 하면 파일에 있는 모든 이펙트가 실행되므로 그 안에 실행하려는 이펙트만 있는지 확인하세요.#! #high #!\n$BULLET_WITH_TAB$ #high #!#! #high \n\n@warning_icon! #X #!" #deepl:3791460998
+
+ agot_character_performing_councillor_task: "작업을 수행하는 동안" #deepl:602773449
+ agot_character_traveling: "여행 중" #deepl:112387279
+
+ cant_be_kingsguard: "#X 국왕친위대의 일원이 될 수 없습니다." #deepl:1449117284
+ cant_be_nw: "#X 밤의 경비대원이 될 수 없습니다." #deepl:1174047844
+ cant_be_silent_sis: "#X 사일런트 시스터즈의 회원이 될 수 없습니다." #deepl:2111153960
+
+ COURT_POSITION_NAME_DISPLAY: "#high [CourtPosition.GetEmployee.Custom('AGOTCustomGetShortUIName')]#![CourtPosition.GetEmployee.Custom('TitleSuffix')]" #deepl:4106785100
+ ACCLAIMED_KNIGHT_NAME_DISPLAY: "[Accolade.GetAcclaimedKnight.Custom('AGOTCustomGetTitledFullNameDynasty')][Accolade.GetAcclaimedKnight.Custom('TitleSuffix')]" #deepl:4249902692
+ BARBERSHOP_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ MY_REALM_CHARNAME_DISPLAY: "#high [MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('AGOTCustomGetShortUIName')]#![MyRealmWindow.GetCharacter.GetPlayerHeir.Custom('TitleSuffix')]" #deepl:3705399477
+ COURT_POSITION_APPOINT_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ COOLTIP_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal][Character.Custom('WordSpace')][Character.Custom('SurnameSwitch')]#medium [Character.Custom('TitleSuffix')]#!#medium , [Character.GetAge]#!" #deepl:1092325654
+ COOLTIP_KNIGHT_NAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip][Character.Custom('WordSpace')] [Character.GetHouse.GetNameNoTooltip] #medium  , [Character.GetAge]#!" #deepl:2422609432
+ COOLTIP_MAESTER_NAME_DISPLAY: "[Character.Custom('MaesterCheck')] [Character.GetTitledFirstNameNicknamedNoTooltip]#medium , [Character.GetAge]#!" #deepl:3203973981
+ COOLTIP_SILENTSISTER_NAME_DISPLAY: "사일런트 시스터 [Character.GetFirstNameNicknamedNoTooltip]#medium  , [Character.GetAge]#!" #deepl:3118680272
+ COOLTIP_BASTARD_NAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')]#medium , [Character.GetAge]#!" #deepl:799121695
+ COOLTIP_KNIGHT_BASTARD_NAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip] [Character.Custom('SurnameSwitch')] #medium  , [Character.GetAge]#!" #deepl:2214245248
+ COOLTIP_UNLANDED_CHARACTER_NAME_DISPLAY: "[Character.GetCharacterViewNameNicknamedNoTooltipRegnal]#medium [Character.Custom('TitleSuffix')]#!#medium , [Character.GetAge]#!" #deepl:848487151
+ COOLTIP_HIGHSEPTON_NAME_DISPLAY: "[Character.GetNickname]#medium , [Character.GetAge]#!" #deepl:1349441906
+ COOLTIP_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "[Character.GetFirstNameNicknamedNoTooltip] 의 [Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  , [Character.GetAge]#!" #deepl:305290230
+ COOLTIP_SER_BIRTHPLACE_BASED_NICKNAME_DISPLAY: "Ser [Character.GetFirstNameNicknamedNoTooltip] 의 [Character.MakeScope.Var('agot_birthplace').GetProvince.GetNameNoTooltip]#medium  , [Character.GetAge]#!" #deepl:2204980815
+ LIST_CHARACTER_NAME_DISPLAY: "#high [Character.Custom('AGOTCustomGetShortUIName')]#![Character.Custom('TitleSuffix')]" #deepl:2968396587
+ AGOT_CANNOT_HIRE_MENATARMS: "#T 새로 만들기 [men_at_arms|E] [regiment|E] #! \n [MilitaryItem.GetMaACanBeCreatedTooltip] \n @warning_icon! #X  [GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] 에 따라 군인을 고용할 수 없습니다. #!" #deepl:3923605812
+ AGOT_HIRE_MERCENARIES_TOOLTIP: "#T [MercenaryCompany.GetName] #!\n#I 자세히 보려면 클릭하세요.#![SelectLocalization(GetScriptedGui('agot_can_hire_mercenaries').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), '', 'AGOT_HIRE_MERCENARIES_ADD')]" #deepl:4282356010
+ AGOT_HIRE_MERCENARIES_ADD: "\n\n@warning_icon! #X 용병을 고용하는 동안에는 [GetModifier('agot_pentos_braavos_treaty').GetNameWithTooltip] #!" #deepl:3522849467

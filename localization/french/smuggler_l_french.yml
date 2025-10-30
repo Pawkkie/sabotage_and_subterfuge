@@ -1,0 +1,24 @@
+﻿l_french:
+ # Court Position
+ smuggler_court_position: "Contrebandier" #deepl:2327268886
+ smuggler_court_position_desc: "Si vous avez besoin de transporter des marchandises d'un point à un autre, le contrebandier peut vous mettre en relation. Bien que cela ne soit pas strictement nécessaire, les marchandises douteuses sont leur spécialité. Le contrebandier permet de planifier des casses et de voler des artefacts, ainsi que de renforcer vos propres réseaux de transport." #deepl:760391573
+ smuggler_custom_effect_description_scheme: "$BULLET$Peut permettre l'accès au site [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" #deepl:732188162
+ smuggler_custom_effect_description_demand_payment: "$BULLET$Débloque l'interaction [demand_payment|E] " #deepl:1175097164
+
+ # Traits
+ # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+
+ # Rouse Rabble task
+ smuggler_task_plan_heist: "Plan Heist" #deepl:3591742283
+ smuggler_task_plan_heist_desc: "Planifiez le vol d'un artefact spécifique, vous permettant, avec votre équipe, de le faire sortir clandestinement de leur salle d'audience et de l'introduire dans la vôtre." #deepl:3024560060
+ allow_steal_artifact_scheme_tt: "Peut utiliser l'interaction [plan_heist_interaction|E] pour activer l'interaction [smuggle_artifact_scheme|E] contre une cible. Cette tâche doit être active pour démarrer et poursuivre le plan.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! à @scheme_success_icon!#P  +20%#! (basé sur [aptitude|E])" #deepl:4121225388
+
+ # Loot and Scoot task
+ #  smuggler_task_loot_and_scoot: "Loot and Scoot" #deepl:1675967315
+ #  smuggler_task_provoke_vassals_desc: "Provoquer les vassaux d'une autre cour, ce qui entraînera une baisse de l'opinion et, éventuellement, un soulèvement général." #deepl:3289991535
+
+ # Monitor Supplies
+ smuggler_task_monitor_supplies: "Fournitures pour moniteurs" #deepl:2707686834
+ smuggler_task_monitor_supplies_desc: "Gardez un œil sur la logistique du royaume, en veillant à ce que les opérations restent sûres et efficaces." #deepl:2420428664
+ increased_smuggle_artifact_defense_tt: "Ennemi [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! à @scheme_success_icon!#P  -20%#! (basé sur [aptitude|E])" #deepl:1035613496
+

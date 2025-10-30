@@ -1,0 +1,18 @@
+﻿l_simp_chinese: 
+ sas_starter_spy_network_modifier: "新生间谍网" #deepl:4085502466
+ sas_starter_spy_network_modifier_desc: "众议员可为其[sas_spy_network|E] 招募[sas_spies|E] 。" #deepl:3242081027
+
+ sas_establish_criminal_underground_house_modifier: "地下犯罪组织" #deepl:1493896910
+ sas_establish_criminal_underground_house_modifier_desc: "众议院议员可访问[rabble_rouser_court_position|E] 、[femme_fatale_court_position|E] 、[smuggler_court_position|E] 和[master_assassin_court_position|E] [court_positions|E] 。他们还可以为其[sas_spy_network|E] 招聘[sas_spies|E] 。" #deepl:2452820577
+
+ sas_expand_spy_network_modifier: "扩大间谍网负责人" #deepl:2107637170
+ sas_expand_spy_network_house_modifier: "扩大间谍网" #deepl:3378507362
+ sas_expand_spy_network_house_modifier_desc: "众议院成员可招募两倍于[sas_spies|E] 的人数，并可招募至少 8 岁的儿童加入其[sas_spy_network|E] 。\n\n [sas_spies|E] 可窃取[innovations|E] 。#weak  （25 年冷却时间）。#!" #deepl:2775509273
+
+ sas_special_operations_training_house_modifier: "特别行动培训" #deepl:3167735659
+ sas_special_operations_training_house_modifier_desc: "众议院议员可以免费雇佣[intrigue|E] 为基础的[court_positions|E] 。\n\n [sas_spies|E] 以及[rabble_rouser_court_position|E],[femme_fatale_court_position|E],[smuggler_court_position|E], 和[master_assassin_court_position|E] [court_positions|E] 更有可能加入您的[hostile_schemes|E] [agents|E] 。" #deepl:3266661613
+ SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND: "我是你们地下犯罪组织的一员: $VALUE|=+0$" #deepl:1487660810
+ special_operations_training_court_position_modifier: "特别行动培训" #deepl:3167735659
+
+ sas_house_of_sabotage_and_subterfuge_modifier: "破坏和潜规则之家" #deepl:535697053
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "破坏与诡计之屋 Desc" #deepl:717491357

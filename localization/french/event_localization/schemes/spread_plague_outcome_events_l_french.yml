@@ -1,0 +1,21 @@
+﻿l_french:
+
+ ## Success and secret
+ spread_plague_outcome.0001.t: "Je deviens la mort" #deepl:860769809
+ spread_plague_outcome.0001.desc: "[master_assassin_name.GetUIName] vient de rentrer après une longue absence. Il semble que les contaminants plantés par [master_assassin_name.GetSheHe] aient porté leurs fruits. [master_assassin_name.GetSheHe|U] s'est attardé quelques jours dans la région avant de rentrer chez lui pour voir si le plan avait fonctionné, et la nouvelle de la propagation rapide de la maladie a atteint [master_assassin_name.GetHerHim] rapidement les marchés locaux.\n\n Qui sait jusqu'où [epidemic|E] peut se propager à partir d'ici, mais il est clair que nous avons commencé quelque chose qui n'est plus de notre ressort." #deepl:108591925
+ spread_plague_outcome.0001.a: "Qu'il laisse le chaos dans son sillage !" #deepl:3537577150
+
+ ## Success and discovered
+ spread_plague_outcome.0002.t: "La mort s'annonce" #deepl:2120696851
+ spread_plague_outcome.0002.desc: "[master_assassin_name.GetUIName] vient de rentrer après une longue absence. Il semble que les contaminants semés par [master_assassin_name.GetSheHe] aient porté leurs fruits. [master_assassin_name.GetSheHe|U] s'est attardé quelques jours dans la région avant de rentrer chez lui pour voir si le plan avait fonctionné, et la nouvelle de la propagation rapide de la maladie est parvenue rapidement à [master_assassin_name.GetHerHim] sur les marchés locaux.\n\n Malheureusement, [master_assassin_name.GetSheHe] a été arrêté à la sortie de la ville, et alors que [master_assassin_name.GetSheHe] a réussi à s'échapper, des preuves incriminantes m'impliquant de manière concluante dans le complot ont été abandonnées et laissées sur place." #deepl:1902814976
+ spread_plague_outcome.0002.a: "Au moins, le plan a fonctionné !" #deepl:4162619154
+
+ ## Unsuccessful and secret
+ spread_plague_outcome.0003.t: "L'hygiène prévaut" #deepl:131433711
+ spread_plague_outcome.0003.desc: "[master_assassin_name.GetUIName] vient de rentrer après une longue absence. Il semble que les contaminants plantés par [master_assassin_name.GetSheHe] n'aient pas porté leurs fruits. [master_assassin_name.GetSheHe|U] s'est attardé quelques jours dans la région avant de rentrer chez lui pour voir si le plan avait fonctionné, et aucun mot de maladie n'est parvenu à [master_assassin_name.GetHerHim] dans aucun des marchés locaux.\n\n Peut-être nos contaminants étaient-ils trop faibles ou appliqués de manière trop conservatrice, qui sait ?" #deepl:3939157326
+ spread_plague_outcome.0003.a: "La prochaine fois, ils n'auront pas cette chance..." #deepl:2044638280
+
+ ## Unsuccessful and discovered
+ spread_plague_outcome.0004.t: "Cadeaux non donnés" #deepl:3841555006
+ spread_plague_outcome.0004.desc: "[master_assassin_name.GetUIName] vient de rentrer après une longue absence. Il semble que les contaminants plantés par [master_assassin_name.GetSheHe] aient porté leurs fruits. [master_assassin_name.GetSheHe|U] s'est attardé quelques jours dans la région avant de rentrer chez lui pour voir si le plan avait fonctionné, et pas un mot de maladie n'est parvenu à [master_assassin_name.GetHerHim] dans aucun des marchés locaux.\n\nPeut-être nos contaminants étaient-ils trop faibles ou appliqués de manière trop conservatrice, qui sait.\n\n Malheureusement, [master_assassin_name.GetSheHe] a été arrêté à la sortie de la ville, et alors que [master_assassin_name.GetSheHe] a réussi à s'échapper, des preuves incriminantes m'impliquant de manière concluante dans le complot ont été abandonnées et laissées sur place." #deepl:1196545157
+ spread_plague_outcome.0004.a: "C'est un désastre..." #deepl:4191637054

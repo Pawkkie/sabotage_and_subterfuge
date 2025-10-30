@@ -1,0 +1,10 @@
+﻿l_german:
+ poison_opinion_ongoing.1001.t: "Poison Opinion: [target.GetLiege.GetCulture.GetNameNoTooltip] Culture"
+ poison_opinion_ongoing.1001.desc: "Ein Bürger mit [target.GetCulture.GetNameNoTooltip] Herkunft wurde in den Straßen von [capital.GetNameNoTooltip] wegen eines geringfügigen Vergehens belästigt.\n\n Indem ich eine radikale Sekte von [target.GetLiege.GetCulture.GetNameNoTooltip] Emporkömmlingen für den Ärger verantwortlich mache, könnte ich vielleicht sowohl [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] als auch [target.GetCulture.GetNameNoTooltip] die Opfer davon überzeugen, dass ihr Lehnsherr vielleicht unangenehmer ist, als sie vielleicht erwarten." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "Die [target.GetLiege.GetCulture.GetCollectiveNounNoTooltip] sind direkt verantwortlich." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "Es handelt sich lediglich um einen unglücklichen Unfall." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "Vergiftete Meinung: Den Tee ausschütten" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "Ich bin zum Nachmittagstee bei [target_spouse.GetName], [target.GetNamePossessive] Ehepartner, eingeladen.\n\n Der Anlass ist eine angenehme und geschwätzige Angelegenheit, und es dauert nicht lange, bis [target_spouse.GetShortUIName] ein paar pikante Bemerkungen über [target.GetLiege.GetName] loslässt. Sicherlich kann ich das zu meinem Vorteil nutzen..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "Machen Sie weiter..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "Ich habe gehört, dass [target.GetLiege.GetSheHe] einmal etwas Schreckliches getan hat..." #deepl:595741215

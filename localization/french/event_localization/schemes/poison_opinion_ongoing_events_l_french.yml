@@ -1,0 +1,10 @@
+﻿l_french:
+ poison_opinion_ongoing.1001.t: "Poison Opinion : [target.GetLiege.GetCulture.GetNameNoTooltip] Culture" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "Un roturier d'origine [target.GetCulture.GetNameNoTooltip] a été accosté dans les rues de [capital.GetNameNoTooltip] pour un délit mineur.\n\n En accusant une secte radicale d'arrivistes [target.GetLiege.GetCulture.GetNameNoTooltip] d'être à l'origine du problème, je pourrais peut-être convaincre [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)], ainsi que [target.GetCulture.GetNameNoTooltip] et les victimes, que leur seigneur est peut-être plus désagréable qu'ils ne l'imaginent." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "Les [target.GetLiege.GetCulture.GetCollectiveNounNoTooltip] sont directement responsables." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "Ce n'est qu'un malheureux accident." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "Opinion sur les poisons : Le thé à la bouche" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "J'ai été invitée à prendre le thé avec [target_spouse.GetName], [target.GetNamePossessive] conjoint.\n\n L'occasion est agréable et chargée de commérages, et il ne faut pas longtemps à [target_spouse.GetShortUIName] pour laisser échapper des commentaires croustillants sur [target.GetLiege.GetName]. Je suis sûr que je peux en tirer profit..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "Continuez..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "J'ai entendu dire que [target.GetLiege.GetSheHe] avait fait quelque chose d'horrible..." #deepl:595741215

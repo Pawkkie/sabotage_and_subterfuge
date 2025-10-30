@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ # Disease Selection
+ spread_plague_ongoing.0001.t: "选择你的毒药" #deepl:1509455538
+ spread_plague_ongoing.0001.desc: "既然决定要在[target.GetUINamePossessive] 境界发动一场[epidemic|E] ，剩下的就是选择我们的攻击方法了。\n\n [master_assassin_name.GetUIName] 告诉我，我们可以找到一个不幸的人的废弃被褥和衣服，他在当地得了天花，也许可以起到作用。\n\n 我们也可以采取更直接的方法，弄脏当地的水源，或者用[master_assassin_name.GetShortUIName] 身上的一些有毒真菌来污染他们的食物。" #deepl:3077033759
+ spread_plague_ongoing.0001.a: "使用被污染的床上用品" #deepl:4127637097
+ spread_plague_ongoing.0001.b: "水源土壤" #deepl:2448500050
+ spread_plague_ongoing.0001.c: "玷污他们的食物" #deepl:1128175886
+
+ spread_plague_ongoing.0001.smallpox.tt: "在该地区传播天花的企图" #deepl:1300419820
+ spread_plague_ongoing.0001.bloody_flux.tt: "试图在该地区传播血腥波动" #deepl:899066176
+ spread_plague_ongoing.0001.holy_fire.tt: "试图在该地区传播圣火" #deepl:3626240989
+
+ # Smallpox
+ spread_plague_ongoing.0002.t: "死亡的温暖拥抱" #deepl:4204373679
+ spread_plague_ongoing.0002.desc: "[master_assassin_name.GetUIName] [target_title.GetNameNoTier]\n\n 这是迅速向该地区运送更多污染物的绝佳机会，但处理这些污染物超出了必要的范围，是非常危险的，而且瘟疫的源头有可能追溯到我们身上。" #deepl:2992183165
+ spread_plague_ongoing.0002.a: "将受污染物品混入装运物中" #deepl:616711320
+ spread_plague_ongoing.0002.b: "这可能会引起过多怀疑" #deepl:1742241824
+
+ # Bloody Flux
+ spread_plague_ongoing.0003.t: "您在等待的水" #deepl:2554096488
+ spread_plague_ongoing.0003.desc: "[master_assassin_name.GetUIName] [target_title.GetNameNoTier]\n\n 我们应该基本上不会被发现，问题只是水是否会按照我们希望的方式流动。  或者，我们可以尝试更直接的方法，在黑暗的掩护下将它们倾倒在城镇的主要入口处。不过风险要大得多。\n\n" #deepl:388755539
+ spread_plague_ongoing.0003.a: "向上游倾倒" #deepl:4071425817
+ spread_plague_ongoing.0003.b: "把它们扔到城里" #deepl:43844615
+
+ # Holy Fire
+ spread_plague_ongoing.0004.t: "我们中间的真菌" #deepl:572678244
+ spread_plague_ongoing.0004.desc: "[master_assassin_name.GetUIName] 已经获得了一种特殊的真菌，一旦摄入其孢子，就会出现可怕的症状。如果我们能把这种真菌弄到[target_title.GetNameNoTier] 的某个偏僻储藏室里，从那里开始的传播应该可以自行解决。\n\n 不过，要进入食品店并不容易，直接在田野里传播真菌可能会更容易一些。这样做风险较低，但成功的可能性也较小。" #deepl:113464637
+ spread_plague_ongoing.0004.a: "溜进储藏室" #deepl:1335639939
+ spread_plague_ongoing.0004.b: "玷污田野" #deepl:4137778007

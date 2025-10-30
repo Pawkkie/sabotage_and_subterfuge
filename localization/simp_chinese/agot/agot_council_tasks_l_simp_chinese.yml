@@ -1,0 +1,142 @@
+﻿l_simp_chinese:
+ # Personal Steward
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "您的私人管家[councillor.Custom('diplomacy_skill_level')] 的外交技巧促成了这笔意外之财。" #deepl:3987054824
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "尽管您的私人管家拥有[councillor.Custom('diplomacy_skill_level')] 的外交技巧，但还是发生了这种情况。" #deepl:2756273250
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "尽管您的私人管家拥有[councillor.Custom('martial_skill_level')] 的武艺，但还是发生了这种情况。" #deepl:1672131809
+ personal_steward_task_martial_good_skilled_notification_tooltip: "您的贴身管家[councillor.Custom('martial_skill_level')] 的武艺让您获得了这笔意外之财。" #deepl:1416132229
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "您的个人管家[councillor.Custom('stewardship_skill_level')] 的管理技能带来了这笔意外之财。" #deepl:136762961
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "尽管您的个人管家在[councillor.Custom('stewardship_skill_level')] 管家技能，但还是发生了这种情况。" #deepl:2694643357
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "尽管您的私人管家拥有[councillor.Custom('intrigue_skill_level')] 阴谋诡计的技能，但还是发生了这种情况。" #deepl:1782695802
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "您的私人管家[councillor.Custom('intrigue_skill_level')] 的阴谋技巧导致了这笔意外之财。" #deepl:2761615177
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "尽管您的私人管家[councillor.Custom('learning_skill_level')] 学习能力很强，但还是发生了这种情况。" #deepl:3263895679
+ personal_steward_task_learning_good_skilled_notification_tooltip: "您的个人管家[councillor.Custom('learning_skill_level')] 的学习技能促成了这笔意外之财。" #deepl:4043423585
+ task_personal_steward_default_diplomacy_modifier: "私人管家的协助" #deepl:628691585
+ task_personal_steward_default_martial_modifier: "私人管家的协助" #deepl:628691585
+ task_personal_steward_default_stewardship_modifier: "私人管家的协助" #deepl:628691585
+ task_personal_steward_default_intrigue_modifier: "私人管家的协助" #deepl:628691585
+ task_personal_steward_default_learning_modifier: "私人管家的协助" #deepl:628691585
+
+ # Personal Steward Tasks
+ task_personal_steward_default: "协助司令官大人" #deepl:3190029942
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip] 协助您管理守夜人的日常工作\n\n [councillor.GetHerHis|U] 支持为您提供的支持：\n[councillor.GetModifierDescForTask('task_personal_steward_default')]" #deepl:2471906103
+ task_personal_steward_court_politics: "建立影响力" #deepl:3874806014
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] 专注于守夜人政治和改善黑兄弟之间的关系\n\n [councillor.GetHerHis|U] 支持给您带来的好处：\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]" #deepl:1899957641
+ task_personal_steward_chivalry: "培训守望者" #deepl:1093429720
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] 专注于训练守夜人\n\n [councillor.GetHerHis|U] 支持您：\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]" #deepl:3578335599
+ task_personal_steward_court_intrigue: "保持耳聪目明" #deepl:3757386027
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip] 专注于在您的宫廷\n\n [councillor.GetHerHis|U] 支持您的传言和黑兄弟的耳语：\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]" #deepl:238132299
+ task_personal_steward_manage_domain: "管理礼物" #deepl:3752812108
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip] 专注于管理礼物和提升手表的持有量\n\n [councillor.GetHerHis|U] 支持为您提供的支持：\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]" #deepl:795658195
+ task_personal_steward_patronage: "教育手表" #deepl:64939694
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] 关注文化、宗教和教育问题，请访问\n\n [councillor.GetHerHis|U] 支持您：\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]" #deepl:673679475
+ councillor_personal_steward_background.0001.diplomacy_notification: "随着经验的积累，[councillor.GetShortUINamePossessive] ，外交技巧也在不断提高。" #deepl:1853588496
+ councillor_personal_steward_background.0001.martial_notification: "随着经验的积累，[councillor.GetShortUINamePossessive] ，对战争的理解也在不断加深。" #deepl:26629406
+ councillor_personal_steward_background.0001.stewardship_notification: "随着经验的积累，[councillor.GetShortUINamePossessive] 行政管理能力也在不断提高。" #deepl:1503349911
+ councillor_personal_steward_background.0001.intrigue_notification: "随着经验的积累，[councillor.GetShortUINamePossessive] 阴谋诡计的技能也在不断提高。" #deepl:482384644
+ councillor_personal_steward_background.0001.learning_notification: "随着经验的积累，[councillor.GetShortUINamePossessive] ，学者们的认识也在不断提高。" #deepl:668661590
+
+ councillor_personal_steward_background.0001.title: "个人管家的技能" #deepl:607529410
+
+ task_promote_culture_effect_desc_wv_override: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为[councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]" #deepl:1353113911
+ task_promote_culture_effect_desc_ev_override: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为[councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]" #deepl:1820114630
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一： \n#S $TAB$ 80%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:916033769
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一： \n#S $TAB$ 60%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:3772183319
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一： \n#S $TAB$ 20%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:1153229959
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (agot error)#!#! ：铁血文化转换出现问题，向典型报告" #deepl:1200773039
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一： \n#S $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.GetName]" #deepl:1126410652
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一：： \n#S $TAB$ 60%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.GetName]" #deepl:2667011599
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S 在#V 100%#!#! :\n$TAB$ [county|E] 将[culture|E] 更改为以下\n$TAB$ 文化之一： \n#S $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.GetName]" #deepl:3113041075
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (agot error)#!#! ：Greenborn 文化转换出现问题，向典型报告" #deepl:1510425940
+
+
+ # Castellan Tasks
+ task_castellan_default_1:0 "Oversee Realm" #martial
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip] \n\n  支持您：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_1')]" #deepl:4119586948
+
+ task_castellan_default_2:0 "Oversee Realm" #learning
+ task_castellan_default_effect_desc_2: "有了[councillor.GetShortUINameNoTooltip]"圣贤和博学的思想 "的建议，您就能进行明智的统治。\n\n [councillor.GetHerHis|U] 支持您：\n[councillor.GetModifierDescForTask('task_castellan_default_2')]" #deepl:373640728
+
+ task_castellan_default_3:0 "Oversee Realm" #intrigue
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] \n\n  支持为您提供：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_3')]" #deepl:150011693
+
+ task_castellan_default_4:0 "Oversee Realm" #stewardship
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip] \n\n  支持为您提供：[councillor.GetHerHis|U]\n[councillor.GetModifierDescForTask('task_castellan_default_4')]" #deepl:930183188
+
+ task_castellan_default_5:0 "Oversee Realm" #diplomacy
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] 是一位干练的政治家，稳健的国策是执政的必要条件。\n\n [councillor.GetHerHis|U] 支持给你：\n[councillor.GetModifierDescForTask('task_castellan_default_5')]" #deepl:398758126
+
+
+ task_castellan_default_hodor: "竭尽全力" #deepl:3046448544
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] 不知道他们是怎么来到这里的，但他们已经尽力了。" #deepl:1327033284
+
+ task_castellan_court: "主持理事会" #deepl:1348124016
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]" #deepl:164605584
+
+ task_castellan_fortify: "加强防御" #deepl:145040072
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]" #deepl:3665126672
+
+ castellan_fortify_province_modifier: "$task_castellan_fortify$" #deepl:3627279605
+
+ castellan_fortify_county_modifier: "强化防御" #deepl:1470419536
+
+ castellan_court_opinion_modifier: "Castellan 主持议会" #deepl:1892251711
+
+ task_train_commanders_maa_effect_desc: "占位符" #deepl:3525875382
+ task_train_commanders_maa_erudition_bonus_desc: "占位符" #deepl:3525875382
+
+ task_castellan_organise: "与附庸谈判" #deepl:3783553490
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]" #deepl:3948196146
+ task_castellan_organise_modifier: "理事会$councillor_castellan$" #deepl:566097349
+
+ task_castellan_scheme: "组织计划" #deepl:2331682327
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]" #deepl:4293595345
+ task_castellan_scheme_modifier: "理事会$councillor_castellan$" #deepl:566097349
+
+ task_castellan_clergy: "召集神职人员" #deepl:415742451
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]" #deepl:4181075151
+ task_castellan_clergy_modifier: "理事会$councillor_castellan$" #deepl:566097349
+
+ # Admiral
+ task_admiral_fleet: "分散舰队" #deepl:1618243021
+
+ task_admiral_fleet_modifier: "理事会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_fleet_effect_desc: "[supply|E] 持续时间：#P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ 基础：#P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ 议员的[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n [fleet|E] 移动速度：#P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ 基础：#P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ 议员的[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#!" #deepl:1383045148
+
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_raid: "增强攻略" #deepl:1570853202
+
+ cannot_raid: "#X 你可以突袭#!" #deepl:1644501070
+
+ NOT_cannot_raid: "#X 不能突袭！#!" #deepl:1194432546
+
+ task_admiral_raid_modifier: "理事会$councillor_admiral$" #deepl:1798471343
+
+
+ task_admiral_raid_effect_desc: "[raid|E] 速度：#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ 基地：#P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Councillor's[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#! \n [raid_loot|E] Capacity：#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ Base：#P [SCOPE.ScriptValue('task_admiral_raid_base')]#!+\n$TAB$ 议员的[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n 移动速度：#P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ 基础：#P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ 议员的[martial_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#!" #deepl:4290845175
+
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_maritime: "保护贸易" #deepl:34268181
+
+ task_admiral_maritime_modifier: "理事会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_tax_modifier: "理事会$councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_effect_desc: "[domain|E] 税率：#P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n $TAB$ Base：#P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ Councillor's[stewardship_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#! \n [supply|E] Capacity：#P +[SCOPE.ScriptValue('task_admiral_maritime_modifier_value')]%#!\n $TAB$ Base：#P [SCOPE.ScriptValue('task_admiral_maritime_base')]+#!\n $TAB$ 议员的[stewardship_skill|E]:#P +[SCOPE.ScriptValue('task_admiral_maritime_skill_base')]%#!" #deepl:763222540
+
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]:#P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$:#P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ # Court Chaplain
+ COURT_CHAPLAIN_SHATTERED_WORLD: "破碎世界》启动奖励" #deepl:3364461777
+
+ # Spymaster
+ agot_task_disrupt_schemes_discover_spies: "可能会在您的宫廷中发现外国[sas_spies|E] \n" #deepl:2680493951
+ agot_task_disrupt_schemes_recruit_spies: "可能会在目标球场招募[sas_spies|E] \n" #deepl:2394015076

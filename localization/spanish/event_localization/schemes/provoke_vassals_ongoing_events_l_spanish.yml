@@ -1,0 +1,24 @@
+﻿l_spanish:
+ # Feeding the Flames
+ provoke_vassals_ongoing.0001.t: "Alimentar las llamas" #deepl:504191995
+ provoke_vassals_ongoing.0001.desc: "Parece que [independence_vassal.GetShortUIName] ha estado luchando últimamente con el descontento regional. Los altos impuestos en la región impuestos por [target.GetShortUIName] tienen a la población en cierto grado de agitación.\n\n Aunque no está claro si [independence_vassal.GetShortUIName] preferiría realmente reducir sus obligaciones o no, está claro que anhelan tener un control más directo sobre la zona sin ninguna influencia de las autoridades superiores.\n\n Tal vez pueda enviarles algunos recursos. Tal vez pueda incluir una o dos sugerencias sobre la mejor forma de aplicarlos..." #deepl:2916651416
+ provoke_vassals_ongoing.0001.a: "Suministraré armamento" #deepl:3294163484
+ provoke_vassals_ongoing.0001.b: "Suministraré provisiones" #deepl:1722600124
+
+ # Promising the Future
+ provoke_vassals_ongoing.0002.t: "Prometiendo el futuro" #deepl:2733215959
+ provoke_vassals_ongoing.0002.desc: "Hace poco recibí una carta de [independence_vassal.GetShortUIName], en su mayor parte una discusión diplomática estándar. Sin embargo, ¡hubo un bonito broche de personalidad al final!\n\n Es evidente que [independence_vassal.GetSheHe] se ha sentido bastante estancado en [independence_vassal.GetHerHis] ambiciones de crecimiento, en riqueza y renombre para [independence_vassal.GetHerHis] familia.\n\n Es igualmente evidente que esta es una oportunidad fabulosa para cebar el tipo de respuesta que hemos estado buscando aquí." #deepl:2800851299
+ provoke_vassals_ongoing.0002.a: "¡Es una pena que el vasallaje sea tan asfixiante!" #deepl:2781941790
+ provoke_vassals_ongoing.0002.b: "¡El vasallaje no es más que un peldaño meritorio!" #deepl:1226632191
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0003.t: "Intento de asesinato" #deepl:2745329543
+ provoke_vassals_ongoing.0003.desc: "[rouser_name.GetShortUIName] y [master_assassin_name.GetShortUIName] han presentado un plan para organizar un atentado contra [independence_vassal.GetShortUIName] o un miembro de la familia de [independence_vassal.GetHerHis], inculpando a [target.GetShortUIName] y a sus soldados.\n\n Ambos me han asegurado que el plan es infalible. Con [master_assassin_name.GetShortUIName] actuando de incógnito y solo, las probabilidades de fracaso son mínimas en el mejor de los casos, y meter la pata resultará en confusión más que en arrestos.\n\n Tal confusión probablemente provocaría una respuesta de [target.GetShortUIName] para tranquilizar a [independence_vassal.GetShortUIName] sobre la seguridad de [independence_vassal.GetHerHis], lo que sería lo contrario de productivo. Pero si funciona..." #deepl:1236986410
+ provoke_vassals_ongoing.0003.a: "Confío en ti, vamos a por ello." #deepl:3757966510
+ provoke_vassals_ongoing.0003.b: "No estoy seguro de que sea una buena idea" #deepl:3991597292
+
+ # Stage Assassination Attempt
+ provoke_vassals_ongoing.0004.t: "Una especie de cumbre" #deepl:2331725663
+ provoke_vassals_ongoing.0004.desc: "[target.GetShortUIName] me invitó a mí y a varios otros gobernantes y vasallos a una discusión pacífica centrada en la naturaleza de la plaga y en cómo podríamos aislarnos de lo peor de ella.\n\n Esto es muy inusual en el mejor de los casos, y aunque la conversación ha sido productiva, ha llevado a algunos a preguntarse si [target.GetSheHe] es lo suficientemente competente como para exhibir el liderazgo seguro que se requiere de un gobernante.\n\n Al concluir la conversación, [independence_vassal.GetShortUIName] me llama al oído para preguntarme mi opinión, con la duda evidente en la expresión de [independence_vassal.GetHerHis]." #deepl:1606362498
+ provoke_vassals_ongoing.0004.a: "¿No crees que [target.GetSheHe] parece cansado?" #deepl:111863169
+ provoke_vassals_ongoing.0004.b: "[target.GetSheHe] es absolutamente capaz" #deepl:3117045451

@@ -1,0 +1,46 @@
+﻿l_simp_chinese:
+ rouse_rabble_attended_local_feast: "参加当地盛宴" #deepl:2713133615
+ rouse_rabble_sent_gift_to_local_feast: "送给当地人的礼物" #deepl:231123044
+ rouse_rabble_ignored_local_feast: "被忽视的地方盛宴" #deepl:4143663347
+
+ rouse_rabble_intercept_aid: "截留的地方援助" #deepl:1362272277
+ rouse_rabble_endorse_aid: "认可的地方援助" #deepl:383506778
+ rouse_rabble_ignore_aid: "被忽略的地方援助" #deepl:3141683792
+ rouse_rabble_endorsed_aid_opinion: "认可的地方援助" #deepl:383506778
+
+ rouse_rabble_mock_battle: "青年模拟战" #deepl:4072308434
+ rouse_rabble_hunting_tournament: "青少年狩猎锦标赛" #deepl:2973954280
+ rouse_rabble_cultural_exchange: "青年文化交流" #deepl:1352443444
+
+ rouse_rabble_undercover_protest: "秘密抗议" #deepl:1250919224
+
+ rouse_rabble_fought_soldier: "披甲士兵" #deepl:2448626429
+ rouse_rabble_slandered_soldier: "被诽谤的士兵" #deepl:1847595356
+ rouse_rabble_helped_soldier_home: "帮助过士兵" #deepl:1762562614
+ rouse_rabble_observed_soldier: "观察到的士兵" #deepl:1958705373
+
+ rouse_rabble_missive_crush_them: "建议粉碎叛军" #deepl:3024212291
+ rouse_rabble_missive_help_them: "建议帮助叛军" #deepl:2424822606
+
+ rouse_rabble_suggestion_tax: "减少自身税收" #deepl:3298667024
+ rouse_rabble_suggestion_levies: "减少自有税" #deepl:3813493225
+ rouse_rabble_suggestion_development: "减少自身发展" #deepl:2538667592
+ rouse_rabble_suggestion_reduce_tax_county_modifier: "减税" #deepl:3057853721
+ rouse_rabble_suggestion_reduce_levies_county_modifier: "减少征税" #deepl:3882781821
+ rouse_rabble_suggestion_reduce_development_county_modifier: "减少开发" #deepl:1216115176
+
+ rouse_rabble_argument_correct: "决定正确" #deepl:4105672237
+ rouse_rabble_argument_incorrect: "决定不正确" #deepl:3636144073
+ rouse_rabble_trusted_judgment_opinion: "值得信赖的判断力" #deepl:3001423300
+ rouse_rabble_doubted_judgment_opinion: "怀疑判断" #deepl:520569006
+ rouse_rabble_compromised_judgment_opinion: "妥协的决定" #deepl:3044150383
+
+ rouse_rabble_soldiers_suspicious: "可疑士兵" #deepl:2109321105
+ rouse_rabble_soldiers_unsuspecting: "不知情的士兵" #deepl:2952706296
+
+ rouse_rabble_increase_tension: "张力增加" #deepl:1175644696
+ rouse_rabble_cool_off_tension: "冷却紧张局势" #deepl:2228263524
+ rouse_rabble_increase_tension_county_modifier: "受叛军启发" #deepl:170963419
+
+ attempted_to_rouse_rabble: "试图唤醒暴民" #deepl:3448411340
+ successfully_roused_rabble: "成功煽动暴民" #deepl:3121025999

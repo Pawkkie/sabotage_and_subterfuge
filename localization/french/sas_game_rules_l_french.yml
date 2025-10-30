@@ -1,0 +1,11 @@
+﻿l_french:
+ game_rule_category_sas: "Sabotage et subterfuge" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "Démarrage de l'activité criminelle souterraine" #deepl:511066023
+ setting_no_undergrounds: "Aucun" #deepl:3312814158
+ setting_no_undergrounds_desc: "Les maisons qui existent au début du jeu ne commencent pas avec un [sas_spy_network|E] ou un souterrain criminel." #deepl:3086919095
+ setting_fledgling_undergrounds: "Réseaux d'espionnage naissants" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "Les maisons qui existent au début du jeu avec un chef qui contrôle un comté et participe à une [administrative_government|E] commencent par une [sas_spy_network|E]." #deepl:2991418532
+ setting_full_undergrounds: "L'univers du crime" #deepl:2146549835
+ setting_full_undergrounds_desc: "Toutes les maisons qui existent au début du jeu commencent par un [sas_spy_network|E] et un sous-sol criminel." #deepl:2266201805

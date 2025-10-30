@@ -1,0 +1,24 @@
+﻿l_german:
+ # Court Position
+ smuggler_court_position: "Schmuggler" #deepl:2327268886
+ smuggler_court_position_desc: "Wenn Sie Waren von einem Ort zum anderen transportieren müssen, kann der Schmuggler Ihnen die Verbindung herstellen. Auch wenn dies nicht unbedingt erforderlich ist, sind zweifelhafte Waren ihre Spezialität. Der Schmuggler ermöglicht die Planung von Raubüberfällen und den Diebstahl von Artefakten und stärkt Ihre eigenen Transportnetzwerke." #deepl:760391573
+ smuggler_custom_effect_description_scheme: "$BULLET$Kann den Zugriff auf die Website [GetScheme('smuggle_artifact').GetTypeName] ermöglichen. [hostile_scheme|E]" #deepl:732188162
+ smuggler_custom_effect_description_demand_payment: "$BULLET$Schaltet die [demand_payment|E] Interaktion frei" #deepl:1175097164
+
+ # Traits
+ # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
+
+ # Rouse Rabble task
+ smuggler_task_plan_heist: "Plan Raub" #deepl:3591742283
+ smuggler_task_plan_heist_desc: "Sie planen den Raub eines bestimmten Artefakts und lassen Sie und Ihr Team daran arbeiten, es aus ihrem Gerichtssaal in Ihren zu schmuggeln." #deepl:3024560060
+ allow_steal_artifact_scheme_tt: "Kann die [plan_heist_interaction|E] Interaktion nutzen, um die [smuggle_artifact_scheme|E] gegen ein Ziel zu aktivieren. Diese Aufgabe muss aktiv sein, um das Schema sowohl zu starten als auch fortzusetzen.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  +0%#! bis @scheme_success_icon!#P  +20%#! (basierend auf [aptitude|E])" #deepl:4121225388
+
+ # Loot and Scoot task
+ #  smuggler_task_loot_and_scoot: "Beute und Scoot" #deepl:1675967315
+ #  smuggler_task_provoke_vassals_desc: "Provozieren Sie die Vasallen eines anderen Hofes, was zu einem Meinungsumschwung und möglicherweise zu einem Aufstand führen kann." #deepl:3289991535
+
+ # Monitor Supplies
+ smuggler_task_monitor_supplies: "Monitor-Zubehör" #deepl:2707686834
+ smuggler_task_monitor_supplies_desc: "Behalten Sie die Logistik Ihres Unternehmens genau im Auge und sorgen Sie dafür, dass der Betrieb sicher und effizient bleibt." #deepl:2420428664
+ increased_smuggle_artifact_defense_tt: "Feind [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! bis @scheme_success_icon!#P  -20%#! (basierend auf [aptitude|E])" #deepl:1035613496
+

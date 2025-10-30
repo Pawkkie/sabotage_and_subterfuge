@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "角色一般更愿意为你[sas_spy|E] " #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "角色一般更愿意为你[sas_spy|E] " #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "角色通常更愿意为[sas_spy|E] [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "被吸引的人物更愿意为你[sas_spy|E] " #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "被吸引的角色更愿意为你[sas_spy|E] " #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "被吸引的角色更愿意为[sas_spy|E] [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "如果您的[sas_spies|E] 被发现，他们更不可能翻供和泄露您的姓名" #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "如果您的[sas_spies|E] 被发现，他们更不可能翻供和泄露您的姓名" #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U] [sas_spies|E] 如果被抓，他们更不可能翻供和揭发雇主" #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "您的每个[lover|E] 和[soulmate|E] 关系都会为您带来#P 2 个#! 随机[skill|E] 点数（最多为[EmptyScope.ScriptValue('friendly_counsel_max')|0])" #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "打开[sas_induct_bastard_interaction|E] 互动" #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "打开[sas_steal_bastard_interaction|E] 互动" #deepl:4140120211
+ 

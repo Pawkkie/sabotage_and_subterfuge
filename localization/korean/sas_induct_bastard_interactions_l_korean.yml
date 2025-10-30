@@ -1,0 +1,12 @@
+﻿l_korean:
+ sas_induct_bastard_interaction: "인덕트 바스타드" #deepl:202858397
+ sas_induct_bastard_interaction_desc: "[dynasty|E] 에 [recipient.GetFirstNameNicknamed] 을 유도합니다." #deepl:797578726
+ sas_induct_bastard_interaction_concept_desc: "[GetTrait('disputed_heritage').GetName( GetNullCharacter )] 으로 낳은 사생아를 [dynasty|E] 으로 유도합니다." #deepl:1698041300
+ sas_induct_bastard_interaction_toast_title: "유도된 자식" #deepl:2074717763
+ sas_induct_bastard_interaction_toast_desc: "[recipient.GetShortUIName] 을 귀하의 [dynasty|E]" #deepl:264274425
+ sas_steal_bastard_interaction: "은밀한 합법화" #deepl:569253451
+ sas_steal_bastard_interaction_desc: "[recipient.GetFirstName] [dynasty|E] 의 회원으로 합법화하여 이 거절할 수 없는 제안을 하세요. [recipient.GetSheHe] " #deepl:367573605
+ sas_steal_bastard_interaction_concept_desc: "아빠가 낳은 [GetTrait('bastard').GetName( GetNullCharacter )] 자녀를 [dynasty|E] 으로 유도합니다." #deepl:3099995742
+ sas_steal_bastard_interaction_toast_title: "훔친 자식" #deepl:1632521257
+ sas_steal_bastard_interaction_toast_desc: "[recipient.GetShortUIName] 을 귀하의 [dynasty|E]" #deepl:264274425
+ sas_claimed_parentage_opinion_modifier: "친자 확인" #deepl:3455245448

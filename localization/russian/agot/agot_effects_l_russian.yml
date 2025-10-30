@@ -1,0 +1,20 @@
+﻿l_russian:
+
+ # Used Lifestyle perks
+ SPYNETWORK_CONVINCING_DESCRIPTION: "Персонажи, как правило, охотнее пишут для вас на [sas_spy|E]." #deepl:2640559994
+ I_SPYNETWORK_CONVINCING_DESCRIPTION: "Персонажи, как правило, охотнее пишут для вас на [sas_spy|E]." #deepl:2640559994
+ THEY_SPYNETWORK_CONVINCING_DESCRIPTION: "Персонажи, как правило, с большей готовностью идут на [sas_spy|E] ради [CHARACTER.GetShortUIName|U]" #deepl:86761806
+
+ SPYNETWORK_CHARISMATIC_DESCRIPTION: "Привлекательные персонажи гораздо охотнее [sas_spy|E] для вас." #deepl:3395090547
+ I_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Привлекательные персонажи с гораздо большей готовностью придут на сайт [sas_spy|E] ради вас." #deepl:492506774
+ THEY_SPYNETWORK_CHARISMATIC_DESCRIPTION: "Привлекательные персонажи гораздо охотнее идут на [sas_spy|E] ради [CHARACTER.GetShortUIName|U]" #deepl:3600387878
+
+ SPYNETWORK_OMERTA_DESCRIPTION: "На вашем сайте [sas_spies|E] гораздо меньше шансов перевернуть все и раскрыть ваше имя, если их поймают." #deepl:3677333470
+ I_SPYNETWORK_OMERTA_DESCRIPTION: "На вашем сайте [sas_spies|E] гораздо меньше шансов перевернуть все и раскрыть ваше имя, если их поймают." #deepl:3677333470
+ THEY_SPYNETWORK_OMERTA_DESCRIPTION: "[CHARACTER.GetShortUIName|U]На сайте [sas_spies|E] гораздо меньше шансов перевернуть дело и раскрыть своего работодателя, если его поймают." #deepl:4151461992
+
+ # New Lifestyle perks
+ EACH_LOVER_ADDS_RANDOM_SKILL_POINT: "Каждое из ваших [lover|E] и [soulmate|E] отношений дает вам #P 2#! случайных [skill|E] очков (максимум [EmptyScope.ScriptValue('friendly_counsel_max')|0])." #deepl:55154891
+ ALLOW_INDUCT_BASTARD_INTERACTION_DESCRIPTION: "Разблокируйте взаимодействие [sas_induct_bastard_interaction|E]." #deepl:2433620392
+ ALLOW_STEAL_BASTARD_INTERACTION_DESCRIPTION: "Разблокируйте взаимодействие [sas_steal_bastard_interaction|E]." #deepl:4140120211
+ 

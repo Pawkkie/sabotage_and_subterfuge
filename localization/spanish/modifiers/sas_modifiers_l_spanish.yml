@@ -1,0 +1,18 @@
+﻿l_spanish: 
+ county_rabble_roused_modifier: "Rabia despertada" #deepl:2416044267
+ county_rabble_roused_modifier_desc: "La chusma campesina se ha levantado contra su señor..." #deepl:4173438114
+ rabble_roused_against_me: "Tratos Recientes con Roused Rabble" #deepl:2758601433
+ roused_rabble_war_lost_county_modifier: "Mayor autonomía" #deepl:1597784654
+ provoked_independence_character_modifier: "Facción Provocada a la Independencia" #deepl:410340774
+ provoked_dissolution_character_modifier: "Facción Provocada a la Disolución" #deepl:2545846333
+
+ mortal_adoration_martial_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_martial_gain_desc: "Siempre se puede contar con un amante para dar buenos consejos." #deepl:3722719594
+ mortal_adoration_diplomacy_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_diplomacy_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_intrigue_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_intrigue_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_stewardship_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_stewardship_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723
+ mortal_adoration_learning_gain: "$mortal_adoration_perk_name$" #deepl:2280997325
+ mortal_adoration_learning_gain_desc: "$friendly_counsel_martial_gain_desc$" #deepl:4100887723

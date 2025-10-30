@@ -1,0 +1,75 @@
+﻿l_simp_chinese:
+ ###########################
+ # Critical Moments
+ ###########################
+
+ # Scheme Type A Boilerplate
+ sas_scheme_critical_moments.0001.t.task_contract: "结束语[GetPlayer.Custom('GetContractOrIssue')]" #deepl:1012265068
+ sas_scheme_critical_moments.0001.t.scheme: "执行计划" #deepl:2532843253
+ sas_scheme_critical_moments.0001.desc: "使用累积的[scheme_opportunity_opportunities|E] 添加新的[agent|E] 插槽，或尝试完成[scheme.GetName] [scheme|E] 。" #deepl:4157729825
+ sas_scheme_critical_moments.0001.a: "#WEAK (@scheme_opportunity_icon![scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] )#! 抓住时机" #deepl:666541376
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_opportunities: "您至少需要[scheme_opportunity_i][scheme.MakeScope.ScriptValue('scheme_charge_to_advance_threshold_value')] [scheme_opportunity_opportunities|E]" #deepl:4113346938
+ sas_scheme_critical_moments.0001.a.tt.stymied.insufficient_success_chance: "至少需要 1[success_chance|E]" #deepl:22090382
+ sas_scheme_critical_moments.0001.a.tt.progress: "您最终确定[scheme.GetName] 与[scheme.GetTargetCharacter.GetShortUIName] #WEAK  ([scheme.GetSuccessChance|%/0] [success_chance|E] )#!" #deepl:3020828712
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable: "#WEAK #WEAK [target.GetTitledFirstNamePossessive] [court_positions|E] 以及其他防御措施，使 拦截成功谋杀的几率达到 %。[target.GetHerHim] [scheme.MakeScope.Var('target_intercept_repeatable_chance').GetValue]#!#!" #deepl:1066499528
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.repeatable_and_unique: "#WEAK 在极少数情况下，随机机会和特殊效果也会使尝试受挫#!" #deepl:3063377230
+ sas_scheme_critical_moments.0001.a.tt.murders_may_be_intercepted.unique: "#WEAK 随机机会和特殊效果可能会在极少数情况下挫败尝试#!" #deepl:2397171866
+ sas_scheme_critical_moments.0001.b: "[scheme.Custom('GetCorrectAgentType_ChoiceA_Icon')] 添加[scheme.Custom('GetCorrectAgentType_ChoiceA')] 代理插槽。" #deepl:3263383410
+ sas_scheme_critical_moments.0001.b.fallback: "添加随机代理插槽。" #deepl:1489889637
+ sas_scheme_critical_moments.0001.c: "[scheme.Custom('GetCorrectAgentType_ChoiceB_Icon')] 添加[scheme.Custom('GetCorrectAgentType_ChoiceB')] 代理插槽。" #deepl:2992946553
+ sas_scheme_critical_moments.0001.c.fallback: "添加随机代理插槽。" #deepl:1489889637
+ sas_scheme_critical_moments.0001.d: "@unpredictable_icon! 呸，这些特工可不行。" #deepl:1013029851
+ sas_scheme_critical_moments.0001.d.tt: "这些潜在的[agent|E] 插槽将被放弃" #deepl:1290247234
+ sas_scheme_critical_moments.0001.e: "@icon_contract_modification_single! 风险事件" #deepl:2679306790
+ sas_scheme_critical_moments.0001.e.receive_event: "您会收到一个与[scheme.GetName] 相关的随机事件，可能是#P 有用的#! 或#N 有害的#!" #deepl:4000171554
+ sas_scheme_critical_moments.0001.e.debug.warning: "#D 这些活动未经审查，因此风险与回报之间的平衡可能很差。#!" #deepl:1193211861
+ sas_scheme_critical_moments.0001.f: "@scheme_success_icon! 添加成功几率修改器" #deepl:828072647
+ sas_scheme_critical_moments.0001.g: "@scheme_success_max_icon! 添加最大成功几率修改器" #deepl:1378556640
+ sas_scheme_critical_moments.0001.h: "@time_icon! 需要更多的规划..." #deepl:3620623102
+ sas_scheme_critical_moments.0001.h.tt.some_opportunities: "您无需花费任何[scheme_opportunity_i] [scheme_opportunity_opportunities|E]" #deepl:2469258378
+ sas_scheme_critical_moments.0001.h.tt.zero_opportunities: "您应该在[scheme_opportunity_i] 之后再返回。[scheme_opportunity_opportunity|E]" #deepl:946611055
+ sas_scheme_critical_moments.0001.option.need_opportunities: "您至少需要[scheme_opportunity_i]1[scheme_opportunity_opportunity|E]" #deepl:1328090935
+ sas_scheme_critical_moments.0001.option.max_slots: "[scheme|E] 已达到最大[agent|E] 插槽数" #deepl:2882987660
+ sas_scheme_critical_moments.0001.option.opportunities_better_spent_on_agents: "#mixed_value@alert_icon! [scheme_opportunity_opportunities|E] 一般最好用[agent|E] 插槽#!" #deepl:902020936
+
+ # Scheme Type B Boilerplate
+ sas_scheme_critical_moments.0002.t: "$sas_scheme_critical_moments.0001.t$" #deepl:2535777279
+ sas_scheme_critical_moments.0002.desc: "花费您积累的[scheme_opportunity_opportunities|E] ，尝试完成您的[scheme.GetName] [scheme|E] 。花更多的钱获得更多的最终奖励。" #deepl:2975502550
+ sas_scheme_critical_moments.0002.a: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')]#!:抓住时机" #deepl:2416618336
+ sas_scheme_critical_moments.0002.a.tt.stymied.insufficient_opportunities: "您至少需要[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')] [scheme_opportunity_opportunities|E]" #deepl:222353579
+ sas_scheme_critical_moments.0002.b: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')]#!： $scheme_end_buff_t2_modifier$" #deepl:2796944076
+ sas_scheme_critical_moments.0002.b.tt.stymied.insufficient_opportunities: "您至少需要[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')] [scheme_opportunity_opportunities|E]" #deepl:3284097266
+ sas_scheme_critical_moments.0002.b.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t2_value')|=P/0%] 到其最终     的总和最多不能超过[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:2989463537
+ sas_scheme_critical_moments.0002.b.tt.progress: "您最终确定[scheme.GetName] 与[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t2_total_success_value')|P/0%] [success_chance|E] ，包括此选项的修改器)#!" #deepl:1026627341
+ sas_scheme_critical_moments.0002.c: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')]#!: $scheme_end_buff_t3_modifier$" #deepl:620615917
+ sas_scheme_critical_moments.0002.c.tt.stymied.insufficient_opportunities: "您至少需要[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')] [scheme_opportunity_opportunities|E]" #deepl:2249578693
+ sas_scheme_critical_moments.0002.c.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t3_value')|=P/0%] 到其最终     的总和最多不能超过[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:171408237
+ sas_scheme_critical_moments.0002.c.tt.progress: "您最终确定[scheme.GetName] 与[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t3_total_success_value')|P/0%] [success_chance|E] ，包括此选项的修改器)#!" #deepl:348010797
+ sas_scheme_critical_moments.0002.d: "#BOL @scheme_opportunity_icon![scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')]#!: $scheme_end_buff_t4_modifier$" #deepl:4245634060
+ sas_scheme_critical_moments.0002.d.tt.stymied.insufficient_opportunities: "您至少需要[scheme_opportunity_i][scheme.MakeScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')] [scheme_opportunity_opportunities|E]" #deepl:4114963779
+ sas_scheme_critical_moments.0002.d.tt.clarify_buff: "[scheme|E] [EmptyScope.ScriptValue('multi_ending_scheme_buff_t4_value')|=P/0%] 到其最终     的总和最多不能超过[success_chance|E]\n#WEAK $EFFECT_LIST_BULLET$ [success_chance|E] [scheme.MakeScope.ScriptValue('scheme_max_theoretical_success_chance_value')|/0%]#!" #deepl:1954019007
+ sas_scheme_critical_moments.0002.d.tt.progress: "您最终确定[scheme.GetName] 与[scheme.GetTargetCharacter.GetShortUIName]\n $BULLET_WITH_TAB$ #WEAK  ([scheme.MakeScope.ScriptValue('multi_ending_scheme_buff_t4_total_success_value')|P/0%] [success_chance|E] ，包括此选项的修改器)#!" #deepl:3356750797
+ sas_scheme_critical_moments.0002.e: "$sas_scheme_critical_moments.0001.h$" #deepl:527216822
+ sas_scheme_critical_moments.0002.e.tt.some_opportunities: "$sas_scheme_critical_moments.0001.h.tt.some_opportunities$" #deepl:860422857
+ sas_scheme_critical_moments.0002.e.tt.zero_opportunities: "$sas_scheme_critical_moments.0001.h.tt.zeroo_opportunities$" #deepl:3044083624
+ sas_scheme_end_buff_t2_modifier: "自信地执行" #deepl:1096404347
+ sas_scheme_end_buff_t2_modifier_desc: "担保是自己的成功品牌。" #deepl:2406515427
+ sas_scheme_end_buff_t3_modifier: "杠杆优势" #deepl:2975369626
+ sas_scheme_end_buff_t3_modifier_desc: "世上没有十拿九稳的事，所以要抓住一切可能。" #deepl:354067876
+ sas_scheme_end_buff_t4_modifier: "覆盖每个角度" #deepl:2434671282
+ sas_scheme_end_buff_t4_modifier_desc: "战略家都知道，赢家都会赌博。" #deepl:416240098
+
+ # Reminders
+ sas_scheme_critical_moments.0011.t.boilerplate: "机会的局限性" #deepl:741992334
+ sas_scheme_critical_moments.0011.t.task_contract: "$sas_scheme_critical_moments.0001.t.task_contract$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:2779270639
+ sas_scheme_critical_moments.0011.t.scheme: "$sas_scheme_critical_moments.0001.t.scheme$: $sas_scheme_critical_moments.0011.t.boilerplate$" #deepl:4282407609
+ sas_scheme_critical_moments.0011.desc.intro: "我的计划[scheme.GetName]" #deepl:3413984870
+ sas_scheme_critical_moments.0011.desc.middle.character: "[scheme.GetTargetCharacter.GetTitledFirstName]" #deepl:4117363914
+ sas_scheme_critical_moments.0011.desc.middle.title: "[scheme.GetTargetTitle.GetDefinitiveName]" #deepl:2254312775
+ sas_scheme_critical_moments.0011.desc.outro: "#EMP #!\n\n 如果我愿意，还有很多途径可以发展它，但在我利用好现有的一些机会之前，不太可能有更多的  机会。#EMP #! " #deepl:4243500226
+ sas_scheme_critical_moments.0011.immediate.tt: "您的[scheme.GetName] [scheme|E] 具有最大[GetDefine('NScheme','SCHEME_MAX_OPPORTUNITIES')|0] [scheme_opportunities|E]" #deepl:3437879721
+ sas_scheme_critical_moments.0011.a: "我会在我认为合适的时候采取行动，而不是在此之前！" #deepl:3098732785
+ sas_scheme_critical_moments.0011.a.tt: "@warning_icon! #X 当[scheme|E] 达到最大数量时，您将不再收到警报。[scheme_opportunity_opportunities|E]#!" #deepl:1081099080
+ sas_scheme_critical_moments.0011.b: "了解这些事情很有帮助。" #deepl:1996839201
+ sas_scheme_critical_moments.0011.b.tt: "如果一年后[scheme|E] 再次达到上限，[scheme_opportunity_opportunities|E] ，您将再次收到通知" #deepl:1049117849
+ sas_scheme_critical_moments.0011.c: "我将立即执行。" #deepl:3372487602

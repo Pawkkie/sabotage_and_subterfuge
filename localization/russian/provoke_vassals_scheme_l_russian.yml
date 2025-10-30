@@ -1,0 +1,74 @@
+﻿l_russian:
+ # Scheme modifiers
+ PROVOKE_VASSALS_AMBITIOUS: "[GetTrait('ambitious').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1541796170
+
+ # Scheme info
+ provoke_vassals: "Провоцировать вассалов" #deepl:2492283152
+ provoke_vassals_desc: "Настроить вассалов королевства против своего сеньора" #deepl:2344881514
+ provoke_vassals_desc_general: "$provoke_vassals$ это [hostile_scheme|E], который пытается подтолкнуть вассалов в королевстве цели к восстанию против своего сеньора. Для его осуществления требуется нанять [rabble_rouser_court_position|E] [court_position|E] , а вы и ваша цель должны управлять королевствами как минимум [duchy|E] уровня.\n\n Если в какой-то момент [rabble_rouser_court_position|E] окажется безработным или сменит задание, план будет отменен." #deepl:596805607
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ provoke_vassals_action: "Спровоцировать вассалов" #deepl:3048438145
+
+ PROVOKE_VASSALS_SUCCESS_DESC: "Вассалов провоцируют, подстрекая к восстанию." #deepl:4113621917
+ PROVOKE_VASSALS_DISCOVERY_DESC: "Вы можете продолжать провоцировать вассалов в королевстве [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]." #deepl:2391768
+
+ max_provoke_vassals_schemes_add: "Макс [GetScheme('provoke_vassals').GetTypeName] [schemes|E]" #deepl:2813395320
+
+## Character Interaction Scheme Agent Packages
+ provoke_vassals_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:2603902629
+ provoke_vassals_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1717624249
+ provoke_vassals_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1227893453
+ provoke_vassals_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_amanuensis' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]" #deepl:1200689629
+
+ # Allow
+ ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] уже имеет дело с [independence_faction|E]" #deepl:3421917769
+ NOT_ALREADY_FIGHTING_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] уже не имеет дела с [independence_faction|E]" #deepl:1436193969
+ ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] уже имеет дело с [dissolution_faction|E]" #deepl:273673184
+ NOT_ALREADY_FIGHTING_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] уже не имеет дела с [dissolution_faction|E]" #deepl:1642768420
+ VASSALS_CAN_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] У него есть вассалы, которых можно убедить основать фракции." #deepl:1144479962
+ VASSALS_CANNOT_BE_PROVOKED: "[CHARACTER.GetShortUIName|U] не имеет вассалов, которых можно убедить основать фракции" #deepl:2365097897
+
+ PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] не сражался с [independence_faction|E] слишком недавно" #deepl:268040305
+ NOT_PROVOKE_RECENT_INDEPENDENCE_FACTION: "[CHARACTER.GetShortUIName|U] Слишком недавно сражался с [independence_faction|E]." #deepl:2661186461
+
+ PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] не сражался с [dissolution_faction|E] совсем недавно." #deepl:3278188246
+ NOT_PROVOKE_RECENT_DISSOLUTION_FACTION: "[CHARACTER.GetShortUIName|U] Недавно сражался с [dissolution_faction|E]." #deepl:3613187446
+
+ PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U] [administrative_government|E] еще не участвует в войне фракций." #deepl:2544808095
+ NOT_PROVOKE_ADMIN_GOVERNMENT_IN_FACTION_WAR: "[CHARACTER.GetShortUIName|U]На сайте [administrative_government|E] уже идет война фракций." #deepl:2525562439
+
+ PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]Правительство не имеет права наследования разделов конфедерации." #deepl:4276519694
+ NOT_PROVOKE_NOMADIC_TRIBAL_CONFEDERATE_PARTITION: "[CHARACTER.GetShortUIName]Правительство преемственно по отношению к конфедератам." #deepl:3389078339
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Более 5 лет с момента начала игры" #deepl:4117658580
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_KINGDOM: "Должно пройти 5 лет с момента начала игры" #deepl:3870898705
+
+ PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Более 10 лет с момента начала игры" #deepl:1109302896
+ NOT_PROVOKE_TOO_CLOSE_TO_GAME_START_EMPIRE: "Должно пройти 10 лет с момента начала игры" #deepl:707856254
+
+ PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] не самый великий из Ханов." #deepl:877924169
+ NOT_PROVOKE_TARGET_GREATEST_OF_KHANS: "[CHARACTER.GetShortUIName] Величайший из Ханов" #deepl:4049601203
+
+ RABBLE_ROUSER_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] выполняет задание "Провоцировать вассалов"." #deepl:2415167053
+ RABBLE_ROUSER_NOT_PROVOKING_VASSALS: "[CHARACTER.GetShortUIName|U] не выполняет задание "Провоцировать вассалов"." #deepl:945030106
+ provoke_vassals_invalidated_title: "Схема провоцирования вассалов завершена" #deepl:1476132421
+ provoke_vassals_invalidated_dead: "[target.GetShortUIName] скончался. Вы больше не можете провоцировать вассалов [target.GetHerHis] против [target.GetHerHim]." #deepl:484895812
+ provoke_vassals_invalidated_target_lost_title: "[target.GetShortUIName] пал настолько, что у него больше нет значимых вассалов, которых можно было бы провоцировать." #deepl:2496312703
+ provoke_vassals_invalidated_no_rabble_rouser: "Вы больше не работаете на сайте [rabble_rouser_court_position|E]." #deepl:710383329
+ provoke_vassals_invalidated_not_provoking_vassals: "[CHARACTER.GetShortUIName|U] больше не выполняет задание "Провоцировать вассалов"." #deepl:3053211157
+ provoke_vassals_invalidated_in_army: "[CHARACTER.GetShortUIName|U] больше не доступен, так как [CHARACTER.GetSheHe] возглавляет армию." #deepl:1180147792
+ provoke_vassals_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] больше не доступен, так как [CHARACTER.GetSheHe] находится в тюрьме." #deepl:1720481333
+ provoke_vassals_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] больше не доступен, так как [CHARACTER.GetSheHe] находится в командировке." #deepl:500171271
+ provoke_vassals_invalidated_has_dissolution_faction: "[CHARACTER.GetShortUIName|U] Уже создан сайт [dissolution_faction|E] против [CHARACTER.GetHerHim]." #deepl:2485077500
+ provoke_vassals_invalidated_has_independence_faction: "[CHARACTER.GetShortUIName|U] Уже есть [independence_faction|E], созданный против [CHARACTER.GetHerHim]." #deepl:1667653504
+ provoke_vassals_invalidated_no_eligible_vassals: "[CHARACTER.GetShortUIName|U] больше не имеет вассалов, которых можно убедить основать фракции." #deepl:2468938260
+ provoke_vassals_invalidated_recent_independence_war: "[CHARACTER.GetShotUIName|U] Только что сражался с [independence_faction|E]." #deepl:2519575917
+ provoke_vassals_invalidated_recent_dissolution_war: "[CHARACTER.GetShotUIName|U] только что сражался с [dissolution_faction|E]." #deepl:3059438666
+ provoke_vassals_invalidated_admin_faction_war: "[CHARACTER.GetShortUIName|U]На сайте [administrative_government|E] идет очередная война фракций." #deepl:172355172
+ provoke_vassals_invalidated_confederate_partition: "[CHARACTER.GetShortUIName|U]Правительство перешло по наследству от конфедератов." #deepl:3065007221
+ provoke_vassals_invalidated_greatest_of_khans: "[CHARACTER.GetShortUIName|U] стал Величайшим из Ханов." #deepl:71598631
+
+ ## Interaction
+ provoke_vassals_interaction: "Провоцировать вассалов #weak (схема)#!" #deepl:2546310469
+ provoke_vassals_interaction_desc: "Попытка спровоцировать вассалов королевства [recipient.GetShortUINameNoTooltip]'s на начало [independence_faction|E] или [dissolution_faction|E]" #deepl:3078725279
+ provoke_vassals_interaction_notification: "Провоцирование вассалов" #deepl:569161018

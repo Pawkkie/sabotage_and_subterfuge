@@ -1,0 +1,99 @@
+﻿l_korean:
+ agot_invite_to_spy_network_interaction: "스파이로 모집" #deepl:1569694964
+ agot_check_for_potential_spies_interaction: "잠재적 스파이 확인" #deepl:3426630385
+ agot_remove_from_spy_network_interaction: "스파이 해제" #deepl:750231688
+ SPY_RECRUIT_GOLD: "뇌물" #deepl:3411393816
+ SPY_RECRUIT_GOLD_VALID: "결제 [recipient.GetShortUINameNoTooltip] [gold_i] [SCOPE.ScriptValue('bribe_value')|V0]" #deepl:2924690871
+ AGOT_RECRUIT_SPY_SKILL_MOD: "[intrigue|E] 스킬: $VALUE|=+0$" #deepl:840929455
+ AGOT_RECRUIT_SPY_CAP_MODIFIER: "관리할 수 있는 스파이 수보다 많은 스파이가 있습니다: $VALUE|=+0$" #deepl:1742108695
+ AGOT_RECRUIT_SPY_KINGSGUARD_REASON: "[recipient.GetShortUINameNoTooltip] 는 킹스가드입니다: $VALUE|=+0$" #deepl:2943122130
+ highest_held_title_tier_greater_than: "당신은 그들보다 높은 타이틀 티어입니다." #deepl:3271074329
+ DECEITFUL_REASON: "[recipient.GetShortUINameNoTooltip] 는 기만적입니다: $VALUE|+0=$" #deepl:2981172720
+ HONEST_REASON: "[recipient.GetShortUINameNoTooltip] 는 정직합니다: $VALUE|+0=$" #deepl:2353170454
+ JUST_REASON: "[recipient.GetShortUINameNoTooltip] 는 단지: $VALUE|+0=$입니다." #deepl:4104101612
+ TRUSTING_REASON: "[recipient.GetShortUINameNoTooltip] 신뢰: $VALUE|+0=$" #deepl:4155378834
+ LAZY_REASON: "[recipient.GetShortUINameNoTooltip] 게으른: $VALUE|+0=$" #deepl:3792033341
+ SHY_REASON: "[recipient.GetShortUINameNoTooltip] is Shy: $VALUE|+0=$" #deepl:1013341979
+ CRAVEN_REASON: "[recipient.GetShortUINameNoTooltip] 크레이븐: $VALUE|+0=$" #deepl:3840776540
+ PARANOID_REASON: "[recipient.GetShortUINameNoTooltip] 는 편집증: $VALUE|+0=$" #deepl:4183665893
+ DRUNKARD_REASON: "[recipient.GetShortUINameNoTooltip] 는 술주정뱅이: $VALUE|+0=$" #deepl:3018668907
+ CONTRITE_REASON: "[recipient.GetShortUINameNoTooltip] 는 Contrite: $VALUE|+0=$" #deepl:418458151
+ PREVIOUSLY_DISCOVERED_REASON: "[recipient.GetShortUINameNoTooltip] 이전에 스파이 행위가 발견되었습니다: $VALUE|+0=$" #deepl:1250348238
+
+ agot_spy_network.0200.interface.employer.t: "스파이, 비밀을 밝히다" #deepl:168050903
+ agot_spy_network.0200.interface.employer.desc: "[courtowner.GetTitledFirstNamePossessive] 법원의 스파이 중 한 명이 유용한 비밀을 밝혀냈습니다." #deepl:3645310449
+
+ agot_spy_network.0201.interface.employer.t: "스파이가 정보를 공개합니다" #deepl:1319764910
+ agot_spy_network.0201.interface.employer.desc: "스파이 중 한 명이 법원의 소유주에 대한 개인 및 군사 정보를 유출했습니다." #deepl:3546164191
+
+ agot_spy_network.0200.interface.spymaster.t: "스파이, 비밀을 밝히다" #deepl:168050903
+ agot_spy_network.0200.interface.spymaster.desc: "[courtowner.GetTitledFirstNamePossessive] 법원의 스파이 중 한 명이 유용한 비밀을 밝혀냈습니다." #deepl:3645310449
+
+ agot_spy_network.0210.t: "내 [ROOT.Char.GetLadyLord]," #deepl:2169612167
+ agot_spy_network.0210.desc: "[courtowner.GetShortUINamePossessive] 법정에서 [secret_holder.GetTitledFirstName] 이 보호하려고 하는 비밀을 입수할 수 있었습니다. 제가 찾은 증거를 넘기되, 제 봉사에 대한 정당한 보상을 받는 경우에만 넘기겠습니다." #deepl:294115213
+ agot_spy_network.0210.a: "모든 것을 알아야 합니다!" #deepl:877721287
+ agot_spy_network.0210.b: "관심이 없습니다." #deepl:2813068183
+ agot_spy_network.0210.c: "동전이 없는데..." #deepl:175325562
+
+ agot_spy_network.0400.t: "스파이가 모집되었습니다" #deepl:351168471
+ agot_spy_network.0400.desc: "[councillor.GetTitledFirstName] [target_character.GetShortUINamePossessive] 법원에서 당신을 위해 스파이할 사람을 찾았습니다." #deepl:3378650470
+ agot_spy_network.0400.a: "[new_spy.GetTitledFirstName] 는 저에게 도움이 될 것입니다." #deepl:1274442422
+
+ agot_spy_network.0500.t: "스파이가 발견되었습니다" #deepl:977083122
+ agot_spy_network.0500.desc: "[councillor.GetTitledFirstName] 스파이를 발견했습니다! [discovered_spy.GetTitledFirstName] 법원의 가장 어두운 구석에서 비밀을 찾던 스파이가 잡혔습니다." #deepl:725801880
+ agot_spy_network.0500.a: "누가 보냈나요?" #deepl:2381662331
+
+ agot_spy_network.0510.t: "당신은 발견되었습니다!" #deepl:3792558933
+ agot_spy_network.0510.desc: "어떻게든 알아냈습니다! [discovered_spy_employer.GetTitledFirstName] 을 위해 스파이 활동을 하다 발각되었습니다. 이제 제 목숨이 위험에 처했습니다. 누가 저를 고용했는지 말하면 살아남을 수 있을까요?" #deepl:3491980837
+ agot_spy_network.0510.a: "자비! 다 말해줄게요!" #deepl:1040764062
+ agot_spy_network.0510.b: "내 입술은 봉인되어 있습니다!" #deepl:4091804868
+
+ agot_spy_network.0520.t: "스파이가 발견되었습니다" #deepl:977083122
+ agot_spy_network.0520.flipped.desc: "[discovered_spy.GetTitledFirstName] 누가 당신을 염탐하고 있는지 기꺼이 폭로하며 자비를 구걸했습니다: [discovered_spy_employer.GetTitledFirstName]!" #deepl:706259308
+ agot_spy_network.0520.loyal.desc: "[discovered_spy.GetTitledFirstName] 누가 나를 감시했는지 밝히기를 거부합니다." #deepl:4116753664
+ agot_spy_network.0520.desc: "배신자를 어떻게 처리하고 싶으신가요?" #deepl:1989995004
+ agot_spy_network.0520.a: "[discovered_spy.GetTitledFirstNameNoTooltip] 는 셀에서 썩어야 합니다." #deepl:952618794
+ agot_spy_network.0520.b: "이 범죄에 대한 처벌은 단 하나, 사형뿐입니다!" #deepl:272277589
+ agot_spy_network.0520.c: "자비를 베풀겠습니다. 하지만 이 계략은 멈춰야 합니다!" #deepl:1546398863
+
+ agot_spy_network.0600.t: "스파이가 발각되었습니다!" #deepl:3648032057
+ agot_spy_network.0600.desc: "[discovered_spy.GetTitledFirstName] 으로부터 받은 비밀 제보가 갑자기 중단되었습니다. [discovered_spy.GetHerHis] 기술로는 발각을 피하기에 충분하지 않은 것 같습니다." #deepl:761471447
+ agot_spy_network.0600.flipped.desc: "더 큰 문제는 [discovered_spy.GetTitledFirstName] 에서 귀하의 개입이 밝혀졌다는 것입니다!" #deepl:3841062910
+ agot_spy_network.0600.a: "[discovered_spy.GetSheHe|U] 충분히 주의하지 않았습니다!" #deepl:3995574791
+
+ agot_spy_network.0700.t: "스파이가 고용되었습니다" #deepl:149732041
+ agot_spy_network.0700.desc: "[recipient.GetTitledFirstName] 이 거대한 스파이 네트워크의 대열에 합류했습니다." #deepl:2555271758
+ agot_spy_network.0700.a: "잡초처럼 자라는 영향력..." #deepl:2693232088
+
+ agot_spy_network.0800.t: "스파이 고용 가능" #deepl:3044204003
+ agot_spy_network.0800.desc: "스파이 마스터가 잠재적인 새 스파이를 발견했습니다 [recipient.GetTitledFirstNamePossessive] 법원. [potential_new_spy.GetTitledFirstName] 스파이 네트워크에 가입하도록 설득할 수 있습니다." #deepl:1672923704
+ agot_spy_network.0800.a: "곧 [potential_new_spy.GetTitledFirstName] 에 연락해야 합니다..." #deepl:3077370088
+
+ hostile_scheme_discovery_spy.2001.intro: "제 스파이 마스터( [spymaster.GetTitledFirstName])가 [courtowner.GetTitledFirstNamePossessive] 법정에서 저를 상대로 한 사기 계획을 준비 중인 것을 발견했습니다. 아직 누구인지는 알 수 없습니다," #deepl:2805483937
+ potential_spy_in_court: "이 법정의 캐릭터가 당신을 위해 기꺼이 스파이를 자처합니다." #deepl:3390703719
+
+ #GUI
+ your_spies: "스파이" #deepl:2960525419
+
+ ###################### New
+ # Recruit Spy
+ agot_invite_to_spy_network_interaction_desc: "모집 [recipient.GetTitledFirstName] [sas_spy_network|E]" #deepl:3702489283
+ invite_to_spy_network_interaction_target_added_to_network.tt: "스파이 네트워크에 [recipient.GetShortUIName] 추가" #deepl:3755694883
+ invite_to_spy_network_interaction_target_becomes_spy.tt: "[recipient.GetShortUIName] 가 스파이 네트워크에 추가됩니다." #deepl:2685456430
+ invite_to_spy_network_toast_title: "스파이 모집" #deepl:3971834391
+ invite_to_spy_network_toast_desc: "[recipient.GetTitledFirstName] 이 거대한 스파이 네트워크의 대열에 합류했습니다." #deepl:2555271758
+
+ # Dismiss Spy
+ agot_remove_from_spy_network_interaction_desc: "[recipient.GetTitledFirstName] 을 삭제합니다. [sas_spy_network|E]" #deepl:1707718945
+ dismiss_from_spy_network_interaction_target_remove_from_network.tt: "스파이 네트워크에서 [recipient.GetShortUIName] 을 삭제합니다." #deepl:3128855620
+ dismiss_from_spy_network_interaction_target_loses_spy.tt: "[recipient.GetShortUIName] 스파이 네트워크에서 삭제됩니다." #deepl:1206633062
+ dismiss_from_spy_network_toast_title: "해고된 스파이" #deepl:2246344130
+ dismiss_from_spy_network_toast_desc: "[recipient.GetTitledFirstName] 이 거대한 스파이 네트워크의 대열에서 이탈했습니다." #deepl:360659420
+
+ # Check for Potential Spies
+ agot_check_for_potential_spies_interaction_desc: "[recipient.GetShortUIName] 의 법원에서 함께할 수 있는 법관을 찾아보세요. [sas_spy_network|E]" #deepl:3999256908
+ check_for_potential_spies_actor.tt: "가입을 협상할 수 있는 잠재적인 [sas_spy|E] 에 대한 알림을 받게 됩니다. [sas_spy_network|E]" #deepl:2541194663
+
+ # Perks
+ DIGGING_FOR_DIRT_PERK_EFFECT: "설득력 있음: $VALUE|=+0$" #deepl:2797321221
+ SUBTLE_DESIRE_PERK_EFFECT: "매력적: $VALUE|=+0$" #deepl:567933818

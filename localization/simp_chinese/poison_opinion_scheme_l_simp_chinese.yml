@@ -1,0 +1,51 @@
+﻿l_simp_chinese:
+ poison_opinion: "毒药意见" #deepl:489149273
+ poison_opinion_action: "毒药意见" #deepl:489149273
+ poison_opinion_desc: "我将试图毒化[SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] 对他们陛下的看法，扰乱他们的宫廷。" #deepl:879276979
+ poison_opinion_desc_general: "Poison Opinion 是一种[personal_scheme|E] ，试图降低目标对其直接[liege|E] 的看法。这个计划主要依靠您自己的[intrigue|E] 和您的[femme_fatale_court_position|E] 的能力。由于它不是[hostile_scheme|E] ，因此不是[secret_scheme_single|E] ，也不使用[agents|E] 。\n\n 与大多数计划不同，但与 Sway[personal_scheme|E] 一样，"毒药意见 "在完成后会重新启动。[scheme_target|E]\n\n 如果成功实施该计划的目标对自己的君主有负面看法，他们将更有可能加入通过[provoke_vassals_scheme|E] [hostile_scheme|E] 创建的派系。" #deepl:3487439977
+ POISON_OPINION_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] [liege|E] 将减少#P [CHARACTER.MakeScope.ScriptValue('poison_opinion_opinion_decrease_per_success')|V0]#!" #deepl:3069811390
+ I_AM_BLOCKED_FROM_POISONING_OPINION_OF_THIS_CHARACTER: "在[TARGET_CHARACTER.GetSheHe] 对我恼羞成怒时，您不能毒害[TARGET_CHARACTER.GetShortUIName] 的舆论" #deepl:2782953671
+ poison_opinion_success_message: "[target.GetShortUINameNoTooltip]舆论受到毒害" #deepl:3652779230
+ poison_opinion_failed_message: "[target.GetShortUINameNoTooltip]舆论没有受到毒害" #deepl:2085687335
+
+ # Allow
+ HAVE_FEMME_FATALE_COURT_POSITION: "您雇用了[femme_fatale_court_position|E]" #deepl:1653907415
+ NO_FEMME_FATALE_COURT_POSITION: "您没有雇用[femme_fatale_court_position|E]" #deepl:516436984
+ FEMME_FATALE_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] 正在执行《毒物意见》任务" #deepl:3760854733
+ FEMME_FATALE_NOT_POISONING_OPINION: "[CHARACTER.GetShortUIName|U] 没有执行《毒物意见》任务" #deepl:2707060383
+
+ # Modifiers
+ SCHEME_FEMME_FATALE_INTRIGUE: "您的[femme_fatale_court_position|E]'s'[intrigue|E]: $VALUE|+=0$" #deepl:815211963
+ POISON_OPINION_SCHEMER: "您是一位熟练的谋士： $VALUE|+0=$ " #deepl:526000458
+ POISON_OPINION_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:3897258642
+ POISON_OPINION_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|+0=$" #deepl:335723911
+ previously_poisoned_opinion: "先前中毒的意见： $VALUE|=+0$" #deepl:3653982699
+ poison_opinion_my_rival: "你的对手： $VALUE|=+0$" #deepl:1912122937
+ FEMME_FATALE_HELPS_BONUS: "[femme_fatale_court_position|E]援助： $VALUE|+0=-+$" #deepl:1026444090
+ SOOTHE_AND_SURVEIL_HURTS_BONUS: "敌人[femme_fatale_court_position|E]'援助: $VALUE|+0=-+$" #deepl:96089951
+ POISON_OPINION_TARGET_DECEITFUL: "目标为[GetTrait('deceitful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:3607104542
+ POISON_OPINION_TARGET_VENGEFUL: "目标为[GetTrait('vengeful').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:2123443217
+ POISON_OPINION_TARGET_AMBITIOUS: "目标为[GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:693622001
+ POISON_OPINION_TARGET_DISLOYAL: "目标为[GetTrait('disloyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:339279968
+ POISON_OPINION_TARGET_CONTENT: "目标为[GetTrait('content').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:948516801
+ POISON_OPINION_TARGET_FORGIVING: "目标为[GetTrait('forgiving').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:229327759
+ POISON_OPINION_TARGET_LOYAL: "目标为[GetTrait('loyal').GetName( GetNullCharacter )]: $VALUE|+0=$" #deepl:504695077
+
+ # Invalidated
+ poison_opinion_invalidated_title: "毒药意见计划结束" #deepl:1908705889
+ poison_opinion_invalidated_dead: "[target.GetShortUIName] 已经去世。你不能再毒害[target.GetHerHis] 的舆论，反对[target.GetHerHis] 陛下。" #deepl:1019747224
+ poison_opinion_invalidated_war: "由于你们之间的战争，你不能再毒害[target.GetShortUIName] 的舆论。" #deepl:933566987
+ poison_opinion_invalidated_no_femme_fatale: "您不再雇用[femme_fatale_court_position|E] 。" #deepl:1658462667
+ poison_opinion_invalidated_not_poisoning_opinion: "[CHARACTER.GetShortUIName|U] 不再执行毒物意见任务。" #deepl:2935163170
+ poison_opinion_invalidated_no_liege: "[CHARACTER.GetShortUIName|U] 已经独立，不再有继承人。" #deepl:1057196627
+
+ ## Interaction
+ poison_opinion_interaction: "毒药意见#weak (计划)#!" #deepl:1142636293
+ poison_opinion_interaction_desc: "企图毒化[recipient.GetShortUINameNoTooltip] 对其陛下的看法，扰乱其宫廷秩序" #deepl:1775251095
+ poison_opinion_interaction_notification: "中毒意见" #deepl:3238033915
+ scheme_interaction_tt_poison_opinion_desc: "我将毒化[recipient.GetShortUINameNoTooltip] 对他们陛下的看法，扰乱他们的宫廷！" #deepl:2220439533
+
+ # Effects
+ poison_opinion_continue: "您继续努力" #deepl:2630534722
+ poison_opinion_try_again: "您将再次尝试" #deepl:2953815728
+ poison_opinion_complete: "您已经尽可能地毒化了[target.GetShortUIName] 的观点" #deepl:61883654

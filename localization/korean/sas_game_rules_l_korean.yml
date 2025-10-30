@@ -1,0 +1,11 @@
+﻿l_korean:
+ game_rule_category_sas: "사보타주 및 교란" #deepl:3907992950
+ 
+ # Starting Criminal Undergrounds
+ rule_sas_initial_underground: "크라임 언더그라운드 시작" #deepl:511066023
+ setting_no_undergrounds: "없음" #deepl:3312814158
+ setting_no_undergrounds_desc: "게임 시작 시 존재하는 집은 [sas_spy_network|E] 또는 범죄자 지하로 시작하지 않습니다." #deepl:3086919095
+ setting_fledgling_undergrounds: "신생 스파이 네트워크" #deepl:3035369536
+ setting_fledgling_undergrounds_desc: "게임 시작 시 카운티를 지배하고 [administrative_government|E] 에 참여하는 족장이 있는 하우스는 [sas_spy_network|E] 로 시작합니다." #deepl:2991418532
+ setting_full_undergrounds: "월드 오브 크라임" #deepl:2146549835
+ setting_full_undergrounds_desc: "게임 시작 시 존재하는 모든 집은 [sas_spy_network|E] 및 범죄자 지하로 시작됩니다." #deepl:2266201805

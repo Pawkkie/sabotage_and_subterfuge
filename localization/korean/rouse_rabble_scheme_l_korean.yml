@@ -1,0 +1,98 @@
+﻿l_korean: 
+
+ # Agent Rabble Rouser
+ SCHEME_IS_RABBLE_ROUSER: "나는 당신의 폭도 선동가로서 일하기 위해 돈을 받습니다: $VALUE|=+0$." #deepl:1792372743
+ SCHEME_AGENT_IS_RABBLE_ROUSER: "[target.GetShortUINamePossessiveNoTooltip] $rabble_rouser_court_position$" #deepl:2793117015
+ agent_rabble_rouser: "Rouser" #deepl:3332647567
+ agent_rabble_rouser_i: "[success_chance_max_i]" #deepl:1124858639
+ agent_rabble_rouser_desc: "에이전트_래블_루저_desc.flavour$ \n$에이전트_래블_루저_desc.requirements$" #deepl:1666301298
+ agent_rabble_rouser_desc.flavour: "#WEAK 저는 시끄럽고 자랑스럽고 우리의 대의를 위해 전 세계를 결집할 준비가 되었습니다! 이제 밖으로 나가서 무언가를 만들어 봅시다.#!" #deepl:988008942
+ agent_rabble_rouser_desc.requirements: "$EFFECT_LIST_BULLET$ 제공 [success_chance_max_i] [scheme_potential|E] \n $EFFECT_LIST_BULLET$ 필요 [diplomacy_i] [diplomacy|E] &amp; [intrigue_i] [intrigue|E] \n $EFFECT_LIST_BULLET$ #P  혜택#! 에서 [traits|E] 처럼 [GetTrait('gregarious').GetName( GetNullCharacter )] 와 [GetTrait('peasant_leader').GetName( GetNullCharacter )]\n $EFFECT_LIST_BULLET$ #N  에서#! 처럼 [traits|E] 와 [GetTrait('shy').GetName( GetNullCharacter )] 과 [GetTrait('reclusive').GetName( GetNullCharacter )]" #deepl:4277366262
+
+ # Agent Rabble Rouser modifiers
+ scheme_agent_aptitude.trait.reclusive: "[GetTrait('reclusive').GetName( GetNullCharacter )]" #deepl:4087307931
+ scheme_agent_aptitude.trait.infirm: "[GetTrait('infirm').GetName( GetNullCharacter )]" #deepl:3577196452
+ scheme_agent_aptitude.trait.lifestyle_wayfarer: "[GetTrait('lifestyle_wayfarer').GetName( GetNullCharacter )]" #deepl:1795443180
+ scheme_agent_aptitude.trait.peasant_leader: "[GetTrait('peasant_leader').GetName( GetNullCharacter )]" #deepl:1998546572
+ scheme_agent_aptitude.trait.populist_leader: "[GetTrait('populist_leader').GetName( GetNullCharacter )]" #deepl:3859123510
+ scheme_agent_aptitude.trait.lifestyle_reveler: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]" #deepl:2953523392
+ scheme_agent_aptitude.trait.lifestyle_traveler: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )]" #deepl:1809484247
+ scheme_agent_aptitude.trait.education_diplomacy_1: "[GetTrait('education_diplomacy_1').GetName( GetNullCharacter )]" #deepl:2970949910
+ scheme_agent_aptitude.trait.education_diplomacy_2: "[GetTrait('education_diplomacy_2').GetName( GetNullCharacter )]" #deepl:690150929
+ scheme_agent_aptitude.trait.education_diplomacy_3: "[GetTrait('education_diplomacy_3').GetName( GetNullCharacter )]" #deepl:1590664428
+ scheme_agent_aptitude.trait.education_diplomacy_4: "[GetTrait('education_diplomacy_4').GetName( GetNullCharacter )]" #deepl:2991084828
+ scheme_agent_aptitude.trait.education_diplomacy_5: "[GetTrait('education_diplomacy_5').GetName( GetNullCharacter )]" #deepl:3315931105
+ scheme_agent_aptitude.trait.education_intrigue_1: "[GetTrait('education_intrigue_1').GetName( GetNullCharacter )]" #deepl:3865792887
+ scheme_agent_aptitude.trait.education_intrigue_2: "[GetTrait('education_intrigue_2').GetName( GetNullCharacter )]" #deepl:2119997040
+ scheme_agent_aptitude.trait.education_intrigue_3: "[GetTrait('education_intrigue_3').GetName( GetNullCharacter )]" #deepl:162649229
+ scheme_agent_aptitude.trait.education_intrigue_4: "[GetTrait('education_intrigue_4').GetName( GetNullCharacter )]" #deepl:3845528957
+ scheme_agent_aptitude.trait.education_intrigue_5: "[GetTrait('education_intrigue_5').GetName( GetNullCharacter )]" #deepl:2463850368
+ scheme_agent_aptitude.rabble_rouser_court_position: "래블 루저로 작동" #deepl:1494253222
+
+ # Scheme modifiers
+ ROUSE_RABBLE_BRAVE: "[GetTrait('brave').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2403920549
+ ROUSE_RABBLE_DILIGENT: "[GetTrait('diligent').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:972127537
+ ROUSE_RABBLE_GENEROUS: "[GetTrait('generous').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1451163242
+ ROUSE_RABBLE_GREGARIOUS: "[GetTrait('gregarious').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1403792515
+ ROUSE_RABBLE_DIPLOMAT: "[GetTrait('diplomat').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:463035944
+ ROUSE_RABBLE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:314310244
+ ROUSE_RABBLE_WAYFARER: "[GetTrait('lifestyle_wayfarer').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:4135872773
+ ROUSE_RABBLE_PEASANT_LEADER: "[GetTrait('peasant_leader').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2894021184
+ ROUSE_RABBLE_POPULIST_LEADER: "[GetTrait('populist_leader').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2909658579
+ ROUSE_RABBLE_LOYAL: "[GetTrait('loyal').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:891652849
+ ROUSE_RABBLE_CRAVEN: "[GetTrait('craven').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:794823784
+ ROUSE_RABBLE_LAZY: "[GetTrait('lazy').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:1265673369
+ ROUSE_RABBLE_SHY: "[GetTrait('shy').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2200792238
+ ROUSE_RABBLE_FICKLE: "[GetTrait('fickle').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2212848154
+ ROUSE_RABBLE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2264568722
+ ROUSE_RABBLE_INFIRM: "[GetTrait('infirm').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:243593996
+ ROUSE_RABBLE_DISLOYAL: "[GetTrait('disloyal').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:2598282759
+ ROUSE_RABBLE_REVELER: "[GetTrait('lifestyle_reveler').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3616244587
+ ROUSE_RABBLE_TRAVELER: "[GetTrait('lifestyle_traveler').GetName( GetPlayer )]: $VALUE|=+0$" #deepl:3403121665
+ ROUSE_RABBLE_HELPS_BONUS: "[rabble_rouser_court_position|E]의 지원: $VALUE|+0=-+$" #deepl:3207520238
+ PACIFY_THE_MASSES_HURTS_BONUS: "적 [rabble_rouser_court_position|E] 의 원조: $VALUE|+0=-+$" #deepl:2290869309
+
+ # Scheme info
+ rouse_rabble: "루즈 래블" #deepl:4205226659
+ rouse_rabble_desc: "왕국의 농민을 통치자에게 대항하게 하세요." #deepl:161189800
+ rouse_rabble_desc_general: "$rouse_rabble$ 은 대상 영역의 농민을 선동하여 영주에게 반란을 일으키려는 [hostile_scheme|E] 입니다. 이를 수행하려면 [rabble_rouser_court_position|E] [court_position|E] 을 고용해야 하며, 여러분과 대상 모두 최소 [duchy|E] 티어 이상의 영역을 담당해야 합니다.\n\n 어느 시점에서든 [rabble_rouser_court_position|E] 이 실직하거나 업무를 전환하면 계획은 취소됩니다." #deepl:2019029114
+ # or otherwise unavailable, such as by traveling, being imprisoned, or leading an army
+ rouse_rabble_action: "폭도들을 깨워라" #deepl:2624184007
+
+ ROUSE_RABBLE_SUCCESS_DESC: "폭도들이 선동되어 농민 반란을 일으켰습니다." #deepl:1199245697
+ ROUSE_RABBLE_DISCOVERY_DESC: "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] 영역에서 폭도들을 계속 깨울 수 있습니다." #deepl:211674071
+
+ max_rouse_rabble_schemes_add: "최대 [GetScheme('rouse_rabble').GetTypeName] [schemes|E]" #deepl:3448259929
+
+## Character Interaction Scheme Agent Packages
+ rouse_rabble_interaction.tt.agent_focus_balance: "\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:2603902629
+ rouse_rabble_interaction.tt.agent_focus_success: "\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_diplomat' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1717624249
+ rouse_rabble_interaction.tt.agent_focus_speed: "\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_herald' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName]" #deepl:1227893453
+ rouse_rabble_interaction.tt.agent_focus_secrecy: "\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_justiciar' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_amanuensis' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_rabble_rouser' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_gabbler' ).GetName]" #deepl:1200689629
+
+ ## Allow
+ HAVE_RABBLE_ROUSER_COURT_POSITION: "귀하는 [rabble_rouser_court_position|E]" #deepl:1274732303
+ NO_RABBLE_ROUSER_COURT_POSITION: "귀하는 [rabble_rouser_court_position|E]" #deepl:3332567507
+ ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] 이미 루즈드 래블 진영을 상대하고 있습니다." #deepl:1793186398
+ NOT_ALREADY_FIGHTING_ROUSED_RABBLE: "[CHARACTER.GetShortUIName|U] 가 이미 루시드 래블 진영을 상대하고 있지 않다면" #deepl:3909492403
+ RABBLE_ROUSER_AVAILABLE: "[CHARACTER.GetShortUIName|U] 사용 가능" #deepl:3569913773
+ RABBLE_ROUSER_IN_ARMY: "[CHARACTER.GetShortUIName|U] 군대에 있습니다." #deepl:1551522730
+ RABBLE_ROUSER_TRAVELING: "[CHARACTER.GetShortUIName|U] 여행 중입니다." #deepl:2427905953
+ RABBLE_ROUSER_IN_PRISON: "[CHARACTER.GetShortUIName|U] 감옥에 있습니다" #deepl:2757669189
+ RABBLE_ROUSER_UNAVAILABLE: "[CHARACTER.GetShortUIName|U] 를 사용할 수 없습니다." #deepl:67370776
+ RABBLE_ROUSER_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] 는 루즈 래블 작업을 수행하고 있습니다." #deepl:269067143
+ RABBLE_ROUSER_NOT_ROUSING_RABBLE: "[CHARACTER.GetShortUIName|U] 가 루즈 래블 작업을 수행하지 않습니다." #deepl:1078887661
+ rouse_rabble_invalidated_title: "루즈 래블 계획 종료" #deepl:216954123
+ rouse_rabble_invalidated_dead: "[target.GetShortUIName] 가 세상을 떠났습니다. 더 이상 [target.GetHerHis] 통치에 반대하는 폭도들을 일으킬 수 없습니다." #deepl:1563788818
+ rouse_rabble_invalidated_target_lost_title: "[target.GetShortUIName] 더 이상 폭도들을 통제할 수 없을 정도로 은혜에서 멀어졌습니다." #deepl:2219542655
+ rouse_rabble_invalidated_no_rabble_rouser: "더 이상 [rabble_rouser_court_position|E] 을 사용하지 않습니다." #deepl:710383329
+ rouse_rabble_invalidated_not_rousing_rabble: "[CHARACTER.GetShortUIName|U] 는 더 이상 루즈 래블 작업을 수행하지 않습니다." #deepl:648649247
+ rouse_rabble_invalidated_in_army: "[CHARACTER.GetShortUIName|U] 은 [CHARACTER.GetSheHe] 이 군대를 이끌고 있으므로 더 이상 사용할 수 없습니다." #deepl:1180147792
+ rouse_rabble_invalidated_in_prison: "[CHARACTER.GetShortUIName|U] 는 감옥에 있으므로 더 이상 사용할 수 없습니다( [CHARACTER.GetSheHe] )." #deepl:1720481333
+ rouse_rabble_invalidated_is_travelling: "[CHARACTER.GetShortUIName|U] 는 이동 중이므로 더 이상 사용할 수 없습니다( [CHARACTER.GetSheHe] )." #deepl:500171271
+ rouse_rabble_invalidated_has_faction: "[CHARACTER.GetShortUIName|U]의 폭도들은 흥분하여 이미 [CHARACTER.GetHerHim] 에 반대하는 파벌을 형성했습니다." #deepl:1390097188
+
+ ## Interaction
+ rouse_rabble_interaction: "루즈 래블 #weak (스킴)#!" #deepl:3796037058
+ rouse_rabble_interaction_desc: "[recipient.GetShortUINameNoTooltip] 의 영역의 폭도들을 깨워 농민 반란을 일으키려고 시도합니다." #deepl:493648604
+ rouse_rabble_interaction_notification: "폭도들을 깨우다" #deepl:4129947386

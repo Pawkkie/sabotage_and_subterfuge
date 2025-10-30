@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+
+ ## Success and secret
+ provoke_vassals_outcome.0001.t: "来自国外的低语" #deepl:3047973896
+ provoke_vassals_outcome.0001.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们用低沉的语调谈论一个来自[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的臣子的叛乱派系。\n\n 似乎没有人知道是什么让他们如此突然地胆大妄为，但一场起义似乎不可避免，[target.GetShortUIName] 正在争分夺秒地控制局势。我们的努力非常奏效！" #deepl:2513943596
+ provoke_vassals_outcome.0001.a: "独立！" #deepl:2406401908
+ provoke_vassals_outcome.0001.b: "解散！" #deepl:3036861717
+
+ ## Success and discovered
+ provoke_vassals_outcome.0002.t: "来自国外的猜疑" #deepl:3269684831
+ provoke_vassals_outcome.0002.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们用低沉的语调谈论来自[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的一个臣子的叛乱派系。\n\n 他们不断朝我的方向偷瞄，目光中充满了憎恶。虽然不知道是什么原因让他们突然变得如此胆大妄为，但起义似乎已经无法避免，[target.GetShortUIName] 怒不可遏。" #deepl:1773624934
+ provoke_vassals_outcome.0002.a: "独立！" #deepl:2406401908
+ provoke_vassals_outcome.0002.b: "解散！" #deepl:3036861717
+
+ ## Unsuccessful and secret
+ provoke_vassals_outcome.0003.t: "未被唤醒的心" #deepl:3841976415
+ provoke_vassals_outcome.0003.desc: "最近，我的宫廷里来了一位客人，他是一位穿越大陆、寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们谈论[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的臣子们，以及他们在逆境中加倍的爱国精神。\n\n 尽管我们尽了最大努力，他们还是对自己的生活感到满足。" #deepl:3943223082
+ provoke_vassals_outcome.0003.a: "至少，现在..." #deepl:4023036666
+
+ ## Unsuccessful and discovered
+ provoke_vassals_outcome.0004.t: "淬炼心灵" #deepl:3138284672
+ provoke_vassals_outcome.0004.desc: "最近我的宫廷里来了一位客人，他是一位穿越大陆寻求财富和冒险的旅行者。我无意中听到他们与我的臣子们谈论[target.GetCapitalLocation.GetTitle.GetNameNoTier] 的臣子们，以及他们在逆境中加倍的爱国主义。\n\n 他们不停地偷瞄我的方向，目光中充满了厌恶。我企图驱使他们造反，这并不神秘，[target.GetShortUIName] ，他们非常愤怒。" #deepl:2115999962
+ provoke_vassals_outcome.0004.a: "我们最终会得到它们的！" #deepl:1078680228

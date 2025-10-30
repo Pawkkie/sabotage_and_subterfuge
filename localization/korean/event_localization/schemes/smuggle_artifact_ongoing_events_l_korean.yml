@@ -1,0 +1,14 @@
+﻿l_korean:
+ smuggle_artifact_event_title: "밀수 유물:" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ 골동품" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "유물을 되찾기 위한 명백한 장애물 중 하나는 [target.GetTitledFirstNamePossessive] 골동품 수집가, [antiquarian.GetTitledFirstName].\n\n 물론 여러 가지 방법이 있습니다... #EMP 거래#! 하지만 [antiquarian.GetFirstNameNoTooltip] 적절한 뇌물을 제공함으로써 다른 쪽을 보도록 설득할 수 있는 사람인지 궁금합니다." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "금은 뇌물의 보편적인 언어입니다." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "당신은 [antiquarian.GetTitledFirstNamePossessive] 충성심을 재물로 살 수 있다고 믿습니다..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "유물을 위한 유물일까요?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] 는 균등한 "거래"에 동의합니다." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "[random_beauty.GetTitledFirstName] 에 대한 소개는 #EMP 자극#!." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "충성도보다 신체적 아름다움을 더 높이 평가하는 [antiquarian.GetTitledFirstName] 에 베팅하고 계십니다." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "대신 다른 가능성을 살펴볼게요." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] 뇌물 수락" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] 뇌물 거부" #deepl:1499978674

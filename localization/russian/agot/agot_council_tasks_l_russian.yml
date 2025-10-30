@@ -1,0 +1,142 @@
+﻿l_russian:
+ # Personal Steward
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "Благодаря дипломатическим способностям вашего личного стюарда [councillor.Custom('diplomacy_skill_level')] вы получили это богатство." #deepl:3987054824
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "Это произошло, несмотря на навыки дипломатии вашего личного стюарда [councillor.Custom('diplomacy_skill_level')]." #deepl:2756273250
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "Это произошло, несмотря на боевое мастерство вашего личного управляющего [councillor.Custom('martial_skill_level')]." #deepl:1672131809
+ personal_steward_task_martial_good_skilled_notification_tooltip: "Боевое мастерство вашего личного управляющего [councillor.Custom('martial_skill_level')] привело к этой удаче." #deepl:1416132229
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "Мастерство вашего личного управляющего [councillor.Custom('stewardship_skill_level')] привело к такому выигрышу." #deepl:136762961
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "Это произошло, несмотря на мастерство вашего личного управляющего [councillor.Custom('stewardship_skill_level')]." #deepl:2694643357
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "Это произошло, несмотря на умение вашего личного управляющего [councillor.Custom('intrigue_skill_level')] интриговать." #deepl:1782695802
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "Мастерство интриг вашего личного управляющего [councillor.Custom('intrigue_skill_level')] привело к такому выигрышу." #deepl:2761615177
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "Это произошло, несмотря на то, что ваш личный управляющий [councillor.Custom('learning_skill_level')] умеет учиться." #deepl:3263895679
+ personal_steward_task_learning_good_skilled_notification_tooltip: "Умение вашего персонального управляющего [councillor.Custom('learning_skill_level')] учиться привело к этому выигрышу." #deepl:4043423585
+ task_personal_steward_default_diplomacy_modifier: "Помощь личного стюарда" #deepl:628691585
+ task_personal_steward_default_martial_modifier: "Помощь личного стюарда" #deepl:628691585
+ task_personal_steward_default_stewardship_modifier: "Помощь личного стюарда" #deepl:628691585
+ task_personal_steward_default_intrigue_modifier: "Помощь личного стюарда" #deepl:628691585
+ task_personal_steward_default_learning_modifier: "Помощь личного стюарда" #deepl:628691585
+
+ # Personal Steward Tasks
+ task_personal_steward_default: "Помогать лорду-командующему" #deepl:3190029942
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip] помогает вам в повседневной работе по управлению Ночным дозором\n\n [councillor.GetHerHis|U] , который оказывает вам поддержку:\n[councillor.GetModifierDescForTask('task_personal_steward_default')]" #deepl:2471906103
+ task_personal_steward_court_politics: "Усилить влияние" #deepl:3874806014
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] посвящена политике Ночного Дозора и улучшению отношений между Черными Братьями\n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]" #deepl:1899957641
+ task_personal_steward_chivalry: "Обучение часовых" #deepl:1093429720
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] фокусируется на обучении бойцов Ночного Дозора\n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]" #deepl:3578335599
+ task_personal_steward_court_intrigue: "Держите ухо востро" #deepl:3757386027
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip] ориентируется на слухи и шепот о Черных Братьях при вашем дворе\n\n [councillor.GetHerHis|U] поддержку оказывает вам:\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]" #deepl:238132299
+ task_personal_steward_manage_domain: "Управляйте подарком" #deepl:3752812108
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip] Занимается управлением Даром и увеличением запасов Дозора\n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]" #deepl:795658195
+ task_personal_steward_patronage: "Обучить часовых" #deepl:64939694
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] посвящена вопросам культуры, религии и образования на сайте Watch\n\n [councillor.GetHerHis|U] support gives you:\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]" #deepl:673679475
+ councillor_personal_steward_background.0001.diplomacy_notification: "С опытом [councillor.GetShortUINamePossessive] мастерство дипломатии растет." #deepl:1853588496
+ councillor_personal_steward_background.0001.martial_notification: "С опытом [councillor.GetShortUINamePossessive] понимание войны стало более глубоким." #deepl:26629406
+ councillor_personal_steward_background.0001.stewardship_notification: "С опытом работы административные способности [councillor.GetShortUINamePossessive] возрастают." #deepl:1503349911
+ councillor_personal_steward_background.0001.intrigue_notification: "С опытом навыки интриг [councillor.GetShortUINamePossessive] растут." #deepl:482384644
+ councillor_personal_steward_background.0001.learning_notification: "С опытом, [councillor.GetShortUINamePossessive] научное понимание растет." #deepl:668661590
+
+ councillor_personal_steward_background.0001.title: "Навыки личного стюарда" #deepl:607529410
+
+ task_promote_culture_effect_desc_wv_override: "#S На #V 100%#!#! :\n$TAB$ На [county|E] [culture|E] меняется на [councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]" #deepl:1353113911
+ task_promote_culture_effect_desc_ev_override: "#S На #V 100%#!#! :\n$TAB$ На [county|E] [culture|E] меняется на [councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]" #deepl:1820114630
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S На #V 100%#!#! :\n$TAB$ На [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:916033769
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S На #V 100%#!#! :\n$TAB$ На [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур: \n#S $TAB$ 60%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:3772183319
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S На #V 100%#!#! :\n$TAB$ На [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('greenborn_culture').Culture.GetName]" #deepl:1153229959
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (ОШИБКА АГОТ)#!#! : Что-то сломалось при конвертации культуры железнорожденных, сообщить в Типичный" #deepl:1200773039
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S На #V 100%#!#! :\n$TAB$ На [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 20%#! [councillor_liege.GetCulture.GetName]" #deepl:1126410652
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S На сайте #V 100%#!#! :\n$TAB$ На сайте [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур:: \n#S $TAB$ 60%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 40%#! [councillor_liege.GetCulture.GetName]" #deepl:2667011599
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S На #V 100%#!#! :\n$TAB$ На [county|E] происходит смена [culture|E] на одну из следующих\n$TAB$ культур: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName] \n #S  $TAB$ 80%#! [councillor_liege.GetCulture.GetName]" #deepl:3113041075
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (ОШИБКА АГОТ)#!#! : Что-то сломалось при преобразовании культуры зеленорожденных, сообщите в Типичный" #deepl:1510425940
+
+
+ # Castellan Tasks
+ task_castellan_default_1:0 "Oversee Realm" #martial
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip]Опыт в военных делах укрепит вашу хватку на этой земле. \n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_castellan_default_1')]" #deepl:4119586948
+
+ task_castellan_default_2:0 "Oversee Realm" #learning
+ task_castellan_default_effect_desc_2: "С помощью совета мудреца и ученого [councillor.GetShortUINameNoTooltip] вы будете править мудро. \n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_castellan_default_2')]" #deepl:373640728
+
+ task_castellan_default_3:0 "Oversee Realm" #intrigue
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] Перемещается кругами, невидимыми для большинства, давая вам преимущество в тенях вашей сферы. \n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_castellan_default_3')]" #deepl:150011693
+
+ task_castellan_default_4:0 "Oversee Realm" #stewardship
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip] будут использовать свои административные навыки, чтобы помочь в управлении вашим доменом. \n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_castellan_default_4')]" #deepl:930183188
+
+ task_castellan_default_5:0 "Oversee Realm" #diplomacy
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] способный политик, а твердая рука в государственном управлении необходима для управления. \n\n [councillor.GetHerHis|U] поддержка дает вам:\n[councillor.GetModifierDescForTask('task_castellan_default_5')]" #deepl:398758126
+
+
+ task_castellan_default_hodor: "Делать все возможное" #deepl:3046448544
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] не знает, как они оказались здесь, но они делают все возможное." #deepl:1327033284
+
+ task_castellan_court: "Председательствовать в Совете" #deepl:1348124016
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]" #deepl:164605584
+
+ task_castellan_fortify: "Укреплять оборону" #deepl:145040072
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]" #deepl:3665126672
+
+ castellan_fortify_province_modifier: "$task_castellan_fortify$" #deepl:3627279605
+
+ castellan_fortify_county_modifier: "Укрепление обороны" #deepl:1470419536
+
+ castellan_court_opinion_modifier: "Кастелян председательствует на совете" #deepl:1892251711
+
+ task_train_commanders_maa_effect_desc: "Место для размещения" #deepl:3525875382
+ task_train_commanders_maa_erudition_bonus_desc: "Место для размещения" #deepl:3525875382
+
+ task_castellan_organise: "Вести переговоры с вассалами" #deepl:3783553490
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]" #deepl:3948196146
+ task_castellan_organise_modifier: "Совет $councillor_castellan$" #deepl:566097349
+
+ task_castellan_scheme: "Организуйте схемы" #deepl:2331682327
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]" #deepl:4293595345
+ task_castellan_scheme_modifier: "Совет $councillor_castellan$" #deepl:566097349
+
+ task_castellan_clergy: "Созыв духовенства" #deepl:415742451
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]" #deepl:4181075151
+ task_castellan_clergy_modifier: "Совет $councillor_castellan$" #deepl:566097349
+
+ # Admiral
+ task_admiral_fleet: "Разбросанные флоты" #deepl:1618243021
+
+ task_admiral_fleet_modifier: "Совет $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_fleet_effect_desc: "[supply|E] Продолжительность: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ Советник [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n [fleet|E] Скорость передвижения: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n $TAB$ Советник [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#!" #deepl:1383045148
+
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_raid: "Ободрить рейдеров" #deepl:1570853202
+
+ cannot_raid: "#X Вы можете совершать набеги!#!" #deepl:1644501070
+
+ NOT_cannot_raid: "#X Вы не можете участвовать в рейдах!#!" #deepl:1194432546
+
+ task_admiral_raid_modifier: "Совет $councillor_admiral$" #deepl:1798471343
+
+
+ task_admiral_raid_effect_desc: "[raid|E] Скорость: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Советская [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#! \n [raid_loot|E] Мощность: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Советник [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#! \n Скорость передвижения: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n $TAB$ Советник [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#!" #deepl:4290845175
+
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ task_admiral_maritime: "Защитить торговлю" #deepl:34268181
+
+ task_admiral_maritime_modifier: "Совет $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_tax_modifier: "Совет $councillor_admiral$" #deepl:1798471343
+
+ task_admiral_maritime_effect_desc: "[domain|E] Налог: #P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ Советская [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#! \n [supply|E] Мощность: #P +[SCOPE.ScriptValue('task_admiral_maritime_modifier_value')]%#!\n $TAB$ База: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n $TAB$ Советский [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_base')]%#!" #deepl:763222540
+
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n" #deepl:28204122
+
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!" #deepl:136165875
+
+ # Court Chaplain
+ COURT_CHAPLAIN_SHATTERED_WORLD: "Стартовый бонус Shattered World" #deepl:3364461777
+
+ # Spymaster
+ agot_task_disrupt_schemes_discover_spies: "В вашем дворе могут обнаружить иностранца [sas_spies|E] \n" #deepl:2680493951
+ agot_task_disrupt_schemes_recruit_spies: "Может набрать [sas_spies|E] на площадке для мишеней. \n" #deepl:2394015076

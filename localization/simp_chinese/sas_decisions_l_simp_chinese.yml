@@ -1,0 +1,90 @@
+﻿l_simp_chinese:
+ # Expand Spy Network
+ sas_expand_spy_network_decision: "扩展间谍网络" #deepl:1918218917
+ sas_expand_spy_network_decision_desc: "蜘蛛要想扩大自己的网，只有两个办法，一是花更多的时间织网，二是让更多的蜘蛛参与进来。虽然我们的[sas_spy_network|E] 在起步阶段取得了一定的成功，但我们仍有可能将触角伸得更远，纠缠住远方的统治者，利用他们最亲密的秘密为我们谋利。" #deepl:2680910805
+ sas_expand_spy_network_decision_tooltip: "增加[sas_spy_network|E] 的数量和能力" #deepl:1080571400
+ sas_expand_spy_network_decision_confirm: "蜘蛛网越来越大！" #deepl:2491328231
+ sas_expand_spy_network_double_spies.tt: "您可以使用双倍数量的[sas_spies|E]" #deepl:3951820473
+ sas_expand_spy_network_child_spies.tt: "您可以雇用至少 8 岁的儿童作为[sas_spies|E]" #deepl:594091579
+ sas_expand_spy_network_innovation_spies.tt: "您的[sas_spies|E] 可从其居住的宫廷中窃取公民或军事[innovations|E] #weak  （冷却时间 25 年）#!" #deepl:2062950662
+ sas_expand_spy_network_have_enough_spies_tt: "您至少雇佣了 3[sas_spies|E]" #deepl:769462268
+ sas_expand_spy_network_have_paid_spies_tt: "您已从以下网站购买了至少 3 个[secrets|E] [sas_spies|E]" #deepl:4061259209
+
+ # Establish Criminal Underground
+ sas_establish_criminal_underground_decision: "建立地下犯罪组织" #deepl:1225823486
+ sas_establish_criminal_underground_decision_desc: "把所有牌都摆在桌面上当然是一种统治方式，但在国际外交中，把一两张王牌藏在袖子里当然更容易。当你可以成为傀儡主人的时候，为什么要在礼仪和礼节的绳索上软弱无力地挣扎呢？" #deepl:1579221697
+ sas_establish_criminal_underground_decision_tooltip: "鼓励在您的宫廷中雇用各种无赖和[sas_spies|E] " #deepl:3565047867
+ sas_establish_criminal_underground_decision_confirm: "让我们在黑暗中起舞！" #deepl:764817339
+ sas_establish_criminal_underground_spy_network.tt: "释放在[sas_spies|E] 中使用的能力[sas_spy_network|E]" #deepl:417099671
+ sas_establish_criminal_underground_rabble_rouser.tt: "解锁[rabble_rouser_court_position|E] 球场位置" #deepl:3231636541
+ sas_establish_criminal_underground_femme_fatale.tt: "解锁[femme_fatale_court_position|E] 球场位置" #deepl:4153819485
+ sas_establish_criminal_underground_smuggler.tt: "解锁[smuggler_court_position|E] 球场位置" #deepl:1659450848
+ sas_establish_criminal_underground_master_assassin.tt: "解锁[master_assassin_court_position|E] 球场位置" #deepl:2159838119
+ ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "[CHARACTER.GetHouse.GetName|U] 建立了一个地下犯罪组织" #deepl:134357733
+ NOT_ALREADY_ESTABLISHED_CRIMINAL_UNDERGROUND: "众议院[CHARACTER.GetHouse.GetName|U] 未建立地下犯罪" #deepl:2261484798
+
+ # Special Operations Training
+ sas_special_operations_training_decision: "特别行动培训" #deepl:3167735659
+ sas_special_operations_training_decision_desc: "适应是在暗处生存的关键。通过专注于地下知识的共享，我们的特工可以掌握自己的技能，更加自给自足地找到我们只能认为是他们自己的高收入来源，同时扩大我们的影响力网络。" #deepl:3538227294
+ sas_special_operations_training_decision_tooltip: "对罪犯和[sas_spies|E] 进行培训，使其更有信心参与[hostile_schemes|E]" #deepl:3991151590
+ sas_special_operations_training_decision_confirm: "黑暗中更多的刀" #deepl:3972594294
+ sas_special_operations_completed_hostile_schemes_tt: "您已完成至少 3[hostile_schemes|E]" #deepl:2270300827
+ sas_special_operations_have_enough_spies_tt: "您至少雇佣了 3[sas_spies|E]" #deepl:769462268
+ sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] 基于[court_positions|E] 成本无薪" #deepl:647631714
+ sas_special_operations_training_spies_likely_to_join_schemes.tt: "您的[sas_spies|E] 更有可能加入您的[hostile_schemes|E] ，因为[agents|E]" #deepl:2830788156
+ sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "您的[rabble_rouser_court_position|E] 更有可能加入您的[hostile_schemes|E] ，成为一名[agent|E]" #deepl:1181319785
+ sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "您的[femme_fatale_court_position|E] 更有可能加入您的[hostile_schemes|E] ，成为一名[agent|E]" #deepl:2788309644
+ sas_special_operations_training_smuggler_likely_to_join_schemes.tt: "您的[smuggler_court_position|E] 更有可能加入您的[hostile_schemes|E] ，成为一名[agent|E]" #deepl:1165184473
+ sas_special_operations_training_master_assassin_likely_to_join_schemes.tt: "您的[master_assassin_court_position|E] 更有可能加入您的[hostile_schemes|E] ，成为一名[agent|E]" #deepl:2916929945
+
+ # House of Sabotage and Subterfuge
+ sas_house_of_sabotage_and_subterfuge_decision: "破坏和潜规则之家" #deepl:346655493
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "破坏与潜规则之屋》 Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_tooltip: "巩固你家的破坏和潜规则遗产" #deepl:3420083984
+ sas_house_of_sabotage_and_subterfuge_decision_confirm: "我们与阴影融为一体！" #deepl:1602826360
+ sas_house_of_sabotage_and_subterfuge_schemes_tt: "您已完成至少 8[hostile_schemes|E]" #deepl:2029350009
+ sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "您至少雇佣了 8[sas_spies|E]" #deepl:2404724051
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown: "@dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] 任何时候完成一个[hostile_schemes|E]" #deepl:421351319
+ sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "增加[sas_spies|E] 发现秘密和创新的机会" #deepl:4182569517
+
+ #################### 
+ # Recruit Malefactor
+ ####################
+ sas_recruit_malefactor_decision: "招募歹徒" #deepl:1281019616
+ sas_recruit_malefactor_decision_desc: "一个运作良好的地下犯罪组织需要许多人的努力。我将派遣我的仆人四处奔走，为我们更重要的空缺职位寻找合适的人选。" #deepl:1735662004
+ sas_recruit_malefactor_decision_tooltip: "搜索人物，以填补与地下犯罪有关的[court_position|E] ，并收取一定费用\n\n #weak  例如，你可以雇用一个[GetCourtPositionType('rabble_rouser_court_position').GetName]#!" #deepl:790010884
+ SAS_CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "选择职位类型" #deepl:3489192501
+ sas_recruit_malefactor_decision_confirm: "确认" #deepl:3524355688
+ sas_recruit_court_position_decision_tt: "您将收到两名合适的候选人，供您从中挑选[court_position|E]" #deepl:3036663020
+
+ # Rabble Rouser
+ hire_rabble_rouser: "搜索 Rabble Rouser" #deepl:2458077144
+ hire_rabble_rouser_tooltip: "您的仆人会为以下职位推荐一些合适的候选人[GetCourtPositionType('rabble_rouser_court_position').GetName()]" #deepl:1614552482
+ hire_rabble_rouser_desc: "[rabble_rouser_court_position|E] 是在其他王国挑起事端或让本国人民安居乐业的关键。我会让我的仆人们提出一些合适的人选。" #deepl:1136401803
+ #  hire_rabble_rouser_decision_effect_tooltip: "您将看到一组[GetCourtPositionType('rabble_rouser_court_position').GetName()] 候选人，您可以雇用其中一人，但需支付一定的费用和月薪" #deepl:1865841153
+ #  hire_rabble_rouser_decision_confirm: "开始搜索" #deepl:2082362254
+ recruit_rabble_rouser_cooldown_tt: "招募[GetCourtPositionType('rabble_rouser_court_position').GetName] 的冷却时间为[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_rabble_rouser_cooldown' ))]" #deepl:1478339175
+
+ # Femme Fatale
+ hire_femme_fatale: "搜索 Femme Fatale" #deepl:102309862
+ hire_femme_fatale_tooltip: "您的仆人会为以下职位推荐一些合适的候选人[GetCourtPositionType('femme_fatale_court_position').GetName()]" #deepl:890583249
+ hire_femme_fatale_desc: "[femme_fatale_court_position|E] 可以让我们从暗处控制法庭。我会让我的仆人们提出一些合适的人选。" #deepl:1767789142
+ #  hire_femme_fatale_decision_effect_tooltip: "您将看到一组[GetCourtPositionType('femme_fatale_court_position').GetName()] 候选人，您可以雇用其中一人，但需支付一定的费用和月薪" #deepl:1223492537
+ #  hire_femme_fatale_decision_confirm: "开始搜索" #deepl:2082362254
+ recruit_femme_fatale_cooldown_tt: "招募[GetCourtPositionType('femme_fatale_court_position').GetName] 的冷却时间为[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_femme_fatale_cooldown' ))]" #deepl:2298014581
+
+ # Smuggler
+ hire_smuggler: "搜索走私者" #deepl:3552251679
+ hire_smuggler_tooltip: "您的仆人会为以下职位推荐一些合适的候选人[GetCourtPositionType('smuggler_court_position').GetName()]" #deepl:3568294823
+ hire_smuggler_desc: "[smuggler_court_position|E] 可以让我们......把文物从......其他人的魔掌中解放出来。我会让我的仆人们提出一些合适的人选。" #deepl:4196276537
+ #  hire_smuggler_decision_effect_tooltip: "您将看到一组[GetCourtPositionType('smuggler_court_position').GetName()] 候选人，您可以雇用其中一人，但需支付一定的费用和月薪" #deepl:2197764143
+ #  hire_smuggler_decision_confirm: "开始搜索" #deepl:2082362254
+ recruit_smuggler_cooldown_tt: "招募[GetCourtPositionType('smuggler_court_position').GetName] 的冷却时间为[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_smuggler_cooldown' ))]" #deepl:40422166
+
+ # Master Assassin
+ hire_master_assassin: "搜索刺客大师" #deepl:3609033881
+ hire_master_assassin_tooltip: "您的仆人会为以下职位推荐一些合适的候选人[GetCourtPositionType('master_assassin_court_position').GetName()]" #deepl:2161765423
+ hire_master_assassin_desc: "[master_assassin_court_position|E] ，消灭主要威胁，并将瘟疫传播到我们敌人的领地。我会让我的仆人们提出一些合适的人选。" #deepl:2501111060
+ #  hire_master_assassin_decision_effect_tooltip: "您将看到一组[GetCourtPositionType('master_assassin_court_position').GetName()] 候选人，您可以雇用其中一人，但需支付一定的费用和月薪" #deepl:1797626658
+ #  hire_master_assassin_decision_confirm: "开始搜索" #deepl:2082362254
+ recruit_master_assassin_cooldown_tt: "招募[GetCourtPositionType('master_assassin_court_position').GetName] 的冷却时间为[GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_master_assassin_cooldown' ))]" #deepl:255274636

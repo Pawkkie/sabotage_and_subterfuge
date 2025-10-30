@@ -1,0 +1,39 @@
+﻿l_spanish:
+
+ # Scheme info
+ spread_plague: "Propagar la peste" #deepl:4245244667
+ spread_plague_desc: "Siembra las semillas de un [epidemic|E] en la capital del objetivo." #deepl:1153062815
+ spread_plague_desc_general: "$spread_plague$ es un [hostile_scheme|E] que intenta iniciar un [epidemic|E] de gravedad variable en la capital del objetivo. Requiere el empleo de un [master_assassin_court_position|E] [court_position|E] para llevarse a cabo, y su objetivo debe estar a cargo de un reino de al menos [county|E] nivel.\n\n Si en algún momento el [master_assassin_court_position|E] se queda sin trabajo o cambia de tarea, el plan se cancelará." #deepl:2819109603
+ SPREAD_PLAGUE_SUCCESS_DESC: "Se han plantado las semillas de la peste y crecerá un [epidemic|E]." #deepl:177361638
+ SPREAD_PLAGUE_DISCOVERY_DESC: "Puedes seguir propagando la peste en el reino [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]." #deepl:865020768
+
+ HAVE_MASTER_ASSASSIN_COURT_POSITION: "Usted emplea a un [master_assassin_court_position|E]" #deepl:3484085729
+ NO_MASTER_ASSASSIN_COURT_POSITION: "Usted no emplea a un [master_assassin_court_position|E]" #deepl:3967107842
+ MASTER_ASSASSIN_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] realiza la tarea Propagar la peste" #deepl:1534254913
+ MASTER_ASSASSIN_NOT_SPREADING_PLAGUE: "[CHARACTER.GetShortUIName|U] no realiza la tarea de Propagar la peste" #deepl:1807230680
+
+ spread_plague_invalidated_title: "Finaliza el plan de propagación de la peste" #deepl:2440907814
+ spread_plague_invalidated_no_master_assassin: "Usted ya no emplea a un [master_assassin_court_position|E]." #deepl:2580810679
+ spread_plague_invalidated_not_spreading_plague: "[CHARACTER.GetShortUIName|U] ya no realiza la tarea Propagar la peste." #deepl:111818189
+ spread_plague_invalidated_dead: "[target.GetShortUIName] ha fallecido. Ya no puedes contagiar la peste a [target.GetHerHim]." #deepl:771244859
+
+ SPREAD_PLAGUE_WITCH: "[GetTrait('witch').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:3138983613
+ SPRREAD_PLAGUE_HERBALIST: "[GetTrait('lifestyle_herbalist').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:2461950543
+ SPREAD_PLAGUE_TORTURER: "[GetTrait('torturer').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:4240971996
+ SPREAD_PLAGUE_SCHEMER: "[GetTrait('schemer').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:314310244
+ SPREAD_PLAGUE_PHYSICIAN: "[GetTrait('lifestyle_physician').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:3711850210
+ SPREAD_PLAGUE_SADISTIC: "[GetTrait('sadistic').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:457203633
+ SPREAD_PLAGUE_WRATHFUL: "[GetTrait('wrathful').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:1019726632
+ SPREAD_PLAGUE_RECLUSIVE: "[GetTrait('reclusive').GetName( GetPlayer )]: $VALOR|=+0$" #deepl:2264568722
+
+ # Interaction
+ spread_plague_interaction: "Propagar la peste #weak (Esquema)#!" #deepl:1053377975
+ spread_plague_interaction_desc: "Intento de propagar la peste en el reino de [recipient.GetShortUINameNoTooltip] para iniciar un [epidemic|E]" #deepl:2424974884
+ spread_plague_interaction_notification: "Propagación de la peste" #deepl:1997907
+ spread_plague_action: "Propagar la peste a" #deepl:4271144009
+
+## Character Interaction Scheme Agent Packages
+ spread_plague_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_alchemist' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_supplier' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:2118420640
+ spread_plague_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_alchemist' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:2866489891
+ spread_plague_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_supplier' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_planner' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]" #deepl:4160035714
+ spread_plague_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName] \n $EFFECT_LIST_BULLET$ [secrecy_i] [GetAgentSlotType( 'agent_courtesan' ).GetName] \n $EFFECT_LIST_BULLET$ [success_chance_max_i] [GetAgentSlotType( 'agent_assassin' ).GetName] \n $EFFECT_LIST_BULLET$ [scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]" #deepl:43299151

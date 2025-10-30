@@ -1,0 +1,10 @@
+﻿l_russian:
+ poison_opinion_ongoing.1001.t: "Ядовитое мнение: [target.GetLiege.GetCulture.GetNameNoTooltip] Культура" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "Простолюдин [target.GetCulture.GetNameNoTooltip] подвергся нападению на улицах [capital.GetNameNoTooltip] из-за какого-то незначительного проступка.\n\n Возложив вину за случившееся на радикальную секту [target.GetLiege.GetCulture.GetNameNoTooltip] бунтарей, я, возможно, смогу убедить [target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)], как [target.GetCulture.GetNameNoTooltip] и жертв, что, возможно, их сеньор более неприятен, чем они могли бы ожидать." #deepl:223848752
+ poison_opinion_ongoing.1001.a: "Прямую ответственность за это несет сайт [target.GetLiege.GetCulture.GetCollectiveNounNoTooltip]." #deepl:684523574
+ poison_opinion_ongoing.1001.b: "Это просто несчастный случай." #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "Ядовитое мнение: Проливая чай" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "Меня пригласили на послеобеденный чай с [target_spouse.GetName], [target.GetNamePossessive] супругом.\n\n Это приятное и полное сплетен мероприятие, и не пройдет и минуты, как [target_spouse.GetShortUIName] начнет отпускать сочные комментарии о [target.GetLiege.GetName]. Конечно, это можно использовать в своих интересах..." #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "Продолжайте..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "Я слышал, что [target.GetLiege.GetSheHe] однажды сделал что-то ужасное..." #deepl:595741215

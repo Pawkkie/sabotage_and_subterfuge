@@ -1,0 +1,14 @@
+﻿l_spanish:
+ smuggle_artifact_event_title: "Contrabando de artefactos:" #deepl:2550214143
+ smuggle_artifact_ongoing.1001.t: "$smuggle_artifact_event_title$ El Anticuario" #deepl:3699066593
+ smuggle_artifact_ongoing.1001.desc: "Uno de los obstáculos obvios para recuperar el artefacto, es [target.GetTitledFirstNamePossessive] anticuario, [antiquarian.GetTitledFirstName].\n\n Hay, por supuesto, múltiples maneras de... #EMP tratar#! con una persona, pero me pregunto si [antiquarian.GetFirstNameNoTooltip] es el tipo de persona a la que podría persuadir para que mirara hacia otro lado ofreciéndole un soborno adecuado." #deepl:4232957168
+ smuggle_artifact_ongoing.1001.a: "El oro es el lenguaje universal del soborno." #deepl:947102797
+ smuggle_artifact_ongoing.1001.a.tt: "Crees que la lealtad de [antiquarian.GetTitledFirstNamePossessive] puede comprarse con riquezas..." #deepl:2592259072
+ smuggle_artifact_ongoing.1001.b: "¿Quizá un artefacto por un artefacto?" #deepl:2399916176
+ smuggle_artifact_ongoing.1001.b.tt: "[antiquarian.GetTitledFirstName] aceptará un "intercambio" equitativo." #deepl:3917558292
+ smuggle_artifact_ongoing.1001.c: "Una introducción a [random_beauty.GetTitledFirstName] podría resultar... #EMP estimulante#!." #deepl:707921107
+ smuggle_artifact_ongoing.1001.c.tt: "Te arriesgas a que [antiquarian.GetTitledFirstName] aprecie la belleza física por encima de las lealtades." #deepl:1547882399
+ smuggle_artifact_ongoing.1001.d: "Buscaré otras posibilidades." #deepl:2149317977
+
+ smuggle_artifact_ongoing_notification.1001.success: "[antiquarian.GetTitledFirstName] Acepta el soborno" #deepl:2266778565
+ smuggle_artifact_ongoing_notification.1001.failure: "[antiquarian.GetTitledFirstName] Rechaza el soborno" #deepl:1499978674

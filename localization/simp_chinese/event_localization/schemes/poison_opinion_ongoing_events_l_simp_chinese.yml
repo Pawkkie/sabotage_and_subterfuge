@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ poison_opinion_ongoing.1001.t: "毒药观点： [target.GetLiege.GetCulture.GetNameNoTooltip] 文化" #deepl:880293451
+ poison_opinion_ongoing.1001.desc: "一位[target.GetCulture.GetNameNoTooltip] 血统的平民在[capital.GetNameNoTooltip] 的街道上因为一些小过失而被人搭讪。\n\n 如果把麻烦归咎于[target.GetLiege.GetCulture.GetNameNoTooltip] 一群激进的后起之秀，我也许可以说服[target.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)] [target.GetCulture.GetNameNoTooltip] 和受害者，也许他们的陛下比他们想象的更令人讨厌。" #deepl:223848752
+ poison_opinion_ongoing.1001.a: "[target.GetLiege.GetCulture.GetCollectiveNounNoTooltip] 直接负责。" #deepl:684523574
+ poison_opinion_ongoing.1001.b: "这只是一个不幸的意外。" #deepl:3125333916
+
+ poison_opinion_ongoing.1002.t: "毒药观点茶香四溢" #deepl:4288986238
+ poison_opinion_ongoing.1002.desc: "我应邀与[target_spouse.GetName],[target.GetNamePossessive] 的配偶共进下午茶。\n\n 这是个愉快而又充满闲话的场合，不一会儿，[target_spouse.GetShortUIName] 就对[target.GetLiege.GetName] 发表了一些有价值的评论。当然，这可以成为我的优势......" #deepl:2775533914
+ poison_opinion_ongoing.1002.a: "继续..." #deepl:1491927696
+ poison_opinion_ongoing.1002.b: "我听说[target.GetLiege.GetSheHe] 曾经做过一件可怕的事..." #deepl:595741215
