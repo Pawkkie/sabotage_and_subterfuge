@@ -1,41 +1,96 @@
-﻿like_weed_in_a_garden_perk = {
-	lifestyle = intrigue_lifestyle
-	tree = temptation
-	position = { 0 0 }
-	icon = node_intrigue
+﻿# Diplomacy 1 (Foreign Affairs)
+accomplished_forger_perk = {
+	lifestyle = diplomacy_lifestyle
+	tree = foreign_affairs
+	position = { 2 3.75 }
+	icon = node_diplomacy
 	
-	auto_selection_weight = {
-		value = 11
-		if = {
-			limit = {
-				has_education_intrigue_trigger = yes
+	parent = forced_vassalage_perk
+	parent = flexible_truces_perk
+	parent = embassies_perk
+	
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_government = landless_adventurer_government }
+				desc = accomplished_forger_perk_adventurer_name
 			}
-			add = 1989
-		}
-		if = {
-			limit = {
-				has_focus = intrigue_temptation_focus
-			}
-			multiply = 5
-		}
-		if = {
-			limit = {
-				can_start_new_lifestyle_tree_trigger = no
-				NOT = { has_perk = enticing_opportunity_perk }
-			}
-			multiply = 0
+			desc = accomplished_forger_perk_name
 		}
 	}
 	
-	can_be_picked = {
-		always = yes
+	government_character_modifier = {
+		flag = government_is_landless_adventurer
+		owned_scheme_secrecy_add = 25
 	}
 	
-	character_modifier = {
-		fertility = 0.3
+	effect = {
+		if = {
+			limit = {
+				NOT = { government_has_flag = government_is_landless_adventurer }
+			}	
+			custom_description_no_bullet = {
+				text = accomplished_forger_perk_effect
+			}
+			custom_description_no_bullet = {
+				text = red_wedding_perk_effect
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = adventurer_accomplished_forger_perk_effect
+			}
+			custom_tooltip = {
+				text = adventurer_accomplished_forger_perk_effect_2
+			}
+		}
+		# SAS Change
+		custom_description_no_bullet = {
+			text = accomplished_forger_ennoble_perk_effect
+		}
+		# SAS Change End
 	}
 }
 
+# Intrigue 1 (Skulduggery)
+digging_for_dirt_perk = {
+	lifestyle = intrigue_lifestyle
+	tree = skulduggery
+	position = { 0 1.25 }
+	icon = node_intrigue
+
+	parent = truth_is_relative_perk
+
+	can_be_picked = {
+		always = yes
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { government_has_flag = government_is_landless_adventurer }
+			}
+			custom_description_no_bullet = {
+				text = digging_for_dirt_perk_effect
+			}
+		}
+		if = {
+			limit = {
+				government_has_flag = government_is_landless_adventurer
+			}	
+			custom_tooltip = {
+				text = adventurer_digging_for_dirt_perk_effect
+			}
+		}
+		# SAS Change
+		custom_description_no_bullet = {
+			text = convincing_perk_effect
+		}
+		# SAS Change End
+	}
+}
+
+# Intrigue 2 (Temptation)
 unshackled_lust_perk = {
 	lifestyle = intrigue_lifestyle
 	tree = temptation
@@ -185,25 +240,6 @@ enticing_opportunity_perk = {
 	# SAS Change End
 }
 
-home_advantage_perk = {
-	lifestyle = intrigue_lifestyle
-	tree = temptation
-	position = { 2 1.25 }
-	icon = node_intrigue
-	
-	parent = enticing_opportunity_perk
-
-	can_be_picked = {
-		always = yes
-	}
-	
-	effect = {
-		custom_description_no_bullet = {
-			text = home_advantage_perk_effect
-		}
-	}
-}
-
 graceful_recovery_perk = {
 	lifestyle = intrigue_lifestyle
 	tree = temptation
@@ -252,32 +288,101 @@ smooth_operator_perk = {
 	# SAS Change End
 }
 
-
-seducer_perk = {
+# Intrigue 3 (Intimidation)
+dreadful_perk = {
 	lifestyle = intrigue_lifestyle
-	tree = temptation
-	position = { 1 5 }
-	icon = trait_seducer
-
-	name = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { is_female = yes }
-				desc = seducer_perk_female_name
+	tree = intimidation
+	position = { 2 0 }
+	icon = node_intrigue
+	
+	auto_selection_weight = {
+		value = 11
+		if = {
+			limit = {
+				has_education_intrigue_trigger = yes
 			}
-			desc = seducer_perk_male_name
+			add = 1989
+		}
+		if = {
+			limit = {
+				has_focus = intrigue_intimidation_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				can_start_new_lifestyle_tree_trigger = no
+				NOT = { has_perk = dark_insights_perk }
+			}
+			multiply = 0
 		}
 	}
-	
-	parent = mortal_adoration_perk
-	parent = smooth_operator_perk
-	
+
+	# SAS Change
+	effect = {
+		custom_description_no_bullet = {
+			text = omerta_perk_effect
+		}
+	}
+	# SAS Change End
+
 	can_be_picked = {
 		always = yes
 	}
 	
-	trait = seducer
+	character_modifier = {
+		dread_gain_mult = 0.3
+	}
+}
+
+# Stewardship 1 (Wealth)
+golden_obligations_perk = {
+	lifestyle = stewardship_lifestyle
+	tree = wealth
+	position = { 2 0 }
+	icon = node_stewardship
+	
+	auto_selection_weight = {
+		value = 11
+		if = {
+			limit = {
+				has_education_stewardship_trigger = yes
+			}
+			add = 1989
+		}
+		if = {
+			limit = {
+				has_focus = stewardship_wealth_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				can_start_new_lifestyle_tree_trigger = no
+			}
+			multiply = 0
+		}
+		if = { # Conquerors go for the best stuff for war!
+			limit = {
+				has_variable = conqueror
+			}
+			add = 10000
+		}
+	}
+
+	government_character_modifier = {
+		flag = government_is_clan
+		clan_tax_slot_add = 1
+	}
+	
 	effect = {
-		add_trait_force_tooltip = seducer
+		# SAS Change
+		# custom_description_no_bullet = {
+		# 	text = golden_obligations_perk_effect
+		# }
+		custom_description_no_bullet = {
+			text = golden_obligations_embezzle_perk_effect
+		}
+		# SAS Change End
 	}
 }

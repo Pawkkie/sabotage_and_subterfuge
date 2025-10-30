@@ -1,0 +1,447 @@
+﻿master_assassin_court_position = {
+	# SAS Change
+	sort_order = 255
+	skill = intrigue
+	# SAS Change End
+	max_available_positions = 1
+	minimum_rank = county
+
+	court_position_asset = {
+		animation = assassin
+		background = "gfx/interface/illustrations/event_scenes/fp2_corridor_night.dds"
+	}
+
+	opinion = {
+		value = regular_court_position_opinion
+	}
+
+	# How high the aptitude has to be to reach the 5 different modifier levels
+	aptitude_level_breakpoints = { 20 40 60 80 }
+
+	# How good is this character in this position? root scope is the holder of the court position
+	aptitude = {
+		value = 1
+		add = court_position_aptitude_boon_voyager_trait
+		add = {
+			value = intrigue
+			multiply = 1.25
+			max = 50
+			desc = court_position_skill_intrigue
+		}
+		add = {
+			value = prowess
+			multiply = 2
+			max = 50
+			desc = court_position_skill_prowess
+		}
+		if = {
+			limit = {
+				dynasty ?= { has_dynasty_perk = fp3_khvarenah_legacy_1 }
+			}
+			add = {
+				value = 10
+				desc =  court_position_khvarenah_legacy_1
+			}
+		}
+		if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+				has_trait_xp = {
+					trait = lifestyle_blademaster
+					value >= 100
+				}
+			}
+			add = {
+				value = 15
+				desc = court_position_blademaster_3_trait
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+				has_trait_xp = {
+					trait = lifestyle_blademaster
+					value >= 50
+				}
+			}
+			add = {
+				value = 10
+				desc = court_position_blademaster_2_trait
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+			}
+			add = {
+				value = 5
+				desc = court_position_blademaster_1_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = deceitful
+			}
+			add = {
+				value = 10
+				desc = court_position_deceitful_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = murderer
+			}
+			add = {
+				value = 20
+				desc = court_position_murderer_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = order_member
+			}
+			add = {
+				value = 25
+				desc = court_position_order_member_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = faith_warrior
+			}
+			add = {
+				value = 25
+				desc = court_position_faith_warrior_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = zealous
+			}
+			add = {
+				value = 25
+				desc = court_position_zealous_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = brave
+			}
+			add = {
+				value = 25
+				desc = court_position_brave_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = compassionate
+			}
+			add = {
+				value = -50
+				desc = court_position_compassionate_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = just
+			}
+			add = {
+				value = -20
+				desc = court_position_just_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = honest
+			}
+			add = {
+				value = -20
+				desc = court_position_honest_trait
+			}
+		}
+		add = court_position_aptitude_eunuch_tradition_value
+		add = court_position_aptitude_traveling_friends_value
+
+		add = court_position_aptitude_family_business_value
+		add = court_position_aptitude_high_penalty_value
+		# Bonus from court.8311
+		if = {
+			limit = { var:bonus_aptitude_role ?= flag:master_assassin }
+			add = {
+				value = cp_bonus_aptitude_value
+				desc = cp_bonus_aptitude
+			}
+		}
+		# Seneschal
+		if = {
+			limit = {
+				liege.court_position:seneschal_court_position ?= {
+					has_variable = performing_improve_court
+				}
+			}
+			add = {
+				value = liege.court_position:seneschal_court_position.seneschal_improve_court_value
+				desc = seneschal_improve_court_aptitude_desc
+			}
+		}
+		# Yeke Jarquchi
+		if = {
+			limit = {
+				liege.court_position:yeke_jarquchi_court_position ?= {
+					has_variable = performing_improve_court
+				}
+			}
+			add = {
+				value = liege.court_position:yeke_jarquchi_court_position.yeke_jarquchi_improve_court_value
+				desc = yeke_jarquchi_improve_court_aptitude_desc
+			}
+		}
+	}
+
+	is_shown = {
+		OR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+				highest_held_title_tier <= tier_county
+			}
+			always = no
+		}
+	}
+
+	valid_position = {
+		OR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
+		# SAS Change
+		OR = {
+			faith = {
+				has_doctrine = tenet_fp3_fedayeen
+			}
+			custom_description = {
+				text = already_established_criminal_underground
+				house = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+			}
+		}
+		# SAS Change End
+	}
+
+	is_shown_character = {
+		scope:employee = {
+			court_position_employee_shown_trigger = yes
+		}
+	}
+
+	valid_character = {
+		scope:employee = {
+			master_assassin_validity_trigger = { EMPLOYER = scope:liege }
+		}
+	}
+
+	revoke_cost = { # root is the liege, no other scopes are passed here!
+		prestige =  {
+			value = major_court_position_prestige_revoke_cost
+			# Set to 0 via obligation hook
+			if = {
+				limit = {
+					court_position_obligation_hook_salary_trigger = {
+						POS = master_assassin
+						LIEGE = root
+					}
+				}
+				multiply = 0
+			}
+			# Avoid AI prestige issues
+			if = {
+				limit = {
+					exists = this
+					is_ai = yes
+				}
+				multiply = 0
+			}
+			# Special case for events
+			if = {
+				limit = {
+					exists = this
+					has_character_flag = free_revoke_cost
+				}
+				multiply = 0
+			}
+			#Lowering for LAAMPS, to match Camp Officer revoke cost
+			if = {
+				limit = { 
+					exists = this
+					government_has_flag = government_is_landless_adventurer
+				}
+				value = minor_court_position_prestige_revoke_cost
+			}
+		}
+	}
+
+	salary = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = no
+					}
+				}
+				add = master_assassin_total_salary_value
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = yes
+					}
+				}
+				add = master_assassin_total_salary_value
+			}
+		}
+		prestige = {
+			value = master_assassin_prestige_salary_value
+		}
+		round = no
+	}
+
+	received_salary = {
+		gold = {
+			value = master_assassin_total_salary_value
+		}
+		prestige = {
+			value = master_assassin_prestige_salary_value
+		}
+		round = no
+	}
+
+	# SAS Change
+	is_powerful_agent = yes
+	# SAS Change End
+
+	# These modifiers are employed based on what level the aptitude reaches (levels are defined as breakpoints)
+	scaling_employer_modifiers = {
+		terrible = {
+			hostile_scheme_phase_duration_add = -3
+			enemy_hostile_scheme_success_chance_add = -2
+		}
+		poor = {
+			hostile_scheme_phase_duration_add = -6
+			enemy_hostile_scheme_success_chance_add = -4
+		}
+		average = {
+			hostile_scheme_phase_duration_add = -9
+			enemy_hostile_scheme_success_chance_add = -6
+		}
+		good = {
+			hostile_scheme_phase_duration_add = -12
+			enemy_hostile_scheme_success_chance_add = -8
+		}
+		excellent = {
+			hostile_scheme_phase_duration_add = -15
+			enemy_hostile_scheme_success_chance_add = -10
+		}
+	}
+
+	modifier = {
+		monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+		owned_hostile_scheme_success_chance_add = 10
+		max_hostile_schemes_add = 1
+	}
+
+	on_court_position_received = {
+		basic_gained_court_position_effect = yes
+		# SAS Change
+		scope:liege = {
+			set_variable = {
+				name = master_assassin_is_spreading_plague
+				value = no
+			}
+		}
+		# SAS Change End
+	}
+	on_court_position_revoked = {
+		basic_revoked_court_position_effect = yes
+		scope:employee = {
+			# Moves to pool after 1 day
+			# Moving them directly here would invalidate the court position too early
+			trigger_event = {
+				id = courtier_guest_management.0999
+				days = 1
+			}
+		}
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
+	}
+	on_court_position_invalidated = {
+		basic_invalidated_court_position_effect = yes
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
+	}
+	on_court_position_vacated = {
+		court_position_vacated_event_effect = {
+			COURT_POSITION_TYPE = master_assassin_court_position
+		}
+		# SAS Change
+		scope:liege = { 
+			remove_variable = master_assassin_is_spreading_plague
+		}
+		# SAS Change End
+	}
+	# Scripted value to determine whether an AI will hire/fire a position or not. Hires over 0, fires under -50. Look in _court_positions.info for more extensive documentation!
+	ai_position_score = {
+		value = 50
+		scope:liege = {
+			# More likely to hire one if you have high dread
+			if = {
+				limit = {
+					dread > medium_dread
+				}
+				add = 25
+			}
+			# More likely if you have dread-traits
+			if = {
+				limit = {
+					OR = {
+						has_trait = sadistic
+						has_trait = callous
+						has_trait = arbitrary
+					}
+				}
+				add = 25
+			}
+			# More likely if you are a zealous jihadist
+			if = {
+				limit = {
+					has_trait = zealous
+				}
+				add = 25
+			}
+		}
+		add = court_position_debt_considerations_value
+	}
+	ai_candidate_score = {
+		value = 50
+		add = scope:base_value
+		add = court_position_candidate_score_base_value
+		add = court_position_candidate_aptitude_value
+		if = { # To stop petitioned positions immediately being fired by the AI
+			limit = {
+				court_position_petition_ai_weight_trigger = { ROLE = master_assassin }
+			}
+			add = 1000
+		}
+	}
+}

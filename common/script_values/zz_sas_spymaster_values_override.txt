@@ -1,0 +1,15 @@
+﻿spymaster_find_secrets_secret_discovery_chance = {
+	add = scope:councillor.intrigue
+	# SAS Change
+	multiply = 2 # was 5, lowered to account for spy network
+	# SAS Change End
+	if = {
+		limit = {
+			employer ?= {
+				has_character_modifier = spymaster_eyes_modifier
+			}
+		}
+		add = 10
+	}
+	max = 95
+}
