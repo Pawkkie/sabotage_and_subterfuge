@@ -26,3 +26,7 @@
  rabble_rouser_task_pacify_the_masses_desc: "鼓励宫廷中的农民，让他们知道他们的生活是美好而舒适的，从而减少造反的机会。" #deepl:3498212988
  increased_rouse_rabble_defense_tt: "敌人[GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:2064610578
  # increased_provoke_vassals_defense_tt: "敌人[GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:1094715817
+
+ # Uplift Camp task (Landless Pacify the Masses)
+ rabble_rouser_task_uplift_camp: "提升营" #deepl:1010629829
+ rabble_rouser_task_uplift_camp_desc: "鼓励营地成员相信生活是美好的，有很多事情可以做，从而促进合作和满足感。" #deepl:3311741558

@@ -26,3 +26,7 @@
  rabble_rouser_task_pacify_the_masses_desc: "Ermutigen Sie die Bauern Ihres Hofes, dass ihr Los gut und bequem ist, und verringern Sie so die Gefahr einer Revolte." #deepl:3498212988
  increased_rouse_rabble_defense_tt: "Feind [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! bis @scheme_success_icon!#P  -20%#! (basierend auf [aptitude|E])" #deepl:2064610578
  # increased_provoke_vassals_defense_tt: "Feind [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! bis @scheme_success_icon!#P  -20%#! (basierend auf [aptitude|E])" #deepl:1094715817
+
+ # Uplift Camp task (Landless Pacify the Masses)
+ rabble_rouser_task_uplift_camp: "Uplift Camp" #deepl:1010629829
+ rabble_rouser_task_uplift_camp_desc: "Ermutigen Sie die Mitglieder Ihres Camps, dass das Leben großartig ist und es genug zu tun gibt, was zu Zusammenarbeit und Zufriedenheit führt." #deepl:3311741558

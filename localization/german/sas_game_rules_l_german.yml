@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "Start von kriminellen Untergründen" #deepl:511066023
  setting_no_undergrounds: "Keine" #deepl:3312814158
- setting_no_undergrounds_desc: "Häuser, die zu Spielbeginn existieren, beginnen nicht mit einem [sas_spy_network|E] oder kriminellen Untergrund" #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] die bei Spielbeginn existieren, beginnen nicht mit einer [sas_spy_network|E] oder einem kriminellen Untergrund" #deepl:3475741180
  setting_fledgling_undergrounds: "Flüchtige Spionagenetze" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "Häuser, die zu Spielbeginn mit einem Oberhaupt existieren, das sowohl eine Grafschaft kontrolliert als auch an einer [administrative_government|E] teilnimmt, beginnen mit einer [sas_spy_network|E]." #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] die zu Spielbeginn mit einem [house_head|E] existieren, das sowohl einen Bezirk kontrolliert als auch an einem [administrative_government|E] teilnimmt, beginnen mit einem [sas_spy_network|E]." #deepl:1839406688
  setting_full_undergrounds: "Welt des Verbrechens" #deepl:2146549835
- setting_full_undergrounds_desc: "Alle Häuser, die zu Spielbeginn existieren, beginnen mit einem [sas_spy_network|E] und kriminellem Untergrund." #deepl:2266201805
+ setting_full_undergrounds_desc: "Alle [houses|E], die zu Spielbeginn existieren, beginnen mit einem [sas_spy_network|E] und kriminellem Untergrund." #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "Verwaltungsauflösung Fraktionen" #deepl:2284848122
+ setting_admin_dissolution_disabled: "Deaktiviert (Vanille)" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] kann sich nicht gegen eine [administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "Aktiviert" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] können sich gegen [administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "Unabhängigkeit der Verwaltung Fraktionen" #deepl:3067864767
+ setting_admin_independence_disabled: "Deaktiviert (Vanille)" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] kann sich nicht gegen [administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "Aktiviert" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] können sich gegen [administrative_governments|E]" #deepl:240579652

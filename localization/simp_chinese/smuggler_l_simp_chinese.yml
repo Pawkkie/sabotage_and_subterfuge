@@ -4,6 +4,7 @@
  smuggler_court_position_desc: "如果你需要把货物从一个地方运到另一个地方，走私者可以帮你联系。虽然不是严格要求，但可疑货物是他们的专长。走私者可以策划抢劫和偷窃文物，还可以加强自己的运输网络。" #deepl:760391573
  smuggler_custom_effect_description_scheme: "$BULLET$可允许访问[GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" #deepl:732188162
  smuggler_custom_effect_description_demand_payment: "$BULLET$打开[demand_payment|E] 互动" #deepl:1175097164
+ smuggler_custom_effect_description_raiding_spoils: "$BULLET$增加掠夺物资时获得的[gold_i][gold|E] " #deepl:1646000165
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
@@ -21,4 +22,8 @@
  smuggler_task_monitor_supplies: "监视器用品" #deepl:2707686834
  smuggler_task_monitor_supplies_desc: "密切关注实际物流，确保运营安全高效。" #deepl:2420428664
  increased_smuggle_artifact_defense_tt: "敌人[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! to@scheme_success_icon!#P  -20%#! (based on[aptitude|E])" #deepl:1035613496
+
+ # Monitor Camp Supplies
+ smuggler_task_monitor_camp_supplies: "监测营用品" #deepl:1774767326
+ smuggler_task_monitor_camp_supplies_desc: "密切关注营地后勤，确保运营安全高效。" #deepl:1363664263
 

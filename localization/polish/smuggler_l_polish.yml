@@ -4,6 +4,7 @@
  smuggler_court_position_desc: "Jeśli potrzebujesz przetransportować towary z jednego punktu do drugiego, przemytnik może ci pomóc. Choć nie jest to bezwzględnie wymagane, podejrzane towary to ich specjalność. Przemytnik umożliwia planowanie napadów i kradzieży artefaktów, a także wzmacnianie własnych sieci transportowych." #deepl:760391573
  smuggler_custom_effect_description_scheme: "$BULLET$Może zezwolić na dostęp do strony [GetScheme('smuggle_artifact').GetTypeName] [hostile_scheme|E]" #deepl:732188162
  smuggler_custom_effect_description_demand_payment: "$BULLET$Odblokowuje interakcję [demand_payment|E] " #deepl:1175097164
+ smuggler_custom_effect_description_raiding_spoils: "$BULLET$Zwiększa [gold_i][gold|E] zdobywane podczas plądrowania gospodarstwa." #deepl:1646000165
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
@@ -21,4 +22,8 @@
  smuggler_task_monitor_supplies: "Materiały eksploatacyjne do monitorów" #deepl:2707686834
  smuggler_task_monitor_supplies_desc: "Miej oko na rzeczywistą logistykę, upewniając się, że operacje pozostają bezpieczne i wydajne." #deepl:2420428664
  increased_smuggle_artifact_defense_tt: "Wróg [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! do @scheme_success_icon!#P  -20%#! (na podstawie [aptitude|E])" #deepl:1035613496
+
+ # Monitor Camp Supplies
+ smuggler_task_monitor_camp_supplies: "Monitorowanie zaopatrzenia obozu" #deepl:1774767326
+ smuggler_task_monitor_camp_supplies_desc: "Miej oko na logistykę obozu, upewniając się, że operacje pozostają bezpieczne i wydajne." #deepl:1363664263
 

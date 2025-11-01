@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "Начало криминального андерграунда" #deepl:511066023
  setting_no_undergrounds: "Нет" #deepl:3312814158
- setting_no_undergrounds_desc: "Дома, существующие в начале игры, не начинаются с [sas_spy_network|E] или криминального подполья." #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] существующие в начале игры, не начинаются с [sas_spy_network|E] или преступного подполья." #deepl:3475741180
  setting_fledgling_undergrounds: "Новые шпионские сети" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "Дома, существующие в начале игры, с главой, который одновременно контролирует графство и участвует в [administrative_government|E], начинаются с [sas_spy_network|E]." #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] существующие на момент начала игры с [house_head|E], который одновременно контролирует округ и участвует в [administrative_government|E], начинаются с [sas_spy_network|E]." #deepl:1839406688
  setting_full_undergrounds: "Мир преступлений" #deepl:2146549835
- setting_full_undergrounds_desc: "Все дома, существующие в начале игры, начинаются с [sas_spy_network|E] и криминального подполья." #deepl:2266201805
+ setting_full_undergrounds_desc: "Все [houses|E], существующие в начале игры, начинают с [sas_spy_network|E] и криминального подполья." #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "Фракции административного распада" #deepl:2284848122
+ setting_admin_dissolution_disabled: "Отключено (ваниль)" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] не может образоваться против [administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "Включено" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] может образоваться против [administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "Фракции административной независимости" #deepl:3067864767
+ setting_admin_independence_disabled: "Отключено (ваниль)" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] не может образоваться против [administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "Включено" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] может образоваться против [administrative_governments|E]" #deepl:240579652

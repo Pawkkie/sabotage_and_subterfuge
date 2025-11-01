@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "启动地下犯罪活动" #deepl:511066023
  setting_no_undergrounds: "无" #deepl:3312814158
- setting_no_undergrounds_desc: "游戏开始时存在的房屋不会从[sas_spy_network|E] 或地下罪犯开始。" #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] 游戏开始时存在的[sas_spy_network|E] 或地下罪犯不开始。" #deepl:3475741180
  setting_fledgling_undergrounds: "新生间谍网络" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "游戏开始时存在的房屋，其户主既控制一个郡，又参与[administrative_government|E] ，则以[sas_spy_network|E] 开始。" #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] 在游戏开始时存在一个[house_head|E] ，该 既控制一个县，又参与一个[administrative_government|E] 开始时存在一个[sas_spy_network|E] 。" #deepl:1839406688
  setting_full_undergrounds: "犯罪世界" #deepl:2146549835
- setting_full_undergrounds_desc: "游戏开始时，所有存在的房屋都有一个[sas_spy_network|E] 和地下罪犯。" #deepl:2266201805
+ setting_full_undergrounds_desc: "游戏开始时存在的所有[houses|E] 都以[sas_spy_network|E] 和地下犯罪活动开始。" #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "行政解散派别" #deepl:2284848122
+ setting_admin_dissolution_disabled: "禁用（香草）" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] 不能形成对[administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "已启用" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] 会对[administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "行政独立派" #deepl:3067864767
+ setting_admin_independence_disabled: "禁用（香草）" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] 不能形成对[administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "已启用" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] 会对[administrative_governments|E]" #deepl:240579652

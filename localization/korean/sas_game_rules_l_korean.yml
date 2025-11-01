@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "크라임 언더그라운드 시작" #deepl:511066023
  setting_no_undergrounds: "없음" #deepl:3312814158
- setting_no_undergrounds_desc: "게임 시작 시 존재하는 집은 [sas_spy_network|E] 또는 범죄자 지하로 시작하지 않습니다." #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] 게임 시작 시 존재하는 [sas_spy_network|E] 또는 크라임 언더그라운드로 시작하지 않습니다." #deepl:3475741180
  setting_fledgling_undergrounds: "신생 스파이 네트워크" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "게임 시작 시 카운티를 지배하고 [administrative_government|E] 에 참여하는 족장이 있는 하우스는 [sas_spy_network|E] 로 시작합니다." #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] 게임 시작 시 카운티를 제어하고 [administrative_government|E] 시작 시 [sas_spy_network|E] 로 시작하는 [house_head|E] 로 존재합니다." #deepl:1839406688
  setting_full_undergrounds: "월드 오브 크라임" #deepl:2146549835
- setting_full_undergrounds_desc: "게임 시작 시 존재하는 모든 집은 [sas_spy_network|E] 및 범죄자 지하로 시작됩니다." #deepl:2266201805
+ setting_full_undergrounds_desc: "게임 시작 시 존재하는 모든 [houses|E] 은 [sas_spy_network|E] 과 범죄자 지하로 시작됩니다." #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "행정 해산 파벌" #deepl:2284848122
+ setting_admin_dissolution_disabled: "장애인(바닐라)" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] 에 대해 형성할 수 없습니다. [administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "활성화됨" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] 에 대해 형성될 수 있습니다. [administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "관리 독립 파벌" #deepl:3067864767
+ setting_admin_independence_disabled: "장애인(바닐라)" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] 에 대해 형성할 수 없습니다. [administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "활성화됨" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] 에 대해 형성될 수 있습니다. [administrative_governments|E]" #deepl:240579652

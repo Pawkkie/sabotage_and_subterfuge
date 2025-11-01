@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "Comenzar a delinquir" #deepl:511066023
  setting_no_undergrounds: "Ninguno" #deepl:3312814158
- setting_no_undergrounds_desc: "Las casas que existen al comienzo del juego no empiezan con un [sas_spy_network|E] o un subterráneo criminal" #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] que existen al inicio del juego no comienzan con un [sas_spy_network|E] o subterráneo criminal" #deepl:3475741180
  setting_fledgling_undergrounds: "Redes de espionaje en ciernes" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "Las casas que existen al comienzo del juego con un jefe que a la vez controla un condado y participa en un [administrative_government|E] comienzan con un [sas_spy_network|E]." #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] que existen al comienzo del juego con un [house_head|E] que controla un condado y participa en un [administrative_government|E] comienzan con un [sas_spy_network|E]." #deepl:1839406688
  setting_full_undergrounds: "El mundo del crimen" #deepl:2146549835
- setting_full_undergrounds_desc: "Todas las casas que existen al inicio del juego comienzan con un [sas_spy_network|E] y un subterráneo criminal." #deepl:2266201805
+ setting_full_undergrounds_desc: "Todas las [houses|E] que existen al inicio del juego comienzan con una [sas_spy_network|E] y una clandestinidad criminal." #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "Disolución administrativa Facciones" #deepl:2284848122
+ setting_admin_dissolution_disabled: "Desactivado (Vainilla)" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] no puede formarse contra un [administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "Activado" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] puede formarse contra [administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "Independencia administrativa Facciones" #deepl:3067864767
+ setting_admin_independence_disabled: "Desactivado (Vainilla)" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] no puede formarse contra [administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "Activado" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] puede formarse contra [administrative_governments|E]" #deepl:240579652

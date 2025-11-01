@@ -32,3 +32,6 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979
+ game_concept_sas_nation_fracturing_faction: "Auflösungsfraktion" #deepl:3327982817
+ game_concept_sas_nation_fracturing_factions: "Auflösung Fraktionen" #deepl:1435560010
+ game_concept_sas_nation_fracturing_faction_desc: "Die Mitglieder der $game_concept_sas_nation_fracturing_faction$ versuchen, das Reich ihres Lehnsherrn zu zerstören. Wenn sie erfolgreich sind, werden sie alle [independent|E], und ihre [liege|E] verlieren ihre [primary_title|E] und andere [titles|E] desselben [title_tier|E]." #deepl:881141905

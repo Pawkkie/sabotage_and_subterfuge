@@ -32,3 +32,6 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979
+ game_concept_sas_nation_fracturing_faction: "解散派" #deepl:3327982817
+ game_concept_sas_nation_fracturing_factions: "解散派别" #deepl:1435560010
+ game_concept_sas_nation_fracturing_faction_desc: "$game_concept_sas_nation_fracturing_faction$ 的成员试图摧毁其统治者的王国。如果成功，他们都将成为[independent|E] ，他们的[liege|E] 将失去他们的[primary_title|E] 和同一[title_tier|E] 的其他[titles|E] 。" #deepl:881141905

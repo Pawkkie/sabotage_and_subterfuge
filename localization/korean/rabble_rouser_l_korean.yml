@@ -26,3 +26,7 @@
  rabble_rouser_task_pacify_the_masses_desc: "궁정의 농민들에게 그들의 부지가 좋고 편안하다고 격려하여 반란의 가능성을 줄이세요." #deepl:3498212988
  increased_rouse_rabble_defense_tt: "적 [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:2064610578
  # increased_provoke_vassals_defense_tt: "적 [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:1094715817
+
+ # Uplift Camp task (Landless Pacify the Masses)
+ rabble_rouser_task_uplift_camp: "업리프트 캠프" #deepl:1010629829
+ rabble_rouser_task_uplift_camp_desc: "캠프 구성원들에게 삶은 훌륭하고 누릴 것이 많다고 격려하여 협동심과 만족감을 이끌어내세요." #deepl:3311741558

@@ -4,8 +4,22 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "犯罪者のアンダーグラウンドを始める" #deepl:511066023
  setting_no_undergrounds: "なし" #deepl:3312814158
- setting_no_undergrounds_desc: "ゲーム開始時に存在する家は、[sas_spy_network|E] や犯罪者の地下からは始まらない。" #deepl:3086919095
+ setting_no_undergrounds_desc: "[houses|E] ゲーム開始時に存在する、[sas_spy_network|E] や犯罪者の地下から始まることはない。" #deepl:3475741180
  setting_fledgling_undergrounds: "駆け出しスパイ・ネットワーク" #deepl:3035369536
- setting_fledgling_undergrounds_desc: "ゲーム開始時に存在する、郡を支配し、[administrative_government|E] に参加する首長のいる家は、[sas_spy_network|E] で始まる。" #deepl:2991418532
+ setting_fledgling_undergrounds_desc: "[houses|E] ゲーム開始時に存在し、[house_head|E] 郡を支配し、[administrative_government|E] に参加しているものは、[sas_spy_network|E] で始まる。" #deepl:1839406688
  setting_full_undergrounds: "犯罪の世界" #deepl:2146549835
- setting_full_undergrounds_desc: "ゲーム開始時に存在するすべての家は、[sas_spy_network|E] 、地下の犯罪者から始まる。" #deepl:2266201805
+ setting_full_undergrounds_desc: "ゲーム開始時に存在するすべての[houses|E] は、[sas_spy_network|E] 、地下の犯罪者から始まる。" #deepl:1611123334
+
+ # Administrative Dissolution
+ rule_sas_administrative_dissolution: "行政解散派閥" #deepl:2284848122
+ setting_admin_dissolution_disabled: "無効（バニラ）" #deepl:1237531499
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] に対して形成することはできない。[administrative_governments|E]" #deepl:890215573
+ setting_admin_dissolution_enabled: "有効" #deepl:3001197554
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] に対して形成することができる。[administrative_governments|E]" #deepl:3619636565
+
+ # Independence Dissolution
+ rule_sas_administrative_independence: "行政独立派閥" #deepl:3067864767
+ setting_admin_independence_disabled: "無効（バニラ）" #deepl:1237531499
+ setting_admin_independence_disabled_desc: "[independence_factions|E] に対して形成することはできない。[administrative_governments|E]" #deepl:42541446
+ setting_admin_independence_enabled: "有効" #deepl:3001197554
+ setting_admin_independence_enabled_desc: "[independence_factions|E] に対して形成することができる。[administrative_governments|E]" #deepl:240579652

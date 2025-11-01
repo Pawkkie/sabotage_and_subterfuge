@@ -4,6 +4,7 @@
  smuggler_court_position_desc: "한 지점에서 다른 지점으로 물품을 이동해야 하는 경우 밀수꾼을 연결해줄 수 있습니다. 반드시 필요한 것은 아니지만, 의심스러운 물품은 이들의 전문 분야입니다. 밀수업자를 통해 강도 계획과 유물 절도를 할 수 있을 뿐만 아니라 자체 운송 네트워크를 강화할 수도 있습니다." #deepl:760391573
  smuggler_custom_effect_description_scheme: "$BULLET$ [GetScheme('smuggle_artifact').GetTypeName] 에 대한 액세스를 허용할 수 있습니다. [hostile_scheme|E]" #deepl:732188162
  smuggler_custom_effect_description_demand_payment: "$BULLET$ [demand_payment|E] 상호 작용을 잠금 해제합니다." #deepl:1175097164
+ smuggler_custom_effect_description_raiding_spoils: "$BULLET$점령지 약탈 시 획득하는 [gold_i][gold|E] 증가합니다." #deepl:1646000165
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
@@ -21,4 +22,8 @@
  smuggler_task_monitor_supplies: "모니터 소모품" #deepl:2707686834
  smuggler_task_monitor_supplies_desc: "영역 물류를 면밀히 주시하여 운영이 안전하고 효율적으로 유지되도록 하세요." #deepl:2420428664
  increased_smuggle_artifact_defense_tt: "적 [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! ~ @scheme_success_icon!#P  -20%#! ( [aptitude|E] 기준 )" #deepl:1035613496
+
+ # Monitor Camp Supplies
+ smuggler_task_monitor_camp_supplies: "캠프 용품 모니터링" #deepl:1774767326
+ smuggler_task_monitor_camp_supplies_desc: "캠프 물류를 면밀히 주시하여 운영이 안전하고 효율적으로 유지되도록 하세요." #deepl:1363664263
 

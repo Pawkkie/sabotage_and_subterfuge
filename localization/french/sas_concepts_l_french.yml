@@ -32,3 +32,6 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979
+ game_concept_sas_nation_fracturing_faction: "Faction de dissolution" #deepl:3327982817
+ game_concept_sas_nation_fracturing_factions: "Factions de dissolution" #deepl:1435560010
+ game_concept_sas_nation_fracturing_faction_desc: "Les membres de $game_concept_sas_nation_fracturing_faction$ cherchent à détruire le royaume de leur seigneur. S'ils réussissent, ils deviendront tous [independent|E], et leur [liege|E] perdra son [primary_title|E] et les autres [titles|E] du même [title_tier|E]." #deepl:881141905

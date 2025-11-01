@@ -4,6 +4,7 @@
  smuggler_court_position_desc: "Если вам нужно перевезти товар из одной точки в другую, контрабандист сможет обеспечить вам связь. Хотя это и не является обязательным, сомнительные товары - их специализация. Контрабандист позволяет планировать ограбления и похищать артефакты, а также укреплять собственные транспортные сети." #deepl:760391573
  smuggler_custom_effect_description_scheme: "$BULLET$Можно открыть доступ к сайту [GetScheme('smuggle_artifact').GetTypeName]. [hostile_scheme|E]" #deepl:732188162
  smuggler_custom_effect_description_demand_payment: "$BULLET$Разблокировка [demand_payment|E] Взаимодействие" #deepl:1175097164
+ smuggler_custom_effect_description_raiding_spoils: "$BULLET$Увеличивает [gold_i][gold|E] , получаемый при разграблении холда." #deepl:1646000165
 
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]" #deepl:2392669825
@@ -21,4 +22,8 @@
  smuggler_task_monitor_supplies: "Принадлежности для мониторов" #deepl:2707686834
  smuggler_task_monitor_supplies_desc: "Внимательно следите за логистикой в реальности, обеспечивая безопасность и эффективность операций." #deepl:2420428664
  increased_smuggle_artifact_defense_tt: "Враг [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E] :\n@scheme_success_icon! #P  -0%#! до @scheme_success_icon!#P  -20%#! (на основе [aptitude|E])" #deepl:1035613496
+
+ # Monitor Camp Supplies
+ smuggler_task_monitor_camp_supplies: "Принадлежности для лагеря "Монитор" #deepl:1774767326
+ smuggler_task_monitor_camp_supplies_desc: "Следите за логистикой лагеря, обеспечивая безопасность и эффективность работы." #deepl:1363664263
 

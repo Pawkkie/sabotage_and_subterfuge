@@ -32,3 +32,6 @@
  game_concept_sas_induct_bastard_interaction_desc: "$sas_induct_bastard_interaction_concept_desc$" #deepl:3692770027
  game_concept_sas_steal_bastard_interaction: "$sas_steal_bastard_interaction$" #deepl:1376557178
  game_concept_sas_steal_bastard_interaction_desc: "$sas_steal_bastard_interaction_concept_desc$" #deepl:3268489979
+ game_concept_sas_nation_fracturing_faction: "해산 진영" #deepl:3327982817
+ game_concept_sas_nation_fracturing_factions: "해산 파벌" #deepl:1435560010
+ game_concept_sas_nation_fracturing_faction_desc: "$game_concept_sas_nation_fracturing_faction$ 의 구성원들은 그들의 군주의 영역을 파괴하려고 합니다. 성공하면 모두 [independent|E] 이 되고, [liege|E] 은 [primary_title|E] 과 다른 [titles|E] 의 같은 [title_tier|E] 을 잃게 됩니다." #deepl:881141905
