@@ -461,6 +461,7 @@ agot_remove_from_spy_network_interaction = {
 	category = interaction_category_friendly
 	icon = secret
 	desc = agot_remove_from_spy_network_interaction_desc
+	use_diplomatic_range = no
 	is_shown = {
 		scope:actor = {
 			is_target_in_variable_list = {

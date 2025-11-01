@@ -317,24 +317,73 @@ rabble_rouser_task_pacify_the_masses = {
 
 	scaling_employer_modifiers = {
 		terrible = {
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				character_capital_county_monthly_development_growth_add = 0.01
+			}
 			county_opinion_add = 1
-			character_capital_county_monthly_development_growth_add = 0.01
+			provisions_gain_mult = 0.1
 		}
 		poor = {
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				character_capital_county_monthly_development_growth_add = 0.03
+				
+			}
 			county_opinion_add = 3
-			character_capital_county_monthly_development_growth_add = 0.02
+			provisions_gain_mult = 0.15
 		}
 		average = {
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				character_capital_county_monthly_development_growth_add = 0.05
+				
+			}
 			county_opinion_add = 5
-			character_capital_county_monthly_development_growth_add = 0.05
+			provisions_gain_mult = 0.2
 		}
 		good = {
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				character_capital_county_monthly_development_growth_add = 0.07
+				
+			}
 			county_opinion_add = 7
-			character_capital_county_monthly_development_growth_add = 0.07
+			provisions_gain_mult = 0.25
 		}
 		excellent = {
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				character_capital_county_monthly_development_growth_add = 0.1
+				
+			}
 			county_opinion_add = 10
-			character_capital_county_monthly_development_growth_add = 0.1
+			provisions_gain_mult = 0.3
 		}
 	}
 

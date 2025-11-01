@@ -80,19 +80,59 @@
 
 	scaling_employer_modifiers = {
 		terrible = {
-		 	epidemic_resistance = 2
+			if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				epidemic_resistance = 2
+			}
 		}
 		poor = {
-		 	epidemic_resistance = 4
+		 	if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				epidemic_resistance = 4
+			}
 		}
 		average = {
-		 	epidemic_resistance = 6
+		 	if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				epidemic_resistance = 6
+			}
 		}
 		good = {
-		 	epidemic_resistance = 8
+		 	if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				epidemic_resistance = 8
+			}
 		}
 		excellent = {
-		 	epidemic_resistance = 10
+		 	if = {
+				limit = {
+					OR = {
+						is_landed_or_landless_administrative = yes
+						government_has_flag = government_is_nomadic
+					}
+				}
+				epidemic_resistance = 10
+			}
 		}
 	}
 

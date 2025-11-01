@@ -259,10 +259,6 @@
 	}
 
 	is_shown = {
-		OR = {
-			is_landed_or_landless_administrative = yes
-			government_has_flag = government_is_nomadic
-		}
 		trigger_if = {
 			limit = {
 				is_ai = yes
@@ -273,7 +269,6 @@
 	}
 
 	valid_position = {
-		is_landed_or_landless_administrative = yes
 		highest_held_title_tier >= tier_county
 		OR = {
 			capital_province = {
@@ -402,6 +397,7 @@
 
 	custom_employer_modifier_description = smuggler_custom_effect_description_scheme
 	custom_employer_modifier_description = smuggler_custom_effect_description_demand_payment
+	custom_employer_modifier_description = smuggler_custom_effect_description_raiding_spoils
 
 	modifier = {
 		intrigue = 1
