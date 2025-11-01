@@ -26,3 +26,7 @@
  rabble_rouser_task_pacify_the_masses_desc: "Encourage the peasants of your court that their lot is good and comfortable, reducing the chance of revolt."
  increased_rouse_rabble_defense_tt: "Enemy [GetScheme('rouse_rabble').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
  # increased_provoke_vassals_defense_tt: "Enemy [GetScheme('provoke_vassals').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
+
+ # Uplift Camp task (Landless Pacify the Masses)
+ rabble_rouser_task_uplift_camp: "Uplift Camp"
+ rabble_rouser_task_uplift_camp_desc: "Encourage the members of your camp that life is great and there's plenty to go around, leading to cooperation and contentment."

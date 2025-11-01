@@ -23,3 +23,7 @@
  smuggler_task_monitor_supplies_desc: "Keep a close eye on realm logistics, making sure operations remain safe and efficient."
  increased_smuggle_artifact_defense_tt: "Enemy [GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P -0%#! to @scheme_success_icon!#P -20%#! (based on [aptitude|E])"
 
+ # Monitor Camp Supplies
+ smuggler_task_monitor_camp_supplies: "Monitor Camp Supplies"
+ smuggler_task_monitor_camp_supplies_desc: "Keep a close eye on camp logistics, making sure operations remain safe and efficient."
+

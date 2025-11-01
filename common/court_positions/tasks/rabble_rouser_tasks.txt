@@ -1,4 +1,89 @@
-﻿rabble_rouser_task_rouse_rabble = {
+﻿rabble_rouser_task_uplift_camp = {
+	court_position_types = { 
+		rabble_rouser_court_position 
+	}
+	is_shown = {
+		NOR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
+	}
+	is_valid_showing_failures_only = {
+	}
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	on_start = {
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+		custom_tooltip = increased_rouse_rabble_defense_tt
+		# custom_tooltip = increased_provoke_vassals_defense_tt
+	}
+
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:rabble_rouser_is_pacifying_the_masses = no }
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = rabble_rouser_is_pacifying_the_masses
+				value = no
+			}
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+			county_opinion_add = 1
+			provisions_gain_mult = 0.1
+		}
+		poor = {
+			county_opinion_add = 3
+			provisions_gain_mult = 0.15
+		}
+		average = {
+			county_opinion_add = 5
+			provisions_gain_mult = 0.2
+		}
+		good = {
+			county_opinion_add = 7
+			provisions_gain_mult = 0.25
+		}
+		excellent = {
+			county_opinion_add = 10
+			provisions_gain_mult = 0.3
+		}
+	}
+
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_sociability
+		}
+	}
+}
+
+rabble_rouser_task_rouse_rabble = {
 	court_position_types = { 
 		rabble_rouser_court_position
 	}
@@ -270,6 +355,10 @@ rabble_rouser_task_pacify_the_masses = {
 		rabble_rouser_court_position 
 	}
 	is_shown = {
+		OR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
 	}
 	is_valid_showing_failures_only = {
 	}
@@ -317,73 +406,24 @@ rabble_rouser_task_pacify_the_masses = {
 
 	scaling_employer_modifiers = {
 		terrible = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				character_capital_county_monthly_development_growth_add = 0.01
-			}
+			character_capital_county_monthly_development_growth_add = 0.01
 			county_opinion_add = 1
-			provisions_gain_mult = 0.1
 		}
 		poor = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				character_capital_county_monthly_development_growth_add = 0.03
-				
-			}
+			character_capital_county_monthly_development_growth_add = 0.03
 			county_opinion_add = 3
-			provisions_gain_mult = 0.15
 		}
 		average = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				character_capital_county_monthly_development_growth_add = 0.05
-				
-			}
+			character_capital_county_monthly_development_growth_add = 0.05
 			county_opinion_add = 5
-			provisions_gain_mult = 0.2
 		}
 		good = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				character_capital_county_monthly_development_growth_add = 0.07
-				
-			}
+			character_capital_county_monthly_development_growth_add = 0.07
 			county_opinion_add = 7
-			provisions_gain_mult = 0.25
 		}
 		excellent = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				character_capital_county_monthly_development_growth_add = 0.1
-				
-			}
+			character_capital_county_monthly_development_growth_add = 0.1
 			county_opinion_add = 10
-			provisions_gain_mult = 0.3
 		}
 	}
 

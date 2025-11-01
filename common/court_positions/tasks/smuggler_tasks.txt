@@ -1,4 +1,91 @@
-﻿smuggler_task_plan_heist = {
+﻿smuggler_task_monitor_camp_supplies = {
+	court_position_types = { 
+		smuggler_court_position 
+	}
+	is_shown = {
+		NOR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
+	}
+	is_valid_showing_failures_only = {
+	}
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				multiply = 2
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	on_start = {
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_monitoring_supplies
+				value = yes
+			}
+		}
+		custom_tooltip = increased_smuggle_artifact_defense_tt
+	}
+
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:smuggler_is_monitoring_supplies = no }
+			set_variable = {
+				name = smuggler_is_monitoring_supplies
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_monitoring_supplies
+				value = no
+			}
+		}
+	}
+
+	scaling_employer_modifiers = {
+		terrible = {
+			character_travel_speed = 5
+			supply_duration = 0.1
+		}
+		poor = {
+			character_travel_speed = 5
+			supply_duration = 0.15
+		}
+		average = {
+			character_travel_speed = 10
+			supply_duration = 0.2
+		}
+		good = {
+			character_travel_speed = 10
+			supply_duration = 0.25
+		}
+		excellent = {
+			character_travel_speed = 15
+			supply_duration = 0.3
+		}
+	}
+
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_compassion
+			add = ai_rationality
+			subtract = ai_greed
+		}
+	}
+}
+
+smuggler_task_plan_heist = {
 	court_position_types = { 
 		smuggler_court_position
 	}
@@ -93,6 +180,10 @@ smuggler_task_monitor_supplies = {
 		smuggler_court_position 
 	}
 	is_shown = {
+		OR = {
+			is_landed_or_landless_administrative = yes
+			government_has_flag = government_is_nomadic
+		}
 	}
 	is_valid_showing_failures_only = {
 	}
@@ -140,74 +231,24 @@ smuggler_task_monitor_supplies = {
 
 	scaling_employer_modifiers = {
 		terrible = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				supply_limit_mult = 0.04
-				build_speed = -0.05
-			}
-			character_travel_speed = 5
-			supply_duration = 0.1
+			supply_limit_mult = 0.04
+			build_speed = -0.05
 		}
 		poor = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				supply_limit_mult = 0.08
-				build_speed = -0.1
-			}
-			character_travel_speed = 5
-			supply_duration = 0.15
+			supply_limit_mult = 0.08
+			build_speed = -0.1
 		}
 		average = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				build_speed = -0.15
-				supply_limit_mult = 0.12
-			}
-			character_travel_speed = 10
-			supply_duration = 0.2
+			build_speed = -0.15
+			supply_limit_mult = 0.12
 		}
 		good = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				build_speed = -0.2
-				supply_limit_mult = 0.16
-			}
-			character_travel_speed = 10
-			supply_duration = 0.25
+			build_speed = -0.2
+			supply_limit_mult = 0.16
 		}
 		excellent = {
-			if = {
-				limit = {
-					OR = {
-						is_landed_or_landless_administrative = yes
-						government_has_flag = government_is_nomadic
-					}
-				}
-				build_speed = -0.3
-				supply_limit_mult = 0.2
-			}
-			character_travel_speed = 15
-			supply_duration = 0.3
+			build_speed = -0.3
+			supply_limit_mult = 0.2
 		}
 	}
 

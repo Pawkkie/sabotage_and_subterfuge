@@ -1,4 +1,4 @@
-# Called when a siege loots a holding
+﻿# Called when a siege loots a holding
 # root is sieging character
 # scope:barony is the barony title that got looted
 # scope:county is the county title for the barony
