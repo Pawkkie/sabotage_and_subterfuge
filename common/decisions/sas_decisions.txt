@@ -125,7 +125,10 @@ sas_expand_spy_network_decision = {
 
 	is_valid = {
 		is_house_head = yes
-		cp:councillor_spymaster.intrigue >= 15
+		OR = {
+			intrigue >= 15
+			cp:councillor_spymaster.intrigue >= 15
+		}
 		custom_tooltip = {
 			text = sas_expand_spy_network_have_enough_spies_tt
 			spy_network_members_count_gui >= 3
