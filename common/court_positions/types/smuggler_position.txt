@@ -397,7 +397,7 @@
 
 	custom_employer_modifier_description = smuggler_custom_effect_description_scheme
 	custom_employer_modifier_description = smuggler_custom_effect_description_demand_payment
-	custom_employer_modifier_description = smuggler_custom_effect_description_raiding_spoils
+	# custom_employer_modifier_description = smuggler_custom_effect_description_raiding_spoils
 
 	modifier = {
 		intrigue = 1
