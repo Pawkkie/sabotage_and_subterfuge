@@ -123,14 +123,45 @@ agot_spy_network.0105 = {
 						limit = {
 							root.culture = { can_get_innovation_from = scope:spy_temp.liege.capital_county.culture }
 						}
+
+						scope:spy_temp.liege.capital_county.culture = {
+							random_known_innovation = {
+								limit = {
+									NOT = { is_known_by_culture = root.culture }
+								}
+								save_scope_as = new_stolen_innovation
+							}
+						}
+						# Unlock an entire innovation
+						# random = {
+						# 	chance = 1
+						# 	root = {
+						# 		send_interface_message = {
+						# 			type = event_toast_effect_good
+						# 			title = sas_spy_stole_innovation_message
+						# 			left_icon = root
+						# 			right_icon = scope:spy_temp
+						# 			root.culture = {
+						# 				add_innovation = scope:new_stolen_innovation
+						# 			}
+						# 		}
+						# 		hidden_effect = {
+						# 			set_variable = {
+						# 				name = spies_discovered_free_innovation
+						# 				value = yes
+						# 				years = 30
+						# 			}
+						# 		}
+						# 	}	
+						# }
 						random = {
-							chance = 1
+							chance = 10
 							modifier = {
 								root = {
 									exists = var:femme_fatale_is_embracing_the_spiders
 									var:femme_fatale_is_embracing_the_spiders = yes
 								}
-								add = 1
+								add = 10
 							}
 							modifier = {
 								root = {
@@ -138,34 +169,22 @@ agot_spy_network.0105 = {
 										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
 									}
 								}
-								add = 1
+								add = 10
 							}
 							root = {
 								send_interface_message = {
 									type = event_toast_effect_good
-									title = sas_spy_stole_innovation_message
+									title = sas_spy_stole_innovation_progress_message
 									left_icon = root
 									right_icon = scope:spy_temp
 									root.culture = {
-										get_random_innovation_from = scope:spy_temp.liege.capital_county.culture
+										add_innovation_progress = {
+											value = scope:spy_temp.intrigue
+											target = scope:new_stolen_innovation
+										}
 									}
 								}
-								hidden_effect = {
-									set_variable = {
-										name = spies_discovered_free_innovation
-										value = yes
-										years = 25
-									}
-								}
-							}	
-						}
-					}
-				}
-				else = {
-					root = {
-						remove_list_variable = {
-							name = spy_network_members
-							target = prev
+							}
 						}
 					}
 				}
@@ -1272,8 +1291,50 @@ agot_spy_network.0800 = { # inform about potential new spy
 
 	option = {
 		name = agot_spy_network.0800.a
+		root = {
+			# Joins your spy network tooltip
+			custom_tooltip = invite_to_spy_network_event_target_added_to_network.tt
+			add_prestige = -10
+		}
+		scope:potential_new_spy = {
+			add_prestige = 20
+		}
+		hidden_effect = {
+			root = {
+				add_to_variable_list = {
+					name = spy_network_members
+					target = scope:potential_new_spy
+				}
+				set_variable = {
+					name = hired_spy
+					value = yes
+				}
+			}
+		}
 		ai_chance = {
 			base = 100
+		}
+	}
+	option = {
+		name = agot_spy_network.0800.b
+	}
+	after = {
+		if = {
+			limit = { 
+				root = {
+					exists = var:hired_spy
+				}
+			}
+			root = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = invite_to_spy_network_toast_title
+					left_icon = root
+					right_icon = scope:potential_new_spy
+					custom_tooltip = invite_to_spy_network_event_toast_desc
+				}
+				remove_variable = hired_spy
+			}
 		}
 	}
 }

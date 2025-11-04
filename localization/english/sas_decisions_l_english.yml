@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "The spider web grows!"
  sas_expand_spy_network_double_spies.tt: "You may employ double the number of [sas_spies|E]"
  sas_expand_spy_network_child_spies.tt: "You may employ children at least 8 years old as [sas_spies|E]"
- sas_expand_spy_network_innovation_spies.tt: "Your [sas_spies|E] may steal civic or military [innovations|E] from their courts of residence if you are a [culture_head|E]#weak (25 year cooldown)#!"
+ sas_expand_spy_network_innovation_spies.tt: "Your [sas_spies|E] may steal civic or military [innovations|E] from their courts of residence if you are a [culture_head|E]"
  sas_expand_spy_network_have_enough_spies_tt: "You employ at least 3 [sas_spies|E]"
  sas_expand_spy_network_have_paid_spies_tt: "You have bought at least 3 [secrets|E] from [sas_spies|E]"
 

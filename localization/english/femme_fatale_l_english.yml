@@ -26,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "Embrace the Spiders"
  femme_fatale_task_embrace_the_spiders_desc: "Weave the webs of the [sas_spy_network|E] ever farther afield, learning foreign secrets more effectively than ever."
- femme_fatale_increase_spy_discovery_chance_tt: "Increase the chances of your [sas_spies|E] discovering secrets and innovations"
+ femme_fatale_increase_spy_discovery_chance_tt: "Increase the chances of your [sas_spies|E] discovering secrets and [innovations|E]"
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "Soothe and Surveil"
