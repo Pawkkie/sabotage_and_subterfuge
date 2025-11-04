@@ -142,8 +142,8 @@ agot_spy_network.0105 = {
 							}
 							root = {
 								send_interface_message = {
-									type = event_raid_good
-									title = raze_intent_message
+									type = event_toast_effect_good
+									title = sas_spy_stole_innovation_message
 									left_icon = root
 									right_icon = scope:spy_temp
 									root.culture = {

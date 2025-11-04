@@ -131,3 +131,8 @@ master_assassin_spreading_plague = {
 	first = MASTER_ASSASSIN_SPREADING_PLAGUE
 	first_not = MASTER_ASSASSIN_NOT_SPREADING_PLAGUE
 }
+
+recently_ennobled = {
+	first = RECENTLY_ENNOBLED
+	first_not = DID_NOT_RECENTLY_ENNOBLE
+}

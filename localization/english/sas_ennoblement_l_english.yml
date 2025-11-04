@@ -1,7 +1,7 @@
 ﻿l_english:
  sas_ennoblement_interaction: "Ennoblement"
  sas_ennoblement_interaction_desc: "Devise an excuse to ennoble [recipient.GetShortUINameNoTooltip] from lowborn status, potentially gaining a favor or loyalty [hook|E]."
- sas_ennoblement_interaction_concept_desc: "Devise an excuse to ennoble a courtier from lowborn status, potentially gaining a favor or loyalty [hook|E]."
+ sas_ennoblement_interaction_concept_desc: "Devise an excuse to ennoble a courtier from lowborn status, potentially gaining a favor or loyalty [hook|E].\n\nMay only be used once every 5 years to avoid raising suspicion."
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] will be ennobled and found a new [dynasty|E]"
  sas_ennoblement_opinion: "Ennobled me"
  sas_ennoblement_title_name: "Ennoblement of [recipient.GetShortUINameNoTooltip]"
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "I was ennobled from my lowborn status"
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Unlocks the [sas_ennoblement_interaction|E] interaction"
+ OFFER_ENNOBLEMENT: "Offer ennoblement"
+ AI_OFFER_ENNOBLEMENT: "Offered ennoblement: $VALUE|=+0$"
+ RECENTLY_ENNOBLED: "You have not recently [sas_ennobled_interaction|E] someone else"
+ DID_NOT_RECENTLY_ENNOBLE: "You have recently [sas_ennobled_interaction|E] someone else"
+

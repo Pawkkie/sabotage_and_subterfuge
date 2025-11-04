@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t:0 "A Spy Can Be Hired"
  agot_spy_network.0800.desc:0 "Your spymaster found a potential new spy at [recipient.GetTitledFirstNamePossessive] court. [potential_new_spy.GetTitledFirstName] might be convinced to join your spy network."
- agot_spy_network.0800.a:0 "I should contact [potential_new_spy.GetTitledFirstName] soon..."
+ agot_spy_network.0800.a:0 "[potential_new_spy.GetTitledFirstName] would be the perfect recruit!"
+ agot_spy_network.0800.b:0 "Perhaps I should continue looking elsewhere..."
 
  hostile_scheme_discovery_spy.2001.intro:0 "My spymaster, [spymaster.GetTitledFirstName], has discovered preparations for a scheme against me at [courtowner.GetTitledFirstNamePossessive] court. While we do not yet know who,"
  potential_spy_in_court:0 "A character in this court is willing to spy for you."
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Check [recipient.GetShortUIName]'s court for courtiers who might be willing to join your [sas_spy_network|E]"
  check_for_potential_spies_actor.tt: "You will be notified of a potential [sas_spy|E] you may negotiate into joining your [sas_spy_network|E]"
+ invite_to_spy_network_event_target_added_to_network.tt: "You add [potential_new_spy.GetShortUIName] to your spy network"
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] has joined the ranks of your sprawling spy network."
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Is convincing: $VALUE|=+0$"
  SUBTLE_DESIRE_PERK_EFFECT: "Is attractive: $VALUE|=+0$"
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "Spy Stole Innovation"
+ sas_spy_stole_innovation_progress_message: "Spy Learned About Innovation"

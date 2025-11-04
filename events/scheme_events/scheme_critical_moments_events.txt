@@ -1490,7 +1490,16 @@ scheme_critical_moments.1071 = {
 						limit = { scope:target = { is_ruler = yes } }
 						# Strong Hook against Ruler roll
 						random = {
-							chance = 20
+							# SAS Change
+							# chance = 20
+							chance = 25
+							modifier = {
+								add = 50
+								scope:owner = {
+									employs_court_position = femme_fatale_court_position
+								}
+							}
+							# SAS Change End
 							save_scope_value_as = {
 								name = strong_hook_against_ruler
 								value = yes

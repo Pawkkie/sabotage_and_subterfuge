@@ -348,7 +348,8 @@
 		}
 	}
 
-	custom_employer_modifier_description = femme_fatale_custom_effect_description
+	custom_employer_modifier_description = femme_fatale_custom_effect_description_poison_opinion
+	custom_employer_modifier_description = femme_fatale_custom_effect_description_fabricate_claim
 
 	modifier = {
 		intrigue = 2

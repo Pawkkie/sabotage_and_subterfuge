@@ -47,6 +47,7 @@ sas_spy_network = {
 }
 
 sas_ennoblement_interaction = {
+	alias = { sas_ennobled_interaction }
 	texture = "gfx/interface/icons/character_interactions/sas_ennoblement.dds"
 }
 
