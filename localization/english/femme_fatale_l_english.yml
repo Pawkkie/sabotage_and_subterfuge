@@ -3,7 +3,7 @@
  femme_fatale_court_position: "Femme Fatale"
  femme_fatale_court_position_desc: "A master of working courtiers around her fingers, the Femme Fatale specializes in directing courts in a way that serves her best from the shadows. She can sour the opinion of a liege in the eyes of their vassal, increase the effectiveness of your [sas_spies|E], and ease proceedings in your own court."
  femme_fatale_custom_effect_description_poison_opinion: "$BULLET$Can allow access to the [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" 
- femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$Improves the chance of the [GetScheme('fabricate_hook').GetTypeName] [hostile_scheme|E] manufacturing a [strong_hook|E]" 
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$Chance of [GetScheme('fabricate_hook').GetTypeName] manufacturing a [strong_hook|E]:\n@unspent_strong_hook_icon!#P +10%#! to @unspent_strong_hook_icon!#P +50%#! (based on [aptitude|E])" 
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]"

@@ -1494,7 +1494,11 @@ scheme_critical_moments.1071 = {
 							# chance = 20
 							chance = 25
 							modifier = {
-								add = 50
+								add = {
+									value = 10
+									multiply = scope:owner.court_position:femme_fatale_court_position.aptitude:femme_fatale_court_position
+									add = 10
+								}
 								scope:owner = {
 									employs_court_position = femme_fatale_court_position
 								}
