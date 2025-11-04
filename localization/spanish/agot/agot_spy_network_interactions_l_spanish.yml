@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "Se puede contratar a un espía" #deepl:3044204003
  agot_spy_network.0800.desc: "Su jefe de espionaje encontró un nuevo espía potencial en la corte [recipient.GetTitledFirstNamePossessive]. [potential_new_spy.GetTitledFirstName] podría ser convencido para unirse a su red de espionaje." #deepl:1672923704
- agot_spy_network.0800.a: "Debería contactar pronto con [potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] sería el recluta perfecto." #deepl:2663696361
+ agot_spy_network.0800.b: "Quizá debería seguir buscando en otra parte..." #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "Mi jefe de espías, [spymaster.GetTitledFirstName], ha descubierto los preparativos de un plan contra mí en el tribunal de [courtowner.GetTitledFirstNamePossessive]. Aunque todavía no sabemos quién," #deepl:2805483937
  potential_spy_in_court: "Un personaje de esta corte está dispuesto a espiar para ti." #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Busca en la corte de [recipient.GetShortUIName] cortesanos dispuestos a unirse a ti. [sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "Se le notificará un posible [sas_spy|E] que puede negociar para unirse a su [sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "Añade [potential_new_spy.GetShortUIName] a tu red de espionaje" #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] se ha unido a las filas de su extensa red de espionaje." #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Es convincente: $VALOR|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "Es atractivo: $VALOR|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "El espía robó la innovación" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "Espía aprendió sobre innovación" #deepl:1428311321

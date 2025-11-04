@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "La tela de araña crece." #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "Puede emplear el doble de [sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "Puede emplear a niños de al menos 8 años como [sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "Tu [sas_spies|E] puede robar cívicos o militares [innovations|E] de sus cortes de residencia #weak (25 años de enfriamiento)#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "Su [sas_spies|E] puede robar cívicos o militares [innovations|E] de sus tribunales de residencia si usted es un [culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "Emplea al menos a 3 [sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "Ha comprado al menos 3 [secrets|E] en [sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "Una casa de sabotajes y subterfugios" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "Una casa de sabotajes y subterfugios Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Tu casa se ha establecido firmemente como un parangón del sabotaje y el subterfugio, trabajando en la oscuridad de callejones y balcones a medianoche para promover sus propias ambiciones. Tienes ante ti un largo legado de engaños y telarañas, si estás dispuesto a dar el paso." #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Cimentar el legado de sabotaje y subterfugio de tu casa" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "¡Somos uno con las sombras!" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "Ha completado al menos 8 [hostile_schemes|E]" #deepl:2029350009

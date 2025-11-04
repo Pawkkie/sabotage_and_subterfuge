@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "间谍是可以雇佣的" #deepl:3044204003
  agot_spy_network.0800.desc: "您的间谍头子在[recipient.GetTitledFirstNamePossessive] 宫廷发现了一名潜在的新间谍。[potential_new_spy.GetTitledFirstName] 可能会被说服加入您的间谍网络。" #deepl:1672923704
- agot_spy_network.0800.a: "我应该尽快联系[potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] 将是完美的新人！" #deepl:2663696361
+ agot_spy_network.0800.b: "也许我应该继续在其他地方寻找......" #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "我的间谍头子[spymaster.GetTitledFirstName] 在[courtowner.GetTitledFirstNamePossessive] 法庭上发现了针对我的阴谋准备。虽然我们还不知道是谁、" #deepl:2805483937
  potential_spy_in_court: "这个宫廷里的一个人物愿意为你当间谍。" #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "在[recipient.GetShortUIName] 的宫廷中寻找可能愿意加入您的团队的朝臣。[sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "[sas_spy|E] ，您可以通过协商加入您的公司。[sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "您将[potential_new_spy.GetShortUIName] 添加到您的间谍网络" #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] 已经加入了你们庞大的间谍网络行列。" #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "是否令人信服： $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "是否有吸引力： $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "间谍窃取创新成果" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "关于创新的经验教训" #deepl:1428311321

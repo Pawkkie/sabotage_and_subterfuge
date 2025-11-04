@@ -2,7 +2,8 @@
  # Court Position
  femme_fatale_court_position: "魅力女性" #deepl:2042176501
  femme_fatale_court_position_desc: "魅影女是一位善于利用朝臣的高手，她擅长在暗处以最适合自己的方式指挥宫廷。她可以让臣子对君主的看法大打折扣，提高您的[sas_spies|E] 的效率，并让您自己的宫廷程序更加顺畅。" #deepl:275266301
- femme_fatale_custom_effect_description: "$BULLET$可允许访问[GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_poison_opinion: "$BULLET$可允许访问[GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$ [GetScheme('fabricate_hook').GetTypeName] 制造一个 的几率：   +10% to  +50% （基于 )[strong_hook|E]\n@unspent_strong_hook_icon!#P #! @unspent_strong_hook_icon!#P #! [aptitude|E]" #deepl:2242228652
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
@@ -25,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "拥抱蜘蛛" #deepl:1182524634
  femme_fatale_task_embrace_the_spiders_desc: "在[sas_spy_network|E] 上编织更远的网，比以往更有效地学习外国的秘密。" #deepl:4233153217
- femme_fatale_increase_spy_discovery_chance_tt: "增加[sas_spies|E] 发现秘密和创新的机会" #deepl:4182569517
+ femme_fatale_increase_spy_discovery_chance_tt: "增加[sas_spies|E] 发现秘密和[innovations|E]" #deepl:3754486382
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "安抚和监视" #deepl:2527092364

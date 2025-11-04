@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "间谍网络" #deepl:1689171219
  game_concept_sas_spy_network_desc: "[sas_spies|E] 都为同一个雇主工作。可以直接对符合条件的角色使用 "招募间谍 "互动，或对特定统治者使用 "检查间谍 "互动来调查他们的宫廷，以寻找机会，从而壮大这一网络。\n\n 其他宫廷的间谍自然是由[spymaster|E] 使用 "查找秘密 "议会任务招募的，也可以使用 "破坏计划 "议会任务在您的宫廷中发现。\n\n [sas_spy_network|E] 的功效可以通过做出某些决定来提高，例如增加间谍的最大数量、使朝臣更愿意提供服务或允许间谍发现 。[innovations|E]" #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "受封" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "Red de espionaje" #deepl:1689171219
  game_concept_sas_spy_network_desc: "Una colección de [sas_spies|E] todos trabajando para el mismo patrón. Esta red puede crecer usando la interacción Reclutar Espía directamente en los personajes elegibles, o usando la interacción Buscar Espías en un gobernante en particular para investigar su corte en busca de oportunidades.\n\n Los espías en otras cortes son reclutados naturalmente por un [spymaster|E] usando la tarea del consejo Encontrar Secretos, y pueden ser descubiertos en tu corte usando la tarea del consejo Desbaratar Planes.\n\nLa eficacia de un [sas_spy_network|E] puede mejorarse tomando ciertas decisiones, con efectos como aumentar el número máximo de espías, hacer que los cortesanos estén más dispuestos a ofrecer sus servicios o permitir que los espías descubran [innovations|E]." #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "Ennoblecido" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

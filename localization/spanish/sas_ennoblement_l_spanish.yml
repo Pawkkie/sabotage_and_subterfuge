@@ -1,7 +1,7 @@
 ﻿l_spanish:
  sas_ennoblement_interaction: "Ennoblecimiento" #deepl:1551274390
  sas_ennoblement_interaction_desc: "Idea una excusa para ennoblecer [recipient.GetShortUINameNoTooltip] desde su estatus de no nacido, ganando potencialmente un favor o lealtad [hook|E]." #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "Inventa una excusa para ennoblecer a un cortesano de bajo estatus, ganando potencialmente un favor o lealtad [hook|E]." #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "Inventa una excusa para ennoblecer a un cortesano de bajo estatus, ganando potencialmente un favor o lealtad [hook|E].\n\n Sólo puede usarse una vez cada 5 años para no levantar sospechas." #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] se ennoblecerá y encontrará un nuevo [dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "Me ennobleció" #deepl:2618147878
  sas_ennoblement_title_name: "Ennoblecimiento de [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "Fui ennoblecido desde mi condición de no nacido" #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Desbloquea la interacción [sas_ennoblement_interaction|E] " #deepl:1840771504
+ OFFER_ENNOBLEMENT: "Ofrecer ennoblecimiento" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "Ennoblecimiento ofrecido: $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "No ha visitado recientemente [sas_ennobled_interaction|E] " #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "Recientemente has [sas_ennobled_interaction|E] otra persona" #deepl:518185290
+

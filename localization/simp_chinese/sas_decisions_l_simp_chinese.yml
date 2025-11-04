@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "蜘蛛网越来越大！" #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "您可以使用双倍数量的[sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "您可以雇用至少 8 岁的儿童作为[sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "您的[sas_spies|E] 可从其居住的宫廷中窃取公民或军事[innovations|E] #weak  （冷却时间 25 年）#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "您的[sas_spies|E] 可能会窃取其居住地法院的公民或军事[innovations|E] ，如果您是[culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "您至少雇佣了 3[sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "您已从以下网站购买了至少 3 个[secrets|E] [sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "破坏和潜规则之家" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "破坏与潜规则之屋》 Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "你的家族已牢牢树立起破坏和潜行的典范，在黑暗的小巷和午夜的阳台上为实现自己的野心而努力。如果你愿意冒险，你的面前将是一个漫长的诱惑和织网的传奇。" #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "巩固你家的破坏和潜规则遗产" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "我们与阴影融为一体！" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "您已完成至少 8[hostile_schemes|E]" #deepl:2029350009
