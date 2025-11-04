@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "Паутина растет!" #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "Вы можете использовать вдвое большее количество [sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "Вы можете нанимать детей не моложе 8 лет в качестве [sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "Ваш [sas_spies|E] может украсть гражданских или военных [innovations|E] из их дворов #weak (25 лет простоя).#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "Ваш сайт [sas_spies|E] может украсть гражданские или военные [innovations|E] из судов по месту жительства, если вы [culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "У вас работает не менее 3 [sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "Вы купили не менее 3 [secrets|E] из [sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "Дом саботажа и ухищрений" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "Дом саботажа и ухищрений Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Ваш дом прочно зарекомендовал себя как образец саботажа и ухищрений, работая в темноте подворотни и полуночных балконов для реализации собственных амбиций. Перед вами лежит длинное наследие плетения паутины, если вы решитесь на это." #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Укрепление наследия саботажа и укрывательства в вашем доме" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "Мы едины с тенями!" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "Вы прошли не менее 8 [hostile_schemes|E]" #deepl:2029350009

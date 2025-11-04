@@ -7,7 +7,7 @@
 
  sas_expand_spy_network_modifier: "확장된 스파이 네트워크 책임자" #deepl:2107637170
  sas_expand_spy_network_house_modifier: "확장된 스파이 네트워크" #deepl:3378507362
- sas_expand_spy_network_house_modifier_desc: "하우스 회원은 두 배의 [sas_spies|E] 를 모집할 수 있으며, 8세 이상의 어린이를 자신의 [sas_spy_network|E] 에 모집할 수 있습니다.\n\n [sas_spies|E] [innovations|E] 훔칠 수 있습니다 #weak (25년 재사용 대기시간)#!" #deepl:2775509273
+ sas_expand_spy_network_house_modifier_desc: "하우스 회원은 두 배의 [sas_spies|E] 를 모집할 수 있으며, 8세 이상의 어린이를 자신의 [sas_spy_network|E] 에 모집할 수 있습니다.\n\n [sas_spies|E] [innovations|E] 을 훔칠 수 있습니다." #deepl:2013616332
 
  sas_special_operations_training_house_modifier: "특수 작전 교육" #deepl:3167735659
  sas_special_operations_training_house_modifier_desc: "[intrigue|E] [court_positions|E]\n\n  뿐만 아니라 , , ,  는 으로 에 가입할 수 있습니다.[sas_spies|E] [rabble_rouser_court_position|E] [femme_fatale_court_position|E] [smuggler_court_position|E] [master_assassin_court_position|E] [court_positions|E] [agents|E] [hostile_schemes|E] " #deepl:3266661613
@@ -15,4 +15,4 @@
  special_operations_training_court_position_modifier: "특수 작전 교육" #deepl:3167735659
 
  sas_house_of_sabotage_and_subterfuge_modifier: "사보타주와 교란의 집" #deepl:535697053
- sas_house_of_sabotage_and_subterfuge_modifier_desc: "사보타주와 교란의 집 데크" #deepl:717491357
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "하우스 회원은 [hostile_schemes|E] 을 완료할 때마다 @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] 을 얻습니다.\n\n [sas_spies|E] 비밀과 혁신을 발견할 가능성이 더 높습니다." #deepl:4000488514

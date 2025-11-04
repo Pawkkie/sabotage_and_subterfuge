@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "Sieć szpiegowska" #deepl:1689171219
  game_concept_sas_spy_network_desc: "Zbiór [sas_spies|E] pracujących dla tego samego pracodawcy. Sieć ta może być rozwijana za pomocą interakcji Rekrutuj szpiegów bezpośrednio na kwalifikujących się postaciach lub za pomocą interakcji Sprawdź szpiegów na konkretnym władcy, aby zbadać jego dwór pod kątem możliwości.\n\n Szpiedzy na innych dworach są naturalnie rekrutowani przez [spymaster|E] za pomocą zadania rady Znajdź sekrety i mogą zostać odkryci na twoim dworze za pomocą zadania rady Zakłóć schematy.\n\nSkuteczność [sas_spy_network|E] może zostać zwiększona poprzez podjęcie określonych decyzji, z takimi efektami jak zwiększenie maksymalnej liczby szpiegów, zwiększenie skłonności dworzan do oferowania swoich usług lub umożliwienie szpiegom odkrycia [innovations|E]." #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "Nobilitacja" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

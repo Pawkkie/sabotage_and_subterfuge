@@ -1,7 +1,7 @@
 ﻿l_polish:
  sas_ennoblement_interaction: "Nobilitacja" #deepl:1551274390
  sas_ennoblement_interaction_desc: "Wymyślenie pretekstu do nobilitacji [recipient.GetShortUINameNoTooltip] z niskiego statusu, potencjalnie zyskując przychylność lub lojalność [hook|E]." #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "Wymyśl pretekst, by uszlachetnić dworzanina o niskim statusie, potencjalnie zyskując przychylność lub lojalność [hook|E]." #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "Wymyśl pretekst, aby uszlachetnić dworzanina z niskiego statusu, potencjalnie zyskując przysługę lub lojalność [hook|E].\n\n Można użyć tylko raz na 5 lat, aby nie wzbudzać podejrzeń." #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] zostanie uszlachetniony i znajdzie nowy [dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "Uszlachetnił mnie" #deepl:2618147878
  sas_ennoblement_title_name: "Nobilitacja [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "Zostałem uszlachetniony z mojego nisko urodzonego statusu" #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Odblokowuje interakcję [sas_ennoblement_interaction|E] " #deepl:1840771504
+ OFFER_ENNOBLEMENT: "Oferta nobilitacji" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "Oferowana nobilitacja: $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "W ostatnim czasie nie [sas_ennobled_interaction|E] kogoś innego" #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "Niedawno [sas_ennobled_interaction|E] kogoś innego" #deepl:518185290
+

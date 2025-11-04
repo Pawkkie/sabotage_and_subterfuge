@@ -2,7 +2,8 @@
  # Court Position
  femme_fatale_court_position: "Роковая женщина" #deepl:2042176501
  femme_fatale_court_position_desc: "Мастер обводить придворных вокруг пальца, Роковая женщина специализируется на том, чтобы из тени руководить двором так, чтобы это было выгодно ей. Она может испортить мнение о сеньоре в глазах его вассала, повысить эффективность вашего [sas_spies|E] и облегчить разбирательство при вашем собственном дворе." #deepl:275266301
- femme_fatale_custom_effect_description: "$BULLET$Можно открыть доступ к сайту [GetScheme('poison_opinion').GetTypeName]. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_poison_opinion: "$BULLET$Можно открыть доступ к сайту [GetScheme('poison_opinion').GetTypeName]. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$Шанс того, что [GetScheme('fabricate_hook').GetTypeName] произведет [strong_hook|E]:\n@unspent_strong_hook_icon! #P  +10%#! - @unspent_strong_hook_icon!#P  +50%#! (на основе [aptitude|E])" #deepl:2242228652
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
@@ -25,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "Примите пауков" #deepl:1182524634
  femme_fatale_task_embrace_the_spiders_desc: "Плетите паутины [sas_spy_network|E] все дальше и дальше, узнавая чужие секреты эффективнее, чем когда-либо." #deepl:4233153217
- femme_fatale_increase_spy_discovery_chance_tt: "Повысьте вероятность того, что ваш [sas_spies|E] откроет секреты и инновации." #deepl:4182569517
+ femme_fatale_increase_spy_discovery_chance_tt: "Повысьте вероятность того, что ваш [sas_spies|E] откроет секреты и [innovations|E]" #deepl:3754486382
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "Успокаивать и наблюдать" #deepl:2527092364

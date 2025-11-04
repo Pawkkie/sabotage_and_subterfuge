@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "Шпионская сеть" #deepl:1689171219
  game_concept_sas_spy_network_desc: "Коллекция [sas_spies|E], работающая на одного работодателя. Эту сеть можно развить, используя взаимодействие "Завербовать шпиона" на подходящих персонажах напрямую или используя взаимодействие "Проверить на наличие шпионов" на конкретном правителе, чтобы изучить его двор на предмет возможностей.\n\n Шпионы при других дворах естественным образом вербуются [spymaster|E] с помощью задания совета "Найти секреты", а также могут быть обнаружены при вашем дворе с помощью задания совета "Нарушить схемы".\n\nЭффективность [sas_spy_network|E] можно повысить, принимая определенные решения, например, увеличить максимальное количество шпионов, повысить вероятность того, что придворные предложат свои услуги, или позволить шпионам обнаружить [innovations|E]." #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "Облагороженный" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

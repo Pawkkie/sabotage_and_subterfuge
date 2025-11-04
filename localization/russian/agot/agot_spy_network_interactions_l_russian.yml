@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "Шпиона можно нанять" #deepl:3044204003
  agot_spy_network.0800.desc: "Ваш шпионский мастер нашел нового потенциального шпиона в суде [recipient.GetTitledFirstNamePossessive]. [potential_new_spy.GetTitledFirstName] может быть убежден присоединиться к вашей шпионской сети." #deepl:1672923704
- agot_spy_network.0800.a: "Я должен связаться с [potential_new_spy.GetTitledFirstName] в ближайшее время..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] будет идеальным рекрутом!" #deepl:2663696361
+ agot_spy_network.0800.b: "Возможно, мне стоит продолжить поиски в другом месте..." #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "Мой шпион, [spymaster.GetTitledFirstName], обнаружил подготовку к заговору против меня при дворе [courtowner.GetTitledFirstNamePossessive]. Пока мы не знаем, кто именно," #deepl:2805483937
  potential_spy_in_court: "Один из персонажей этого суда готов шпионить для вас." #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Проверьте [recipient.GetShortUIName] на предмет придворных, которые могли бы присоединиться к вашему [sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "Вам будет сообщено о потенциальном [sas_spy|E], с которым вы можете договориться о присоединении к вашему [sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "Вы добавляете [potential_new_spy.GetShortUIName] в свою шпионскую сеть." #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] пополнил ряды вашей разросшейся шпионской сети." #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Убедительно: $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "Является привлекательным: $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "Шпион украл инновации" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "Шпион узнал об инновациях" #deepl:1428311321

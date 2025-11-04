@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "スパイ・ネットワーク" #deepl:1689171219
  game_concept_sas_spy_network_desc: "[sas_spies|E] 同じ雇い主のもとで働くスパイの集まり。\n\n 他の宮廷にいるスパイは、[spymaster|E] によって秘密を探す評議会タスクを使って自然にリクルートされ、あなたの宮廷では陰謀を打ち砕く評議会タスクを使って発見することができる。\n\n [sas_spy_network|E] の効力は、特定の決定を行うことで強化することができ、その効果は、スパイの最大数を増やす、廷臣が喜んでサービスを提供しやすくする、スパイが を発見できるようにする、などである。[innovations|E]" #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "アンノーブル" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

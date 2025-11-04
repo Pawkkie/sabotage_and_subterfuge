@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "스파이 네트워크" #deepl:1689171219
  game_concept_sas_spy_network_desc: "모두 같은 고용주 밑에서 일하는 [sas_spies|E] 의 집합입니다. 이 네트워크는 적격 캐릭터에게 직접 스파이 모집 상호작용을 사용하거나 특정 통치자에게 스파이 확인 상호작용을 사용해 해당 법정을 조사하여 기회를 찾아 성장시킬 수 있습니다.\n\n 다른 법정에 있는 스파이들은 비밀 찾기 협의회 과제를 사용하는 [spymaster|E] 에 의해 자연스럽게 모집되며, 내 법원에서 계획 방해 협의회 과제를 사용해 발견할 수 있습니다.\n\n [sas_spy_network|E] 의 효과는 특정 결정을 통해 향상시킬 수 있으며, 최대 스파이 수를 늘리거나, 법관이 기꺼이 서비스를 제공할 가능성을 높이거나, 스파이가 을 발견하도록 하는 등의 효과를 얻을 수 있습니다. [innovations|E]" #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "고귀한" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

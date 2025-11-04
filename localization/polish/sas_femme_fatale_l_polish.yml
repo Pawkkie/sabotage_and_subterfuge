@@ -2,7 +2,8 @@
  # Court Position
  femme_fatale_court_position: "Femme Fatale" #deepl:2042176501
  femme_fatale_court_position_desc: "Femme Fatale jest mistrzynią w owijaniu sobie dworzan wokół palców i specjalizuje się w kierowaniu dworami z ukrycia w sposób, który najlepiej jej służy. Potrafi zepsuć opinię lorda w oczach jego wasala, zwiększyć skuteczność twojego [sas_spies|E] i ułatwić postępowanie na twoim własnym dworze." #deepl:275266301
- femme_fatale_custom_effect_description: "$BULLET$Może zezwolić na dostęp do strony [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_poison_opinion: "$BULLET$Może zezwolić na dostęp do strony [GetScheme('poison_opinion').GetTypeName] [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$Szansa na wyprodukowanie [GetScheme('fabricate_hook').GetTypeName] a [strong_hook|E]:\n@unspent_strong_hook_icon! #P  +10%#! do @unspent_strong_hook_icon!#P  +50%#! (na podstawie [aptitude|E])" #deepl:2242228652
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
@@ -25,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "Obejmij pająki" #deepl:1182524634
  femme_fatale_task_embrace_the_spiders_desc: "Tkaj sieci [sas_spy_network|E] coraz dalej, ucząc się obcych sekretów skuteczniej niż kiedykolwiek." #deepl:4233153217
- femme_fatale_increase_spy_discovery_chance_tt: "Zwiększ szanse na odkrycie sekretów i innowacji na stronie [sas_spies|E]." #deepl:4182569517
+ femme_fatale_increase_spy_discovery_chance_tt: "Zwiększ swoje szanse na to, że [sas_spies|E] odkryje sekrety i [innovations|E]" #deepl:3754486382
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "Soothe and Surveil" #deepl:2527092364

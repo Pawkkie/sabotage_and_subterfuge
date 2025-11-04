@@ -7,7 +7,7 @@
 
  sas_expand_spy_network_modifier: "拡張スパイ・ネットワークの責任者" #deepl:2107637170
  sas_expand_spy_network_house_modifier: "スパイ・ネットワークの拡大" #deepl:3378507362
- sas_expand_spy_network_house_modifier_desc: "ハウスメンバーは、[sas_spies|E] の2倍の数をリクルートすることができ、8歳以上の子どもを[sas_spy_network|E] にリクルートすることができる。\n\n [sas_spies|E] は、[innovations|E] を盗むことができる。#weak  （25年のクールダウン）#!" #deepl:2775509273
+ sas_expand_spy_network_house_modifier_desc: "下院議員は、[sas_spies|E] の2倍の人数をリクルートすることができ、8歳以上の子供を[sas_spy_network|E] にリクルートすることができる。\n\n [sas_spies|E] は、[innovations|E] を盗むことができる。" #deepl:2013616332
 
  sas_special_operations_training_house_modifier: "特殊作戦訓練" #deepl:3167735659
  sas_special_operations_training_house_modifier_desc: "[intrigue|E] [court_positions|E]\n\n  だけでなく、 、 、 、  は、 としてあなたの に参加する可能性が高い。[sas_spies|E] [rabble_rouser_court_position|E] [femme_fatale_court_position|E] [smuggler_court_position|E] [master_assassin_court_position|E] [court_positions|E] [agents|E] [hostile_schemes|E] " #deepl:3266661613
@@ -15,4 +15,4 @@
  special_operations_training_court_position_modifier: "特殊作戦訓練" #deepl:3167735659
 
  sas_house_of_sabotage_and_subterfuge_modifier: "妨害と策略の家" #deepl:535697053
- sas_house_of_sabotage_and_subterfuge_modifier_desc: "妨害と策略の家 Desc" #deepl:717491357
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "下院議員は@dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] [hostile_schemes|E] を完了するたびに得をする。\n\n [sas_spies|E] は秘密や革新を発見する可能性が高い。" #deepl:4000488514

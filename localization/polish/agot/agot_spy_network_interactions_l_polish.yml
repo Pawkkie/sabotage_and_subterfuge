@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "Szpiega można wynająć" #deepl:3044204003
  agot_spy_network.0800.desc: "Twój szpieg znalazł potencjalnego nowego szpiega na dworze [recipient.GetTitledFirstNamePossessive]. [potential_new_spy.GetTitledFirstName] może zostać przekonany do dołączenia do twojej siatki szpiegowskiej." #deepl:1672923704
- agot_spy_network.0800.a: "Powinienem wkrótce skontaktować się z [potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] byłby idealnym rekrutem!" #deepl:2663696361
+ agot_spy_network.0800.b: "Być może powinienem dalej szukać gdzie indziej..." #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "Mój szpieg, [spymaster.GetTitledFirstName], odkrył przygotowania do intrygi przeciwko mnie na dworze [courtowner.GetTitledFirstNamePossessive]. Chociaż nie wiemy jeszcze kto," #deepl:2805483937
  potential_spy_in_court: "Postać w tym sądzie jest gotowa szpiegować dla ciebie." #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Sprawdź stronę [recipient.GetShortUIName] w poszukiwaniu dworzan, którzy mogliby dołączyć do twojej drużyny. [sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "Zostaniesz powiadomiony o potencjalnym [sas_spy|E], który możesz wynegocjować, aby dołączyć do swojego [sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "Dodajesz [potential_new_spy.GetShortUIName] do swojej sieci szpiegowskiej" #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] dołączył do waszej rozległej sieci szpiegowskiej." #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Jest przekonujący: $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "Jest atrakcyjny: $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "Szpieg ukradł innowację" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "Szpieg dowiedział się o innowacjach" #deepl:1428311321

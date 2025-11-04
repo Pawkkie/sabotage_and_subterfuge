@@ -2,7 +2,8 @@
  # Court Position
  femme_fatale_court_position: "팜므파탈" #deepl:2042176501
  femme_fatale_court_position_desc: "팜므파탈은 음지에서 최선을 다하는 방식으로 법정을 지휘하는 데 특화된 궁녀입니다. 그녀는 신하의 눈에 비친 군주의 의견을 바꾸고, [sas_spies|E] 의 효율성을 높이며, 자신의 법정에서 절차를 쉽게 진행할 수 있습니다." #deepl:275266301
- femme_fatale_custom_effect_description: "$BULLET$ [GetScheme('poison_opinion').GetTypeName] 에 대한 액세스를 허용할 수 있습니다. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_poison_opinion: "$BULLET$ [GetScheme('poison_opinion').GetTypeName] 에 대한 액세스를 허용할 수 있습니다. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$ [GetScheme('fabricate_hook').GetTypeName] 제조 확률 :   +10% ~  +50% ( 기준 ) [strong_hook|E]\n@unspent_strong_hook_icon!#P #! @unspent_strong_hook_icon!#P #! [aptitude|E]" #deepl:2242228652
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
@@ -25,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "거미 수용" #deepl:1182524634
  femme_fatale_task_embrace_the_spiders_desc: "[sas_spy_network|E] 의 거미줄을 더 멀리까지 엮어 그 어느 때보다 효과적으로 외국의 비밀을 알아보세요." #deepl:4233153217
- femme_fatale_increase_spy_discovery_chance_tt: "[sas_spies|E] 에서 비밀과 혁신을 발견할 가능성을 높이세요." #deepl:4182569517
+ femme_fatale_increase_spy_discovery_chance_tt: "[sas_spies|E] 에서 비밀을 발견할 확률을 높이고 [innovations|E]" #deepl:3754486382
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "진정 및 감시" #deepl:2527092364

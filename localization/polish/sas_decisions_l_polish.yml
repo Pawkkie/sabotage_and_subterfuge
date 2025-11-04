@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "Pajęczyna rośnie!" #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "Możesz zatrudnić podwójną liczbę [sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "Możesz zatrudniać dzieci w wieku co najmniej 8 lat jako [sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "Twój [sas_spies|E] może ukraść obywatelskie lub wojskowe [innovations|E] z ich dworów #weak (czas odnowienia 25 lat).#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "Twój [sas_spies|E] może ukraść obywatelskie lub wojskowe [innovations|E] z ich sądów zamieszkania, jeśli jesteś [culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "Zatrudniasz co najmniej 3 pracowników [sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "Kupiłeś co najmniej 3 [secrets|E] od [sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "Dom sabotażu i podstępu" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "Dom sabotażu i podstępu Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Twój dom ugruntował swoją pozycję jako wzór sabotażu i podstępu, działając w ciemnościach zaułków i balkonów o północy, aby realizować własne ambicje. Długie dziedzictwo uwodzenia i tkania sieci leży przed tobą, jeśli chcesz zaryzykować." #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Ugruntuj dziedzictwo sabotażu i podstępu w swoim domu" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "Jesteśmy jednością z cieniami!" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "Ukończyłeś co najmniej 8 [hostile_schemes|E]" #deepl:2029350009

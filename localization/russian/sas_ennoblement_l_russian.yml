@@ -1,7 +1,7 @@
 ﻿l_russian:
  sas_ennoblement_interaction: "Ennoblement" #deepl:1551274390
  sas_ennoblement_interaction_desc: "Придумайте предлог, чтобы возвысить [recipient.GetShortUINameNoTooltip] из низкого статуса, потенциально получив услугу или лояльность [hook|E]." #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "Придумайте предлог, чтобы облагодетельствовать придворного из низкого рода, потенциально получив услугу или преданность [hook|E]." #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "Придумайте предлог, чтобы облагодетельствовать придворного низкого происхождения, потенциально получив услугу или лояльность [hook|E].\n\n Можно использовать только раз в 5 лет, чтобы не вызывать подозрений." #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] будет облагорожен и обретет новую [dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "Облагородил меня" #deepl:2618147878
  sas_ennoblement_title_name: "Обольщение [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "Меня возвысили из моего низкого положения." #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Разблокируйте взаимодействие [sas_ennoblement_interaction|E]." #deepl:1840771504
+ OFFER_ENNOBLEMENT: "Предложить облагораживание" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "Предлагаемое облагораживание: $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "Вы недавно не посещали сайт [sas_ennobled_interaction|E]." #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "Вы недавно посетили сайт [sas_ennobled_interaction|E]." #deepl:518185290
+

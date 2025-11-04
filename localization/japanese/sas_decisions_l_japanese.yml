@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "クモの巣が伸びていく！" #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "の2倍を採用することができる。[sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "8歳以上の子供を以下の職業に就かせることができる。[sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "あなたの[sas_spies|E] は、その居住地の裁判所から市民または軍[innovations|E] を盗むことができる#weak  （クールダウンは25年）。#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "あなたの[sas_spies|E] は、あなたが以下のような場合、居住地の裁判所から市民権または軍隊[innovations|E] を盗むことができる。[culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "少なくとも3人を雇用している[sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "少なくとも3つの[secrets|E] 。[sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "妨害と策略の家" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "妨害と策略の家 Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "あなたの家は、裏路地や真夜中のバルコニーの暗闇で自らの野望を実現するため、妨害と策略の模範として確固たる地位を築いてきた。あなたの前には、誘惑と策略の長い遺産が横たわっている。" #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "妨害と策略の遺産を固める" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "私たちは影と一体なのだ！" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "少なくとも8つのコースを修了している[hostile_schemes|E]" #deepl:2029350009

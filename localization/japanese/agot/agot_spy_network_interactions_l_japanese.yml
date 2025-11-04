@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "A Spy Can Be Hired"
  agot_spy_network.0800.desc: "Your spymaster found a potential new spy at [recipient.GetTitledFirstNamePossessive] court. [potential_new_spy.GetTitledFirstName] might be convinced to join your spy network."
- agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] 。" #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] は完璧なリクルートだろう！" #deepl:2663696361
+ agot_spy_network.0800.b: "他の場所を探し続けるべきかもしれない...。" #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "私のスパイマスター、[spymaster.GetTitledFirstName] は、[courtowner.GetTitledFirstNamePossessive] 裁判所で私に対する陰謀の準備を発見した。誰かはまだわからない、" #deepl:2805483937
  potential_spy_in_court: "この法廷のある人物は、あなたのためにスパイになることを望んでいる。" #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "[recipient.GetShortUIName] の宮廷に、あなたの仲間になってくれそうな廷臣がいないか調べてみよう。[sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "[sas_spy|E] あなたのクラブに加入するよう交渉する可能性があることが通知される。[sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "スパイネットワークに[potential_new_spy.GetShortUIName] " #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] はあなたの広大なスパイネットワークの仲間入りをした。" #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "説得力がある： $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "魅力的である： $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "スパイが盗んだイノベーション" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "イノベーションについて学んだスパイ" #deepl:1428311321

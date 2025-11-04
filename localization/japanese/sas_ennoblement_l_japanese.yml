@@ -1,7 +1,7 @@
 ﻿l_japanese:
  sas_ennoblement_interaction: "エンノブメント" #deepl:1551274390
  sas_ennoblement_interaction_desc: "[recipient.GetShortUINameNoTooltip] 、賤民の身分から誉れ高くする口実を考案し、好意や忠誠心を得る可能性がある[hook|E] 。" #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "卑しい身分の廷臣を高貴にする口実を考案し、好意や忠誠心を得る可能性がある[hook|E] 。" #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "[hook|E]\n\n 疑惑を避けるため、5年に1度しか使用できない。" #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] は新たな価値を見出すだろう。[dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "私を高貴にした" #deepl:2618147878
  sas_ennoblement_title_name: "エンノブメント[recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "私は卑しい身分の人間だった。" #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "[sas_ennoblement_interaction|E] インタラクションを解き放つ" #deepl:1840771504
+ OFFER_ENNOBLEMENT: "オファーのエンノブレム" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "提供されたエンノバメント: $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "最近、[sas_ennobled_interaction|E] 。" #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "最近、[sas_ennobled_interaction|E] " #deepl:518185290
+
