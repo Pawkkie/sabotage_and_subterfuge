@@ -65,7 +65,7 @@ agot_spy_network.0100 = {
 						}
 						modifier = {
 							root = {
-								house = {
+								house ?= {
 									has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
 								}
 							}
@@ -103,7 +103,7 @@ agot_spy_network.0105 = {
 					count >= 1
 				}
 				root.culture.culture_head = root
-				house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+				house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 			}
 			random_in_list = {
 				variable = spy_network_members
@@ -165,7 +165,7 @@ agot_spy_network.0105 = {
 							}
 							modifier = {
 								root = {
-									house = {
+									house ?= {
 										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
 									}
 								}
@@ -526,7 +526,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+								house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -571,7 +571,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+								house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -606,7 +606,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+								house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -651,7 +651,7 @@ agot_spy_network.0300 = {
 							AND = {
 								age >= 8
 								root = {
-									house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+									house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 								}
 							}
 						}
@@ -697,7 +697,7 @@ agot_spy_network.0300 = {
 						AND = {
 							age >= 8
 							root = {
-								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+								house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}
@@ -783,7 +783,7 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 					AND = {
 						age >= 8
 						root = {
-							house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+							house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 						}
 					}
 				}
@@ -824,7 +824,7 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 						AND = {
 							age >= 8
 							root = {
-								house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+								house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 							}
 						}
 					}

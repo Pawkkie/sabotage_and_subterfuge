@@ -10,7 +10,7 @@
 	}
 	if = {
 		limit = {
-			house = { has_house_modifier = sas_expand_spy_network_house_modifier }
+			house ?= { has_house_modifier = sas_expand_spy_network_house_modifier }
 		}
 		multiply = 2
 	}

@@ -36,7 +36,7 @@ smuggle_artifact_success_effect = {
 			modifier = stole_artifact_from_me
 		}
 		# Feud score
-		scope:owner.house = {
+		scope:owner.house ?= {
 			change_house_relation_feud_score_effect = {
 				TARGET = scope:owner.house
 				REASON = stole_artifact

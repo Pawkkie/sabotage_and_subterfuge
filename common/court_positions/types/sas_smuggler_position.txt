@@ -279,7 +279,7 @@
 			}
 			custom_description = {
 				text = already_established_criminal_underground
-				house = { has_house_modifier = sas_establish_criminal_underground_house_modifier }
+				house ?= { has_house_modifier = sas_establish_criminal_underground_house_modifier }
 			}
 		}
 	}

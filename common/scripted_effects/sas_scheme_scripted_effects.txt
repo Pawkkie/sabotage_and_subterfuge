@@ -742,7 +742,7 @@ sas_count_hostile_scheme_and_add_renown = {
 	}
 	if = {
 		limit = {
-			house = {
+			house ?= {
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
 			}
 		}

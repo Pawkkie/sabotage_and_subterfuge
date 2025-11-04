@@ -13,7 +13,7 @@ on_death_black_book_inherit_secrets = {
 				any_equipped_character_artifact = {
 					has_artifact_modifier = artifact_black_book_modifier
 				}
-				house = {
+				house ?= {
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
 				}
 			}
