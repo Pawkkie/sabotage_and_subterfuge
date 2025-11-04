@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "Ein Spion kann angeheuert werden" #deepl:3044204003
  agot_spy_network.0800.desc: "Ihr Spionagemeister hat einen potenziellen neuen Spion am Hof [recipient.GetTitledFirstNamePossessive] gefunden. [potential_new_spy.GetTitledFirstName] könnte überzeugt werden, Ihrem Spionagenetz beizutreten." #deepl:1672923704
- agot_spy_network.0800.a: "Ich sollte bald [potential_new_spy.GetTitledFirstName] kontaktieren..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] wäre der perfekte Rekrut!" #deepl:2663696361
+ agot_spy_network.0800.b: "Vielleicht sollte ich woanders weitersuchen..." #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "Mein Spionagemeister [spymaster.GetTitledFirstName] hat die Vorbereitungen für ein Komplott gegen mich auf [courtowner.GetTitledFirstNamePossessive] entdeckt. Wir wissen zwar noch nicht, wer," #deepl:2805483937
  potential_spy_in_court: "Eine Figur in diesem Gericht ist bereit, für Sie zu spionieren." #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Überprüfe [recipient.GetShortUIName] nach Höflingen, die bereit sein könnten, sich deiner [sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "Sie werden über ein potenzielles [sas_spy|E] informiert, das Sie für die Teilnahme an Ihrem Programm aushandeln können. [sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "Sie fügen [potential_new_spy.GetShortUIName] zu Ihrem Spionagenetz hinzu." #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] hat sich in die Reihen Ihres ausgedehnten Spionagenetzes eingereiht." #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Ist überzeugend: $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "Ist attraktiv: $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "Spion hat Innovation gestohlen" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "Spionage über Innovation gelernt" #deepl:1428311321

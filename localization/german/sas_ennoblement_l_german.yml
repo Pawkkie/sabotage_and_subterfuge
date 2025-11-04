@@ -1,7 +1,7 @@
 ﻿l_german:
  sas_ennoblement_interaction: "Veredelung" #deepl:1551274390
  sas_ennoblement_interaction_desc: "Erfinde eine Ausrede, um [recipient.GetShortUINameNoTooltip] aus dem Status der Geringgeborenen zu adeln und möglicherweise einen Gefallen oder Loyalität zu erlangen [hook|E]." #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "Erfinde eine Ausrede, um einen Höfling von niederem Stand zu adeln, und erhalte so möglicherweise einen Gefallen oder Loyalität [hook|E]." #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "Erfinde eine Ausrede, um einen Höfling von niederem Stand zu adeln, und erhalte so möglicherweise einen Gefallen oder Loyalität [hook|E].\n\n Darf nur einmal alle 5 Jahre verwendet werden, um keinen Verdacht zu erregen." #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] geadelt werden und eine neue [dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "Mich geadelt" #deepl:2618147878
  sas_ennoblement_title_name: "Veredelung von [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "Ich wurde von meinem niedrigen Status geadelt" #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Schaltet die [sas_ennoblement_interaction|E] Interaktion frei" #deepl:1840771504
+ OFFER_ENNOBLEMENT: "Angebot Veredelung" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "Angebotene Veredelung: $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "Sie haben in letzter Zeit keine andere Person [sas_ennobled_interaction|E] " #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "Sie haben kürzlich eine andere Person [sas_ennobled_interaction|E] " #deepl:518185290
+

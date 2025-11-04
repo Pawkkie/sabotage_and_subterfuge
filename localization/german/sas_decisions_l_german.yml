@@ -6,7 +6,7 @@
  sas_expand_spy_network_decision_confirm: "Das Spinnennetz wächst!" #deepl:2491328231
  sas_expand_spy_network_double_spies.tt: "Sie können die doppelte Anzahl von [sas_spies|E]" #deepl:3951820473
  sas_expand_spy_network_child_spies.tt: "Sie können Kinder im Alter von mindestens 8 Jahren beschäftigen als [sas_spies|E]" #deepl:594091579
- sas_expand_spy_network_innovation_spies.tt: "Dein [sas_spies|E] kann zivile oder militärische [innovations|E] von ihren Wohnhöfen stehlen #weak (25 Jahre Abklingzeit)#!" #deepl:2062950662
+ sas_expand_spy_network_innovation_spies.tt: "Ihre [sas_spies|E] kann zivile oder militärische [innovations|E] von ihren Wohnsitzgerichten stehlen, wenn Sie ein [culture_head|E]" #deepl:2188457974
  sas_expand_spy_network_have_enough_spies_tt: "Sie beschäftigen mindestens 3 [sas_spies|E]" #deepl:769462268
  sas_expand_spy_network_have_paid_spies_tt: "Sie haben mindestens 3 [secrets|E] gekauft von [sas_spies|E]" #deepl:4061259209
 
@@ -39,7 +39,7 @@
 
  # House of Sabotage and Subterfuge
  sas_house_of_sabotage_and_subterfuge_decision: "Ein Haus der Sabotage und der Täuschung" #deepl:346655493
- sas_house_of_sabotage_and_subterfuge_decision_desc: "Ein Haus der Sabotage und Ausrede Desc" #deepl:921718923
+ sas_house_of_sabotage_and_subterfuge_decision_desc: "Ihr Haus hat sich fest als Ausbund an Sabotage und List etabliert und arbeitet im Dunkel der Hinterhöfe und mitternächtlichen Balkone, um seine eigenen Ambitionen zu fördern. Ein langes Erbe der Verführung und des Spinnens liegt vor Ihnen, wenn Sie bereit sind, den Sprung zu wagen." #deepl:3271742632
  sas_house_of_sabotage_and_subterfuge_decision_tooltip: "Zementieren Sie das Erbe Ihres Hauses an Sabotage und Täuschung" #deepl:3420083984
  sas_house_of_sabotage_and_subterfuge_decision_confirm: "Wir sind eins mit den Schatten!" #deepl:1602826360
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "Sie haben mindestens 8 [hostile_schemes|E]" #deepl:2029350009

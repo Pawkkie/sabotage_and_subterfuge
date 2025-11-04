@@ -7,7 +7,7 @@
 
  sas_expand_spy_network_modifier: "Leiter des erweiterten Spionagenetzes" #deepl:2107637170
  sas_expand_spy_network_house_modifier: "Erweitertes Spionagenetz" #deepl:3378507362
- sas_expand_spy_network_house_modifier_desc: "Hausmitglieder können doppelt so viele [sas_spies|E] rekrutieren und können Kinder im Alter von mindestens 8 Jahren für ihre [sas_spy_network|E] rekrutieren.\n\n [sas_spies|E] kann [innovations|E] stehlen. #weak (25 Jahre Abklingzeit)#!" #deepl:2775509273
+ sas_expand_spy_network_house_modifier_desc: "Hausmitglieder können doppelt so viele [sas_spies|E] rekrutieren und können Kinder, die mindestens 8 Jahre alt sind, für ihre [sas_spy_network|E] rekrutieren.\n\n [sas_spies|E] kann [innovations|E] stehlen." #deepl:2013616332
 
  sas_special_operations_training_house_modifier: "Ausbildung für Spezialeinsätze" #deepl:3167735659
  sas_special_operations_training_house_modifier_desc: "Die Mitglieder des Hauses können [intrigue|E] mit [court_positions|E] kostenlos einstellen.\n\n [sas_spies|E] sowie die [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E] und [master_assassin_court_position|E] [court_positions|E] sind eher bereit, sich Ihrem [hostile_schemes|E] als [agents|E] anzuschließen." #deepl:3266661613
@@ -15,4 +15,4 @@
  special_operations_training_court_position_modifier: "Ausbildung für Spezialeinsätze" #deepl:3167735659
 
  sas_house_of_sabotage_and_subterfuge_modifier: "Haus der Sabotage und des Betrugs" #deepl:535697053
- sas_house_of_sabotage_and_subterfuge_modifier_desc: "Haus der Sabotage und des Betrugs Desc" #deepl:717491357
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "Die Mitglieder des Hauses erhalten @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] jedes Mal, wenn sie eine [hostile_schemes|E] abschließen.\n\n [sas_spies|E] sind eher in der Lage, Geheimnisse und Innovationen zu entdecken." #deepl:4000488514

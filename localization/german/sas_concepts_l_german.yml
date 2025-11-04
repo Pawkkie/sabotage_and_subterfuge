@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "Spionage-Netzwerk" #deepl:1689171219
  game_concept_sas_spy_network_desc: "Eine Sammlung von [sas_spies|E], die alle für denselben Arbeitgeber arbeiten. Dieses Netzwerk kann durch die Interaktion "Spion rekrutieren" bei geeigneten Charakteren oder durch die Interaktion "Nach Spionen suchen" bei einem bestimmten Herrscher erweitert werden, um dessen Hof nach Möglichkeiten zu durchsuchen.\n\n Spione an anderen Höfen werden natürlich von einem [spymaster|E] mit der Ratsaufgabe "Geheimnisse finden" rekrutiert und können an deinem Hof mit der Ratsaufgabe "Schemata stören" entdeckt werden.\n\nDie Effektivität von [sas_spy_network|E] kann durch bestimmte Entscheidungen erhöht werden, z. B. durch die Erhöhung der maximalen Anzahl von Spionen, die Erhöhung der Bereitschaft von Höflingen, ihre Dienste anzubieten, oder die Möglichkeit für Spione, [innovations|E] zu entdecken." #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "Geadelt" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

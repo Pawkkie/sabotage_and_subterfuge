@@ -2,7 +2,8 @@
  # Court Position
  femme_fatale_court_position: "Femme Fatale" #deepl:2042176501
  femme_fatale_court_position_desc: "Als Meisterin darin, Höflinge um den Finger zu wickeln, ist die Femme Fatale darauf spezialisiert, Höfe so zu lenken, dass sie ihr aus dem Schatten heraus am besten dienen. Sie kann die Meinung eines Lehnsherren in den Augen seines Vasallen säuern, die Effektivität deines [sas_spies|E] erhöhen und die Verfahren an deinem eigenen Hof erleichtern." #deepl:275266301
- femme_fatale_custom_effect_description: "$BULLET$Kann den Zugriff auf die Website [GetScheme('poison_opinion').GetTypeName] ermöglichen. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_poison_opinion: "$BULLET$Kann den Zugriff auf die Website [GetScheme('poison_opinion').GetTypeName] ermöglichen. [personal_scheme|E]" #deepl:3961591162
+ femme_fatale_custom_effect_description_fabricate_claim: "$BULLET$Chance, dass [GetScheme('fabricate_hook').GetTypeName] ein [strong_hook|E] herstellt:\n@unspent_strong_hook_icon! #P  +10%#! bis @unspent_strong_hook_icon!#P  +50%#! (basierend auf [aptitude|E])" #deepl:2242228652
 
  # Traits
  court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]" #deepl:714272075
@@ -25,7 +26,7 @@
  # Embrace the Spiders task
  femme_fatale_task_embrace_the_spiders: "Umarmung der Spinnen" #deepl:1182524634
  femme_fatale_task_embrace_the_spiders_desc: "Weben Sie die Netze der [sas_spy_network|E] immer weiter und lernen Sie fremde Geheimnisse effektiver denn je." #deepl:4233153217
- femme_fatale_increase_spy_discovery_chance_tt: "Erhöhen Sie die Chancen, dass Ihre [sas_spies|E] Geheimnisse und Innovationen entdeckt" #deepl:4182569517
+ femme_fatale_increase_spy_discovery_chance_tt: "Erhöhen Sie die Wahrscheinlichkeit, dass Ihr [sas_spies|E] Geheimnisse entdeckt und [innovations|E]" #deepl:3754486382
 
  # Soothe and Surveil task
  femme_fatale_task_soothe_and_surveil: "Beruhigen und Überwachen" #deepl:2527092364
