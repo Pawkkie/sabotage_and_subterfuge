@@ -25,6 +25,7 @@
  game_concept_sas_spy_network: "Réseau d'espionnage" #deepl:1689171219
  game_concept_sas_spy_network_desc: "Un ensemble de [sas_spies|E] travaillant tous pour le même employeur. Ce réseau peut être développé en utilisant l'interaction Recruter un espion sur les personnages éligibles directement, ou en utilisant l'interaction Vérifier les espions sur un dirigeant particulier pour enquêter sur sa cour afin de trouver des opportunités.\n\n Les espions dans d'autres cours sont naturellement recrutés par un [spymaster|E] en utilisant la tâche de conseil Trouver des secrets, et peuvent être découverts dans votre cour en utilisant la tâche de conseil Perturber les complots.\n\nL'efficacité d'un [sas_spy_network|E] peut être améliorée en prenant certaines décisions, avec des effets tels que l'augmentation du nombre maximum d'espions, rendant les courtisans plus enclins à offrir leurs services, ou permettant aux espions de découvrir [innovations|E]." #deepl:784788192
  game_concept_sas_ennoblement_interaction: "$sas_ennoblement_interaction$" #deepl:3706993498
+ game_concept_sas_ennobled_interaction: "Ennobli" #deepl:1572575987
  game_concept_sas_ennoblement_interaction_desc: "$sas_ennoblement_interaction_concept_desc$" #deepl:1351081593
  game_concept_sas_embezzle_interaction: "$sas_embezzle_interaction$" #deepl:738296156
  game_concept_sas_embezzle_interaction_desc: "$sas_embezzle_interaction_desc$" #deepl:507821286

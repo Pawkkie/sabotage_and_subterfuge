@@ -67,7 +67,8 @@
 
  agot_spy_network.0800.t: "Un espion peut être engagé" #deepl:3044204003
  agot_spy_network.0800.desc: "Votre maître-espion a trouvé un nouvel espion potentiel à la cour [recipient.GetTitledFirstNamePossessive]. [potential_new_spy.GetTitledFirstName] pourrait être convaincu de rejoindre votre réseau d'espionnage." #deepl:1672923704
- agot_spy_network.0800.a: "Je devrais bientôt contacter [potential_new_spy.GetTitledFirstName]..." #deepl:3077370088
+ agot_spy_network.0800.a: "[potential_new_spy.GetTitledFirstName] serait la recrue idéale !" #deepl:2663696361
+ agot_spy_network.0800.b: "Peut-être devrais-je continuer à chercher ailleurs..." #deepl:1091849013
 
  hostile_scheme_discovery_spy.2001.intro: "Mon maître-espion, [spymaster.GetTitledFirstName], a découvert des préparatifs en vue d'une action contre moi au tribunal [courtowner.GetTitledFirstNamePossessive]. Bien que nous ne sachions pas encore qui," #deepl:2805483937
  potential_spy_in_court: "Un personnage de cette cour est prêt à espionner pour vous." #deepl:3390703719
@@ -93,7 +94,13 @@
  # Check for Potential Spies
  agot_check_for_potential_spies_interaction_desc: "Consultez la cour de [recipient.GetShortUIName] pour trouver des courtisans qui seraient prêts à se joindre à vous. [sas_spy_network|E]" #deepl:3999256908
  check_for_potential_spies_actor.tt: "Vous serez informé d'un éventuel [sas_spy|E] que vous pouvez négocier pour qu'il rejoigne votre [sas_spy_network|E]" #deepl:2541194663
+ invite_to_spy_network_event_target_added_to_network.tt: "Vous ajoutez [potential_new_spy.GetShortUIName] à votre réseau d'espionnage" #deepl:3160919481
+ invite_to_spy_network_event_toast_desc: "[potential_new_spy.GetTitledFirstName] a rejoint les rangs de votre réseau d'espionnage tentaculaire." #deepl:2839381328
 
  # Perks
  DIGGING_FOR_DIRT_PERK_EFFECT: "Est convaincant : $VALUE|=+0$" #deepl:2797321221
  SUBTLE_DESIRE_PERK_EFFECT: "Est attractif : $VALUE|=+0$" #deepl:567933818
+
+ # Discovering Innovations
+ sas_spy_stole_innovation_message: "L'espion a volé l'innovation" #deepl:1871041198
+ sas_spy_stole_innovation_progress_message: "Spy a appris l'innovation" #deepl:1428311321

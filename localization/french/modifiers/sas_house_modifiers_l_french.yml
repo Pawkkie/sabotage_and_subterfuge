@@ -7,7 +7,7 @@
 
  sas_expand_spy_network_modifier: "Chef du réseau d'espionnage élargi" #deepl:2107637170
  sas_expand_spy_network_house_modifier: "Réseau d'espionnage élargi" #deepl:3378507362
- sas_expand_spy_network_house_modifier_desc: "Les membres de la maison peuvent recruter deux fois plus de [sas_spies|E], et peuvent recruter des enfants âgés d'au moins 8 ans pour leur [sas_spy_network|E].\n\n [sas_spies|E] peut voler [innovations|E]. #weak (25 ans de réflexion)#!" #deepl:2775509273
+ sas_expand_spy_network_house_modifier_desc: "Les députés peuvent recruter deux fois plus de personnes [sas_spies|E], et peuvent recruter des enfants âgés d'au moins 8 ans pour leur [sas_spy_network|E].\n\n [sas_spies|E] peuvent voler [innovations|E]." #deepl:2013616332
 
  sas_special_operations_training_house_modifier: "Formation aux opérations spéciales" #deepl:3167735659
  sas_special_operations_training_house_modifier_desc: "Les députés peuvent engager gratuitement [intrigue|E] basé [court_positions|E].\n\n [sas_spies|E] ainsi que [rabble_rouser_court_position|E], [femme_fatale_court_position|E], [smuggler_court_position|E], et [master_assassin_court_position|E] [court_positions|E] sont plus susceptibles de rejoindre votre [hostile_schemes|E] en tant que [agents|E]." #deepl:3266661613
@@ -15,4 +15,4 @@
  special_operations_training_court_position_modifier: "Formation aux opérations spéciales" #deepl:3167735659
 
  sas_house_of_sabotage_and_subterfuge_modifier: "Maison du sabotage et du subterfuge" #deepl:535697053
- sas_house_of_sabotage_and_subterfuge_modifier_desc: "Maison du sabotage et du subterfuge Desc" #deepl:717491357
+ sas_house_of_sabotage_and_subterfuge_modifier_desc: "Les députés gagnent @dynasty_prestige_icon!#P  100#! [dynasty_prestige|E] chaque fois qu'ils remplissent une [hostile_schemes|E].\n\n [sas_spies|E] ont plus de chances de découvrir des secrets et des innovations." #deepl:4000488514

@@ -1,7 +1,7 @@
 ﻿l_french:
  sas_ennoblement_interaction: "Ennoblissement" #deepl:1551274390
  sas_ennoblement_interaction_desc: "Concevoir une excuse pour anoblir [recipient.GetShortUINameNoTooltip] d'un statut inférieur, ce qui pourrait permettre d'obtenir une faveur ou une loyauté [hook|E]." #deepl:737595951
- sas_ennoblement_interaction_concept_desc: "Concevoir une excuse pour anoblir un courtisan de statut inférieur, afin d'obtenir une faveur ou une loyauté [hook|E]." #deepl:3597071352
+ sas_ennoblement_interaction_concept_desc: "Concevoir une excuse pour anoblir un courtisan de statut inférieur, potentiellement pour obtenir une faveur ou une loyauté [hook|E].\n\n Ne peut être utilisé qu'une fois tous les 5 ans pour éviter d'éveiller les soupçons." #deepl:258565865
  sas_ennoblement_tt: "[recipient.GetShortUINameNoTooltip] seront ennoblis et trouveront un nouveau [dynasty|E]" #deepl:2220918683
  sas_ennoblement_opinion: "M'a anobli" #deepl:2618147878
  sas_ennoblement_title_name: "Anoblissement de [recipient.GetShortUINameNoTooltip]" #deepl:1104397307
@@ -9,3 +9,8 @@
  sas_ennoblement_memory_desc: "J'ai été anobli par rapport à mon statut d'infériorité" #deepl:476341155
 
  ALLOW_ENNOBLE_INTERACTION_DESCRIPTION: "Débloque l'interaction [sas_ennoblement_interaction|E] " #deepl:1840771504
+ OFFER_ENNOBLEMENT: "Proposer l'anoblissement" #deepl:3194331756
+ AI_OFFER_ENNOBLEMENT: "Ennoblissement offert : $VALUE|=+0$" #deepl:3490834531
+ RECENTLY_ENNOBLED: "Vous n'avez pas récemment [sas_ennobled_interaction|E] quelqu'un d'autre" #deepl:1347699387
+ DID_NOT_RECENTLY_ENNOBLE: "Vous avez récemment [sas_ennobled_interaction|E] quelqu'un d'autre" #deepl:518185290
+
