@@ -65,7 +65,18 @@ has_intrigue_court_position = {
 
 master_assassin_validity_trigger = {
 	base_court_position_validity_trigger = { EMPLOYER = $EMPLOYER$ }
-	is_playable_character = no # You can't be a public figure and a master assassin
+	# SAS Change
+	# is_playable_character = no # You can't be a public figure and a master assassin
+	# Manually writing out the full is_playable_character check to remove the landless adventurer clause so the position can be used by landless characters with landless courts
+	NOR = {
+		is_landed = yes
+		is_landless_administrative = yes
+		# is_landless_adventurer = yes
+		is_landless_nomad = yes
+		is_landless_soryo = yes
+		tgp_is_any_minister = yes # To keep ministers playable, regardless of having a nobel family title or not
+	}
+	# SAS Change End
 	custom_tooltip = {
 		text = none_has_no_particular_noble_roots_trigger
 		has_no_particular_noble_roots_trigger = yes
