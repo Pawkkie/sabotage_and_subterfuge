@@ -459,9 +459,21 @@ agot_spy_network.0210 = { #ask for money in exchange for secret
 					reveal_to = scope:employer
 				}
 			}
-			change_variable = {
-				name = number_of_secrets_bought
-				add = 1
+			# Count secret bought towards running total
+			if = {
+				limit = {
+					exists = var:number_of_secrets_bought
+				}
+				change_variable = {
+					name = number_of_secrets_bought
+					add = 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 1
+				}
 			}
 		}
 

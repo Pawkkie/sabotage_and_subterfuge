@@ -6,7 +6,6 @@
 
 on_became_house_head = {
 	on_actions = {
-		new_house_head_can_use_spy_network
 		new_house_head_expanded_spy_network
 	}
 }
@@ -61,27 +60,6 @@ initialize_can_use_spy_network = {
 					name = number_of_secrets_bought
 					value = 0
 				}
-			}
-		}
-	}
-}
-
-new_house_head_can_use_spy_network = {
-	effect = {
-		if = {
-			limit = {
-				has_government = administrative_government
-				NOT = { house = { has_house_modifier = sas_starter_spy_network_modifier } }
-				NOT = { house = { has_house_modifier = sas_establish_criminal_underground_house_modifier } }
-			}
-			house = {
-				add_house_modifier = {
-					modifier = sas_starter_spy_network_modifier
-				}
-			}
-			set_variable = {
-				name = number_of_secrets_bought
-				value = 0
 			}
 		}
 	}
