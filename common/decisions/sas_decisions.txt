@@ -18,7 +18,6 @@
 	is_valid = {
 		is_house_head = yes
 		NOT = { has_government = tribal_government }
-		NOT = { has_government = clan_government }
 		NOT = { has_government = nomad_government }
 		OR = {
 			intrigue >= 15
