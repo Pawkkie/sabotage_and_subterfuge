@@ -117,7 +117,7 @@ agot_spy_network.0105 = {
 						is_imprisoned = no
 						court_owner = { is_ruler = yes }
 						NOT = { has_trait = incapable }
-						NOT = { exists = root.var:spies_discovered_free_innovation }
+						# NOT = { exists = root.var:spies_discovered_free_innovation }
 					}
 					if = {
 						limit = {
