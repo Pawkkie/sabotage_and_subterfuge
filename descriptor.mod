@@ -9,4 +9,4 @@ tags={
 }
 name="SAS Dev"
 picture="thumbnail.png"
-supported_version="1.18.0.*"
+supported_version="1.18.1.*"

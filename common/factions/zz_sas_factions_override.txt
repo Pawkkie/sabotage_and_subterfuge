@@ -363,6 +363,12 @@
 		}
 		# The emperor does not want to leave his empire
 		tgp_is_ceremonial_liege_trigger = no
+		# Ministers cannot join this faction
+		custom_description = {
+			text = target_is_a_minister_desc
+			subject = this
+			tgp_is_any_minister = no
+		}
 	}
 
 	can_character_create = {
@@ -443,6 +449,12 @@
 		}
 		# The emperor does not want to leave his empire
 		tgp_is_ceremonial_liege_trigger = no
+		# Ministers cannot join this faction
+		custom_description = {
+			text = target_is_a_minister_desc
+			subject = this
+			tgp_is_any_minister = no
+		}
 	}
 
 	can_character_join = {
@@ -495,6 +507,12 @@
 		}
 		# The emperor does not want to leave his empire
 		tgp_is_ceremonial_liege_trigger = no
+		# Ministers cannot join this faction
+		custom_description = {
+			text = target_is_a_minister_desc
+			subject = this
+			tgp_is_any_minister = no
+		}
 	}
 
 	can_character_become_leader = {
