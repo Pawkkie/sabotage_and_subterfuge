@@ -1,0 +1,49 @@
+﻿end_friendship_interaction = {
+	category = interaction_category_hostile
+	use_diplomatic_range = no
+	icon = sas_end_friendship
+
+	desc = end_friendship_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_relation_friend = scope:recipient
+			NOT = {
+				has_relation_best_friend = scope:recipient
+				has_relation_blood_brother = scope:recipient
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+	}
+
+	on_accept = {
+		scope:actor = {
+			send_interface_message = {
+				type = event_sway_neutral
+				title = end_friendship_interaction_notification
+				right_icon = scope:recipient
+				end_friendship_effect = {
+					ENDER = scope:actor
+					FRIEND = scope:recipient
+				}
+				stress_impact = {
+					gregarious = minor_stress_impact_gain
+					compassionate = minor_stress_impact_gain
+				}
+			}
+		}
+
+		# If we're a clan this interaction affects unity
+		add_clan_unity_interaction_effect = {
+			CHARACTER = scope:actor
+			TARGET = scope:recipient
+			VALUE = miniscule_unity_loss
+			DESC = clan_unity_friendship_ended.desc
+			REVERSE_NON_HOUSE_TARGET = no
+		}
+	}
+	
+	auto_accept = yes
+}

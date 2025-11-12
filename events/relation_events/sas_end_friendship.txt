@@ -1,0 +1,33 @@
+﻿namespace = sas_end_friendship
+
+sas_end_friendship.0010 = {
+	type = character_event
+	title = sas_end_friendship.0010.t
+	desc = sas_end_friendship.0010.desc
+	theme = friend_relation
+	left_portrait = {
+		character = scope:ender
+		animation = dismissal
+	}
+	right_portrait = {
+		character = scope:friend
+		animation = shock
+	}
+	
+	immediate = {
+		scope:ender = {
+			remove_relation_friend = scope:friend
+			set_relation_potential_rival = scope:friend
+		}
+		scope:friend = {
+			add_opinion = {
+				target = scope:ender
+				modifier = sas_ended_friendship_opinion
+			}
+		}
+	}
+
+	option = {
+		name = sas_end_friendship.0010.a
+	}
+}

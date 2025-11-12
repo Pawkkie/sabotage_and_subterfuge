@@ -1,0 +1,6 @@
+﻿l_english:
+ end_friendship_interaction: "End Friendship"
+ end_friendship_interaction_desc: "End your [friend|E] [relation|E] with [recipient.GetShortUINameNoTooltip]"
+ end_friendship_interaction_notification: "Ended Friendship"
+ clan_unity_friendship_ended.desc: "ended [unity_character.GetHerHis] friendship with [unity_target.GetName]"
+ sas_ended_friendship_opinion: "Ended Friendship"

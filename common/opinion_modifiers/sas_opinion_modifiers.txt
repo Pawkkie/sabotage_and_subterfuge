@@ -76,3 +76,8 @@ sas_claimed_parentage_opinion_modifier = {
 	opinion = 20
 	decaying = no
 }
+
+sas_ended_friendship_opinion = {
+	opinion = -30
+	years = 10
+}

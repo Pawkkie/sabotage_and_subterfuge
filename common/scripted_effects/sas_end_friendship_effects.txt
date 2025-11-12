@@ -1,0 +1,27 @@
+﻿end_friendship_effect = {
+	$ENDER$ = {
+		save_scope_as = ender
+	}
+	$FRIEND$ = {
+		save_scope_as = friend
+	}
+
+	show_as_tooltip = {
+		$ENDER$ = {
+			remove_relation_friend = $FRIEND$
+			set_relation_potential_rival = $FRIEND$
+		}
+		$FRIEND$ = {
+			add_opinion = {
+				target = $ENDER$
+				modifier = sas_ended_friendship_opinion
+			}
+		}
+	}
+
+	hidden_effect = {
+		$FRIEND$ = {
+			trigger_event = sas_end_friendship.0010
+		}
+	}
+}

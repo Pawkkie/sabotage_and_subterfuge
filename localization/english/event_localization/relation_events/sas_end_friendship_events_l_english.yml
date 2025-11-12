@@ -1,0 +1,4 @@
+﻿l_english:
+ sas_end_friendship.0010.t: "A Friend Betrayed"
+ sas_end_friendship.0010.desc: "Seemingly out of nowhere, [ender.GetFirstName] has decided to end our friendship. I'm not sure if it's something I said or did or if they've been plotting this from the start just to manipulate me, but it doesn't matter. I will certainly remember this moving forward."
+ sas_end_friendship.0010.a: "Time to move on."
