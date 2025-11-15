@@ -23,6 +23,7 @@
 			send_interface_message = {
 				type = event_sway_neutral
 				title = end_friendship_interaction_notification
+				left_icon = scope:actor
 				right_icon = scope:recipient
 				end_friendship_effect = {
 					ENDER = scope:actor
