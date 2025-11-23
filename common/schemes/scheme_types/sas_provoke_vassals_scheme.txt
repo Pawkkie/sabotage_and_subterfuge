@@ -46,6 +46,16 @@
 					}
 				}
 			}
+			# Target not already dealing with provoked indepedence faction
+			custom_description = {
+				text = already_fighting_independence_faction
+				subject = scope:target
+				NOT = {
+					any_targeting_faction = {
+						faction_is_type = provoked_independence_faction
+					}
+				}
+			}
 			# Target not already dealing with dissolution faction
 			custom_description = {
 				text = already_fighting_dissolution_faction
@@ -53,6 +63,16 @@
 				NOT = {
 					any_targeting_faction = {
 						faction_is_type = nation_fracturing_faction
+					}
+				}
+			}
+			# Target not already dealing with provoked dissolution faction
+			custom_description = {
+				text = already_fighting_dissolution_faction
+				subject = scope:target
+				NOT = {
+					any_targeting_faction = {
+						faction_is_type = provoked_dissolution_faction
 					}
 				}
 			}
@@ -64,6 +84,11 @@
 					is_landed = yes
 					AND = {
 						is_at_war = no
+						highest_held_title_tier >= tier_county
+						NOT = {
+							government_has_flag = government_is_republic
+							government_has_flag = government_is_theocracy
+						}
 						NOT = {
 							AND = {
 								has_opinion_modifier = {

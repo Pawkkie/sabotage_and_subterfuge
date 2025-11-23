@@ -27,6 +27,11 @@ provoke_vassals_outcome.0001 = {
 				ordered_vassal = {
 					limit = { 
 						is_ai = yes
+						highest_held_title_tier >= tier_county
+						NOT = {
+							government_has_flag = government_is_republic
+							government_has_flag = government_is_theocracy
+						}
 						can_create_faction = {
 							type = independence_faction
 							target = scope:target
@@ -89,6 +94,11 @@ provoke_vassals_outcome.0001 = {
 				ordered_vassal = {
 					limit = { 
 						is_ai = yes
+						highest_held_title_tier >= tier_county
+						NOT = {
+							government_has_flag = government_is_republic
+							government_has_flag = government_is_theocracy
+						}
 						can_create_faction = {
 							type = nation_fracturing_faction
 							target = scope:target
@@ -158,6 +168,11 @@ provoke_vassals_outcome.0002 = {
 				ordered_vassal = {
 					limit = { 
 						is_ai = yes
+						highest_held_title_tier >= tier_county
+						NOT = {
+							government_has_flag = government_is_republic
+							government_has_flag = government_is_theocracy
+						}
 						can_create_faction = {
 							type = independence_faction
 							target = scope:target
@@ -220,6 +235,11 @@ provoke_vassals_outcome.0002 = {
 				ordered_vassal = {
 					limit = { 
 						is_ai = yes
+						highest_held_title_tier >= tier_county
+						NOT = {
+							government_has_flag = government_is_republic
+							government_has_flag = government_is_theocracy
+						}
 						can_create_faction = {
 							type = nation_fracturing_faction
 							target = scope:target
@@ -265,7 +285,7 @@ provoke_vassals_outcome.0002 = {
 # Unsuccessful and secret
 provoke_vassals_outcome.0003 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = provoke_vassals_scheme
 	title = provoke_vassals_outcome.0003.t
 	desc = provoke_vassals_outcome.0003.desc
@@ -293,7 +313,7 @@ provoke_vassals_outcome.0003 = {
 # Unsuccessful and discovered
 provoke_vassals_outcome.0004 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = provoke_vassals_scheme
 	title = provoke_vassals_outcome.0004.t
 	desc = provoke_vassals_outcome.0004.desc

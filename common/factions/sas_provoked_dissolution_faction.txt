@@ -140,9 +140,9 @@ provoked_dissolution_faction = {
 					target = scope:faction.faction_target
 					modifier = scheme_poison_opinion_opinion
 				}
-				"opinion(scope:target)" < 0
+				"opinion(scope:faction.faction_target)" < 0
 			}
-			add = 500
+			add = 1000
 		}
 
 		modifier = {
@@ -209,6 +209,22 @@ provoked_dissolution_faction = {
 			FACTION_TARGET = scope:faction.faction_target
 		}
 		has_valid_faction_members_trigger = yes
+		trigger_if = {
+			limit = {
+				AND = {
+					has_opinion_modifier = {
+						target = scope:faction.faction_target
+						modifier = scheme_poison_opinion_opinion
+					}
+					"opinion(scope:faction.faction_target)" < 0
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_character_modifier = provoked_independence_character_modifier
+			}
+		}
 	}
 
 	can_character_create_ui = {
@@ -239,7 +255,7 @@ provoked_dissolution_faction = {
 						target = scope:faction.faction_target
 						modifier = scheme_poison_opinion_opinion
 					}
-					"opinion(scope:target)" < 0
+					"opinion(scope:faction.faction_target)" < 0
 				}
 			}
 		}
@@ -265,6 +281,7 @@ provoked_dissolution_faction = {
 		trigger_if = {
 			limit = {
 				government_allows = administrative
+				has_game_rule = admin_independence_disabled
 			}
 			custom_tooltip = {
 				text = admin_high_tier_vassal_join_faction

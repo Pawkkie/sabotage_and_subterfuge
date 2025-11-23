@@ -202,7 +202,7 @@
 				}
 				"opinion(scope:faction.faction_target)" < 0
 			}
-			add = 500
+			add = 1000
 		}
 		
 		# SAS End Change
@@ -895,7 +895,7 @@ nation_fracturing_faction = {
 				}
 				"opinion(scope:faction.faction_target)" < 0
 			}
-			add = 500
+			add = 1000
 		}
 		# SAS End Change
 

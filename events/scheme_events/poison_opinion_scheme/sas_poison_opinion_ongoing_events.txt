@@ -62,7 +62,7 @@ poison_opinion_ongoing.1001 = {
 			add_opinion = {
 				target = scope:target.liege
 				modifier = disrespect_opinion
-				opinion = 10
+				opinion = -10
 			}
 		}
 		random = {

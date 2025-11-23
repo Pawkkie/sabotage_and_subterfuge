@@ -282,7 +282,7 @@ spread_plague_outcome.0002 = {
 # Unsuccessful and secret
 spread_plague_outcome.0003 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = spread_plague_scheme
 	title = spread_plague_outcome.0003.t
 	desc = spread_plague_outcome.0003.desc
@@ -318,7 +318,7 @@ spread_plague_outcome.0003 = {
 # Unsuccessful and discovered
 spread_plague_outcome.0004 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = spread_plague_scheme
 	title = spread_plague_outcome.0004.t
 	desc = spread_plague_outcome.0004.desc

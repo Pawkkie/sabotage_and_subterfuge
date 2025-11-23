@@ -385,7 +385,7 @@ rouse_rabble_outcome.0002 = {
 # Unsuccessful and secret
 rouse_rabble_outcome.0003 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0003.t
 	desc = rouse_rabble_outcome.0003.desc
@@ -413,7 +413,7 @@ rouse_rabble_outcome.0003 = {
 # Unsuccessful and discovered
 rouse_rabble_outcome.0004 = {
 	type = character_event
-	window = scheme_successful_event
+	window = scheme_failed_event
 	theme = rouse_rabble_scheme
 	title = rouse_rabble_outcome.0004.t
 	desc = rouse_rabble_outcome.0004.desc
