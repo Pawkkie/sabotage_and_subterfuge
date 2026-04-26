@@ -17,7 +17,6 @@
 
 	aptitude = {
 		value = 10
-		add = court_position_aptitude_boon_voyager_trait
 		add = {
 			value = intrigue
 			multiply = 2
@@ -167,11 +166,6 @@
 				desc = trait_education_intrigue
 			}
 		}
-		add = court_position_aptitude_eunuch_tradition_value
-		add = court_position_aptitude_traveling_friends_value
-
-		add = court_position_aptitude_family_business_value
-		add = court_position_aptitude_high_penalty_value
 		# Bonus from court.8311
 		if = {
 			limit = { var:bonus_aptitude_role ?= flag:femme_fatale }
@@ -180,30 +174,8 @@
 				desc = cp_bonus_aptitude
 			}
 		}
-		# Seneschal
-		if = {
-			limit = {
-				liege.court_position:seneschal_court_position ?= {
-					has_variable = performing_improve_court
-				}
-			}
-			add = {
-				value = liege.court_position:seneschal_court_position.seneschal_improve_court_value
-				desc = seneschal_improve_court_aptitude_desc
-			}
-		}
-		# Yeke Jarquchi
-		if = {
-			limit = {
-				liege.court_position:yeke_jarquchi_court_position ?= {
-					has_variable = performing_improve_court
-				}
-			}
-			add = {
-				value = liege.court_position:yeke_jarquchi_court_position.yeke_jarquchi_improve_court_value
-				desc = yeke_jarquchi_improve_court_aptitude_desc
-			}
-		}
+		add = court_position_aptitude_high_penalty_value
+		add = general_aptitude_bonus
 	}
 
 	is_shown = {

@@ -60,7 +60,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Honest
 	modifier = {
 		add = countermeasure_disliked_by_trait_agenthood_acceptance_value
-		countermeasure_parametre_applies_againt_char_trigger = {
+		countermeasure_parameter_applies_against_char_trigger = {
 			SCHEME_TARGET = scope:target
 			SCHEME_OWNER = scope:owner
 			PARAMETER = characters_more_likely_to_accept_agenthood_against_if_honest
@@ -69,7 +69,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Just
 	modifier = {
 		add = countermeasure_disliked_by_trait_agenthood_acceptance_value
-		countermeasure_parametre_applies_againt_char_trigger = {
+		countermeasure_parameter_applies_against_char_trigger = {
 			SCHEME_TARGET = scope:target
 			SCHEME_OWNER = scope:owner
 			PARAMETER = characters_more_likely_to_accept_agenthood_against_if_just
@@ -78,7 +78,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Deceitful
 	modifier = {
 		add = countermeasure_disliked_by_trait_agenthood_acceptance_value
-		countermeasure_parametre_applies_againt_char_trigger = {
+		countermeasure_parameter_applies_against_char_trigger = {
 			SCHEME_TARGET = scope:target
 			SCHEME_OWNER = scope:owner
 			PARAMETER = characters_more_likely_to_accept_agenthood_against_if_deceitful
@@ -87,7 +87,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Gregarious
 	modifier = {
 		add = countermeasure_disliked_by_trait_agenthood_acceptance_value
-		countermeasure_parametre_applies_againt_char_trigger = {
+		countermeasure_parameter_applies_against_char_trigger = {
 			SCHEME_TARGET = scope:target
 			SCHEME_OWNER = scope:owner
 			PARAMETER = characters_more_likely_to_accept_agenthood_against_if_gregarious
@@ -96,7 +96,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Arrogant
 	modifier = {
 		add = countermeasure_disliked_by_trait_agenthood_acceptance_value
-		countermeasure_parametre_applies_againt_char_trigger = {
+		countermeasure_parameter_applies_against_char_trigger = {
 			SCHEME_TARGET = scope:target
 			SCHEME_OWNER = scope:owner
 			PARAMETER = characters_more_likely_to_accept_agenthood_against_if_arrogant

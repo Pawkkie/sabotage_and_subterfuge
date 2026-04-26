@@ -601,6 +601,8 @@ nation_fracturing_faction = {
 			FACTION_TARGET = scope:faction.faction_target
 		}
 		has_valid_faction_members_trigger = yes
+
+		tgp_realm_has_ceremonial_liege_trigger = no
 	}
 	
 	demand = {
@@ -640,6 +642,8 @@ nation_fracturing_faction = {
 		}
 		# Bloc Cohesion requirement
 		japan_faction_cohesion_trigger = yes
+
+		tgp_realm_has_ceremonial_liege_trigger = no
 
 		liege = {
 			top_liege = this
@@ -708,6 +712,8 @@ nation_fracturing_faction = {
 		}
 		# Bloc Cohesion requirement
 		japan_faction_cohesion_trigger = yes
+
+		tgp_realm_has_ceremonial_liege_trigger = no
 		
 		liege = {
 			top_liege = this

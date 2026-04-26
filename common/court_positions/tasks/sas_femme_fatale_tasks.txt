@@ -122,7 +122,7 @@ femme_fatale_task_embrace_the_spiders = {
 					scope:liege = {
 						has_treasury = yes
 					}
-				}
+				}chief_eunuch
 				add = {
 					value = monthly_court_position_task_cost
 					desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
@@ -168,19 +168,19 @@ femme_fatale_task_embrace_the_spiders = {
 
 	scaling_employer_modifiers = {
 		terrible = {
-		 	scheme_discovery_chance_mult = 0.01
+		 	enemy_scheme_secrecy_add = -1
 		}
 		poor = {
-		 	scheme_discovery_chance_mult = 0.03
+		 	enemy_scheme_secrecy_add = -3
 		}
 		average = {
-		 	scheme_discovery_chance_mult = 0.05
+		 	enemy_scheme_secrecy_add = -5
 		}
 		good = {
-		 	scheme_discovery_chance_mult = 0.07
+		 	enemy_scheme_secrecy_add = -7
 		}
 		excellent = {
-		 	scheme_discovery_chance_mult = 0.1
+		 	enemy_scheme_secrecy_add = -10
 		}
 	}
 
