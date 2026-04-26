@@ -122,7 +122,7 @@ femme_fatale_task_embrace_the_spiders = {
 					scope:liege = {
 						has_treasury = yes
 					}
-				}chief_eunuch
+				}
 				add = {
 					value = monthly_court_position_task_cost
 					desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
