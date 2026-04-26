@@ -13,7 +13,7 @@
  # Administrative Dissolution
  rule_sas_administrative_dissolution: "Administrative Dissolution Factions"
  setting_admin_dissolution_disabled: "Disabled (Vanilla)"
- setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] cannot form against an [administrative_governments|E]"
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] cannot form against [administrative_governments|E]"
  setting_admin_dissolution_enabled: "Enabled"
  setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] can form against [administrative_governments|E]"
 
