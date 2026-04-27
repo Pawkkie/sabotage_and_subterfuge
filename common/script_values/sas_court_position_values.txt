@@ -25,7 +25,10 @@
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -80,7 +83,10 @@ rabble_rouser_prestige_salary_value = {
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -149,7 +155,10 @@ femme_fatale_total_salary_value = {
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -218,7 +227,10 @@ femme_fatale_prestige_salary_value = {
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -287,7 +299,10 @@ smuggler_total_salary_value = {
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -356,7 +371,10 @@ smuggler_prestige_salary_value = {
 	}
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier

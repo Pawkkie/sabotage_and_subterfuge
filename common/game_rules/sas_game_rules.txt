@@ -46,3 +46,14 @@ sas_modified_perks = {
 	spy_and_interactions = {
 	}
 }
+
+sas_intrigue_court_position_salary = {
+	categories = {
+		sas
+	}
+	default = sas_salary_free
+	sas_salary_free = {
+	}
+	sas_salary_paid = {
+	}
+}

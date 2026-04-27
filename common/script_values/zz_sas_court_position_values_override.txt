@@ -12,7 +12,10 @@
 	# SAS Change
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -83,7 +86,10 @@ master_assassin_prestige_salary_value = {
 	# SAS Change
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -154,7 +160,10 @@ food_taster_total_salary_value = {
 	# SAS Change
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -224,7 +233,10 @@ food_taster_prestige_salary_value = {
 	# SAS Change
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
@@ -306,7 +318,10 @@ executioner_prestige_salary_value = {
 	# SAS Change
 	# Set to 0 with Special Operations Training
 	if = {
-		limit = { scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } }
+		limit = { 
+			has_game_rule = sas_salary_free
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+		}
 		multiply = {
 			value = 0
 			desc = special_operations_training_court_position_modifier
