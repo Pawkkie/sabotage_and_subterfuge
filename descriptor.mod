@@ -5,7 +5,7 @@ tags={
 	"Decisions"
 	"Gameplay"
 	"Schemes"
-	"1.18 'Crane'"
+	"1.19 'Scribe'"
 }
 name="SAS Dev"
 picture="thumbnail.png"
