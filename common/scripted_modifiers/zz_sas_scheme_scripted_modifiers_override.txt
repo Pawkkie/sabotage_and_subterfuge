@@ -408,7 +408,15 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 					scope:owner = {
 						can_use_spy_network = yes
 						house ?= {
-							has_house_modifier = sas_special_operations_training_house_modifier
+							if = {
+								limit = {
+									has_game_rule = sas_salary_free
+								}
+								has_house_modifier = sas_special_operations_training_house_modifier_free
+							}
+							else = {
+								has_house_modifier = sas_special_operations_training_house_modifier_paid
+							}
 						}
 					}
 				}
@@ -435,7 +443,12 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 			scope:owner = {
 				AND = {
 					exists = house
-					house = { has_house_modifier = sas_special_operations_training_house_modifier }
+					house = {
+						OR = {
+							has_house_modifier = sas_special_operations_training_house_modifier_free
+							has_house_modifier = sas_special_operations_training_house_modifier_paid
+						}
+					}
 				}
 			}
 			OR = {

@@ -14,7 +14,7 @@
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -88,7 +88,7 @@ master_assassin_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -162,7 +162,7 @@ food_taster_total_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -235,7 +235,7 @@ food_taster_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -320,7 +320,7 @@ executioner_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0

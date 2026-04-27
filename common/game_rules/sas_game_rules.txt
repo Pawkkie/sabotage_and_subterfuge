@@ -62,7 +62,7 @@ sas_scheme_completion_renown = {
 	categories = {
 		sas
 	}
-	default = sas_scheme_renown_large
+	default = sas_scheme_renown_medium
 	sas_scheme_renown_large = {
 	}
 	sas_scheme_renown_medium = {

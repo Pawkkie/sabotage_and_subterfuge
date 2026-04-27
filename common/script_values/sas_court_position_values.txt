@@ -27,7 +27,7 @@
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -85,7 +85,7 @@ rabble_rouser_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -157,7 +157,7 @@ femme_fatale_total_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -229,7 +229,7 @@ femme_fatale_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -301,7 +301,7 @@ smuggler_total_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0
@@ -373,7 +373,7 @@ smuggler_prestige_salary_value = {
 	if = {
 		limit = { 
 			has_game_rule = sas_salary_free
-			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier } } 
+			scope:liege = { house ?= { has_house_modifier = sas_special_operations_training_house_modifier_free } } 
 		}
 		multiply = {
 			value = 0

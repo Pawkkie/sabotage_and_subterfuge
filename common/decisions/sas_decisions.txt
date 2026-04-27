@@ -216,7 +216,12 @@ sas_special_operations_training_decision = {
 		exists = house
 		house = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
-			NOT = { has_house_modifier = sas_special_operations_training_house_modifier }
+			NOT = { 
+				OR = {
+					has_house_modifier = sas_special_operations_training_house_modifier_free
+					has_house_modifier = sas_special_operations_training_house_modifier_paid
+				}
+			}
 		}
 	}
 
@@ -260,8 +265,18 @@ sas_special_operations_training_decision = {
  		custom_tooltip = sas_special_operations_training_smuggler_likely_to_join_schemes.tt
 		custom_tooltip = sas_special_operations_training_master_assassin_likely_to_join_schemes.tt
 		house = {
-			add_house_modifier = {
-				modifier = sas_special_operations_training_house_modifier
+			if = {
+				limit = {
+					has_game_rule = sas_salary_free
+				}
+				add_house_modifier = {
+					modifier = sas_special_operations_training_house_modifier_free
+				}
+			}
+			else = {
+				add_house_modifier = {
+					modifier = sas_special_operations_training_house_modifier_paid
+				}
 			}
 		}
 	}
@@ -294,7 +309,12 @@ sas_special_operations_training_decision = {
 		exists = house
 		house = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
-			NOT = { has_house_modifier = sas_special_operations_training_house_modifier }
+			NOT = {
+				OR = {
+					has_house_modifier = sas_special_operations_training_house_modifier_free
+					has_house_modifier = sas_special_operations_training_house_modifier_paid
+				}
+			}
 		}
 		is_house_head = yes
 		intrigue >= 12
@@ -341,8 +361,16 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			exists = var:sas_hostile_scheme_count
 			var:sas_hostile_scheme_count >= 8
 		}
+		custom_tooltip = {
+			text = sas_house_of_sabotage_and_subterfuge_needs_special_operations_training_tt
+			house = {
+				OR = {
+					has_house_modifier = sas_special_operations_training_house_modifier_free
+					has_house_modifier = sas_special_operations_training_house_modifier_paid
+				}
+			}
+		}
 		house = {
-			has_house_modifier = sas_special_operations_training_house_modifier
 			has_house_modifier = sas_expand_spy_network_house_modifier
 		}
 	}
@@ -457,7 +485,10 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 		exists = house
 		house = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
-			has_house_modifier = sas_special_operations_training_house_modifier
+			OR = {
+				has_house_modifier = sas_special_operations_training_house_modifier_free
+				has_house_modifier = sas_special_operations_training_house_modifier_paid
+			}
 			has_house_modifier = sas_expand_spy_network_house_modifier
 			NOT = { 
 				OR = {
