@@ -748,7 +748,6 @@ sas_count_hostile_scheme_and_add_renown = {
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
 				}
-				
 			}
 		}
 		dynasty = {
