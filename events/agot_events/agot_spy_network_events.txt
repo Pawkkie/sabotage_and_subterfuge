@@ -66,7 +66,11 @@ agot_spy_network.0100 = {
 						modifier = {
 							root = {
 								house ?= {
-									has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+									OR = {
+										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+									}
 								}
 							}
 							add = 3
@@ -166,7 +170,11 @@ agot_spy_network.0105 = {
 							modifier = {
 								root = {
 									house ?= {
-										has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier
+										OR = {
+											has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+											has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+											has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+										}
 									}
 								}
 								add = 10

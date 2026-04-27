@@ -40,4 +40,13 @@
  setting_sas_salary_free: "Free Salaries"
  setting_sas_salary_free_desc: "The Special Operations Training decision makes [intrigue|E] [court_positions|E] cost no salary"
  setting_sas_salary_paid: "Paid Salaries"
- setting_sas_salary_paid_desc: "The Special Operations Training decision does not make [intriuge|E] [court_positions|E] cost no salary. They must still be paid"
+ setting_sas_salary_paid_desc: "The Special Operations Training decision does not make [intrigue|E] [court_positions|E] cost no salary. They must still be paid"
+
+ # Scheme Completion Renown
+ rule_sas_scheme_completion_renown: "Scheme Completion Renown"
+ setting_sas_scheme_renown_large: "Large"
+ setting_sas_scheme_renown_large_desc: "House members gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"
+ setting_sas_scheme_renown_medium: "Medium"
+ setting_sas_scheme_renown_medium_desc: "House members gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"
+ setting_sas_scheme_renown_small: "Small"
+ setting_sas_scheme_renown_small_desc: "House members gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"

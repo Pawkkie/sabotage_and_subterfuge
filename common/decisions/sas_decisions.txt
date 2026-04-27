@@ -319,7 +319,13 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 		exists = house
 		house = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
-			NOT = { has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier }
+			NOT = { 
+				OR = {
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+				}
+			}
 		}
 	}
 
@@ -348,11 +354,43 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 	}
 
 	effect = {
-		custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown
+		if = {
+			limit = {
+				has_game_rule = sas_scheme_renown_large
+			}
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_large
+		}
+		else_if = {
+			limit = {
+				has_game_rule = sas_scheme_renown_medium
+			}
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_medium
+		}
+		else = {
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_small
+		}
 		custom_tooltip = sas_house_of_sabotage_and_subterfuge_spies_better_discovery
 		house = {
-			add_house_modifier = {
-				modifier = sas_house_of_sabotage_and_subterfuge_modifier
+			if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_large
+				}
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_medium
+				}
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+				}
+			}
+			else = {
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+				}
 			}
 		}
 		# Give black book artifact if don't have one
@@ -421,7 +459,13 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
 			has_house_modifier = sas_special_operations_training_house_modifier
 			has_house_modifier = sas_expand_spy_network_house_modifier
-			NOT = { has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier }
+			NOT = { 
+				OR = {
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+				}
+			}
 		}
 		is_house_head = yes
 		exists = cp:councillor_spymaster
