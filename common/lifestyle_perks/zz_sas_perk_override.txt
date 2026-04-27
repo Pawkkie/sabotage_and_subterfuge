@@ -47,7 +47,10 @@ accomplished_forger_perk = {
 		# SAS Change
 		if = {
 			limit = {
-				has_game_rule = sas_modified_perks
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_interactions
+				}
 			}
 			custom_description_no_bullet = {
 				text = accomplished_forger_ennoble_perk_effect
