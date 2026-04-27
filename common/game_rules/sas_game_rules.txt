@@ -32,3 +32,17 @@ sas_administrative_independence = {
 	admin_independence_enabled = {
 	}
 }
+sas_modified_perks = {
+	categories = {
+		sas
+	}
+	default = sas_all_modified_perks
+	sas_all_modified_perks = {
+	}
+	spy_perks_only = {
+	}
+	spy_and_intrigue_buffs = {
+	}
+	spy_and_interactions = {
+	}
+}

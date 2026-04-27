@@ -372,8 +372,19 @@
 			if = {
 				limit = {
 					# SAS Change
-					exists = court_position:smuggler_court_position
-					# has_perk = golden_obligations_perk
+					OR = {
+						AND = {
+							has_game_rule = sas_all_modified_perks
+							exists = court_position:smuggler_court_position
+						}
+						AND = {
+							OR = {
+								has_game_rule = spy_perks_only
+								has_game_rule = spy_and_intrigue_buffs
+							}
+							has_perk = golden_obligations_perk
+						}
+					}
 					# SAS Change End
 				}
 				every_vassal = {

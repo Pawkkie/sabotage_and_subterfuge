@@ -1,0 +1,21 @@
+﻿# This is a separate effect to help with compatibility handed in on_action
+sas_removal_all_perk_traits_effect = {
+	if = {
+		limit = {
+			has_character_modifier = smooth_operator_character_modifier
+		}
+		remove_character_modifier = smooth_operator_character_modifier
+	}
+	if = {
+		limit = {
+			has_character_modifier = unshackled_lust_character_modifier
+		}
+		remove_character_modifier = unshackled_lust_character_modifier
+	}
+	if = {
+		limit = {
+			has_character_modifier = graceful_recovery_character_modifier
+		}
+		remove_character_modifier = graceful_recovery_character_modifier
+	}
+}

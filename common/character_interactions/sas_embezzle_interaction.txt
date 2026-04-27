@@ -11,6 +11,10 @@ sas_embezzle_interaction = {
 	desc = sas_embezzle_interaction_desc
 
 	is_shown = {
+		OR = {
+			has_game_rule = sas_all_modified_perks
+			has_game_rule = spy_and_interactions
+		}
 		NOT = { scope:actor = scope:recipient }
 		# Make sure scope:recipient is suitable.
 		scope:actor = {

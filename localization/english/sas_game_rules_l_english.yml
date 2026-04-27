@@ -23,3 +23,14 @@
  setting_admin_independence_disabled_desc: "[independence_factions|E] cannot form against [administrative_governments|E]"
  setting_admin_independence_enabled: "Enabled"
  setting_admin_independence_enabled_desc: "[independence_factions|E] can form against [administrative_governments|E]"
+
+ # Modified Perks
+ rule_sas_modified_perks: "Modified Perks"
+ setting_sas_all_modified_perks: "All Modified Perks"
+ setting_sas_all_modified_perks_desc: "Use all of the modified perks included with the mod, including new interactions and buffs to the [intrigue|E] lifestyle"
+ setting_spy_perks_only: "Spy Perks Only"
+ setting_spy_perks_only_desc: "Use only the perk modifications that affect the [sas_spy_network|E], and none of the [intrigue|E] lifestyle buffs or new interactions"
+ setting_spy_and_intrigue_buffs: "Spy Perks and Intrigue Buffs"
+ setting_spy_and_intrigue_buffs_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and the [intrigue|E] lifestyle buffs, and no new interactions"
+ setting_spy_and_interactions: "Spy Perks and Interactions"
+ setting_spy_and_interactions_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and add new interactions, and none of the [intrigue|E] buffs"

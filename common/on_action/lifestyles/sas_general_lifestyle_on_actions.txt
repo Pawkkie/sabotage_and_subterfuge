@@ -1,0 +1,12 @@
+﻿# This removes the need to overwrite remove_all_perk_lifestyle_traits_effect
+on_perks_refunded = {
+	on_actions = {
+		sas_on_perks_refunded
+	}
+}
+
+sas_on_perks_refunded = {
+	effect = {
+		sas_removal_all_perk_traits_effect = yes
+	}
+}

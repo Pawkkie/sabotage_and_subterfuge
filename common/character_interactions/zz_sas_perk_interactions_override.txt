@@ -12,8 +12,20 @@
 		scope:actor = {
 			OR = {
 				# SAS Change
-				# has_perk = golden_obligations_perk
-				exists = court_position:smuggler_court_position
+				AND = {
+					OR = {
+						has_game_rule = sas_all_modified_perks
+						has_game_rule = spy_and_interactions
+					}
+					exists = court_position:smuggler_court_position
+				}
+				AND = {
+					OR = {
+						has_game_rule = spy_perks_only
+						has_game_rule = spy_and_intrigue_buffs
+					}
+					has_perk = golden_obligations_perk
+				}		
 				# SAS Change End
 				AND = {
 					any_character_struggle = {

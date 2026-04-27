@@ -70,6 +70,10 @@
 	# SAS Change
 	send_option = { # Offer Ennoblement
 		is_shown = {
+			OR = {
+				has_game_rule = sas_all_modified_perks
+				has_game_rule = spy_and_interactions
+			}
 			scope:actor = {
 				is_landed = yes
 				has_perk = accomplished_forger_perk
@@ -234,7 +238,13 @@
 		}
 		# SAS Change
 		if = {
-			limit = { always = scope:offer_ennoblement }
+			limit = { 
+				always = scope:offer_ennoblement
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_interactions
+				}
+			}
 			scope:actor = {
 				remove_short_term_Gold = medium_gold_value
 				add_prestige = medium_prestige_loss

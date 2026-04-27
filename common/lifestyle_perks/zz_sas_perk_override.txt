@@ -45,8 +45,13 @@ accomplished_forger_perk = {
 			}
 		}
 		# SAS Change
-		custom_description_no_bullet = {
-			text = accomplished_forger_ennoble_perk_effect
+		if = {
+			limit = {
+				has_game_rule = sas_modified_perks
+			}
+			custom_description_no_bullet = {
+				text = accomplished_forger_ennoble_perk_effect
+			}
 		}
 		# SAS Change End
 	}
@@ -107,12 +112,33 @@ unshackled_lust_perk = {
 		custom_description_no_bullet = {
 			text = unshackled_lust_perk_effect
 		}
+		# SAS Change
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_intrigue_buffs
+				}
+			}
+			custom_description_no_bullet = {
+				text = sas_unshackled_lust_perk_effect
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = sas_all_modified_perks
+						has_game_rule = spy_and_intrigue_buffs
+					}
+				}
+				add_character_modifier = {
+					modifier = unshackled_lust_character_modifier
+				}
+			}
+		}
+		# SAS Change End
 	}
-	# SAS Change
-	character_modifier = {
-		years_of_fertility = 5
-	}
-	# SAS Change End
 }
 
 subtle_desire_perk = {
@@ -164,23 +190,31 @@ mortal_adoration_perk = {
 			custom_description_no_bullet = { text = add_mandala_radiance_perk_effect }
 		}
 		# SAS Change
-		custom_description_no_bullet = {
-			text = sas_mortal_adoration_lovers_perk_effect
-		}
-		hidden_effect = {
-			every_relation = {
-				type = lover
-				add_to_temporary_list = sas_mortal_adoration_lovers
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_intrigue_buffs
+				}
 			}
-			every_relation = {
-				type = soulmate
-				limit = { NOT = { is_in_list = sas_mortal_adoration_lovers } }
-				add_to_temporary_list = sas_mortal_adoration_lovers
+			custom_description_no_bullet = {
+				text = sas_mortal_adoration_lovers_perk_effect
 			}
-			every_in_list = {
-				list = sas_mortal_adoration_lovers
-				root = {
-					sas_mortal_adoration_skill_gain_effect = yes
+			hidden_effect = {
+				every_relation = {
+					type = lover
+					add_to_temporary_list = sas_mortal_adoration_lovers
+				}
+				every_relation = {
+					type = soulmate
+					limit = { NOT = { is_in_list = sas_mortal_adoration_lovers } }
+					add_to_temporary_list = sas_mortal_adoration_lovers
+				}
+				every_in_list = {
+					list = sas_mortal_adoration_lovers
+					root = {
+						sas_mortal_adoration_skill_gain_effect = yes
+					}
 				}
 			}
 		}
@@ -230,13 +264,22 @@ enticing_opportunity_perk = {
 	}
 	# SAS Change
 	effect = {
-		custom_description_no_bullet = {	
-			text = sas_enticing_opportunity_induct_bastard_effect
-		}
-		custom_description_no_bullet = {
-			text = sas_enticing_opportunity_steal_bastard_effect
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_interactions
+				}
+			}
+			custom_description_no_bullet = {	
+				text = sas_enticing_opportunity_induct_bastard_effect
+			}
+			custom_description_no_bullet = {
+				text = sas_enticing_opportunity_steal_bastard_effect
+			}
 		}
 	}
+	
 	# SAS Change End
 }
 
@@ -256,12 +299,33 @@ graceful_recovery_perk = {
 		custom_description_no_bullet = {
 			text = graceful_recovery_perk_effect
 		}
+		# SAS Change
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_intrigue_buffs
+				}
+			}
+			custom_description_no_bullet = {
+				text = sas_graceful_recovery_perk_effect
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = sas_all_modified_perks
+						has_game_rule = spy_and_intrigue_buffs
+					}
+				}
+				add_character_modifier = {
+					modifier = graceful_recovery_character_modifier
+				}
+			}
+		}
+		# SAS Change End
 	}
-	# SAS Change
-	character_modifier = {
-		attraction_opinion = 15
-	}
-	# SAS Change End
 }
 
 smooth_operator_perk = {
@@ -280,12 +344,33 @@ smooth_operator_perk = {
 		custom_description_no_bullet = {
 			text = smooth_operator_perk_effect
 		}
-	}
-	# SAS Change
-	character_modifier = {
-		max_personal_schemes_add = 1
-	}
-	# SAS Change End
+		# SAS Change
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_intrigue_buffs
+				}
+			}
+			custom_description_no_bullet = {
+				text = sas_smooth_operator_perk_effect
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = sas_all_modified_perks
+						has_game_rule = spy_and_intrigue_buffs
+					}
+				}
+				add_character_modifier = {
+					modifier = smooth_operator_character_modifier
+				}
+			}
+		}
+		# SAS Change End
+	}	
 }
 
 # Intrigue 3 (Intimidation)
@@ -377,11 +462,21 @@ golden_obligations_perk = {
 	
 	effect = {
 		# SAS Change
-		# custom_description_no_bullet = {
-		# 	text = golden_obligations_perk_effect
-		# }
-		custom_description_no_bullet = {
-			text = golden_obligations_embezzle_perk_effect
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = sas_all_modified_perks
+					has_game_rule = spy_and_interactions
+				}
+			}
+			custom_description_no_bullet = {
+				text = golden_obligations_embezzle_perk_effect
+			}
+		}
+		else = {
+			custom_description_no_bullet = {
+				text = golden_obligations_perk_effect
+			}
 		}
 		# SAS Change End
 	}

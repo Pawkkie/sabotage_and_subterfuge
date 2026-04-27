@@ -13,3 +13,18 @@ provoked_dissolution_character_modifier = {
 	icon = prowess_positive
 	levy_size = 0.1
 }
+
+smooth_operator_character_modifier = {
+	icon = love_positive
+	max_personal_schemes_add = 1
+}
+
+unshackled_lust_character_modifier = {
+	icon = love_positive
+	years_of_fertility = 5
+}
+
+graceful_recovery_character_modifier = {
+	icon = love_positive
+	attraction_opinion = 15
+}

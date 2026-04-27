@@ -8,6 +8,10 @@
  	cooldown = { years = 5 }
 
 	is_shown = {
+		OR = {
+			has_game_rule = sas_all_modified_perks
+			has_game_rule = spy_and_interactions
+		}
 		scope:recipient != scope:actor
 
 		scope:actor = {
