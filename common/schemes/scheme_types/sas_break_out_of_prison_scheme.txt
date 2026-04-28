@@ -120,7 +120,7 @@
 		modifier = {
 			desc = PLAN_PRISON_BREAK_HELPS_BONUS
 			add = 20
-			scope:target.court_position:smuggler_court_position = {
+			scope:owner.court_position:smuggler_court_position = {
 				aptitude = {
 					court_position = smuggler_court_position
 					value >= 4

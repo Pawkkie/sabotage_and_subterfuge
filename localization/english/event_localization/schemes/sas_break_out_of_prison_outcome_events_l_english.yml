@@ -4,11 +4,13 @@
  break_out_of_prison_outcome.0001.t: "Vanished Into the Night"
  break_out_of_prison_outcome.0001.desc: "[smuggler.GetUIName] has pulled off the prison break flawlessly! [target.GetUIName] is now once again freely able to roam the lands. [imprisoner.GetUIName] has absolutely noticed [target.GetHerHis] absence, but is none the wiser for how such an escape might have been possible.\n\nCould it have been an inside job? Is [imprisoner.GetHerHis] spymaster not trustworthy, are [target.GetHerHis] guards not up to the task? May the paranoia eat at [imprisoner.GetHerHim] for imprisoning such a [target.GetWomanMan].
  break_out_of_prison_outcome.0001.a: "Free at last!"
+ break_out_of_prison_outcome.0001.b: "You might be safer with us."
 
  ## Success and discovered
  break_out_of_prison_outcome.0002.t: "Outrunning the Guards"
  break_out_of_prison_outcome.0002.desc: "[smuggler.GetUIName] managed to pull off the prison break! Unfortunately a misstep here and a mishap there meant that the escape was an enormously cacophonous affair, and it's apparent that my name was thrown about amidst all the shouting.\n\n[imprisoner.GetUIName] is justifiably displeased with the situation on the whole, and I have it on good authority that after after severely reprimanding [imprisoner.GetHerHis] guards [imprisoner.GetSheHe] had some choice words for me as well."
  break_out_of_prison_outcome.0002.a: "At least you're free!"
+ break_out_of_prison_outcome.0002.b: "...D'you want to come with us?"
 
  ## Unsuccessful and secret
  break_out_of_prison_outcome.0003.t: "Must Have The Wrong Key"

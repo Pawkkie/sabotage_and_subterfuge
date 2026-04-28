@@ -150,7 +150,7 @@
 		is_ruler = yes
 		ai_compassion >= medium_positive_ai_value
 		ai_boldness >= medium_positive_ai_value
-		exists = court_position:smuggle_court_position
+		exists = court_position:smuggler_court_position
 		exists = var:smuggler_is_planning_prison_break
 		var:smuggler_is_planning_prison_break = yes
 

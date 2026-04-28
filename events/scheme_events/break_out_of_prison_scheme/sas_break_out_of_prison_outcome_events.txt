@@ -42,48 +42,67 @@ break_out_of_prison_outcome.0001 = {
 				}
 			}
 		}
-		scope:target = { 
-			if = {
-				limit = {
-					OR = {
-						scope:imprisoner = scope:liege
-						scope:imprisoner = scope:top_liege
-					}
-					is_landed_or_landless_administrative = no
-					is_ai = yes
-					NOT = {
-						any_heir_title = {
-							exists = holder
-						}
-					}
-					#Do they have the "wrong" marriage type?
-					NOR = {
-						any_spouse = {
-							is_female = yes
-							matrilinear_marriage = yes
-						}
-						any_spouse = {
-							is_male = yes
-							patrilinear_marriage = yes
-						}
-						betrothed ?= {
-							is_female = yes
-							matrilinear_betrothal = yes
-						}
-						betrothed ?= {
-							is_male = yes
-							patrilinear_betrothal = yes
-						}
-					}
-				}
-			}
-			release_from_prison = yes
+		scope:target = {
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
+			} 
+			release_from_prison = yes
+		}
+		scope:owner = {
+			if = {
+				limit = {
+					can_add_hook = {
+						target = scope:target
+						type = favor_hook
+					}
+				}
+				add_hook = {
+					target = scope:target
+					type = favor_hook
+				}
 			}
-			# Send a toast message that the target left the court
-			hidden_effect = {
+		}
+	}
+	option = {
+		name = break_out_of_prison_outcome.0001.b
+		trigger = {
+			scope:target = {
+				OR = {
+					scope:imprisoner = this.liege
+					scope:imprisoner = this.top_liege
+				}
+				is_landed_or_landless_administrative = no
+				is_ai = yes
+				NOT = {
+					any_heir_title = {
+						exists = holder
+					}
+				}
+				#Do they have the "wrong" marriage type?
+				NOR = {
+					any_spouse = {
+						is_female = yes
+						matrilinear_marriage = yes
+					}
+					any_spouse = {
+						is_male = yes
+						patrilinear_marriage = yes
+					}
+					betrothed ?= {
+						is_female = yes
+						matrilinear_betrothal = yes
+					}
+					betrothed ?= {
+						is_male = yes
+						patrilinear_betrothal = yes
+					}
+				}
+			}
+		}
+		# Send a toast message that the target left the court
+		hidden_effect = {
+			scope:imprisoner = {
 				send_interface_message = {
 					type = event_generic_neutral
 					title = msg_courtier_left_court_interaction_title
@@ -94,13 +113,28 @@ break_out_of_prison_outcome.0001 = {
 						remove_courtier_or_guest = scope:target
 					}
 				}
+				# Send a toast message that the target escaped prison	
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = break_out_of_prison_outcome.escape
+					right_icon = scope:target
+					custom_tooltip = break_out_of_prison_target_escaped
+				}
 			}
+		}
+		# Target joins owner's court
+		scope:target = {
 			every_traveling_family_member = {
 				scope:owner = { add_courtier = prev }
 				hidden_effect = {
 					return_to_court = yes
 				}
 			}
+			add_opinion = {
+				target = scope:owner
+				modifier = sas_broke_out_of_prison_opinion
+			} 
+			release_from_prison = yes
 		}
 		scope:owner = {
 			if = {
@@ -170,48 +204,68 @@ break_out_of_prison_outcome.0002 = {
 				}
 			}
 		}
-		scope:target = { 
-			if = {
-				limit = {
-					OR = {
-						scope:imprisoner = scope:liege
-						scope:imprisoner = scope:top_liege
-					}
-					is_landed_or_landless_administrative = no
-					is_ai = yes
-					NOT = {
-						any_heir_title = {
-							exists = holder
-						}
-					}
-					#Do they have the "wrong" marriage type?
-					NOR = {
-						any_spouse = {
-							is_female = yes
-							matrilinear_marriage = yes
-						}
-						any_spouse = {
-							is_male = yes
-							patrilinear_marriage = yes
-						}
-						betrothed ?= {
-							is_female = yes
-							matrilinear_betrothal = yes
-						}
-						betrothed ?= {
-							is_male = yes
-							patrilinear_betrothal = yes
-						}
-					}
-				}
-			}
-			release_from_prison = yes
+		scope:target = {
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
+			} 
+			release_from_prison = yes
+		}
+		scope:owner = {
+			if = {
+				limit = {
+					can_add_hook = {
+						target = scope:target
+						type = favor_hook
+					}
+				}
+				add_hook = {
+					target = scope:target
+					type = favor_hook
+				}
 			}
-			# Send a toast message that the target left the court
-			hidden_effect = {
+		}
+	}
+	option = {
+		name = break_out_of_prison_outcome.0002.b
+		trigger = {
+			scope:target = {
+				OR = {
+					scope:imprisoner = this.liege
+					scope:imprisoner = this.top_liege
+				}
+				is_landed_or_landless_administrative = no
+				is_ai = yes
+				NOT = {
+					any_heir_title = {
+						exists = holder
+					}
+				}
+				#Do they have the "wrong" marriage type?
+				NOR = {
+					any_spouse = {
+						is_female = yes
+						matrilinear_marriage = yes
+					}
+					any_spouse = {
+						is_male = yes
+						patrilinear_marriage = yes
+					}
+					betrothed ?= {
+						is_female = yes
+						matrilinear_betrothal = yes
+					}
+					betrothed ?= {
+						is_male = yes
+						patrilinear_betrothal = yes
+					}
+				}
+			}
+		}
+		break_out_of_prison_failure_effect = yes
+		# Send a toast message that the target left the court
+		hidden_effect = {
+			scope:imprisoner = {
 				send_interface_message = {
 					type = event_generic_neutral
 					title = msg_courtier_left_court_interaction_title
@@ -222,13 +276,28 @@ break_out_of_prison_outcome.0002 = {
 						remove_courtier_or_guest = scope:target
 					}
 				}
+				# Send a toast message that the target escaped prison and it's known who did it
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = break_out_of_prison_outcome.escape
+					right_icon = scope:target
+					custom_tooltip = break_out_of_prison_target_escaped_caught
+				}
 			}
+		}
+		# Target joins owner's court
+		scope:target = {
 			every_traveling_family_member = {
 				scope:owner = { add_courtier = prev }
 				hidden_effect = {
 					return_to_court = yes
 				}
 			}
+			add_opinion = {
+				target = scope:owner
+				modifier = sas_broke_out_of_prison_opinion
+			} 
+			release_from_prison = yes
 		}
 		scope:owner = {
 			if = {
