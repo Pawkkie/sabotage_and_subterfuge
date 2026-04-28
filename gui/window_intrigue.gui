@@ -149,15 +149,29 @@ window = {
 					#AGOT Added; Spy Network Tab
 					button_tab = {
 						name = "open_spy_network_tab"
-						layoutpolicy_horizontal = expanding
 						# SAS Change
 						visible = "[GetScriptedGui('show_spies_window').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						# SAS Change End
-						text = "OPEN_SPY_NETWORK_TAB"
-						default_format = "#low"
-						onclick = "[IntrigueWindow.SetTab( 'schemes' )]"
-						onclick = "[GetVariableSystem.Set( 'intrigue_view_tabs', 'spy_network' )]"
-						down = "[GetVariableSystem.HasValue( 'intrigue_view_tabs', 'spy_network' )]"
+						onclick = "[IntrigueWindow.SetTab('schemes')]"
+						onclick = "[GetVariableSystem.Set('intrigue_view_tabs', 'spy_network')]"
+						down = "[GetVariableSystem.HasValue('intrigue_view_tabs', 'spy_network')]"
+						shortcut = "tab_3"
+
+						alwaystransparent = "[GetVariableSystem.HasValue('intrigue_view_tabs', 'spy_network')]"
+
+						blockoverride "tab_label"
+						{
+							text = "OPEN_SPY_NETWORK_TAB"
+							max_width = 220
+						}
+
+						blockoverride "icon_visible" {}
+
+						blockoverride "tab_icon"
+						{
+							texture = "gfx/interface/icons/flat_icons/slander.dds"
+							down = "[GetVariableSystem.HasValue('intrigue_view_tabs', 'spy_network')]"
+						}
 						using = tooltip_above
 					}
 				}
