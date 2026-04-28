@@ -1241,3 +1241,75 @@ sas_scheme_critical_moments.1031 = {
 		}
 	}
 }
+
+##################################################
+# Break Out of Prison Results
+# 1040 - 104X
+##################################################
+
+# Check result
+sas_scheme_critical_moments.1041 = {
+	hidden = yes
+	theme = break_out_of_prison_scheme
+	immediate = {
+		scope:scheme = {
+			# Do the success Roll
+			random = {
+				chance = scheme_success_chance
+				save_scope_value_as = {
+					name = scheme_succeeded
+					value = yes
+				}
+			}
+			# Do the Secrecy Roll
+			save_scope_value_as = {
+				name = discovery_chance
+				value = {
+					value = 100
+					subtract = scheme_secrecy
+				}
+			}
+			random = {
+				chance = scope:discovery_chance
+				save_scope_value_as = {
+					name = scheme_discovered
+					value = yes
+				}
+			}
+
+			# On Success:
+			if = {
+				limit = { exists = scope:scheme_succeeded }
+				# Discovered
+				if = {
+					limit = { exists = scope:scheme_discovered }
+					scheme_owner = {
+						trigger_event = break_out_of_prison_outcome.0002
+					}
+				}
+				# Secret
+				else = {
+					scheme_owner = {
+						trigger_event = break_out_of_prison_outcome.0001
+					}
+				}
+			}
+			# On Failure:
+			else = {
+				if = {
+					# Discovered
+					limit = { exists = scope:scheme_discovered }
+					scheme_owner = {
+						trigger_event = break_out_of_prison_outcome.0004
+					}
+				}
+				# Secret
+				else = {
+					scheme_owner = {
+						trigger_event = break_out_of_prison_outcome.0003
+					}
+				}
+			}
+		}
+	}
+}

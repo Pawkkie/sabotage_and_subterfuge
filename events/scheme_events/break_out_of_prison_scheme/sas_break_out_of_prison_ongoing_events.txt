@@ -1,0 +1,246 @@
+﻿namespace = break_out_of_prison_ongoing
+
+# Invited to a feast
+break_out_of_prison_ongoing.0001 = {
+	type = character_event
+	title = break_out_of_prison_ongoing.0001.t
+	desc = break_out_of_prison_ongoing.0001.desc
+	theme = rouse_rabble_scheme
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0001 }
+			scheme_agent_charges < opportunity_cap_value
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0001
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Attend
+		name = break_out_of_prison_ongoing.0001.a
+		stress_impact = {
+			shy = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_attended_local_feast
+			}
+			change_opportunities = 1
+		}
+	}
+
+	option = { # Gift
+		name = break_out_of_prison_ongoing.0001.b
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		remove_short_term_gold = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_sent_gift_to_local_feast
+			}
+		}
+	}
+
+	option = { # Neither
+		name = break_out_of_prison_ongoing.0001.c
+		stress_impact = {
+			gregarious = medium_stress_impact_gain
+		}
+		add_prestige = -50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_ignored_local_feast
+			}
+		}
+	}
+}
+
+# Relief from disaster
+break_out_of_prison_ongoing.0002 = {
+	type = character_event
+	title = break_out_of_prison_ongoing.0002.t
+	desc = break_out_of_prison_ongoing.0002.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = burning_building
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_intrigue"
+	}
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0002 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0002
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Intercept
+		name = break_out_of_prison_ongoing.0002.a
+		stress_impact = {
+			honest = medium_stress_impact_gain
+		}
+		add_piety = -50
+		add_prestige = -50
+		add_dread = medium_dread_gain
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_intercept_aid
+			}
+		}
+	}
+
+	option = { # Endorse
+		name = break_out_of_prison_ongoing.0002.b
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		remove_short_term_gold = 50
+		add_prestige = 50
+		scope:target = {
+			add_opinion = {
+				target = scope:owner
+				modifier = rouse_rabble_endorsed_aid_opinion
+			}
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_endorse_aid
+			}
+		}
+	}
+
+	option = { # Nothing
+		name = break_out_of_prison_ongoing.0002.c
+		stress_impact = {
+			generous = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_ignore_aid
+			}
+		}
+	}
+}
+
+# Connecting with the Youth
+break_out_of_prison_ongoing.0003 = {
+	type = character_event
+	title = break_out_of_prison_ongoing.0003.t
+	desc = break_out_of_prison_ongoing.0003.desc
+	theme = rouse_rabble_scheme
+	override_background = {
+		reference = army_camp	
+	}
+	override_sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_martial"
+	}
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:owner.court_position:rabble_rouser_court_position
+		animation = happy_teacher
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_ongoing_0003 }
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_ongoing_0003
+				value = yes
+			}
+		}
+		scope:target.primary_title = {
+			save_scope_as = target_title
+		}
+		scope:owner.court_position:rabble_rouser_court_position = {
+			save_scope_as = rouser_name
+		}
+	}
+
+	option = { # Mock battle
+		name = break_out_of_prison_ongoing.0003.a
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_mock_battle
+			}
+		}
+	}
+
+	option = { # Hunting tournament
+		name = break_out_of_prison_ongoing.0003.b
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_hunting_tournament
+			}
+		}
+	}
+
+	option = { # Cultural exchange
+		name = break_out_of_prison_ongoing.0003.c
+		add_prestige = 50
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = rouse_rabble_cultural_exchange
+			}
+		}
+	}
+}

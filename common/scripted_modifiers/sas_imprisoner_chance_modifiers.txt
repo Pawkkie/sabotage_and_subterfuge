@@ -1,0 +1,373 @@
+﻿# Modified version of hostile_scheme_base_chance_modifier
+hostile_scheme_base_chance_modifier_imprisoner = {
+	first_valid = {
+		modifier = {
+			add = -30
+			exists = scope:target.imprisoner.primary_title
+			scope:target.imprisoner.primary_title.tier = tier_empire
+			desc = "SCHEME_TARGET_IMPRISONER_IS_AN_EMPEROR"
+		}
+		modifier = {
+			add = -20
+			exists = scope:target.imprisoner.primary_title
+			scope:target.imprisoner.primary_title.tier = tier_kingdom
+			desc = "SCHEME_TARGET_IMPRISONER_IS_A_KING"
+		}
+	}
+
+	# Scheme restarted
+	modifier = {
+		add = scope:scheme.var:scheme_reset_to_zero_value
+		scope:scheme ?= { has_variable = scheme_reset_to_zero_value }
+		desc = "SCHEME_RESTARTED"
+	}
+
+	modifier = { # Minor Lifestyle Perk protection for Courtiers
+		add = {
+			value = 0
+			subtract = prepared_for_anything_perk_secondary_percentage
+		}
+		scope:target.imprisoner = {
+			is_alive = yes
+			is_ruler = no
+			court_owner ?= {
+				has_perk = prepared_for_anything_perk
+			}
+			court_owner != scope:owner
+			NOT = { has_perk = prepared_for_anything_perk }
+		}
+		desc = "SCHEME_PREPARED_FOR_ANYTHING_LIEGE_PERK_MODIFIER"
+	}
+
+	first_valid = { # Essentially the Base
+		modifier = {
+			add = 75
+			scope:owner = {
+				exists = scope:target.imprisoner.cp:councillor_spymaster
+				scope:target.imprisoner.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER_IMPRISONER"
+		}
+		modifier = {
+			add = 75
+			scope:target.imprisoner = {
+				is_landed_or_landless_administrative = no
+			}
+			scope:owner = {
+				exists = scope:target.imprisoner.liege.cp:councillor_spymaster
+				scope:target.imprisoner.liege.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER_OF_LIEGE_IMPRISONER"
+		}
+		modifier = {
+			add = 75
+			scope:target.imprisoner = {
+				is_landed_or_landless_administrative = no
+			}
+			scope:owner = {
+				exists = scope:target.imprisoner.host.cp:councillor_spymaster
+				scope:target.imprisoner.host.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER_OF_HOST"
+		}
+		modifier = {
+			add = 75
+			scope:owner = {
+				has_relation_guardian = scope:target.imprisoner
+			}
+			desc = "SCHEME_I_AM_GUARDIAN"
+		}
+		modifier = {
+			add = 50
+			scope:owner = { is_diarch_of_target = scope:target.imprisoner }
+			desc = "SCHEME_I_AM_DIARCH"
+		}
+		modifier = {
+			add = 25
+			scope:target.imprisoner = {
+				is_ruler = no
+			}
+			exists = scope:target.imprisoner.liege
+			scope:target.imprisoner.liege = scope:owner
+			desc = "SCHEME_TARGET_IN_MY_COURT_IMPRISONER"
+		}
+		modifier = {
+			add = 15
+			scope:owner = {
+				is_councillor_of = scope:target.imprisoner
+			}
+			desc = "SCHEME_I_AM_COUNCILLOR_IMPRISONER"
+		}
+		modifier = {
+			add = 15
+			scope:owner = {
+				has_relation_lover = scope:target.imprisoner
+			}
+			desc = "SCHEME_TARGET_IS_LOVER_IMPRISONER"
+		}
+		modifier = {
+			add = 10
+			scope:owner = {
+				is_spouse_of = scope:target.imprisoner
+			}
+			desc = "SCHEME_TARGET_IS_SPOUSE_IMPRISONER"
+		}
+		modifier = {
+			add = 5
+			scope:owner = {
+				is_consort_of = scope:target.imprisoner
+			}
+			desc = "SCHEME_TARGET_IS_CONCUBINE_IMPRISONER"
+		}
+		modifier = {
+			add = 5
+			scope:owner = {
+				is_close_family_of = scope:target.imprisoner
+			}
+			desc = "SCHEME_TARGET_IS_CLOSE_FAMILY_IMPRISONER"
+		}
+	}
+
+	#Characters who has the disloyal trait are predisposed to scheme
+	modifier = {
+		add = 10
+		scope:owner = {
+			has_trait = disloyal
+		}
+		desc = "HAS_DISLOYAL_TRAIT"
+	}
+	modifier = {
+		add = -10
+		scope:owner = {
+			has_trait = loyal
+		}
+		desc = "HAS_LOYAL_TRAIT"
+	}
+
+	modifier = { # Vengeful Bonus
+		add = vengeful_scheme_success_chance_modifier
+		scope:owner = {
+			has_trait = vengeful
+			OR = {
+				has_relation_rival = scope:target.imprisoner
+				has_relation_nemesis = scope:target.imprisoner
+			}
+		}
+		desc = "SCHEME_VENGEFUL_RIVAL_IMPRISONER"
+	}
+
+	modifier = { # Culture Bonus
+		add = 15
+		scope:owner = {
+			culture = {
+				has_cultural_parameter = hostile_action_vs_rival_bonuses
+			}
+			OR = {
+				has_relation_rival = scope:target.imprisoner
+				has_relation_nemesis = scope:target.imprisoner
+			}
+		}
+		desc = "SCHEME_EYE_FOR_AN_EYE_IMPRISONER"
+	}
+
+	modifier = { # Culture Bonus
+		add = -50
+		scope:owner = {
+			culture = {
+				has_cultural_parameter = hostile_scheme_success_chance_vs_spouse_penalty
+			}
+			is_spouse_of = scope:target.imprisoner
+		}
+		desc = "SCHEME_WEDDING_CEREMONIES_IMPRISONER"
+	}
+
+	modifier = {
+		add = -35
+		always = scope:exposed
+		desc = "SCHEME_IS_EXPOSED"
+	}
+
+	# Difficulty
+	modifier = {
+		add = -25
+		has_game_rule = easy_difficulty
+		scope:owner = {
+			is_ai = yes
+		}
+		scope:target.imprisoner = {
+			is_ai = no
+		}
+		desc = "SCHEME_SUCCESS_DIFFICULTY_EASY"
+	}
+
+	modifier = {
+		add = -75
+		has_game_rule = very_easy_difficulty
+		scope:owner = {
+			is_ai = yes
+		}
+		scope:target.imprisoner = {
+			is_ai = no
+		}
+		desc = "SCHEME_SUCCESS_DIFFICULTY_VERY_EASY"
+	}
+
+	# Struggle
+	modifier = {
+		add = -25
+		scope:owner = {
+			any_character_struggle = {
+				involvement = involved
+				has_struggle_phase_parameter = struggle_agents_less_likely_to_join_schemes
+				is_secondary_character_involvement_involved_trigger = {
+					CHAR = scope:target.imprisoner
+				}
+			}
+		}
+	}
+	## court_events.3060
+	modifier = {
+		add = 25
+		scope:owner = { has_character_modifier = spies_behind_every_corner_modifier }
+		desc = scheme.owner.spies_behind_every_corner_modifier.value_desc
+	}
+	modifier = {
+		add = 25
+		scope:target.imprisoner = { has_character_modifier = spies_behind_every_corner_modifier }
+		desc = scheme.imprisoner.spies_behind_every_corner_modifier.value_desc
+	}
+	## tgp_japan_yearly_events.1071
+	modifier = {
+		add = 10 
+		scope:owner = { 
+			has_variable = tgp_1071_bonus
+			var:tgp_1071_bonus = scope:target.imprisoner
+		}
+		desc = scheme.target.japan_1071.value_desc
+	}
+
+	# house_head_request_interaction
+	modifier = {
+		add = hostile_scheme_variable_list_value
+		scope:owner = {
+			has_variable_list = supporting_hostile_schemes
+		}
+		desc = HOUSE_HEAD_SCHEME_SUPPORT_DESC
+	}
+	modifier = {
+		add = -10
+		scope:owner = { has_character_modifier = hostile_schemes_distracted_modifier }
+		desc = hostile_schemes_distracted_modifier
+	}
+
+	# House Relations
+	modifier = {
+		add = house_relation_hostile_scheme_bonus_value
+		scope:owner.house ?= {
+			NOT = { scope:target.imprisoner.house ?= this }
+			any_house_relation = {
+				has_house_relation_parameter = hostile_scheme_bonus
+				any_relation_house = {
+					scope:target.imprisoner.house ?= this
+				}
+			}
+		}
+		desc = house_relation_hostile_scheme_bonus_desc
+	}
+	modifier = {
+		add = 15
+		scope:owner = {
+			has_variable = spouse_hostile_scheme_bonus
+			var:spouse_hostile_scheme_bonus = {
+				this = scope:target.imprisoner
+			}
+		}
+		desc = coronation_spouse_despised_modifier
+	}
+}
+
+# Modified version of apply_calculated_scheme_success_chance_adjustments_modifier
+apply_calculated_scheme_success_chance_adjustments_modifier_imprisoner = {
+	first_valid = {
+		# Bonuses Against
+		## Minor
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_bonus_against_minor_value
+			desc = countermeasures_in_target_court.tt.effective
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_bonus_minor
+			}
+		}
+		## Medium
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_bonus_against_medium_value
+			desc = countermeasures_in_target_court.tt.effective
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_bonus_medium
+			}
+		}
+		## Major
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_bonus_against_major_value
+			desc = countermeasures_in_target_court.tt.effective
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_bonus_major
+			}
+		}
+		# Maluses Against
+		## Minor
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_malus_against_minor_value
+			desc = countermeasures_in_target_court.tt.backfiring
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_malus_minor
+			}
+		}
+		## Medium
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_malus_against_medium_value
+			desc = countermeasures_in_target_court.tt.backfiring
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_malus_medium
+			}
+		}
+		## Major
+		modifier = {
+			add = countermeasure_scheme_category_success_chance_malus_against_major_value
+			desc = countermeasures_in_target_court.tt.backfiring
+			# Make sure we hit the right scheme type.
+			var:apply_countermeasures ?= flag:calculating
+			# And then if a parameter applies.
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = success_chance_vs_calculated_schemes_malus_major
+			}
+		}
+	}
+}

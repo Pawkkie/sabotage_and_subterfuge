@@ -19,6 +19,9 @@
  game_concept_master_assassin_court_position_desc: "$master_assassin_court_position_desc$"
  game_concept_spread_plague_scheme: "$spread_plague$ Scheme"
  game_concept_spread_plague_scheme_desc: "$spread_plague_desc_general$"
+ game_concept_break_out_of_prison_scheme: "$break_out_of_prison$ Scheme"
+ game_concept_break_out_of_prison_scheme_desc: "$break_out_of_prison_desc_general"
+
  game_concept_sas_spy: "Spy"
  game_concept_sas_spies: "Spies"
  game_concept_sas_spy_desc: "Spies are agents that that can be based in any court and report back to their employer when the find secrets. Their employer may learn any of these secrets by paying a small fee.\n\nThe collective group of agents working for one employer is called a [sas_spy_network|E]."

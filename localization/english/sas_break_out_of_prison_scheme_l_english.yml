@@ -1,0 +1,51 @@
+﻿l_english: 
+# Scheme info
+ break_out_of_prison: "Break Out of Prison"
+ break_out_of_prison_desc: "Break the target out of prison"
+ break_out_of_prison_desc_general: "$break_out_of_prison$ is a [hostile_scheme|E] that attempts to break the target out of the prison they're trapped in. It requires the employ of a [smuggler_court_position|E] [court_position|E] to be undertaken, and your target must be in prison.\n\nIf at any point the [smuggler_court_position|E] is unemployed or switches tasks, the scheme will be cancelled."
+ break_out_of_prison_action: "Attempt to Free"
+
+ # Invalidated
+ break_out_of_prison_invalidated_title: "@scheme_icon! Break Out of Prison Scheme Ends"
+ break_out_of_prison_invalidated_dead: "[target.GetShortUIName] has passed away. You can no longer free [target.GetHerHim] from prison."
+ break_out_of_prison_invalidated_freed_from_prison: "[target.GetShortUIName] is no longer imprisoned. You can no longer free [target.GetHerHim] from prison."
+ break_out_of_prison_invalidated_not_planning_prison_break: "[CHARACTER.GetShortUIName|U] is no longer performing the Plan Prison Break task."
+
+ BREAK_OUT_OF_PRISON_SUCCESS_DESC: "The prison break was successful, and the target is free"
+ BREAK_OUT_OF_PRISON_DISCOVRY_DESC: "You can continue attempting to break [TARGET_CHARACTER.GetShortUINameNoTooltip] out of prison."
+
+ PLAN_PRISON_BREAK_HELPS_BONUS: "[smuggler_court_position|E]'s aid: $VALUE|+0=-+$"
+ EXECUTIONER_HURTS_BONUS: "Enemy [executioner_court_position|E]'s aid: $VALUE|+0=-+$"
+
+ # Scheme Modifiers
+ BREAK_OUT_OF_PRISON_DECEITFUL: "[GetTrait('deceitful').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_ARBITRARY: "[GetTrait('arbitrary').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_COMPASSIONATE: "[GetTrait('compassionate').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_GALLOWSBAIT: "[GetTrait('gallowsbait').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_WRATHFUL: "[GetTrait('wrathful').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_VENGEFUL: "[GetTrait('vengeful').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_JUST: "[GetTrait('just').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_CALLOUS: "[GetTrait('callous').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_PARANOID: "[GetTrait('paranoid').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_SADISTIC: "[GetTrait('sadistic').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_OVERSEER: "[GetTrait('overseer').GetName( GetPlayer )]: $VALUE|=+0$"
+ BREAK_OUT_OF_PRISON_TORTURER: "[GetTrait('torturer').GetName( GetPlayer )]: $VALUE|=+0$"
+
+ # Interaction
+ break_out_of_prison_interaction: "Break Out of Prison #weak (Scheme)#!"
+ break_out_of_prison_interaction_desc: "Attempt to break [recipient.GetShortUINameNoTooltip] out of prison"
+ break_out_of_prison_interaction_notification: "Planning Prison Break" 
+
+ # Opinion modifier
+ sas_broke_out_of_prison_opinion: "Broke Out of Prison"
+
+ # Notify imprisoner toast
+ break_out_of_prison_outcome.escape: "[target.GetTitledFirstName] Escapes Prison"
+ break_out_of_prison_target_escaped: "Likely assisted by a band of unsavoury ruffians, [target.GetTitledFirstName] has made [target.GetHerHis] escape from prison."
+ break_out_of_prison_target_escaped_caught: "Assisted by [owner.GetTitledFirstName] and [owner.GetHerHis] band of unsavoury ruffians, [target.GetTitledFirstName] has made [target.GetHerHis] escape from prison."
+
+## Character Interaction Scheme Agent Packages
+ break_out_of_prison_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_bailiff' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_planner' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]"
+ break_out_of_prison_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_bailiff' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]"
+ break_out_of_prison_interaction.tt.agent_focus_speed: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_planner' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]"
+ break_out_of_prison_interaction.tt.agent_focus_secrecy: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_decoy' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]"

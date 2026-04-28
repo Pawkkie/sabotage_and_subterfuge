@@ -1,0 +1,233 @@
+﻿break_out_of_prison_interaction = {
+	icon = prison
+	category = interaction_category_friendly
+	scheme = break_out_of_prison
+	common_interaction = no
+	interface_priority = 60
+	ignores_pending_interaction_block = yes
+	send_name = START_SCHEME
+
+	desc = break_out_of_prison_interaction_desc
+
+	is_shown = {
+		scope:recipient != scope:actor
+		scope:recipient = {
+			is_imprisoned = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			can_start_scheme = {
+				type = break_out_of_prison
+				target_character = scope:recipient
+			}
+		}
+		scope:recipient = {
+			is_imprisoned = yes
+		}
+	}
+
+	# Scheme Starter Packages
+	options_heading = schemes.t.agent_packages
+	send_options_exclusive = yes
+	## Balanced agents.
+	send_option = {
+		flag = agent_focus_balance
+		current_description = break_out_of_prison_interaction.tt.agent_focus_balance
+	}
+	## Focused on Success Chance.
+	send_option = {
+		flag = agent_focus_success
+		current_description = break_out_of_prison_interaction.tt.agent_focus_success
+	}
+	## Focused on Speed.
+	send_option = {
+		flag = agent_focus_speed
+		current_description = break_out_of_prison_interaction.tt.agent_focus_speed
+	}
+    ## Focused on Secrecy.
+	send_option = {
+		flag = agent_focus_secrecy
+		current_description = break_out_of_prison_interaction.tt.agent_focus_secrecy
+	}
+
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = break_out_of_prison_interaction_notification
+				left_icon = scope:actor					
+
+				# Success.
+				if = {
+					limit = { scope:agent_focus_success ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = break_out_of_prison
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_thief
+						AGENT_2 = agent_thief
+						AGENT_3 = agent_bailiff
+						# Speed.
+						AGENT_4 = agent_infiltrator
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+				# Speed.
+				else_if = {
+					limit = { scope:agent_focus_speed ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = break_out_of_prison
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_thief
+						# Speed.
+						AGENT_2 = agent_infiltrator
+						AGENT_3 = agent_infiltrator
+						AGENT_4 = agent_planner
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+				# Secrecy.
+				else_if = {
+					limit = { scope:agent_focus_secrecy ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = break_out_of_prison
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_thief
+						# Speed.
+						AGENT_2 = agent_infiltrator
+						# Secrecy.
+						AGENT_3 = agent_lookout
+						AGENT_4 = agent_lookout
+						AGENT_5 = agent_decoy
+					}
+				}
+				# Balanced.
+				else = {
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = break_out_of_prison
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_thief
+						AGENT_2 = agent_bailiff
+						# Speed.
+						AGENT_3 = agent_infiltrator
+						AGENT_4 = agent_planner
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+			}
+		}
+	}
+
+	auto_accept = yes
+
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_targets = { 
+		ai_recipients = neighboring_rulers
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 72
+		kingdom = 24
+		empire = 36
+		hegemony = 36
+	}
+	ai_potential = {
+		is_ruler = yes
+		ai_compassion >= medium_positive_ai_value
+		ai_boldness >= medium_positive_ai_value
+		exists = court_position:smuggle_court_position
+		exists = var:smuggler_is_planning_prison_break
+		var:smuggler_is_planning_prison_break = yes
+
+	}
+	ai_will_do = {
+		# They shouldn't always do this.
+		base = -50
+
+		# Opinion
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = 0.5
+		}
+		# Target is family
+		modifier = {
+			add = 100
+			scope:actor = { is_close_family_of = scope:recipient } 
+		}
+		# Target is not family
+		modifier = {
+			add = -100
+			scope:actor = { 
+				NOT = { is_close_family_of = scope:recipient }
+			}
+		}
+
+		ai_value_modifier = { ai_compassion = 0.5 }
+		ai_value_modifier = { ai_boldness = 0.5 }
+		
+		# Traits
+		# Positive modifiers
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = compassionate }
+		}
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = deceitful }
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = architect }
+		}
+		modifier = {
+			add = 25
+			scope:actor = { has_trait = logistician }
+		}
+		modifier = {
+			add = 50
+			scope:actor = { has_trait = gallowsbait }
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = paranoid }
+		}
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = just }
+		}
+		modifier = {
+			add = -50
+			scope:actor = { has_trait = callous }
+		}
+		modifier = {
+			add = -25
+			scope:actor = { has_trait = vengeful }
+		}
+		modifier = {
+			add = -100
+			scope:actor = { has_trait = infirm }
+		}
+	}
+}

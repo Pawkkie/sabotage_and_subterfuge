@@ -347,8 +347,6 @@
 		round = no
 	}
 
-	is_powerful_agent = yes
-
 	scaling_employer_modifiers = {
 		terrible = {
 			diplomatic_range_mult = 0.05
@@ -386,18 +384,24 @@
 				name = smuggler_is_planning_heist
 				value = no
 			}
+			set_variable = {
+				name = smuggler_is_planning_prison_break
+				value = no
+			}
 		}
 	}
 	on_court_position_revoked = {
 		basic_revoked_court_position_effect = yes
 		scope:liege = { 
 			remove_variable = smuggler_is_planning_heist
+			remove_variable = smuggler_is_planning_prison_break
 		}
 	}
 	on_court_position_invalidated = {
 		basic_invalidated_court_position_effect = yes
 		scope:liege = { 
 			remove_variable = smuggler_is_planning_heist
+			remove_variable = smuggler_is_planning_prison_break
 		}
 	}
 	on_court_position_vacated = {
@@ -406,6 +410,7 @@
 		}
 		scope:liege = { 
 			remove_variable = smuggler_is_planning_heist
+			remove_variable = smuggler_is_planning_prison_break
 		}
 	}
 

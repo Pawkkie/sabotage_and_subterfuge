@@ -90,6 +90,9 @@ sas_cap_schemes_and_fire_reminders_effect = {
 				spread_plague = {
 					spread_plague_scheme_prep_effect = yes
 				}
+				break_out_of_prison = {
+					break_out_of_prison_scheme_prep_effect = yes
+				}
 			}
 		}
 		# If the player hasn't been reminded once, tell them that their scheme has hit max opportunities.

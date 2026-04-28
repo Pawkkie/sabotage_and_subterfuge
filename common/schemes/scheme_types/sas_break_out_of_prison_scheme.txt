@@ -1,0 +1,421 @@
+﻿break_out_of_prison = {
+	# Basic Setup
+	skill = intrigue
+	desc = break_out_of_prison_desc_general
+	success_desc = "BREAK_OUT_OF_PRISON_SUCCESS_DESC"
+	discovery_desc = "BREAK_OUT_OF_PRISON_DISCOVRY_DESC"
+	icon = icon_scheme_break_out_of_prison
+	illustration = "gfx/interface/illustrations/event_scenes/alley.dds"
+	category = hostile
+	target_type = character
+	is_secret = yes
+	maximum_breaches = 5
+	uses_resistance = no
+	cooldown = { years = 1 }
+	
+	# Parameters
+	speed_per_skill_point = t3_base_phase_length_value
+	speed_per_target_skill_point = 0
+	base_progress_goal = t3_base_phase_length_value
+	maximum_secrecy = 95
+	base_maximum_success = t2_base_max_success_value
+	phases_per_agent_charge = 1
+	success_chance_growth_per_skill_point = t3_scgpsp_value
+
+	# Core Triggers
+	allow = {
+		is_adult = yes
+		is_imprisoned = no
+		scope:target = {
+			is_imprisoned = yes
+		}
+	}
+	valid = {
+		scope:target = {
+			is_imprisoned = yes
+		}
+
+		# Smuggler employed
+		custom_description = {
+			text = have_smuggler_court_position
+			exists = scope:owner.court_position:smuggler_court_position
+		}
+		# Smuggler Planning Prison Break
+		trigger_if = {
+			limit = { exists = scope:owner.court_position:smuggler_court_position }
+			custom_description = {
+				text = smuggler_planning_prison_break
+				subject = scope:owner.court_position:smuggler_court_position
+				scope:owner = {
+					exists = var:smuggler_is_planning_prison_break
+					var:smuggler_is_planning_prison_break = yes
+				}
+			}
+		}
+	}
+
+	# Agents
+	agent_leave_threshold = -25
+	agent_join_chance = {
+		base = 0
+		
+		ai_agent_join_chance_basic_suite_modifier = yes
+		ai_agent_join_chance_hostile_general_suite_modifier = yes
+	}
+	valid_agent = { is_valid_agent_standard_trigger = yes }
+	agent_groups_owner_perspective = { courtiers guests scripted_relations }
+	agent_groups_target_character_perspective = { courtiers vassals neighboring_rulers_including_tributary_borders realm_characters war_enemies nearby_domicile_owners  }
+
+	odds_prediction = {
+		add = base_odds_prediction_target_is_char_value
+		add = odds_skill_contribution_intrigue_value
+		add = agent_groups_owner_perspective_value
+		add = agent_groups_target_character_perspective_value
+		add = hostile_scheme_base_odds_prediction_target_is_char_value
+		add = odds_steal_back_artifact_scheme_misc_value
+		min = 0
+	}
+
+	# Base Chances
+	base_success_chance = {
+		base = 0
+		scheme_type_skill_success_chance_modifier = { SKILL = INTRIGUE }
+
+		hostile_scheme_base_chance_modifier_imprisoner = yes
+
+		# Smuggler helps
+		modifier = {
+			desc = PLAN_PRISON_BREAK_HELPS_BONUS
+			add = 5
+			scope:owner.court_position:smuggler_court_position = { 
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 1
+				}
+			}
+		}
+		modifier = {
+			desc = PLAN_PRISON_BREAK_HELPS_BONUS
+			add = 10
+			scope:owner.court_position:smuggler_court_position = { 
+				
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 2
+				}
+			}
+		}
+
+		modifier = {
+			desc = PLAN_PRISON_BREAK_HELPS_BONUS
+			add = 15
+			scope:owner.court_position:smuggler_court_position = { 
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 3
+				}
+			}
+		}
+
+		modifier = {
+			desc = PLAN_PRISON_BREAK_HELPS_BONUS
+			add = 20
+			scope:target.court_position:smuggler_court_position = {
+				aptitude = {
+					court_position = smuggler_court_position
+					value >= 4
+				}
+			}
+		}
+
+		# Executioner Protects
+		modifier = {
+			desc = EXECUTIONER_HURTS_BONUS
+			add = -5
+			exists = scope:target.imprisoner.court_position:smuggler_court_position
+			scope:target.imprisoner.court_position:smuggler_court_position = { 
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 1
+				}
+			}
+		}
+		modifier = {
+			desc = EXECUTIONER_HURTS_BONUS
+			add = -10
+			exists = scope:target.imprisoner.court_position:smuggler_court_position
+			scope:target.imprisoner.court_position:smuggler_court_position = { 
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 2
+				}
+			}
+		}
+
+		modifier = {
+			desc = EXECUTIONER_HURTS_BONUS
+			add = -15
+			exists = scope:target.imprisoner.court_position:smuggler_court_position
+			scope:target.imprisoner.court_position:smuggler_court_position = { 
+				aptitude = {
+					court_position = smuggler_court_position
+					value == 3
+				}
+			}
+		}
+
+		modifier = {
+			desc = EXECUTIONER_HURTS_BONUS
+			add = -20
+			exists = scope:target.imprisoner.court_position:smuggler_court_position
+			scope:target.imprisoner.court_position:smuggler_court_position = {
+				aptitude = {
+					court_position = smuggler_court_position
+					value >= 4
+				}
+			}
+		}
+
+		# Countermeasures.
+		apply_calculated_scheme_success_chance_adjustments_modifier_imprisoner = yes
+		
+		# Positive modifiers
+		modifier = {
+			add = 20
+			scope:owner = { has_trait = deceitful }
+			desc = BREAK_OUT_OF_PRISON_DECEITFUL
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = diligent }
+			desc = ROUSE_RABBLE_DILIGENT
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = generous }
+			desc = ROUSE_RABBLE_GENEROUS
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = arbitrary }
+			desc = BREAK_OUT_OF_PRISON_ARBITRARY
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = compassionate }
+			desc = BREAK_OUT_OF_PRISON_COMPASSIONATE
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = 30
+			scope:owner = { has_trait = gallowsbait }
+			desc = BREAK_OUT_OF_PRISON_GALLOWSBAIT
+		}
+		modifier = {
+			add = 20
+			scope:owner = { has_trait = architect }
+			desc = ROUSE_RABBLE_PEASANT_LEADER
+		}
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = loyal }
+			desc = ROUSE_RABBLE_LOYAL
+		}
+		modifier = {
+			add = 15
+			scope:owner = { has_trait = logistician }
+			desc = SMUGGLE_ARTIFACT_LOGISTICIAN
+		}
+
+		# Negative modifiers
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = schemer }
+			desc = ROUSE_RABBLE_SCHEMER
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = wrathful }
+			desc = BREAK_OUT_OF_PRISON_WRATHFUL
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = vengeful }
+			desc = BREAK_OUT_OF_PRISON_VENGEFUL
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = just }
+			desc = BREAK_OUT_OF_PRISON_JUST
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = callous }
+			desc = BREAK_OUT_OF_PRISON_CALLOUS
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = paranoid }
+			desc = BREAK_OUT_OF_PRISON_PARANOID
+		}
+		modifier = {
+			add = -10
+			scope:target.imprisoner = { has_trait = sadistic }
+			desc = BREAK_OUT_OF_PRISON_SADISTIC
+		}
+		modifier = {
+			add = -20
+			scope:target.imprisoner = { has_trait = overseer }
+			desc = BREAK_OUT_OF_PRISON_OVERSEER
+		}
+		modifier = {
+			add = -20
+			scope:target.imprisoner = { has_trait = torturer }
+			desc = BREAK_OUT_OF_PRISON_TORTURER
+		}
+	}
+	base_secrecy = {
+		add = secrecy_base_value
+		add = countermeasure_apply_secrecy_maluses_value_imprisoner
+	}
+
+	# On Actions
+	on_start = {
+		set_variable = {
+			name = apply_countermeasures
+			value = flag:calculating
+		}
+		add_scheme_starting_opportunities_intrigue_effect = yes
+		# Fallback agents — a balanced config if you start the scheme from script.
+		if = {
+			limit = {
+				scheme_owner = {
+					NOT = { has_variable = agents_added }
+				}
+			}
+			add_agent_slot = agent_thief
+			add_agent_slot = agent_thief
+			add_agent_slot = agent_bailiff
+			add_agent_slot = agent_infiltrator
+			add_agent_slot = agent_lookout
+		}
+	}
+	on_phase_completed = {
+		suppress_scheme_follow_up_event_till_input_given_effect = yes
+		break_out_of_prison_scheme_prep_effect = yes
+		sas_cap_schemes_and_fire_reminders_effect = yes
+	}
+	on_hud_click  = { break_out_of_prison_scheme_prep_effect = yes }
+	on_monthly = {
+		sas_hostile_scheme_monthly_discovery_chance_effect = yes
+		if = {
+			limit = {
+				NOT = { exists = scope:discovery_event_happening }
+			}
+			scheme_owner = {
+				trigger_event = {
+					on_action = break_out_of_prison_ongoing
+					days = { 1 30 }
+				}
+			}
+		}
+	}
+	on_semiyearly = {
+		if = {
+			limit = {
+				scheme_owner = { is_ai = yes }
+			}
+			break_out_of_prison_scheme_prep_effect = yes
+		}
+	}
+	on_invalidated = {
+		scheme_target_character = {
+			save_scope_as = target
+		}
+		scheme_owner = {
+			save_scope_as = owner
+		}
+		# Target death
+		if = {
+			limit = {
+				scope:target = { is_alive = no }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = break_out_of_prison_invalidated_title
+					custom_tooltip = break_out_of_prison_invalidated_dead
+					left_icon = scope:target
+				}
+			}
+		}
+		# Target out of range
+		if = {
+			limit = {
+				scope:target = { 
+					NOT = { in_diplomatic_range = scope:owner } 
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = break_out_of_prison_invalidated_title
+					left_icon = scope:target
+					custom_description_no_bullet = {
+						object = scope:target
+						text = scheme_target_not_in_diplomatic_range
+					}
+				}
+			}
+		}
+		# Target no longer in prison
+		if = {
+			limit = {
+				scope:target = {
+					is_imprisoned = no
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = break_out_of_prison_invalidated_title
+					custom_tooltip = break_out_of_prison_invalidated_freed_from_prison
+					left_icon = scope:target
+				}
+			}
+		}
+		# Smuggler unemployed
+		if = {
+			limit = {
+				NOT = { exists = scope:owner.court_position:smuggler_court_position }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = break_out_of_prison_invalidated_title
+					left_icon = scope:owner
+					custom_tooltip = {
+						text = smuggle_artifact_invalidated_no_smuggler
+					}
+				}
+			}
+		}
+		# Smuggler no longer Rousing Rabble
+		if = {
+			limit = { 
+				exists = scope:owner.court_position:smuggler_court_position
+				scope:owner.var:smuggler_is_planning_prison_break = no
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = break_out_of_prison_invalidated_title
+					left_icon = scope:owner.court_position:smuggler_court_position
+					custom_tooltip = {
+						subject = scope:owner.court_position:smuggler_court_position
+						text = break_out_of_prison_invalidated_not_planning_prison_break
+					}
+				}
+			}
+		}
+	}
+}

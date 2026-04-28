@@ -131,7 +131,7 @@ smuggler_task_plan_heist = {
 		monthly_prestige = minor_court_position_task_prestige_salary
 	}
 
-	# Set Rousing Rabble variable on start
+	# Set Planning Heist variable on start
 	on_start = { 
 		# add_character_flag = blocked_from_leaving # Stop character from traveling
 		scope:liege = {
@@ -171,6 +171,94 @@ smuggler_task_plan_heist = {
 			add = ai_boldness
 			subtract = ai_honor
 			subtract = ai_compassion
+		}
+	}
+}
+
+smuggler_task_plan_prison_break = {
+	court_position_types = { 
+		smuggler_court_position
+	}
+	is_shown = {
+	}
+	is_valid_showing_failures_only = {
+	}
+	cost = {
+		round = no
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = no
+					}
+				}
+			}
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					scope:liege = {
+						has_treasury = yes
+					}
+				}
+				add = {
+					value = monthly_court_position_task_cost
+					desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+					format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+				}
+			}
+		}
+	}
+
+	employee_modifier = {
+		monthly_prestige = minor_court_position_task_prestige_salary
+	}
+
+	# Set Planning Prison Break variable on start
+	on_start = { 
+		# add_character_flag = blocked_from_leaving # Stop character from traveling
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_planning_prison_break
+				value = yes
+			}
+		}
+		custom_tooltip = allow_break_out_of_prison_scheme_tt
+	}
+
+	# If it's fallen off while still working, reapply when we can; this can happen if say a Liege dies
+	on_monthly = {
+		if = {
+			limit = { scope:liege.var:smuggler_is_planning_prison_break = no }
+			set_variable = {
+				name = smuggler_is_planning_prison_break
+				value = yes
+			}
+		}
+	}
+
+	on_end = { 
+		# remove_character_flag = blocked_from_leaving # Removing travel block
+		scope:liege = {
+			set_variable = {
+				name = smuggler_is_planning_prison_break
+				value = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = {
+			add = 25
+			add = ai_compassion
+			subtract = ai_greed
 		}
 	}
 }

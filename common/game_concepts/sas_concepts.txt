@@ -22,6 +22,10 @@ spread_plague_scheme = {
 	texture = "gfx/interface/icons/scheme_types/icon_scheme_spread_plague.dds"
 }
 
+break_out_of_prison_scheme = {
+	texture = "gfx/interface/icons/scheme_types/icon_scheme_break_out_of_prison.dds"
+}
+
 rabble_rouser_court_position = {
 	texture = "gfx/interface/icons/court_position_types/rabble_rouser_court_position.dds"
 }

@@ -10,6 +10,8 @@
  SMUGGLER_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is performing the Plan Heist task"
  SMUGGLER_NOT_PLANNING_HEIST: "[CHARACTER.GetShortUIName|U] is not performing the Plan Heist task"
  smuggle_artifact_can_start_scheme: "I cannot smuggle an artifact at this time"
+ SMUGGLER_PLANNING_PRISON_BREAK: "[CHARACTER.GetShortUIName|U] is performing the Plan Prison Break task"
+ SMUGGLER_NOT_PLANNING_PRISON_BREAK: "[CHARACTER.GetShortUIName|U] is not performing the Plan Prison Break task"
 
  # Toast
  planned_heist.t: "You planned an artifact heist"

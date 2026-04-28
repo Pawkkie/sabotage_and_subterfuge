@@ -1,0 +1,339 @@
+﻿namespace = break_out_of_prison_outcome
+
+# Successful and secret
+break_out_of_prison_outcome.0001 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = break_out_of_prison_scheme
+	title = break_out_of_prison_outcome.0001.t
+	desc = break_out_of_prison_outcome.0001.desc
+	left_portrait = {
+		character = scope:owner
+		animation = happiness
+	}
+	center_portrait = {
+		character = scope:target
+		animation = admiration
+	}
+	right_portrait = {
+		character = scope:target.imprisoner
+		animation = disbelief
+	}
+
+	immediate = {
+		scope:owner.court_position:smuggler_court_position = {
+			save_scope_as = smuggler
+		}
+		scope:target.imprisoner = {
+			save_scope_as = imprisoner
+		}
+	}
+
+	option = {
+		name = break_out_of_prison_outcome.0001.a
+		hidden_effect = {
+			scope:target.imprisoner = {
+				# Send a toast message that the target escaped prison	
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = break_out_of_prison_outcome.escape
+					right_icon = scope:target
+					custom_tooltip = break_out_of_prison_target_escaped
+				}
+			}
+		}
+		scope:target = { 
+			if = {
+				limit = {
+					OR = {
+						scope:imprisoner = scope:liege
+						scope:imprisoner = scope:top_liege
+					}
+					is_landed_or_landless_administrative = no
+					is_ai = yes
+					NOT = {
+						any_heir_title = {
+							exists = holder
+						}
+					}
+					#Do they have the "wrong" marriage type?
+					NOR = {
+						any_spouse = {
+							is_female = yes
+							matrilinear_marriage = yes
+						}
+						any_spouse = {
+							is_male = yes
+							patrilinear_marriage = yes
+						}
+						betrothed ?= {
+							is_female = yes
+							matrilinear_betrothal = yes
+						}
+						betrothed ?= {
+							is_male = yes
+							patrilinear_betrothal = yes
+						}
+					}
+				}
+			}
+			release_from_prison = yes
+			add_opinion = {
+				target = scope:owner
+				modifier = sas_broke_out_of_prison_opinion
+			}
+			# Send a toast message that the target left the court
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_courtier_left_court_interaction_title
+
+					right_icon = scope:target
+
+					show_as_tooltip = {
+						remove_courtier_or_guest = scope:target
+					}
+				}
+			}
+			every_traveling_family_member = {
+				scope:owner = { add_courtier = prev }
+				hidden_effect = {
+					return_to_court = yes
+				}
+			}
+		}
+		scope:owner = {
+			if = {
+				limit = {
+					can_add_hook = {
+						target = scope:target
+						type = favor_hook
+					}
+				}
+				add_hook = {
+					target = scope:target
+					type = favor_hook
+				}
+			}
+		}
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
+
+# Successful and discovered
+break_out_of_prison_outcome.0002 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = break_out_of_prison_scheme
+	title = break_out_of_prison_outcome.0002.t
+	desc = break_out_of_prison_outcome.0002.desc
+	left_portrait = {
+		character = scope:owner
+		animation = happiness
+	}
+	center_portrait = {
+		character = scope:target
+		animation = admiration
+	}
+	right_portrait = {
+		character = scope:target.imprisoner
+		animation = rage
+	}
+
+	immediate = {
+		scope:owner.court_position:smuggler_court_position = {
+			save_scope_as = smuggler
+		}
+		scope:target.imprisoner = {
+			save_scope_as = imprisoner
+		}
+	}
+
+	option = {
+		name = break_out_of_prison_outcome.0002.a
+		break_out_of_prison_failure_effect = yes
+		hidden_effect = {
+			scope:target.imprisoner = {
+				# Send a toast message that the target escaped prison and it's known who did it
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = break_out_of_prison_outcome.escape
+					right_icon = scope:target
+					custom_tooltip = break_out_of_prison_target_escaped_caught
+				}
+			}
+		}
+		scope:target = { 
+			if = {
+				limit = {
+					OR = {
+						scope:imprisoner = scope:liege
+						scope:imprisoner = scope:top_liege
+					}
+					is_landed_or_landless_administrative = no
+					is_ai = yes
+					NOT = {
+						any_heir_title = {
+							exists = holder
+						}
+					}
+					#Do they have the "wrong" marriage type?
+					NOR = {
+						any_spouse = {
+							is_female = yes
+							matrilinear_marriage = yes
+						}
+						any_spouse = {
+							is_male = yes
+							patrilinear_marriage = yes
+						}
+						betrothed ?= {
+							is_female = yes
+							matrilinear_betrothal = yes
+						}
+						betrothed ?= {
+							is_male = yes
+							patrilinear_betrothal = yes
+						}
+					}
+				}
+			}
+			release_from_prison = yes
+			add_opinion = {
+				target = scope:owner
+				modifier = sas_broke_out_of_prison_opinion
+			}
+			# Send a toast message that the target left the court
+			hidden_effect = {
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_courtier_left_court_interaction_title
+
+					right_icon = scope:target
+
+					show_as_tooltip = {
+						remove_courtier_or_guest = scope:target
+					}
+				}
+			}
+			every_traveling_family_member = {
+				scope:owner = { add_courtier = prev }
+				hidden_effect = {
+					return_to_court = yes
+				}
+			}
+		}
+		scope:owner = {
+			if = {
+				limit = {
+					can_add_hook = {
+						target = scope:target
+						type = favor_hook
+					}
+				}
+				add_hook = {
+					target = scope:target
+					type = favor_hook
+				}
+			}
+		}
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
+
+# Unsuccessful and secret
+break_out_of_prison_outcome.0003 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = break_out_of_prison_scheme
+	title = break_out_of_prison_outcome.0003.t
+	desc = break_out_of_prison_outcome.0003.desc
+	left_portrait = {
+		character = scope:owner
+		animation = disapproval
+	}
+	center_portrait = {
+		character = scope:target
+		animation = sadness
+	}
+	right_portrait = {
+		character = scope:target.imprisoner
+		animation = idle
+	}
+
+	immediate = {
+		scope:owner.court_position:smuggler_court_position = {
+			save_scope_as = smuggler
+		}
+		scope:target.imprisoner = {
+			save_scope_as = imprisoner
+		}
+	}
+	option = {
+		name = break_out_of_prison_outcome.0003.a
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}
+
+# Unsuccessful and discovered
+break_out_of_prison_outcome.0004 = {
+	type = character_event
+	window = scheme_successful_event
+	theme = break_out_of_prison_scheme
+	title = break_out_of_prison_outcome.0004.t
+	desc = break_out_of_prison_outcome.0004.desc
+	left_portrait = {
+		character = scope:owner
+		animation = shame
+	}
+	center_portrait = {
+		character = scope:target
+		animation = sadness
+	}
+	right_portrait = {
+		character = scope:target.imprisoner
+		animation = eyeroll
+	}
+
+	immediate = {
+		scope:owner.court_position:smuggler_court_position = {
+			save_scope_as = smuggler
+		}
+		scope:target.imprisoner = {
+			save_scope_as = imprisoner
+		}
+	}
+	option = {
+		name = break_out_of_prison_outcome.0004.a
+		break_out_of_prison_failure_effect = yes
+	}
+	after = {
+		if = {
+			limit = { exists = scope:scheme }
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+	}
+}

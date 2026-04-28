@@ -1,0 +1,45 @@
+﻿# Modified version of countermeasure_apply_secrecy_maluses_value
+countermeasure_apply_secrecy_maluses_value_imprisoner = {
+	# Minor bonus to detection.
+	if = {
+		limit = {
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = secrecy_vs_all_schemes_bonus_minor
+			}
+		}
+		add = {
+			value = countermeasure_apply_secrecy_maluse_minor_value
+			desc = countermeasures_in_target_court.tt.secrecy
+		}
+	}
+	# Medium bonus to detection.
+	if = {
+		limit = {
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = secrecy_vs_all_schemes_bonus_medium
+			}
+		}
+		add = {
+			value = countermeasure_apply_secrecy_maluse_medium_value
+			desc = countermeasures_in_target_court.tt.secrecy
+		}
+	}
+	# Major bonus to detection.
+	if = {
+		limit = {
+			countermeasure_parameter_applies_against_char_trigger = {
+				SCHEME_TARGET = scope:target.imprisoner
+				SCHEME_OWNER = scope:owner
+				PARAMETER = secrecy_vs_all_schemes_bonus_major
+			}
+		}
+		add = {
+			value = countermeasure_apply_secrecy_maluse_major_value
+			desc = countermeasures_in_target_court.tt.secrecy
+		}
+	}
+}

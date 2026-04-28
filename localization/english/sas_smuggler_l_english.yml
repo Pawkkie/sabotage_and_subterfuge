@@ -9,14 +9,15 @@
  # Traits
  # court_position_wayfarer_trait: "[GetTrait('lifestyle_wayfarer').GetName( ROOT.Char )]"
 
- # Rouse Rabble task
+ # Plan Heist task
  smuggler_task_plan_heist: "Plan Heist"
  smuggler_task_plan_heist_desc: "Plan the heist of a specific artifact, letting you and your crew work towards smuggling it out of their courtroom and into yours."
  allow_steal_artifact_scheme_tt: "Can use the [plan_heist_interaction|E] interaction to enable the [smuggle_artifact_scheme|E] against a target. This task must be active to both start and continue the scheme.\n[GetScheme('smuggle_artifact').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
- # Loot and Scoot task
-#  smuggler_task_loot_and_scoot: "Loot and Scoot"
-#  smuggler_task_provoke_vassals_desc: "Provoke the vassals of another court, leading to lowering opinion and potentially a full uprising."
+ # Plan Prison Break task
+ smuggler_task_plan_prison_break: "Plan Prison Break"
+ smuggler_task_plan_prison_break_desc: "Plan to break a specific target out of prison, letting you and your crew work towards their eventual escape."
+ allow_break_out_of_prison_scheme_tt: "Can use the [break_out_of_prison_scheme|E] targeting an imprisoned character. This task must be active to both start and continue the scheme.\n[GetScheme('break_out_of_prison').GetTypeName] [scheme|E] [success_chance|E]:\n@scheme_success_icon!#P +0%#! to @scheme_success_icon!#P +20%#! (based on [aptitude|E])"
 
  # Monitor Supplies
  smuggler_task_monitor_supplies: "Monitor Supplies"

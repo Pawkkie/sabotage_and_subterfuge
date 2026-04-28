@@ -1,0 +1,21 @@
+﻿l_english:
+ # Invited to a feast
+ break_out_of_prison_ongoing.0001.t: "Invited to a Feast"
+ break_out_of_prison_ongoing.0001.desc: "An elder heading a large peasant family on the rural outskirts of [target_title.GetNameNoTier] has invited [rouser_name.GetShortUIName] to a feast celebrating a local holiday. When [rouser_name.GetShortUIName] made it clear they were gracious for the offer and would write to their employer to inform them of a late return, the invitation was further extended, unknowlingly, to me.\n\nThese peasants have no idea I am at all involved in this and my presence might serve as a shock to them... but also a strong showing of support for their cause, especially if we sit down over a meal as equals."
+ break_out_of_prison_ongoing.0001.a: "I'll join the festivities"
+ break_out_of_prison_ongoing.0001.b: "I'll send a gift"
+ break_out_of_prison_ongoing.0001.c: "I shouldn't get involved"
+
+ # The liege sends relief
+ break_out_of_prison_ongoing.0002.t: "The Liege Sends Relief"
+ break_out_of_prison_ongoing.0002.desc: "[rouser_name.GetShortUIName] has informed me that a fire recently spread through some rural [target_title.GetNameNoTier] settlements, torching a granary and nearby buildings. This has seriously stressed the peasants' food supply.\n\n[target.GetShortUIName] has ordered relief sent to the affected area in the form of food and building supplies. Offering our support would foster good will but stabilize the masses... Perhaps we instead hire some mercenaries to intercept and destroy the delivery on route?\n\nMaybe that's a step too far..."
+ break_out_of_prison_ongoing.0002.a: "Intercept the delivery"
+ break_out_of_prison_ongoing.0002.b: "Endorse the delivery"
+ break_out_of_prison_ongoing.0002.c: "Just see what happens"
+
+ # Connecting with the youth
+ break_out_of_prison_ongoing.0003.t: "Connecting with the Youth"
+ break_out_of_prison_ongoing.0003.desc: "It seems that [rouser_name.GetShortUIName] has been asked to help put on a fair for the local peasant youth! There's an entire afteroon's worth of time to fill with some kind of activity.\n\nThe youth of today are the revolutionaries of tomorrow. I wonder if this is an apportunity to sow the seeds that might most benefit us?"
+ break_out_of_prison_ongoing.0003.a: "Plan a mock battle"
+ break_out_of_prison_ongoing.0003.b: "Hold a hunting tournament"
+ break_out_of_prison_ongoing.0003.c: "Run a workshop on cultural exchange"

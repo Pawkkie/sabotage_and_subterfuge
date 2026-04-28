@@ -8,6 +8,7 @@
  smooth_operator_character_modifier: "Smooth Operator"
  unshackled_lust_character_modifier: "Unshackled Lust"
  graceful_recovery_character_modifier: "Smooth Operator"
+ attempted_to_prison_break: "Orchestrated a Prison Break" 
 
  mortal_adoration_martial_gain:0 "$mortal_adoration_perk_name$"
  mortal_adoration_martial_gain_desc:0 "You can always count on a lover to give good advice."

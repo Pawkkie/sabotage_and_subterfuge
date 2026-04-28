@@ -1,0 +1,19 @@
+﻿break_out_of_prison_ongoing = {
+	trigger = {
+		exists = scope:scheme
+		is_travelling = no
+	}
+	random_events = {
+		chance_to_happen = 10
+		100 = 0
+		100 = break_out_of_prison_ongoing.0001 #
+		100 = break_out_of_prison_ongoing.0002 #
+		100 = break_out_of_prison_ongoing.0003 #
+
+		#############
+		# Generic Agent events
+		#############
+
+		300 = agent_events.9801				# Wrapper event for general agent events on_action.
+	}
+}

@@ -324,6 +324,14 @@ sas_hostile_scheme_discovery.3003 = {
 			}
 			spread_plague_failure_effect = yes
 		}
+		else_if = {
+			limit = {
+				scope:scheme = {
+					scheme_type = break_out_of_prison
+				}
+			}
+			break_out_of_prison_failure_effect = yes
+		}
 
 		scope:scheme = {
 			end_scheme = yes
