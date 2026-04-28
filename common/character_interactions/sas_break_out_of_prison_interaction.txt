@@ -14,6 +14,9 @@
 		scope:recipient = {
 			is_imprisoned = yes
 		}
+		scope:recipient = {
+			imprisoner != scope:actor
+		}
 	}
 
 	is_valid_showing_failures_only = {
