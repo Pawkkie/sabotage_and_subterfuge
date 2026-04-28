@@ -70,3 +70,14 @@ sas_scheme_completion_renown = {
 	sas_scheme_renown_small = {
 	}
 }
+
+sas_end_friendship = {
+	categories = {
+		sas
+	}
+	default = sas_end_friendship_enabled
+	sas_end_friendship_enabled = {
+	}
+	sas_end_friendship_disabled = {
+	}
+}

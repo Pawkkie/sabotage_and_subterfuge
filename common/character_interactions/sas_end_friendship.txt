@@ -1,11 +1,12 @@
 ﻿end_friendship_interaction = {
-	category = interaction_category_hostile
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	icon = sas_end_friendship
 
 	desc = end_friendship_interaction_desc
 
 	is_shown = {
+		has_game_rule = sas_end_friendship_enabled
 		scope:actor = {
 			has_relation_friend = scope:recipient
 			NOT = {

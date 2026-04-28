@@ -4,7 +4,7 @@
  # Starting Criminal Undergrounds
  rule_sas_initial_underground: "Starting Criminal Undergrounds"
  setting_no_undergrounds: "None"
- setting_no_undergrounds_desc: "[houses|E] that exist at game start do not begin with a [sas_spy_network|E] or criminal underground"
+ setting_no_undergrounds_desc: "[houses|E] that exist at game start do not begin with a [sas_spy_network|E] or criminal underground."
  setting_fledgling_undergrounds: "Fledgling Spy Networks"
  setting_fledgling_undergrounds_desc: "[houses|E] that exist at game start with a [house_head|E] that both controls a county and participates in an [administrative_government|E] begin with a [sas_spy_network|E]."
  setting_full_undergrounds: "World of Crime"
@@ -13,40 +13,47 @@
  # Administrative Dissolution
  rule_sas_administrative_dissolution: "Administrative Dissolution Factions"
  setting_admin_dissolution_disabled: "Disabled (Vanilla)"
- setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] cannot form against [administrative_governments|E]"
+ setting_admin_dissolution_disabled_desc: "[sas_nation_fracturing_factions|E] cannot form against [administrative_governments|E]."
  setting_admin_dissolution_enabled: "Enabled"
- setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] can form against [administrative_governments|E]"
+ setting_admin_dissolution_enabled_desc: "[sas_nation_fracturing_factions|E] can form against [administrative_governments|E]."
 
  # Independence Dissolution
  rule_sas_administrative_independence: "Administrative Independence Factions"
  setting_admin_independence_disabled: "Disabled (Vanilla)"
- setting_admin_independence_disabled_desc: "[independence_factions|E] cannot form against [administrative_governments|E]"
+ setting_admin_independence_disabled_desc: "[independence_factions|E] cannot form against [administrative_governments|E]."
  setting_admin_independence_enabled: "Enabled"
- setting_admin_independence_enabled_desc: "[independence_factions|E] can form against [administrative_governments|E]"
+ setting_admin_independence_enabled_desc: "[independence_factions|E] can form against [administrative_governments|E]."
 
  # Modified Perks
  rule_sas_modified_perks: "Modified Perks"
  setting_sas_all_modified_perks: "All Modified Perks"
- setting_sas_all_modified_perks_desc: "Use all of the modified perks included with the mod, including new interactions and buffs to the [intrigue|E] lifestyle"
+ setting_sas_all_modified_perks_desc: "Use all of the modified perks included with the mod, including new interactions and buffs to the [intrigue_lifestyle|E] (Seduction)."
  setting_spy_perks_only: "Spy Perks Only"
- setting_spy_perks_only_desc: "Use only the perk modifications that affect the [sas_spy_network|E], and none of the [intrigue|E] lifestyle buffs or new interactions"
+ setting_spy_perks_only_desc: "Use only the perk modifications that affect the [sas_spy_network|E], and none of the [intrigue_lifestyle|E] (Seduction) buffs or new interactions."
  setting_spy_and_intrigue_buffs: "Spy Perks and Intrigue Buffs"
- setting_spy_and_intrigue_buffs_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and the [intrigue|E] lifestyle buffs, and no new interactions"
+ setting_spy_and_intrigue_buffs_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and the [intrigue_lifestyle|E] (Seduction) buffs, and no new interactions."
  setting_spy_and_interactions: "Spy Perks and Interactions"
- setting_spy_and_interactions_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and add new interactions, and none of the [intrigue|E] buffs"
+ setting_spy_and_interactions_desc: "Use only the perk modifications that affect the [sas_spy_network|E] and add new interactions, and none of the [intrigue_lifestyle|E] (Seduction) buffs."
 
  # Intrigue Court Position Salary
  rule_sas_intrigue_court_position_salary: "Intrigue Court Position Salary"
  setting_sas_salary_free: "Free Salaries"
- setting_sas_salary_free_desc: "The Special Operations Training decision makes [intrigue|E] [court_positions|E] cost no salary"
+ setting_sas_salary_free_desc: "The Special Operations Training decision makes [intrigue|E] [court_positions|E] cost no salary."
  setting_sas_salary_paid: "Paid Salaries"
- setting_sas_salary_paid_desc: "The Special Operations Training decision does not make [intrigue|E] [court_positions|E] cost no salary. They must still be paid"
+ setting_sas_salary_paid_desc: "The Special Operations Training decision does not make [intrigue|E] [court_positions|E] cost no salary. They must still be paid."
 
  # Scheme Completion Renown
  rule_sas_scheme_completion_renown: "Scheme Completion Renown"
  setting_sas_scheme_renown_large: "Large"
- setting_sas_scheme_renown_large_desc: "House members gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"
+ setting_sas_scheme_renown_large_desc: "House members gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
  setting_sas_scheme_renown_medium: "Medium"
- setting_sas_scheme_renown_medium_desc: "House members gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"
+ setting_sas_scheme_renown_medium_desc: "House members gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
  setting_sas_scheme_renown_small: "Small"
- setting_sas_scheme_renown_small_desc: "House members gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge"
+ setting_sas_scheme_renown_small_desc: "House members gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+
+ # End Friendship
+ rule_sas_end_friendship: "End Friendship"
+ setting_sas_end_friendship_enabled: "Enabled"
+ setting_sas_end_friendship_enabled_desc: "You may end [friendship|E] with your friends, except for [best_friends|E] and [blood_brothers|E], with the End Friendship interaction. Doing so incurs an opinion penalty, and potentially stress."
+ setting_sas_end_friendship_disabled: "Disabled (Vanilla)"
+ setting_sas_end_friendship_disabled_desc: "The End Friendship interaction is disabled."
