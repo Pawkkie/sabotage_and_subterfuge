@@ -27,6 +27,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 			value = 0
 			subtract = prepared_for_anything_perk_secondary_percentage
 		}
+		exists = scope:target.imprisoner
 		scope:target.imprisoner = {
 			is_alive = yes
 			is_ruler = no
@@ -50,6 +51,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 75
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = {
 				is_landed_or_landless_administrative = no
 			}
@@ -61,6 +63,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 75
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = {
 				is_landed_or_landless_administrative = no
 			}
@@ -72,6 +75,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 75
+			exists = scope:target.imprisoner
 			scope:owner = {
 				has_relation_guardian = scope:target.imprisoner
 			}
@@ -79,20 +83,22 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 50
+			exists = scope:target.imprisoner
 			scope:owner = { is_diarch_of_target = scope:target.imprisoner }
 			desc = "SCHEME_I_AM_DIARCH"
 		}
 		modifier = {
 			add = 25
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = {
 				is_ruler = no
 			}
-			exists = scope:target.imprisoner.liege
 			scope:target.imprisoner.liege = scope:owner
 			desc = "SCHEME_TARGET_IN_MY_COURT_IMPRISONER"
 		}
 		modifier = {
 			add = 15
+			exists = scope:target.imprisoner
 			scope:owner = {
 				is_councillor_of = scope:target.imprisoner
 			}
@@ -100,6 +106,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 15
+			exists = scope:target.imprisoner
 			scope:owner = {
 				has_relation_lover = scope:target.imprisoner
 			}
@@ -107,6 +114,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 10
+			exists = scope:target.imprisoner
 			scope:owner = {
 				is_spouse_of = scope:target.imprisoner
 			}
@@ -114,6 +122,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 5
+			exists = scope:target.imprisoner
 			scope:owner = {
 				is_consort_of = scope:target.imprisoner
 			}
@@ -121,6 +130,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		}
 		modifier = {
 			add = 5
+			exists = scope:target.imprisoner
 			scope:owner = {
 				is_close_family_of = scope:target.imprisoner
 			}
@@ -146,6 +156,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 
 	modifier = { # Vengeful Bonus
 		add = vengeful_scheme_success_chance_modifier
+		exists = scope:target.imprisoner
 		scope:owner = {
 			has_trait = vengeful
 			OR = {
@@ -162,6 +173,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 			culture = {
 				has_cultural_parameter = hostile_action_vs_rival_bonuses
 			}
+			exists = scope:target.imprisoner
 			OR = {
 				has_relation_rival = scope:target.imprisoner
 				has_relation_nemesis = scope:target.imprisoner
@@ -176,6 +188,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 			culture = {
 				has_cultural_parameter = hostile_scheme_success_chance_vs_spouse_penalty
 			}
+			exists = scope:target.imprisoner
 			is_spouse_of = scope:target.imprisoner
 		}
 		desc = "SCHEME_WEDDING_CEREMONIES_IMPRISONER"
@@ -194,6 +207,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		scope:owner = {
 			is_ai = yes
 		}
+		exists = scope:target.imprisoner
 		scope:target.imprisoner = {
 			is_ai = no
 		}
@@ -206,6 +220,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 		scope:owner = {
 			is_ai = yes
 		}
+		exists = scope:target.imprisoner
 		scope:target.imprisoner = {
 			is_ai = no
 		}
@@ -215,6 +230,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 	# Struggle
 	modifier = {
 		add = -25
+		exists = scope:target.imprisoner
 		scope:owner = {
 			any_character_struggle = {
 				involvement = involved
@@ -233,12 +249,14 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 	}
 	modifier = {
 		add = 25
+		exists = scope:target.imprisoner
 		scope:target.imprisoner = { has_character_modifier = spies_behind_every_corner_modifier }
 		desc = scheme.imprisoner.spies_behind_every_corner_modifier.value_desc
 	}
 	## tgp_japan_yearly_events.1071
 	modifier = {
-		add = 10 
+		add = 10
+		exists = scope:target.imprisoner
 		scope:owner = { 
 			has_variable = tgp_1071_bonus
 			var:tgp_1071_bonus = scope:target.imprisoner
@@ -263,6 +281,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 	# House Relations
 	modifier = {
 		add = house_relation_hostile_scheme_bonus_value
+		exists = scope:target.imprisoner
 		scope:owner.house ?= {
 			NOT = { scope:target.imprisoner.house ?= this }
 			any_house_relation = {
@@ -276,6 +295,7 @@ hostile_scheme_base_chance_modifier_imprisoner = {
 	}
 	modifier = {
 		add = 15
+		exists = scope:target.imprisoner
 		scope:owner = {
 			has_variable = spouse_hostile_scheme_bonus
 			var:spouse_hostile_scheme_bonus = {

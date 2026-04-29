@@ -234,46 +234,55 @@
 		# Negative modifiers
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = schemer }
 			desc = ROUSE_RABBLE_SCHEMER
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = wrathful }
 			desc = BREAK_OUT_OF_PRISON_WRATHFUL
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = vengeful }
 			desc = BREAK_OUT_OF_PRISON_VENGEFUL
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = just }
 			desc = BREAK_OUT_OF_PRISON_JUST
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = callous }
 			desc = BREAK_OUT_OF_PRISON_CALLOUS
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = paranoid }
 			desc = BREAK_OUT_OF_PRISON_PARANOID
 		}
 		modifier = {
 			add = -10
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = sadistic }
 			desc = BREAK_OUT_OF_PRISON_SADISTIC
 		}
 		modifier = {
 			add = -20
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = overseer }
 			desc = BREAK_OUT_OF_PRISON_OVERSEER
 		}
 		modifier = {
 			add = -20
+			exists = scope:target.imprisoner
 			scope:target.imprisoner = { has_trait = torturer }
 			desc = BREAK_OUT_OF_PRISON_TORTURER
 		}

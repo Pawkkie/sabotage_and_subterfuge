@@ -32,7 +32,7 @@ break_out_of_prison_outcome.0001 = {
 	option = {
 		name = break_out_of_prison_outcome.0001.a
 		hidden_effect = {
-			scope:target.imprisoner = {
+			scope:imprisoner = {
 				# Send a toast message that the target escaped prison	
 				send_interface_toast = {
 					type = event_toast_effect_bad
@@ -43,11 +43,11 @@ break_out_of_prison_outcome.0001 = {
 			}
 		}
 		scope:target = {
+			release_from_prison = yes
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
 			} 
-			release_from_prison = yes
 		}
 		scope:owner = {
 			if = {
@@ -68,52 +68,106 @@ break_out_of_prison_outcome.0001 = {
 		name = break_out_of_prison_outcome.0001.b
 		trigger = {
 			scope:target = {
-				OR = {
-					scope:imprisoner = this.liege
-					scope:imprisoner = this.top_liege
-				}
-				is_landed_or_landless_administrative = no
-				is_ai = yes
-				NOT = {
-					any_heir_title = {
-						exists = holder
+				AND = {
+					NOT = {
+						any_heir_title = {
+							exists = holder
+						}
 					}
-				}
-				#Do they have the "wrong" marriage type?
-				NOR = {
-					any_spouse = {
-						is_female = yes
-						matrilinear_marriage = yes
+					is_landed_or_landless_administrative = no
+					is_ai = yes
+					OR = {
+						scope:imprisoner = this.liege
+						scope:imprisoner = this.top_liege
+						AND = {
+							NOT = { has_trait = order_member }
+							is_theocratic_lessee = no
+							is_diarch = no
+							OR = {
+								is_adult = yes
+								NOT = { 
+									any_parent = {
+										is_alive = yes
+									}
+								}
+							}
+							NOR = {
+								any_relation = { type = ward }
+								any_relation = { type = guardian }
+								any_relation = { type = mentor }
+								any_relation = { type = student }
+							}
+						}
 					}
-					any_spouse = {
-						is_male = yes
-						patrilinear_marriage = yes
-					}
-					betrothed ?= {
-						is_female = yes
-						matrilinear_betrothal = yes
-					}
-					betrothed ?= {
-						is_male = yes
-						patrilinear_betrothal = yes
+					#Do they have the "wrong" marriage type?
+					NOR = {
+						any_spouse = {
+							is_female = yes
+							matrilinear_marriage = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						any_spouse = {
+							is_male = yes
+							patrilinear_marriage = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						betrothed ?= {
+							is_female = yes
+							matrilinear_betrothal = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						betrothed ?= {
+							is_male = yes
+							patrilinear_betrothal = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
 					}
 				}
 			}
 		}
 		# Send a toast message that the target left the court
 		hidden_effect = {
-			scope:imprisoner = {
-				send_interface_message = {
-					type = event_generic_neutral
-					title = msg_courtier_left_court_interaction_title
-
-					right_icon = scope:target
-
-					show_as_tooltip = {
-						remove_courtier_or_guest = scope:target
+			if = {
+				limit = {
+					exists = scope:target.liege
+				}
+				scope:target.liege = {
+					send_interface_message = {
+						type = event_generic_neutral
+						title = msg_courtier_left_court_interaction_title
+						right_icon = scope:target
+						show_as_tooltip = {
+							remove_courtier_or_guest = scope:target
+						}
 					}
 				}
-				# Send a toast message that the target escaped prison	
+			}
+			# Send a toast message that the target escaped prison
+			scope:imprisoner = {
 				send_interface_toast = {
 					type = event_toast_effect_bad
 					title = break_out_of_prison_outcome.escape
@@ -122,20 +176,15 @@ break_out_of_prison_outcome.0001 = {
 				}
 			}
 		}
-		# Target joins owner's court
+		# Release and opinion
 		scope:target = {
-			every_traveling_family_member = {
-				scope:owner = { add_courtier = prev }
-				hidden_effect = {
-					return_to_court = yes
-				}
-			}
+			release_from_prison = yes
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
 			} 
-			release_from_prison = yes
 		}
+		# Hook
 		scope:owner = {
 			if = {
 				limit = {
@@ -147,6 +196,23 @@ break_out_of_prison_outcome.0001 = {
 				add_hook = {
 					target = scope:target
 					type = favor_hook
+				}
+			}
+		}
+		# Target joins owner's court
+		scope:owner = {
+			send_interface_message = {
+				type = event_generic_good
+				title = break_out_of_prison_join_court_interaction_notification
+				left_icon = scope:owner
+				right_icon = scope:target
+				scope:target = {
+					every_traveling_family_member = {
+						scope:owner = { add_courtier = prev }
+						hidden_effect = {
+							return_to_court = yes
+						}
+					}
 				}
 			}
 		}
@@ -194,8 +260,8 @@ break_out_of_prison_outcome.0002 = {
 		name = break_out_of_prison_outcome.0002.a
 		break_out_of_prison_failure_effect = yes
 		hidden_effect = {
-			scope:target.imprisoner = {
-				# Send a toast message that the target escaped prison and it's known who did it
+			scope:imprisoner = {
+				# Send a toast message that the target escaped prison	
 				send_interface_toast = {
 					type = event_toast_effect_bad
 					title = break_out_of_prison_outcome.escape
@@ -205,11 +271,11 @@ break_out_of_prison_outcome.0002 = {
 			}
 		}
 		scope:target = {
+			release_from_prison = yes
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
 			} 
-			release_from_prison = yes
 		}
 		scope:owner = {
 			if = {
@@ -230,34 +296,83 @@ break_out_of_prison_outcome.0002 = {
 		name = break_out_of_prison_outcome.0002.b
 		trigger = {
 			scope:target = {
-				OR = {
-					scope:imprisoner = this.liege
-					scope:imprisoner = this.top_liege
-				}
-				is_landed_or_landless_administrative = no
-				is_ai = yes
-				NOT = {
-					any_heir_title = {
-						exists = holder
+				AND = {
+					NOT = {
+						any_heir_title = {
+							exists = holder
+						}
 					}
-				}
-				#Do they have the "wrong" marriage type?
-				NOR = {
-					any_spouse = {
-						is_female = yes
-						matrilinear_marriage = yes
+					is_landed_or_landless_administrative = no
+					is_ai = yes
+					OR = {
+						scope:imprisoner = this.liege
+						scope:imprisoner = this.top_liege
+						AND = {
+							NOT = { has_trait = order_member }
+							is_theocratic_lessee = no
+							is_diarch = no
+							OR = {
+								is_adult = yes
+								NOT = { 
+									any_parent = {
+										is_alive = yes
+									}
+								}
+							}
+							NOR = {
+								any_relation = { type = ward }
+								any_relation = { type = guardian }
+								any_relation = { type = mentor }
+								any_relation = { type = student }
+							}
+						}
 					}
-					any_spouse = {
-						is_male = yes
-						patrilinear_marriage = yes
-					}
-					betrothed ?= {
-						is_female = yes
-						matrilinear_betrothal = yes
-					}
-					betrothed ?= {
-						is_male = yes
-						patrilinear_betrothal = yes
+					#Do they have the "wrong" marriage type?
+					NOR = {
+						any_spouse = {
+							is_female = yes
+							matrilinear_marriage = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						any_spouse = {
+							is_male = yes
+							patrilinear_marriage = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						betrothed ?= {
+							is_female = yes
+							matrilinear_betrothal = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
+						betrothed ?= {
+							is_male = yes
+							patrilinear_betrothal = yes
+							has_any_court_position = yes
+							is_councillor = yes
+							is_knight = yes
+							any_relation = { type = ward }
+							any_relation = { type = guardian }
+							any_relation = { type = mentor }
+							any_relation = { type = student }
+						}
 					}
 				}
 			}
@@ -265,18 +380,23 @@ break_out_of_prison_outcome.0002 = {
 		break_out_of_prison_failure_effect = yes
 		# Send a toast message that the target left the court
 		hidden_effect = {
-			scope:imprisoner = {
-				send_interface_message = {
-					type = event_generic_neutral
-					title = msg_courtier_left_court_interaction_title
-
-					right_icon = scope:target
-
-					show_as_tooltip = {
-						remove_courtier_or_guest = scope:target
+			if = {
+				limit = {
+					exists = scope:target.liege
+				}
+				scope:target.liege = {
+					send_interface_message = {
+						type = event_generic_neutral
+						title = msg_courtier_left_court_interaction_title
+						right_icon = scope:target
+						show_as_tooltip = {
+							remove_courtier_or_guest = scope:target
+						}
 					}
 				}
-				# Send a toast message that the target escaped prison and it's known who did it
+			}
+			# Send a toast message that the target escaped prison
+			scope:imprisoner = {
 				send_interface_toast = {
 					type = event_toast_effect_bad
 					title = break_out_of_prison_outcome.escape
@@ -285,20 +405,15 @@ break_out_of_prison_outcome.0002 = {
 				}
 			}
 		}
-		# Target joins owner's court
+		# Release and opinion
 		scope:target = {
-			every_traveling_family_member = {
-				scope:owner = { add_courtier = prev }
-				hidden_effect = {
-					return_to_court = yes
-				}
-			}
+			release_from_prison = yes
 			add_opinion = {
 				target = scope:owner
 				modifier = sas_broke_out_of_prison_opinion
 			} 
-			release_from_prison = yes
 		}
+		# Hook
 		scope:owner = {
 			if = {
 				limit = {
@@ -310,6 +425,23 @@ break_out_of_prison_outcome.0002 = {
 				add_hook = {
 					target = scope:target
 					type = favor_hook
+				}
+			}
+		}
+		# Target joins owner's court
+		scope:owner = {
+			send_interface_message = {
+				type = event_generic_good
+				title = break_out_of_prison_join_court_interaction_notification
+				left_icon = scope:owner
+				right_icon = scope:target
+				scope:target = {
+					every_traveling_family_member = {
+						scope:owner = { add_courtier = prev }
+						hidden_effect = {
+							return_to_court = yes
+						}
+					}
 				}
 			}
 		}

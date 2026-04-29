@@ -44,6 +44,9 @@
  break_out_of_prison_target_escaped: "Likely assisted by a band of unsavoury ruffians, [target.GetTitledFirstName] has made [target.GetHerHis] escape from prison."
  break_out_of_prison_target_escaped_caught: "Assisted by [owner.GetTitledFirstName] and [owner.GetHerHis] band of unsavoury ruffians, [target.GetTitledFirstName] has made [target.GetHerHis] escape from prison."
 
+ # Arrived at court
+ break_out_of_prison_join_court_interaction_notification: "Fled to Your [owner.Custom('GetCourt')|U]"
+
 ## Character Interaction Scheme Agent Packages
  break_out_of_prison_interaction.tt.agent_focus_balance: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_bailiff' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_planner' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]"
  break_out_of_prison_interaction.tt.agent_focus_success: "$schemes.tt.agent_packages.list_boilerplate$\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_thief' ).GetName]\n$EFFECT_LIST_BULLET$[success_chance_max_i] [GetAgentSlotType( 'agent_bailiff' ).GetName]\n$EFFECT_LIST_BULLET$[scheme_speed_i] [GetAgentSlotType( 'agent_infiltrator' ).GetName]\n$EFFECT_LIST_BULLET$[secrecy_i] [GetAgentSlotType( 'agent_lookout' ).GetName]"
