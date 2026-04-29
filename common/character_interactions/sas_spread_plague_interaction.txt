@@ -11,6 +11,9 @@
 
 	is_shown = {
 		scope:recipient != scope:actor
+		scope:recipient = {
+			highest_held_title_tier >= tier_county
+		}
 	}
 
 	is_valid_showing_failures_only = {
