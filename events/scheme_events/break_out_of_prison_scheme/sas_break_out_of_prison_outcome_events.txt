@@ -76,6 +76,9 @@ break_out_of_prison_outcome.0001 = {
 					}
 					is_landed_or_landless_administrative = no
 					is_ai = yes
+					NOT = {
+						is_courtier_of = scope:owner
+					}
 					OR = {
 						scope:imprisoner = this.liege
 						scope:imprisoner = this.top_liege
@@ -304,6 +307,9 @@ break_out_of_prison_outcome.0002 = {
 					}
 					is_landed_or_landless_administrative = no
 					is_ai = yes
+					NOT = {
+						is_courtier_of = scope:owner
+					}
 					OR = {
 						scope:imprisoner = this.liege
 						scope:imprisoner = this.top_liege
