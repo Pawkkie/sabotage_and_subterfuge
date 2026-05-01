@@ -2,7 +2,7 @@
 
  ## Success and secret
  break_out_of_prison_outcome.0001.t: "Vanished Into the Night"
- break_out_of_prison_outcome.0001.desc: "[smuggler.GetUIName] has pulled off the prison break flawlessly! [target.GetUIName] is now once again freely able to roam the lands. [imprisoner.GetUIName] has absolutely noticed [target.GetHerHis] absence, but is none the wiser for how such an escape might have been possible.\n\nCould it have been an inside job? Is [imprisoner.GetHerHis] spymaster not trustworthy, are [target.GetHerHis] guards not up to the task? May the paranoia eat at [imprisoner.GetHerHim] for imprisoning such a [target.GetWomanMan].
+ break_out_of_prison_outcome.0001.desc: "[smuggler.GetUIName] has pulled off the prison break flawlessly! [target.GetUIName] is now once again freely able to roam the lands. [imprisoner.GetUIName] has absolutely noticed [target.GetHerHis] absence, but is none the wiser for how such an escape might have been possible.\n\nCould it have been an inside job? Is [imprisoner.GetHerHis] spymaster not trustworthy, are [imprisoner.GetHerHis] guards not up to the task? May the paranoia eat at [imprisoner.GetHerHim] for imprisoning such a [target.GetWomanMan].
  break_out_of_prison_outcome.0001.a: "Free at last!"
  break_out_of_prison_outcome.0001.b: "You might be safer with us."
 
