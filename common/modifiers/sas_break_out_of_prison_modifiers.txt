@@ -1,0 +1,52 @@
+﻿break_out_of_prison_entrance_and_exits = {
+	icon = intrigue_positive
+	scheme_phase_duration = medium_scheme_phase_duration_bonus_value
+	scheme_secrecy = -10
+}
+
+break_out_of_prison_hiding_spots = {
+	icon = intrigue_positive
+	scheme_secrecy = 15
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}
+
+break_out_of_prison_map_layout = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_phase_duration = minor_scheme_phase_duration_malus_value
+}
+
+break_out_of_prison_stole_key = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_phase_duration = minor_scheme_phase_duration_bonus_value
+}
+
+break_out_of_prison_bribed_guards = {
+	icon = intrigue_positive
+	scheme_success_chance = 15
+	scheme_secrecy = 10
+}
+
+break_out_of_prison_went_with_the_flow = {
+	icon = intrigue_positive
+	scheme_success_chance = -5
+	scheme_secrecy = 5
+}
+
+break_out_of_prison_hire_thief = {
+	icon = intrigue_positive
+	scheme_success_chance = 10
+	scheme_secrecy = 5
+}
+
+break_out_of_prison_hire_locksmith = {
+	icon = intrigue_positive
+	scheme_success_chance = 25
+	scheme_phase_duration = major_scheme_phase_duration_bonus_value
+}
+
+break_out_of_prison_hire_muscle = {
+	icon = intrigue_positive
+	scheme_secrecy = 20
+}

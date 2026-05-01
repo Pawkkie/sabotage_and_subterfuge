@@ -6,9 +6,9 @@
 	random_events = {
 		chance_to_happen = 10
 		100 = 0
-		100 = break_out_of_prison_ongoing.0001 #
-		100 = break_out_of_prison_ongoing.0002 #
-		100 = break_out_of_prison_ongoing.0003 #
+		100 = break_out_of_prison_ongoing.0001 # Scouting the Grounds
+		100 = break_out_of_prison_ongoing.0002 # The Key Takeaway
+		100 = break_out_of_prison_ongoing.0003 # Getting the Band Together
 
 		#############
 		# Generic Agent events

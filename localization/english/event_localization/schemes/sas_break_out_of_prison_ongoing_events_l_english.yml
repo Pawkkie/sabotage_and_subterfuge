@@ -1,21 +1,21 @@
 ﻿l_english:
- # Invited to a feast
- break_out_of_prison_ongoing.0001.t: "Invited to a Feast"
- break_out_of_prison_ongoing.0001.desc: "An elder heading a large peasant family on the rural outskirts of [target_title.GetNameNoTier] has invited [rouser_name.GetShortUIName] to a feast celebrating a local holiday. When [rouser_name.GetShortUIName] made it clear they were gracious for the offer and would write to their employer to inform them of a late return, the invitation was further extended, unknowlingly, to me.\n\nThese peasants have no idea I am at all involved in this and my presence might serve as a shock to them... but also a strong showing of support for their cause, especially if we sit down over a meal as equals."
- break_out_of_prison_ongoing.0001.a: "I'll join the festivities"
- break_out_of_prison_ongoing.0001.b: "I'll send a gift"
- break_out_of_prison_ongoing.0001.c: "I shouldn't get involved"
+ # Scouting the Grounds
+ break_out_of_prison_ongoing.0001.t: "Scouting the Grounds"
+ break_out_of_prison_ongoing.0001.desc: "A benefit of rescuing prisoners rather than stealing valuables is that rulers don't hide their prisoners, they put them in prisons. And it isn't difficult to figure out where a prison is if you ask the right people. Fortunately, [smuggler.GetShortUIName] knows the right people.\n\nWe can't linger long or the men on duty might be suspicious, but it's worth getting a sense of what we can while we're here, as it may be the only opportunity we have to scout the place out."
+ break_out_of_prison_ongoing.0001.a: "Focus on entrances and exits"
+ break_out_of_prison_ongoing.0001.b: "Focus on the hiding spots"
+ break_out_of_prison_ongoing.0001.c: "Map out a rough layout"
 
- # The liege sends relief
- break_out_of_prison_ongoing.0002.t: "The Liege Sends Relief"
- break_out_of_prison_ongoing.0002.desc: "[rouser_name.GetShortUIName] has informed me that a fire recently spread through some rural [target_title.GetNameNoTier] settlements, torching a granary and nearby buildings. This has seriously stressed the peasants' food supply.\n\n[target.GetShortUIName] has ordered relief sent to the affected area in the form of food and building supplies. Offering our support would foster good will but stabilize the masses... Perhaps we instead hire some mercenaries to intercept and destroy the delivery on route?\n\nMaybe that's a step too far..."
- break_out_of_prison_ongoing.0002.a: "Intercept the delivery"
- break_out_of_prison_ongoing.0002.b: "Endorse the delivery"
- break_out_of_prison_ongoing.0002.c: "Just see what happens"
+ # The Key Takeaway
+ break_out_of_prison_ongoing.0002.t: "The Key Takeaway"
+ break_out_of_prison_ongoing.0002.desc: "A necessity for orchestrating a prison break is first breaking into the prison, and to do that we need to find a way in. Discretion is paramount so we can pull this off without giving ourselves away.\n\nThere are a few options available to use; we can get [smuggler.GetShortUIName] to go in on [smuggler.GetHerHis] own to try to make off with the key undetected, we can attempt to bribe the guards into looking the other way, or we can rely entirely on light footed creativity."
+ break_out_of_prison_ongoing.0002.a: "Steal the key"
+ break_out_of_prison_ongoing.0002.b: "Bribe the guards"
+ break_out_of_prison_ongoing.0002.c: "Go with the flow"
 
- # Connecting with the youth
- break_out_of_prison_ongoing.0003.t: "Connecting with the Youth"
- break_out_of_prison_ongoing.0003.desc: "It seems that [rouser_name.GetShortUIName] has been asked to help put on a fair for the local peasant youth! There's an entire afteroon's worth of time to fill with some kind of activity.\n\nThe youth of today are the revolutionaries of tomorrow. I wonder if this is an apportunity to sow the seeds that might most benefit us?"
- break_out_of_prison_ongoing.0003.a: "Plan a mock battle"
- break_out_of_prison_ongoing.0003.b: "Hold a hunting tournament"
- break_out_of_prison_ongoing.0003.c: "Run a workshop on cultural exchange"
+ # Getting the Band Together
+ break_out_of_prison_ongoing.0003.t: "Getting the Band Together"
+ break_out_of_prison_ongoing.0003.desc: "The day of the escape attempt is nearing, and plans are well in place. [smuggler.GetShortUIName] believes we'd benefit from adding one more member to the team, but [smuggler.GetSheHe] has left it up to me to decide what sort of talent we should pursue."
+ break_out_of_prison_ongoing.0003.a: "A thieving sort will do"
+ break_out_of_prison_ongoing.0003.b: "Perhaps a locksmith, just in case"
+ break_out_of_prison_ongoing.0003.c: "Some muscle is always a good backup plan"
