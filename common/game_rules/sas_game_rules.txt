@@ -81,3 +81,14 @@ sas_end_friendship = {
 	sas_end_friendship_disabled = {
 	}
 }
+
+sas_decision_costs = {
+	categories = {
+		sas
+	}
+	default = sas_fixed_decision_costs
+	sas_fixed_decision_costs = {
+	}
+	sas_scaling_decision_costs = {
+	}
+}

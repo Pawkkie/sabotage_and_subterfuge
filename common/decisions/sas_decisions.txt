@@ -31,7 +31,17 @@
 	}
 
 	cost = {
-		gold = 300
+		gold = {
+			if = {
+				limit = { has_game_rule = sas_fixed_decision_costs }
+				value = 17
+			}
+			else = {
+				value = massive_gold_value
+				min = 300
+			}
+			
+		}
 		prestige = 200
 		piety = 100
 	}

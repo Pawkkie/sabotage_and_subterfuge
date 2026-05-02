@@ -57,3 +57,10 @@
  setting_sas_end_friendship_enabled_desc: "You may end [friendship|E] with your friends, except for [best_friends|E] and [blood_brothers|E], with the End Friendship interaction. Doing so incurs an opinion penalty, and potentially stress."
  setting_sas_end_friendship_disabled: "Disabled (Vanilla)"
  setting_sas_end_friendship_disabled_desc: "The End Friendship interaction is disabled."
+
+ # Decision Costs
+ rule_sas_decision_costs: "Decision Costs"
+ setting_sas_fixed_decision_costs: "Fixed"
+ setting_sas_fixed_decision_costs_desc: "Sabotage and Subterfuge decisions all cost a fixed, flat amount of gold and other resources."
+ setting_sas_scaling_decision_costs: "Scaling"
+ setting_sas_scaling_decision_costs_desc: "The gold cost of Sabotage and Subterfuge decisions starts at the fixed amount, and scales up based on yearly income."
