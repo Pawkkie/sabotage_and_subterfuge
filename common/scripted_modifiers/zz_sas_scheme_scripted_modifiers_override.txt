@@ -129,6 +129,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## For scope:owner
 	### Intimidated
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:owner
+		}
+		# SAS Change End
 		add = intimidated_scheme_reason_value
 		target_is_liege_or_above = scope:owner
 		has_dread_level_towards = {
@@ -138,6 +143,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		desc = INTIMIDATED_REASON
 	}
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:owner
+		}
+		# SAS Change End
 		add = intimidated_scheme_external_reason_value
 		NOT = { target_is_liege_or_above = scope:owner }
 		has_dread_level_towards = {
@@ -148,6 +158,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	}
 	### Cowed
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:owner
+		}
+		# SAS Change End
 		add = cowed_scheme_reason_value
 		target_is_liege_or_above = scope:owner
 		has_dread_level_towards = {
@@ -157,6 +172,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		desc = COWED_REASON
 	}
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:owner
+		}
+		# SAS Change End
 		add = cowed_scheme_external_reason_value
 		NOT = { target_is_liege_or_above = scope:owner }
 		has_dread_level_towards = {
@@ -168,6 +188,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	# Relations
 	## Rivals with scope:target
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = 10
 		has_relation_rival = scope:target
 		NOT = { has_relation_nemesis = scope:target }
@@ -175,12 +200,22 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	}
 	## Nemeses should be even more inclined
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = 1000
 		has_relation_nemesis = scope:target
 		desc = SCHEME_AGAINST_NEMESIS
 	}
 	## Friends with scope:target
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = -20
 		has_relation_friend = scope:target
 		NOT = { has_relation_best_friend = scope:target }
@@ -188,12 +223,22 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	}
 	## Best friends should be even less inclined
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = -1000
 		has_relation_best_friend = scope:target
 		desc = SCHEME_AGAINST_BEST_FRIEND
 	}
 	## As should soulmates
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = -1000
 		has_relation_soulmate = scope:target
 		desc = SCHEME_AGAINST_SOULMATE
@@ -236,6 +281,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	# Culture
 	## Esteemed Hospitality
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = -25
 		scope:target = {
 			culture = { has_cultural_parameter = courtiers_and_guests_less_likely_to_join_schemes }
@@ -249,6 +299,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	}
 	## Varangians don't want to betray the Basileus
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:target
+		}
+		# SAS Change End
 		add = -50
 		has_trait = varangian
 		OR = {
@@ -293,6 +348,11 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Amenities
 	### Lodgings
 	modifier = {
+		# SAS Change
+		trigger = {
+			exists = scope:owner
+		}
+		# SAS Change End
 		add = 5
 		is_pool_guest_of = scope:owner
 		scope:owner = {
@@ -401,19 +461,15 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 		desc = scheme.target.spies_behind_every_corner_modifier.value_desc
 	}
 	# SAS Change: Spies and criminal court positions can be agents easier
-	modifier = { 
-		add = { 
+	modifier = {
+		trigger = {
+			sas_owner_valid_for_agent_join_trigger = yes
+		}
+
+		add = {
 			if = {
 				limit = {
-					scope:owner = {
-						can_use_spy_network = yes
-						house ?= {
-							OR = {
-								has_house_modifier = sas_special_operations_training_house_modifier_free
-								has_house_modifier = sas_special_operations_training_house_modifier_paid
-							}
-						}
-					}
+					sas_owner_has_special_training_house_trigger = yes
 				}
 				add = 50
 			}
@@ -422,49 +478,16 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 			}
 		}
 
-		scope:owner = {
-			can_use_spy_network = yes
-			is_target_in_variable_list = {
-				name = spy_network_members
-				target = root
-			}
-		}
-
 		desc = AGOT_SCHEME_AGENT_IS_MY_SPY
 	}
 	modifier = {
-		add = 75
-		AND = {
-			scope:owner = {
-				AND = {
-					exists = house
-					house = {
-						OR = {
-							has_house_modifier = sas_special_operations_training_house_modifier_free
-							has_house_modifier = sas_special_operations_training_house_modifier_paid
-						}
-					}
-				}
-			}
-			OR = {
-				AND = {
-					exists = scope:owner.court_position:rabble_rouser_court_position
-					scope:owner.court_position:rabble_rouser_court_position = this
-				}
-				AND = {
-					exists = scope:owner.court_position:smuggler_court_position
-					scope:owner.court_position:smuggler_court_position = this
-				}
-				AND = {
-					exists = scope:owner.court_position:femme_fatale_court_position
-					scope:owner.court_position:femme_fatale_court_position = this
-				}
-				AND = {
-					exists = scope:owner.court_position:smuggler_court_position
-					scope:owner.court_position:smuggler_court_position = this
-				}
-			}
+		trigger = {
+			sas_owner_valid_for_agent_join_trigger = yes
+			sas_owner_has_special_training_house_trigger = yes
+			sas_owner_has_criminal_court_position_trigger = yes
 		}
+
+		add = 75
 		desc = SAS_SCHEME_AGENT_IN_CRIMINAL_UNDERGROUND
 	}
 	# SAS Change End

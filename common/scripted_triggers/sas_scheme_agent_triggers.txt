@@ -1,0 +1,35 @@
+﻿sas_owner_valid_for_agent_join_trigger = {
+    exists = scope:owner
+    scope:owner = {
+        can_use_spy_network = yes
+    }
+}
+
+sas_owner_has_special_training_house_trigger = {
+    exists = scope:owner
+    scope:owner.house = {
+        OR = {
+            has_house_modifier = sas_special_operations_training_house_modifier_free
+            has_house_modifier = sas_special_operations_training_house_modifier_paid
+        }
+    }
+}
+
+sas_owner_is_valid_spy_network_member_trigger = {
+    exists = scope:owner
+    scope:owner = {
+        is_target_in_variable_list = {
+            name = spy_network_members
+            target = root
+        }
+    }
+}
+
+sas_owner_has_criminal_court_position_trigger = {
+    exists = scope:owner
+    OR = {
+        scope:owner.court_position:rabble_rouser_court_position = root
+        scope:owner.court_position:smuggler_court_position = root
+        scope:owner.court_position:femme_fatale_court_position = root
+    }
+}
