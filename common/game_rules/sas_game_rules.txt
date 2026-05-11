@@ -63,11 +63,17 @@ sas_scheme_completion_renown = {
 		sas
 	}
 	default = sas_scheme_renown_medium
-	sas_scheme_renown_large = {
+	sas_scheme_renown_none = { # 0
 	}
-	sas_scheme_renown_medium = {
+	sas_scheme_renown_tiny = { # 10
 	}
-	sas_scheme_renown_small = {
+	sas_scheme_renown_minor = { # 25
+	}
+	sas_scheme_renown_medium = { # 50
+	}
+	sas_scheme_renown_major = { # 75
+	}
+	sas_scheme_renown_massive = { # 100
 	}
 }
 

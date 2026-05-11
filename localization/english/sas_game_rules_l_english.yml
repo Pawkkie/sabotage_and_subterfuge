@@ -44,12 +44,18 @@
 
  # Scheme Completion Renown
  rule_sas_scheme_completion_renown: "Scheme Completion Renown"
- setting_sas_scheme_renown_large: "Large"
- setting_sas_scheme_renown_large_desc: "House members gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+ setting_sas_scheme_renown_massive: "Massive"
+ setting_sas_scheme_renown_massive_desc: "House members gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+ setting_sas_scheme_renown_major: "Major"
+ setting_sas_scheme_renown_major_desc: "House members gain @dynasty_prestige_icon!#P 75#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
  setting_sas_scheme_renown_medium: "Medium"
  setting_sas_scheme_renown_medium_desc: "House members gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
- setting_sas_scheme_renown_small: "Small"
- setting_sas_scheme_renown_small_desc: "House members gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+ setting_sas_scheme_renown_minor: "Minor"
+ setting_sas_scheme_renown_minor_desc: "House members gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+ setting_sas_scheme_renown_tiny: "Tiny"
+ setting_sas_scheme_renown_tiny_desc: "House members gain @dynasty_prestige_icon!#P 10#! [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
+ setting_sas_scheme_renown_none: "None"
+ setting_sas_scheme_renown_none_desc: "House members do not gain additional [dynasty_prestige|E] any time they complete a [hostile_schemes|E] after fully completing their House of Sabotage and Subterfuge."
 
  # End Friendship
  rule_sas_end_friendship: "End Friendship"

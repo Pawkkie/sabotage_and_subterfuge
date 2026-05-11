@@ -747,18 +747,26 @@ sas_count_hostile_scheme_and_add_renown = {
 		limit = {
 			house ?= {
 				OR = {
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
 				}
 			}
 		}
 		dynasty = {
 			if = {
 				limit = {
-					has_game_rule = sas_scheme_renown_large
+					has_game_rule = sas_scheme_renown_massive
 				}
 				add_dynasty_prestige = 100
+			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_major
+				}
+				add_dynasty_prestige = 75
 			}
 			else_if = {
 				limit = {
@@ -766,8 +774,17 @@ sas_count_hostile_scheme_and_add_renown = {
 				}
 				add_dynasty_prestige = 50
 			}
-			else = {
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_minor
+				}
 				add_dynasty_prestige = 25
+			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_tiny
+				}
+				add_dynasty_prestige = 10
 			}
 		}
 	}

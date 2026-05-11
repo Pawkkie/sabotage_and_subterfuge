@@ -5,9 +5,12 @@
 	can_benefit = {
 		house ?= {
 			OR = {
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
 			}
 		}
 	}

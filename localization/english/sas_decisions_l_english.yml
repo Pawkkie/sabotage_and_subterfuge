@@ -45,9 +45,11 @@
  sas_house_of_sabotage_and_subterfuge_schemes_tt: "You have completed at least 8 [hostile_schemes|E]"
  sas_house_of_sabotage_and_subterfuge_enough_spies_tt: "You employ at least 8 [sas_spies|E]"
  sas_house_of_sabotage_and_subterfuge_needs_special_operations_training_tt: "The [house|E] [THIS.Char.GetHouse.GetName] has the #V Special Operations Training#! modifier"
- sas_house_of_sabotage_and_subterfuge_schemes_give_renown_large: "Gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown_massive: "Gain @dynasty_prestige_icon!#P 100#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown_major: "Gain @dynasty_prestige_icon!#P 75#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
  sas_house_of_sabotage_and_subterfuge_schemes_give_renown_medium: "Gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
- sas_house_of_sabotage_and_subterfuge_schemes_give_renown_small: "Gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown_minor: "Gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_renown_tiny: "Gain @dynasty_prestige_icon!#P 10#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
  sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "Increase the chances of your [sas_spies|E] discovering secrets and innovations"
 
  #################### 

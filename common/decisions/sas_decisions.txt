@@ -341,9 +341,12 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			has_house_modifier = sas_establish_criminal_underground_house_modifier
 			NOT = { 
 				OR = {
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
 				}
 			}
 		}
@@ -384,9 +387,15 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 	effect = {
 		if = {
 			limit = {
-				has_game_rule = sas_scheme_renown_large
+				has_game_rule = sas_scheme_renown_massive
 			}
-			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_large
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_massive
+		}
+		else_if = {
+			limit = {
+				has_game_rule = sas_scheme_renown_major
+			}
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_major
 		}
 		else_if = {
 			limit = {
@@ -394,17 +403,34 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			}
 			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_medium
 		}
-		else = {
-			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_small
+		else_if = {
+			limit = {
+				has_game_rule = sas_scheme_renown_minor
+			}
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_minor
+		}
+		else_if = {
+			limit = {
+				has_game_rule = sas_scheme_renown_tiny
+			}
+			custom_tooltip = sas_house_of_sabotage_and_subterfuge_schemes_give_renown_tiny
 		}
 		custom_tooltip = sas_house_of_sabotage_and_subterfuge_spies_better_discovery
 		house = {
 			if = {
 				limit = {
-					has_game_rule = sas_scheme_renown_large
+					has_game_rule = sas_scheme_renown_massive
 				}
 				add_house_modifier = {
-					modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_major
+				}
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
 				}
 			}
 			else_if = {
@@ -415,9 +441,25 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 					modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
 				}
 			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_minor
+				}
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = sas_scheme_renown_tiny
+				}
+				add_house_modifier = {
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+				}
+			}
 			else = {
 				add_house_modifier = {
-					modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+					modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
 				}
 			}
 		}
@@ -492,9 +534,12 @@ sas_house_of_sabotage_and_subterfuge_decision = {
 			has_house_modifier = sas_expand_spy_network_house_modifier
 			NOT = { 
 				OR = {
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_large
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
 					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
-					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_small
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+					has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
 				}
 			}
 		}
