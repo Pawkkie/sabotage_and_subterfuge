@@ -39,29 +39,20 @@ agot_spy_network.0100 = {
 					random = {
 						chance = 0
 						modifier = {
-							add = {
-								value = 0
-								# your spymasters intrigue limits the chance for every spy to find secrets/schemes (before perks are applied)
-								if = {
-									limit = {
-										exists = root.cp:councillor_spymaster
-										intrigue > root.cp:councillor_spymaster.intrigue
-									}
-									add = root.cp:councillor_spymaster.intrigue
-								}
-								else = {
-									add = {
-										value = intrigue
-									}
-								}
+							add = intrigue
+						}
+						modifier = {
+							root = {
+								exists = cp:councillor_spymaster
 							}
+							add = root.cp:councillor_spymaster.intrigue
 						}
 						modifier = {
 							root = { 
 								exists = var:femme_fatale_is_embracing_the_spiders
 								var:femme_fatale_is_embracing_the_spiders = yes
 							}
-							add = 3
+							add = 10
 						}
 						modifier = {
 							root = {
@@ -76,7 +67,7 @@ agot_spy_network.0100 = {
 									}
 								}
 							}
-							add = 3
+							add = 10
 						}
 						trigger_event = {
 							id = agot_spy_network.0200
@@ -252,8 +243,6 @@ agot_spy_network.0200 = {
 						NOR = {
 							this = root
 							this = scope:employer
-							this = character:Lannister_7
-							this = character:Lannister_6
 						}
 					}
 
@@ -294,8 +283,6 @@ agot_spy_network.0200 = {
 						NOR = {
 							this = root
 							this = scope:employer
-							this = character:Lannister_7
-							this = character:Lannister_6
 						}
 					}
 
