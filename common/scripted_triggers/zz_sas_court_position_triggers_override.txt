@@ -68,13 +68,16 @@ master_assassin_validity_trigger = {
 	# SAS Change
 	# is_playable_character = no # You can't be a public figure and a master assassin
 	# Manually writing out the full is_playable_character check to remove the landless adventurer clause so the position can be used by landless characters with landless courts
-	NOR = {
-		is_landed = yes
-		is_landless_administrative = yes
-		# is_landless_adventurer = yes
-		is_landless_nomad = yes
-		is_landless_soryo = yes
-		tgp_is_any_minister = yes # To keep ministers playable, regardless of having a nobel family title or not
+	custom_tooltip = {
+		text = is_not_a_public_figure_master_assassin
+		NOR = {
+			is_landed = yes
+			is_landless_administrative = yes
+			# is_landless_adventurer = yes
+			is_landless_nomad = yes
+			is_landless_soryo = yes
+			tgp_is_any_minister = yes # To keep ministers playable, regardless of having a noble family title or not
+		}
 	}
 	# SAS Change End
 	custom_tooltip = {
@@ -85,18 +88,18 @@ master_assassin_validity_trigger = {
 		text = NONE_NOT_THE_SPOUSE_OF_CHARACTER_COURT_POSITION
 		NOT = { is_spouse_of = $EMPLOYER$ }
 	}
-	# SAS Change
-	# custom_tooltip = {
-	# 	text = faith_allows_master_assassin
-	# 	faith = {
-	# 		has_doctrine = tenet_fp3_fedayeen
-	# 		NOR = {
-	# 			has_doctrine = tenet_pacifism
-	# 			has_doctrine = tenet_dharmic_pacifism 
-	# 		}
-	# 	}
-	# }
-	# SAS Change End
+	custom_tooltip = {
+		text = sas_faith_allows_master_assassin
+		faith = {
+			# SAS Change
+			# has_doctrine = tenet_fp3_fedayeen
+			# SAS Change End
+			NOR = {
+				has_doctrine = tenet_pacifism
+				has_doctrine = tenet_dharmic_pacifism 
+			}
+		}
+	}
 	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $EMPLOYER$ }
 	custom_tooltip = {
 		text = none_does_not_have_a_full_time_job

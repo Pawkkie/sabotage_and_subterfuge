@@ -3,3 +3,7 @@
  master_assassin_task_spread_plague: "Spread Plague"
  master_assassin_task_spread_plague_desc: "Sow [epidemic|E] in a character's court, attempting to infect them while bolstering your own resistance."
  allow_spread_plague_scheme_tt: "Can use the [spread_plague_scheme|E]. This task must be active to both start and continue the scheme."
+
+ # Candidate validity
+ is_not_a_public_figure_master_assassin: "They are not a known public figure"
+ sas_faith_allows_master_assassin: "Their [faith|E]:\n$BULLET$Does #bold not#! have the [GetFaithDoctrine('tenet_pacifism').GetBaseName] [core_tenet|E] or the [GetFaithDoctrine('tenet_dharmic_pacifism').GetBaseName] [core_tenet|E]"
