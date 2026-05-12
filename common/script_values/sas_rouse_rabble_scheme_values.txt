@@ -2,122 +2,129 @@
 	add = {
 		value = 0
 		desc = scheme_odds.misc_modifiers
-		scope:owner.court_position:rabble_rouser_court_position = {
-			# Positive
-			if = {
-				limit = { has_trait = brave }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = diligent }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = generous }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = gregarious }
-				add = 16
-			}
-			if = {
-				limit = { has_trait = diplomat }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = schemer }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = lifestyle_wayfarer }
-				add = 8
-			}
-			if = {
-				limit = { has_trait = peasant_leader }
-				add = 20
-			}
-			if = {
-				limit = { has_trait = populist_leader }
-				add = 20
-			}
-			if = {
-				limit = { has_trait = loyal }
-				add = 8
-			}
-			# Eager Reveler
-			if = {
-				limit = { has_trait = lifestyle_reveler }
-				add = {
-					value = 8
-					if = {
-						limit = {
-							has_trait_xp = { trait = lifestyle_reveler value >= 50 }
-						}
-						add = 16
-					}
-					if = {
-						limit = {
-							has_trait_xp = { trait = lifestyle_reveler value >= 100 }
-						}
-						add = 20
-					}
-					desc = court_position_reveler_trait
+		if = {
+			limit = {
+				scope:owner.court_position:rabble_rouser_court_position ?= {
+					exists = this
 				}
 			}
-			# Traveler
-			if = {
-				limit = { has_trait = lifestyle_traveler }
-				add = {
-					value = 8
-					if = {
-						limit = {
-							OR = {
-								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 50 }
-								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 50 }
-							}
-						}
-						add = 10
-					}
-					if = {
-						limit = {
-							OR = {
-								has_trait_xp = { trait = lifestyle_traveler track = travel value >= 100 }
-								has_trait_xp = { trait = lifestyle_traveler track = danger value >= 100 }
-							}
-						}
-						add = 16
-					}
-					desc = court_position_traveler_trait
+			scope:owner.court_position:rabble_rouser_court_position = {
+				# Positive
+				if = {
+					limit = { has_trait = brave }
+					add = 8
 				}
-			}
-			# Negative
-			if = {
-				limit = { has_trait = craven }
-				add = -8
-			}
-			if = {
-				limit = { has_trait = lazy }
-				add = -8
-			}
-			if = {
-				limit = { has_trait = shy }
-				add = -20
-			}		
-			if = {
-				limit = { has_trait = fickle }
-				add = -8
-			}
-			if = {
-				limit = { has_trait = reclusive }
-				add = -8
-			}
-			if = {
-				limit = { has_trait = infirm }
-				add = -40
-			}
-			if = {
-				limit = { has_trait = disloyal }
-				add = -8
+				if = {
+					limit = { has_trait = diligent }
+					add = 8
+				}
+				if = {
+					limit = { has_trait = generous }
+					add = 8
+				}
+				if = {
+					limit = { has_trait = gregarious }
+					add = 16
+				}
+				if = {
+					limit = { has_trait = diplomat }
+					add = 8
+				}
+				if = {
+					limit = { has_trait = schemer }
+					add = 8
+				}
+				if = {
+					limit = { has_trait = lifestyle_wayfarer }
+					add = 8
+				}
+				if = {
+					limit = { has_trait = peasant_leader }
+					add = 20
+				}
+				if = {
+					limit = { has_trait = populist_leader }
+					add = 20
+				}
+				if = {
+					limit = { has_trait = loyal }
+					add = 8
+				}
+				# Eager Reveler
+				if = {
+					limit = { has_trait = lifestyle_reveler }
+					add = {
+						value = 8
+						if = {
+							limit = {
+								has_trait_xp = { trait = lifestyle_reveler value >= 50 }
+							}
+							add = 16
+						}
+						if = {
+							limit = {
+								has_trait_xp = { trait = lifestyle_reveler value >= 100 }
+							}
+							add = 20
+						}
+						desc = court_position_reveler_trait
+					}
+				}
+				# Traveler
+				if = {
+					limit = { has_trait = lifestyle_traveler }
+					add = {
+						value = 8
+						if = {
+							limit = {
+								OR = {
+									has_trait_xp = { trait = lifestyle_traveler track = travel value >= 50 }
+									has_trait_xp = { trait = lifestyle_traveler track = danger value >= 50 }
+								}
+							}
+							add = 10
+						}
+						if = {
+							limit = {
+								OR = {
+									has_trait_xp = { trait = lifestyle_traveler track = travel value >= 100 }
+									has_trait_xp = { trait = lifestyle_traveler track = danger value >= 100 }
+								}
+							}
+							add = 16
+						}
+						desc = court_position_traveler_trait
+					}
+				}
+				# Negative
+				if = {
+					limit = { has_trait = craven }
+					add = -8
+				}
+				if = {
+					limit = { has_trait = lazy }
+					add = -8
+				}
+				if = {
+					limit = { has_trait = shy }
+					add = -20
+				}		
+				if = {
+					limit = { has_trait = fickle }
+					add = -8
+				}
+				if = {
+					limit = { has_trait = reclusive }
+					add = -8
+				}
+				if = {
+					limit = { has_trait = infirm }
+					add = -40
+				}
+				if = {
+					limit = { has_trait = disloyal }
+					add = -8
+				}
 			}
 		}
 	}

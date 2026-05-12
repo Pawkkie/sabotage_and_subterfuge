@@ -28,8 +28,17 @@ sas_owner_is_valid_spy_network_member_trigger = {
 sas_owner_has_criminal_court_position_trigger = {
     exists = scope:owner
     OR = {
-        scope:owner.court_position:rabble_rouser_court_position = root
-        scope:owner.court_position:smuggler_court_position = root
-        scope:owner.court_position:femme_fatale_court_position = root
+        trigger_if = {
+            limit = { exists = scope:owner.court_position:rabble_rouser_court_position }
+            scope:owner.court_position:rabble_rouser_court_position = { this = root }
+        }
+        trigger_if = {
+            limit = { exists = scope:owner.court_position:smuggler_court_position }
+            scope:owner.court_position:smuggler_court_position = { this = root }
+        }
+        trigger_if = {
+            limit = { exists = scope:owner.court_position:femme_fatale_court_position }
+            scope:owner.court_position:femme_fatale_court_position = { this = root }
+        }
     }
 }
