@@ -39,8 +39,8 @@
 		}
 		custom_description = {
 			text = recently_ennobled
-			NOT = {
-				exists = scope:actor.var:recently_ennobled
+			scope:actor = {
+				NOT = { exists = var:recently_ennobled }
 			}
 		}
 	}
