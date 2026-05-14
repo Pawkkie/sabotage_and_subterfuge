@@ -2,7 +2,6 @@
  INTRIGUE_WINDOW_SPY_NETWORK: "Spy Network"
  INTRIGUE_WINDOW_NO_SPIES: "You have no Spies"
  OPEN_SPY_NETWORK_TAB: "Spies"
- INTRIGUE_WINDOW_NO_SURVEIL_TARGETS: "You have no Surveillance Targets"
 
  AGOT_SCHEME_AGENT_IS_MY_SPY: "Is your spy: $VALUE|+0=$"
  AGOT_SCHEME_IS_AGAINST_ILLEGITIMATE_HOUSE: "Against Illegitimate House"

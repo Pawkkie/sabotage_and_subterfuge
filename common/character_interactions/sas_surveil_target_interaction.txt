@@ -11,12 +11,10 @@
 		scope:actor = {
 			is_ai = no
 			is_alive = yes
-			trigger_if = {
-				NOT = {
-					any_in_list = {
-						variable = surveil_targets
-						this = scope:recipient
-					}
+			NOT = {
+				AND = {
+					exists = var:surveil_target
+					var:surveil_target = scope:recipient
 				}
 			}
 		}
@@ -25,13 +23,9 @@
 	is_valid_showing_failures_only = {
 		custom_description = {
 			text = survelling_other_target
-			NOT = {
-				scope:actor = {
-					any_in_list = {
-						variable= surveil_targets
-						count >= 1
-					}
-				}
+			AND = {
+				exists = var:surveil_target
+				NOT = { var:surveil_target = scope:recipient }
 			}
 			
 		}
@@ -64,9 +58,9 @@
 	auto_accept = yes
 	on_accept = {
 		scope:actor = {
-			add_to_variable_list = {
-				name = surveil_targets
-				target = scope:recipient
+			set_variable = {
+				name = surveil_target
+				value = scope:recipient
 			}
 		}
 		scope:recipient = {
@@ -90,9 +84,9 @@ sas_stop_surveil_target_interaction = {
 		scope:recipient != scope:actor
 		scope:actor = {
 			is_ai = no
-			any_in_list = {
-				variable = surveil_targets
-				this = scope:recipient
+			AND = {
+				exists = var:surveil_target
+				var:surveil_target = scope:recipient
 			}
 		}
 	}
@@ -100,10 +94,7 @@ sas_stop_surveil_target_interaction = {
 	auto_accept = yes
 	on_accept = {
 		scope:actor = {
-			remove_list_variable = {
-				name = surveil_targets
-				target = scope:recipient
-			}
+			remove_variable = surveil_target
 		}
 		scope:recipient = {
 			custom_tooltip = surveil_target_interaction_end_surveillance.tt

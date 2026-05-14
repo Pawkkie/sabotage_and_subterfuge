@@ -55,3 +55,91 @@ spy_network_members_count_gui = {
 		add = 1
 	}
 }
+
+surveil_target_success_chance = {
+	value = 0
+	# Add 2x your total spy count
+	add = {
+		value =	spy_network_members_count_gui
+		multiply = 2
+	}
+	# Add 0.5x your intrigue
+	add = {
+		value = intrigue
+		multiply = 0.5
+	}
+	var:surveil_target = {
+		# Add your spymaster's intrigue if finding secrets
+		if = {
+			limit = {
+				exists = root.cp:councillor_spymaster
+				root.cp:councillor_spymaster = {
+					is_performing_council_task = task_find_secrets
+					councillor_task_target = prev
+				}
+			}
+			add = root.cp:councillor_spymaster.intrigue
+		}
+		# Subtract their spymaster's intrigue if disrupting schemes
+		if = {
+			limit = {
+				exists = cp:councillor_spymaster
+				cp:councillor_spymaster = {
+					is_performing_council_task = task_disrupt_schemes
+				}
+				# Don't subtract if they're on your side
+				NOT = {
+					root = {
+						any_in_list = {
+							variable = spy_network_members
+							this = root.var:surveil_target.cp:councillor_spymaster
+						}
+					}
+				}
+			}
+			subtract = cp:councillor_spymaster.intrigue
+		}
+		# Subtract 2x their local spy count total
+		every_in_list = {
+			variable = spy_network_members
+			if = {
+				limit = {
+					is_alive = yes
+					court_owner = root.var:surveil_target
+				}
+				subtract = 2
+			}
+		}
+		# Add if they're trusting
+		if = {
+			limit = {
+				has_trait = trusting
+			}
+			add = 10
+		}
+		# Subtract if they're paranoid
+		if = {
+			limit = {
+				has_trait = paranoid
+			}
+			subtract = 10
+		}
+	}
+	# Add intrigue of every spy you have in their court
+	every_in_list = {
+		variable = spy_network_members
+		if = {
+			limit = {
+				is_alive = yes
+				OR = {
+					court_owner = root.var:surveil_target
+					court_owner = root.var:surveil_target.court_owner
+				}
+			}
+			add = intrigue
+		}
+	}
+	floor = yes
+	min = 0
+	max = 100
+}

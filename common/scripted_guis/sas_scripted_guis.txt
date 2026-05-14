@@ -6,9 +6,6 @@
 
 show_surveil_target_pane = {
     is_shown = {
-        any_in_list = {
-            variable = surveil_targets
-            count >= 1
-        }
+        exists = var:surveil_target
     }
 }
