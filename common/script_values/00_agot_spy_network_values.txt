@@ -30,7 +30,6 @@ spy_network_over_limit = {
 
 spy_network_over_limit_recruitment_penalty = {
 	value = spy_network_over_limit
-	#add = 1		# to count the spy to be recruited
 	multiply = 25
 
 	floor = yes

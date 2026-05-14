@@ -4,13 +4,32 @@
 	}
 	can_benefit = {
 		house ?= {
-			OR = {
+			trigger_if = {
+				limit = { has_game_rule = sas_scheme_renown_massive }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_renown_major }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_renown_medium }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_renown_minor }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_renown_tiny }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_renown_none }
 				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
+			}
+			trigger_else = {
+				always = no
 			}
 		}
 	}

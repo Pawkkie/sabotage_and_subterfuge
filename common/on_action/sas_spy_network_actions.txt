@@ -29,11 +29,9 @@ sas_spy_network_task_disrupt_schemes_side_effects = {
 	trigger = {
 		NOT = { has_variable = had_spymaster_task_side_effect }
 		exists = cp:councillor_spymaster
-		can_use_spy_network = yes
 	}
 
 	random_events = {
-		# SAS Change
 		chance_to_happen = 2
 		#The chance for the vanilla events must stay 1% while adding the "discover spy" event
 		chance_of_no_event = {
@@ -57,15 +55,14 @@ sas_spy_network_task_disrupt_schemes_side_effects = {
 				add = 67
 			}
 		}
-		800 = agot_spy_network.0500 #12% chance per year: 12 * 1% * 0,67 * 1,5
-		#Bad side effects
+		800 = agot_spy_network.0500 #Discover spy; 12% chance per year: 12 * 1% * 0,67 * 1,5
+		# Bad side effects
 		25 = spymaster_task.1001 #Spymaster reveals one of your secrets to a powerful vassal
 		100 = spymaster_task.1003 #Spymaster reveals a Courtier's secrets to a powerful vassal
 		#Good side effects
 		100 = spymaster_task.1101 #Hostile Scheme is interrupted
 		100 = spymaster_task.2101 #Discovery of a minor secret
 		50 = spymaster_task.2104 #Discovery of a major secret
-		# SAS Change End
 	}
 }
 
@@ -78,7 +75,7 @@ sas_spy_network_task_find_secrets_outcome = {
 		20 = spymaster_task.0301 #Find minor secret
 		10 = spymaster_task.0302 #Find major secret
 		10 = spymaster_task.0381 # Fabricate a Hook (if you have Truth is Relative) - Fired both here and if no secrets exist
-		120 = agot_spy_network.0400
+		120 = agot_spy_network.0400 # Recruit spy
 		# SAS Change End
 	}
 }

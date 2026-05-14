@@ -141,3 +141,18 @@ recently_ennobled = {
 	first = RECENTLY_ENNOBLED
 	first_not = DID_NOT_RECENTLY_ENNOBLE
 }
+
+survelling_other_target = {
+	first = SURVEILLING_OTHER_TARGET
+	first_not = NOT_SURVEILLING_OTHER_TARGET
+}
+
+target_is_in_spy_network = {
+	first = TARGET_IS_IN_SPY_NETWORK
+	first_not = NOT_TARGET_IS_IN_SPY_NETWORK
+}
+
+spy_network_extends_to_targets_court = {
+	first = HAVE_SPY_IN_TARGETS_COURT
+	first_not = NOT_HAVE_SPY_IN_TARGETS_COURT
+}

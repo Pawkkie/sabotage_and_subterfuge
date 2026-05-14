@@ -64,15 +64,18 @@
 	}
 
 	on_accept = {
-		scope:actor = {
-			send_interface_toast = {
-				type = event_toast_effect_good
-				title = invite_to_spy_network_toast_title
-				left_icon = scope:actor
-				right_icon = scope:recipient
-				custom_tooltip = invite_to_spy_network_toast_desc
+		hidden_effect = {
+			scope:actor = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = invite_to_spy_network_toast_title
+					left_icon = scope:actor
+					right_icon = scope:recipient
+					custom_tooltip = invite_to_spy_network_toast_desc
+				}
 			}
 		}
+		
 		scope:actor = {
 			add_prestige = -10
 		}

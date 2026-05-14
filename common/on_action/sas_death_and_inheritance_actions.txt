@@ -1,0 +1,70 @@
+﻿on_death = {
+	on_actions = { 
+		on_death_black_book_inherit_secrets
+		on_death_inherit_spy_network
+		on_death_inherit_surveil_target
+	}
+}
+
+on_death_black_book_inherit_secrets = {
+	trigger = {
+		is_ai = no
+		exists = player_heir
+		any_equipped_character_artifact = {
+			has_artifact_modifier = artifact_black_book_modifier
+		}
+		house ?= {
+			OR = {
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_none
+			}
+		}
+	}
+	effect = {
+		black_book_inherit_secrets_effect = yes
+	}
+}
+
+on_death_inherit_spy_network = {
+	trigger = {
+		has_game_rule = sas_inherit_spy_network_enabled
+		exists = primary_heir
+		house = primary_heir.house
+		has_variable_list = spy_network_members
+		can_use_spy_network = yes
+	}
+	effect = {
+		every_in_list = {
+			variable = spy_network_members
+			save_scope_as = current_spy
+			root.primary_heir ?= {
+				add_to_variable_list = {
+					name = spy_network_members
+					target = scope:current_spy
+				}
+			}
+		}
+	}
+}
+
+on_death_inherit_surveil_target = {
+	trigger = {
+		has_game_rule = sas_inherit_spy_network_enabled
+		is_ai = no
+		exists = player_heir
+		house = primary_heir.house
+		has_variable = surveil_target
+	}
+	effect = {
+		player_heir ?= {
+			set_variable = {
+				name = surveil_target
+				value = root.var:surveil_target
+			}
+		}
+	}
+}

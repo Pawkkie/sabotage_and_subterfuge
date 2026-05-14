@@ -3,3 +3,9 @@
         can_use_spy_network = yes
     }
 }
+
+show_surveil_target_pane = {
+    is_shown = {
+        exists = var:surveil_target
+    }
+}

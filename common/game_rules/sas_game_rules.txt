@@ -87,3 +87,14 @@ sas_end_friendship = {
 	sas_end_friendship_disabled = {
 	}
 }
+
+sas_inherit_spy_network = {
+	categories = {
+		sas
+	}
+	default = sas_inherit_spy_network_enabled
+	sas_inherit_spy_network_enabled = {
+	}
+	sas_inherit_spy_network_disabled = {
+	}
+}

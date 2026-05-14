@@ -10,3 +10,16 @@
 		}
 	}
 }
+
+actor_has_spy_in_recipients_court = {
+	scope:actor = {
+		any_in_list = {
+			variable = spy_network_members
+			is_alive = yes
+			OR = {
+				court_owner = scope:recipient
+				court_owner = scope:recipient.court_owner
+			}
+		}
+	}
+}
