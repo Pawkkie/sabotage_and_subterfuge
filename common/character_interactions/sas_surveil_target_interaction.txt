@@ -12,8 +12,12 @@
 			is_ai = no
 			is_alive = yes
 			trigger_if = {
-				limit = { exists = var:surveil_target }
-				NOT = { var:surveil_target = scope:recipient }
+				NOT = {
+					any_in_list = {
+						variable = surveil_targets
+						this = scope:recipient
+					}
+				}
 			}
 		}
 	}
@@ -21,9 +25,15 @@
 	is_valid_showing_failures_only = {
 		custom_description = {
 			text = survelling_other_target
-			scope:actor = {
-				NOT = { exists = var:surveil_target }
+			NOT = {
+				scope:actor = {
+					any_in_list = {
+						variable= surveil_targets
+						count >= 1
+					}
+				}
 			}
+			
 		}
 		custom_description = {
 			text = target_is_in_spy_network
@@ -54,9 +64,9 @@
 	auto_accept = yes
 	on_accept = {
 		scope:actor = {
-			set_variable = {
-				name = surveil_target
-				value = scope:recipient
+			add_to_variable_list = {
+				name = surveil_targets
+				target = scope:recipient
 			}
 		}
 		scope:recipient = {
@@ -80,17 +90,19 @@ sas_stop_surveil_target_interaction = {
 		scope:recipient != scope:actor
 		scope:actor = {
 			is_ai = no
-			exists = var:surveil_target
-			var:surveil_target = scope:recipient
+			any_in_list = {
+				variable = surveil_targets
+				this = scope:recipient
+			}
 		}
 	}
 
 	auto_accept = yes
 	on_accept = {
 		scope:actor = {
-			if = {
-				limit = { exists = var:surveil_target }
-				remove_variable = surveil_target
+			remove_list_variable = {
+				name = surveil_targets
+				target = scope:recipient
 			}
 		}
 		scope:recipient = {

@@ -3,4 +3,7 @@
  INTRIGUE_WINDOW_SPIES_MAX_COUNT: "#T Number of [sas_spies|E]#!\nMax calculated as one fifth of the combined [intrigue|E] of you and your [spymaster|E], rounded down. Doubled by the Expand Spy Network decision."
  INTRIGUE_WINDOW_DISMISS: "Dismiss"
  INTRIGUE_WINDOW_DISMISS_BUTTON_TT: "#T Dismiss#!\n\nDismiss [Character.GetTitledFirstName] from your [sas_spy_network|E]"
+ INTRIGUE_WINDOW_STOP_SURVEILING: "Stop Surveillance"
+ INTRIGUE_WINDOW_STOP_SURVEILING_BUTTON_TT: "#T Stop Surveillance#!\n\nStop your [sas_spy_network|E] from focusing their surveillance efforts on [Character.GetTitledFirstName]"
  SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]"
+ INTRIGUE_WINDOW_SURVEIL_TARGET: "Surveillance Target"

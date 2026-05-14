@@ -81,14 +81,16 @@
 		}
 		is_valid = {
 			# Actor has enough gold and prestige
-			scope:actor.gold >= medium_gold_value
-			scope:actor.prestige >= medium_prestige_value
+			scope:actor = {
+				gold >= medium_gold_value
+				prestige >= medium_prestige_value
+			}
 			
 			# Haven't recently ennobled anyone
 			custom_description = {
 				text = recently_ennobled
-				NOT = {
-					exists = scope:actor.var:recently_ennobled
+				scope:actor = {
+					NOT = { exists = var:recently_ennobled }
 				}
 			}
 			scope:recipient = {
@@ -246,7 +248,7 @@
 				}
 			}
 			scope:actor = {
-				remove_short_term_Gold = medium_gold_value
+				remove_short_term_gold = medium_gold_value
 				add_prestige = medium_prestige_loss
 				hidden_effect = {
 					set_variable = {

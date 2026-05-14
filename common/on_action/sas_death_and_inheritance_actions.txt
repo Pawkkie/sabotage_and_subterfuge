@@ -57,13 +57,17 @@ on_death_inherit_surveil_target = {
 		is_ai = no
 		exists = player_heir
 		house = primary_heir.house
-		has_variable = surveil_target
+		has_variable_list = surveil_targets
 	}
 	effect = {
-		player_heir ?= {
-			set_variable = {
-				name = surveil_target
-				value = root.var:surveil_target
+		every_in_list = {
+			variable = surveil_targets
+			save_scope_as = current_surveil_target
+			root.player_heir ?= {
+				add_to_variable_list = {
+					name = surveil_targets
+					target = scope:current_surveil_target
+				}
 			}
 		}
 	}

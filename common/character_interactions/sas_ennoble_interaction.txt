@@ -33,8 +33,10 @@
 	}
 
 	is_valid_showing_failures_only = {
-		scope:actor.gold >= medium_gold_value
-		scope:actor.prestige >= medium_prestige_value
+		scope:actor = {
+			gold >= medium_gold_value
+			prestige >= medium_prestige_value
+		}
 		custom_description = {
 			text = recently_ennobled
 			NOT = {
