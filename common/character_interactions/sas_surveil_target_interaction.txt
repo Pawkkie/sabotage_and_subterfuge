@@ -11,11 +11,9 @@
 		scope:actor = {
 			is_ai = no
 			is_alive = yes
-			NOT = {
-				AND = {
-					exists = var:surveil_target
-					var:surveil_target = scope:recipient
-				}
+			trigger_if = {
+				limit = { exists = var:surveil_target }
+				NOT = { var:surveil_target = scope:recipient }
 			}
 		}
 	}
@@ -23,11 +21,9 @@
 	is_valid_showing_failures_only = {
 		custom_description = {
 			text = survelling_other_target
-			AND = {
-				exists = var:surveil_target
-				NOT = { var:surveil_target = scope:recipient }
+			scope:actor = {
+				NOT = { exists = var:surveil_target }
 			}
-			
 		}
 		custom_description = {
 			text = target_is_in_spy_network
@@ -84,17 +80,18 @@ sas_stop_surveil_target_interaction = {
 		scope:recipient != scope:actor
 		scope:actor = {
 			is_ai = no
-			AND = {
-				exists = var:surveil_target
-				var:surveil_target = scope:recipient
-			}
+			exists = var:surveil_target
+			var:surveil_target = scope:recipient
 		}
 	}
 
 	auto_accept = yes
 	on_accept = {
 		scope:actor = {
-			remove_variable = surveil_target
+			if = {
+				limit = { exists = var:surveil_target }
+				remove_variable = surveil_target
+			}
 		}
 		scope:recipient = {
 			custom_tooltip = surveil_target_interaction_end_surveillance.tt

@@ -85,19 +85,11 @@ types SpyNetworkWindow {
 			blockoverride "scrollbox_content" {
 
 				block "container_implementation" {
-					fixedgridbox = {
-						name = "surveil_target_grid"
-						layoutpolicy_horizontal = expanding
-						addcolumn = 520
-						addrow = 130
-						setitemsizefromcell = yes
-						datacontext = "[GetPlayer.MakeScope.Var('surveil_target').Char]"
-
-						widget_surveil_target_item = {
-							block "item_size" {
-								size = { 650 110 }
-								layoutpolicy_horizontal = expanding
-							}
+					datacontext = "[GetPlayer.MakeScope.Var('surveil_target').Char]"
+					widget_surveil_target_item = {
+						block "item_size" {
+							size = { 650 110 }
+							layoutpolicy_horizontal = expanding
 						}
 					}
 				}
@@ -399,7 +391,7 @@ types SpyNetworkWindow {
 						align = nobaseline
 					}
 				}
-				# Dismiss button
+				# Stop Surveillance button
 				hbox = {
 					visible = "[Character.IsPlayerInteractionShown('sas_stop_surveil_target_interaction')]"
 					layoutpolicy_horizontal = expanding
