@@ -35,3 +35,38 @@
 		}
 	}
 }
+
+action_no_chance_surveil_target_court = {
+	type = action
+	priority = 50
+	icon = scheme_agent_icon
+	is_dangerous = yes
+	check_create_action = {
+		if = {
+			limit = {
+				exists = var:surveil_target
+				any_in_list = {
+					variable = spy_network_members
+					is_alive = yes
+					OR = {
+						court_owner = root.var:surveil_target
+						court_owner = root.var:surveil_target.court_owner
+					}
+				}
+				var:surveil_target = {
+					is_alive = yes
+				}
+				surveil_target_success_chance = 0
+			}
+			try_create_important_action = {
+				important_action_type = action_no_chance_surveil_target_court
+				surveil_target = var:surveil_target
+			}
+		}
+	}
+	effect = {
+		open_view = {
+			view = intrigue_window
+		}
+	}
+}
