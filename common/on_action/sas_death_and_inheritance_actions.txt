@@ -3,6 +3,7 @@
 		on_death_black_book_inherit_secrets
 		on_death_inherit_spy_network
 		on_death_inherit_surveil_target
+		on_death_remove_surveil_target
 	}
 }
 
@@ -64,6 +65,37 @@ on_death_inherit_surveil_target = {
 			set_variable = {
 				name = surveil_target
 				value = root.var:surveil_target
+			}
+		}
+		root.var:surveil_target = {
+			remove_list_variable = {
+				name = players_surveilling_me
+				target = root
+			}
+			add_to_variable_list = {
+				name = players_surveilling_me
+				target = root.player_heir
+			}
+		}
+	}
+}
+
+on_death_remove_surveil_target = {
+	trigger = {
+		any_in_list = {
+			variable = players_surveilling_me
+		}
+	}
+	effect = {
+		save_scope_as = dying_surveil_target
+		every_in_list = {
+			variable = players_surveilling_me
+			remove_variable = surveil_target
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = surveilled_target_has_died_title
+				left_icon = root
+				custom_tooltip = surveilled_target_has_died_toast_desc
 			}
 		}
 	}

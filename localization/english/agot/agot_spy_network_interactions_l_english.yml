@@ -120,3 +120,7 @@
  sas_stop_surveil_target_interaction: "Stop Surveilling Target"
  sas_stop_surveil_target_interaction_desc: "Stop dedicated surveillance efforts on [recipient.GetShortUIName], letting [sas_spies|E] in the area know to no longer prioritize learning [recipient.GetHerHis] [secrets|E]."
  surveil_target_interaction_end_surveillance.tt: "Your [sas_spy_network|E] will stop focusing on surveilling [recipient.GetShortUIName]."
+
+ # Surveilled Target has Died
+ surveilled_target_has_died_title: "Surveillance Target Dies"
+ surveilled_target_has_died_toast_desc: "[dying_surveil_target.GetTitledFirstName] has died. You can no longer glean their secrets through surveillance."

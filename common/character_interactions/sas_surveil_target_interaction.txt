@@ -62,6 +62,12 @@
 		scope:recipient = {
 			custom_tooltip = surveil_target_interaction_start_surveillance.tt
 		}
+		scope:recipient = {
+			add_to_variable_list = {
+				name = players_surveilling_me
+				target = scope:actor
+			}
+		}
 	}
 
 	is_available = {
@@ -95,6 +101,12 @@ sas_stop_surveil_target_interaction = {
 		}
 		scope:recipient = {
 			custom_tooltip = surveil_target_interaction_end_surveillance.tt
+		}
+		scope:recipient = {
+			remove_list_variable = {
+				name = players_surveilling_me
+				target = scope:actor
+			}
 		}
 	}
 
