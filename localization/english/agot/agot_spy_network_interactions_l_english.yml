@@ -124,3 +124,9 @@
  # Surveilled Target has Died
  surveilled_target_has_died_title: "Surveillance Target Dies"
  surveilled_target_has_died_toast_desc: "[dying_surveil_target.GetTitledFirstName] has died. You can no longer glean their secrets through surveillance."
+
+ # No Spy In Target Court Important Action
+ action_no_spy_in_surveil_target_court: "@scheme_agent_icon! Recruit a [sas_spy|E]"
+ action_no_spy_in_surveil_target_court_label: "@scheme_agent_icon! You have no [sas_spies|E] in [surveil_target.GetTitledFirstNamePossessive] court"
+ action_no_spy_in_surveil_target_court_desc:1 "You have no [sas_spies|E] in your employ who are based out of [surveil_target.GetTitledFirstNamePossessive] court, you should recruit one.\n\n#help Without one, you will have no chance of discovering any of [surveil_target.GetHerHis] secrets, and with your [sas_spy_network|E] focused specifically on one target, they won't discover secrets from other courts either. You should either recruit a [sas_spy|E] for the job, or end the attempted surveillance on [surveil_target.GetTitledFirstName].#!"
+ action_no_spy_in_surveil_target_court_click:0 "#I Click to view#!"

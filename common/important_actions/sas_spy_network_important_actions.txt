@@ -1,0 +1,37 @@
+﻿action_no_spy_in_surveil_target_court = {
+	type = action
+	priority = 50
+	icon = scheme_agent_icon
+	is_dangerous = yes
+	check_create_action = {
+		if = {
+			limit = {
+				exists = var:surveil_target
+				NOT = {
+					any_in_list = {
+						variable = spy_network_members
+						is_alive = yes
+						OR = {
+							court_owner = root.var:surveil_target
+							court_owner = root.var:surveil_target.court_owner
+						}
+					}
+				}
+				var:surveil_target = {
+					is_alive = yes
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_no_spy_in_surveil_target_court
+				surveil_target = var:surveil_target
+			}
+		}
+	}
+	effect = {
+		scope:surveil_target = {
+			open_view_data = {
+				view = character
+			}
+		}
+	}
+}
