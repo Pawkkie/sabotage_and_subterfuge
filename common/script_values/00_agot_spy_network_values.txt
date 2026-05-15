@@ -68,6 +68,11 @@ surveil_target_success_chance = {
 		value = intrigue
 		multiply = 0.5
 	}
+	# Subtract 0.5x their intrigue
+	subtract = {
+		value = var:surveil_target.intrigue
+		multiply = 0.5
+	}
 	var:surveil_target = {
 		# Add your spymaster's intrigue if finding secrets
 		if = {
@@ -139,6 +144,23 @@ surveil_target_success_chance = {
 			add = intrigue
 		}
 	}
+	# Chance goes to zero if we have no spies in their court
+	if = {
+		limit = {
+			NOT = {
+				any_in_list = {
+					variable = spy_network_members
+					is_alive = yes
+					OR = {
+						court_owner = root.var:surveil_target
+						court_owner = root.var:surveil_target.court_owner
+					}
+				}
+			}
+		}
+		multiply = 0
+	}
+	
 	floor = yes
 	min = 0
 	max = 100
