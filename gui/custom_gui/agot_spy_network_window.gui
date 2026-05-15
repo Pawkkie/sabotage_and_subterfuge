@@ -323,18 +323,12 @@ types SpyNetworkWindow {
 						texture = "gfx/interface/icons/icon_skill_intrigue.dds"
 					}
 					text_single = {
-						name = "surveil_success_chance"
-						text = "[GetPlayer.MakeScope.ScriptValue('surveil_target_success_chance')|0]"
+						
+						name = "intrigue_skill_value"
+						text = "[Character.GetSkill( 'intrigue' )]"
 						using = Font_Size_Medium
 						autoresize = yes
 					}
-					# text_single = {
-						
-					# 	name = "intrigue_skill_value"
-					# 	text = "[Character.GetSkill( 'intrigue' )]"
-					# 	using = Font_Size_Medium
-					# 	autoresize = yes
-					# }
 					icon = {
 						visible = "[Character.IsDeadAndValid]"
 						size = { 23 23 }
@@ -396,8 +390,6 @@ types SpyNetworkWindow {
 					visible = "[Character.IsPlayerInteractionShown('sas_stop_surveil_target_interaction')]"
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
-					margin_bottom = 10
-					margin_right = 225
 
 					button_standard_small = {
 						name = "stop surveiling button"
@@ -406,6 +398,15 @@ types SpyNetworkWindow {
 						text = "INTRIGUE_WINDOW_STOP_SURVEILING"
 						tooltip = "INTRIGUE_WINDOW_STOP_SURVEILING_BUTTON_TT"
 						using = tooltip_se
+					}
+					text_single = {
+						tooltip = "INTRIGUE_WINDOW_QUARTERLY_SUCCESS_CHANCE_TOOLTIP"
+						name = "surveil_success_chance"
+						raw_text = "Quarterly Success Chance: [GetPlayer.MakeScope.ScriptValue('surveil_target_success_chance')|0]%"
+						using = Font_Size_Small
+						autoresize = yes
+						margin_bottom = 6
+						margin_right = 8
 					}
 				}
 			}

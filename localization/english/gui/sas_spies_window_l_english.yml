@@ -7,3 +7,5 @@
  INTRIGUE_WINDOW_STOP_SURVEILING_BUTTON_TT: "#T Stop Surveillance#!\n\nStop your [sas_spy_network|E] from focusing their surveillance efforts on [Character.GetTitledFirstName]"
  SPY_ABBREVIATED_RELATIONS_TOOLTIP: "[Character.GetRelationToString( GetPlayer )]"
  INTRIGUE_WINDOW_SURVEIL_TARGET: "Surveillance Target"
+ INTRIGUE_WINDOW_QUARTERLY_SUCCESS_CHANCE: "Quarterly Success Chance: "
+ INTRIGUE_WINDOW_QUARTERLY_SUCCESS_CHANCE_TOOLTIP: "#T Quarterly Success Chance Tooltip Title#!\nQuarterly Success Chance Tooltip Desc"

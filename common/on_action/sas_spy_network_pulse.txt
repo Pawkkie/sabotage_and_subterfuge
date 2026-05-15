@@ -126,6 +126,7 @@ learn_innovations_pulse = {
 			variable = spy_network_members
 			count >= 1
 		}
+		NOT = { exists = var:surveil_target }
 	}
 	effect = {
 		trigger_event = {

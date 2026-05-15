@@ -11,15 +11,12 @@ agot_spy_network.0100 = {
 		if = {
 			limit = {
 				has_variable_list = spy_network_members
-				#variable_list_size = {
-				#	name = spy_network_members
-				#	value >= 1
-				#}
 				any_in_list = {
 					variable = spy_network_members
-					#is_alive = yes
+					is_alive = yes
 					count >= 1
 				}
+				NOT = { exists = var:surveil_target }
 			}
 
 			# Every quarter, each spy has a intrigue % chance of discovering a random secret/scheme and revealing it to you
@@ -84,6 +81,46 @@ agot_spy_network.0100 = {
 					}
 				}
 			}
+		}
+		else_if = {
+			limit = {
+				exists = var:surveil_target
+				has_variable_list = spy_network_members
+				any_in_list = {
+					variable = spy_network_members
+					is_alive = yes
+					count >= 1
+					OR = {
+						court_owner = root.var:surveil_target
+						court_owner = root.var:surveil_target.court_owner
+					}
+				}
+			}
+			random = {
+				chance = 0
+				modifier = {
+					add = surveil_target_success_chance
+				}
+				# Grab any spy in surveil_target's court
+				random_in_list = {
+					variable = spy_network_members
+					limit = {
+						is_alive = yes
+						OR = {
+							court_owner = root.var:surveil_target
+							court_owner = root.var:surveil_target.court_owner
+						}
+					}
+					
+					trigger_event = {
+						id = agot_spy_network.0201
+						days = { 1 15 }
+					}
+				}
+			}
+		}
+		else  = {
+
 		}
 	}
 }
@@ -430,6 +467,176 @@ agot_spy_network.0200 = {
 }
 
 
+# Reveals one random secret/scheme from the surveil target
+agot_spy_network.0201 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		any_ruler = {
+			is_alive = yes
+			is_target_in_variable_list = {
+				name = spy_network_members
+				target = root
+			}
+		}
+	}
+
+	immediate = {
+		save_scope_as = secret_finder
+		# Save scope of spy's employer
+		every_ruler = {
+			limit = {
+				is_alive = yes
+				is_target_in_variable_list = {
+					name = spy_network_members
+					target = root
+				}
+			}
+
+			save_scope_as = employer
+		}
+		scope:employer.var:surveil_target = {
+			save_scope_as = surveil_target
+		}
+
+		scope:surveil_target = {
+			# List the court owner's secrets that could be revealed
+			every_secret = {
+				limit = {
+					# Only check secrets that the employer doesn't know yet
+					NOT = {
+						any_secret_knower = {
+							this = scope:employer
+						}
+					}
+					NOT = {
+						AND = {
+							secret_type = secret_lover
+							secret_target = scope:secret_finder
+						}
+					}
+				}
+				add_to_temporary_list = suitable_secrets
+			}
+		}
+
+		if = {
+			limit = {
+				list_size = {
+					name = suitable_secrets
+					value >= 1
+				}
+				NOT = {
+					scope:employer = {
+						has_character_flag = spy_found_secret_cooldown
+					}
+				}
+			}
+
+			# Pick a Secret to discover
+			random_in_list = {
+				list = suitable_secrets
+				weight = {
+					base = 1
+				}
+				save_scope_as = secret_to_reveal
+				secret_owner = {
+					save_scope_as = secret_holder
+				}
+			}
+
+			scope:employer = {
+				add_character_flag = { flag = spy_found_secret_cooldown days = 100 }
+				trigger_event = {
+					id = agot_spy_network.0212
+				}
+			}
+		}
+		else = { #if no secret is available, check if the court owner or one of his courtiers is scheming against the spies employer and/or his courtiers. If so, reveal the scheme.
+			scope:surveil_target = {
+				every_scheme = {
+					if = {
+						limit = {
+							is_scheme_exposed = no
+							hostile_scheme_trigger = yes
+							scheme_target_character = {
+								OR = {
+									this = scope:employer
+									court_owner = scope:employer
+								}
+							}
+							scheme_owner = {
+								NOT = {
+									this = scope:secret_finder
+								}
+							}
+						}
+						add_to_temporary_list = suitable_schemes
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				list_size = {
+					name = suitable_schemes
+					value >= 1
+				}
+				list_size = {
+					name = suitable_secrets
+					value = 0
+				}
+			}
+
+			# Pick a scheme to discover
+			random_in_list = {
+				list = suitable_schemes
+				weight = {
+					base = 1
+				}
+
+				#set necessary scopes for vanilla event
+				save_scope_as = scheme
+				scope:secret_finder = {
+					save_scope_as = spymaster
+				}
+				scheme_target_character = {
+					save_scope_as = target
+				}
+				scheme_owner = {
+					save_scope_as = owner
+				}
+
+				scope:target.host = {
+					trigger_event = hostile_scheme_discovery.2001
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				list_size = {
+					name = suitable_secrets
+					value = 0
+				}
+				list_size = {
+					name = suitable_schemes
+					value = 0
+				}
+			}
+			scope:employer = {
+				trigger_event = {
+					id = agot_spy_network.0211
+				}
+			}
+		}
+		else = {
+
+		}
+	}
+}
+
 agot_spy_network.0210 = { #ask for money in exchange for secret
 	type = letter_event
 	opening = agot_spy_network.0210.t
@@ -506,6 +713,118 @@ agot_spy_network.0210 = { #ask for money in exchange for secret
 
 	option = { #not enough money
 		name = agot_spy_network.0210.c
+
+		trigger = {
+			gold < 25
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+agot_spy_network.0211 = { #confirm zero secrets on surveil target
+	type = letter_event
+	opening = agot_spy_network.0211.t
+	desc = agot_spy_network.0211.desc
+	sender = scope:secret_finder
+
+	option = { #excellent, stop surveillance
+		name = agot_spy_network.0211.a
+		custom_tooltip = surveil_target_no_more_secrets
+		remove_variable = surveil_target
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { #contionue anyways
+		name = agot_spy_network.0211.b
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+agot_spy_network.0212 = { #ask for money in exchange for secret on surveil target
+	type = letter_event
+	opening = agot_spy_network.0212.t
+	desc = agot_spy_network.0212.desc
+	sender = scope:secret_finder
+
+	option = { #yes
+		name = agot_spy_network.0212.a
+
+		trigger = {
+			gold >= 25
+		}
+
+		remove_short_term_gold = 25
+		scope:secret_finder = { add_gold = 25 }
+
+		# Reveal the secret to the employer
+		scope:employer = {
+			send_interface_message = {
+				type = msg_spymaster_task_good 	# todo: change this
+				title = agot_spy_network.0210.interface.employer.t
+				desc = agot_spy_network.0210.interface.employer.desc
+
+				left_icon = scope:secret_holder
+				right_icon = scope:secret_finder
+
+				scope:secret_to_reveal = {
+					reveal_to = scope:employer
+				}
+			}
+			# Count secret bought towards running total
+			if = {
+				limit = {
+					exists = var:number_of_secrets_bought
+				}
+				change_variable = {
+					name = number_of_secrets_bought
+					add = 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = number_of_secrets_bought
+					value = 1
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { #not interested
+		name = agot_spy_network.0212.b
+
+		trigger = {
+			gold >= 25
+		}
+
+		scope:secret_to_reveal = {
+			scope:employer = {
+				add_to_variable_list = {
+					name = refused_secrets
+					target = prev
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { #not enough money
+		name = agot_spy_network.0212.c
 
 		trigger = {
 			gold < 25
