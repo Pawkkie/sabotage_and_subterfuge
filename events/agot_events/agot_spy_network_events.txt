@@ -49,7 +49,7 @@ agot_spy_network.0100 = {
 								exists = var:femme_fatale_is_embracing_the_spiders
 								var:femme_fatale_is_embracing_the_spiders = yes
 							}
-							add = 10
+							add = 5
 						}
 						modifier = {
 							root = {
@@ -64,7 +64,7 @@ agot_spy_network.0100 = {
 									}
 								}
 							}
-							add = 10
+							add = 5
 						}
 						trigger_event = {
 							id = agot_spy_network.0200

@@ -71,3 +71,8 @@ sas_nation_fracturing_faction = {
 	alias = { sas_nation_fracturing_factions }
 	parent = faction
 }
+
+sas_surveil_target = {
+	alias = { sas_surveillance_target sas_surveillance sas_surveil }
+	texture = "gfx/interface/icons/message_feed/spy_master.dds"
+}

@@ -39,3 +39,8 @@
  game_concept_sas_nation_fracturing_faction: "Dissolution Faction"
  game_concept_sas_nation_fracturing_factions: "Dissolution Factions"
  game_concept_sas_nation_fracturing_faction_desc: "Members of the $game_concept_sas_nation_fracturing_faction$ seek to destroy the realm of their liege. If successful they will all become [independent|E], and their [liege|E] will lose their [primary_title|E] and other [titles|E] of the same [title_tier|E]."
+ game_concept_sas_surveil_target: "Surveil Target"
+ game_concept_sas_surveillance_target: "Surveillance Target"
+ game_concept_sas_surveillance: "Surveillance"
+ game_concept_sas_surveil: "Surveil"
+ game_concept_sas_surveil_target_desc: "You can designate a character as a surveillance target to have your [sas_spy_network|E] focus their efforts entirely on learning that individual's secrets. Your [sas_spies|E] will not learn secrets from their normal regions, nor will they discover any innovations.\n\nInstead, you will have a quarterly success chance of discovering a secret the target holds, or confirming that the target does not have any secrets at all. This chance is affected by the [intrigue|E] of you, your target, your [spymaster|E], and your target's [spymaster|E], the number of [sas_spies|E] in your [sas_spy_network], the [intrigue|E] of any [sas_spies|E] you have in their court, the number of [sas_spies|E] your target has in their court, using your [spymaster|E]'s $task_find_secrets$, and your target using their [spymaster|E]'s $task_disrupt_schemes$.\n\nNote that you must have a [sas_spy|E] in the target's court in order to mark them for surveillance, and if at any time while surveilling them you do not, your success chance will go to zero."

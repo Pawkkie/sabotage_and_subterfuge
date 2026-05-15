@@ -4,7 +4,7 @@
 	interface_priority = 40
 	desc = sas_surveil_target_interaction_desc
 
- 	# cooldown = { years = 1 }
+ 	cooldown = { years = 2 }
 
 	is_shown = {
 		scope:recipient != scope:actor
@@ -14,6 +14,10 @@
 			trigger_if = {
 				limit = { exists = var:surveil_target }
 				NOT = { var:surveil_target = scope:recipient }
+			}
+			OR = {
+				has_house_modifier = sas_special_operations_training_house_modifier_free
+				has_house_modifier = sas_special_operations_training_house_modifier_paid
 			}
 		}
 	}

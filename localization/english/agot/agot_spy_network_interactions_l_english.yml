@@ -122,32 +122,32 @@
 
  # Surveil Target
  sas_surveil_target_interaction: "Surveil Target"
- sas_surveil_target_interaction_desc: "Marks [recipient.GetShortUIName] for surveillance, letting [sas_spies|E] in the area know to prioritize learning [recipient.GetHerHis] [secrets|E]."
- NOT_SURVEILLING_OTHER_TARGET: "You are currently performing dedicated surveillance on someone else"
- SURVEILLING_OTHER_TARGET: "You are not currently performing dedicated surveillance on someone else"
- NOT_TARGET_IS_IN_SPY_NETWORK: "Your [sas_spies|E] will not surveil themselves"
- TARGET_IS_IN_SPY_NETWORK: "Your [sas_spies|E] will not surveil themselves"
+ sas_surveil_target_interaction_desc: "Marks [recipient.GetShortUIName] for [sas_surveillance|E], letting [sas_spies|E] in the area know to prioritize learning [recipient.GetHerHis] [secrets|E]."
+ NOT_SURVEILLING_OTHER_TARGET: "You are currently performing dedicated [sas_surveillance|E] on someone else"
+ SURVEILLING_OTHER_TARGET: "You are not currently performing dedicated [sas_surveillance|E] on someone else"
+ NOT_TARGET_IS_IN_SPY_NETWORK: "Your [sas_spies|E] will not [sas_surveil|E] themselves"
+ TARGET_IS_IN_SPY_NETWORK: "Your [sas_spies|E] will not [sas_surveil|E] themselves"
  HAVE_SPY_IN_TARGETS_COURT: "You have a [sas_spy|E] in the target's court."
  NOT_HAVE_SPY_IN_TARGETS_COURT: "You do not have a [sas_spy|E] in the target's court."
  surveil_target_interaction_start_surveillance.tt: "Your [sas_spy_network|E] will focus its efforts on learning any secrets [recipient.GetShortUIName] might be hiding. They will not discover secrets from any other source or innovations at all while closely surveilling [recipient.GetHerHim]"
 
  # Stop Surveilling Target
  sas_stop_surveil_target_interaction: "Stop Surveilling Target"
- sas_stop_surveil_target_interaction_desc: "Stop dedicated surveillance efforts on [recipient.GetShortUIName], letting [sas_spies|E] in the area know to no longer prioritize learning [recipient.GetHerHis] [secrets|E]."
+ sas_stop_surveil_target_interaction_desc: "Stop dedicated [sas_surveillance|E] efforts on [recipient.GetShortUIName], letting [sas_spies|E] in the area know to no longer prioritize learning [recipient.GetHerHis] [secrets|E]."
  surveil_target_interaction_end_surveillance.tt: "Your [sas_spy_network|E] will stop focusing on surveilling [recipient.GetShortUIName]."
 
  # Surveilled Target has Died
  surveilled_target_has_died_title: "Surveillance Target Dies"
- surveilled_target_has_died_toast_desc: "[dying_surveil_target.GetTitledFirstName] has died. You can no longer glean their secrets through surveillance."
+ surveilled_target_has_died_toast_desc: "[dying_surveil_target.GetTitledFirstName] has died. You can no longer glean their secrets through [sas_surveillance|E]]."
 
  # No Spy In Target Court Important Action
  action_no_spy_in_surveil_target_court: "@scheme_agent_icon! Recruit a [sas_spy|E]"
  action_no_spy_in_surveil_target_court_label: "@scheme_agent_icon! You have no [sas_spies|E] in [surveil_target.GetTitledFirstNamePossessive] court"
- action_no_spy_in_surveil_target_court_desc:1 "You have no [sas_spies|E] in your employ who are based out of [surveil_target.GetTitledFirstNamePossessive] court, you should recruit one.\n\n#help Without one, you will have no chance of discovering any of [surveil_target.GetHerHis] secrets, and with your [sas_spy_network|E] focused specifically on one target, they won't discover secrets from other courts either. You should either recruit a [sas_spy|E] for the job, or end the attempted surveillance on [surveil_target.GetTitledFirstName].#!"
+ action_no_spy_in_surveil_target_court_desc: "You have no [sas_spies|E] in your employ who are based out of [surveil_target.GetTitledFirstNamePossessive] court, you should recruit one.\n\n#help Without one, you will have no chance of discovering any of [surveil_target.GetHerHis] secrets, and with your [sas_spy_network|E] focused specifically on one target, they won't discover secrets from other courts either. You should either recruit a [sas_spy|E] for the job, or end the attempted [sas_surveillance|E] on [surveil_target.GetTitledFirstName].#!"
  action_no_spy_in_surveil_target_court_click: "#I Click to view#!"
 
  # No Chance To Surveil Target Important Action
  action_no_chance_surveil_target_court: "@scheme_agent_icon! Increasing Your Odds"
- action_no_chance_surveil_target_court_label: "@scheme_agent_icon! Your [sas_spy_network|E] has no chance to successfully surveil [surveil_target.GetTitledFirstName]"
- action_no_chance_surveil_target_court_desc:1 "You should increase your success chance above zero, or your [sas_spies|E] will not be able to discover anything, from [surveil_target.GetTitledFirstName] or otherwise.\n\n#help You can increase your chance of successful surveillance by increasing the [intrigue|E] of you or your [spymaster|E], using the [spymaster|E]'s $task_find_secrets$, increasing your total [sas_spy|E] count, and having more [sas_spies|E] in [surveil_target.GetTitledFirstNamePossessive] court.\n\n[surveil_target.GetTitledFirstName] can lower your chances by increasing [surveil_target.GetHerHis] [intrigue|E] or that of [surveil_target.GetHerHis] [spymaster|E], using the [spymaster|E]'s $task_disrupt_schemes$, and increasing their local [sas_spy|E] count.\n\nAlternatively, you can end your surveillance efforts to have your [sas_spy_network|E] return to normal operations.#!"
+ action_no_chance_surveil_target_court_label: "@scheme_agent_icon! Your [sas_spy_network|E] has no chance to successfully [sas_surveil|E] [surveil_target.GetTitledFirstName]"
+ action_no_chance_surveil_target_court_desc: "You should increase your success chance above zero, or your [sas_spies|E] will not be able to discover anything, from [surveil_target.GetTitledFirstName] or otherwise.\n\n#help You can increase your chance of successful surveillance by increasing the [intrigue|E] of you or your [spymaster|E], using the [spymaster|E]'s $task_find_secrets$, increasing your total [sas_spy|E] count, and having more [sas_spies|E] in [surveil_target.GetTitledFirstNamePossessive] court.\n\n[surveil_target.GetTitledFirstName] can lower your chances by increasing [surveil_target.GetHerHis] [intrigue|E] or that of [surveil_target.GetHerHis] [spymaster|E], using the [spymaster|E]'s $task_disrupt_schemes$, and increasing their local [sas_spy|E] count.\n\nAlternatively, you can end your surveillance efforts to have your [sas_spy_network|E] return to normal operations.#!"
  action_no_chance_surveil_target_court_click: "#I Click to view#!"
