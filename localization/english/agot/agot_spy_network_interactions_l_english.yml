@@ -129,7 +129,7 @@
  TARGET_IS_IN_SPY_NETWORK: "Your [sas_spies|E] will not surveil themselves"
  HAVE_SPY_IN_TARGETS_COURT: "You have a [sas_spy|E] in the target's court."
  NOT_HAVE_SPY_IN_TARGETS_COURT: "You do not have a [sas_spy|E] in the target's court."
- surveil_target_interaction_start_surveillance.tt: "Your [sas_spy_network|E] will focus its efforts on learning any secrets [recipient.GetShortUIName] might be hiding."
+ surveil_target_interaction_start_surveillance.tt: "Your [sas_spy_network|E] will focus its efforts on learning any secrets [recipient.GetShortUIName] might be hiding. They will not discover secrets from any other source or innovations at all while closely surveilling [recipient.GetHerHim]"
 
  # Stop Surveilling Target
  sas_stop_surveil_target_interaction: "Stop Surveilling Target"
