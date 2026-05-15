@@ -58,10 +58,9 @@ spy_network_members_count_gui = {
 
 surveil_target_success_chance = {
 	value = 0
-	# Add 2x your total spy count
+	# Add your total spy count
 	add = {
 		value =	spy_network_members_count_gui
-		multiply = 2
 	}
 	# Add 0.5x your intrigue
 	add = {
@@ -104,7 +103,7 @@ surveil_target_success_chance = {
 			}
 			subtract = cp:councillor_spymaster.intrigue
 		}
-		# Subtract 2x their local spy count total
+		# Subtract their local spy count total
 		every_in_list = {
 			variable = spy_network_members
 			if = {
@@ -112,7 +111,7 @@ surveil_target_success_chance = {
 					is_alive = yes
 					court_owner = root.var:surveil_target
 				}
-				subtract = 2
+				subtract = 1
 			}
 		}
 		# Add if they're trusting
