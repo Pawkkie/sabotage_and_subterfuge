@@ -17,11 +17,11 @@ window = {
 		using = Sound_WindowShow_Standard
 		using = Window_Position_MainTab
 
-		#AGOT Modified, support for spy network tab
-		# on_start = "[IntrigueWindow.SetTab( 'schemes' )]"
-		on_start = "[GetVariableSystem.Set( 'intrigue_view_tabs', 'schemes' )]"
+		on_start = "[IntrigueWindow.SetTab( 'schemes' )]"
 		on_start = "[GetVariableSystem.Set( 'secrets_show_all', 'true' )]"
 		on_start = "[GetVariableSystem.Set( 'own_scheme_expand', 'true' )]"
+		#AGOT Added
+		on_start = "[GetVariableSystem.Set('intrigue_view_tabs', 'schemes')]"
 	}
 
 	state = {
@@ -96,11 +96,14 @@ window = {
 						onclick = "[IntrigueWindow.SetTab( 'schemes' )]"
 						#AGOT Modified
 						# down = "[IntrigueWindow.IsTabShown( 'schemes' )]"
-						down = "[GetVariableSystem.HasValue( 'intrigue_view_tabs', 'schemes' )]"
-						onclick = "[GetVariableSystem.Set( 'intrigue_view_tabs', 'schemes' )]"
+						down = "[GetVariableSystem.HasValue( 'intrigue_view_tabs', 'schemes')]"
 						shortcut = "tab_1"
+						#AGOT Added
+						onclick = "[GetVariableSystem.Set('intrigue_view_tabs', 'schemes')]"
 
-						alwaystransparent = "[IntrigueWindow.IsTabShown( 'schemes' )]"
+						#AGOT Modified
+						# alwaystransparent = "[IntrigueWindow.IsTabShown( 'schemes' )]"
+						alwaystransparent = "[GetVariableSystem.HasValue('intrigue_view_tabs', 'schemes')]"
 
 						blockoverride "tab_label"
 						{
@@ -113,7 +116,9 @@ window = {
 						blockoverride "tab_icon"
 						{
 							texture = "gfx/interface/icons/flat_icons/scheme.dds"
-							down = "[IntrigueWindow.IsTabShown( 'schemes' )]"
+							#AGOT Modified
+							# down = "[IntrigueWindow.IsTabShown( 'schemes' )]"
+							down = "[GetVariableSystem.HasValue('intrigue_view_tabs', 'schemes')]"
 						}
 
 						using = tooltip_above
@@ -122,11 +127,10 @@ window = {
 					button_tab = {
 						name = "open_hooks_and_secrets_tab"
 						onclick = "[IntrigueWindow.SetTab( 'hooks_and_secrets' )]"
-						#AGOT Modified
-						# down = "[IntrigueWindow.IsTabShown( 'hooks_and_secrets' )]"
-						down = "[GetVariableSystem.HasValue( 'intrigue_view_tabs', 'hooks_and_secrets' )]"
-						onclick = "[GetVariableSystem.Set( 'intrigue_view_tabs', 'hooks_and_secrets' )]"
+						down = "[IntrigueWindow.IsTabShown( 'hooks_and_secrets' )]"
 						shortcut = "tab_2"
+						#AGOT Added
+						onclick = "[GetVariableSystem.Clear('intrigue_view_tabs')]"
 
 						alwaystransparent = "[IntrigueWindow.IsTabShown( 'hooks_and_secrets' )]"
 
@@ -512,9 +516,7 @@ window = {
 					scrollbox = {
 						name = "hooks_and_secrets"
 						widgetid = "hooks_and_secrets"
-						#AGOT Modified
-						#visible = "[IntrigueWindow.IsTabShown( 'hooks_and_secrets' )]"
-						visible = "[GetVariableSystem.HasValue( 'intrigue_view_tabs', 'hooks_and_secrets' )]"
+						visible = "[IntrigueWindow.IsTabShown( 'hooks_and_secrets' )]"
 						layoutpolicy_horizontal = expanding
 						layoutpolicy_vertical = expanding
 
