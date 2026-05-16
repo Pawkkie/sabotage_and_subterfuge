@@ -6,23 +6,43 @@
 		house ?= {
 			trigger_if = {
 				limit = { has_game_rule = sas_scheme_renown_massive }
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_massive
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_renown_massive
 			}
 			trigger_else_if = {
 				limit = { has_game_rule = sas_scheme_renown_major }
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_major
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_renown_major
 			}
 			trigger_else_if = {
 				limit = { has_game_rule = sas_scheme_renown_medium }
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_medium
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_renown_medium
 			}
 			trigger_else_if = {
 				limit = { has_game_rule = sas_scheme_renown_minor }
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_minor
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_renown_minor
 			}
 			trigger_else_if = {
 				limit = { has_game_rule = sas_scheme_renown_tiny }
-				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_tiny
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_renown_tiny
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_intrigue_xp_massive }
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_massive
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_intrigue_xp_major }
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_major
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_intrigue_xp_medium }
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_medium
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_intrigue_xp_minor }
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_minor
+			}
+			trigger_else_if = {
+				limit = { has_game_rule = sas_scheme_intrigue_xp_tiny }
+				has_house_modifier = sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_tiny
 			}
 			trigger_else_if = {
 				limit = { has_game_rule = sas_scheme_renown_none }

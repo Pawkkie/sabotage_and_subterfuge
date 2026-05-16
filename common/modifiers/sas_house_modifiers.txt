@@ -23,23 +23,43 @@ sas_special_operations_training_house_modifier_paid = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_house_of_sabotage_and_subterfuge_modifier_massive = {
+sas_house_of_sabotage_and_subterfuge_modifier_renown_massive = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_house_of_sabotage_and_subterfuge_modifier_major = {
+sas_house_of_sabotage_and_subterfuge_modifier_renown_major = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_house_of_sabotage_and_subterfuge_modifier_medium = {
+sas_house_of_sabotage_and_subterfuge_modifier_renown_medium = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_house_of_sabotage_and_subterfuge_modifier_minor = {
+sas_house_of_sabotage_and_subterfuge_modifier_renown_minor = {
 	icon = sabotage_and_subterfuge
 }
 
-sas_house_of_sabotage_and_subterfuge_modifier_tiny = {
+sas_house_of_sabotage_and_subterfuge_modifier_renown_tiny = {
+	icon = sabotage_and_subterfuge
+}
+
+sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_massive = {
+	icon = sabotage_and_subterfuge
+}
+
+sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_major = {
+	icon = sabotage_and_subterfuge
+}
+
+sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_medium = {
+	icon = sabotage_and_subterfuge
+}
+
+sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_minor = {
+	icon = sabotage_and_subterfuge
+}
+
+sas_house_of_sabotage_and_subterfuge_modifier_intrigue_xp_tiny = {
 	icon = sabotage_and_subterfuge
 }
 

@@ -51,6 +51,11 @@
  sas_house_of_sabotage_and_subterfuge_schemes_give_renown_medium: "Gain @dynasty_prestige_icon!#P 50#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
  sas_house_of_sabotage_and_subterfuge_schemes_give_renown_minor: "Gain @dynasty_prestige_icon!#P 25#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
  sas_house_of_sabotage_and_subterfuge_schemes_give_renown_tiny: "Gain @dynasty_prestige_icon!#P 10#! [dynasty_prestige|E] any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_intrigue_xp_massive: "Gain @skill_intrigue_icon!#P 100#! [intrigue|E] [lifestyle|E] experience any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_intrigue_xp_major: "Gain @skill_intrigue_icon!#P 75#! [intrigue|E] [lifestyle|E] experience any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_intrigue_xp_medium: "Gain @skill_intrigue_icon!#P 50#! [intrigue|E] [lifestyle|E] experience any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_intrigue_xp_minor: "Gain @skill_intrigue_icon!#P 25#! [intrigue|E] [lifestyle|E] experience any time you complete a [hostile_scheme|E]"
+ sas_house_of_sabotage_and_subterfuge_schemes_give_intrigue_xp_tiny: "Gain @skill_intrigue_icon!#P 10#! [intrigue|E] [lifestyle|E] experience any time you complete a [hostile_scheme|E]"
  sas_house_of_sabotage_and_subterfuge_spies_better_discovery: "Increase the chances of your [sas_spies|E] discovering secrets and innovations"
 
  #################### 

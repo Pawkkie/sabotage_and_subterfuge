@@ -75,6 +75,16 @@ sas_scheme_completion_renown = {
 	}
 	sas_scheme_renown_massive = { # 100
 	}
+	sas_scheme_intrigue_xp_tiny = { # 10
+	}
+	sas_scheme_intrigue_xp_minor = { # 25
+	}
+	sas_scheme_intrigue_xp_medium = { # 50
+	}
+	sas_scheme_intrigue_xp_major = { # 75
+	}
+	sas_scheme_intrigue_xp_massive = { # 100
+	}
 }
 
 sas_end_friendship = {
