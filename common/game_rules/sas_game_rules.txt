@@ -62,7 +62,7 @@ sas_scheme_completion_renown = {
 	categories = {
 		sas
 	}
-	default = sas_scheme_renown_medium
+	default = sas_scheme_renown_minor
 	sas_scheme_renown_none = { # 0
 	}
 	sas_scheme_renown_tiny = { # 10
@@ -96,5 +96,16 @@ sas_inherit_spy_network = {
 	sas_inherit_spy_network_enabled = {
 	}
 	sas_inherit_spy_network_disabled = {
+	}
+}
+
+sas_surveil_target_rule = {
+	categories = {
+		sas
+	}
+	default = sas_surveil_target_enabled
+	sas_surveil_target_enabled = {
+	}
+	sas_surveil_target_disabled = {
 	}
 }

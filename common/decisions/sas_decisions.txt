@@ -259,6 +259,12 @@ sas_special_operations_training_decision = {
 			}
 			custom_tooltip = sas_special_operations_training_spies_intrigue_no_salary
 		}
+		if = {
+			limit = {
+				has_game_rule = sas_surveil_target_enabled
+			}
+			custom_tooltip = sas_special_operations_training_unlock_surveil_target
+		}
  		custom_tooltip = sas_special_operations_training_spies_likely_to_join_schemes.tt
  		custom_tooltip = sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt
  		custom_tooltip = sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt

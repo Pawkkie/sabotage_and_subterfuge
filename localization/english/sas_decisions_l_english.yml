@@ -31,6 +31,7 @@
  sas_special_operations_completed_hostile_schemes_tt: "You have completed at least 3 [hostile_schemes|E]"
  sas_special_operations_have_enough_spies_tt: "You employ at least 3 [sas_spies|E]"
  sas_special_operations_training_spies_intrigue_no_salary: "[intrigue|E] based [court_positions|E] cost no salary"
+ sas_special_operations_training_unlock_surveil_target: "Unlocks the [sas_surveil_target|E] character interaction"
  sas_special_operations_training_spies_likely_to_join_schemes.tt: "Your [sas_spies|E] are more likely to join your [hostile_schemes|E] as [agents|E]"
  sas_special_operations_training_rabble_rouser_likely_to_join_schemes.tt: "Your [rabble_rouser_court_position|E] is more likely to join your [hostile_schemes|E] as an [agent|E]"
  sas_special_operations_training_femme_fatale_likely_to_join_schemes.tt: "Your [femme_fatale_court_position|E] is more likely to join your [hostile_schemes|E] as an [agent|E]"

@@ -15,10 +15,14 @@
 				limit = { exists = var:surveil_target }
 				NOT = { var:surveil_target = scope:recipient }
 			}
-			OR = {
-				has_house_modifier = sas_special_operations_training_house_modifier_free
-				has_house_modifier = sas_special_operations_training_house_modifier_paid
+			exists = house
+			house = {
+				OR = {
+					has_house_modifier = sas_special_operations_training_house_modifier_free
+					has_house_modifier = sas_special_operations_training_house_modifier_paid
+				}
 			}
+			has_game_rule = sas_surveil_target_enabled
 		}
 	}
 

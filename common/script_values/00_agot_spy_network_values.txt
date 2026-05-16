@@ -20,7 +20,7 @@
 	min = 0
 }
 
-spy_network_over_limit = {
+spy_network_over_limit_recruitment = {
 	value = spy_network_members_count
 	subtract = spy_network_limit
 
@@ -29,9 +29,25 @@ spy_network_over_limit = {
 }
 
 spy_network_over_limit_recruitment_penalty = {
-	value = spy_network_over_limit
+	value = spy_network_over_limit_recruitment
 	multiply = 25
 
+	floor = yes
+	min = 0
+}
+
+spy_network_over_limit = {
+	value = spy_network_members_count_gui
+	subtract = spy_network_limit
+
+	floor = yes
+	min = 0
+}
+
+spy_network_over_limit_penalty = {
+	value = spy_network_over_limit
+	multiply = 25
+	
 	floor = yes
 	min = 0
 }
@@ -183,6 +199,8 @@ surveil_target_success_chance = {
 		}
 		add = 5
 	}
+	# Subtract based on spy count
+	subtract = spy_network_over_limit_penalty
 
 	floor = yes
 	min = 0

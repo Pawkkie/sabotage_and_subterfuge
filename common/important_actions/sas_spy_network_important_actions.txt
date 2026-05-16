@@ -70,3 +70,25 @@ action_no_chance_surveil_target_court = {
 		}
 	}
 }
+
+action_over_spy_network_limit = {
+	type = action
+	priority = 50
+	icon = scheme_agent_icon
+	is_dangerous = yes
+	check_create_action = {
+		if = {
+			limit = {
+				spy_network_over_limit_penalty >= 1
+			}
+			try_create_important_action = {
+				important_action_type = action_over_spy_network_limit
+			}
+		}
+	}
+	effect = {
+		open_view = {
+			view = intrigue_window
+		}
+	}
+}

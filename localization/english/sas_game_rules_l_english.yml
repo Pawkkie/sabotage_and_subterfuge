@@ -70,3 +70,10 @@
  setting_sas_inherit_spy_network_enabled_desc: "When a ruler dies, if their [house|E] has a [sas_spy_network|E] and their [heir|E] is from the same house, all [sas_spies|E] in the network will continue to serve the new ruler."
  setting_sas_inherit_spy_network_disabled: "Disabled"
  setting_sas_inherit_spy_network_disabled_desc: "When a ruler dies, if their [house|E] has a [sas_spy_network|E], all [sas_spies|E] in the network will leave, their loyalties only to the ruler who recruited them."
+
+ # Surveil Target
+ rule_sas_surveil_target_rule: "Surveil Target"
+ setting_sas_surveil_target_enabled: "Enabled"
+ setting_sas_surveil_target_enabled_desc: "You can unlock the [sas_surveil_target|E] interaction, allowing you to leverage your [sas_spy_network|E] to learn the secrets of a specific target."
+ setting_sas_surveil_target_disabled: "Disabled"
+ setting_sas_surveil_target_disabled_desc: "You cannot unlock the [sas_surveil_target|E] interaction."

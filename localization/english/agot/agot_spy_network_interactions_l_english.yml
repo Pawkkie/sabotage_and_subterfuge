@@ -151,3 +151,9 @@
  action_no_chance_surveil_target_court_label: "@scheme_agent_icon! Your [sas_spy_network|E] has no chance to successfully [sas_surveil|E] [surveil_target.GetTitledFirstName]"
  action_no_chance_surveil_target_court_desc: "You should increase your success chance above zero, or your [sas_spies|E] will not be able to discover anything, from [surveil_target.GetTitledFirstName] or otherwise.\n\n#help You can increase your chance of successful surveillance by increasing the [intrigue|E] of you or your [spymaster|E], using the [spymaster|E]'s $task_find_secrets$, increasing your total [sas_spy|E] count, and having more [sas_spies|E] in [surveil_target.GetTitledFirstNamePossessive] court.\n\n[surveil_target.GetTitledFirstName] can lower your chances by increasing [surveil_target.GetHerHis] [intrigue|E] or that of [surveil_target.GetHerHis] [spymaster|E], using the [spymaster|E]'s $task_disrupt_schemes$, and increasing their local [sas_spy|E] count.\n\nAlternatively, you can end your surveillance efforts to have your [sas_spy_network|E] return to normal operations.#!"
  action_no_chance_surveil_target_court_click: "#I Click to view#!"
+
+ #Over Spy Network Limit Important Action
+ action_over_spy_network_limit: "@scheme_agent_icon! Dismiss a [sas_spy|E]"
+ action_over_spy_network_limit_label: "@scheme_agent_icon! You are over your [sas_spy_network|E] size limit"
+ action_over_spy_network_limit_desc: "You are over your [sas_spy|E] limit, you should dismiss one\n\n#help While over your [sas_spy|E] limit, all of your discovery chances are reduced by 25 per spy over the limit. You can address this by increasing your limit through raising the [intrigue|E] of yourself or your [spymaster|E], or by dismissing a [sas_spy|E] already in your employ.#!"
+ action_over_spy_network_limit_click: "#I Click to view#!"

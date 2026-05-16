@@ -66,6 +66,12 @@ agot_spy_network.0100 = {
 							}
 							add = 5
 						}
+						modifier = {
+							add = {
+								value = root.spy_network_over_limit_penalty
+								multiply = -1							
+							}
+						}
 						trigger_event = {
 							id = agot_spy_network.0200
 							days = { 1 15 }
@@ -212,6 +218,12 @@ agot_spy_network.0105 = {
 									}
 								}
 								add = 10
+							}
+							modifier = {
+								add = {
+									value = root.spy_network_over_limit_penalty
+									multiply = -1							
+								}
 							}
 							root = {
 								send_interface_message = {
