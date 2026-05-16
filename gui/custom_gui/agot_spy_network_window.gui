@@ -409,7 +409,7 @@ types SpyNetworkWindow {
 						raw_text = "Quarterly Success Chance: [GetPlayer.MakeScope.ScriptValue('surveil_target_success_chance')|0]%"
 						using = Font_Size_Small
 						autoresize = yes
-						margin_right = 8
+						margin_left = 8
 						margin_bottom = 7
 					}
 				}
