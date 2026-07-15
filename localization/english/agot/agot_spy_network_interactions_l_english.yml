@@ -53,6 +53,9 @@
  agot_spy_network.0400.t: "A Spy Was Recruited"
  agot_spy_network.0400.desc: "[councillor.GetTitledFirstName] has found a person willing to spy for you at [target_character.GetShortUINamePossessive] court."
  agot_spy_network.0400.a: "[new_spy.GetTitledFirstName] will serve me well."
+ agot_spy_network.0400.b: "I have no need for [new_spy.GetTitledFirstName] at this time."
+ agot_spy_network.0400.b.add_to_network.tt: "[new_spy.GetShortUIName] joins your spy network"
+ agot_spy_network.0400.b.dont_add_to_network.tt: "[new_spy.GetShortUIName] does not join your spy network"
 
  agot_spy_network.0500.t: "A Spy Was Discovered"
  agot_spy_network.0500.desc: "[councillor.GetTitledFirstName] has discovered a spy! [discovered_spy.GetTitledFirstName] was caught searching for secrets in the darkest corners of your court."

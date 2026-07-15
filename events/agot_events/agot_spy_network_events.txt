@@ -1221,8 +1221,15 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 			}
 			save_scope_as = new_spy
 		}
+	}
 
+	option = {
+		name = agot_spy_network.0400.a
+		ai_chance = {
+			base = 100
+		}
 		root = {
+			custom_tooltip = agot_spy_network.0400.b.add_to_network.tt
 			add_to_variable_list = {
 				name = spy_network_members
 				target = scope:new_spy
@@ -1230,11 +1237,14 @@ agot_spy_network.0400 = { # Spymaster task "find secrets" recruits a spy in targ
 			clear_variable_list = potential_spies
 		}
 	}
-
 	option = {
-		name = agot_spy_network.0400.a
+		name = agot_spy_network.0400.b
 		ai_chance = {
-			base = 100
+			base = 0
+		}
+		root = {
+			custom_tooltip = agot_spy_network.0400.b.dont_add_to_network.tt
+			clear_variable_list = potential_spies
 		}
 	}
 }

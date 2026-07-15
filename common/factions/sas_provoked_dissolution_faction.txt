@@ -209,22 +209,6 @@ provoked_dissolution_faction = {
 			FACTION_TARGET = scope:faction.faction_target
 		}
 		has_valid_faction_members_trigger = yes
-		trigger_if = {
-			limit = {
-				AND = {
-					has_opinion_modifier = {
-						target = scope:faction.faction_target
-						modifier = scheme_poison_opinion_opinion
-					}
-					"opinion(scope:faction.faction_target)" < 0
-				}
-			}
-		}
-		trigger_if = {
-			limit = {
-				has_character_modifier = provoked_independence_character_modifier
-			}
-		}
 	}
 
 	can_character_create_ui = {
@@ -232,7 +216,7 @@ provoked_dissolution_faction = {
 			FACTION_TARGET = scope:target
 		}
 		liege = {
-			is_independent_ruler = yes
+			top_liege = this
 		}
 		has_character_modifier = provoked_dissolution_character_modifier
 	}
@@ -248,17 +232,6 @@ provoked_dissolution_faction = {
 	}
 
 	can_character_join = {
-		trigger_if = {
-			limit = {
-				AND = {
-					has_opinion_modifier = {
-						target = scope:faction.faction_target
-						modifier = scheme_poison_opinion_opinion
-					}
-					"opinion(scope:faction.faction_target)" < 0
-				}
-			}
-		}
 		common_can_character_join_trigger = {
 		FACTION_TARGET = scope:faction.faction_target
 		}
@@ -304,6 +277,10 @@ provoked_dissolution_faction = {
 				}
 			}
 		}
+	}
+
+	can_character_become_leader = {
+		has_character_modifier = provoked_dissolution_character_modifier
 	}
 
 	on_creation = {

@@ -580,6 +580,7 @@ agot_check_for_potential_spies_interaction = {
 					is_landed = no
 					court_owner = { is_ruler = yes }
 					NOT = { has_trait = incapable }
+					NOT = { has_character_flag = spy_was_discovered }
 					scope:actor = {
 						is_character_interaction_potentially_accepted = {
 							recipient = PREV

@@ -68,7 +68,7 @@
 	}
 	valid_agent = { is_valid_agent_standard_trigger = yes }
 	agent_groups_owner_perspective = { courtiers guests scripted_relations }
-	agent_groups_target_character_perspective = {  neighboring_rulers_including_tributary_borders  war_enemies nearby_domicile_owners  }
+	agent_groups_target_character_perspective = {  neighboring_rulers_including_tributary_borders  war_enemies }
 
 	odds_prediction = {
 		add = hostile_scheme_base_odds_prediction_target_is_char_value
