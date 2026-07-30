@@ -87,6 +87,7 @@ three_year_playable_pulse = {
 quarterly_playable_pulse = {
 	on_actions = {
 		gather_secrets_pulse
+		clean_out_dead_spies_pulse
 	}
 }
 
@@ -112,6 +113,37 @@ gather_secrets_pulse = {
 	effect = {
 		trigger_event = {
 			id = agot_spy_network.0100
+		}
+	}
+}
+
+clean_out_dead_spies_pulse = {
+	trigger = {
+		exists = house
+		can_use_spy_network = yes
+		has_variable_list = spy_network_members
+		is_ruler = yes
+		is_alive = yes
+		any_in_list = {
+			variable = spy_network_members
+			is_alive = no
+		}
+	}
+	effect = {
+		every_in_list = {
+			variable = spy_network_members
+			save_scope_as = current_spy
+			if = {
+				limit = {
+					is_alive = no
+				}
+				root = {
+					remove_list_variable = {
+						name = spy_network_members
+						target = scope:current_spy
+					}
+				}
+			}
 		}
 	}
 }
