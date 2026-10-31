@@ -194,8 +194,8 @@
 		# 	government_has_flag = government_is_nomadic
 		# }
 		OR = {
-			faith = {
-				has_doctrine = tenet_fp3_fedayeen
+			rite = {
+				rite_has_parameter = master_assassin_court_position_unlocked
 			}
 			custom_description = {
 				text = already_established_criminal_underground
@@ -220,35 +220,13 @@
 	revoke_cost = { # root is the liege, no other scopes are passed here!
 		prestige =  {
 			value = major_court_position_prestige_revoke_cost
-			# Set to 0 via obligation hook
 			if = {
-				limit = {
-					court_position_obligation_hook_salary_trigger = {
-						POS = master_assassin
-						LIEGE = root
-					}
-				}
-				multiply = 0
-			}
-			# Avoid AI prestige issues
-			if = {
-				limit = {
-					exists = this
-					is_ai = yes
-				}
-				multiply = 0
-			}
-			# Special case for events
-			if = {
-				limit = {
-					exists = this
-					has_character_flag = free_revoke_cost
-				}
+				limit = { free_court_position_revoke_trigger = { POS = master_assassin } }
 				multiply = 0
 			}
 			#Lowering for LAAMPS, to match Camp Officer revoke cost
 			if = {
-				limit = { 
+				limit = {
 					exists = this
 					government_has_flag = government_is_landless_adventurer
 				}
@@ -340,6 +318,7 @@
 			}
 		}
 		# SAS Change End
+		pam_celestial_hierarchy_hire_fulfillment_effect = { COURT_POSITION = master_assassin_court_position }
 	}
 	on_court_position_revoked = {
 		basic_revoked_court_position_effect = yes

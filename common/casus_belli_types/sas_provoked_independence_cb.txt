@@ -98,11 +98,9 @@ provoked_independence_faction_war = {
 								any_faction_member = { is_local_player = yes }
 							}
 						}
-						AND = {
-							scope:attacker = {
-								is_local_player = yes
-								has_character_flag = should_become_independent
-							}
+						scope:attacker = {
+							is_local_player = yes
+							has_character_flag = should_become_independent
 						}
 					}
 				}
@@ -253,31 +251,7 @@ provoked_independence_faction_war = {
 				value = medium_prestige_value
 				multiply = -1
 			}
-			
-			if = {
-				limit = { has_realm_law = crown_authority_1 }
-				add_realm_law = crown_authority_0
-			}
-			if = {
-				limit = { has_realm_law = crown_authority_2 }
-				add_realm_law = crown_authority_1
-			}
-			if = {
-				limit = { has_realm_law = crown_authority_3 }
-				add_realm_law = crown_authority_2
-			}
-			if = {
-				limit = { has_realm_law = tribal_authority_1 }
-				add_realm_law = tribal_authority_0
-			}
-			if = {
-				limit = { has_realm_law = tribal_authority_2 }
-				add_realm_law = tribal_authority_1
-			}
-			if = {
-				limit = { has_realm_law = tribal_authority_3 }
-				add_realm_law = tribal_authority_2
-			}
+			change_authority_effect = { CHANGE = -1 }
 		}
 		resolve_title_and_vassal_change = scope:change
 
@@ -304,6 +278,9 @@ provoked_independence_faction_war = {
 
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
+
+		#Mandalas gain or lose piety/devotion depending on Decree
+		mandala_war_victory_effects = yes
 	}
 
 	on_white_peace_desc = {
@@ -321,12 +298,10 @@ provoked_independence_faction_war = {
 								any_faction_member = { is_local_player = yes }
 							}
 						}
-						AND = {
-							scope:attacker = {
+						scope:attacker = {
 								is_local_player = yes
 								has_character_flag = should_become_independent
 							}
-						}
 					}
 				}
 				desc = independence_war_white_peace_attacker_desc
@@ -340,7 +315,7 @@ provoked_independence_faction_war = {
 	on_white_peace = {
 		scope:attacker = {
 			show_pow_release_message_effect = yes
-			stress_impact = {
+			stress_and_fulfillment_impact = {
  				ambitious = medium_stress_impact_gain
  				arrogant = medium_stress_impact_gain
  			}
@@ -357,7 +332,7 @@ provoked_independence_faction_war = {
 		}
 
 		scope:defender = {
-			stress_impact = {
+			stress_and_fulfillment_impact = {
  				arrogant = medium_stress_impact_gain
  			}
 
@@ -407,12 +382,10 @@ provoked_independence_faction_war = {
 								any_faction_member = { is_local_player = yes }
 							}
 						}
-						AND = {
-							scope:attacker = {
+						scope:attacker = {
 								is_local_player = yes
 								has_character_flag = should_become_independent
 							}
-						}
 					}
 				}
 				desc = independence_defeat_attacker_desc
@@ -426,6 +399,7 @@ provoked_independence_faction_war = {
 	on_defeat = {
 		scope:attacker = { show_pow_release_message_effect = yes }
 		scope:defender = {
+			mandala_peacemaker_perk_serenity_effect = yes
 			add_character_flag = {
 				flag = recent_independence_faction_war
 				years = faction_war_defeat_cooldown
@@ -445,11 +419,11 @@ provoked_independence_faction_war = {
 		# EP3: note gold gained from military assistance/join war contracts and their war contribution threshold
 		laamp_as_mercenary_payout_tooltip_effect = yes
 
-		# Tell the schemer war ended in victory
+		# Tell the schemer war ended in defeat
 		scope:defender = {
 			primary_title = {
 				var:provoke_vassals_schemer = {
-					trigger_event = sas_faction_demand.1012
+					trigger_event = sas_faction_demand.1014
 				}
 			}
 		}
@@ -462,6 +436,9 @@ provoked_independence_faction_war = {
 				}
 			}
 		}
+
+		#Mandalas gain or lose piety/devotion depending on Decree
+		mandala_war_defeat_effects = yes
 	}
 
 	on_invalidated_desc = msg_invalidate_war_title
@@ -488,7 +465,7 @@ provoked_independence_faction_war = {
 
 	max_attacker_score_from_battles = 100
 	max_defender_score_from_battles = 50
-	
+
 	max_defender_score_from_occupation = 150
 	max_attacker_score_from_occupation = 150
 

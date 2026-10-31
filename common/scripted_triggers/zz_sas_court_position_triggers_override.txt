@@ -41,7 +41,12 @@
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = yurtchi_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = cherbi_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = yeke_jarquchi_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = foreign_emissary_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = keeper_of_the_horses_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = khlon_glan_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = court_brahmin_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = favored_minister_court_position }
+		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = minister_bureaucrat_court_position }
 		# SAS Change
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = rabble_rouser_court_position }
 		can_appoint_char_to_court_position = { CHAR = $CHAR$ COURT_POS = femme_fatale_court_position }
@@ -53,7 +58,7 @@
 has_intrigue_court_position = {
 	OR = {
 		has_court_position = food_taster_court_position
-		has_court_position = chief_eunuch_court_position
+		has_court_position = executioner_court_position
 		has_court_position = master_assassin_court_position
 		# SAS Change
 		has_court_position = rabble_rouser_court_position
@@ -89,18 +94,18 @@ master_assassin_validity_trigger = {
 		NOT = { is_spouse_of = $EMPLOYER$ }
 	}
 	custom_tooltip = {
-		text = sas_faith_allows_master_assassin
-		faith = {
+		text = faith_allows_master_assassin
+		rite = {
 			# SAS Change
-			# has_doctrine = tenet_fp3_fedayeen
+			# rite_has_parameter = master_assassin_court_position_unlocked
 			# SAS Change End
 			NOR = {
-				has_doctrine = tenet_pacifism
-				has_doctrine = tenet_dharmic_pacifism 
+				rite_has_tenet = tenet_pacifism
+				rite_has_tenet = tenet_dharmic_pacifism 
 			}
 		}
 	}
-	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $EMPLOYER$ }
+	court_position_can_be_combatant_tt_trigger = { EMPLOYER = $EMPLOYER$ }
 	custom_tooltip = {
 		text = none_does_not_have_a_full_time_job
 		trigger_if = {
@@ -112,30 +117,35 @@ master_assassin_validity_trigger = {
 
 can_be_employed_as_any_court_position_trigger = {
 	OR = {
-		can_be_employed_as = court_poet_court_position
-		can_be_employed_as = court_musician_court_position
-		can_be_employed_as = court_jester_court_position
-		can_be_employed_as = cupbearer_court_position
-		can_be_employed_as = lady_in_waiting_court_position
-		can_be_employed_as = chronicler_court_position
-		can_be_employed_as = master_of_horse_court_position
-		can_be_employed_as = bodyguard_court_position
-		can_be_employed_as = champion_court_position
-		can_be_employed_as = master_of_hunt_court_position
-		can_be_employed_as = akolouthos_court_position
 		can_be_employed_as = royal_architect_court_position
 		can_be_employed_as = seneschal_court_position
-		can_be_employed_as = keeper_of_swans_court_position
-		can_be_employed_as = court_gardener_court_position
-		can_be_employed_as = food_taster_court_position
-		can_be_employed_as = chief_eunuch_court_position
-		can_be_employed_as = master_assassin_court_position
 		can_be_employed_as = court_tutor_court_position
 		can_be_employed_as = court_guru_court_position
 		can_be_employed_as = high_almoner_court_position
 		can_be_employed_as = court_physician_court_position
 		can_be_employed_as = antiquarian_court_position
+		can_be_employed_as = master_of_horse_court_position
+		can_be_employed_as = bodyguard_court_position
+		can_be_employed_as = champion_court_position
+		can_be_employed_as = master_of_hunt_court_position
+		can_be_employed_as = court_poet_court_position
+		can_be_employed_as = court_musician_court_position
+		can_be_employed_as = court_jester_court_position
+		can_be_employed_as = executioner_court_position
+		can_be_employed_as = food_taster_court_position
+		can_be_employed_as = cupbearer_court_position
+		can_be_employed_as = lady_in_waiting_court_position
+		can_be_employed_as = chief_eunuch_court_position		
+		can_be_employed_as = court_gardener_court_position
+		can_be_employed_as = court_artificer_court_position
+		can_be_employed_as = cultural_emissary_court_position
+		can_be_employed_as = chief_qadi_court_position
+		can_be_employed_as = garuda_court_position
+		can_be_employed_as = keeper_of_swans_court_position
+		can_be_employed_as = travel_leader_court_position
+		can_be_employed_as = wet_nurse_court_position
 		can_be_employed_as = cave_hermit_court_position
+		can_be_employed_as = master_assassin_court_position
 		can_be_employed_as = court_scholar_court_position
 		can_be_employed_as = court_brewmaster_court_position
 		can_be_employed_as = court_astrologer_court_position
@@ -151,6 +161,13 @@ can_be_employed_as_any_court_position_trigger = {
 		can_be_employed_as = yeke_jarquchi_court_position
 		can_be_employed_as = foreign_emissary_court_position
 		can_be_employed_as = keeper_of_the_horses_court_position
+		can_be_employed_as = charioteer_court_position
+		can_be_employed_as = chronicler_court_position
+		can_be_employed_as = akolouthos_court_position
+		can_be_employed_as = khlon_glan_court_position
+		can_be_employed_as = court_brahmin_court_position
+		can_be_employed_as = favored_minister_court_position
+		can_be_employed_as = minister_bureaucrat_court_position
 		# SAS Change
 		can_be_employed_as = rabble_rouser_court_position
 		can_be_employed_as = femme_fatale_court_position
@@ -184,12 +201,52 @@ court_position_does_not_already_have_a_job_trigger = {
 			has_court_position = grand_mentor_court_position
 			has_court_position = fire_dragon_engineer_court_position
 			has_court_position = keeper_of_the_harem_court_position
+			has_court_position = court_artificer_court_position
+			has_court_position = cave_hermit_court_position
+			has_court_position = master_assassin_court_position
+			has_court_position = court_scholar_court_position
+			has_court_position = charioteer_court_position
+			has_court_position = bookmaker_court_position
+			has_court_position = court_brewmaster_court_position
+			has_court_position = khlon_glan_court_position
+			has_court_position = eparch_court_position
+
+			has_court_position = second_camp_officer
+			has_court_position = quartermaster_camp_officer
+			has_court_position = armorer_camp_officer
+			has_court_position = chief_forager_camp_officer
+			has_court_position = master_thief_camp_officer
+			has_court_position = head_porter_camp_officer
+			has_court_position = head_groom_camp_officer
+			has_court_position = huntperson_camp_officer
+			has_court_position = kennelperson_camp_officer
+			has_court_position = chief_engineer_camp_officer
+			has_court_position = witness_camp_officer
+			has_court_position = person_haggler_camp_officer
+			has_court_position = camp_cook_camp_officer
+			has_court_position = master_bard_camp_officer
+			has_court_position = stooge_camp_officer
+			has_court_position = master_of_arms_camp_officer
+			has_court_position = light_cavalry_captain_camp_officer
+			has_court_position = camelry_captain_camp_officer
+			has_court_position = elephantry_captain_camp_officer
+			has_court_position = heavy_cavalry_captain_camp_officer
+			has_court_position = horse_archer_captain_camp_officer
+			has_court_position = archer_captain_camp_officer
+			has_court_position = heavy_infantry_captain_camp_officer
+			has_court_position = light_infantry_captain_camp_officer
+			has_court_position = pike_captain_camp_officer
+			has_court_position = master_of_spoils_camp_officer
+			has_court_position = camp_priest_camp_officer
+			has_court_position = laureate_camp_officer
 			# SAS Change
 			has_court_position = rabble_rouser_court_position
 			has_court_position = femme_fatale_court_position
 			has_court_position = smuggler_court_position
-			has_court_position = master_assassin_court_position
 			# SAS Change End
+
+			is_tax_collector = yes
+			# is_head_of_faith = yes
 			is_councillor = yes
 		}
 	}

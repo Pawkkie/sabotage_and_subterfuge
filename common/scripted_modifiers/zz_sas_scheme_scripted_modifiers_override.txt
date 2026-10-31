@@ -257,7 +257,7 @@ ai_agent_join_chance_hostile_general_suite_modifier = {
 	## Sacred Lies tenet
 	modifier = {
 		add = 20
-		faith = { has_doctrine_parameter = adherents_more_likely_to_join_schemes }
+		rite = { rite_has_parameter = adherents_more_likely_to_join_schemes }
 		desc = "SCHEME_IS_SACRED"
 	}
 	## Don't mess with your HoF.

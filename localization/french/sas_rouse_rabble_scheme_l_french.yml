@@ -16,7 +16,7 @@
  scheme_agent_aptitude.trait.peasant_leader: "[GetTrait('peasant_leader').GetName( GetNullCharacter )]" #deepl:1998546572
  scheme_agent_aptitude.trait.populist_leader: "[GetTrait('populist_leader').GetName( GetNullCharacter )]" #deepl:3859123510
  scheme_agent_aptitude.trait.lifestyle_reveler: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]" #deepl:2953523392
- scheme_agent_aptitude.trait.lifestyle_traveler: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )]" #deepl:1809484247
+ # scheme_agent_aptitude.trait.lifestyle_traveler: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )]" #deepl:1809484247
  scheme_agent_aptitude.trait.education_diplomacy_1: "[GetTrait('education_diplomacy_1').GetName( GetNullCharacter )]" #deepl:2970949910
  scheme_agent_aptitude.trait.education_diplomacy_2: "[GetTrait('education_diplomacy_2').GetName( GetNullCharacter )]" #deepl:690150929
  scheme_agent_aptitude.trait.education_diplomacy_3: "[GetTrait('education_diplomacy_3').GetName( GetNullCharacter )]" #deepl:1590664428

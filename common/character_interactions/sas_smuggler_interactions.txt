@@ -275,7 +275,7 @@
 			}
 		}
 		scope:actor = {
-			stress_impact = {
+			stress_and_fulfillment_impact = {
 				just = medium_stress_impact_gain
 				honest = medium_stress_impact_gain
 			}
@@ -507,7 +507,7 @@ smuggle_artifact_interaction = {
 
 	on_accept = {
 		scope:actor = {
-			stress_impact = {
+			stress_and_fulfillment_impact = {
 				vengeful = medium_stress_impact_loss
 				honest = minor_stress_impact_gain
 				just = minor_stress_impact_loss
@@ -684,7 +684,7 @@ smuggle_artifact_interaction = {
 						}
 					}
 					show_as_tooltip = {
-						stress_impact = {
+						stress_and_fulfillment_impact = {
 							vengeful = medium_stress_impact_loss
 							honest = minor_stress_impact_gain
 							just = minor_stress_impact_loss

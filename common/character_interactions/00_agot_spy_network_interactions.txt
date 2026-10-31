@@ -102,7 +102,7 @@
 					gold = bribe_value
 					target = scope:recipient
 				}
-				stress_impact = {
+				stress_and_fulfillment_impact = {
 					greedy = minor_stress_impact_gain
 				}
 			}
@@ -114,7 +114,7 @@
 			}
 		}
 		scope:actor = {
-			stress_impact = {
+			stress_and_fulfillment_impact = {
 				paranoid = miniscule_stress_impact_loss	# Paranoid characters like having informants
 				honest = minor_stress_impact_gain
 			}
@@ -457,7 +457,6 @@
 	}
 
 	send_options_exclusive = no
-	ai_frequency = 0
 }
 
 agot_remove_from_spy_network_interaction = {
@@ -504,7 +503,6 @@ agot_remove_from_spy_network_interaction = {
 			}
 		}
 	}
-	ai_frequency = 0
 }
 
 agot_check_for_potential_spies_interaction = {
@@ -607,5 +605,4 @@ agot_check_for_potential_spies_interaction = {
 			}
 		}
 	}
-	ai_frequency = 0
 }

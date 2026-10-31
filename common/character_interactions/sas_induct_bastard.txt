@@ -43,7 +43,7 @@
 
     on_accept = {
         scope:actor = {
-            stress_impact = {
+            stress_and_fulfillment_impact = {
                 arrogant = minor_stress_impact_gain
             }
             send_interface_toast = {
@@ -63,7 +63,7 @@
             
             if = {
                 limit = {
-                    faith = { has_doctrine_parameter = bastards_legitimize }
+                    rite ?= { rite_has_parameter = bastards_legitimize }
                 }
                 add_trait = legitimized_bastard
             }
@@ -130,7 +130,7 @@ sas_steal_bastard_interaction = {
 
     on_accept = {
         scope:actor = {
-            stress_impact = {
+            stress_and_fulfillment_impact = {
                 arrogant = minor_stress_impact_gain
             }
             send_interface_toast = {
@@ -165,5 +165,4 @@ sas_steal_bastard_interaction = {
             }            
         }
     }
-    ai_frequency = 0
 }

@@ -135,7 +135,7 @@
 				scope:target = {
 					NOT = {
 						AND = {
-							government_allows = administrative
+							government_has_mechanic = administrative
 							any_targeting_faction = { faction_is_at_war = yes }
 						}
 					}
@@ -682,7 +682,7 @@
 			limit = {
 				scope:target = {
 					AND = {
-						government_allows = administrative
+						government_has_mechanic = administrative
 						any_targeting_faction = { faction_is_at_war = yes }
 					}
 				}

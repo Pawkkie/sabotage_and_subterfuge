@@ -8,8 +8,21 @@
 
 	desc = demand_payment_interaction_desc
 
+	is_available = {
+		trigger_if = {
+			limit = { is_ai = yes }
+			OR = {
+				ai_greed >= low_positive_ai_value
+				is_at_war = yes
+			}
+			NOT = {
+				has_trait = generous
+			}
+		}
+	}
+
 	is_shown = {
-		scope:actor = {
+		scope:puppet_or_actor ?= {
 			OR = {
 				# SAS Change
 				AND = {
@@ -41,17 +54,18 @@
 		scope:recipient = {
 			is_ai = yes
 		}
-		scope:recipient != scope:actor
+		scope:recipient != scope:puppet_or_actor
 	}
 
 	is_valid_showing_failures_only = {
-		scope:actor = {
+		scope:puppet_or_actor = {
 			is_physically_able_adult = yes
 			NOT = {
 				is_at_war_with = scope:recipient
 			}
 		}
 		scope:recipient = {
+			is_adult = yes
 			is_imprisoned = no
 		}
 		scope:recipient = {
@@ -63,13 +77,13 @@
 	}
 
 	is_valid = {
-		scope:actor = {
+		scope:puppet_or_actor = {
 			has_usable_hook = scope:recipient
 		}
 	}
 
 	is_highlighted = {
-		scope:actor = {
+		scope:puppet_or_actor = {
 			has_usable_hook = scope:recipient
 		}
 	}
@@ -81,68 +95,57 @@
 			}
 			custom_tooltip = demand_payment_too_little_gold_tt
 		}
-		scope:actor = {
+		scope:puppet_or_actor = {
 			send_interface_toast = {
 				title = demand_payment_interaction_message
 				left_icon = scope:recipient
 
-				scope:actor = {
+				scope:puppet_or_actor = {
 					use_hook = scope:recipient
 				}
 				scope:recipient = {
-					if = {
-						pay_short_term_gold = {
-							target = scope:actor
-							gold = golden_obligation_value
-						}
-						limit = {
-							gold > golden_obligation_value
-						}
-					}
-					else = {
-						pay_short_term_gold = {
-							target = scope:actor
-							gold = {
-								value = scope:recipient.gold
-								floor = yes
-							}
-						}
+					pay_short_term_gold = {
+						target = scope:puppet_or_actor
+						gold = golden_obligation_value_check_current_situation
 					}
 				}
 			}
-			stress_impact = {
+			stress_and_fulfillment_impact = {
 				generous = medium_stress_impact_gain
+			}
+		}
+		if = {
+			limit = {
+				scope:is_puppet_action ?= yes
+				scope:actor != scope:recipient
+			}
+			scope:actor = {
+				send_interface_toast = {
+					title = demand_payment_interaction_message_puppeteer
+					left_icon = scope:puppet_or_actor
+					right_icon = scope:recipient
+				}
 			}
 		}
 
 		# If we're a clan this interaction affects unity
 		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
+			CHARACTER = scope:puppet_or_actor
 			TARGET = scope:recipient
 			VALUE = minor_unity_loss
 			DESC = clan_unity_demand_payment.desc
 			REVERSE_NON_HOUSE_TARGET = no
 		}
 	}
-	
-	ai_potential = {
-		NOT = {
-			has_trait = generous
-		}
-		OR = {
-			ai_greed >= low_positive_ai_value
-			is_at_war = yes
-		}
-	}
-	
+
 	ai_target_quick_trigger = {
 		adult = yes
 	}
-	
+
 	ai_targets = {
 		ai_recipients = hooked_characters
 	}
-	
+
 	ai_frequency_by_tier = {
 		barony = 0
 		county = 48
@@ -151,7 +154,7 @@
 		empire = 6
 		hegemony = 6
 	}
-	
+
 	ai_will_do = {
 		base = 100
 
@@ -164,10 +167,10 @@
 			factor = 0
 			scope:recipient.gold < 8
 		}
-		
+
 		modifier = {
 			factor = 0
-			scope:actor = {
+			scope:puppet_or_actor = {
 				OR = {
 					has_relation_friend = scope:recipient
 					has_relation_lover = scope:recipient
@@ -178,4 +181,3 @@
 		}
 	}
 }
-
